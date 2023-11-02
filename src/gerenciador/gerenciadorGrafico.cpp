@@ -39,6 +39,10 @@ namespace Game{
                 delete (window);
                 window = nullptr;
             }
+            if(pGrafico != nullptr)
+                delete(pGrafico);
+                
+            pGrafico = nullptr;
         }
 
         /**

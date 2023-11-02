@@ -4080,7 +4080,8 @@ CMakeFiles/testes.dir/src/gerenciador/gerenciadorDeEStado.cpp.obj: C:/Users/gust
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mm_malloc.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stddef.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h \
-  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/syslimits.h
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/syslimits.h \
+  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/src/gerenciador/gerenciadorDeEstado.cpp
 
 CMakeFiles/testes.dir/src/gerenciador/gerenciadorDeEventos.cpp.obj: C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/src/gerenciador/gerenciadorDeEventos.cpp \
   C:/Program\ Files\ (x86)/SFML/include/SFML/Config.hpp \
@@ -7256,6 +7257,8 @@ C:/msys64/mingw64/include/c++/13.1.0/bits/node_handle.h:
 C:/msys64/mingw64/include/c++/13.1.0/bits/ostream.tcc:
 
 C:/msys64/mingw64/include/c++/13.1.0/bits/ostream_insert.h:
+
+C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/src/gerenciador/gerenciadorDeEstado.cpp:
 
 C:/msys64/mingw64/include/c++/13.1.0/bits/postypes.h:
 

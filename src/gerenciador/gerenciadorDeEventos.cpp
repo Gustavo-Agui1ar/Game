@@ -24,7 +24,12 @@ namespace Game{
              * destrutora da classe
             */
 
-            GerenciadorDeEventos::~GerenciadorDeEventos(){}
+            GerenciadorDeEventos::~GerenciadorDeEventos()
+            {
+                if(pEventos != nullptr)
+                    delete(pEventos);
+                pEventos = nullptr;
+            }
 
             /**
              * metodo acessador da classe
