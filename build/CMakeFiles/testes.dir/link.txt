@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\testes.dir/objects.a
+C:\msys64\mingw64\bin\ar.exe qc CMakeFiles\testes.dir/objects.a @CMakeFiles\testes.dir\objects1.rsp
+C:\msys64\mingw64\bin\g++.exe  -Wall -g -Wl,--whole-archive CMakeFiles\testes.dir/objects.a -Wl,--no-whole-archive -o "C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\testes.exe" -Wl,--out-implib,libtestes.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\testes.dir\linkLibs.rsp

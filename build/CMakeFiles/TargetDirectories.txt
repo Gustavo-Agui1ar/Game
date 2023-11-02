@@ -1,0 +1,4 @@
+C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build/CMakeFiles/Jogo.dir
+C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build/CMakeFiles/testes.dir
+C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build/CMakeFiles/edit_cache.dir
+C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build/CMakeFiles/rebuild_cache.dir
