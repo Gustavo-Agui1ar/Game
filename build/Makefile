@@ -519,6 +519,33 @@ src/gerenciador/gerenciadorDeColisao.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/gerenciador/gerenciadorDeColisao.cpp.s
 .PHONY : src/gerenciador/gerenciadorDeColisao.cpp.s
 
+src/gerenciador/gerenciadorDeEStado.obj: src/gerenciador/gerenciadorDeEStado.cpp.obj
+.PHONY : src/gerenciador/gerenciadorDeEStado.obj
+
+# target to build an object file
+src/gerenciador/gerenciadorDeEStado.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEStado.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/gerenciador/gerenciadorDeEStado.cpp.obj
+.PHONY : src/gerenciador/gerenciadorDeEStado.cpp.obj
+
+src/gerenciador/gerenciadorDeEStado.i: src/gerenciador/gerenciadorDeEStado.cpp.i
+.PHONY : src/gerenciador/gerenciadorDeEStado.i
+
+# target to preprocess a source file
+src/gerenciador/gerenciadorDeEStado.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEStado.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/gerenciador/gerenciadorDeEStado.cpp.i
+.PHONY : src/gerenciador/gerenciadorDeEStado.cpp.i
+
+src/gerenciador/gerenciadorDeEStado.s: src/gerenciador/gerenciadorDeEStado.cpp.s
+.PHONY : src/gerenciador/gerenciadorDeEStado.s
+
+# target to generate assembly for a file
+src/gerenciador/gerenciadorDeEStado.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEStado.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/gerenciador/gerenciadorDeEStado.cpp.s
+.PHONY : src/gerenciador/gerenciadorDeEStado.cpp.s
+
 src/gerenciador/gerenciadorDeEventos.obj: src/gerenciador/gerenciadorDeEventos.cpp.obj
 .PHONY : src/gerenciador/gerenciadorDeEventos.obj
 
@@ -841,6 +868,9 @@ help:
 	@echo ... src/gerenciador/gerenciadorDeColisao.obj
 	@echo ... src/gerenciador/gerenciadorDeColisao.i
 	@echo ... src/gerenciador/gerenciadorDeColisao.s
+	@echo ... src/gerenciador/gerenciadorDeEStado.obj
+	@echo ... src/gerenciador/gerenciadorDeEStado.i
+	@echo ... src/gerenciador/gerenciadorDeEStado.s
 	@echo ... src/gerenciador/gerenciadorDeEventos.obj
 	@echo ... src/gerenciador/gerenciadorDeEventos.i
 	@echo ... src/gerenciador/gerenciadorDeEventos.s

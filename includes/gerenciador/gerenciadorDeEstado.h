@@ -2,6 +2,7 @@
 #pragma once
 
 #include "../estado/estado.h"
+#include <stack>
 
 
 namespace Game{

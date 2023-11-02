@@ -85,6 +85,12 @@
 },
 {
   "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\gerenciador\\gerenciadorDeEStado.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\gerenciador\\gerenciadorDeEStado.cpp\"",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/gerenciador/gerenciadorDeEStado.cpp",
+  "output": "CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEStado.cpp.obj"
+},
+{
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\gerenciador\\gerenciadorDeEventos.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\gerenciador\\gerenciadorDeEventos.cpp\"",
   "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/gerenciador/gerenciadorDeEventos.cpp",
   "output": "CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEventos.cpp.obj"
@@ -226,6 +232,12 @@
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/testes.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\testes.dir\\src\\gerenciador\\gerenciadorDeColisao.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\gerenciador\\gerenciadorDeColisao.cpp\"",
   "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/gerenciador/gerenciadorDeColisao.cpp",
   "output": "CMakeFiles/testes.dir/src/gerenciador/gerenciadorDeColisao.cpp.obj"
+},
+{
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/testes.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\testes.dir\\src\\gerenciador\\gerenciadorDeEStado.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\gerenciador\\gerenciadorDeEStado.cpp\"",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/gerenciador/gerenciadorDeEStado.cpp",
+  "output": "CMakeFiles/testes.dir/src/gerenciador/gerenciadorDeEStado.cpp.obj"
 },
 {
   "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
