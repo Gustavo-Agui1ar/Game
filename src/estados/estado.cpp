@@ -16,6 +16,20 @@ namespace  Game{
 
         }
 
+        void Estado::desenhar()
+        {
+
+        }
+
+        void Estado::setRemover()
+        {
+            remover = true;
+        }
+
+        const bool Estado::getRemover()
+        {
+            return remover;
+        }
         
     }
 }

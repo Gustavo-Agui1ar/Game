@@ -22,8 +22,8 @@ namespace Game{
             virtual void executar() = 0;
             virtual void desenhar();
             
-            void setRemover(const bool remover = true);
-            const bool getRemover()const;
+            const bool getRemover();
+            void setRemover();
 
         };
 

@@ -330,6 +330,60 @@ src/entidade/entidade.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/entidade/entidade.cpp.s
 .PHONY : src/entidade/entidade.cpp.s
 
+src/estados/estado.obj: src/estados/estado.cpp.obj
+.PHONY : src/estados/estado.obj
+
+# target to build an object file
+src/estados/estado.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/estados/estado.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/estados/estado.cpp.obj
+.PHONY : src/estados/estado.cpp.obj
+
+src/estados/estado.i: src/estados/estado.cpp.i
+.PHONY : src/estados/estado.i
+
+# target to preprocess a source file
+src/estados/estado.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/estados/estado.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/estados/estado.cpp.i
+.PHONY : src/estados/estado.cpp.i
+
+src/estados/estado.s: src/estados/estado.cpp.s
+.PHONY : src/estados/estado.s
+
+# target to generate assembly for a file
+src/estados/estado.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/estados/estado.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/estados/estado.cpp.s
+.PHONY : src/estados/estado.cpp.s
+
+src/estados/estadoFase.obj: src/estados/estadoFase.cpp.obj
+.PHONY : src/estados/estadoFase.obj
+
+# target to build an object file
+src/estados/estadoFase.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/estados/estadoFase.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/estados/estadoFase.cpp.obj
+.PHONY : src/estados/estadoFase.cpp.obj
+
+src/estados/estadoFase.i: src/estados/estadoFase.cpp.i
+.PHONY : src/estados/estadoFase.i
+
+# target to preprocess a source file
+src/estados/estadoFase.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/estados/estadoFase.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/estados/estadoFase.cpp.i
+.PHONY : src/estados/estadoFase.cpp.i
+
+src/estados/estadoFase.s: src/estados/estadoFase.cpp.s
+.PHONY : src/estados/estadoFase.s
+
+# target to generate assembly for a file
+src/estados/estadoFase.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/estados/estadoFase.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/estados/estadoFase.cpp.s
+.PHONY : src/estados/estadoFase.cpp.s
+
 src/fases/fase.obj: src/fases/fase.cpp.obj
 .PHONY : src/fases/fase.obj
 
@@ -519,32 +573,32 @@ src/gerenciador/gerenciadorDeColisao.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/gerenciador/gerenciadorDeColisao.cpp.s
 .PHONY : src/gerenciador/gerenciadorDeColisao.cpp.s
 
-src/gerenciador/gerenciadorDeEStado.obj: src/gerenciador/gerenciadorDeEStado.cpp.obj
-.PHONY : src/gerenciador/gerenciadorDeEStado.obj
+src/gerenciador/gerenciadorDeEstado.obj: src/gerenciador/gerenciadorDeEstado.cpp.obj
+.PHONY : src/gerenciador/gerenciadorDeEstado.obj
 
 # target to build an object file
-src/gerenciador/gerenciadorDeEStado.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEStado.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/gerenciador/gerenciadorDeEStado.cpp.obj
-.PHONY : src/gerenciador/gerenciadorDeEStado.cpp.obj
+src/gerenciador/gerenciadorDeEstado.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEstado.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/gerenciador/gerenciadorDeEstado.cpp.obj
+.PHONY : src/gerenciador/gerenciadorDeEstado.cpp.obj
 
-src/gerenciador/gerenciadorDeEStado.i: src/gerenciador/gerenciadorDeEStado.cpp.i
-.PHONY : src/gerenciador/gerenciadorDeEStado.i
+src/gerenciador/gerenciadorDeEstado.i: src/gerenciador/gerenciadorDeEstado.cpp.i
+.PHONY : src/gerenciador/gerenciadorDeEstado.i
 
 # target to preprocess a source file
-src/gerenciador/gerenciadorDeEStado.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEStado.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/gerenciador/gerenciadorDeEStado.cpp.i
-.PHONY : src/gerenciador/gerenciadorDeEStado.cpp.i
+src/gerenciador/gerenciadorDeEstado.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEstado.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/gerenciador/gerenciadorDeEstado.cpp.i
+.PHONY : src/gerenciador/gerenciadorDeEstado.cpp.i
 
-src/gerenciador/gerenciadorDeEStado.s: src/gerenciador/gerenciadorDeEStado.cpp.s
-.PHONY : src/gerenciador/gerenciadorDeEStado.s
+src/gerenciador/gerenciadorDeEstado.s: src/gerenciador/gerenciadorDeEstado.cpp.s
+.PHONY : src/gerenciador/gerenciadorDeEstado.s
 
 # target to generate assembly for a file
-src/gerenciador/gerenciadorDeEStado.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEStado.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/gerenciador/gerenciadorDeEStado.cpp.s
-.PHONY : src/gerenciador/gerenciadorDeEStado.cpp.s
+src/gerenciador/gerenciadorDeEstado.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEstado.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/gerenciador/gerenciadorDeEstado.cpp.s
+.PHONY : src/gerenciador/gerenciadorDeEstado.cpp.s
 
 src/gerenciador/gerenciadorDeEventos.obj: src/gerenciador/gerenciadorDeEventos.cpp.obj
 .PHONY : src/gerenciador/gerenciadorDeEventos.obj
@@ -847,6 +901,12 @@ help:
 	@echo ... src/entidade/entidade.obj
 	@echo ... src/entidade/entidade.i
 	@echo ... src/entidade/entidade.s
+	@echo ... src/estados/estado.obj
+	@echo ... src/estados/estado.i
+	@echo ... src/estados/estado.s
+	@echo ... src/estados/estadoFase.obj
+	@echo ... src/estados/estadoFase.i
+	@echo ... src/estados/estadoFase.s
 	@echo ... src/fases/fase.obj
 	@echo ... src/fases/fase.i
 	@echo ... src/fases/fase.s
@@ -868,9 +928,9 @@ help:
 	@echo ... src/gerenciador/gerenciadorDeColisao.obj
 	@echo ... src/gerenciador/gerenciadorDeColisao.i
 	@echo ... src/gerenciador/gerenciadorDeColisao.s
-	@echo ... src/gerenciador/gerenciadorDeEStado.obj
-	@echo ... src/gerenciador/gerenciadorDeEStado.i
-	@echo ... src/gerenciador/gerenciadorDeEStado.s
+	@echo ... src/gerenciador/gerenciadorDeEstado.obj
+	@echo ... src/gerenciador/gerenciadorDeEstado.i
+	@echo ... src/gerenciador/gerenciadorDeEstado.s
 	@echo ... src/gerenciador/gerenciadorDeEventos.obj
 	@echo ... src/gerenciador/gerenciadorDeEventos.i
 	@echo ... src/gerenciador/gerenciadorDeEventos.s

@@ -1,7 +1,7 @@
 
 #pragma once
 
-#include "../estado/estado.h"
+#include "../estados/estado.h"
 #include <stack>
 
 

@@ -173,11 +173,41 @@ CMakeFiles/Jogo.dir/src/entidade/entidade.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Jogo.dir/src/entidade/entidade.cpp.s"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\src\entidade\entidade.cpp" -o CMakeFiles\Jogo.dir\src\entidade\entidade.cpp.s
 
+CMakeFiles/Jogo.dir/src/estados/estado.cpp.obj: CMakeFiles/Jogo.dir/flags.make
+CMakeFiles/Jogo.dir/src/estados/estado.cpp.obj: CMakeFiles/Jogo.dir/includes_CXX.rsp
+CMakeFiles/Jogo.dir/src/estados/estado.cpp.obj: C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/src/estados/estado.cpp
+CMakeFiles/Jogo.dir/src/estados/estado.cpp.obj: CMakeFiles/Jogo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Jogo.dir/src/estados/estado.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Jogo.dir/src/estados/estado.cpp.obj -MF CMakeFiles\Jogo.dir\src\estados\estado.cpp.obj.d -o CMakeFiles\Jogo.dir\src\estados\estado.cpp.obj -c "C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\src\estados\estado.cpp"
+
+CMakeFiles/Jogo.dir/src/estados/estado.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Jogo.dir/src/estados/estado.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\src\estados\estado.cpp" > CMakeFiles\Jogo.dir\src\estados\estado.cpp.i
+
+CMakeFiles/Jogo.dir/src/estados/estado.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Jogo.dir/src/estados/estado.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\src\estados\estado.cpp" -o CMakeFiles\Jogo.dir\src\estados\estado.cpp.s
+
+CMakeFiles/Jogo.dir/src/estados/estadoFase.cpp.obj: CMakeFiles/Jogo.dir/flags.make
+CMakeFiles/Jogo.dir/src/estados/estadoFase.cpp.obj: CMakeFiles/Jogo.dir/includes_CXX.rsp
+CMakeFiles/Jogo.dir/src/estados/estadoFase.cpp.obj: C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/src/estados/estadoFase.cpp
+CMakeFiles/Jogo.dir/src/estados/estadoFase.cpp.obj: CMakeFiles/Jogo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Jogo.dir/src/estados/estadoFase.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Jogo.dir/src/estados/estadoFase.cpp.obj -MF CMakeFiles\Jogo.dir\src\estados\estadoFase.cpp.obj.d -o CMakeFiles\Jogo.dir\src\estados\estadoFase.cpp.obj -c "C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\src\estados\estadoFase.cpp"
+
+CMakeFiles/Jogo.dir/src/estados/estadoFase.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Jogo.dir/src/estados/estadoFase.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\src\estados\estadoFase.cpp" > CMakeFiles\Jogo.dir\src\estados\estadoFase.cpp.i
+
+CMakeFiles/Jogo.dir/src/estados/estadoFase.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Jogo.dir/src/estados/estadoFase.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\src\estados\estadoFase.cpp" -o CMakeFiles\Jogo.dir\src\estados\estadoFase.cpp.s
+
 CMakeFiles/Jogo.dir/src/fases/fase.cpp.obj: CMakeFiles/Jogo.dir/flags.make
 CMakeFiles/Jogo.dir/src/fases/fase.cpp.obj: CMakeFiles/Jogo.dir/includes_CXX.rsp
 CMakeFiles/Jogo.dir/src/fases/fase.cpp.obj: C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/src/fases/fase.cpp
 CMakeFiles/Jogo.dir/src/fases/fase.cpp.obj: CMakeFiles/Jogo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Jogo.dir/src/fases/fase.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Jogo.dir/src/fases/fase.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Jogo.dir/src/fases/fase.cpp.obj -MF CMakeFiles\Jogo.dir\src\fases\fase.cpp.obj.d -o CMakeFiles\Jogo.dir\src\fases\fase.cpp.obj -c "C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\src\fases\fase.cpp"
 
 CMakeFiles/Jogo.dir/src/fases/fase.cpp.i: cmake_force
@@ -192,7 +222,7 @@ CMakeFiles/Jogo.dir/src/fases/level-1.cpp.obj: CMakeFiles/Jogo.dir/flags.make
 CMakeFiles/Jogo.dir/src/fases/level-1.cpp.obj: CMakeFiles/Jogo.dir/includes_CXX.rsp
 CMakeFiles/Jogo.dir/src/fases/level-1.cpp.obj: C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/src/fases/level-1.cpp
 CMakeFiles/Jogo.dir/src/fases/level-1.cpp.obj: CMakeFiles/Jogo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Jogo.dir/src/fases/level-1.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Jogo.dir/src/fases/level-1.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Jogo.dir/src/fases/level-1.cpp.obj -MF CMakeFiles\Jogo.dir\src\fases\level-1.cpp.obj.d -o CMakeFiles\Jogo.dir\src\fases\level-1.cpp.obj -c "C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\src\fases\level-1.cpp"
 
 CMakeFiles/Jogo.dir/src/fases/level-1.cpp.i: cmake_force
@@ -207,7 +237,7 @@ CMakeFiles/Jogo.dir/src/fases/level-2.cpp.obj: CMakeFiles/Jogo.dir/flags.make
 CMakeFiles/Jogo.dir/src/fases/level-2.cpp.obj: CMakeFiles/Jogo.dir/includes_CXX.rsp
 CMakeFiles/Jogo.dir/src/fases/level-2.cpp.obj: C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/src/fases/level-2.cpp
 CMakeFiles/Jogo.dir/src/fases/level-2.cpp.obj: CMakeFiles/Jogo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Jogo.dir/src/fases/level-2.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Jogo.dir/src/fases/level-2.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Jogo.dir/src/fases/level-2.cpp.obj -MF CMakeFiles\Jogo.dir\src\fases\level-2.cpp.obj.d -o CMakeFiles\Jogo.dir\src\fases\level-2.cpp.obj -c "C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\src\fases\level-2.cpp"
 
 CMakeFiles/Jogo.dir/src/fases/level-2.cpp.i: cmake_force
@@ -222,7 +252,7 @@ CMakeFiles/Jogo.dir/src/fundo/camada.cpp.obj: CMakeFiles/Jogo.dir/flags.make
 CMakeFiles/Jogo.dir/src/fundo/camada.cpp.obj: CMakeFiles/Jogo.dir/includes_CXX.rsp
 CMakeFiles/Jogo.dir/src/fundo/camada.cpp.obj: C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/src/fundo/camada.cpp
 CMakeFiles/Jogo.dir/src/fundo/camada.cpp.obj: CMakeFiles/Jogo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Jogo.dir/src/fundo/camada.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Jogo.dir/src/fundo/camada.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Jogo.dir/src/fundo/camada.cpp.obj -MF CMakeFiles\Jogo.dir\src\fundo\camada.cpp.obj.d -o CMakeFiles\Jogo.dir\src\fundo\camada.cpp.obj -c "C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\src\fundo\camada.cpp"
 
 CMakeFiles/Jogo.dir/src/fundo/camada.cpp.i: cmake_force
@@ -237,7 +267,7 @@ CMakeFiles/Jogo.dir/src/fundo/fundo.cpp.obj: CMakeFiles/Jogo.dir/flags.make
 CMakeFiles/Jogo.dir/src/fundo/fundo.cpp.obj: CMakeFiles/Jogo.dir/includes_CXX.rsp
 CMakeFiles/Jogo.dir/src/fundo/fundo.cpp.obj: C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/src/fundo/fundo.cpp
 CMakeFiles/Jogo.dir/src/fundo/fundo.cpp.obj: CMakeFiles/Jogo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Jogo.dir/src/fundo/fundo.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Jogo.dir/src/fundo/fundo.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Jogo.dir/src/fundo/fundo.cpp.obj -MF CMakeFiles\Jogo.dir\src\fundo\fundo.cpp.obj.d -o CMakeFiles\Jogo.dir\src\fundo\fundo.cpp.obj -c "C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\src\fundo\fundo.cpp"
 
 CMakeFiles/Jogo.dir/src/fundo/fundo.cpp.i: cmake_force
@@ -252,7 +282,7 @@ CMakeFiles/Jogo.dir/src/gerenciador/camera.cpp.obj: CMakeFiles/Jogo.dir/flags.ma
 CMakeFiles/Jogo.dir/src/gerenciador/camera.cpp.obj: CMakeFiles/Jogo.dir/includes_CXX.rsp
 CMakeFiles/Jogo.dir/src/gerenciador/camera.cpp.obj: C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/src/gerenciador/camera.cpp
 CMakeFiles/Jogo.dir/src/gerenciador/camera.cpp.obj: CMakeFiles/Jogo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Jogo.dir/src/gerenciador/camera.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Jogo.dir/src/gerenciador/camera.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Jogo.dir/src/gerenciador/camera.cpp.obj -MF CMakeFiles\Jogo.dir\src\gerenciador\camera.cpp.obj.d -o CMakeFiles\Jogo.dir\src\gerenciador\camera.cpp.obj -c "C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\src\gerenciador\camera.cpp"
 
 CMakeFiles/Jogo.dir/src/gerenciador/camera.cpp.i: cmake_force
@@ -267,7 +297,7 @@ CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeColisao.cpp.obj: CMakeFiles/Jog
 CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeColisao.cpp.obj: CMakeFiles/Jogo.dir/includes_CXX.rsp
 CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeColisao.cpp.obj: C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/src/gerenciador/gerenciadorDeColisao.cpp
 CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeColisao.cpp.obj: CMakeFiles/Jogo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeColisao.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeColisao.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeColisao.cpp.obj -MF CMakeFiles\Jogo.dir\src\gerenciador\gerenciadorDeColisao.cpp.obj.d -o CMakeFiles\Jogo.dir\src\gerenciador\gerenciadorDeColisao.cpp.obj -c "C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\src\gerenciador\gerenciadorDeColisao.cpp"
 
 CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeColisao.cpp.i: cmake_force
@@ -278,26 +308,26 @@ CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeColisao.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeColisao.cpp.s"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\src\gerenciador\gerenciadorDeColisao.cpp" -o CMakeFiles\Jogo.dir\src\gerenciador\gerenciadorDeColisao.cpp.s
 
-CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEStado.cpp.obj: CMakeFiles/Jogo.dir/flags.make
-CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEStado.cpp.obj: CMakeFiles/Jogo.dir/includes_CXX.rsp
-CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEStado.cpp.obj: C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/src/gerenciador/gerenciadorDeEStado.cpp
-CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEStado.cpp.obj: CMakeFiles/Jogo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEStado.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEStado.cpp.obj -MF CMakeFiles\Jogo.dir\src\gerenciador\gerenciadorDeEStado.cpp.obj.d -o CMakeFiles\Jogo.dir\src\gerenciador\gerenciadorDeEStado.cpp.obj -c "C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\src\gerenciador\gerenciadorDeEStado.cpp"
+CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEstado.cpp.obj: CMakeFiles/Jogo.dir/flags.make
+CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEstado.cpp.obj: CMakeFiles/Jogo.dir/includes_CXX.rsp
+CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEstado.cpp.obj: C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/src/gerenciador/gerenciadorDeEstado.cpp
+CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEstado.cpp.obj: CMakeFiles/Jogo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEstado.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEstado.cpp.obj -MF CMakeFiles\Jogo.dir\src\gerenciador\gerenciadorDeEstado.cpp.obj.d -o CMakeFiles\Jogo.dir\src\gerenciador\gerenciadorDeEstado.cpp.obj -c "C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\src\gerenciador\gerenciadorDeEstado.cpp"
 
-CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEStado.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEStado.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\src\gerenciador\gerenciadorDeEStado.cpp" > CMakeFiles\Jogo.dir\src\gerenciador\gerenciadorDeEStado.cpp.i
+CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEstado.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEstado.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\src\gerenciador\gerenciadorDeEstado.cpp" > CMakeFiles\Jogo.dir\src\gerenciador\gerenciadorDeEstado.cpp.i
 
-CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEStado.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEStado.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\src\gerenciador\gerenciadorDeEStado.cpp" -o CMakeFiles\Jogo.dir\src\gerenciador\gerenciadorDeEStado.cpp.s
+CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEstado.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEstado.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\src\gerenciador\gerenciadorDeEstado.cpp" -o CMakeFiles\Jogo.dir\src\gerenciador\gerenciadorDeEstado.cpp.s
 
 CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEventos.cpp.obj: CMakeFiles/Jogo.dir/flags.make
 CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEventos.cpp.obj: CMakeFiles/Jogo.dir/includes_CXX.rsp
 CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEventos.cpp.obj: C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/src/gerenciador/gerenciadorDeEventos.cpp
 CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEventos.cpp.obj: CMakeFiles/Jogo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEventos.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEventos.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEventos.cpp.obj -MF CMakeFiles\Jogo.dir\src\gerenciador\gerenciadorDeEventos.cpp.obj.d -o CMakeFiles\Jogo.dir\src\gerenciador\gerenciadorDeEventos.cpp.obj -c "C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\src\gerenciador\gerenciadorDeEventos.cpp"
 
 CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEventos.cpp.i: cmake_force
@@ -312,7 +342,7 @@ CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorGrafico.cpp.obj: CMakeFiles/Jogo.
 CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorGrafico.cpp.obj: CMakeFiles/Jogo.dir/includes_CXX.rsp
 CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorGrafico.cpp.obj: C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/src/gerenciador/gerenciadorGrafico.cpp
 CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorGrafico.cpp.obj: CMakeFiles/Jogo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorGrafico.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorGrafico.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorGrafico.cpp.obj -MF CMakeFiles\Jogo.dir\src\gerenciador\gerenciadorGrafico.cpp.obj.d -o CMakeFiles\Jogo.dir\src\gerenciador\gerenciadorGrafico.cpp.obj -c "C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\src\gerenciador\gerenciadorGrafico.cpp"
 
 CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorGrafico.cpp.i: cmake_force
@@ -327,7 +357,7 @@ CMakeFiles/Jogo.dir/src/inimigo/esqueleto.cpp.obj: CMakeFiles/Jogo.dir/flags.mak
 CMakeFiles/Jogo.dir/src/inimigo/esqueleto.cpp.obj: CMakeFiles/Jogo.dir/includes_CXX.rsp
 CMakeFiles/Jogo.dir/src/inimigo/esqueleto.cpp.obj: C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/src/inimigo/esqueleto.cpp
 CMakeFiles/Jogo.dir/src/inimigo/esqueleto.cpp.obj: CMakeFiles/Jogo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Jogo.dir/src/inimigo/esqueleto.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Jogo.dir/src/inimigo/esqueleto.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Jogo.dir/src/inimigo/esqueleto.cpp.obj -MF CMakeFiles\Jogo.dir\src\inimigo\esqueleto.cpp.obj.d -o CMakeFiles\Jogo.dir\src\inimigo\esqueleto.cpp.obj -c "C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\src\inimigo\esqueleto.cpp"
 
 CMakeFiles/Jogo.dir/src/inimigo/esqueleto.cpp.i: cmake_force
@@ -342,7 +372,7 @@ CMakeFiles/Jogo.dir/src/inimigo/inimigo.cpp.obj: CMakeFiles/Jogo.dir/flags.make
 CMakeFiles/Jogo.dir/src/inimigo/inimigo.cpp.obj: CMakeFiles/Jogo.dir/includes_CXX.rsp
 CMakeFiles/Jogo.dir/src/inimigo/inimigo.cpp.obj: C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/src/inimigo/inimigo.cpp
 CMakeFiles/Jogo.dir/src/inimigo/inimigo.cpp.obj: CMakeFiles/Jogo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Jogo.dir/src/inimigo/inimigo.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Jogo.dir/src/inimigo/inimigo.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Jogo.dir/src/inimigo/inimigo.cpp.obj -MF CMakeFiles\Jogo.dir\src\inimigo\inimigo.cpp.obj.d -o CMakeFiles\Jogo.dir\src\inimigo\inimigo.cpp.obj -c "C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\src\inimigo\inimigo.cpp"
 
 CMakeFiles/Jogo.dir/src/inimigo/inimigo.cpp.i: cmake_force
@@ -357,7 +387,7 @@ CMakeFiles/Jogo.dir/src/inimigo/slime.cpp.obj: CMakeFiles/Jogo.dir/flags.make
 CMakeFiles/Jogo.dir/src/inimigo/slime.cpp.obj: CMakeFiles/Jogo.dir/includes_CXX.rsp
 CMakeFiles/Jogo.dir/src/inimigo/slime.cpp.obj: C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/src/inimigo/slime.cpp
 CMakeFiles/Jogo.dir/src/inimigo/slime.cpp.obj: CMakeFiles/Jogo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Jogo.dir/src/inimigo/slime.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/Jogo.dir/src/inimigo/slime.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Jogo.dir/src/inimigo/slime.cpp.obj -MF CMakeFiles\Jogo.dir\src\inimigo\slime.cpp.obj.d -o CMakeFiles\Jogo.dir\src\inimigo\slime.cpp.obj -c "C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\src\inimigo\slime.cpp"
 
 CMakeFiles/Jogo.dir/src/inimigo/slime.cpp.i: cmake_force
@@ -372,7 +402,7 @@ CMakeFiles/Jogo.dir/src/jogador/jogador.cpp.obj: CMakeFiles/Jogo.dir/flags.make
 CMakeFiles/Jogo.dir/src/jogador/jogador.cpp.obj: CMakeFiles/Jogo.dir/includes_CXX.rsp
 CMakeFiles/Jogo.dir/src/jogador/jogador.cpp.obj: C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/src/jogador/jogador.cpp
 CMakeFiles/Jogo.dir/src/jogador/jogador.cpp.obj: CMakeFiles/Jogo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Jogo.dir/src/jogador/jogador.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/Jogo.dir/src/jogador/jogador.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Jogo.dir/src/jogador/jogador.cpp.obj -MF CMakeFiles\Jogo.dir\src\jogador\jogador.cpp.obj.d -o CMakeFiles\Jogo.dir\src\jogador\jogador.cpp.obj -c "C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\src\jogador\jogador.cpp"
 
 CMakeFiles/Jogo.dir/src/jogador/jogador.cpp.i: cmake_force
@@ -387,7 +417,7 @@ CMakeFiles/Jogo.dir/src/jogador/personagem.cpp.obj: CMakeFiles/Jogo.dir/flags.ma
 CMakeFiles/Jogo.dir/src/jogador/personagem.cpp.obj: CMakeFiles/Jogo.dir/includes_CXX.rsp
 CMakeFiles/Jogo.dir/src/jogador/personagem.cpp.obj: C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/src/jogador/personagem.cpp
 CMakeFiles/Jogo.dir/src/jogador/personagem.cpp.obj: CMakeFiles/Jogo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/Jogo.dir/src/jogador/personagem.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/Jogo.dir/src/jogador/personagem.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Jogo.dir/src/jogador/personagem.cpp.obj -MF CMakeFiles\Jogo.dir\src\jogador\personagem.cpp.obj.d -o CMakeFiles\Jogo.dir\src\jogador\personagem.cpp.obj -c "C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\src\jogador\personagem.cpp"
 
 CMakeFiles/Jogo.dir/src/jogador/personagem.cpp.i: cmake_force
@@ -402,7 +432,7 @@ CMakeFiles/Jogo.dir/src/lista/listaEntidade.cpp.obj: CMakeFiles/Jogo.dir/flags.m
 CMakeFiles/Jogo.dir/src/lista/listaEntidade.cpp.obj: CMakeFiles/Jogo.dir/includes_CXX.rsp
 CMakeFiles/Jogo.dir/src/lista/listaEntidade.cpp.obj: C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/src/lista/listaEntidade.cpp
 CMakeFiles/Jogo.dir/src/lista/listaEntidade.cpp.obj: CMakeFiles/Jogo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/Jogo.dir/src/lista/listaEntidade.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/Jogo.dir/src/lista/listaEntidade.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Jogo.dir/src/lista/listaEntidade.cpp.obj -MF CMakeFiles\Jogo.dir\src\lista\listaEntidade.cpp.obj.d -o CMakeFiles\Jogo.dir\src\lista\listaEntidade.cpp.obj -c "C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\src\lista\listaEntidade.cpp"
 
 CMakeFiles/Jogo.dir/src/lista/listaEntidade.cpp.i: cmake_force
@@ -417,7 +447,7 @@ CMakeFiles/Jogo.dir/src/main.cpp.obj: CMakeFiles/Jogo.dir/flags.make
 CMakeFiles/Jogo.dir/src/main.cpp.obj: CMakeFiles/Jogo.dir/includes_CXX.rsp
 CMakeFiles/Jogo.dir/src/main.cpp.obj: C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/src/main.cpp
 CMakeFiles/Jogo.dir/src/main.cpp.obj: CMakeFiles/Jogo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/Jogo.dir/src/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/Jogo.dir/src/main.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Jogo.dir/src/main.cpp.obj -MF CMakeFiles\Jogo.dir\src\main.cpp.obj.d -o CMakeFiles\Jogo.dir\src\main.cpp.obj -c "C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\src\main.cpp"
 
 CMakeFiles/Jogo.dir/src/main.cpp.i: cmake_force
@@ -432,7 +462,7 @@ CMakeFiles/Jogo.dir/src/principal.cpp.obj: CMakeFiles/Jogo.dir/flags.make
 CMakeFiles/Jogo.dir/src/principal.cpp.obj: CMakeFiles/Jogo.dir/includes_CXX.rsp
 CMakeFiles/Jogo.dir/src/principal.cpp.obj: C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/src/principal.cpp
 CMakeFiles/Jogo.dir/src/principal.cpp.obj: CMakeFiles/Jogo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/Jogo.dir/src/principal.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/Jogo.dir/src/principal.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Jogo.dir/src/principal.cpp.obj -MF CMakeFiles\Jogo.dir\src\principal.cpp.obj.d -o CMakeFiles\Jogo.dir\src\principal.cpp.obj -c "C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\src\principal.cpp"
 
 CMakeFiles/Jogo.dir/src/principal.cpp.i: cmake_force
@@ -452,6 +482,8 @@ Jogo_OBJECTS = \
 "CMakeFiles/Jogo.dir/src/arma/arma.cpp.obj" \
 "CMakeFiles/Jogo.dir/src/entidade/Ente.cpp.obj" \
 "CMakeFiles/Jogo.dir/src/entidade/entidade.cpp.obj" \
+"CMakeFiles/Jogo.dir/src/estados/estado.cpp.obj" \
+"CMakeFiles/Jogo.dir/src/estados/estadoFase.cpp.obj" \
 "CMakeFiles/Jogo.dir/src/fases/fase.cpp.obj" \
 "CMakeFiles/Jogo.dir/src/fases/level-1.cpp.obj" \
 "CMakeFiles/Jogo.dir/src/fases/level-2.cpp.obj" \
@@ -459,7 +491,7 @@ Jogo_OBJECTS = \
 "CMakeFiles/Jogo.dir/src/fundo/fundo.cpp.obj" \
 "CMakeFiles/Jogo.dir/src/gerenciador/camera.cpp.obj" \
 "CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeColisao.cpp.obj" \
-"CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEStado.cpp.obj" \
+"CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEstado.cpp.obj" \
 "CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEventos.cpp.obj" \
 "CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorGrafico.cpp.obj" \
 "CMakeFiles/Jogo.dir/src/inimigo/esqueleto.cpp.obj" \
@@ -481,6 +513,8 @@ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/J
 C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/Jogo.exe: CMakeFiles/Jogo.dir/src/arma/arma.cpp.obj
 C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/Jogo.exe: CMakeFiles/Jogo.dir/src/entidade/Ente.cpp.obj
 C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/Jogo.exe: CMakeFiles/Jogo.dir/src/entidade/entidade.cpp.obj
+C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/Jogo.exe: CMakeFiles/Jogo.dir/src/estados/estado.cpp.obj
+C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/Jogo.exe: CMakeFiles/Jogo.dir/src/estados/estadoFase.cpp.obj
 C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/Jogo.exe: CMakeFiles/Jogo.dir/src/fases/fase.cpp.obj
 C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/Jogo.exe: CMakeFiles/Jogo.dir/src/fases/level-1.cpp.obj
 C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/Jogo.exe: CMakeFiles/Jogo.dir/src/fases/level-2.cpp.obj
@@ -488,7 +522,7 @@ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/J
 C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/Jogo.exe: CMakeFiles/Jogo.dir/src/fundo/fundo.cpp.obj
 C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/Jogo.exe: CMakeFiles/Jogo.dir/src/gerenciador/camera.cpp.obj
 C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/Jogo.exe: CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeColisao.cpp.obj
-C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/Jogo.exe: CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEStado.cpp.obj
+C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/Jogo.exe: CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEstado.cpp.obj
 C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/Jogo.exe: CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEventos.cpp.obj
 C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/Jogo.exe: CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorGrafico.cpp.obj
 C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/Jogo.exe: CMakeFiles/Jogo.dir/src/inimigo/esqueleto.cpp.obj
@@ -508,7 +542,7 @@ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/J
 C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/Jogo.exe: CMakeFiles/Jogo.dir/linkLibs.rsp
 C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/Jogo.exe: CMakeFiles/Jogo.dir/objects1.rsp
 C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/Jogo.exe: CMakeFiles/Jogo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable \"C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\Jogo.exe\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Linking CXX executable \"C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\Jogo.exe\""
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Jogo.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

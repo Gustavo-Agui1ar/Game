@@ -27,11 +27,11 @@ namespace Game{
             
             pEstado = nullptr;
 
-            while(!pilhaEstados.empy())
+            while(!pilhaEstados.empty())
             {
                 delete(pilhaEstados.top());
                 pilhaEstados.top() = nullptr;
-                pilhasEstados.pop();
+                pilhaEstados.pop();
             }
         }
 
