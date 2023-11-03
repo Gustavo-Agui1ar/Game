@@ -7,7 +7,7 @@ namespace Game{
 
     namespace Fase{
 
-        class Caverna : public Fase{
+        class Caverna : public Fase  {
 
         public:
 

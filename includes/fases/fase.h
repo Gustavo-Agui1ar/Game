@@ -1,27 +1,25 @@
 
 #pragma once
 
-#include <fstream>
+#include "../gerenciador/gerenciadorDeColisao.h"
+
+#include "../Obstaculo/Plataforma.h"
+
+#include "../lista/listaEntidade.h"
+
+#include "../inimigo/esqueleto.h"
+
+#include "../inimigo/inimigo.h"
+
+#include "../jogador/jogador.h"
+
+#include "../inimigo/slime.h"
 
 #include "../entidade/Ente.h"
 
 #include "../fundo/fundo.h"
 
-#include "../gerenciador/gerenciadorDeColisao.h"
-
-#include "../gerenciador/gerenciadorDeEventos.h"
-
-#include "../jogador/jogador.h"
-
-#include "../inimigo/inimigo.h"
-
-#include "../inimigo/esqueleto.h"
-
-#include "../inimigo/slime.h"
-
-#include "../Obstaculo/Plataforma.h"
-
-#include "../lista/listaEntidade.h"
+#include <fstream>
 
 namespace Game{
 
@@ -34,6 +32,7 @@ namespace Game{
             //listas de entidades
             Lista::ListaEntidade* listaPersonagens;
             Lista::ListaEntidade* listaObstaculos;
+            Entidade::Personagem::Jogador::Jogador* jogador;
 
             //objeto responsavel pela verificacao da colisao entre entidades
             Gerenciador::GerenciadorDeColisao* pColisao;

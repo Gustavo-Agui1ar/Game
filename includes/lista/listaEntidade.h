@@ -1,8 +1,8 @@
 #pragma once
 
-#include  "..//lista//lista.h"
-#include  "..//entidade//entidade.h"
-
+#include  "../lista/lista.h"
+#include  "../entidade/entidade.h"
+//#include "elementoEntidade.h"
 
 
 namespace Game{
@@ -15,6 +15,9 @@ namespace Game{
         private:
             //lista
             Lista<Entidade::Entidade> objListaEntidade;
+            //ElementoEntidade* pInicio;
+            //ElementoEntidade* pUltimo;
+            //unsigned int tam;
         
         public:
 

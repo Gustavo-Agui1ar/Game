@@ -3,6 +3,7 @@
 
 #include "../entidade/Ente.h"
 
+
 namespace Game{
 
     namespace Estado{

@@ -1,13 +1,21 @@
 CMakeFiles/testes.dir/src/fases/fase.cpp.obj: \
  C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos\ a\ parte\Game\src\fases\fase.cpp \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/fases/fase.h \
- C:/msys64/mingw64/include/c++/13.1.0/fstream \
+ C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/fases/fase.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/gerenciador/gerenciadorDeColisao.h \
+ C:/PROGRA~2/SFML/include/SFML/Graphics.hpp \
+ C:/PROGRA~2/SFML/include/SFML/Window.hpp \
+ C:/PROGRA~2/SFML/include/SFML/System.hpp \
+ C:/PROGRA~2/SFML/include/SFML/Config.hpp \
+ C:/PROGRA~2/SFML/include/SFML/System/Clock.hpp \
+ C:/PROGRA~2/SFML/include/SFML/System/Export.hpp \
+ C:/PROGRA~2/SFML/include/SFML/System/Time.hpp \
+ C:/PROGRA~2/SFML/include/SFML/System/Err.hpp \
+ C:/msys64/mingw64/include/c++/13.1.0/ostream \
  C:/msys64/mingw64/include/c++/13.1.0/bits/requires_hosted.h \
  C:/msys64/mingw64/include/c++/13.1.0/x86_64-w64-mingw32/bits/c++config.h \
  C:/msys64/mingw64/include/c++/13.1.0/x86_64-w64-mingw32/bits/os_defines.h \
  C:/msys64/mingw64/include/c++/13.1.0/x86_64-w64-mingw32/bits/cpu_defines.h \
  C:/msys64/mingw64/include/c++/13.1.0/pstl/pstl_config.h \
- C:/msys64/mingw64/include/c++/13.1.0/istream \
  C:/msys64/mingw64/include/c++/13.1.0/ios \
  C:/msys64/mingw64/include/c++/13.1.0/iosfwd \
  C:/msys64/mingw64/include/c++/13.1.0/bits/stringfwd.h \
@@ -134,24 +142,7 @@ CMakeFiles/testes.dir/src/fases/fase.cpp.obj: \
  C:/msys64/mingw64/include/c++/13.1.0/x86_64-w64-mingw32/bits/ctype_inline.h \
  C:/msys64/mingw64/include/c++/13.1.0/bits/locale_facets.tcc \
  C:/msys64/mingw64/include/c++/13.1.0/bits/basic_ios.tcc \
- C:/msys64/mingw64/include/c++/13.1.0/ostream \
  C:/msys64/mingw64/include/c++/13.1.0/bits/ostream.tcc \
- C:/msys64/mingw64/include/c++/13.1.0/bits/istream.tcc \
- C:/msys64/mingw64/include/c++/13.1.0/bits/codecvt.h \
- C:/msys64/mingw64/include/c++/13.1.0/x86_64-w64-mingw32/bits/basic_file.h \
- C:/msys64/mingw64/include/c++/13.1.0/x86_64-w64-mingw32/bits/c++io.h \
- C:/msys64/mingw64/include/c++/13.1.0/bits/fstream.tcc \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/Ente.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/IDs.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/gerenciador/gerenciadorGrafico.h \
- C:/PROGRA~2/SFML/include/SFML/Graphics.hpp \
- C:/PROGRA~2/SFML/include/SFML/Window.hpp \
- C:/PROGRA~2/SFML/include/SFML/System.hpp \
- C:/PROGRA~2/SFML/include/SFML/Config.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/Clock.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/Export.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/Time.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/Err.hpp \
  C:/PROGRA~2/SFML/include/SFML/System/FileInputStream.hpp \
  C:/PROGRA~2/SFML/include/SFML/System/InputStream.hpp \
  C:/PROGRA~2/SFML/include/SFML/System/NonCopyable.hpp \
@@ -174,6 +165,7 @@ CMakeFiles/testes.dir/src/fases/fase.cpp.obj: \
  C:/msys64/mingw64/include/c++/13.1.0/ctime \
  C:/msys64/mingw64/include/c++/13.1.0/x86_64-w64-mingw32/bits/time_members.h \
  C:/msys64/mingw64/include/c++/13.1.0/x86_64-w64-mingw32/bits/messages_members.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/codecvt.h \
  C:/msys64/mingw64/include/c++/13.1.0/bits/locale_facets_nonio.tcc \
  C:/msys64/mingw64/include/c++/13.1.0/bits/locale_conv.h \
  C:/PROGRA~2/SFML/include/SFML/System/Utf.inl \
@@ -251,15 +243,17 @@ CMakeFiles/testes.dir/src/fases/fase.cpp.obj: \
  C:/PROGRA~2/SFML/include/SFML/Graphics/Sprite.hpp \
  C:/PROGRA~2/SFML/include/SFML/Graphics/Text.hpp \
  C:/PROGRA~2/SFML/include/SFML/Graphics/VertexBuffer.hpp \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/gerenciador/camera.h \
- C:/msys64/mingw64/include/c++/13.1.0/iostream \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/fundo/fundo.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/fundo/camada.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/gerenciador/gerenciadorDeColisao.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/lista/listaEntidade.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/lista/lista.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/lista/elemento.h \
+ C:/msys64/mingw64/include/c++/13.1.0/iostream \
+ C:/msys64/mingw64/include/c++/13.1.0/istream \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/istream.tcc \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/entidade.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/Ente.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/IDs.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/gerenciador/gerenciadorGrafico.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/gerenciador/camera.h \
  C:/msys64/mingw64/include/c++/13.1.0/cmath \
  C:/msys64/mingw64/include/math.h \
  C:/msys64/mingw64/include/c++/13.1.0/bits/specfun.h \
@@ -276,18 +270,23 @@ CMakeFiles/testes.dir/src/fases/fase.cpp.obj: \
  C:/msys64/mingw64/include/c++/13.1.0/tr1/poly_hermite.tcc \
  C:/msys64/mingw64/include/c++/13.1.0/tr1/poly_laguerre.tcc \
  C:/msys64/mingw64/include/c++/13.1.0/tr1/riemann_zeta.tcc \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/gerenciador/gerenciadorDeEventos.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/jogador/jogador.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/Obstaculo/Plataforma.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/jogador/personagem.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/animador/animacao.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/animador/imagem.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/arma/arma.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/Obstaculo/Obstaculo.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/jogador/jogador.h \
  C:/msys64/mingw64/include/c++/13.1.0/math.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/inimigo/inimigo.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/inimigo/esqueleto.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/inimigo/slime.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/Obstaculo/Plataforma.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/Obstaculo/Obstaculo.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/fundo/fundo.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/fundo/camada.h \
+ C:/msys64/mingw64/include/c++/13.1.0/fstream \
+ C:/msys64/mingw64/include/c++/13.1.0/x86_64-w64-mingw32/bits/basic_file.h \
+ C:/msys64/mingw64/include/c++/13.1.0/x86_64-w64-mingw32/bits/c++io.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/fstream.tcc \
  C:/msys64/mingw64/include/unistd.h C:/msys64/mingw64/include/io.h \
  C:/msys64/mingw64/include/string.h \
  C:/msys64/mingw64/include/sec_api/string_s.h \

@@ -1,14 +1,11 @@
 
-#include "../../includes/fases/fase.h"
+#include "../includes/fases/fase.h"
 #include <unistd.h>
 
 namespace Game{
 
     namespace Fase{
-
-        using namespace Entidade;
-        using namespace Personagem;
-
+        
         /**
          * construtor da classe fase
          * 
@@ -45,13 +42,17 @@ namespace Game{
                 delete(pColisao);
             }
             
-            if(listaPersonagens != nullptr)
-            {
-                if(getJogador() != nullptr)
+           if(listaPersonagens != nullptr)
+           {
+                if(getJogador() != nullptr && jogador != nullptr)
                 {
                     delete(listaPersonagens);
-                } 
-
+                    jogador = nullptr;
+                }
+                else 
+                {
+                    delete(listaPersonagens);
+                }
                 listaPersonagens = nullptr;
             }
 
@@ -73,8 +74,8 @@ namespace Game{
 
         void Fase::criarJogador(const sf::Vector2f pos)
         {
-            Item::Arma* armaJogador = new Item::Arma(IDs::IDs::armaDoJogador); 
-            Jogador::Jogador* jogador =  new Jogador::Jogador(pos,sf::Vector2f(30,60),250);
+            Entidade::Item::Arma* armaJogador = new Entidade::Item::Arma(IDs::IDs::armaDoJogador); 
+            Entidade::Personagem::Jogador::Jogador* jogador =  new Entidade::Personagem::Jogador::Jogador(pos,sf::Vector2f(30,60),250);
 
             if(jogador == nullptr)
             {
@@ -91,8 +92,7 @@ namespace Game{
                 jogador->setArma(armaJogador);
             }
 
-            Gerenciador::GerenciadorDeEventos* pEvento = pEvento->getGerenciadorDeEventos();
-            pEvento->setJogador(jogador);
+            this->jogador = jogador;
 
             listaPersonagens->addEntidade(static_cast<Entidade::Entidade*>(jogador));
             listaPersonagens->addEntidade(static_cast<Entidade::Entidade*>(armaJogador));
@@ -110,8 +110,7 @@ namespace Game{
 
         void Fase::criarInimigo(const sf::Vector2f pos, const char letra)
         {
-            Jogador::Jogador* jogador = getJogador();
-            Item::Arma* arma = new Item::Arma(IDs::IDs::armaDoIimigo);
+            Entidade::Item::Arma* arma = new Entidade::Item::Arma(IDs::IDs::armaDoIimigo);
             Entidade::Entidade* inimigo = nullptr;
             if(arma == nullptr){
                 std::cout<<"nao foi possivel criar uma arma";
@@ -120,13 +119,13 @@ namespace Game{
 
             if(letra == 'e'){
                 
-                Inimigo::Esqueleto* esqueleto = new Inimigo::Esqueleto(pos,sf::Vector2f(30,60),50,jogador);
+                Entidade::Personagem::Inimigo::Esqueleto* esqueleto = new Entidade::Personagem::Inimigo::Esqueleto(pos,sf::Vector2f(30,60),50,this->jogador);
                 esqueleto->setArma(arma);
                 inimigo = static_cast<Entidade::Entidade*>(esqueleto);
             }
             else if (letra == 's'){
                 
-                Inimigo::Slime* slime = new Inimigo::Slime(pos,sf::Vector2f(30,60),50,jogador);
+                Entidade::Personagem::Inimigo::Slime* slime = new Entidade::Personagem::Inimigo::Slime(pos,sf::Vector2f(30,60),50,this->jogador);
                 slime->setArma(arma);
                 inimigo = static_cast<Entidade::Entidade*>(slime);
             }
@@ -176,7 +175,7 @@ namespace Game{
         void Fase::executar()
         {
             
-            if(getJogador() != nullptr)
+            if(jogador != nullptr)
             {
                 fundo.executar();
 
@@ -208,14 +207,14 @@ namespace Game{
          * jogador se existir se nao retorna null
         */
 
-         Jogador::Jogador* Fase::getJogador()
+         Entidade::Personagem::Jogador::Jogador* Fase::getJogador()
          {
             for(int i = 0; i < listaPersonagens->getTam(); i++)
             {
-                Entidade::Entidade* ent = listaPersonagens->operator[](i);
-                if(ent->getID() == IDs::IDs::jogador)
+                Entidade::Entidade* aux = listaPersonagens->operator[](i);
+                if(aux->getID() == IDs::IDs::jogador)
                 {
-                    return dynamic_cast<Jogador::Jogador*>(ent);
+                    return dynamic_cast<Entidade::Personagem::Jogador::Jogador*>(aux);
                 }
             }
             return nullptr;

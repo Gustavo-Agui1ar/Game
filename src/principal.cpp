@@ -5,12 +5,18 @@
 
 Game::Principal::Principal()
 {
+
     gerenciadorGrafico = gerenciadorGrafico->getGerenciadorGrafico();
 
     gerenciadorDeEventos = gerenciadorDeEventos->getGerenciadorDeEventos();
 
-    fase = nullptr;
+    pEstado = pEstado->getGerenciadorDeEstado();
 
+    if(pEstado == nullptr)
+    {
+        std::cout<<"nao foi possivel criar o gEstado";
+        exit(1);
+    }
 
     if(gerenciadorGrafico == nullptr)
     {
@@ -22,7 +28,8 @@ Game::Principal::Principal()
         std::cout<<"nao foi possivel criar o geerenciador de eventos";
         exit(1);
     }
-    criarFase();
+
+    criarEstadoInicial();
     executar();
 
 }
@@ -37,7 +44,7 @@ void Game::Principal::executar()
 
         gerenciadorGrafico->limpaJanela();
 
-        fase->executar();
+        pEstado->executar();
 
         gerenciadorGrafico->mostraElementos();
 
@@ -50,28 +57,12 @@ void Game::Principal::executar()
 
 Game::Principal::~Principal()
 {
-    if(fase)
-    {
-        delete(fase);
-        fase = nullptr;
-    }
+
 }
 
 /*------------------------------------------------------------------*/
 
-void Game::Principal::criarFase()
+void Game::Principal::criarEstadoInicial()
 {
-    //Fase::Caverna* aux = new Fase::Caverna();
-    Fase::Forest* aux = new Fase::Forest();
-
-    if(aux == nullptr)
-    {
-       std::cout<<"nao foi possivel criar a fase";
-       exit(1);
-    }
-    fase = static_cast<Fase::Fase*>(aux);
-
-    fase->criarFundo();
-    fase->criarMapa();
-
+    pEstado->addEstado(IDs::IDs::forest);
 }
