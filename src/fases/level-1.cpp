@@ -83,6 +83,9 @@ namespace Game{
                 j++;
             }
 
+        listaPersonagens->removerEntidade(2);    
+        listaPersonagens->removerEntidade(3);    
+
             arquivo.close();
         }
 

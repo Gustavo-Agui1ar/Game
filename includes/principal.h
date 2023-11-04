@@ -6,6 +6,7 @@
 #include "gerenciador/gerenciadorGrafico.h"
 #include "gerenciador/gerenciadorDeEventos.h"
 #include "gerenciador/gerenciadorDeEstado.h"
+
 #include "fases/level-1.h"
 #include "fases/level-2.h"
 

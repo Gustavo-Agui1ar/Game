@@ -42,8 +42,8 @@ namespace Game{
                 delete(pColisao);
             }
             
-           if(listaPersonagens != nullptr)
-           {
+            if(listaPersonagens != nullptr)
+            {
                 if(getJogador() != nullptr && jogador != nullptr)
                 {
                     delete(listaPersonagens);

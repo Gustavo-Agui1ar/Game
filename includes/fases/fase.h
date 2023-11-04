@@ -9,13 +9,9 @@
 
 #include "../inimigo/esqueleto.h"
 
-#include "../inimigo/inimigo.h"
-
 #include "../jogador/jogador.h"
 
 #include "../inimigo/slime.h"
-
-#include "../entidade/Ente.h"
 
 #include "../fundo/fundo.h"
 

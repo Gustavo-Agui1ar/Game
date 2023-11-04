@@ -6,7 +6,6 @@
 #include "../jogador/jogador.h"
 #include "../fases/level-1.h"
 #include "../fases/level-2.h"
-#include "../fases/fase.h"
 
 namespace Game{
 
