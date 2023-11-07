@@ -53,5 +53,21 @@ namespace Game{
         {
             return fase->getJogador();
         }
+
+        void EstadoFase::mudarEstadoListener()
+        {
+            Entidade::Personagem::Jogador::Jogador* jogador = fase->getJogador();
+
+            if(jogador == nullptr)
+            {
+                std::cout<<"nao foi possivel recuperar jogador (lestener)";
+                exit(1);
+            }
+
+            jogador->mudarEstadoListener();
+
+            fase->mudarEstadoListener();
+        
+        }
     }
 }

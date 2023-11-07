@@ -1,5 +1,6 @@
-#include "../../includes/jogador/jogador.h"
+#include "../includes/listeners/listenerJogador.h"
 #include "../../includes/inimigo/esqueleto.h"
+#include "../../includes/jogador/jogador.h"
 #include "../../includes/inimigo/slime.h"
 
 
@@ -13,6 +14,11 @@ namespace Game{
 
                     Jogador::~Jogador()
                     {
+                        if(listenerJogador != nullptr)
+                        {
+                            delete(listenerJogador);
+                            listenerJogador = nullptr;
+                        }
                         if(tuboVida.getTexture()){
                             delete(tuboVida.getTexture());
                         }
@@ -34,7 +40,8 @@ namespace Game{
                      */
 
                     Jogador::Jogador(const sf::Vector2f pos,const sf::Vector2f tam, const float vel, Item::Arma* arma):
-                    Personagem(pos,tam,vel,IDs::IDs::jogador, JOGADOR_TEMPO_LEVAR_DANO, JOGADOR_ANIMACAO_DE_MORTE, DANO_JOGADOR),noChao(false)
+                    Personagem(pos,tam,vel,IDs::IDs::jogador, JOGADOR_TEMPO_LEVAR_DANO, JOGADOR_ANIMACAO_DE_MORTE, DANO_JOGADOR),noChao(false),
+                    listenerJogador(new Listener::ListenerJogador(this))
                     {
                        animacao.addAnimacao(CAMINHO_TEXTURA_IDLE,"PARADO",7,0.16,sf::Vector2f{6,2});
                        animacao.addAnimacao(CAMINHO_TEXTURA_JUMP,"PULO",9,0.12,sf::Vector2f{6,2});
@@ -204,7 +211,15 @@ namespace Game{
                         }
                     }
 
+                    const bool Jogador::getNoChao()
+                    {
+                        return noChao;
+                    }
 
+                    void Jogador::mudarEstadoListener()
+                    {
+                        listenerJogador->mudarEstado();
+                    }
             }
         }
     }

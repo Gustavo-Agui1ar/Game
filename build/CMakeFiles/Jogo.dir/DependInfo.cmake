@@ -33,6 +33,10 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/jogador/jogador.cpp" "CMakeFiles/Jogo.dir/src/jogador/jogador.cpp.obj" "gcc" "CMakeFiles/Jogo.dir/src/jogador/jogador.cpp.obj.d"
   "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/jogador/personagem.cpp" "CMakeFiles/Jogo.dir/src/jogador/personagem.cpp.obj" "gcc" "CMakeFiles/Jogo.dir/src/jogador/personagem.cpp.obj.d"
   "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/lista/listaEntidade.cpp" "CMakeFiles/Jogo.dir/src/lista/listaEntidade.cpp.obj" "gcc" "CMakeFiles/Jogo.dir/src/lista/listaEntidade.cpp.obj.d"
+  "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/lista/listaListener.cpp" "CMakeFiles/Jogo.dir/src/lista/listaListener.cpp.obj" "gcc" "CMakeFiles/Jogo.dir/src/lista/listaListener.cpp.obj.d"
+  "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/listeners/listener.cpp" "CMakeFiles/Jogo.dir/src/listeners/listener.cpp.obj" "gcc" "CMakeFiles/Jogo.dir/src/listeners/listener.cpp.obj.d"
+  "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/listeners/listenerFase.cpp" "CMakeFiles/Jogo.dir/src/listeners/listenerFase.cpp.obj" "gcc" "CMakeFiles/Jogo.dir/src/listeners/listenerFase.cpp.obj.d"
+  "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/listeners/listenerJogador.cpp" "CMakeFiles/Jogo.dir/src/listeners/listenerJogador.cpp.obj" "gcc" "CMakeFiles/Jogo.dir/src/listeners/listenerJogador.cpp.obj.d"
   "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/main.cpp" "CMakeFiles/Jogo.dir/src/main.cpp.obj" "gcc" "CMakeFiles/Jogo.dir/src/main.cpp.obj.d"
   "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/principal.cpp" "CMakeFiles/Jogo.dir/src/principal.cpp.obj" "gcc" "CMakeFiles/Jogo.dir/src/principal.cpp.obj.d"
   )

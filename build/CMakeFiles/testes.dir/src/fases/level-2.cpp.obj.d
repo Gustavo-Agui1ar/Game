@@ -271,6 +271,8 @@ CMakeFiles/testes.dir/src/fases/level-2.cpp.obj: \
  C:/msys64/mingw64/include/c++/13.1.0/tr1/poly_hermite.tcc \
  C:/msys64/mingw64/include/c++/13.1.0/tr1/poly_laguerre.tcc \
  C:/msys64/mingw64/include/c++/13.1.0/tr1/riemann_zeta.tcc \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/listeners/listenerFase.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/listeners/listener.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/Obstaculo/Plataforma.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/jogador/personagem.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/animador/animacao.h \

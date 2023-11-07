@@ -37,6 +37,8 @@ namespace Game{
 
         void GerenciadorDeEstado::addEstado(IDs::IDs ID)
         {
+            Estado::Estado* estado = nullptr;
+
             if(ID == IDs::IDs::forest || ID == IDs::IDs::caverna)
             {
                 Estado::EstadoFase* fase = new Estado::EstadoFase(ID);
@@ -46,8 +48,18 @@ namespace Game{
                     std::cout<<"estado nao criado";
                     exit(1);
                 }
-                pilhaEstados.push(static_cast<Estado::Estado*>(fase));
+
+                estado = static_cast<Estado::Estado*>(fase);
             }
+
+            if(!pilhaEstados.empty())
+            {
+                Estado::Estado* estado = getEstadoAtual();
+                estado->mudarEstadoListener();
+            }
+
+            if(estado != nullptr)
+                pilhaEstados.push(estado);
         }
 
         void GerenciadorDeEstado::removerEstado()
@@ -59,8 +71,13 @@ namespace Game{
                 pilhaEstados.pop();
             }
 
-            if(pilhaEstados.empty())
+            if(!pilhaEstados.empty())
             {
+                Estado::Estado* estado = getEstadoAtual();
+                estado->mudarEstadoListener();
+            }
+            
+            else{
                 Gerenciador::GerenciadorGrafico* pGrafico = pGrafico->getGerenciadorGrafico();
                 pGrafico->fechaJanela();
             }

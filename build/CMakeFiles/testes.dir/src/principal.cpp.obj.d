@@ -282,6 +282,8 @@ CMakeFiles/testes.dir/src/principal.cpp.obj: \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/lista/listaEntidade.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/lista/lista.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/lista/elemento.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/listeners/listenerFase.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/listeners/listener.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/Obstaculo/Plataforma.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/Obstaculo/Obstaculo.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/inimigo/inimigo.h \
@@ -298,4 +300,5 @@ CMakeFiles/testes.dir/src/principal.cpp.obj: \
  C:/msys64/mingw64/include/c++/13.1.0/deque \
  C:/msys64/mingw64/include/c++/13.1.0/bits/stl_deque.h \
  C:/msys64/mingw64/include/c++/13.1.0/bits/deque.tcc \
- C:/msys64/mingw64/include/c++/13.1.0/bits/stl_stack.h
+ C:/msys64/mingw64/include/c++/13.1.0/bits/stl_stack.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/lista/listaListener.h

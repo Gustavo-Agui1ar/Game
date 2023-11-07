@@ -28,6 +28,19 @@ namespace Game{
                 std::cout<<"n�o foi possivel iniciar o pColisao";
                 exit(1);
             }
+
+           
+            listenerFase = new Listener::ListenerFase();
+
+             if(listenerFase == nullptr)
+             {
+                std::cout<<"nao foi possivel criar o listener da fase";
+                exit(1);
+             }
+
+             listenerFase->setFase(this);
+            
+
         }
 
         /**
@@ -175,7 +188,7 @@ namespace Game{
         void Fase::executar()
         {
             
-            if(jogador != nullptr)
+            if(getJogador() != nullptr)
             {
                 fundo.executar();
 
@@ -184,9 +197,7 @@ namespace Game{
                 pColisao->executar();
             }
             else{
-                std::cout<<"game over";
-                sleep(2);
-                exit(1);
+                listenerFase->notificarGameOver();
             }
         }
 
@@ -218,6 +229,11 @@ namespace Game{
                 }
             }
             return nullptr;
+        }
+
+        void Fase::mudarEstadoListener()
+        {
+            listenerFase->mudarEstado();
         }
     }
 }

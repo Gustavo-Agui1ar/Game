@@ -816,6 +816,114 @@ src/lista/listaEntidade.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/lista/listaEntidade.cpp.s
 .PHONY : src/lista/listaEntidade.cpp.s
 
+src/lista/listaListener.obj: src/lista/listaListener.cpp.obj
+.PHONY : src/lista/listaListener.obj
+
+# target to build an object file
+src/lista/listaListener.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/lista/listaListener.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/lista/listaListener.cpp.obj
+.PHONY : src/lista/listaListener.cpp.obj
+
+src/lista/listaListener.i: src/lista/listaListener.cpp.i
+.PHONY : src/lista/listaListener.i
+
+# target to preprocess a source file
+src/lista/listaListener.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/lista/listaListener.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/lista/listaListener.cpp.i
+.PHONY : src/lista/listaListener.cpp.i
+
+src/lista/listaListener.s: src/lista/listaListener.cpp.s
+.PHONY : src/lista/listaListener.s
+
+# target to generate assembly for a file
+src/lista/listaListener.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/lista/listaListener.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/lista/listaListener.cpp.s
+.PHONY : src/lista/listaListener.cpp.s
+
+src/listeners/listener.obj: src/listeners/listener.cpp.obj
+.PHONY : src/listeners/listener.obj
+
+# target to build an object file
+src/listeners/listener.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/listeners/listener.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/listeners/listener.cpp.obj
+.PHONY : src/listeners/listener.cpp.obj
+
+src/listeners/listener.i: src/listeners/listener.cpp.i
+.PHONY : src/listeners/listener.i
+
+# target to preprocess a source file
+src/listeners/listener.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/listeners/listener.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/listeners/listener.cpp.i
+.PHONY : src/listeners/listener.cpp.i
+
+src/listeners/listener.s: src/listeners/listener.cpp.s
+.PHONY : src/listeners/listener.s
+
+# target to generate assembly for a file
+src/listeners/listener.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/listeners/listener.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/listeners/listener.cpp.s
+.PHONY : src/listeners/listener.cpp.s
+
+src/listeners/listenerFase.obj: src/listeners/listenerFase.cpp.obj
+.PHONY : src/listeners/listenerFase.obj
+
+# target to build an object file
+src/listeners/listenerFase.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/listeners/listenerFase.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/listeners/listenerFase.cpp.obj
+.PHONY : src/listeners/listenerFase.cpp.obj
+
+src/listeners/listenerFase.i: src/listeners/listenerFase.cpp.i
+.PHONY : src/listeners/listenerFase.i
+
+# target to preprocess a source file
+src/listeners/listenerFase.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/listeners/listenerFase.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/listeners/listenerFase.cpp.i
+.PHONY : src/listeners/listenerFase.cpp.i
+
+src/listeners/listenerFase.s: src/listeners/listenerFase.cpp.s
+.PHONY : src/listeners/listenerFase.s
+
+# target to generate assembly for a file
+src/listeners/listenerFase.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/listeners/listenerFase.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/listeners/listenerFase.cpp.s
+.PHONY : src/listeners/listenerFase.cpp.s
+
+src/listeners/listenerJogador.obj: src/listeners/listenerJogador.cpp.obj
+.PHONY : src/listeners/listenerJogador.obj
+
+# target to build an object file
+src/listeners/listenerJogador.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/listeners/listenerJogador.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/listeners/listenerJogador.cpp.obj
+.PHONY : src/listeners/listenerJogador.cpp.obj
+
+src/listeners/listenerJogador.i: src/listeners/listenerJogador.cpp.i
+.PHONY : src/listeners/listenerJogador.i
+
+# target to preprocess a source file
+src/listeners/listenerJogador.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/listeners/listenerJogador.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/listeners/listenerJogador.cpp.i
+.PHONY : src/listeners/listenerJogador.cpp.i
+
+src/listeners/listenerJogador.s: src/listeners/listenerJogador.cpp.s
+.PHONY : src/listeners/listenerJogador.s
+
+# target to generate assembly for a file
+src/listeners/listenerJogador.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/listeners/listenerJogador.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/listeners/listenerJogador.cpp.s
+.PHONY : src/listeners/listenerJogador.cpp.s
+
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -955,6 +1063,18 @@ help:
 	@echo ... src/lista/listaEntidade.obj
 	@echo ... src/lista/listaEntidade.i
 	@echo ... src/lista/listaEntidade.s
+	@echo ... src/lista/listaListener.obj
+	@echo ... src/lista/listaListener.i
+	@echo ... src/lista/listaListener.s
+	@echo ... src/listeners/listener.obj
+	@echo ... src/listeners/listener.i
+	@echo ... src/listeners/listener.s
+	@echo ... src/listeners/listenerFase.obj
+	@echo ... src/listeners/listenerFase.i
+	@echo ... src/listeners/listenerFase.s
+	@echo ... src/listeners/listenerJogador.obj
+	@echo ... src/listeners/listenerJogador.i
+	@echo ... src/listeners/listenerJogador.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

@@ -3,6 +3,8 @@
 
 #include "../gerenciador/gerenciadorDeColisao.h"
 
+#include "../listeners/listenerFase.h"
+
 #include "../Obstaculo/Plataforma.h"
 
 #include "../lista/listaEntidade.h"
@@ -25,6 +27,8 @@ namespace Game{
 
         protected:
             
+            Listener::ListenerFase* listenerFase;
+
             //listas de entidades
             Lista::ListaEntidade* listaPersonagens;
             Lista::ListaEntidade* listaObstaculos;
@@ -42,6 +46,7 @@ namespace Game{
             Fase(const IDs::IDs ID_Fase, const IDs::IDs ID_Fundo);
             virtual ~Fase();
             
+            void mudarEstadoListener();
 
             //metodos de criacao de entidades
             void criarInimigo(const sf::Vector2f pos, const char letra);

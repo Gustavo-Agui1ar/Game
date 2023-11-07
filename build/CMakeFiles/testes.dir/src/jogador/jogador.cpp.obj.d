@@ -1,5 +1,6 @@
 CMakeFiles/testes.dir/src/jogador/jogador.cpp.obj: \
  C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos\ a\ parte\Game\src\jogador\jogador.cpp \
+ C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/listeners/listenerJogador.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/jogador/jogador.h \
  C:/PROGRA~2/SFML/include/SFML/Graphics.hpp \
  C:/PROGRA~2/SFML/include/SFML/Window.hpp \
@@ -271,6 +272,7 @@ CMakeFiles/testes.dir/src/jogador/jogador.cpp.obj: \
  C:/msys64/mingw64/include/c++/13.1.0/tr1/poly_hermite.tcc \
  C:/msys64/mingw64/include/c++/13.1.0/tr1/poly_laguerre.tcc \
  C:/msys64/mingw64/include/c++/13.1.0/tr1/riemann_zeta.tcc \
+ C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/listeners/listener.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/inimigo/esqueleto.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/inimigo/inimigo.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/inimigo/slime.h

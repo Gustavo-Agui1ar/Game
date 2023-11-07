@@ -24,6 +24,9 @@ namespace Game{
 
             void criarFase();
             void executar();
+
+            void mudarEstadoListener();
+
             Entidade::Personagem::Jogador::Jogador* getPlayer();
         };
     }
