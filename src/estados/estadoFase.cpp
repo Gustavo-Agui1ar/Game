@@ -36,7 +36,7 @@ namespace Game{
 
             if(fase == nullptr)
             {
-                std::cout<<"nao foi possivel criar um estadoFAse";
+                std::cout<<"Estados::EstadoFase: nao foi possivel criar um estadoFase";
                 exit(1);
             }
 
@@ -60,7 +60,7 @@ namespace Game{
 
             if(jogador == nullptr)
             {
-                std::cout<<"nao foi possivel recuperar jogador (lestener)";
+                std::cout<<"Estados::EstadoFase: nao foi possivel recuperar jogador";
                 exit(1);
             }
 

@@ -112,7 +112,7 @@ namespace Game{
         {
             Camada* camada = new Camada((sf::Vector2f)pGrafico->getWindow()->getSize(),pGrafico->carregarTextura(caminhoTextura),vel);
             if(camada == nullptr)
-                std::cout<<"erro ao adicionar camada de fundo";
+                std::cout<<"Fundo::Fundo: erro ao adicionar camada de fundo";
             camadas.push_back(camada);
         }
     }

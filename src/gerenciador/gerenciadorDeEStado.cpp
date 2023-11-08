@@ -45,7 +45,7 @@ namespace Game{
                
                 if(fase == nullptr)
                 {
-                    std::cout<<"estado nao criado";
+                    std::cout<<"Gerenciador::GerenciadorDeEstado: erro ao criar estado";
                     exit(1);
                 }
 

@@ -23,10 +23,17 @@ namespace Game{
             {
                 Gerenciador::GerenciadorGrafico* pGrafico = pGrafico->getGerenciadorGrafico();
                 
-                if(ID == IDs::IDs::caverna)
-                   textura = pGrafico->carregarTextura(CAMINHO_TEXTURA_PLATAFORMA_CAVERNA);
-                else if(ID == IDs::IDs::forest)
-                   textura = pGrafico->carregarTextura(CAMINHO_TEXTURA_PLATAFORMA_FOREST);
+                switch(ID)
+                {
+                    case(IDs::IDs::caverna):
+                         textura = pGrafico->carregarTextura(CAMINHO_TEXTURA_PLATAFORMA_CAVERNA);
+                         break;
+                    case(IDs::IDs::forest):
+                        textura = pGrafico->carregarTextura(CAMINHO_TEXTURA_PLATAFORMA_FOREST);
+                        break;
+                    default:
+                        break;
+                }
 
                 corpo.setTexture(&textura);
             

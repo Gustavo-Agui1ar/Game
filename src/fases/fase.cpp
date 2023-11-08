@@ -15,7 +15,7 @@ namespace Game{
          * ID_Fundo: identificador do fundo
         */
         
-        Fase::Fase::Fase(const IDs::IDs ID_Fase, const IDs::IDs ID_Fundo):
+        Fase::Fase(const IDs::IDs ID_Fase, const IDs::IDs ID_Fundo):
         Ente(ID_Fase),fundo(ID_Fundo)
         {
             listaPersonagens = new Lista::ListaEntidade();
@@ -25,7 +25,7 @@ namespace Game{
 
             if(pColisao == nullptr)
             {
-                std::cout<<"n�o foi possivel iniciar o pColisao";
+                std::cout<<"Fase::Fase: nao foi possivel iniciar o pColisao";
                 exit(1);
             }
 
@@ -34,7 +34,7 @@ namespace Game{
 
              if(listenerFase == nullptr)
              {
-                std::cout<<"nao foi possivel criar o listener da fase";
+                std::cout<<"Fase::Fase: nao foi possivel criar o listener da fase";
                 exit(1);
              }
 
@@ -92,12 +92,12 @@ namespace Game{
 
             if(jogador == nullptr)
             {
-                std::cout<<"nao foi possvel criar o jogador";
+                std::cout<<"Fase::Fase: nao foi possvel criar o jogador";
                 exit(1);
             }
             if(armaJogador == nullptr)
             {
-                std::cout<<"nao foi possvel criar a arma";
+                std::cout<<"Fase::Fase: nao foi possvel criar a arma do jogador";
                 exit(1);
             }
             if(armaJogador != nullptr)
@@ -125,11 +125,13 @@ namespace Game{
         {
             Entidade::Item::Arma* arma = new Entidade::Item::Arma(IDs::IDs::armaDoIimigo);
             Entidade::Entidade* inimigo = nullptr;
-            if(arma == nullptr){
-                std::cout<<"nao foi possivel criar uma arma";
+           
+            if(arma == nullptr)
+            {
+                std::cout<<"Fase::Fase: nao foi possivel criar a arma do inimigo";
                 exit(1);
             }
-
+            
             if(letra == 'e'){
                 
                 Entidade::Personagem::Inimigo::Esqueleto* esqueleto = new Entidade::Personagem::Inimigo::Esqueleto(pos,sf::Vector2f(30,60),50,this->jogador);
@@ -144,12 +146,14 @@ namespace Game{
             }
 
 
-            if(inimigo != nullptr) 
+            if(inimigo == nullptr) 
             {
-                listaPersonagens->addEntidade(inimigo);
-                listaPersonagens->addEntidade(static_cast<Entidade::Entidade*>(arma));
+                std::cout<<"Fase::Fase: nao foi possivel criar o inimigo";
+                exit(1);
             }
             
+            listaPersonagens->addEntidade(inimigo);
+            listaPersonagens->addEntidade(static_cast<Entidade::Entidade*>(arma));
             
         }
 

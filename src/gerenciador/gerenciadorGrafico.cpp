@@ -21,7 +21,7 @@ namespace Game{
         {
             if(window == nullptr)
             {
-                std::cout<<"error";
+                std::cout<<"Gerenciador::GerenciadorGrafico: erro ao criar janela";
                 exit(1);
             }
         }
@@ -151,7 +151,7 @@ namespace Game{
             sf::Texture textura;
 
             if(!textura.loadFromFile(caminhoTextura)){
-                std::cout<<"nao foi possivel carregar a textura";
+                std::cout<<"Gerenciador::GerenciadorGrafico: nao foi possivel carregar a textura";
                 exit(1);
             }
             return textura;

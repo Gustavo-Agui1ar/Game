@@ -65,7 +65,7 @@ namespace Game{
 
             if(!arquivo.is_open())
             {
-                std::cout<<"erro ao abrir arquivo da fase caverna";
+                std::cout<<"Fase::Caverna: erro ao abrir arquivo da fase caverna";
                 exit(1);
             }
 
@@ -98,7 +98,7 @@ namespace Game{
             Entidade::Obstaculo::Plataforma* plataforma = new Entidade::Obstaculo::Plataforma(pos,sf::Vector2f(200.0f,40.0f),IDs::IDs::caverna);
             if(plataforma == nullptr)
             {
-                std::cout<<"nao foi possivel criar uma plataforma";
+                std::cout<<"Fase::Caverna: nao foi possivel criar uma plataforma";
                 exit(1);
             }
             Entidade::Entidade* plat = static_cast<Entidade::Entidade*>(plataforma);
