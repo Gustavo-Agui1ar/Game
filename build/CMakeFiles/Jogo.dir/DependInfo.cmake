@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/animador/animacao.cpp" "CMakeFiles/Jogo.dir/src/animador/animacao.cpp.obj" "gcc" "CMakeFiles/Jogo.dir/src/animador/animacao.cpp.obj.d"
   "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/animador/imagem.cpp" "CMakeFiles/Jogo.dir/src/animador/imagem.cpp.obj" "gcc" "CMakeFiles/Jogo.dir/src/animador/imagem.cpp.obj.d"
   "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/arma/arma.cpp" "CMakeFiles/Jogo.dir/src/arma/arma.cpp.obj" "gcc" "CMakeFiles/Jogo.dir/src/arma/arma.cpp.obj.d"
+  "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/botao/texto.cpp" "CMakeFiles/Jogo.dir/src/botao/texto.cpp.obj" "gcc" "CMakeFiles/Jogo.dir/src/botao/texto.cpp.obj.d"
   "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/entidade/Ente.cpp" "CMakeFiles/Jogo.dir/src/entidade/Ente.cpp.obj" "gcc" "CMakeFiles/Jogo.dir/src/entidade/Ente.cpp.obj.d"
   "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/entidade/entidade.cpp" "CMakeFiles/Jogo.dir/src/entidade/entidade.cpp.obj" "gcc" "CMakeFiles/Jogo.dir/src/entidade/entidade.cpp.obj.d"
   "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/estados/estado.cpp" "CMakeFiles/Jogo.dir/src/estados/estado.cpp.obj" "gcc" "CMakeFiles/Jogo.dir/src/estados/estado.cpp.obj.d"

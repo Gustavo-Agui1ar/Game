@@ -12,6 +12,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/testes.dir/src/animador/imagem.cpp.obj.d"
   "CMakeFiles/testes.dir/src/arma/arma.cpp.obj"
   "CMakeFiles/testes.dir/src/arma/arma.cpp.obj.d"
+  "CMakeFiles/testes.dir/src/botao/texto.cpp.obj"
+  "CMakeFiles/testes.dir/src/botao/texto.cpp.obj.d"
   "CMakeFiles/testes.dir/src/entidade/Ente.cpp.obj"
   "CMakeFiles/testes.dir/src/entidade/Ente.cpp.obj.d"
   "CMakeFiles/testes.dir/src/entidade/entidade.cpp.obj"

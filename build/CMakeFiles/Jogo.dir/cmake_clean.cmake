@@ -12,6 +12,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Jogo.dir/src/animador/imagem.cpp.obj.d"
   "CMakeFiles/Jogo.dir/src/arma/arma.cpp.obj"
   "CMakeFiles/Jogo.dir/src/arma/arma.cpp.obj.d"
+  "CMakeFiles/Jogo.dir/src/botao/texto.cpp.obj"
+  "CMakeFiles/Jogo.dir/src/botao/texto.cpp.obj.d"
   "CMakeFiles/Jogo.dir/src/entidade/Ente.cpp.obj"
   "CMakeFiles/Jogo.dir/src/entidade/Ente.cpp.obj.d"
   "CMakeFiles/Jogo.dir/src/entidade/entidade.cpp.obj"

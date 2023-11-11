@@ -12,7 +12,8 @@ namespace Game{
 
         }
 
-        ListaEntidade::~ListaEntidade(){
+        ListaEntidade::~ListaEntidade()
+        {
             objListaEntidade.limparLista();
         }
 

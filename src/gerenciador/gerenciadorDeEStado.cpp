@@ -29,7 +29,7 @@ namespace Game{
 
             while(!pilhaEstados.empty())
             {
-                delete(pilhaEstados.top());
+                //delete(pilhaEstados.top());
                 pilhaEstados.top() = nullptr;
                 pilhaEstados.pop();
             }
@@ -66,7 +66,7 @@ namespace Game{
         {
             if(pilhaEstados.top() != nullptr && !pilhaEstados.empty())
             {
-                //delete(pilhaEstados.top());
+                delete(pilhaEstados.top());
                 pilhaEstados.top() = nullptr;
                 pilhaEstados.pop();
             }

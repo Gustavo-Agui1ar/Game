@@ -201,8 +201,6 @@ namespace Game{
                     if(barraDeVida.getTexture()){
                         delete(barraDeVida.getTexture());
                     }
-                    if(arma != nullptr)
-                        arma = nullptr;
                 }
 
             }

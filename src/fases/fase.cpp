@@ -55,17 +55,18 @@ namespace Game{
                 delete(pColisao);
             }
             
-            if(listaPersonagens != nullptr)
+            if(listenerFase != nullptr){
+                delete(listenerFase);
+                listenerFase = nullptr;
+            }
+
+
+            /*if(listaPersonagens != nullptr)
             {
-                if(getJogador() != nullptr && jogador != nullptr)
-                {
-                    delete(listaPersonagens);
-                    jogador = nullptr;
-                }
-                else 
-                {
-                    delete(listaPersonagens);
-                }
+                
+                delete(listaPersonagens);
+                jogador = nullptr;
+              
                 listaPersonagens = nullptr;
             }
 
@@ -73,7 +74,7 @@ namespace Game{
             {
                 delete(listaObstaculos);
                 listaObstaculos = nullptr;
-            }
+            }*/
 
         }
 
@@ -100,11 +101,8 @@ namespace Game{
                 std::cout<<"Fase::Fase: nao foi possvel criar a arma do jogador";
                 exit(1);
             }
-            if(armaJogador != nullptr)
-            {
-                jogador->setArma(armaJogador);
-            }
-
+           
+            jogador->setArma(armaJogador);
             this->jogador = jogador;
 
             listaPersonagens->addEntidade(static_cast<Entidade::Entidade*>(jogador));
@@ -124,7 +122,6 @@ namespace Game{
         void Fase::criarInimigo(const sf::Vector2f pos, const char letra)
         {
             Entidade::Item::Arma* arma = new Entidade::Item::Arma(IDs::IDs::armaDoIimigo);
-            Entidade::Entidade* inimigo = nullptr;
            
             if(arma == nullptr)
             {
@@ -135,26 +132,28 @@ namespace Game{
             if(letra == 'e'){
                 
                 Entidade::Personagem::Inimigo::Esqueleto* esqueleto = new Entidade::Personagem::Inimigo::Esqueleto(pos,sf::Vector2f(30,60),50,this->jogador);
+                if(esqueleto == nullptr)
+                {
+                    std::cout<<"Fase::Fase: nao foi possivel criar um slime";
+                    exit(1);
+                }
+                
                 esqueleto->setArma(arma);
-                inimigo = static_cast<Entidade::Entidade*>(esqueleto);
+                listaPersonagens->addEntidade(static_cast<Entidade::Entidade*>(esqueleto));
             }
             else if (letra == 's'){
                 
                 Entidade::Personagem::Inimigo::Slime* slime = new Entidade::Personagem::Inimigo::Slime(pos,sf::Vector2f(30,60),50,this->jogador);
+                if(slime == nullptr)
+                {
+                    std::cout<<"Fase::Fase: nao foi possivel criar um slime";
+                    exit(1);
+                }
                 slime->setArma(arma);
-                inimigo = static_cast<Entidade::Entidade*>(slime);
-            }
-
-
-            if(inimigo == nullptr) 
-            {
-                std::cout<<"Fase::Fase: nao foi possivel criar o inimigo";
-                exit(1);
+                listaPersonagens->addEntidade(static_cast<Entidade::Entidade*>(slime));
             }
             
-            listaPersonagens->addEntidade(inimigo);
             listaPersonagens->addEntidade(static_cast<Entidade::Entidade*>(arma));
-            
         }
 
         /**

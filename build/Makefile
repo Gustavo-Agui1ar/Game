@@ -276,6 +276,33 @@ src/arma/arma.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/arma/arma.cpp.s
 .PHONY : src/arma/arma.cpp.s
 
+src/botao/texto.obj: src/botao/texto.cpp.obj
+.PHONY : src/botao/texto.obj
+
+# target to build an object file
+src/botao/texto.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/texto.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/botao/texto.cpp.obj
+.PHONY : src/botao/texto.cpp.obj
+
+src/botao/texto.i: src/botao/texto.cpp.i
+.PHONY : src/botao/texto.i
+
+# target to preprocess a source file
+src/botao/texto.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/texto.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/botao/texto.cpp.i
+.PHONY : src/botao/texto.cpp.i
+
+src/botao/texto.s: src/botao/texto.cpp.s
+.PHONY : src/botao/texto.s
+
+# target to generate assembly for a file
+src/botao/texto.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/texto.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/botao/texto.cpp.s
+.PHONY : src/botao/texto.cpp.s
+
 src/entidade/Ente.obj: src/entidade/Ente.cpp.obj
 .PHONY : src/entidade/Ente.obj
 
@@ -1003,6 +1030,9 @@ help:
 	@echo ... src/arma/arma.obj
 	@echo ... src/arma/arma.i
 	@echo ... src/arma/arma.s
+	@echo ... src/botao/texto.obj
+	@echo ... src/botao/texto.i
+	@echo ... src/botao/texto.s
 	@echo ... src/entidade/Ente.obj
 	@echo ... src/entidade/Ente.i
 	@echo ... src/entidade/Ente.s

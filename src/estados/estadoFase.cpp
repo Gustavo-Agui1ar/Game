@@ -16,7 +16,7 @@ namespace Game{
         EstadoFase::~EstadoFase()
         {
             if(fase != nullptr)
-                delete(fase);
+               //delete(fase);
             fase = nullptr;
         }
 

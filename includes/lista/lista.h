@@ -61,7 +61,7 @@ namespace Game{
         template<class TL>
         Lista<TL>::~Lista()
         {
-            
+            //limparLista();
         }
 
         /**
@@ -205,7 +205,7 @@ namespace Game{
 
         template<class TL>
         int Lista<TL>::getTam(){
-            return (int)tam;
+            return tam;
         }
 
         /**
@@ -237,16 +237,20 @@ namespace Game{
         template<class TL>
         void Lista<TL>::limparLista()
         {
-            if(pInicio != nullptr){
+            if(pInicio != nullptr)
+            {
                 Elemento<TL>* aux = pInicio;
                 Elemento<TL>* aux2 = nullptr;
                 unsigned int i = 0;
-                while(aux != nullptr && i < tam){
+                while(aux != nullptr && i < tam)
+                {
                     TL* elemento = aux->getElemento();
-                    if(elemento != nullptr){
+                    if(elemento != nullptr)
+                    {
                         delete(elemento);
                         elemento = nullptr;
                     }
+
                     aux2 = aux->getProx();
                     delete(aux);
                     aux = nullptr;
@@ -256,7 +260,7 @@ namespace Game{
             }
             pInicio = nullptr;
             pUltimo = nullptr;
-            tam = 0;
+            this->tam = 0;
         }
     }
 }
