@@ -3,7 +3,8 @@
 
 #include "estado.h"
 
-#include "../jogador/jogador.h"
+#include "../gerenciador/GerenciadorGrafico.h"
+
 #include "../fases/level-1.h"
 #include "../fases/level-2.h"
 
@@ -27,7 +28,6 @@ namespace Game{
 
             void mudarEstadoListener();
 
-            Entidade::Personagem::Jogador::Jogador* getPlayer();
         };
     }
 

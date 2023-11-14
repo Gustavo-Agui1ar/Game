@@ -64,5 +64,5 @@ Game::Principal::~Principal()
 
 void Game::Principal::criarEstadoInicial()
 {
-    pEstado->addEstado(IDs::IDs::forest);
+    pEstado->addEstado(IDs::IDs::menu_principal);
 }

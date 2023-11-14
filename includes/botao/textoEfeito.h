@@ -21,7 +21,7 @@ namespace Game{
             public:
 
                 TextoEfeito(const sf::Font fonte, const std::string infoTexto);
-                ~TextoEfeito()
+                ~TextoEfeito();
 
                 void mudarTransparencia();
                 const bool getApagando();

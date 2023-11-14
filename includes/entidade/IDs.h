@@ -22,6 +22,7 @@ namespace IDs{
             armaDoIimigo,
 
             //botoes dos menus
+            fundo_menu,
             botao_novoJogo, 
             botao_carregar_jogo, 
             botao_opcao, 
@@ -29,6 +30,10 @@ namespace IDs{
             botao_voltar, 
             botao_salvar_jogo, 
             botao_carregar, 
-            botao_remover
+            botao_remover,
+
+            //IDs menus
+
+            menu_principal
         };
 }

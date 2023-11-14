@@ -7,7 +7,7 @@ namespace Game{
 
         namespace Botao{
 
-            Botao::Botao(const sf::Vector2f tam, const sf::Vector2f pos, const IDs::IDs ID, const float tempoTroca)
+            Botao::Botao(const sf::Vector2f tam, const sf::Vector2f pos, const IDs::IDs ID, const float tempoTroca):
             Ente(ID),tempoTroca(tempoTroca)
             {
                 textura = new sf::Texture();
@@ -32,20 +32,20 @@ namespace Game{
                 caixa.setPosition(pos);
             }
 
-            const sf::Vector2f Botao::getPosition()
+            const sf::Vector2f Botao::getPos()
             {
                 return caixa.getPosition();        
             }
 
             void Botao::setTextura(sf::Texture* textura)
             {
-                this->testura = textura;
+                this->textura = textura;
                 caixa.setTexture(textura);
             }
 
             void Botao::desenhar()
             {
-                pGrafico->desenharElemento(caixa);
+                pGrafico->desenhaElemento(caixa);
             }
 
             void Botao::atualizarAnimacao()

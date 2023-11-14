@@ -87,6 +87,15 @@ namespace Game{
             return ativo;
         }
 
+        void Listener::moveMouse(const sf::Vector2f posMouse)
+        {
+            
+        }
+
+        void Listener::botaoMouseSolta(const sf::Mouse::Button botaoMouse)
+        {
+            
+        }
     }
 
 }

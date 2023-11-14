@@ -37,13 +37,16 @@ namespace Game{
             //metod acessador da classe
             static GerenciadorGrafico* getGerenciadorGrafico();
 
-            //metodo que carrega textura
+            //metodo que carrega textura e fonte
             sf::Texture carregarTextura(const char* caminhoTextura);
+            sf::Font carregarFonte(const char* caminhoFonte);
            
            //metodos de visualiazacao
             void desenhaElemento(sf::RectangleShape corpo);
+            void desenhaElemento(sf::Text texto);
             const bool verificaJanelaAberta();
             void mostraElementos();
+            void resetarJanela();
             void fechaJanela();
             void limpaJanela();
            

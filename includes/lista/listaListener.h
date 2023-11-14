@@ -30,6 +30,8 @@ namespace Game{
 
             void tratarTeclaPressionada(const sf::Keyboard::Key tecla);
             void tratarTeclaSolta(const sf::Keyboard::Key tecla);
+            void notificarBotaoMouseSolta(const sf::Mouse::Button botaoMouse);
+            void notificarMovimentoMouse(const sf::Event::MouseMoveEvent mouse);
 
         };
     }

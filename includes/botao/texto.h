@@ -21,6 +21,8 @@ namespace Game{
 
             protected:
 
+                void inicializa();
+
                 //atributo pricipal da classe 
                 sf::Text texto;
 
@@ -36,7 +38,7 @@ namespace Game{
 
              public:
 
-                Texto(const sf::Font fonte, const std::string infoTexto,const unsigned int fonteTam = 50);
+                Texto(const sf::Font fonte, const std::string infoTexto, const unsigned int fonteTam = 50);
                 ~Texto();
                 
                 //metodos getters para atributos

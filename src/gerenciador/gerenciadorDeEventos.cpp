@@ -59,6 +59,10 @@ namespace Game{
                        listaListener->tratarTeclaPressionada(evento.key.code);
                     else if(evento.type == sf::Event::KeyReleased)
                        listaListener->tratarTeclaSolta(evento.key.code);
+                    else if(evento.type == sf::Event::MouseMoved)
+                        listaListener->notificarMovimentoMouse(evento.mouseMove);
+                    else if(evento.type == sf::Event::MouseButtonReleased)
+                        listaListener->notificarBotaoMouseSolta(evento.mouseButton.button);
                     else if(evento.type == sf::Event::Closed)
                         pGrafico->fechaJanela();
                 }

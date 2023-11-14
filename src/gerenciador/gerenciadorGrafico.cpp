@@ -157,6 +157,15 @@ namespace Game{
             return textura;
         }
 
+          sf::Font GerenciadorGrafico::carregarFonte(const char* caminhoFonte){
+            sf::Font fonte;
+            if(!(fonte.loadFromFile(caminhoFonte)))
+            {
+                throw("ERROR::Game::Gerenciador::GerenciadorGrafico::nao foi possivel encontrar o caminho da fonte");
+            }
+            return fonte;
+        }
+
         /**
         * metodo que atualiza a posicao da camera
         */ 
@@ -182,7 +191,17 @@ namespace Game{
         */
 
         const sf::Vector2f GerenciadorGrafico::getTamJanela(){
-            return (sf::Vector2f)window->getSize();
+            return sf::Vector2f(LARGURA_TELA, ALTURA_TELA);
+        }
+
+        void GerenciadorGrafico::desenhaElemento(sf::Text texto)
+        {
+            window->draw(texto);
+        }
+
+        void GerenciadorGrafico::resetarJanela(){
+            camera.resetar(sf::Vector2f(LARGURA_TELA / 2.0f, ALTURA_TELA / 2.0f));
+            window->setView(camera.getCamera());
         }
     }
 }

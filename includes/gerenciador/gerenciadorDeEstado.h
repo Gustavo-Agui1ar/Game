@@ -2,6 +2,7 @@
 #pragma once
 
 #include "../estados/estadoFase.h"
+#include "../estados/estadoMenu.h"
 #include <stack>
 
 
@@ -26,7 +27,7 @@ namespace Game{
 
             void executar();
             
-            void addEstado(IDs::IDs ID);
+            void addEstado(const IDs::IDs ID);
             void removerEstado();
             
             Estado::Estado* getEstadoAtual();

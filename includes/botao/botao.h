@@ -13,7 +13,7 @@ namespace Game{
 
             protected:
 
-                sf::RetangleShape caixa;
+                sf::RectangleShape caixa;
                 sf::Texture* textura;
                 sf::Vector2f pos;
                 sf::Vector2f tam;
@@ -28,8 +28,8 @@ namespace Game{
 
                 virtual void desenhar();
                 virtual void atualizarAnimacao();
-                virtual void atualizarPosicaoBotao();
-                void setTexture(sf::Texture* texture);
+                virtual void atualizarPosicaoBotao(const sf::Vector2f pos);
+                void setTextura(sf::Texture* texture);
                 const sf::Vector2f getPos();
 
             };

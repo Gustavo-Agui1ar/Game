@@ -1,6 +1,7 @@
 
 #include "../includes/gerenciador/gerenciadorDeEstado.h"
 
+
 namespace Game{
 
     namespace Gerenciador{
@@ -50,6 +51,19 @@ namespace Game{
                 }
 
                 estado = static_cast<Estado::Estado*>(fase);
+
+            }
+            else if(ID == IDs::IDs::menu_principal)
+            {
+                Estado::EstadoMenu* menuPrincipal = new Estado::EstadoMenu(ID);
+
+                if(menuPrincipal == nullptr)
+                {
+                    std::cout<<"Gerenciador::GerenciadorDeEstado: erro ao criar estado";
+                    exit(1);
+                }
+
+                estado = static_cast<Estado::Estado*>(menuPrincipal);
             }
 
             if(!pilhaEstados.empty())

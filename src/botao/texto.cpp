@@ -17,17 +17,15 @@ namespace Game{
              * fonteTam: tamanho das palavras da fonte 
             */
 
-            Texto::Texto(const sf::Font fonte, const std::string infoTexto,const unsigned int fonteTam):
-            corBordaTexto(sf::Color::Black), corTexto(sf::Color::White),
-            fonteTam(fonteTam), infoTexto(infoTexto), fonte(fonte)
+            Texto::Texto(const sf::Font fonte, const std::string infoTexto, const unsigned int fonteTam):
+            fonte(fonte),texto()
             {
-                texto.setString(infoTexto);
-                texto.setCharacterSize(fonteTam);
-                texto.setFont(fonte);
-                texto.setOutlineThickness(5.0f);
-                texto.setOutlineColor(corBordaTexto);
-                texto.setFillColor(corTexto);
-                tam = sf::Vector2f(texto.getGlobalBounds().width,texto.getGlobalBounds().height);
+                corBordaTexto = sf::Color::Black;
+                corTexto = sf::Color::White;
+                this->infoTexto = infoTexto;
+                this->fonteTam = fonteTam;
+
+                inicializa();
             }
 
             /**
@@ -38,7 +36,17 @@ namespace Game{
             {
 
             }
-            
+            void Texto::inicializa()
+            {
+                texto.setString(infoTexto);
+                texto.setCharacterSize(fonteTam);
+                texto.setFont(fonte);
+                texto.setOutlineThickness(5.0f);
+                texto.setOutlineColor(corBordaTexto);
+                texto.setFillColor(corTexto);
+                tam = sf::Vector2f(texto.getGlobalBounds().width, texto.getGlobalBounds().height);
+            }
+
             /**
              * metodo que muda a cor do texto 
              * 

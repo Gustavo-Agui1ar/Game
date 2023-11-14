@@ -48,11 +48,11 @@ namespace Game{
 
             void TextoEfeito::atualizar()
             {
-                corborda = sf::Color(0,0,0,(sf::Uint8)this->transparente);
-                corTexto = (texto.r, texto.g, texto.b,(sf::Uint8)this->transparente);
-                texto.setOutlineColor(corBorda);
-                texto.SetFillColor(corTexto);
+                corBordaTexto = sf::Color(0,0,0,(sf::Uint8)this->transparente);
+                corTexto = sf::Color(corTexto.r, corTexto.g, corTexto.b,(sf::Uint8)this->transparente);
+                texto.setOutlineColor(corBordaTexto);
+                texto.setFillColor(corTexto);
             }
-        }
+         }
     }
 }

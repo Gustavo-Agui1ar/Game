@@ -71,6 +71,33 @@ namespace Game{
             }
         }
 
+         void ListaListener::notificarMovimentoMouse(const sf::Event::MouseMoveEvent mouse)
+         {
+            sf::Vector2f posMouse = sf::Vector2f((float)mouse.x, (float)mouse.y);
+            for(int i = 0; i < objListaListener.getTam(); i++)
+            {
+                Listener::Listener* listener = objListaListener.operator[](i);
+                if(listener->getAtivo())
+                {
+                    listener->moveMouse(posMouse);
+                }
+                listener = nullptr;
+            }
+        }
+
+        void ListaListener::notificarBotaoMouseSolta(const sf::Mouse::Button botaoMouse)
+        {
+            for(int i = 0; i < objListaListener.getTam(); i++)
+            {
+                Listener::Listener* listener = objListaListener.operator[](i);
+                if(listener->getAtivo())
+                {
+                    listener->botaoMouseSolta(botaoMouse);
+                }
+                listener = nullptr;
+            }
+        }
+
 
     }
 

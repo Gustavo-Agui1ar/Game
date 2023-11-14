@@ -276,6 +276,60 @@ src/arma/arma.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/arma/arma.cpp.s
 .PHONY : src/arma/arma.cpp.s
 
+src/botao/botao.obj: src/botao/botao.cpp.obj
+.PHONY : src/botao/botao.obj
+
+# target to build an object file
+src/botao/botao.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/botao.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/botao/botao.cpp.obj
+.PHONY : src/botao/botao.cpp.obj
+
+src/botao/botao.i: src/botao/botao.cpp.i
+.PHONY : src/botao/botao.i
+
+# target to preprocess a source file
+src/botao/botao.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/botao.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/botao/botao.cpp.i
+.PHONY : src/botao/botao.cpp.i
+
+src/botao/botao.s: src/botao/botao.cpp.s
+.PHONY : src/botao/botao.s
+
+# target to generate assembly for a file
+src/botao/botao.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/botao.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/botao/botao.cpp.s
+.PHONY : src/botao/botao.cpp.s
+
+src/botao/botaoTexto.obj: src/botao/botaoTexto.cpp.obj
+.PHONY : src/botao/botaoTexto.obj
+
+# target to build an object file
+src/botao/botaoTexto.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/botaoTexto.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/botao/botaoTexto.cpp.obj
+.PHONY : src/botao/botaoTexto.cpp.obj
+
+src/botao/botaoTexto.i: src/botao/botaoTexto.cpp.i
+.PHONY : src/botao/botaoTexto.i
+
+# target to preprocess a source file
+src/botao/botaoTexto.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/botaoTexto.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/botao/botaoTexto.cpp.i
+.PHONY : src/botao/botaoTexto.cpp.i
+
+src/botao/botaoTexto.s: src/botao/botaoTexto.cpp.s
+.PHONY : src/botao/botaoTexto.s
+
+# target to generate assembly for a file
+src/botao/botaoTexto.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/botaoTexto.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/botao/botaoTexto.cpp.s
+.PHONY : src/botao/botaoTexto.cpp.s
+
 src/botao/texto.obj: src/botao/texto.cpp.obj
 .PHONY : src/botao/texto.obj
 
@@ -302,6 +356,33 @@ src/botao/texto.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/texto.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/botao/texto.cpp.s
 .PHONY : src/botao/texto.cpp.s
+
+src/botao/textoEfeito.obj: src/botao/textoEfeito.cpp.obj
+.PHONY : src/botao/textoEfeito.obj
+
+# target to build an object file
+src/botao/textoEfeito.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/textoEfeito.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/botao/textoEfeito.cpp.obj
+.PHONY : src/botao/textoEfeito.cpp.obj
+
+src/botao/textoEfeito.i: src/botao/textoEfeito.cpp.i
+.PHONY : src/botao/textoEfeito.i
+
+# target to preprocess a source file
+src/botao/textoEfeito.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/textoEfeito.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/botao/textoEfeito.cpp.i
+.PHONY : src/botao/textoEfeito.cpp.i
+
+src/botao/textoEfeito.s: src/botao/textoEfeito.cpp.s
+.PHONY : src/botao/textoEfeito.s
+
+# target to generate assembly for a file
+src/botao/textoEfeito.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/textoEfeito.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/botao/textoEfeito.cpp.s
+.PHONY : src/botao/textoEfeito.cpp.s
 
 src/entidade/Ente.obj: src/entidade/Ente.cpp.obj
 .PHONY : src/entidade/Ente.obj
@@ -410,6 +491,33 @@ src/estados/estadoFase.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/estados/estadoFase.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/estados/estadoFase.cpp.s
 .PHONY : src/estados/estadoFase.cpp.s
+
+src/estados/estadoMenu.obj: src/estados/estadoMenu.cpp.obj
+.PHONY : src/estados/estadoMenu.obj
+
+# target to build an object file
+src/estados/estadoMenu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/estados/estadoMenu.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/estados/estadoMenu.cpp.obj
+.PHONY : src/estados/estadoMenu.cpp.obj
+
+src/estados/estadoMenu.i: src/estados/estadoMenu.cpp.i
+.PHONY : src/estados/estadoMenu.i
+
+# target to preprocess a source file
+src/estados/estadoMenu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/estados/estadoMenu.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/estados/estadoMenu.cpp.i
+.PHONY : src/estados/estadoMenu.cpp.i
+
+src/estados/estadoMenu.s: src/estados/estadoMenu.cpp.s
+.PHONY : src/estados/estadoMenu.s
+
+# target to generate assembly for a file
+src/estados/estadoMenu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/estados/estadoMenu.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/estados/estadoMenu.cpp.s
+.PHONY : src/estados/estadoMenu.cpp.s
 
 src/fases/fase.obj: src/fases/fase.cpp.obj
 .PHONY : src/fases/fase.obj
@@ -951,6 +1059,33 @@ src/listeners/listenerJogador.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/listeners/listenerJogador.cpp.s
 .PHONY : src/listeners/listenerJogador.cpp.s
 
+src/listeners/listenerMenu.obj: src/listeners/listenerMenu.cpp.obj
+.PHONY : src/listeners/listenerMenu.obj
+
+# target to build an object file
+src/listeners/listenerMenu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/listeners/listenerMenu.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/listeners/listenerMenu.cpp.obj
+.PHONY : src/listeners/listenerMenu.cpp.obj
+
+src/listeners/listenerMenu.i: src/listeners/listenerMenu.cpp.i
+.PHONY : src/listeners/listenerMenu.i
+
+# target to preprocess a source file
+src/listeners/listenerMenu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/listeners/listenerMenu.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/listeners/listenerMenu.cpp.i
+.PHONY : src/listeners/listenerMenu.cpp.i
+
+src/listeners/listenerMenu.s: src/listeners/listenerMenu.cpp.s
+.PHONY : src/listeners/listenerMenu.s
+
+# target to generate assembly for a file
+src/listeners/listenerMenu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/listeners/listenerMenu.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/listeners/listenerMenu.cpp.s
+.PHONY : src/listeners/listenerMenu.cpp.s
+
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -977,6 +1112,60 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/main.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/menus/menu.obj: src/menus/menu.cpp.obj
+.PHONY : src/menus/menu.obj
+
+# target to build an object file
+src/menus/menu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menu.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/menu.cpp.obj
+.PHONY : src/menus/menu.cpp.obj
+
+src/menus/menu.i: src/menus/menu.cpp.i
+.PHONY : src/menus/menu.i
+
+# target to preprocess a source file
+src/menus/menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menu.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/menu.cpp.i
+.PHONY : src/menus/menu.cpp.i
+
+src/menus/menu.s: src/menus/menu.cpp.s
+.PHONY : src/menus/menu.s
+
+# target to generate assembly for a file
+src/menus/menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menu.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/menu.cpp.s
+.PHONY : src/menus/menu.cpp.s
+
+src/menus/menuPrincipal.obj: src/menus/menuPrincipal.cpp.obj
+.PHONY : src/menus/menuPrincipal.obj
+
+# target to build an object file
+src/menus/menuPrincipal.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menuPrincipal.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/menuPrincipal.cpp.obj
+.PHONY : src/menus/menuPrincipal.cpp.obj
+
+src/menus/menuPrincipal.i: src/menus/menuPrincipal.cpp.i
+.PHONY : src/menus/menuPrincipal.i
+
+# target to preprocess a source file
+src/menus/menuPrincipal.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menuPrincipal.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/menuPrincipal.cpp.i
+.PHONY : src/menus/menuPrincipal.cpp.i
+
+src/menus/menuPrincipal.s: src/menus/menuPrincipal.cpp.s
+.PHONY : src/menus/menuPrincipal.s
+
+# target to generate assembly for a file
+src/menus/menuPrincipal.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menuPrincipal.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/menuPrincipal.cpp.s
+.PHONY : src/menus/menuPrincipal.cpp.s
 
 src/principal.obj: src/principal.cpp.obj
 .PHONY : src/principal.obj
@@ -1030,9 +1219,18 @@ help:
 	@echo ... src/arma/arma.obj
 	@echo ... src/arma/arma.i
 	@echo ... src/arma/arma.s
+	@echo ... src/botao/botao.obj
+	@echo ... src/botao/botao.i
+	@echo ... src/botao/botao.s
+	@echo ... src/botao/botaoTexto.obj
+	@echo ... src/botao/botaoTexto.i
+	@echo ... src/botao/botaoTexto.s
 	@echo ... src/botao/texto.obj
 	@echo ... src/botao/texto.i
 	@echo ... src/botao/texto.s
+	@echo ... src/botao/textoEfeito.obj
+	@echo ... src/botao/textoEfeito.i
+	@echo ... src/botao/textoEfeito.s
 	@echo ... src/entidade/Ente.obj
 	@echo ... src/entidade/Ente.i
 	@echo ... src/entidade/Ente.s
@@ -1045,6 +1243,9 @@ help:
 	@echo ... src/estados/estadoFase.obj
 	@echo ... src/estados/estadoFase.i
 	@echo ... src/estados/estadoFase.s
+	@echo ... src/estados/estadoMenu.obj
+	@echo ... src/estados/estadoMenu.i
+	@echo ... src/estados/estadoMenu.s
 	@echo ... src/fases/fase.obj
 	@echo ... src/fases/fase.i
 	@echo ... src/fases/fase.s
@@ -1105,9 +1306,18 @@ help:
 	@echo ... src/listeners/listenerJogador.obj
 	@echo ... src/listeners/listenerJogador.i
 	@echo ... src/listeners/listenerJogador.s
+	@echo ... src/listeners/listenerMenu.obj
+	@echo ... src/listeners/listenerMenu.i
+	@echo ... src/listeners/listenerMenu.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... src/menus/menu.obj
+	@echo ... src/menus/menu.i
+	@echo ... src/menus/menu.s
+	@echo ... src/menus/menuPrincipal.obj
+	@echo ... src/menus/menuPrincipal.i
+	@echo ... src/menus/menuPrincipal.s
 	@echo ... src/principal.obj
 	@echo ... src/principal.i
 	@echo ... src/principal.s

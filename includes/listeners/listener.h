@@ -53,6 +53,8 @@ namespace Game{
                 //metodo de tratamento das teclas (implementdada nas filhas)
                 virtual void teclaPressionada(const sf::Keyboard::Key tecla) = 0;
                 virtual void teclaSolta(const sf::Keyboard::Key tecla) = 0;
+                virtual void moveMouse(const sf::Vector2f posMouse);
+                virtual void botaoMouseSolta(const sf::Mouse::Button botaoMouse);
         
         };
 

@@ -49,11 +49,6 @@ namespace Game{
             fase->executar();
         }
 
-        Entidade::Personagem::Jogador::Jogador* EstadoFase::getPlayer()
-        {
-            return fase->getJogador();
-        }
-
         void EstadoFase::mudarEstadoListener()
         {
             Entidade::Personagem::Jogador::Jogador* jogador = fase->getJogador();

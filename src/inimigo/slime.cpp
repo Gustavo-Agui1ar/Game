@@ -108,6 +108,8 @@ namespace Game{
                             arma->setPos(posArma);
                         }
                     }
+
+                   
                 }
             }
         }
