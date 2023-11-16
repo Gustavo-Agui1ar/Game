@@ -64,5 +64,10 @@ namespace Game{
             fase->mudarEstadoListener();
         
         }
+
+        Fase::Fase* EstadoFase::getFase()
+        {
+            return fase;
+        }
     }
 }

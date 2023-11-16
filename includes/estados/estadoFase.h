@@ -25,6 +25,7 @@ namespace Game{
 
             void criarFase();
             void executar();
+            Fase::Fase* getFase();
 
             void mudarEstadoListener();
 

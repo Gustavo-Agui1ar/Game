@@ -24,7 +24,10 @@ namespace Game{
                 switch(menu->getIDBotaoSelecionado())
                 {
                     case(IDs::IDs::botao_sair):
-                        pEstado->removerEstado(); 
+                        /*if(menu->getID() == IDs::IDs::menu_pause)
+                            pEstado->removerEstado(2);
+                        else*/
+                            pEstado->removerEstado(); 
                         break;
                     case(IDs::IDs::botao_voltar):
                         pEstado->removerEstado();

@@ -52,6 +52,11 @@ namespace Game{
             {
                 
             }
+
+            sf::RectangleShape Botao::getCaixa()
+            {
+                return caixa;
+            }
         }
     }
 

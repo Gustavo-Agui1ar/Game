@@ -53,17 +53,17 @@ namespace Game{
                 estado = static_cast<Estado::Estado*>(fase);
 
             }
-            else if(ID == IDs::IDs::menu_principal)
+            else if(ID == IDs::IDs::menu_principal || ID == IDs::IDs::menu_pause)
             {
-                Estado::EstadoMenu* menuPrincipal = new Estado::EstadoMenu(ID);
+                Estado::EstadoMenu* menu = new Estado::EstadoMenu(ID);
 
-                if(menuPrincipal == nullptr)
+                if(menu == nullptr)
                 {
                     std::cout<<"Gerenciador::GerenciadorDeEstado: erro ao criar estado";
                     exit(1);
                 }
 
-                estado = static_cast<Estado::Estado*>(menuPrincipal);
+                estado = static_cast<Estado::Estado*>(menu);
             }
 
             if(!pilhaEstados.empty())
@@ -107,6 +107,30 @@ namespace Game{
             if(!pilhaEstados.empty())
             {
                 pilhaEstados.top()->executar();
+            }
+        }
+
+        void GerenciadorDeEstado::removerEstado(const int quantidade)
+        {
+            int i = 0;
+            while(!pilhaEstados.empty() && i < quantidade)
+            {
+                Estado::Estado* estado = pilhaEstados.top();
+                if(estado != nullptr){
+                    delete(estado);
+                    estado = nullptr; 
+                }
+                pilhaEstados.pop();
+                i++;
+            }
+            if(!pilhaEstados.empty())
+            {
+                pilhaEstados.top()->mudarEstadoListener();
+            } 
+            else 
+            {
+                GerenciadorGrafico* pGrafico = pGrafico->getGerenciadorGrafico();
+                pGrafico->fechaJanela();
             }
         }
 

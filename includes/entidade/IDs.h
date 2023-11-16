@@ -34,6 +34,7 @@ namespace IDs{
 
             //IDs menus
 
-            menu_principal
+            menu_principal,
+            menu_pause
         };
 }

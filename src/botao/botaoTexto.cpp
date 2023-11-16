@@ -33,7 +33,6 @@ namespace Game{
             void BotaoTexto::desenhar()
             {
                 atualizarAnimacao();
-                //pGrafico->desenhaElemento(caixa);
                 pGrafico->desenhaElemento(texto.getTexto());
             }
 

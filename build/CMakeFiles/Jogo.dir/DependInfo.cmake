@@ -45,6 +45,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/listeners/listenerMenu.cpp" "CMakeFiles/Jogo.dir/src/listeners/listenerMenu.cpp.obj" "gcc" "CMakeFiles/Jogo.dir/src/listeners/listenerMenu.cpp.obj.d"
   "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/main.cpp" "CMakeFiles/Jogo.dir/src/main.cpp.obj" "gcc" "CMakeFiles/Jogo.dir/src/main.cpp.obj.d"
   "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/menus/menu.cpp" "CMakeFiles/Jogo.dir/src/menus/menu.cpp.obj" "gcc" "CMakeFiles/Jogo.dir/src/menus/menu.cpp.obj.d"
+  "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/menus/menuPausa.cpp" "CMakeFiles/Jogo.dir/src/menus/menuPausa.cpp.obj" "gcc" "CMakeFiles/Jogo.dir/src/menus/menuPausa.cpp.obj.d"
   "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/menus/menuPrincipal.cpp" "CMakeFiles/Jogo.dir/src/menus/menuPrincipal.cpp.obj" "gcc" "CMakeFiles/Jogo.dir/src/menus/menuPrincipal.cpp.obj.d"
   "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/principal.cpp" "CMakeFiles/Jogo.dir/src/principal.cpp.obj" "gcc" "CMakeFiles/Jogo.dir/src/principal.cpp.obj.d"
   )

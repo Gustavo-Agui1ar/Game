@@ -1,11 +1,14 @@
 
 #include "../includes/estados/estadoMenu.h"
+//#include "../includes/menus/menuPausa.h"
 #include "../includes/menus/menuPrincipal.h"
+#include "../includes/gerenciador/gerenciadorDeEstado.h"
 
 namespace Game{
 
     namespace Estado{
-
+        
+        Gerenciador::GerenciadorDeEstado* EstadoMenu::pEstado = Gerenciador::GerenciadorDeEstado::getGerenciadorDeEstado();
 
         EstadoMenu::EstadoMenu(const IDs::IDs ID):
         Estado(ID), menu(nullptr)
@@ -42,6 +45,26 @@ namespace Game{
 
                     this->menu = static_cast<Menu::Menu*>(menuP);
                 }
+                break;
+                /*case(IDs::IDs::menu_pause):
+                {
+                    if(fase == nullptr)
+                    {
+                        std::cout<<"EstadoMenu:: nao foi possivel recuperar fase";
+                        exit(1);
+                    }
+
+                    Menu::MenuPausa* menuPause = new Menu::MenuPausa(fase);
+
+                    if(menuPause == nullptr)
+                    {
+                        std::cout<<"EstadoMenu:: nao foi possivel criar um menu de pause";
+                        exit(1);
+                    }
+
+                    this->menu = static_cast<Menu::Menu*>(menuPause);
+                }
+                break;*/
             }
         }
 
@@ -53,6 +76,16 @@ namespace Game{
         Menu::Menu* EstadoMenu::getMenu()
         {
             return menu;
+        }
+
+        Fase::Fase* EstadoMenu::getFase()
+        {
+           /* if(ID == IDs::IDs::menu_pause)
+            {
+                Menu::MenuPausa* menuFase = dynamic_cast<Menu::MenuPausa*>(menu);
+                return menuFase->getFase();
+            }*/
+            return nullptr;
         }
     }
 }

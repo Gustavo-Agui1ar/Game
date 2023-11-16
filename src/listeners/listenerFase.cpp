@@ -36,7 +36,7 @@ namespace Game{
         {
             if(tecEspecial[tecla] == "Escape")
             {
-                pEstado->removerEstado();
+              //  pEstado->addEstado(IDs::IDs::menu_pause);
             }
         }
 

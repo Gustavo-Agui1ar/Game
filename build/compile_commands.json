@@ -223,6 +223,12 @@
 },
 {
   "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\menus\\menuPausa.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\menus\\menuPausa.cpp\"",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/menus/menuPausa.cpp",
+  "output": "CMakeFiles/Jogo.dir/src/menus/menuPausa.cpp.obj"
+},
+{
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\menus\\menuPrincipal.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\menus\\menuPrincipal.cpp\"",
   "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/menus/menuPrincipal.cpp",
   "output": "CMakeFiles/Jogo.dir/src/menus/menuPrincipal.cpp.obj"
@@ -454,6 +460,12 @@
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/testes.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\testes.dir\\src\\menus\\menu.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\menus\\menu.cpp\"",
   "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/menus/menu.cpp",
   "output": "CMakeFiles/testes.dir/src/menus/menu.cpp.obj"
+},
+{
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/testes.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\testes.dir\\src\\menus\\menuPausa.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\menus\\menuPausa.cpp\"",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/menus/menuPausa.cpp",
+  "output": "CMakeFiles/testes.dir/src/menus/menuPausa.cpp.obj"
 },
 {
   "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",

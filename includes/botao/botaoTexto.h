@@ -2,7 +2,7 @@
 #include "botao.h"
 #include "textoEfeito.h"
 
-#define FONTE "Game/animations/botton/menu.ttf"
+#define FONTE "Game/animations/botton/MonsterOfFantasy.ttf"
 #define TEMPO_TROCA  0.025f
 
 namespace Game{

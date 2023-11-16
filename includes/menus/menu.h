@@ -42,7 +42,7 @@ namespace Game{
         public:
 
             Menu(const IDs::IDs ID, const sf::Vector2f tamBotao, const std::string titulo, const unsigned int tamFonte);
-            ~Menu();
+            virtual ~Menu();
 
             void addBotao(const std::string infoTexto, const sf::Vector2f pos , const IDs::IDs ID, const  sf::Color corSelecionado);
             void mudarEstadoListener();

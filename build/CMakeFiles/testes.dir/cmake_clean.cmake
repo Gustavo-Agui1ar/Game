@@ -76,6 +76,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/testes.dir/src/main.cpp.obj.d"
   "CMakeFiles/testes.dir/src/menus/menu.cpp.obj"
   "CMakeFiles/testes.dir/src/menus/menu.cpp.obj.d"
+  "CMakeFiles/testes.dir/src/menus/menuPausa.cpp.obj"
+  "CMakeFiles/testes.dir/src/menus/menuPausa.cpp.obj.d"
   "CMakeFiles/testes.dir/src/menus/menuPrincipal.cpp.obj"
   "CMakeFiles/testes.dir/src/menus/menuPrincipal.cpp.obj.d"
   "CMakeFiles/testes.dir/src/principal.cpp.obj"

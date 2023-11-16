@@ -1140,6 +1140,33 @@ src/menus/menu.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/menu.cpp.s
 .PHONY : src/menus/menu.cpp.s
 
+src/menus/menuPausa.obj: src/menus/menuPausa.cpp.obj
+.PHONY : src/menus/menuPausa.obj
+
+# target to build an object file
+src/menus/menuPausa.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menuPausa.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/menuPausa.cpp.obj
+.PHONY : src/menus/menuPausa.cpp.obj
+
+src/menus/menuPausa.i: src/menus/menuPausa.cpp.i
+.PHONY : src/menus/menuPausa.i
+
+# target to preprocess a source file
+src/menus/menuPausa.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menuPausa.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/menuPausa.cpp.i
+.PHONY : src/menus/menuPausa.cpp.i
+
+src/menus/menuPausa.s: src/menus/menuPausa.cpp.s
+.PHONY : src/menus/menuPausa.s
+
+# target to generate assembly for a file
+src/menus/menuPausa.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menuPausa.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/menuPausa.cpp.s
+.PHONY : src/menus/menuPausa.cpp.s
+
 src/menus/menuPrincipal.obj: src/menus/menuPrincipal.cpp.obj
 .PHONY : src/menus/menuPrincipal.obj
 
@@ -1315,6 +1342,9 @@ help:
 	@echo ... src/menus/menu.obj
 	@echo ... src/menus/menu.i
 	@echo ... src/menus/menu.s
+	@echo ... src/menus/menuPausa.obj
+	@echo ... src/menus/menuPausa.i
+	@echo ... src/menus/menuPausa.s
 	@echo ... src/menus/menuPrincipal.obj
 	@echo ... src/menus/menuPrincipal.i
 	@echo ... src/menus/menuPrincipal.s

@@ -30,6 +30,7 @@ namespace Game{
                 virtual void atualizarAnimacao();
                 virtual void atualizarPosicaoBotao(const sf::Vector2f pos);
                 void setTextura(sf::Texture* texture);
+                sf::RectangleShape getCaixa();
                 const sf::Vector2f getPos();
 
             };

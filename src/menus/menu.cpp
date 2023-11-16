@@ -110,12 +110,13 @@ namespace Game {
        void Menu::eventoMouse(const sf::Vector2f posMouse){
             std::list<Botao::BotaoTexto*>::iterator aux;
             mouseSelecionado = false;
-            for(aux = listaDeBotao.begin(); aux != listaDeBotao.end(); aux++){
+            for(aux = listaDeBotao.begin(); aux != listaDeBotao.end(); aux++)
+            {
                 Botao::BotaoTexto* botao = *aux;
-                sf::Vector2f posBotao = botao->getPos();
-                sf::Vector2f posCamera = pGrafico->getCamera().getCenter();
-                if(posMouse.x + posCamera.x - tamJanela.x / 2.0f > posBotao.x && posMouse.x + posCamera.x - tamJanela.x / 2.0f < posBotao.x + tamBotao.x && 
-                   posMouse.y + posCamera.y - tamJanela.y / 2.0f > posBotao.y && posMouse.y + posCamera.y - tamJanela.y / 2.0f < posBotao.y + tamBotao.y){
+                sf::RectangleShape caixa = botao->getCaixa();
+                
+                if(caixa.getGlobalBounds().contains(posMouse))
+                {
                     (*it)->setSelecionado(false);
                     it = aux;
                     (*it)->setSelecionado(true);
