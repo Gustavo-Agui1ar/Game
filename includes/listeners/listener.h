@@ -45,7 +45,7 @@ namespace Game{
 
                 //metodos de alteracao e verificacao de lestener ativo 
                 const bool getAtivo();
-                void mudarEstado();
+                void mudarEstado(const bool ativo);
 
                 //metodo de remocao de listener da lista de pEvento
                 void removerListener();

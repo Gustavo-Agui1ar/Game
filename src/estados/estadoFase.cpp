@@ -16,7 +16,7 @@ namespace Game{
         EstadoFase::~EstadoFase()
         {
             if(fase != nullptr)
-               //delete(fase);
+               delete(fase);
             fase = nullptr;
         }
 
@@ -49,19 +49,17 @@ namespace Game{
             fase->executar();
         }
 
-        void EstadoFase::mudarEstadoListener()
+        void EstadoFase::mudarEstadoListener(const bool ativo)
         {
             Entidade::Personagem::Jogador::Jogador* jogador = fase->getJogador();
 
-            if(jogador == nullptr)
+            if(jogador != nullptr)
             {
-                std::cout<<"Estados::EstadoFase: nao foi possivel recuperar jogador";
-                exit(1);
+                jogador->mudarEstadoListener(ativo);
             }
 
-            jogador->mudarEstadoListener();
+            fase->mudarEstadoListener(ativo);
 
-            fase->mudarEstadoListener();
         
         }
 

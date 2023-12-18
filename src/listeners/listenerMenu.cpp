@@ -19,19 +19,30 @@ namespace Game{
 
         void ListenerMenu::teclaPressionada(const sf::Keyboard::Key tecla)
         {
+          
             if(tecEspecial[tecla] == "Enter")
             {
                 switch(menu->getIDBotaoSelecionado())
                 {
                     case(IDs::IDs::botao_sair):
-                        /*if(menu->getID() == IDs::IDs::menu_pause)
+                        if(menu->getID() == IDs::IDs::menu_pause || menu->getID() == IDs::IDs::menu_gameOver)
+                        {
                             pEstado->removerEstado(2);
-                        else*/
-                            pEstado->removerEstado(); 
+                        }
+                        else
+                        {
+                            pEstado->removerEstado();
+                        }
                         break;
                     case(IDs::IDs::botao_voltar):
                         pEstado->removerEstado();
                         break;
+                    case(IDs::IDs::botao_reniciar_jogo):
+                    {
+                        //por enquanto...
+                        pEstado->addContinuarGameOver(IDs::IDs::forest);
+                    }
+                    break;
                     case(IDs::IDs::botao_novoJogo):
                         pEstado->addEstado(IDs::IDs::forest);
                         Estado::EstadoFase* fase = dynamic_cast<Estado::EstadoFase*>(pEstado->getEstadoAtual());
@@ -74,6 +85,7 @@ namespace Game{
                 {
                     case (sf::Mouse::Left):
                     {
+                        IDs::IDs IDmenu = menu->getID();
                         switch (menu->getIDBotaoSelecionado())
                         {
                             case (IDs::IDs::botao_novoJogo):
@@ -85,7 +97,10 @@ namespace Game{
                                 break;
                             case (IDs::IDs::botao_sair):
                             {
-                                pEstado->removerEstado();
+                                if(IDmenu == IDs::IDs::menu_pause || IDmenu == IDs::IDs::menu_gameOver)
+                                    pEstado->removerEstado(2);
+                                else
+                                    pEstado->removerEstado();
                             }
                                 break;
                             case (IDs::IDs::botao_voltar):
@@ -95,13 +110,17 @@ namespace Game{
                                 break;
                             case (IDs::IDs::botao_salvar_jogo):
                             {
-                                //pGEstado->addEstado(IDs::IDs::estado_menu_salvar_jogada);
+                                //pGEstado->addEstado(IDs::IDs::estado_menu_salvar_jogo);
                             }
                                 break;
                             case (IDs::IDs::botao_carregar_jogo):
                             {
                                 //pGEstado->addEstado(IDs::IDs::estado_menu_carregar_jogo);
                             }
+                                break;
+                            case(IDs::IDs::botao_reniciar_jogo):
+                                //por enquanto...
+                                pEstado->addContinuarGameOver(IDs::IDs::forest);
                                 break;
                         }
                             break;

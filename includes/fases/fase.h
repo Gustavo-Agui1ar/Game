@@ -26,8 +26,7 @@ namespace Game{
         class Fase : public Ente{
 
         protected:
-            
-            Listener::ListenerFase* listenerFase;
+            static Listener::ListenerFase* listenerFase;
 
             //listas de entidades
             Lista::ListaEntidade* listaPersonagens;
@@ -46,7 +45,10 @@ namespace Game{
             Fase(const IDs::IDs ID_Fase, const IDs::IDs ID_Fundo);
             virtual ~Fase();
             
-            void mudarEstadoListener();
+            void mudarEstadoListener(const bool ativo);
+
+            nlohmann::ordered_json salvarFase();
+            nlohmann::ordered_json salvarEntidades();
 
             //metodos de criacao de entidades
             void criarInimigo(const sf::Vector2f pos, const char letra);

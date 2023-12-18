@@ -29,6 +29,7 @@ namespace Game{
                 virtual void colisao(Entidade* outraEntidade, sf::Vector2f ds = sf::Vector2f(0.f,0.f)) = 0;
                 void colisaoObstaculo(sf::Vector2f ds, Personagem::Personagem* pPersonagem);
                 virtual void atualizar() = 0;
+                virtual nlohmann::ordered_json salvar() = 0;
             };
         }
     }

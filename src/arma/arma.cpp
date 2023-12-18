@@ -100,6 +100,12 @@ namespace Game{
 
                 }
 
+                nlohmann::ordered_json Arma::salvar()
+                {
+                    nlohmann::ordered_json json = salvarEntidade();
+                    json["dano"] = dano;
+                }
+
         }
     }
 }

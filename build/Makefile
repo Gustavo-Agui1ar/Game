@@ -1113,6 +1113,33 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/menus/card.obj: src/menus/card.cpp.obj
+.PHONY : src/menus/card.obj
+
+# target to build an object file
+src/menus/card.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/card.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/card.cpp.obj
+.PHONY : src/menus/card.cpp.obj
+
+src/menus/card.i: src/menus/card.cpp.i
+.PHONY : src/menus/card.i
+
+# target to preprocess a source file
+src/menus/card.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/card.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/card.cpp.i
+.PHONY : src/menus/card.cpp.i
+
+src/menus/card.s: src/menus/card.cpp.s
+.PHONY : src/menus/card.s
+
+# target to generate assembly for a file
+src/menus/card.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/card.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/card.cpp.s
+.PHONY : src/menus/card.cpp.s
+
 src/menus/menu.obj: src/menus/menu.cpp.obj
 .PHONY : src/menus/menu.obj
 
@@ -1139,6 +1166,33 @@ src/menus/menu.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menu.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/menu.cpp.s
 .PHONY : src/menus/menu.cpp.s
+
+src/menus/menuGameOver.obj: src/menus/menuGameOver.cpp.obj
+.PHONY : src/menus/menuGameOver.obj
+
+# target to build an object file
+src/menus/menuGameOver.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menuGameOver.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/menuGameOver.cpp.obj
+.PHONY : src/menus/menuGameOver.cpp.obj
+
+src/menus/menuGameOver.i: src/menus/menuGameOver.cpp.i
+.PHONY : src/menus/menuGameOver.i
+
+# target to preprocess a source file
+src/menus/menuGameOver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menuGameOver.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/menuGameOver.cpp.i
+.PHONY : src/menus/menuGameOver.cpp.i
+
+src/menus/menuGameOver.s: src/menus/menuGameOver.cpp.s
+.PHONY : src/menus/menuGameOver.s
+
+# target to generate assembly for a file
+src/menus/menuGameOver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menuGameOver.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/menuGameOver.cpp.s
+.PHONY : src/menus/menuGameOver.cpp.s
 
 src/menus/menuPausa.obj: src/menus/menuPausa.cpp.obj
 .PHONY : src/menus/menuPausa.obj
@@ -1339,9 +1393,15 @@ help:
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... src/menus/card.obj
+	@echo ... src/menus/card.i
+	@echo ... src/menus/card.s
 	@echo ... src/menus/menu.obj
 	@echo ... src/menus/menu.i
 	@echo ... src/menus/menu.s
+	@echo ... src/menus/menuGameOver.obj
+	@echo ... src/menus/menuGameOver.i
+	@echo ... src/menus/menuGameOver.s
 	@echo ... src/menus/menuPausa.obj
 	@echo ... src/menus/menuPausa.i
 	@echo ... src/menus/menuPausa.s

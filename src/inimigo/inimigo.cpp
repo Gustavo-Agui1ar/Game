@@ -203,6 +203,17 @@ namespace Game{
                     }
                 }
 
+                nlohmann::ordered_json Inimigo::salvar()
+                {
+                    nlohmann::ordered_json json = salvarPersonagem();
+
+                    json["tempoAtaque"] = tempoAtaque;
+                    json["tempoMover"] = tempoMover;
+                    json["mover"] = mover;
+
+                    return json;
+                }
+
             }
         }
     }

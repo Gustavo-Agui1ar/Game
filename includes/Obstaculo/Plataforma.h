@@ -16,6 +16,7 @@ namespace Game{
                 Plataforma(sf::Vector2f pos, sf::Vector2f tam, IDs::IDs ID);
                 ~Plataforma();
                 void colisao(Entidade* outraEntidade, sf::Vector2f ds = sf::Vector2f(0.0f, 0.0f));
+                nlohmann::ordered_json salvar();
                 void atualizar();
             };
         }

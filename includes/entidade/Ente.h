@@ -2,6 +2,8 @@
 #pragma once
 
 #include "IDs.h"
+#include <fstream>
+#include "../json.hpp"
 #include "../gerenciador/gerenciadorGrafico.h"
 
 namespace Game{
@@ -24,6 +26,9 @@ namespace Game{
 
         //metodo de acesso a id
         const IDs::IDs getID();
+
+        nlohmann::ordered_json salvarEnte();
+
         
         //metodo usado por suas filhas para vizualizacao
         virtual void desenhar() = 0;

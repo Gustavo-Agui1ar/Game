@@ -5,6 +5,7 @@
 #include "../botao/botao.h"
 #include "../botao/botaoTexto.h"
 #include "../fundo/fundo.h"
+#include "card.h"
 #include <list>
 
 #define TAM_BOTAO_X 300.0f
@@ -23,7 +24,6 @@ namespace Game{
 
         protected:
 
-            Listener::ListenerMenu* listenerMenu;
             std::list<Botao::BotaoTexto*> listaDeBotao;
             std::list<Botao::BotaoTexto*>::iterator it;
             const sf::Vector2f tamJanela;
@@ -32,6 +32,7 @@ namespace Game{
             sf::Vector2f posFundo;
 
             Botao::Texto titulo;
+            Listener::ListenerMenu* listenerMenu;
             bool mouseSelecionado;
 
             void  atualizarPosicaoFundo();
@@ -45,9 +46,11 @@ namespace Game{
             virtual ~Menu();
 
             void addBotao(const std::string infoTexto, const sf::Vector2f pos , const IDs::IDs ID, const  sf::Color corSelecionado);
-            void mudarEstadoListener();
+            void mudarEstadoListener(const bool ativo);
             void selecionaParaCima();
             void selecionaParaBaixo();
+            virtual void selecionaEsquerda();
+            virtual void selecionaDireita();
 
             const IDs::IDs getIDBotaoSelecionado();
             void eventoMouse(const sf::Vector2f posMouse);

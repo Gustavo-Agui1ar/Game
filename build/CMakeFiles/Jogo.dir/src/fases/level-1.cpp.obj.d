@@ -253,8 +253,39 @@ CMakeFiles/Jogo.dir/src/fases/level-1.cpp.obj: \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/entidade.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/Ente.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/IDs.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/gerenciador/gerenciadorGrafico.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/gerenciador/camera.h \
+ C:/msys64/mingw64/include/c++/13.1.0/fstream \
+ C:/msys64/mingw64/include/c++/13.1.0/x86_64-w64-mingw32/bits/basic_file.h \
+ C:/msys64/mingw64/include/c++/13.1.0/x86_64-w64-mingw32/bits/c++io.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/fstream.tcc \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/json.hpp \
+ C:/msys64/mingw64/include/c++/13.1.0/functional \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/std_function.h \
+ C:/msys64/mingw64/include/c++/13.1.0/unordered_map \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/unordered_map.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/hashtable.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/hashtable_policy.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/enable_special_members.h \
+ C:/msys64/mingw64/include/c++/13.1.0/array \
+ C:/msys64/mingw64/include/c++/13.1.0/compare \
+ C:/msys64/mingw64/include/c++/13.1.0/memory \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/stl_raw_storage_iter.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/align.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/unique_ptr.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/shared_ptr.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/shared_ptr_base.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/allocated_ptr.h \
+ C:/msys64/mingw64/include/c++/13.1.0/ext/concurrence.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/shared_ptr_atomic.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/atomic_base.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/atomic_lockfree_defines.h \
+ C:/msys64/mingw64/include/c++/13.1.0/backward/auto_ptr.h \
+ C:/msys64/mingw64/include/c++/13.1.0/pstl/glue_memory_defs.h \
+ C:/msys64/mingw64/include/c++/13.1.0/utility \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/stl_relops.h \
+ C:/msys64/mingw64/include/c++/13.1.0/forward_list \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/forward_list.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/forward_list.tcc \
+ C:/msys64/mingw64/include/c++/13.1.0/valarray \
  C:/msys64/mingw64/include/c++/13.1.0/cmath \
  C:/msys64/mingw64/include/math.h \
  C:/msys64/mingw64/include/c++/13.1.0/bits/specfun.h \
@@ -271,6 +302,41 @@ CMakeFiles/Jogo.dir/src/fases/level-1.cpp.obj: \
  C:/msys64/mingw64/include/c++/13.1.0/tr1/poly_hermite.tcc \
  C:/msys64/mingw64/include/c++/13.1.0/tr1/poly_laguerre.tcc \
  C:/msys64/mingw64/include/c++/13.1.0/tr1/riemann_zeta.tcc \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/valarray_array.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/valarray_array.tcc \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/valarray_before.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/slice_array.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/valarray_after.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/gslice.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/gslice_array.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/mask_array.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/indirect_array.h \
+ C:/msys64/mingw64/include/c++/13.1.0/cstdint \
+ C:/msys64/mingw64/include/c++/13.1.0/version \
+ C:/msys64/mingw64/include/c++/13.1.0/cassert \
+ C:/msys64/mingw64/include/assert.h \
+ C:/msys64/mingw64/include/c++/13.1.0/cstring \
+ C:/msys64/mingw64/include/string.h \
+ C:/msys64/mingw64/include/sec_api/string_s.h \
+ C:/msys64/mingw64/include/c++/13.1.0/filesystem \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/fs_fwd.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/chrono.h \
+ C:/msys64/mingw64/include/c++/13.1.0/ratio \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/parse_numbers.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/fs_path.h \
+ C:/msys64/mingw64/include/c++/13.1.0/iomanip \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/quoted_string.h \
+ C:/msys64/mingw64/include/c++/13.1.0/sstream \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/sstream.tcc \
+ C:/msys64/mingw64/include/c++/13.1.0/codecvt \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/fs_dir.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/fs_ops.h \
+ C:/msys64/mingw64/include/c++/13.1.0/numeric \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/stl_numeric.h \
+ C:/msys64/mingw64/include/c++/13.1.0/pstl/glue_numeric_defs.h \
+ C:/msys64/mingw64/include/c++/13.1.0/any \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/gerenciador/gerenciadorGrafico.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/gerenciador/camera.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/listeners/listenerFase.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/listeners/listener.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/Obstaculo/Plataforma.h \
@@ -285,8 +351,4 @@ CMakeFiles/Jogo.dir/src/fases/level-1.cpp.obj: \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/inimigo/esqueleto.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/inimigo/slime.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/fundo/fundo.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/fundo/camada.h \
- C:/msys64/mingw64/include/c++/13.1.0/fstream \
- C:/msys64/mingw64/include/c++/13.1.0/x86_64-w64-mingw32/bits/basic_file.h \
- C:/msys64/mingw64/include/c++/13.1.0/x86_64-w64-mingw32/bits/c++io.h \
- C:/msys64/mingw64/include/c++/13.1.0/bits/fstream.tcc
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/fundo/camada.h

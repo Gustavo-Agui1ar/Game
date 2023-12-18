@@ -43,6 +43,7 @@ namespace Game{
 
         void ListaListener::tratarTeclaPressionada(sf::Keyboard::Key tecla)
         {
+            int j = 0;
             for(int i = 0 ; i < objListaListener.getTam() ; i++)
             {
                 Listener::Listener* listener = objListaListener.operator[](i);
@@ -50,10 +51,12 @@ namespace Game{
                 if(listener->getAtivo())
                 {
                     listener->teclaPressionada(tecla);
+                    j++;
                 }
 
                 listener = nullptr;
             }
+            std::cout<<j<<std::endl;
         }
 
         void ListaListener::tratarTeclaSolta(sf::Keyboard::Key tecla)

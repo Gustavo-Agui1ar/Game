@@ -61,6 +61,13 @@ namespace Game{
             {
                 desenhar();
             }
+
+            nlohmann::ordered_json Plataforma::salvar()
+            {
+                nlohmann::ordered_json json = salvarEntidade();
+
+                return json;
+            }
         }
     }
 }

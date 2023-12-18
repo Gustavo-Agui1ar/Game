@@ -102,6 +102,17 @@ namespace Game{
         {
 
         }
+
+        nlohmann::ordered_json Entidade::salvarEntidade()
+        {
+            nlohmann::ordered_json json = salvarEnte();
+
+            json["tam"] = {{"x", getTam().x}, {"y", getTam().y}};
+            json["pos"] = {{"x", getPos().x}, {"y", getPos().y}};
+            json["remover"] = getRemover();
+
+            return json;
+        }
     }
 }
 

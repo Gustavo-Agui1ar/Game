@@ -5,21 +5,13 @@ CMakeFiles/testes.dir/src/gerenciador/gerenciadorDeEstado.cpp.obj: \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/estados/estado.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/Ente.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/IDs.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/gerenciador/gerenciadorGrafico.h \
- C:/PROGRA~2/SFML/include/SFML/Graphics.hpp \
- C:/PROGRA~2/SFML/include/SFML/Window.hpp \
- C:/PROGRA~2/SFML/include/SFML/System.hpp \
- C:/PROGRA~2/SFML/include/SFML/Config.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/Clock.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/Export.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/Time.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/Err.hpp \
- C:/msys64/mingw64/include/c++/13.1.0/ostream \
+ C:/msys64/mingw64/include/c++/13.1.0/fstream \
  C:/msys64/mingw64/include/c++/13.1.0/bits/requires_hosted.h \
  C:/msys64/mingw64/include/c++/13.1.0/x86_64-w64-mingw32/bits/c++config.h \
  C:/msys64/mingw64/include/c++/13.1.0/x86_64-w64-mingw32/bits/os_defines.h \
  C:/msys64/mingw64/include/c++/13.1.0/x86_64-w64-mingw32/bits/cpu_defines.h \
  C:/msys64/mingw64/include/c++/13.1.0/pstl/pstl_config.h \
+ C:/msys64/mingw64/include/c++/13.1.0/istream \
  C:/msys64/mingw64/include/c++/13.1.0/ios \
  C:/msys64/mingw64/include/c++/13.1.0/iosfwd \
  C:/msys64/mingw64/include/c++/13.1.0/bits/stringfwd.h \
@@ -146,7 +138,131 @@ CMakeFiles/testes.dir/src/gerenciador/gerenciadorDeEstado.cpp.obj: \
  C:/msys64/mingw64/include/c++/13.1.0/x86_64-w64-mingw32/bits/ctype_inline.h \
  C:/msys64/mingw64/include/c++/13.1.0/bits/locale_facets.tcc \
  C:/msys64/mingw64/include/c++/13.1.0/bits/basic_ios.tcc \
+ C:/msys64/mingw64/include/c++/13.1.0/ostream \
  C:/msys64/mingw64/include/c++/13.1.0/bits/ostream.tcc \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/istream.tcc \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/codecvt.h \
+ C:/msys64/mingw64/include/c++/13.1.0/x86_64-w64-mingw32/bits/basic_file.h \
+ C:/msys64/mingw64/include/c++/13.1.0/x86_64-w64-mingw32/bits/c++io.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/fstream.tcc \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/json.hpp \
+ C:/msys64/mingw64/include/c++/13.1.0/algorithm \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/stl_algo.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/algorithmfwd.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/stl_heap.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/uniform_int_dist.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/stl_tempbuf.h \
+ C:/msys64/mingw64/include/c++/13.1.0/pstl/glue_algorithm_defs.h \
+ C:/msys64/mingw64/include/c++/13.1.0/pstl/execution_defs.h \
+ C:/msys64/mingw64/include/c++/13.1.0/functional \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/std_function.h \
+ C:/msys64/mingw64/include/c++/13.1.0/unordered_map \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/unordered_map.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/hashtable.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/hashtable_policy.h \
+ C:/msys64/mingw64/include/c++/13.1.0/ext/aligned_buffer.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/enable_special_members.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/node_handle.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/erase_if.h \
+ C:/msys64/mingw64/include/c++/13.1.0/vector \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/stl_uninitialized.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/stl_vector.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/stl_bvector.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/vector.tcc \
+ C:/msys64/mingw64/include/c++/13.1.0/array \
+ C:/msys64/mingw64/include/c++/13.1.0/compare \
+ C:/msys64/mingw64/include/c++/13.1.0/iterator \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/stream_iterator.h \
+ C:/msys64/mingw64/include/c++/13.1.0/memory \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/stl_raw_storage_iter.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/align.h \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h \
+ C:/msys64/mingw64/include/stdint.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/unique_ptr.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/shared_ptr.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/shared_ptr_base.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/allocated_ptr.h \
+ C:/msys64/mingw64/include/c++/13.1.0/ext/concurrence.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/shared_ptr_atomic.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/atomic_base.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/atomic_lockfree_defines.h \
+ C:/msys64/mingw64/include/c++/13.1.0/backward/auto_ptr.h \
+ C:/msys64/mingw64/include/c++/13.1.0/pstl/glue_memory_defs.h \
+ C:/msys64/mingw64/include/c++/13.1.0/utility \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/stl_relops.h \
+ C:/msys64/mingw64/include/c++/13.1.0/forward_list \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/forward_list.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/forward_list.tcc \
+ C:/msys64/mingw64/include/c++/13.1.0/map \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/stl_tree.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/stl_map.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/stl_multimap.h \
+ C:/msys64/mingw64/include/c++/13.1.0/valarray \
+ C:/msys64/mingw64/include/c++/13.1.0/cmath \
+ C:/msys64/mingw64/include/math.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/specfun.h \
+ C:/msys64/mingw64/include/c++/13.1.0/limits \
+ C:/msys64/mingw64/include/c++/13.1.0/tr1/gamma.tcc \
+ C:/msys64/mingw64/include/c++/13.1.0/tr1/special_function_util.h \
+ C:/msys64/mingw64/include/c++/13.1.0/tr1/bessel_function.tcc \
+ C:/msys64/mingw64/include/c++/13.1.0/tr1/beta_function.tcc \
+ C:/msys64/mingw64/include/c++/13.1.0/tr1/ell_integral.tcc \
+ C:/msys64/mingw64/include/c++/13.1.0/tr1/exp_integral.tcc \
+ C:/msys64/mingw64/include/c++/13.1.0/tr1/hypergeometric.tcc \
+ C:/msys64/mingw64/include/c++/13.1.0/tr1/legendre_function.tcc \
+ C:/msys64/mingw64/include/c++/13.1.0/tr1/modified_bessel_func.tcc \
+ C:/msys64/mingw64/include/c++/13.1.0/tr1/poly_hermite.tcc \
+ C:/msys64/mingw64/include/c++/13.1.0/tr1/poly_laguerre.tcc \
+ C:/msys64/mingw64/include/c++/13.1.0/tr1/riemann_zeta.tcc \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/valarray_array.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/valarray_array.tcc \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/valarray_before.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/slice_array.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/valarray_after.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/gslice.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/gslice_array.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/mask_array.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/indirect_array.h \
+ C:/msys64/mingw64/include/c++/13.1.0/cstdint \
+ C:/msys64/mingw64/include/c++/13.1.0/version \
+ C:/msys64/mingw64/include/c++/13.1.0/cassert \
+ C:/msys64/mingw64/include/assert.h \
+ C:/msys64/mingw64/include/c++/13.1.0/cstring \
+ C:/msys64/mingw64/include/string.h \
+ C:/msys64/mingw64/include/sec_api/string_s.h \
+ C:/msys64/mingw64/include/c++/13.1.0/filesystem \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/fs_fwd.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/chrono.h \
+ C:/msys64/mingw64/include/c++/13.1.0/ratio \
+ C:/msys64/mingw64/include/c++/13.1.0/ctime \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/parse_numbers.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/fs_path.h \
+ C:/msys64/mingw64/include/c++/13.1.0/locale \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/locale_facets_nonio.h \
+ C:/msys64/mingw64/include/c++/13.1.0/x86_64-w64-mingw32/bits/time_members.h \
+ C:/msys64/mingw64/include/c++/13.1.0/x86_64-w64-mingw32/bits/messages_members.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/locale_facets_nonio.tcc \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/locale_conv.h \
+ C:/msys64/mingw64/include/c++/13.1.0/iomanip \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/quoted_string.h \
+ C:/msys64/mingw64/include/c++/13.1.0/sstream \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/sstream.tcc \
+ C:/msys64/mingw64/include/c++/13.1.0/codecvt \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/fs_dir.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/fs_ops.h \
+ C:/msys64/mingw64/include/c++/13.1.0/numeric \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/stl_numeric.h \
+ C:/msys64/mingw64/include/c++/13.1.0/pstl/glue_numeric_defs.h \
+ C:/msys64/mingw64/include/c++/13.1.0/any \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/gerenciador/gerenciadorGrafico.h \
+ C:/PROGRA~2/SFML/include/SFML/Graphics.hpp \
+ C:/PROGRA~2/SFML/include/SFML/Window.hpp \
+ C:/PROGRA~2/SFML/include/SFML/System.hpp \
+ C:/PROGRA~2/SFML/include/SFML/Config.hpp \
+ C:/PROGRA~2/SFML/include/SFML/System/Clock.hpp \
+ C:/PROGRA~2/SFML/include/SFML/System/Export.hpp \
+ C:/PROGRA~2/SFML/include/SFML/System/Time.hpp \
+ C:/PROGRA~2/SFML/include/SFML/System/Err.hpp \
  C:/PROGRA~2/SFML/include/SFML/System/FileInputStream.hpp \
  C:/PROGRA~2/SFML/include/SFML/System/InputStream.hpp \
  C:/PROGRA~2/SFML/include/SFML/System/NonCopyable.hpp \
@@ -156,25 +272,7 @@ CMakeFiles/testes.dir/src/gerenciador/gerenciadorDeEstado.cpp.obj: \
  C:/PROGRA~2/SFML/include/SFML/System/Sleep.hpp \
  C:/PROGRA~2/SFML/include/SFML/System/String.hpp \
  C:/PROGRA~2/SFML/include/SFML/System/Utf.hpp \
- C:/msys64/mingw64/include/c++/13.1.0/algorithm \
- C:/msys64/mingw64/include/c++/13.1.0/bits/stl_algo.h \
- C:/msys64/mingw64/include/c++/13.1.0/bits/algorithmfwd.h \
- C:/msys64/mingw64/include/c++/13.1.0/bits/stl_heap.h \
- C:/msys64/mingw64/include/c++/13.1.0/bits/uniform_int_dist.h \
- C:/msys64/mingw64/include/c++/13.1.0/bits/stl_tempbuf.h \
- C:/msys64/mingw64/include/c++/13.1.0/pstl/glue_algorithm_defs.h \
- C:/msys64/mingw64/include/c++/13.1.0/pstl/execution_defs.h \
- C:/msys64/mingw64/include/c++/13.1.0/locale \
- C:/msys64/mingw64/include/c++/13.1.0/bits/locale_facets_nonio.h \
- C:/msys64/mingw64/include/c++/13.1.0/ctime \
- C:/msys64/mingw64/include/c++/13.1.0/x86_64-w64-mingw32/bits/time_members.h \
- C:/msys64/mingw64/include/c++/13.1.0/x86_64-w64-mingw32/bits/messages_members.h \
- C:/msys64/mingw64/include/c++/13.1.0/bits/codecvt.h \
- C:/msys64/mingw64/include/c++/13.1.0/bits/locale_facets_nonio.tcc \
- C:/msys64/mingw64/include/c++/13.1.0/bits/locale_conv.h \
  C:/PROGRA~2/SFML/include/SFML/System/Utf.inl \
- C:/msys64/mingw64/include/c++/13.1.0/iterator \
- C:/msys64/mingw64/include/c++/13.1.0/bits/stream_iterator.h \
  C:/PROGRA~2/SFML/include/SFML/System/String.inl \
  C:/PROGRA~2/SFML/include/SFML/System/Thread.hpp \
  C:/PROGRA~2/SFML/include/SFML/System/Thread.inl \
@@ -198,17 +296,10 @@ CMakeFiles/testes.dir/src/gerenciador/gerenciadorDeEstado.cpp.obj: \
  C:/PROGRA~2/SFML/include/SFML/Window/Sensor.hpp \
  C:/PROGRA~2/SFML/include/SFML/Window/Touch.hpp \
  C:/PROGRA~2/SFML/include/SFML/Window/VideoMode.hpp \
- C:/msys64/mingw64/include/c++/13.1.0/vector \
- C:/msys64/mingw64/include/c++/13.1.0/bits/stl_uninitialized.h \
- C:/msys64/mingw64/include/c++/13.1.0/bits/stl_vector.h \
- C:/msys64/mingw64/include/c++/13.1.0/bits/stl_bvector.h \
- C:/msys64/mingw64/include/c++/13.1.0/bits/vector.tcc \
  C:/PROGRA~2/SFML/include/SFML/Window/Window.hpp \
  C:/PROGRA~2/SFML/include/SFML/Window/WindowBase.hpp \
  C:/PROGRA~2/SFML/include/SFML/Window/Vulkan.hpp \
  C:/PROGRA~2/SFML/include/SFML/Window/WindowHandle.hpp \
- C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h \
- C:/msys64/mingw64/include/stdint.h \
  C:/PROGRA~2/SFML/include/SFML/Window/WindowStyle.hpp \
  C:/PROGRA~2/SFML/include/SFML/Graphics/BlendMode.hpp \
  C:/PROGRA~2/SFML/include/SFML/Graphics/Export.hpp \
@@ -229,13 +320,6 @@ CMakeFiles/testes.dir/src/gerenciador/gerenciadorDeEstado.cpp.obj: \
  C:/PROGRA~2/SFML/include/SFML/Graphics/Glyph.hpp \
  C:/PROGRA~2/SFML/include/SFML/Graphics/Texture.hpp \
  C:/PROGRA~2/SFML/include/SFML/Graphics/Image.hpp \
- C:/msys64/mingw64/include/c++/13.1.0/map \
- C:/msys64/mingw64/include/c++/13.1.0/bits/stl_tree.h \
- C:/msys64/mingw64/include/c++/13.1.0/ext/aligned_buffer.h \
- C:/msys64/mingw64/include/c++/13.1.0/bits/node_handle.h \
- C:/msys64/mingw64/include/c++/13.1.0/bits/stl_map.h \
- C:/msys64/mingw64/include/c++/13.1.0/bits/stl_multimap.h \
- C:/msys64/mingw64/include/c++/13.1.0/bits/erase_if.h \
  C:/PROGRA~2/SFML/include/SFML/Graphics/RectangleShape.hpp \
  C:/PROGRA~2/SFML/include/SFML/Graphics/RenderTarget.hpp \
  C:/PROGRA~2/SFML/include/SFML/Graphics/View.hpp \
@@ -249,8 +333,6 @@ CMakeFiles/testes.dir/src/gerenciador/gerenciadorDeEstado.cpp.obj: \
  C:/PROGRA~2/SFML/include/SFML/Graphics/VertexBuffer.hpp \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/gerenciador/camera.h \
  C:/msys64/mingw64/include/c++/13.1.0/iostream \
- C:/msys64/mingw64/include/c++/13.1.0/istream \
- C:/msys64/mingw64/include/c++/13.1.0/bits/istream.tcc \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/fases/level-1.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/fases/fase.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/gerenciador/gerenciadorDeColisao.h \
@@ -258,22 +340,6 @@ CMakeFiles/testes.dir/src/gerenciador/gerenciadorDeEstado.cpp.obj: \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/lista/lista.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/lista/elemento.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/entidade.h \
- C:/msys64/mingw64/include/c++/13.1.0/cmath \
- C:/msys64/mingw64/include/math.h \
- C:/msys64/mingw64/include/c++/13.1.0/bits/specfun.h \
- C:/msys64/mingw64/include/c++/13.1.0/limits \
- C:/msys64/mingw64/include/c++/13.1.0/tr1/gamma.tcc \
- C:/msys64/mingw64/include/c++/13.1.0/tr1/special_function_util.h \
- C:/msys64/mingw64/include/c++/13.1.0/tr1/bessel_function.tcc \
- C:/msys64/mingw64/include/c++/13.1.0/tr1/beta_function.tcc \
- C:/msys64/mingw64/include/c++/13.1.0/tr1/ell_integral.tcc \
- C:/msys64/mingw64/include/c++/13.1.0/tr1/exp_integral.tcc \
- C:/msys64/mingw64/include/c++/13.1.0/tr1/hypergeometric.tcc \
- C:/msys64/mingw64/include/c++/13.1.0/tr1/legendre_function.tcc \
- C:/msys64/mingw64/include/c++/13.1.0/tr1/modified_bessel_func.tcc \
- C:/msys64/mingw64/include/c++/13.1.0/tr1/poly_hermite.tcc \
- C:/msys64/mingw64/include/c++/13.1.0/tr1/poly_laguerre.tcc \
- C:/msys64/mingw64/include/c++/13.1.0/tr1/riemann_zeta.tcc \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/listeners/listenerFase.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/listeners/listener.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/Obstaculo/Plataforma.h \
@@ -289,10 +355,6 @@ CMakeFiles/testes.dir/src/gerenciador/gerenciadorDeEstado.cpp.obj: \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/inimigo/slime.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/fundo/fundo.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/fundo/camada.h \
- C:/msys64/mingw64/include/c++/13.1.0/fstream \
- C:/msys64/mingw64/include/c++/13.1.0/x86_64-w64-mingw32/bits/basic_file.h \
- C:/msys64/mingw64/include/c++/13.1.0/x86_64-w64-mingw32/bits/c++io.h \
- C:/msys64/mingw64/include/c++/13.1.0/bits/fstream.tcc \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/fases/level-2.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/estados/estadoMenu.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/menus/menu.h \
@@ -300,9 +362,9 @@ CMakeFiles/testes.dir/src/gerenciador/gerenciadorDeEstado.cpp.obj: \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/botao/botaoTexto.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/botao/textoEfeito.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/botao/texto.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/menus/card.h \
  C:/msys64/mingw64/include/c++/13.1.0/list \
  C:/msys64/mingw64/include/c++/13.1.0/bits/stl_list.h \
- C:/msys64/mingw64/include/c++/13.1.0/bits/allocated_ptr.h \
  C:/msys64/mingw64/include/c++/13.1.0/bits/list.tcc \
  C:/msys64/mingw64/include/c++/13.1.0/stack \
  C:/msys64/mingw64/include/c++/13.1.0/deque \

@@ -15,6 +15,8 @@ namespace Game{
          * ID_Fundo: identificador do fundo
         */
         
+        Listener::ListenerFase* Fase::listenerFase = nullptr;
+
         Fase::Fase(const IDs::IDs ID_Fase, const IDs::IDs ID_Fundo):
         Ente(ID_Fase),fundo(ID_Fundo)
         {
@@ -29,18 +31,13 @@ namespace Game{
                 exit(1);
             }
 
-           
-            listenerFase = new Listener::ListenerFase();
+            if(listenerFase == nullptr)
+            {
+                listenerFase = new Listener::ListenerFase();
+                listenerFase->setFase(this);
+            }
 
-             if(listenerFase == nullptr)
-             {
-                std::cout<<"Fase::Fase: nao foi possivel criar o listener da fase";
-                exit(1);
-             }
-
-             listenerFase->setFase(this);
-            
-
+            listenerFase->mudarEstado(true);
         }
 
         /**
@@ -75,7 +72,6 @@ namespace Game{
                 delete(listaObstaculos);
                 listaObstaculos = nullptr;
             }*/
-
         }
 
         /**
@@ -195,7 +191,8 @@ namespace Game{
             {
                 fundo.executar();
 
-                desenhar();
+                listaObstaculos->executar();
+                listaPersonagens->executar();
 
                 pColisao->executar();
             }
@@ -211,8 +208,10 @@ namespace Game{
 
         void Fase::desenhar()
         {
-            listaObstaculos->executar();
-            listaPersonagens->executar();
+            fundo.executar();
+
+            listaObstaculos->desenharEntidades();
+            listaPersonagens->desenharEntidades();
 
         }
 
@@ -234,9 +233,42 @@ namespace Game{
             return nullptr;
         }
 
-        void Fase::mudarEstadoListener()
+        void Fase::mudarEstadoListener(const bool ativo)
         {
-            listenerFase->mudarEstado();
+            listenerFase->mudarEstado(ativo);
+        }
+
+        nlohmann::ordered_json Fase::salvarFase()
+        {
+            nlohmann::ordered_json json = salvarEnte();
+            return json;
+        }
+
+        nlohmann::ordered_json Fase::salvarEntidades()
+        {
+            nlohmann::ordered_json json;
+
+            for(int i = 0 ; i < listaPersonagens->getTam() ; i++)
+            {
+                Entidade::Entidade* entidade = listaPersonagens->operator[](i);
+                if(entidade != nullptr)
+                {
+                    nlohmann::ordered_json jsonEntidade = entidade->salvar();
+                    json.push_back(jsonEntidade);
+                }
+            }
+
+             for(int i = 0 ; i < listaObstaculos->getTam() ; i++)
+            {
+                Entidade::Entidade* entidade = listaObstaculos->operator[](i);
+                if(entidade != nullptr)
+                {
+                    nlohmann::ordered_json jsonEntidade = entidade->salvar();
+                    json.push_back(jsonEntidade);
+                }
+            }
+
+            return json;
         }
     }
 }

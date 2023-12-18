@@ -40,6 +40,9 @@ namespace Game{
 
                     //metodos de ataque
                     virtual void atualizarAtaque();
+
+                    nlohmann::ordered_json salvar();
+                    
                     
                     //metodos de vida
                     void inicializarBarraDeVida();

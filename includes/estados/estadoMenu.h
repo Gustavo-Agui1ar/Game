@@ -30,7 +30,7 @@ namespace Game{
                 EstadoMenu(const IDs::IDs ID);
                 ~EstadoMenu();
 
-                void mudarEstadoListener();
+                void mudarEstadoListener(const bool ativo);
                 Menu::Menu* getMenu();
                 Fase::Fase* getFase();
                 void executar();

@@ -27,7 +27,7 @@ namespace Game{
             void executar();
             Fase::Fase* getFase();
 
-            void mudarEstadoListener();
+            void mudarEstadoListener(const bool ativo);
 
         };
     }

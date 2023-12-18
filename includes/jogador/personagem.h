@@ -74,6 +74,9 @@ namespace Game {
                 void pararAtaque();
                 void atacar();
 
+                nlohmann::ordered_json salvarPersonagem();
+                virtual nlohmann::ordered_json salvar() = 0;
+
                 //metodos de vida
                 const bool getMorrer();
 

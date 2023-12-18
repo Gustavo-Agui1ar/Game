@@ -31,6 +31,9 @@ namespace Game{
             void setTam(const sf::Vector2f tam);
             sf::Vector2f getTam();
 
+            nlohmann::ordered_json salvarEntidade();
+            virtual nlohmann::ordered_json salvar() = 0;
+
             //metodos referentes a posicao
             void setPos(sf::Vector2f pos);
             virtual void atualizar() = 0;

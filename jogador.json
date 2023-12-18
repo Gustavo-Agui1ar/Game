@@ -1,0 +1,27 @@
+{
+  "ID": 1,
+  "tam": {
+    "x": 30.0,
+    "y": 60.0
+  },
+  "pos": {
+    "x": 1580.814208984375,
+    "y": 680.455810546875
+  },
+  "remover": false,
+  "velocidade": {
+    "x": 250.0,
+    "y": -158.41033935546875
+  },
+  "tempoMorrer": 0.0,
+  "levandoDano": false,
+  "tempoDano": 6.402946472167969,
+  "morrendo": false,
+  "atacando": false,
+  "movendo": false,
+  "direcao": false,
+  "dano": 20.0,
+  "vida": 100.0,
+  "dt": 0.0050200000405311584,
+  "noChao": false
+}

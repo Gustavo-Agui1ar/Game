@@ -7,7 +7,7 @@ namespace Game {
     namespace Menu{
 
         Menu::Menu(const IDs::IDs ID, const sf::Vector2f tamBotao, const std::string titulo, const unsigned int tamFonte):
-        Ente(ID), listaDeBotao(), it(), tamBotao(tamBotao), tamJanela(pGrafico->getTamJanela()), posFundo(sf::Vector2f(0.0f,0.0f)),
+        Ente(ID), listaDeBotao(), it(), tamJanela(pGrafico->getTamJanela()), tamBotao(tamBotao), posFundo(sf::Vector2f(0.0f,0.0f)),
         titulo(pGrafico->carregarFonte( "../Game/animations/botton/menu.ttf"), titulo, tamFonte), listenerMenu(new Listener::ListenerMenu(this)),
         mouseSelecionado(false)
         {
@@ -35,9 +35,9 @@ namespace Game {
             }
         }
 
-        void Menu::mudarEstadoListener()
+        void Menu::mudarEstadoListener(const bool ativo)
         {
-            listenerMenu->mudarEstado();
+            listenerMenu->mudarEstado(ativo);
         }
 
         void Menu::addBotao(const std::string infoTexto, const sf::Vector2f pos, const IDs::IDs ID, const sf::Color corSelecionado)
@@ -114,8 +114,9 @@ namespace Game {
             {
                 Botao::BotaoTexto* botao = *aux;
                 sf::RectangleShape caixa = botao->getCaixa();
+                sf::Vector2f posMouseJan = pGrafico->getWindow()->mapPixelToCoords((sf::Vector2i)posMouse);
                 
-                if(caixa.getGlobalBounds().contains(posMouse))
+                if(caixa.getGlobalBounds().contains(posMouseJan))
                 {
                     (*it)->setSelecionado(false);
                     it = aux;
@@ -141,6 +142,16 @@ namespace Game {
         void Menu::criarFundo()
         {
             
+        }
+
+        void Menu::selecionaEsquerda()
+        {
+
+        }
+
+        void Menu::selecionaDireita()
+        {
+
         }
     }
 }

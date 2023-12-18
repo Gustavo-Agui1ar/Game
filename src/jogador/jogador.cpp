@@ -216,10 +216,20 @@ namespace Game{
                         return noChao;
                     }
 
-                    void Jogador::mudarEstadoListener()
+                    void Jogador::mudarEstadoListener(const bool ativo)
                     {
-                        listenerJogador->mudarEstado();
+                        listenerJogador->mudarEstado(ativo);
                     }
+
+                    nlohmann::ordered_json Jogador::salvar()
+                    {
+                        nlohmann::ordered_json json = salvarPersonagem();
+
+                        json["noChao"] = noChao;
+
+                        return json;
+                    }
+
             }
         }
     }

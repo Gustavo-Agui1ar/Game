@@ -20,7 +20,7 @@
 
 #define JOGADOR_ANIMACAO_DE_MORTE  0.9f
 #define JOGADOR_TEMPO_LEVAR_DANO 0.5f
-#define DANO_JOGADOR 100.0f
+#define DANO_JOGADOR 20.0f
 
 namespace Game {
 
@@ -59,7 +59,7 @@ namespace Game {
                     Jogador(const sf::Vector2f pos, const sf::Vector2f tam, const float vel, Item::Arma* arma = nullptr);
                     ~Jogador();
                    
-                    void mudarEstadoListener();
+                    void mudarEstadoListener(const bool ativo);
                     //metodo de colisao
                     void colisao(Entidade* outraEntidade, sf::Vector2f ds = sf::Vector2f(0.f,0.f));
                     
@@ -67,7 +67,9 @@ namespace Game {
                     const bool getNoChao();
                     void podePular();
                     void pular();
-                    
+
+                    nlohmann::ordered_json salvar();
+
                     //metodos de ataque
                     void atualizarArma();
 

@@ -33,4 +33,13 @@ namespace Game{
             return ID;
         }
 
+        nlohmann::ordered_json Ente::salvarEnte()
+        {
+            nlohmann::ordered_json json;
+
+            json["ID"] = getID();
+
+            return json;
+        }
+
 }

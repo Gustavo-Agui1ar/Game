@@ -31,10 +31,12 @@ namespace IDs{
             botao_salvar_jogo, 
             botao_carregar, 
             botao_remover,
+            botao_reniciar_jogo,
 
             //IDs menus
 
             menu_principal,
-            menu_pause
+            menu_pause,
+            menu_gameOver
         };
 }

@@ -24,10 +24,14 @@ namespace Game{
 
             ~GerenciadorDeEstado();
             static GerenciadorDeEstado* getGerenciadorDeEstado();
+            void desativarListener();
+            void ativarListener();
+
 
             void executar();
             
             void addEstado(const IDs::IDs ID);
+            void addContinuarGameOver(const IDs::IDs ID);
             void removerEstado();
             
             Estado::Estado* getEstadoAtual();

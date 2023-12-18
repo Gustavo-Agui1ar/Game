@@ -77,14 +77,14 @@ namespace Game{
             pEvento->removerListener(this);
         }
 
-        void Listener::mudarEstado()
+        void Listener::mudarEstado(const bool ativo)
         {
-            ativo = !ativo;
+            this->ativo = ativo;
         }
 
         const bool Listener::getAtivo()
         {
-            return ativo;
+            return this->ativo;
         }
 
         void Listener::moveMouse(const sf::Vector2f posMouse)

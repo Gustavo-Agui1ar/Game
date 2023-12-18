@@ -30,9 +30,14 @@ namespace Game{
 
             while(!pilhaEstados.empty())
             {
-                //delete(pilhaEstados.top());
+                delete(pilhaEstados.top());
                 pilhaEstados.top() = nullptr;
                 pilhaEstados.pop();
+            }
+
+            if(pEstado){
+                delete(pEstado);
+                pEstado = nullptr;
             }
         }
 
@@ -42,38 +47,30 @@ namespace Game{
 
             if(ID == IDs::IDs::forest || ID == IDs::IDs::caverna)
             {
-                Estado::EstadoFase* fase = new Estado::EstadoFase(ID);
-               
-                if(fase == nullptr)
-                {
-                    std::cout<<"Gerenciador::GerenciadorDeEstado: erro ao criar estado";
-                    exit(1);
-                }
-
-                estado = static_cast<Estado::Estado*>(fase);
-
+                estado = static_cast<Estado::Estado*>(new Estado::EstadoFase(ID));
             }
-            else if(ID == IDs::IDs::menu_principal || ID == IDs::IDs::menu_pause)
+            else if(ID == IDs::IDs::menu_principal || ID == IDs::IDs::menu_pause || ID == IDs::IDs::menu_gameOver)
             {
-                Estado::EstadoMenu* menu = new Estado::EstadoMenu(ID);
-
-                if(menu == nullptr)
-                {
-                    std::cout<<"Gerenciador::GerenciadorDeEstado: erro ao criar estado";
-                    exit(1);
-                }
-
-                estado = static_cast<Estado::Estado*>(menu);
+                estado = static_cast<Estado::Estado*>(new Estado::EstadoMenu(ID));
             }
 
+            if(estado == nullptr)
+            {
+                std::cout << ":Gerenciador::GerenciadorEstado::estado nulo" << std::endl;
+                exit(1);
+            }
             if(!pilhaEstados.empty())
             {
-                Estado::Estado* estado = getEstadoAtual();
-                estado->mudarEstadoListener();
+                desativarListener();
             }
+            
+            pilhaEstados.push(estado);
+        }
 
-            if(estado != nullptr)
-                pilhaEstados.push(estado);
+        void GerenciadorDeEstado::addContinuarGameOver(const IDs::IDs ID)
+        {
+            removerEstado(2);
+            addEstado(ID);
         }
 
         void GerenciadorDeEstado::removerEstado()
@@ -87,19 +84,38 @@ namespace Game{
 
             if(!pilhaEstados.empty())
             {
-                Estado::Estado* estado = getEstadoAtual();
-                estado->mudarEstadoListener();
+               ativarListener();
             }
-            
-            else{
+            else
+            {
                 Gerenciador::GerenciadorGrafico* pGrafico = pGrafico->getGerenciadorGrafico();
                 pGrafico->fechaJanela();
             }
         }
 
+
+        void GerenciadorDeEstado::ativarListener()
+        {
+            Estado::Estado* estadoAtual = getEstadoAtual();
+
+            estadoAtual->mudarEstadoListener(true);
+        }
+
+
+        void GerenciadorDeEstado::desativarListener()
+        {
+            Estado::Estado* estadoAtual = getEstadoAtual();
+
+            estadoAtual->mudarEstadoListener(false);
+        }
+
         Estado::Estado* GerenciadorDeEstado::getEstadoAtual()
         {
-            return pilhaEstados.top();
+            if(!pilhaEstados.empty())
+            {
+                return pilhaEstados.top();
+            }
+            return nullptr;
         }
 
         void GerenciadorDeEstado::executar()
@@ -109,7 +125,6 @@ namespace Game{
                 pilhaEstados.top()->executar();
             }
         }
-
         void GerenciadorDeEstado::removerEstado(const int quantidade)
         {
             int i = 0;
@@ -125,7 +140,7 @@ namespace Game{
             }
             if(!pilhaEstados.empty())
             {
-                pilhaEstados.top()->mudarEstadoListener();
+                ativarListener();
             } 
             else 
             {
@@ -133,7 +148,5 @@ namespace Game{
                 pGrafico->fechaJanela();
             }
         }
-
-     }
-
+    }
 }

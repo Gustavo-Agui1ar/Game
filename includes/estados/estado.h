@@ -23,7 +23,7 @@ namespace Game{
             virtual void executar() = 0;
             virtual void desenhar();
 
-            virtual void mudarEstadoListener() = 0;
+            virtual void mudarEstadoListener(const bool ativo) = 0;
             
             const bool getRemover();
             void setRemover();

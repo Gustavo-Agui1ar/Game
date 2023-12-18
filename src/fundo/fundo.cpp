@@ -51,7 +51,7 @@ namespace Game{
 
         Fundo::~Fundo()
         {
-            for(int i = 0 ; camadas.size() ; i++)
+            for(int i = 0 ; i < camadas.size() ; i++)
             {
                 Camada* camada = camadas.at(i);
 

@@ -14,7 +14,7 @@ Game::Principal::Principal()
 
     if(pEstado == nullptr)
     {
-        std::cout<<"nao foi possivel criar o gEstado";
+        std::cout<<"nao foi possivel criar o pEstado";
         exit(1);
     }
 
@@ -38,7 +38,8 @@ Game::Principal::Principal()
 
 void Game::Principal::executar()
 {
-    while (gerenciadorGrafico->verificaJanelaAberta()){
+    while (gerenciadorGrafico->verificaJanelaAberta())
+    {
 
         gerenciadorDeEventos->executar();
 
@@ -50,7 +51,6 @@ void Game::Principal::executar()
 
         gerenciadorGrafico->resetarRelogio();
     }
-    return;
 }
 
 /*------------------------------------------------------------------*/

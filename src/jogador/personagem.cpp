@@ -232,7 +232,27 @@ namespace Game{
                 this->arma->setTam(tam);
             }
 
+            nlohmann::ordered_json Personagem::salvarPersonagem()
+            {
+                nlohmann::ordered_json json = salvarEntidade();
+
+                json["velocidade"] = {{"x", velocidade.x}, {"y", velocidade.y}};
+                json["tempoMorrer"] = this->tempoMorrer;
+                json["levandoDano"] = this->levandoDano;
+                json["tempoDano"] = this->tempoDano;
+                json["morrendo"] = this->morrendo;
+                json["atacando"] = this->atacando;
+                json["movendo"] = this->movendo;
+                json["direcao"] = this->direcao;
+                json["dano"] = this->dano;
+                json["vida"] = this->vida;
+                json["dt"] = this->dt;
+
+                return json;
+            }
+
         }
+
     }
 }
 

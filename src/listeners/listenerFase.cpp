@@ -23,8 +23,7 @@ namespace Game{
         void ListenerFase::notificarGameOver()
         {
             //provisorio
-            std::cout<<"Game Over :(";
-            exit(1);
+            pEstado->addEstado(IDs::IDs::menu_gameOver);
         }        
 
         void ListenerFase::teclaPressionada(sf::Keyboard::Key tecla)
@@ -36,7 +35,7 @@ namespace Game{
         {
             if(tecEspecial[tecla] == "Escape")
             {
-              //  pEstado->addEstado(IDs::IDs::menu_pause);
+                pEstado->addEstado(IDs::IDs::menu_pause);
             }
         }
 
