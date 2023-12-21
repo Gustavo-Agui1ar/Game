@@ -681,6 +681,33 @@ src/gerenciador/camera.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/gerenciador/camera.cpp.s
 .PHONY : src/gerenciador/camera.cpp.s
 
+src/gerenciador/gerenciadorArquivo.obj: src/gerenciador/gerenciadorArquivo.cpp.obj
+.PHONY : src/gerenciador/gerenciadorArquivo.obj
+
+# target to build an object file
+src/gerenciador/gerenciadorArquivo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorArquivo.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/gerenciador/gerenciadorArquivo.cpp.obj
+.PHONY : src/gerenciador/gerenciadorArquivo.cpp.obj
+
+src/gerenciador/gerenciadorArquivo.i: src/gerenciador/gerenciadorArquivo.cpp.i
+.PHONY : src/gerenciador/gerenciadorArquivo.i
+
+# target to preprocess a source file
+src/gerenciador/gerenciadorArquivo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorArquivo.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/gerenciador/gerenciadorArquivo.cpp.i
+.PHONY : src/gerenciador/gerenciadorArquivo.cpp.i
+
+src/gerenciador/gerenciadorArquivo.s: src/gerenciador/gerenciadorArquivo.cpp.s
+.PHONY : src/gerenciador/gerenciadorArquivo.s
+
+# target to generate assembly for a file
+src/gerenciador/gerenciadorArquivo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorArquivo.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/gerenciador/gerenciadorArquivo.cpp.s
+.PHONY : src/gerenciador/gerenciadorArquivo.cpp.s
+
 src/gerenciador/gerenciadorDeColisao.obj: src/gerenciador/gerenciadorDeColisao.cpp.obj
 .PHONY : src/gerenciador/gerenciadorDeColisao.obj
 
@@ -1345,6 +1372,9 @@ help:
 	@echo ... src/gerenciador/camera.obj
 	@echo ... src/gerenciador/camera.i
 	@echo ... src/gerenciador/camera.s
+	@echo ... src/gerenciador/gerenciadorArquivo.obj
+	@echo ... src/gerenciador/gerenciadorArquivo.i
+	@echo ... src/gerenciador/gerenciadorArquivo.s
 	@echo ... src/gerenciador/gerenciadorDeColisao.obj
 	@echo ... src/gerenciador/gerenciadorDeColisao.i
 	@echo ... src/gerenciador/gerenciadorDeColisao.s

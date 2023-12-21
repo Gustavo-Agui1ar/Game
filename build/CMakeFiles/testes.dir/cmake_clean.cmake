@@ -42,6 +42,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/testes.dir/src/fundo/fundo.cpp.obj.d"
   "CMakeFiles/testes.dir/src/gerenciador/camera.cpp.obj"
   "CMakeFiles/testes.dir/src/gerenciador/camera.cpp.obj.d"
+  "CMakeFiles/testes.dir/src/gerenciador/gerenciadorArquivo.cpp.obj"
+  "CMakeFiles/testes.dir/src/gerenciador/gerenciadorArquivo.cpp.obj.d"
   "CMakeFiles/testes.dir/src/gerenciador/gerenciadorDeColisao.cpp.obj"
   "CMakeFiles/testes.dir/src/gerenciador/gerenciadorDeColisao.cpp.obj.d"
   "CMakeFiles/testes.dir/src/gerenciador/gerenciadorDeEstado.cpp.obj"

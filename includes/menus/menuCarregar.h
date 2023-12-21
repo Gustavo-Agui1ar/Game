@@ -2,6 +2,7 @@
 #pragma once 
 
 #include "menuPrincipal.h"
+#include "../gerenciador/gerenciadorArquivo.h"
 
 namespace Game {
 
@@ -11,6 +12,7 @@ namespace Game {
 
             private:
 
+                Gerenciador::GerenciadorArquivo gerenciadorArquivo;
                 std::list<Card*> listaCards;
                 std::list<Card*>::iterator itCards;
 

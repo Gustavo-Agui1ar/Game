@@ -42,6 +42,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Jogo.dir/src/fundo/fundo.cpp.obj.d"
   "CMakeFiles/Jogo.dir/src/gerenciador/camera.cpp.obj"
   "CMakeFiles/Jogo.dir/src/gerenciador/camera.cpp.obj.d"
+  "CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorArquivo.cpp.obj"
+  "CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorArquivo.cpp.obj.d"
   "CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeColisao.cpp.obj"
   "CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeColisao.cpp.obj.d"
   "CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEstado.cpp.obj"

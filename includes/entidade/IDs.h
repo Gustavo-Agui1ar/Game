@@ -37,6 +37,7 @@ namespace IDs{
 
             menu_principal,
             menu_pause,
-            menu_gameOver
+            menu_gameOver,
+            menu_carregar
         };
 }

@@ -19,6 +19,7 @@ namespace Game {
 
                 void abrirArquivoLeitura(const char* caminhoArquivo);
                 void fecharArquivoLeitura();
+                
                 void abrirArquivoGravar(const char* caminhoArquivo);
                 void fecharArquivoGravar();
 
