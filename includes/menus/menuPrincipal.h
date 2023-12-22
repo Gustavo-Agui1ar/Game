@@ -23,6 +23,7 @@ namespace Game{
         public:
 
             MenuPrincipal();
+            MenuPrincipal(const IDs::IDs ID, std::string titulo, const unsigned int tamFonte);
             virtual ~MenuPrincipal();
 
             virtual void criarBotoes();

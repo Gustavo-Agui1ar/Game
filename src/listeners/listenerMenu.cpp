@@ -25,6 +25,7 @@ namespace Game{
                 switch(menu->getIDBotaoSelecionado())
                 {
                     case(IDs::IDs::botao_sair):
+                    { 
                         if(menu->getID() == IDs::IDs::menu_pause || menu->getID() == IDs::IDs::menu_gameOver)
                         {
                             pEstado->removerEstado(2);
@@ -33,26 +34,38 @@ namespace Game{
                         {
                             pEstado->removerEstado();
                         }
-                        break;
-                    case(IDs::IDs::botao_voltar):
-                        pEstado->removerEstado();
-                        break;
-                    case(IDs::IDs::botao_reniciar_jogo):
-                    {
-                        //por enquanto...
-                        pEstado->addContinuarGameOver(IDs::IDs::forest);
                     }
                     break;
+                    
+                    case(IDs::IDs::botao_voltar):
+                    {
+                        pEstado->removerEstado();
+                    }
+                    break;
+                    
                     case(IDs::IDs::botao_novoJogo):
+                    {
                         pEstado->addEstado(IDs::IDs::forest);
                         Estado::EstadoFase* fase = dynamic_cast<Estado::EstadoFase*>(pEstado->getEstadoAtual());
                         fase->criarFase();
-                        break;
+                    }
+                    break;
+                    
+                    case(IDs::IDs::botao_carregar_jogo):
+                    {
+                        pEstado->addEstado(IDs::IDs::menu_carregar);
+                    }
+                    break;
+                    
+                    case(IDs::IDs::botao_reniciar_jogo):
+                    {
+                        pEstado->addContinuarGameOver(IDs::IDs::forest);
+                    }
+                    break;
+                    
                     /*case(IDs::IDs::botao_opcao):
-                        break;
                     case(IDs::IDs::botao_salvar_jogo):
                         break;
-                    case(IDs::IDs::botao_carregar_jogo):
                         break;*/
                 }
             
@@ -69,7 +82,14 @@ namespace Game{
             {
                 menu->selecionaParaBaixo();
             }
-
+            else if(tecEspecial[tecla] == "Left")
+            {
+                menu->selecionaEsquerda();
+            }
+            else if(tecEspecial[tecla] == "Right")
+            {
+                menu->selecionaDireita();
+            }
         }
 
         void ListenerMenu::moveMouse(const sf::Vector2f posMouse)
@@ -115,7 +135,7 @@ namespace Game{
                                 break;
                             case (IDs::IDs::botao_carregar_jogo):
                             {
-                                //pGEstado->addEstado(IDs::IDs::estado_menu_carregar_jogo);
+                                pEstado->addEstado(IDs::IDs::menu_carregar);
                             }
                                 break;
                             case(IDs::IDs::botao_reniciar_jogo):

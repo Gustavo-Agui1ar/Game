@@ -12,7 +12,14 @@ namespace Game{
             titulo.setPos(sf::Vector2f(tamJanela.x/2.0f - titulo.getTam().x/2.0f, 25.0f));
             titulo.setCorTexto(sf::Color(238,173,45));
             criarFundo();
-            criarBotoes();
+        }
+
+        MenuPrincipal::MenuPrincipal(const IDs::IDs ID, std::string titulo, const unsigned int tamFonte):
+        Menu(ID, sf::Vector2f(TAM_BOTAO_X,TAM_BOTAO_Y), titulo, tamFonte),fundo(IDs::IDs::fundo_menu)
+        {
+            this->titulo.setPos(sf::Vector2f(tamJanela.x/2.0f - this->titulo.getTam().x/2.0f, 25.0f));
+            this->titulo.setCorTexto(sf::Color(238,173,45));
+            criarFundo();
         }
 
         MenuPrincipal::~MenuPrincipal()

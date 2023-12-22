@@ -1194,6 +1194,33 @@ src/menus/menu.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/menu.cpp.s
 .PHONY : src/menus/menu.cpp.s
 
+src/menus/menuCarregar.obj: src/menus/menuCarregar.cpp.obj
+.PHONY : src/menus/menuCarregar.obj
+
+# target to build an object file
+src/menus/menuCarregar.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menuCarregar.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/menuCarregar.cpp.obj
+.PHONY : src/menus/menuCarregar.cpp.obj
+
+src/menus/menuCarregar.i: src/menus/menuCarregar.cpp.i
+.PHONY : src/menus/menuCarregar.i
+
+# target to preprocess a source file
+src/menus/menuCarregar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menuCarregar.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/menuCarregar.cpp.i
+.PHONY : src/menus/menuCarregar.cpp.i
+
+src/menus/menuCarregar.s: src/menus/menuCarregar.cpp.s
+.PHONY : src/menus/menuCarregar.s
+
+# target to generate assembly for a file
+src/menus/menuCarregar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menuCarregar.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/menuCarregar.cpp.s
+.PHONY : src/menus/menuCarregar.cpp.s
+
 src/menus/menuGameOver.obj: src/menus/menuGameOver.cpp.obj
 .PHONY : src/menus/menuGameOver.obj
 
@@ -1429,6 +1456,9 @@ help:
 	@echo ... src/menus/menu.obj
 	@echo ... src/menus/menu.i
 	@echo ... src/menus/menu.s
+	@echo ... src/menus/menuCarregar.obj
+	@echo ... src/menus/menuCarregar.i
+	@echo ... src/menus/menuCarregar.s
 	@echo ... src/menus/menuGameOver.obj
 	@echo ... src/menus/menuGameOver.i
 	@echo ... src/menus/menuGameOver.s

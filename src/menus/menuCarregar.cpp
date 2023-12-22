@@ -1,5 +1,5 @@
 
-#include "../includes/menus/menuCarregar.cpp"
+#include "../includes/menus/menuCarregar.h"
 
 namespace Game{
 
@@ -33,9 +33,9 @@ namespace Game{
         {
             float espacamento = (tamJanela.x/5.0f)/5.0f;
 
-            for(int i = 0 < 4 ; i++)
+            for(int i = 0 ; i < 4 ; i++)
             {
-                sf::Vector2f pos((tamJanela.5.0f) * i + espaco * (i + 1),180.0f);
+                sf::Vector2f pos(sf::Vector2f((tamJanela.x/5.0f) * i + espacamento * (i + 1),180.0f));
 
                 std::string caminhoEntidades = "Game/saves/SalvarEntidades/salvar" + std::to_string(i + 1) + ".txt";
                 std::string caminhoFase = "Game/saves/SalvarFase/salvar" + std::to_string(i + 1) + ".txt";
@@ -79,7 +79,7 @@ namespace Game{
 
             if(card->getExiste())
             {
-                gerenciadorArquivo.removeArquivo(card->getCaminhoEntidades().c_str());
+                gerenciadorArquivo.removeArquivo(card->getCaminhoEntidade().c_str());
                 gerenciadorArquivo.removeArquivo(card->getCaminhoFase().c_str());
                 gerenciadorArquivo.removeArquivo(card->getCaminhoImagem().c_str());
                 card->deletarTextura();
@@ -94,13 +94,13 @@ namespace Game{
         void MenuCarregar::criarBotoes()
         {
             const float posBotaoX = tamJanela.x/2.0f - tamBotao.x/2.0f;
-            addBotao( "Carregar", sf::Vector2f(posBotaoX,tamJanela.y/2.0f + tamJanela.y * 2.4f), IDs::IDs::botao_carregar , sf::Color{238,173,45});
-            addBotao( "Remover", sf::Vector2f(posBotaoX,tamJanela.y/2.0f + tamJanela.y * 3.6f), IDs::IDs::botao_remover, sf::Color{238,173,45});
-            addBotao( "Voltar", sf::Vector2f(posBotaoX,tamJanela.y/2.0f + tamJanela.y * 4.8f), IDs::IDs::botao_voltar, sf::Color{238,173,45});
-            inicializarIterador();
+            addBotao( "Carregar", sf::Vector2f(posBotaoX,tamJanela.y/2.0f + tamBotao.y * 1.5f), IDs::IDs::botao_carregar , sf::Color{238,173,45});
+            addBotao( "Remover", sf::Vector2f(posBotaoX,tamJanela.y/2.0f +  tamBotao.y * 3.0f), IDs::IDs::botao_remover, sf::Color{238,173,45});
+            addBotao( "Voltar", sf::Vector2f(posBotaoX,tamJanela.y/2.0f +  tamBotao.y * 4.5f), IDs::IDs::botao_voltar, sf::Color{238,173,45});
+            inicialiarIterador();
         }
 
-        void executar()
+        void MenuCarregar::executar()
         {
             posFundo = sf::Vector2f(posFundo.x + pGrafico->getTempo() * 80.0f, posFundo.y);
             pGrafico->atualizarCamera(sf::Vector2f(posFundo.x + tamJanela.x / 2.0f, posFundo.y + tamJanela.y / 2.0f));
@@ -109,7 +109,7 @@ namespace Game{
 
             desenhar();
 
-            pGrafico->desenharElemento(titulo.getTexto());
+            pGrafico->desenhaElemento(titulo.getTexto());
 
             for(std::list<Card*>::iterator it = listaCards.begin() ; it != listaCards.end() ; it++)
             {

@@ -80,6 +80,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/testes.dir/src/menus/card.cpp.obj.d"
   "CMakeFiles/testes.dir/src/menus/menu.cpp.obj"
   "CMakeFiles/testes.dir/src/menus/menu.cpp.obj.d"
+  "CMakeFiles/testes.dir/src/menus/menuCarregar.cpp.obj"
+  "CMakeFiles/testes.dir/src/menus/menuCarregar.cpp.obj.d"
   "CMakeFiles/testes.dir/src/menus/menuGameOver.cpp.obj"
   "CMakeFiles/testes.dir/src/menus/menuGameOver.cpp.obj.d"
   "CMakeFiles/testes.dir/src/menus/menuPausa.cpp.obj"

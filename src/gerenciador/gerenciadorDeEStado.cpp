@@ -49,7 +49,10 @@ namespace Game{
             {
                 estado = static_cast<Estado::Estado*>(new Estado::EstadoFase(ID));
             }
-            else if(ID == IDs::IDs::menu_principal || ID == IDs::IDs::menu_pause || ID == IDs::IDs::menu_gameOver)
+            else if(ID == IDs::IDs::menu_principal ||
+                    ID == IDs::IDs::menu_pause     ||
+                    ID == IDs::IDs::menu_gameOver  ||
+                    ID == IDs::IDs::menu_carregar)
             {
                 estado = static_cast<Estado::Estado*>(new Estado::EstadoMenu(ID));
             }

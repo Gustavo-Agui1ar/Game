@@ -69,6 +69,7 @@ namespace Game{
 
          void MenuPausa::executar()
          {
+            atualizarPosicaoFundo();
             //desenha a fase sem atualizar as entidades
             fase->desenhar();
 

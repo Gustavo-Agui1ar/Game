@@ -27,7 +27,7 @@ namespace Game{
             }
             else
             {
-                if(!textura->loadFromFile("Game/animations/BacGorund/card/card-vazio.png"))
+                if(!textura->loadFromFile("animations\\backgorund\\card\\card-vazio.png"))
                 {
                     std::cout<<"nao foi possivel carregar a textura do card";
                     exit(1);
