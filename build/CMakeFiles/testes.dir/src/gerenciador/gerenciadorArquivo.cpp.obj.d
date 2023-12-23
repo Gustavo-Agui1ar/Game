@@ -249,7 +249,7 @@ CMakeFiles/testes.dir/src/gerenciador/gerenciadorArquivo.cpp.obj: \
  C:/msys64/mingw64/include/c++/13.1.0/x86_64-w64-mingw32/bits/basic_file.h \
  C:/msys64/mingw64/include/c++/13.1.0/x86_64-w64-mingw32/bits/c++io.h \
  C:/msys64/mingw64/include/c++/13.1.0/bits/fstream.tcc \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/json.hpp \
+ C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/json.hpp \
  C:/msys64/mingw64/include/c++/13.1.0/functional \
  C:/msys64/mingw64/include/c++/13.1.0/bits/std_function.h \
  C:/msys64/mingw64/include/c++/13.1.0/unordered_map \

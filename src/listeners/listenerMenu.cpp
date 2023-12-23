@@ -39,7 +39,13 @@ namespace Game{
                     
                     case(IDs::IDs::botao_voltar):
                     {
-                        pEstado->removerEstado();
+                         pEstado->removerEstado();
+
+                        if(pEstado->getEstadoAtual()->getID() == IDs::IDs::menu_pause)
+                        {
+                            pEstado->removerEstado();
+                            pEstado->addEstado(IDs::IDs::menu_pause);
+                        }
                     }
                     break;
                     
@@ -56,6 +62,12 @@ namespace Game{
                         pEstado->addEstado(IDs::IDs::menu_carregar);
                     }
                     break;
+
+                    case(IDs::IDs::botao_salvar_jogo):
+                    {
+                        pEstado->addEstado(IDs::IDs::menu_salvar);
+                    }
+                    break;
                     
                     case(IDs::IDs::botao_reniciar_jogo):
                     {
@@ -67,6 +79,8 @@ namespace Game{
                     case(IDs::IDs::botao_salvar_jogo):
                         break;
                         break;*/
+                    default:
+                        break;
                 }
             
             }
@@ -117,6 +131,7 @@ namespace Game{
                                 break;
                             case (IDs::IDs::botao_sair):
                             {
+                                //provisorio
                                 if(IDmenu == IDs::IDs::menu_pause || IDmenu == IDs::IDs::menu_gameOver)
                                     pEstado->removerEstado(2);
                                 else
@@ -126,9 +141,15 @@ namespace Game{
                             case (IDs::IDs::botao_voltar):
                             {
                                 pEstado->removerEstado();
+
+                                if(pEstado->getEstadoAtual()->getID() == IDs::IDs::menu_pause)
+                                {
+                                    pEstado->removerEstado();
+                                    pEstado->addEstado(IDs::IDs::menu_pause);
+                                }
                             }
                                 break;
-                            case (IDs::IDs::botao_salvar_jogo):
+                            case (IDs::IDs::botao_salvar):
                             {
                                 //pGEstado->addEstado(IDs::IDs::estado_menu_salvar_jogo);
                             }
@@ -142,9 +163,20 @@ namespace Game{
                                 //por enquanto...
                                 pEstado->addContinuarGameOver(IDs::IDs::forest);
                                 break;
+
+                            case(IDs::IDs::botao_salvar_jogo):
+                            {
+                                pEstado->addEstado(IDs::IDs::menu_salvar);
+                            }
+                                break;
+                            
+                            default:
+                                break;
                         }
                             break;
                     }
+                    default:
+                        break;
                 }
             }
         }

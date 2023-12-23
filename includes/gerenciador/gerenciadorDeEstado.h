@@ -35,6 +35,7 @@ namespace Game{
             void removerEstado();
             
             Estado::Estado* getEstadoAtual();
+            Estado::Estado* getEstado(int qtd);
             void removerEstado(const int quantidade);
 
         };

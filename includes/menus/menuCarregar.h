@@ -3,6 +3,7 @@
 
 #include "menuPrincipal.h"
 #include "../gerenciador/gerenciadorArquivo.h"
+#include "../fases/fase.h"
 
 namespace Game {
 
@@ -15,12 +16,14 @@ namespace Game {
                 Gerenciador::GerenciadorArquivo gerenciadorArquivo;
                 std::list<Card*> listaCards;
                 std::list<Card*>::iterator itCards;
+                Fase::Fase* fase;
+                sf::RectangleShape fundoEscuro;
 
                 void inicializarCards();
 
             public:
 
-                MenuCarregar();
+                MenuCarregar(Fase::Fase* fase = nullptr);
                 ~MenuCarregar();
 
                 void selecionaEsquerda();
@@ -29,6 +32,7 @@ namespace Game {
                 void deletarArquivos();
                 Card* getCardSelecionado();
                 void criarBotoes();
+                void desenharCards();
                 void executar();
         };
     }

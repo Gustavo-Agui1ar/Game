@@ -4,7 +4,7 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include <fstream>
-#include "../json.hpp"
+#include "../includes/json.hpp"
 
 namespace Game {
 

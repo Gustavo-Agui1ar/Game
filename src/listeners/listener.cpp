@@ -12,7 +12,7 @@ namespace Game{
         Gerenciador::GerenciadorDeEstado* Listener::pEstado = Gerenciador::GerenciadorDeEstado::getGerenciadorDeEstado();
 
         Listener::Listener():
-        ativo(true),tecPadrao(),tecEspecial()
+        tecPadrao(),tecEspecial() , ativo(true)
         {
             pEvento->addListener(this);
             inicializarComandosteclado();

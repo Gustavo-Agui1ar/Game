@@ -88,6 +88,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Jogo.dir/src/menus/menuPausa.cpp.obj.d"
   "CMakeFiles/Jogo.dir/src/menus/menuPrincipal.cpp.obj"
   "CMakeFiles/Jogo.dir/src/menus/menuPrincipal.cpp.obj.d"
+  "CMakeFiles/Jogo.dir/src/menus/menuSalvar.cpp.obj"
+  "CMakeFiles/Jogo.dir/src/menus/menuSalvar.cpp.obj.d"
   "CMakeFiles/Jogo.dir/src/principal.cpp.obj"
   "CMakeFiles/Jogo.dir/src/principal.cpp.obj.d"
   "libJogo.dll.a"

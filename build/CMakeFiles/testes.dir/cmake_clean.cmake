@@ -88,6 +88,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/testes.dir/src/menus/menuPausa.cpp.obj.d"
   "CMakeFiles/testes.dir/src/menus/menuPrincipal.cpp.obj"
   "CMakeFiles/testes.dir/src/menus/menuPrincipal.cpp.obj.d"
+  "CMakeFiles/testes.dir/src/menus/menuSalvar.cpp.obj"
+  "CMakeFiles/testes.dir/src/menus/menuSalvar.cpp.obj.d"
   "CMakeFiles/testes.dir/src/principal.cpp.obj"
   "CMakeFiles/testes.dir/src/principal.cpp.obj.d"
   "libtestes.dll.a"

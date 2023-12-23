@@ -52,7 +52,8 @@ namespace Game{
             else if(ID == IDs::IDs::menu_principal ||
                     ID == IDs::IDs::menu_pause     ||
                     ID == IDs::IDs::menu_gameOver  ||
-                    ID == IDs::IDs::menu_carregar)
+                    ID == IDs::IDs::menu_carregar  ||
+                    ID == IDs::IDs::menu_salvar)
             {
                 estado = static_cast<Estado::Estado*>(new Estado::EstadoMenu(ID));
             }
@@ -118,6 +119,24 @@ namespace Game{
             {
                 return pilhaEstados.top();
             }
+            return nullptr;
+        }
+
+        Estado::Estado* GerenciadorDeEstado::getEstado(int qtd)
+        {
+            std::stack<Estado::Estado*> pilhaAux = pilhaEstados;
+
+            int i = 0;
+
+            while( i  < qtd && !pilhaAux.empty())
+            {
+                pilhaAux.pop();
+                i++;
+            }
+
+            if(!pilhaAux.empty())
+                return pilhaAux.top();
+            
             return nullptr;
         }
 

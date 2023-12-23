@@ -51,6 +51,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/menus/menuGameOver.cpp" "CMakeFiles/testes.dir/src/menus/menuGameOver.cpp.obj" "gcc" "CMakeFiles/testes.dir/src/menus/menuGameOver.cpp.obj.d"
   "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/menus/menuPausa.cpp" "CMakeFiles/testes.dir/src/menus/menuPausa.cpp.obj" "gcc" "CMakeFiles/testes.dir/src/menus/menuPausa.cpp.obj.d"
   "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/menus/menuPrincipal.cpp" "CMakeFiles/testes.dir/src/menus/menuPrincipal.cpp.obj" "gcc" "CMakeFiles/testes.dir/src/menus/menuPrincipal.cpp.obj.d"
+  "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/menus/menuSalvar.cpp" "CMakeFiles/testes.dir/src/menus/menuSalvar.cpp.obj" "gcc" "CMakeFiles/testes.dir/src/menus/menuSalvar.cpp.obj.d"
   "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/principal.cpp" "CMakeFiles/testes.dir/src/principal.cpp.obj" "gcc" "CMakeFiles/testes.dir/src/principal.cpp.obj.d"
   )
 

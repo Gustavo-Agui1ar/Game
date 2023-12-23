@@ -4,6 +4,7 @@
 #include "../includes/menus/menuGameOver.h"
 #include "../includes/menus/menuPrincipal.h"
 #include "../includes/menus/menuCarregar.h"
+#include "../includes/menus/menuSalvar.h"
 #include "../includes/gerenciador/gerenciadorDeEstado.h"
 
 namespace Game{
@@ -43,6 +44,10 @@ namespace Game{
                 {
                     EstadoFase* estadoFase = static_cast<EstadoFase*>(estadoAtual);
                     fase = estadoFase->getFase();
+                }
+                else if(estadoAtual->getID() == IDs::IDs::menu_pause){
+                    EstadoMenu* estadoMenu = static_cast<EstadoMenu*>(estadoAtual);
+                    fase = estadoMenu->getFase();
                 }
             }
 
@@ -109,6 +114,10 @@ namespace Game{
                 {
                     Menu::MenuCarregar* menuCarregar = new Menu::MenuCarregar();
 
+                    if(estadoAtual->getID() == IDs::IDs::menu_pause)
+                         menuCarregar = new Menu::MenuCarregar(fase);
+                 
+
                     if(menuCarregar == nullptr)
                     {
                         std::cout<<"EstadoMenu::nao foi possivel criar menuCarregar";
@@ -119,74 +128,34 @@ namespace Game{
                     this->menu = static_cast<Menu::Menu*>(menuCarregar);
                 }
                 break;
+
+                case(IDs::IDs::menu_salvar):
+                {
+                    if(fase == nullptr)
+                    {
+                        std::cout<<"EstadoMenu:: nao foi possivel recuperar fase";
+                        exit(1);
+                    }
+
+                    Menu::MenuSalvar* menuSalvar = new Menu::MenuSalvar(fase);
+
+                    if(menuSalvar == nullptr)
+                    {
+                        std::cout<<"EstadoMenu::nao foi possivel criar menuCarregar";
+                        exit(1);
+                    }
+
+                    menuSalvar->criarBotoes();
+                    this->menu = static_cast<Menu::Menu*>(menuSalvar);
+                }
+                break;
+
+                default:
+                    break;
+
             }
             
-            
-            /*
-            if(ID == IDs::IDs::menu_principal)
-            {
-                Menu::MenuPrincipal* menuP = new Menu::MenuPrincipal();
-
-                if(menuP == nullptr)
-                {
-                    std::cout<<"EstadoMenu::criarMenu: nao foi possivel criar o menu principal";
-                }
-
-                this->menu = static_cast<Menu::Menu*>(menuP);
-            }
-            else if(ID == IDs::IDs::menu_pause)
-            {
-                
-                if(fase == nullptr)
-                {
-                    std::cout<<"EstadoMenu:: nao foi possivel recuperar fase";
-                    exit(1);
-                }
-
-                Menu::MenuPausa* menuPause = new Menu::MenuPausa(fase);
-
-                if(menuPause == nullptr)
-                {
-                    std::cout<<"EstadoMenu:: nao foi possivel criar um menu de pause";
-                    exit(1);
-                }
-
-                menuPause->criarBotoes();
-                
-                this->menu = static_cast<Menu::Menu*>(menuPause);
-            }
-            else if(ID == IDs::IDs::menu_gameOver)
-            {
-                if(fase == nullptr)
-                {
-                    std::cout<<"EstadoMenu:: nao foi possivel recuperar fase";
-                    exit(1);
-                }
-
-                Menu::MenuGameOver* menuGO = new Menu::MenuGameOver(fase);
-                
-                if(menuGO == nullptr)
-                {
-                    std::cout<<"EstadoMenu:: nao foi possivel criar um menu de pause";
-                    exit(1);
-                }
-                menuGO->criarBotoes();
-
-                this->menu = static_cast<Menu::Menu*>(menuGO);
-            }
-            else if(ID == IDs::IDs::menu_carregar)
-            {
-                Menu::MenuCarregar* menuCarregar = new Menu::MenuCarregar();
-
-                if(menuCarregar == nullptr)
-                {
-                    std::cout<<"EstadoMenu::nao foi possivel criar menuCarregar";
-                    exit(1);
-                }
-
-                menuCarregar->criarBotoes();
-                this->menu = static_cast<Menu::Menu*>(menuCarregar);
-            }*/
+          
               
         }
         
@@ -203,11 +172,12 @@ namespace Game{
 
         Fase::Fase* EstadoMenu::getFase()
         {
-           /* if(ID == IDs::IDs::menu_pause)
+            if(ID == IDs::IDs::menu_pause)
             {
                 Menu::MenuPausa* menuFase = dynamic_cast<Menu::MenuPausa*>(menu);
                 return menuFase->getFase();
-            }*/
+            }
+
             return nullptr;
         }
     }

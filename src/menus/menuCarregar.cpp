@@ -5,13 +5,23 @@ namespace Game{
 
     namespace Menu{
 
-        MenuCarregar::MenuCarregar():
-        MenuPrincipal(IDs::IDs::menu_carregar, "CARREGAR JOGO", 100),gerenciadorArquivo()
+        MenuCarregar::MenuCarregar(Fase::Fase* fase):
+        MenuPrincipal(IDs::IDs::menu_carregar, "CARREGAR JOGO", 100),gerenciadorArquivo(),fase(fase)
         {
+            if(fase != nullptr)
+            {
+                atualizarPosicaoFundo();
+                fundoEscuro.setSize(tamJanela);
+                fundoEscuro.setPosition(0.0f, 0.0f);
+                fundoEscuro.setFillColor(sf::Color{0, 0, 0, 180});
+                sf::Vector2f posFundoEscuro = sf::Vector2f(posFundo.x - tamJanela.x / 2.0f, posFundo.y - tamJanela.y / 2.0f);
+                fundoEscuro.setPosition(posFundoEscuro);
+            }
+
             inicializarCards();
         }
 
-        MenuCarregar:: ~MenuCarregar()
+        MenuCarregar::~MenuCarregar()
         {
             std::list<Card*>::iterator it;
 
@@ -102,21 +112,32 @@ namespace Game{
 
         void MenuCarregar::executar()
         {
-            posFundo = sf::Vector2f(posFundo.x + pGrafico->getTempo() * 80.0f, posFundo.y);
-            pGrafico->atualizarCamera(sf::Vector2f(posFundo.x + tamJanela.x / 2.0f, posFundo.y + tamJanela.y / 2.0f));
-            fundo.executar();
-            pGrafico->resetarJanela();
-
+            if(fase != nullptr)
+            {
+                fase->desenhar();
+                pGrafico->desenhaElemento(fundoEscuro);
+            }
+            else
+            {
+                posFundo = sf::Vector2f(posFundo.x + pGrafico->getTempo() * 80.0f, posFundo.y);
+                pGrafico->atualizarCamera(sf::Vector2f(posFundo.x + tamJanela.x / 2.0f, posFundo.y + tamJanela.y / 2.0f));
+                fundo.executar();
+                pGrafico->resetarJanela();
+            }
             desenhar();
 
             pGrafico->desenhaElemento(titulo.getTexto());
 
+            desenharCards();
+        }
+
+        void MenuCarregar::desenharCards()
+        {
             for(std::list<Card*>::iterator it = listaCards.begin() ; it != listaCards.end() ; it++)
             {
                 Card* card = *it;
                 card->desenhar();
             }
-
         }
     }
 }

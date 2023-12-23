@@ -17,8 +17,6 @@
 
 #include "../fundo/fundo.h"
 
-#include <fstream>
-
 namespace Game{
 
     namespace Fase{

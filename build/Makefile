@@ -1302,6 +1302,33 @@ src/menus/menuPrincipal.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/menuPrincipal.cpp.s
 .PHONY : src/menus/menuPrincipal.cpp.s
 
+src/menus/menuSalvar.obj: src/menus/menuSalvar.cpp.obj
+.PHONY : src/menus/menuSalvar.obj
+
+# target to build an object file
+src/menus/menuSalvar.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menuSalvar.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/menuSalvar.cpp.obj
+.PHONY : src/menus/menuSalvar.cpp.obj
+
+src/menus/menuSalvar.i: src/menus/menuSalvar.cpp.i
+.PHONY : src/menus/menuSalvar.i
+
+# target to preprocess a source file
+src/menus/menuSalvar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menuSalvar.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/menuSalvar.cpp.i
+.PHONY : src/menus/menuSalvar.cpp.i
+
+src/menus/menuSalvar.s: src/menus/menuSalvar.cpp.s
+.PHONY : src/menus/menuSalvar.s
+
+# target to generate assembly for a file
+src/menus/menuSalvar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menuSalvar.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/menuSalvar.cpp.s
+.PHONY : src/menus/menuSalvar.cpp.s
+
 src/principal.obj: src/principal.cpp.obj
 .PHONY : src/principal.obj
 
@@ -1468,6 +1495,9 @@ help:
 	@echo ... src/menus/menuPrincipal.obj
 	@echo ... src/menus/menuPrincipal.i
 	@echo ... src/menus/menuPrincipal.s
+	@echo ... src/menus/menuSalvar.obj
+	@echo ... src/menus/menuSalvar.i
+	@echo ... src/menus/menuSalvar.s
 	@echo ... src/principal.obj
 	@echo ... src/principal.i
 	@echo ... src/principal.s

@@ -61,7 +61,8 @@ namespace Game{
             int i = 1;
             for(aux = listaDeBotao.begin(); aux != listaDeBotao.end(); aux++, i++){
                 Botao::BotaoTexto* botao = *aux;
-                 botao->atualizarPosicaoDaCaixa(sf::Vector2f(posFundo.x - tamBotao.x / 2.0f, posFundo.y / posBotaoY + (tamBotao.y + 20.f) * i));                botao = nullptr;
+                botao->atualizarPosicaoDaCaixa(sf::Vector2f(posFundo.x - tamBotao.x / 2.0f, posFundo.y / posBotaoY + (tamBotao.y + 20.f) * i));       
+                botao = nullptr;
             }
 
             desenhar();
@@ -69,7 +70,6 @@ namespace Game{
 
          void MenuPausa::executar()
          {
-            atualizarPosicaoFundo();
             //desenha a fase sem atualizar as entidades
             fase->desenhar();
 

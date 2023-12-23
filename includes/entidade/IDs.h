@@ -28,6 +28,7 @@ namespace IDs{
             botao_opcao, 
             botao_sair, 
             botao_voltar, 
+            botao_salvar, 
             botao_salvar_jogo, 
             botao_carregar, 
             botao_remover,
@@ -38,6 +39,7 @@ namespace IDs{
             menu_principal,
             menu_pause,
             menu_gameOver,
-            menu_carregar
+            menu_carregar,
+            menu_salvar
         };
 }
