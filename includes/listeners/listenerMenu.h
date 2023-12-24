@@ -4,6 +4,9 @@
 #include "listener.h"
 #include "../menus/menu.h"
 #include "../botao/botao.h"
+#include  "../menus/menuCarregar.h"
+#include  "../menus/menuGameOver.h"
+#include  "../menus/menuSalvar.h"
 
 namespace Game{
 

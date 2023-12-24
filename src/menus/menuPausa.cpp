@@ -45,8 +45,10 @@ namespace Game{
             addBotao("Salvar", sf::Vector2f(0.0f, 0.0f), IDs::IDs::botao_salvar_jogo, sf::Color{245, 170, 0});
             addBotao("Opcao", sf::Vector2f(0.0f, 0.0f), IDs::IDs::botao_opcao, sf::Color{245, 170, 0});
             addBotao("Sair", sf::Vector2f(0.0f, 0.0f), IDs::IDs::botao_sair, sf::Color{245, 170, 0});
+          
             posBotaoY = 1.5f;
             atualizarBotoes();
+           
             inicialiarIterador();
         }
 

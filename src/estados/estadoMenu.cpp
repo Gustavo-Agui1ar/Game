@@ -112,11 +112,12 @@ namespace Game{
             
                 case(IDs::IDs::menu_carregar):
                 {
-                    Menu::MenuCarregar* menuCarregar = new Menu::MenuCarregar();
+                    Menu::MenuCarregar* menuCarregar = nullptr; 
 
                     if(estadoAtual->getID() == IDs::IDs::menu_pause)
                          menuCarregar = new Menu::MenuCarregar(fase);
-                 
+                    else
+                        menuCarregar = new Menu::MenuCarregar();
 
                     if(menuCarregar == nullptr)
                     {

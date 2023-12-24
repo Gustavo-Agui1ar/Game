@@ -55,7 +55,8 @@ namespace Game{
                     ID == IDs::IDs::menu_carregar  ||
                     ID == IDs::IDs::menu_salvar)
             {
-                estado = static_cast<Estado::Estado*>(new Estado::EstadoMenu(ID));
+                Estado::EstadoMenu* mEstado = new Estado::EstadoMenu(ID);
+                estado = static_cast<Estado::Estado*>(mEstado);
             }
 
             if(estado == nullptr)
@@ -69,6 +70,7 @@ namespace Game{
             }
             
             pilhaEstados.push(estado);
+            std::cout << "empilhou !!" << std::endl ;
         }
 
         void GerenciadorDeEstado::addContinuarGameOver(const IDs::IDs ID)
@@ -144,7 +146,8 @@ namespace Game{
         {
             if(!pilhaEstados.empty())
             {
-                pilhaEstados.top()->executar();
+                Estado::Estado* estado = pilhaEstados.top();
+                estado->executar();
             }
         }
         void GerenciadorDeEstado::removerEstado(const int quantidade)

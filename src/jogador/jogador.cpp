@@ -39,8 +39,8 @@ namespace Game{
                      * ID jogador : atributo de identifica��o da classe jogador.
                      */
 
-                    Jogador::Jogador(const sf::Vector2f pos,const sf::Vector2f tam, const float vel, Item::Arma* arma):
-                    Personagem(pos,tam,vel,IDs::IDs::jogador, JOGADOR_TEMPO_LEVAR_DANO, JOGADOR_ANIMACAO_DE_MORTE, DANO_JOGADOR),noChao(false),
+                    Jogador::Jogador(const sf::Vector2f pos,  Item::Arma* arma):
+                    Personagem(pos,sf::Vector2f(TAM_JOGADOR_X,TAM_JOGADOR_Y), VELOCIDADE_JOGADOR_X, IDs::IDs::jogador, JOGADOR_TEMPO_LEVAR_DANO, JOGADOR_ANIMACAO_DE_MORTE, DANO_JOGADOR),noChao(false),
                     listenerJogador(new Listener::ListenerJogador(this))
                     {
                        animacao.addAnimacao(CAMINHO_TEXTURA_IDLE,"PARADO",7,0.16,sf::Vector2f{6,2});
@@ -58,6 +58,11 @@ namespace Game{
                           setArma(arma);
                        }
                     }
+
+                   /* Jogador::Jogador(nlohmann::ordered_json atributos)
+                    {
+                       
+                    }*/
 
                     /**
                      * metodo  que atualiza a pois��o,aniimacao,

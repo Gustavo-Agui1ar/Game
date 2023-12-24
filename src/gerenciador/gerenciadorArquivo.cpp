@@ -38,11 +38,11 @@ namespace Game{
 
         void GerenciadorArquivo::abrirArquivoGravar(const char* caminhoArquivo)
         {
-            arquivoGravar.open(caminhoArquivo);
+            arquivoGravar.open(caminhoArquivo, std::ios::app);
 
             if(!arquivoGravar.is_open())
             {
-                std::cout<<"GerenciadorArquivo:: nao foi possivel abrir o arquivo";
+                std::cout << "GerenciadorArquivo:: nao foi possivel abrir o arquivo " << caminhoArquivo << std::endl;
                 exit(1);
             }
         }

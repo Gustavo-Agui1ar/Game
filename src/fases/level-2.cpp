@@ -89,7 +89,7 @@ namespace Game{
 
         void Forest::criarPlataforma(const sf::Vector2f pos)
         {
-            Entidade::Obstaculo::Plataforma* plataforma = new Entidade::Obstaculo::Plataforma(pos,sf::Vector2f(200.0f,40.0f),IDs::IDs::forest);
+            Entidade::Obstaculo::Plataforma* plataforma = new Entidade::Obstaculo::Plataforma(pos,sf::Vector2f(200.0f,40.0f), IDs::IDs::plataforma, IDs::IDs::forest);
             if(plataforma == nullptr)
             {
                 std::cout<<"Fase::Forest: nao foi possivel criar uma plataforma";

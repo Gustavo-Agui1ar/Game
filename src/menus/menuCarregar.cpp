@@ -16,6 +16,7 @@ namespace Game{
                 fundoEscuro.setFillColor(sf::Color{0, 0, 0, 180});
                 sf::Vector2f posFundoEscuro = sf::Vector2f(posFundo.x - tamJanela.x / 2.0f, posFundo.y - tamJanela.y / 2.0f);
                 fundoEscuro.setPosition(posFundoEscuro);
+                titulo.setPos(sf::Vector2f(posFundo.x - titulo.getTam().x / 2.1f, posFundo.y - tamJanela.y / 2.0f ));
             }
 
             inicializarCards();
@@ -47,9 +48,15 @@ namespace Game{
             {
                 sf::Vector2f pos(sf::Vector2f((tamJanela.x/5.0f) * i + espacamento * (i + 1),180.0f));
 
-                std::string caminhoEntidades = "Game/saves/SalvarEntidades/salvar" + std::to_string(i + 1) + ".txt";
-                std::string caminhoFase = "Game/saves/SalvarFase/salvar" + std::to_string(i + 1) + ".txt";
-                std::string caminhoImagem = "Game/saves/SalvarImagem/salvar" + std::to_string(i + 1) + ".png";
+                if(fase != nullptr)
+                {
+                    pos.x =  ( posFundo.x - tamJanela.x / 2.0f + (tamJanela.x / 5.0f) * i + (espacamento) * (i + 1));
+                    pos.y =  (posFundo.y - tamJanela.y / 2.0f + 180.0f);
+                }
+
+                std::string caminhoEntidades = "saves/SalvarEntidades/salvar" + std::to_string(i + 1) + ".json";
+                std::string caminhoFase = "saves/SalvarFase/salvar" + std::to_string(i + 1) + ".json";
+                std::string caminhoImagem = "saves/SalvarImagem/salvar" + std::to_string(i + 1) + ".png";
 
                 Card* card = new Card(pos, caminhoEntidades, caminhoImagem, caminhoFase);
                 card->setColor(sf::Color{238,173,45});
@@ -108,6 +115,19 @@ namespace Game{
             addBotao( "Remover", sf::Vector2f(posBotaoX,tamJanela.y/2.0f +  tamBotao.y * 3.0f), IDs::IDs::botao_remover, sf::Color{238,173,45});
             addBotao( "Voltar", sf::Vector2f(posBotaoX,tamJanela.y/2.0f +  tamBotao.y * 4.5f), IDs::IDs::botao_voltar, sf::Color{238,173,45});
             inicialiarIterador();
+
+            if(fase != nullptr)
+            {
+                float posBotaoY = 0.8;
+                std::list<Botao::BotaoTexto*>::iterator aux;
+                int i = 1;
+                for(aux = listaDeBotao.begin(); aux != listaDeBotao.end(); aux++, i++)
+                {
+                    Botao::BotaoTexto* botao = *aux;
+                    botao->atualizarPosicaoDaCaixa(sf::Vector2f(posFundo.x - tamBotao.x / 2.0f, posFundo.y / posBotaoY + (tamBotao.y + 20.f) * i));       
+                    botao = nullptr;
+                }
+            }
         }
 
         void MenuCarregar::executar()

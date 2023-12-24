@@ -1,0 +1,644 @@
+[
+  {
+    "ID": 1,
+    "tam": {
+      "x": 30.0,
+      "y": 60.0
+    },
+    "pos": {
+      "x": 850.0,
+      "y": 187.7061309814453
+    },
+    "remover": false,
+    "velocidade": {
+      "x": 250.0,
+      "y": 574.886474609375
+    },
+    "tempoMorrer": 0.0,
+    "levandoDano": false,
+    "tempoDano": 0.4790719151496887,
+    "morrendo": false,
+    "atacando": false,
+    "movendo": false,
+    "direcao": false,
+    "dano": 20.0,
+    "vida": 100.0,
+    "dt": 0.0013520000502467155,
+    "noChao": false
+  },
+  {
+    "ID": 7,
+    "tam": {
+      "x": 30.0,
+      "y": 60.0
+    },
+    "pos": {
+      "x": -1000.0,
+      "y": -1000.0
+    },
+    "remover": false,
+    "dano": 20.0
+  },
+  {
+    "ID": 8,
+    "tam": {
+      "x": 30.0,
+      "y": 60.0
+    },
+    "pos": {
+      "x": 0.0,
+      "y": 0.0
+    },
+    "remover": false,
+    "dano": 10.0
+  },
+  {
+    "ID": 8,
+    "tam": {
+      "x": 30.0,
+      "y": 60.0
+    },
+    "pos": {
+      "x": 0.0,
+      "y": 0.0
+    },
+    "remover": false,
+    "dano": 5.0
+  },
+  {
+    "ID": 3,
+    "tam": {
+      "x": 30.0,
+      "y": 60.0
+    },
+    "pos": {
+      "x": 1600.0,
+      "y": 187.7061309814453
+    },
+    "remover": false,
+    "velocidade": {
+      "x": 50.0,
+      "y": 574.886474609375
+    },
+    "tempoMorrer": 0.0,
+    "levandoDano": false,
+    "tempoDano": 0.4790719151496887,
+    "morrendo": false,
+    "atacando": false,
+    "movendo": false,
+    "direcao": false,
+    "dano": 5.0,
+    "vida": 100.0,
+    "dt": 0.0013520000502467155,
+    "tempoAtaque": 0.0,
+    "tempoMover": 0.4790719151496887,
+    "mover": 2
+  },
+  {
+    "ID": 8,
+    "tam": {
+      "x": 30.0,
+      "y": 60.0
+    },
+    "pos": {
+      "x": 0.0,
+      "y": 0.0
+    },
+    "remover": false,
+    "dano": 5.0
+  },
+  {
+    "ID": 2,
+    "tam": {
+      "x": 30.0,
+      "y": 60.0
+    },
+    "pos": {
+      "x": 1800.0,
+      "y": 187.7061309814453
+    },
+    "remover": false,
+    "velocidade": {
+      "x": 50.0,
+      "y": 574.886474609375
+    },
+    "tempoMorrer": 1.0012151873867908e+33,
+    "levandoDano": false,
+    "tempoDano": 0.4790719151496887,
+    "morrendo": false,
+    "atacando": false,
+    "movendo": false,
+    "direcao": false,
+    "dano": 10.0,
+    "vida": 100.0,
+    "dt": 0.0013520000502467155,
+    "tempoAtaque": 0.0,
+    "tempoMover": 0.4790719151496887,
+    "mover": 2
+  },
+  {
+    "ID": 8,
+    "tam": {
+      "x": 30.0,
+      "y": 60.0
+    },
+    "pos": {
+      "x": 0.0,
+      "y": 0.0
+    },
+    "remover": false,
+    "dano": 10.0
+  },
+  {
+    "ID": 2,
+    "tam": {
+      "x": 30.0,
+      "y": 60.0
+    },
+    "pos": {
+      "x": 2100.0,
+      "y": 187.7061309814453
+    },
+    "remover": false,
+    "velocidade": {
+      "x": 50.0,
+      "y": 574.886474609375
+    },
+    "tempoMorrer": 2.1664839105747175e+24,
+    "levandoDano": false,
+    "tempoDano": 0.4790719151496887,
+    "morrendo": false,
+    "atacando": false,
+    "movendo": false,
+    "direcao": false,
+    "dano": 10.0,
+    "vida": 100.0,
+    "dt": 0.0013520000502467155,
+    "tempoAtaque": 0.0,
+    "tempoMover": 0.4790719151496887,
+    "mover": 2
+  },
+  {
+    "ID": 8,
+    "tam": {
+      "x": 30.0,
+      "y": 60.0
+    },
+    "pos": {
+      "x": 0.0,
+      "y": 0.0
+    },
+    "remover": false,
+    "dano": 10.0
+  },
+  {
+    "ID": 2,
+    "tam": {
+      "x": 30.0,
+      "y": 60.0
+    },
+    "pos": {
+      "x": 2500.0,
+      "y": 187.7061309814453
+    },
+    "remover": false,
+    "velocidade": {
+      "x": 50.0,
+      "y": 574.886474609375
+    },
+    "tempoMorrer": 2.1664839105747175e+24,
+    "levandoDano": false,
+    "tempoDano": 0.4790719151496887,
+    "morrendo": false,
+    "atacando": false,
+    "movendo": false,
+    "direcao": false,
+    "dano": 10.0,
+    "vida": 100.0,
+    "dt": 0.0013520000502467155,
+    "tempoAtaque": 0.0,
+    "tempoMover": 0.4790719151496887,
+    "mover": 2
+  },
+  {
+    "ID": 8,
+    "tam": {
+      "x": 30.0,
+      "y": 60.0
+    },
+    "pos": {
+      "x": 0.0,
+      "y": 0.0
+    },
+    "remover": false,
+    "dano": 10.0
+  },
+  {
+    "ID": 4,
+    "tam": {
+      "x": 200.0,
+      "y": 40.0
+    },
+    "pos": {
+      "x": 1250.0,
+      "y": 400.0
+    },
+    "remover": false
+  },
+  {
+    "ID": 4,
+    "tam": {
+      "x": 200.0,
+      "y": 40.0
+    },
+    "pos": {
+      "x": 1450.0,
+      "y": 400.0
+    },
+    "remover": false
+  },
+  {
+    "ID": 4,
+    "tam": {
+      "x": 200.0,
+      "y": 40.0
+    },
+    "pos": {
+      "x": 1750.0,
+      "y": 400.0
+    },
+    "remover": false
+  },
+  {
+    "ID": 4,
+    "tam": {
+      "x": 200.0,
+      "y": 40.0
+    },
+    "pos": {
+      "x": 1000.0,
+      "y": 500.0
+    },
+    "remover": false
+  },
+  {
+    "ID": 4,
+    "tam": {
+      "x": 200.0,
+      "y": 40.0
+    },
+    "pos": {
+      "x": 700.0,
+      "y": 600.0
+    },
+    "remover": false
+  },
+  {
+    "ID": 4,
+    "tam": {
+      "x": 200.0,
+      "y": 40.0
+    },
+    "pos": {
+      "x": 2850.0,
+      "y": 650.0
+    },
+    "remover": false
+  },
+  {
+    "ID": 4,
+    "tam": {
+      "x": 200.0,
+      "y": 40.0
+    },
+    "pos": {
+      "x": 400.0,
+      "y": 700.0
+    },
+    "remover": false
+  },
+  {
+    "ID": 4,
+    "tam": {
+      "x": 200.0,
+      "y": 40.0
+    },
+    "pos": {
+      "x": 3250.0,
+      "y": 700.0
+    },
+    "remover": false
+  },
+  {
+    "ID": 4,
+    "tam": {
+      "x": 200.0,
+      "y": 40.0
+    },
+    "pos": {
+      "x": 100.0,
+      "y": 750.0
+    },
+    "remover": false
+  },
+  {
+    "ID": 4,
+    "tam": {
+      "x": 200.0,
+      "y": 40.0
+    },
+    "pos": {
+      "x": 3600.0,
+      "y": 750.0
+    },
+    "remover": false
+  },
+  {
+    "ID": 4,
+    "tam": {
+      "x": 200.0,
+      "y": 40.0
+    },
+    "pos": {
+      "x": 0.0,
+      "y": 850.0
+    },
+    "remover": false
+  },
+  {
+    "ID": 4,
+    "tam": {
+      "x": 200.0,
+      "y": 40.0
+    },
+    "pos": {
+      "x": 50.0,
+      "y": 850.0
+    },
+    "remover": false
+  },
+  {
+    "ID": 4,
+    "tam": {
+      "x": 200.0,
+      "y": 40.0
+    },
+    "pos": {
+      "x": 250.0,
+      "y": 850.0
+    },
+    "remover": false
+  },
+  {
+    "ID": 4,
+    "tam": {
+      "x": 200.0,
+      "y": 40.0
+    },
+    "pos": {
+      "x": 450.0,
+      "y": 850.0
+    },
+    "remover": false
+  },
+  {
+    "ID": 4,
+    "tam": {
+      "x": 200.0,
+      "y": 40.0
+    },
+    "pos": {
+      "x": 650.0,
+      "y": 850.0
+    },
+    "remover": false
+  },
+  {
+    "ID": 4,
+    "tam": {
+      "x": 200.0,
+      "y": 40.0
+    },
+    "pos": {
+      "x": 850.0,
+      "y": 850.0
+    },
+    "remover": false
+  },
+  {
+    "ID": 4,
+    "tam": {
+      "x": 200.0,
+      "y": 40.0
+    },
+    "pos": {
+      "x": 1050.0,
+      "y": 850.0
+    },
+    "remover": false
+  },
+  {
+    "ID": 4,
+    "tam": {
+      "x": 200.0,
+      "y": 40.0
+    },
+    "pos": {
+      "x": 1250.0,
+      "y": 850.0
+    },
+    "remover": false
+  },
+  {
+    "ID": 4,
+    "tam": {
+      "x": 200.0,
+      "y": 40.0
+    },
+    "pos": {
+      "x": 1450.0,
+      "y": 850.0
+    },
+    "remover": false
+  },
+  {
+    "ID": 4,
+    "tam": {
+      "x": 200.0,
+      "y": 40.0
+    },
+    "pos": {
+      "x": 1650.0,
+      "y": 850.0
+    },
+    "remover": false
+  },
+  {
+    "ID": 4,
+    "tam": {
+      "x": 200.0,
+      "y": 40.0
+    },
+    "pos": {
+      "x": 1850.0,
+      "y": 850.0
+    },
+    "remover": false
+  },
+  {
+    "ID": 4,
+    "tam": {
+      "x": 200.0,
+      "y": 40.0
+    },
+    "pos": {
+      "x": 2050.0,
+      "y": 850.0
+    },
+    "remover": false
+  },
+  {
+    "ID": 4,
+    "tam": {
+      "x": 200.0,
+      "y": 40.0
+    },
+    "pos": {
+      "x": 2250.0,
+      "y": 850.0
+    },
+    "remover": false
+  },
+  {
+    "ID": 4,
+    "tam": {
+      "x": 200.0,
+      "y": 40.0
+    },
+    "pos": {
+      "x": 2450.0,
+      "y": 850.0
+    },
+    "remover": false
+  },
+  {
+    "ID": 4,
+    "tam": {
+      "x": 200.0,
+      "y": 40.0
+    },
+    "pos": {
+      "x": 2650.0,
+      "y": 850.0
+    },
+    "remover": false
+  },
+  {
+    "ID": 4,
+    "tam": {
+      "x": 200.0,
+      "y": 40.0
+    },
+    "pos": {
+      "x": 2850.0,
+      "y": 850.0
+    },
+    "remover": false
+  },
+  {
+    "ID": 4,
+    "tam": {
+      "x": 200.0,
+      "y": 40.0
+    },
+    "pos": {
+      "x": 3050.0,
+      "y": 850.0
+    },
+    "remover": false
+  },
+  {
+    "ID": 4,
+    "tam": {
+      "x": 200.0,
+      "y": 40.0
+    },
+    "pos": {
+      "x": 3250.0,
+      "y": 850.0
+    },
+    "remover": false
+  },
+  {
+    "ID": 4,
+    "tam": {
+      "x": 200.0,
+      "y": 40.0
+    },
+    "pos": {
+      "x": 3450.0,
+      "y": 850.0
+    },
+    "remover": false
+  },
+  {
+    "ID": 4,
+    "tam": {
+      "x": 200.0,
+      "y": 40.0
+    },
+    "pos": {
+      "x": 3650.0,
+      "y": 850.0
+    },
+    "remover": false
+  },
+  {
+    "ID": 4,
+    "tam": {
+      "x": 200.0,
+      "y": 40.0
+    },
+    "pos": {
+      "x": 3850.0,
+      "y": 850.0
+    },
+    "remover": false
+  },
+  {
+    "ID": 4,
+    "tam": {
+      "x": 200.0,
+      "y": 40.0
+    },
+    "pos": {
+      "x": 4050.0,
+      "y": 850.0
+    },
+    "remover": false
+  },
+  {
+    "ID": 4,
+    "tam": {
+      "x": 200.0,
+      "y": 40.0
+    },
+    "pos": {
+      "x": 4250.0,
+      "y": 850.0
+    },
+    "remover": false
+  },
+  {
+    "ID": 4,
+    "tam": {
+      "x": 200.0,
+      "y": 40.0
+    },
+    "pos": {
+      "x": 4450.0,
+      "y": 850.0
+    },
+    "remover": false
+  }
+]

@@ -104,6 +104,8 @@ namespace Game{
                 {
                     nlohmann::ordered_json json = salvarEntidade();
                     json["dano"] = dano;
+
+                    return json;
                 }
 
         }

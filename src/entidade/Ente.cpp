@@ -14,7 +14,10 @@ namespace Game{
         */
 
         Ente::Ente(const IDs::IDs ID):
-        ID(ID){}
+        ID(ID)
+        {
+            
+        }
 
         /**
          * destrutora da classe ente

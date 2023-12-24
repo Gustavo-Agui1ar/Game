@@ -27,7 +27,7 @@ namespace Game{
             }
             else
             {
-                if(!textura->loadFromFile("animations\\backgorund\\card\\card-vazio.png"))
+                if(!textura->loadFromFile("animations/backgorund/card/card-vazio.png"))
                 {
                     std::cout<<"nao foi possivel carregar a textura do card";
                     exit(1);
@@ -95,7 +95,7 @@ namespace Game{
         void Card::deletarTextura(){
             if(textura){
                 sf::Vector2u tamImgAnt = textura->getSize();
-                if(!textura->loadFromFile("Game/animations/BacGorund/card/card-vazio.png")){
+                if(!textura->loadFromFile("animations/backgorund/card/card-vazio.png")){
                     std::cout << "Card::nao foi possivel carregar textura" << std::endl;
                     exit(1);
                 }

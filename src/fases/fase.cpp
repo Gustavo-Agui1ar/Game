@@ -85,7 +85,7 @@ namespace Game{
         void Fase::criarJogador(const sf::Vector2f pos)
         {
             Entidade::Item::Arma* armaJogador = new Entidade::Item::Arma(IDs::IDs::armaDoJogador); 
-            Entidade::Personagem::Jogador::Jogador* jogador =  new Entidade::Personagem::Jogador::Jogador(pos,sf::Vector2f(30,60),250);
+            Entidade::Personagem::Jogador::Jogador* jogador =  new Entidade::Personagem::Jogador::Jogador(pos);
 
             if(jogador == nullptr)
             {

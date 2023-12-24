@@ -9,6 +9,11 @@
 #define BARRA_VIDA_JOGADOR_X 350.0f
 #define BARRA_VIDA_JOGADOR_Y 20.0f
 
+#define TAM_JOGADOR_X 30.0f
+#define TAM_JOGADOR_Y 60.0f
+
+#define VELOCIDADE_JOGADOR_X 250.0f
+
 #define TAMANHO_PULO 120.f
 #define CAMINHO_TEXTURA_ATTACK "..\\Game\\animations\\Player\\attack_1.png"
 #define CAMINHO_TEXTURA_DOWN "..\\Game\\animations\\Player\\teste-cair.png"
@@ -56,7 +61,7 @@ namespace Game {
 
                 public:
                     //construtores/destrutor
-                    Jogador(const sf::Vector2f pos, const sf::Vector2f tam, const float vel, Item::Arma* arma = nullptr);
+                    Jogador(const sf::Vector2f pos, Item::Arma* arma = nullptr);
                     ~Jogador();
                    
                     void mudarEstadoListener(const bool ativo);

@@ -18,12 +18,12 @@ namespace Game{
              *
              */
 
-            Obstaculo::Obstaculo(sf::Vector2f pos, sf::Vector2f tam, IDs::IDs ID):
+            Obstaculo::Obstaculo(sf::Vector2f pos, sf::Vector2f tam, IDs::IDs ID, IDs::IDs IDtextura):
             Entidade(tam, ID, pos)
             {
                 Gerenciador::GerenciadorGrafico* pGrafico = pGrafico->getGerenciadorGrafico();
                 
-                switch(ID)
+                switch(IDtextura)
                 {
                     case(IDs::IDs::caverna):
                          textura = pGrafico->carregarTextura(CAMINHO_TEXTURA_PLATAFORMA_CAVERNA);

@@ -18,8 +18,8 @@ namespace Game{
              *  ID: (ID::plataforma)constante por ser o "Rg" da classe.
              */
 
-            Plataforma::Plataforma(sf::Vector2f pos, sf::Vector2f tam, IDs::IDs ID):
-            Obstaculo(pos,tam,ID)
+            Plataforma::Plataforma(sf::Vector2f pos, sf::Vector2f tam, IDs::IDs ID, IDs::IDs IDtextura):
+            Obstaculo(pos,tam,ID, IDtextura)
             {
 
             }

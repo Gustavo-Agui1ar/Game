@@ -44,9 +44,9 @@ namespace Game{
             {
                 sf::Vector2f pos(sf::Vector2f( posFundo.x - tamJanela.x / 2.0f + (tamJanela.x / 5.0f) * i + (espacamento) * (i + 1), posFundo.y - tamJanela.y / 2.0f + 180.0f));
 
-                std::string caminhoEntidades = "Game/saves/SalvarEntidades/salvar" + std::to_string(i + 1) + ".txt";
-                std::string caminhoFase = "Game/saves/SalvarFase/salvar" + std::to_string(i + 1) + ".txt";
-                std::string caminhoImagem = "Game/saves/SalvarImagem/salvar" + std::to_string(i + 1) + ".png";
+                std::string caminhoEntidades = "saves/SalvarEntidades/salvar" + std::to_string(i + 1) + ".json";
+                std::string caminhoFase = "saves/SalvarFase/salvar" + std::to_string(i + 1) + ".json";
+                std::string caminhoImagem = "saves/SalvarImagem/salvar" + std::to_string(i + 1) + ".png";
 
                 Card* card = new Card(pos, caminhoEntidades, caminhoImagem, caminhoFase);
                 card->setColor(sf::Color{238,173,45});
@@ -89,6 +89,7 @@ namespace Game{
 
         void MenuSalvar::selecionaEsquerda()
         {
+            std::cout << "i"<< std::endl;
             (*itCard)->setSelecionado(false);
 
             if(itCard == listaCards.begin())

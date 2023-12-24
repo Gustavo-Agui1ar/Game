@@ -24,7 +24,7 @@ namespace Game{
 
             public:
 
-                Obstaculo(sf::Vector2f pos, sf::Vector2f tam, IDs::IDs ID);
+                Obstaculo(sf::Vector2f pos, sf::Vector2f tam, IDs::IDs ID, IDs::IDs IDtextura);
                 ~Obstaculo();
                 virtual void colisao(Entidade* outraEntidade, sf::Vector2f ds = sf::Vector2f(0.f,0.f)) = 0;
                 void colisaoObstaculo(sf::Vector2f ds, Personagem::Personagem* pPersonagem);

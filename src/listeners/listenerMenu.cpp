@@ -37,17 +37,6 @@ namespace Game{
                     }
                     break;
                     
-                    case(IDs::IDs::botao_voltar):
-                    {
-                         pEstado->removerEstado();
-
-                        if(pEstado->getEstadoAtual()->getID() == IDs::IDs::menu_pause)
-                        {
-                            pEstado->removerEstado();
-                            pEstado->addEstado(IDs::IDs::menu_pause);
-                        }
-                    }
-                    break;
                     
                     case(IDs::IDs::botao_novoJogo):
                     {
@@ -59,26 +48,62 @@ namespace Game{
                     
                     case(IDs::IDs::botao_carregar_jogo):
                     {
-                        pEstado->addEstado(IDs::IDs::menu_carregar);
+                        pEstado->addEstado(IDs::IDs::menu_carregar);      
                     }
                     break;
 
-                    case(IDs::IDs::botao_salvar_jogo):
+                    case(IDs::IDs::botao_voltar):
                     {
-                        pEstado->addEstado(IDs::IDs::menu_salvar);
+                         pEstado->removerEstado();
+
+                        if(pEstado->getEstadoAtual()->getID() == IDs::IDs::menu_pause)
+                        {
+                            pEstado->removerEstado();
+                            pEstado->addEstado(IDs::IDs::menu_pause);
+                        }
+                    }
+                    break;
+
+                    case (IDs::IDs::botao_salvar):
+                    {
+                        Estado::Estado* estado = pEstado->getEstadoAtual();
+
+                        if(estado->getID() == IDs::IDs::menu_salvar)
+                        {
+                            Estado::EstadoMenu* estadoMenu = dynamic_cast<Estado::EstadoMenu*>(estado);
+                            Menu::MenuSalvar* mSalvar = dynamic_cast<Menu::MenuSalvar*>(estadoMenu->getMenu());
+                            mSalvar->salvar();
+                            pEstado->removerEstado(); 
+                        }
+                    
                     }
                     break;
                     
+                    case(IDs::IDs::botao_salvar_jogo):
+                    {
+                        pEstado->addEstado(IDs::IDs::menu_salvar);
+                      //  pEstado->addEstado(IDs::IDs::menu_carregar);
+                    }
+                    break;
+                    
+                    case(IDs::IDs::botao_remover):
+                    {
+                        if(pEstado->getEstadoAtual()->getID() == IDs::IDs::menu_salvar)
+                        {
+                            Estado::Estado* estado = pEstado->getEstadoAtual();
+                            Estado::EstadoMenu* estadoMenu = dynamic_cast<Estado::EstadoMenu*>(estado);
+                            Menu::MenuCarregar* mCarregar = dynamic_cast<Menu::MenuCarregar*>(estadoMenu->getMenu());
+                            mCarregar->deletarArquivos();
+                        }
+                    }
+                    break;
+
                     case(IDs::IDs::botao_reniciar_jogo):
                     {
                         pEstado->addContinuarGameOver(IDs::IDs::forest);
                     }
                     break;
                     
-                    /*case(IDs::IDs::botao_opcao):
-                    case(IDs::IDs::botao_salvar_jogo):
-                        break;
-                        break;*/
                     default:
                         break;
                 }
@@ -142,7 +167,7 @@ namespace Game{
                             {
                                 pEstado->removerEstado();
 
-                                if(pEstado->getEstadoAtual()->getID() == IDs::IDs::menu_pause)
+                                if(IDmenu == IDs::IDs::menu_pause)
                                 {
                                     pEstado->removerEstado();
                                     pEstado->addEstado(IDs::IDs::menu_pause);
@@ -151,7 +176,16 @@ namespace Game{
                                 break;
                             case (IDs::IDs::botao_salvar):
                             {
-                                //pGEstado->addEstado(IDs::IDs::estado_menu_salvar_jogo);
+                                Estado::Estado* estado = pEstado->getEstadoAtual();
+
+                                if(IDmenu == IDs::IDs::menu_salvar)
+                                {
+                                    Estado::EstadoMenu* estadoMenu = dynamic_cast<Estado::EstadoMenu*>(estado);
+                                    Menu::MenuSalvar* mSalvar = dynamic_cast<Menu::MenuSalvar*>(estadoMenu->getMenu());
+                                    mSalvar->salvar();
+                                    pEstado->removerEstado(); 
+                                }
+                            
                             }
                                 break;
                             case (IDs::IDs::botao_carregar_jogo):
@@ -169,7 +203,23 @@ namespace Game{
                                 pEstado->addEstado(IDs::IDs::menu_salvar);
                             }
                                 break;
-                            
+                            case(IDs::IDs::botao_remover):
+                            {
+                                Estado::Estado* estado = pEstado->getEstadoAtual();
+                                if(estado == nullptr)
+                                {
+                                    std::cout << "nao foi possivel recuperar estado atual";
+                                    exit(1);
+                                }
+                                if(estado->getID() == IDs::IDs::menu_carregar)
+                                {
+                                    Estado::EstadoMenu* estadoMenu = dynamic_cast<Estado::EstadoMenu*>(estado);
+                                    Menu::MenuCarregar* mCarregar = dynamic_cast<Menu::MenuCarregar*>(estadoMenu->getMenu());
+                                    mCarregar->deletarArquivos();
+                                }
+                            }
+                                break;
+
                             default:
                                 break;
                         }
