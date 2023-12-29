@@ -75,22 +75,19 @@ namespace Game{
                             mSalvar->salvar();
                             pEstado->removerEstado(); 
                         }
-                    
-                    }
-                    break;
-                    
-                    case(IDs::IDs::botao_salvar_jogo):
-                    {
-                        pEstado->addEstado(IDs::IDs::menu_salvar);
-                      //  pEstado->addEstado(IDs::IDs::menu_carregar);
                     }
                     break;
                     
                     case(IDs::IDs::botao_remover):
                     {
-                        if(pEstado->getEstadoAtual()->getID() == IDs::IDs::menu_salvar)
+                        Estado::Estado* estado = pEstado->getEstadoAtual();
+                        if(estado == nullptr)
                         {
-                            Estado::Estado* estado = pEstado->getEstadoAtual();
+                            std::cout << "nao foi possivel recuperar estado atual";
+                            exit(1);
+                        }
+                        if(estado->getID() == IDs::IDs::menu_carregar)
+                        {
                             Estado::EstadoMenu* estadoMenu = dynamic_cast<Estado::EstadoMenu*>(estado);
                             Menu::MenuCarregar* mCarregar = dynamic_cast<Menu::MenuCarregar*>(estadoMenu->getMenu());
                             mCarregar->deletarArquivos();
@@ -129,6 +126,12 @@ namespace Game{
             {
                 menu->selecionaDireita();
             }
+            else if(tecEspecial[tecla] == "Enter")
+            {
+                if(menu->getIDBotaoSelecionado() == IDs::IDs::botao_salvar_jogo)
+                    pEstado->addEstado(IDs::IDs::menu_salvar);
+            }
+
         }
 
         void ListenerMenu::moveMouse(const sf::Vector2f posMouse)
@@ -216,6 +219,44 @@ namespace Game{
                                     Estado::EstadoMenu* estadoMenu = dynamic_cast<Estado::EstadoMenu*>(estado);
                                     Menu::MenuCarregar* mCarregar = dynamic_cast<Menu::MenuCarregar*>(estadoMenu->getMenu());
                                     mCarregar->deletarArquivos();
+                                }
+                            }
+                                break;
+                            case(IDs::IDs::botao_carregar):
+                            {
+                                Estado::Estado* estado = pEstado->getEstadoAtual();
+                                if(estado->getID() == IDs::IDs::menu_carregar)
+                                {
+                                    Estado::EstadoMenu* eMenu = dynamic_cast<Estado::EstadoMenu*>(estado);
+                                    Menu::MenuCarregar* mCarregar = dynamic_cast<Menu::MenuCarregar*>(eMenu);
+                                    Menu::Card* card = mCarregar->getCardSelecionado();
+
+                                    if(card->getExiste())
+                                    {
+                                        pEstado->removerEstado();
+                                        const std::string caminhoFase = card->getCaminhoEntidade();
+                                        const std::string caminhoEntidades = card->getCaminhoFase();
+
+                                        Gerenciador::GerenciadorArquivo gArquivo;
+
+                                        nlohmann::ordered_json jsonFase = gArquivo.lerArquivo(caminhoFase.c_str());
+                                        nlohmann::ordered_json jsonEntidaes = gArquivo.lerArquivo(caminhoEntidades.c_str());
+                                        
+                                     
+                                        IDs::IDs ID = jsonFase["ID"].template get<IDs::IDs>();
+
+                                        if(ID == IDs::IDs::forest)
+                                        {
+                                            pEstado->addEstado(IDs::IDs::forest);
+                                        }
+                                        else 
+                                        {
+                                            std::cout << "nao foi possivel criar uma fase" << std::endl;
+                                            exit(1);
+                                        }
+                                        Estado::EstadoFase* estadoFase = dynamic_cast<Estado::EstadoFase*>(pEstado->getEstadoAtual());
+                                        estadoFase->criarFase(jsonEntidaes, ID);
+                                    }
                                 }
                             }
                                 break;

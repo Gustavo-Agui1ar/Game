@@ -27,15 +27,18 @@ namespace Game{
                 {
                     case(IDs::IDs::caverna):
                          textura = pGrafico->carregarTextura(CAMINHO_TEXTURA_PLATAFORMA_CAVERNA);
+                         corpo.setTexture(&textura);
                          break;
                     case(IDs::IDs::forest):
                         textura = pGrafico->carregarTextura(CAMINHO_TEXTURA_PLATAFORMA_FOREST);
+                        corpo.setTexture(&textura);
                         break;
+                    case(IDs::IDs::plataforma_invisivel):
+                        corpo.setFillColor(sf::Color::Transparent);
                     default:
                         break;
                 }
 
-                corpo.setTexture(&textura);
             
             }
             /**

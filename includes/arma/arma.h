@@ -20,6 +20,7 @@ namespace Game{
 
                 //construtor e destrutor
                 Arma(IDs::IDs ID);
+                Arma(nlohmann::ordered_json atributos);
                 ~Arma();
 
                 //metodos de ataque

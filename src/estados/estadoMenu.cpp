@@ -19,6 +19,8 @@ namespace Game{
             criarMenu();
         }
 
+        
+
         EstadoMenu::~EstadoMenu()
         {
             if(menu)

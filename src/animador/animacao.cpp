@@ -88,5 +88,35 @@ namespace Game{
             Imagem* img = new Imagem(caminhoTextura,qtdImagem,tempoTroca,escala);
             mapImagem.insert(std::pair<std::string, Imagem*>(nomeDaAnimacao,img));
         }
+
+        void Animacao::setImgAtual(std::string img)
+        {
+            estadoAtual = img;
+        }
+            
+        void Animacao::setQuadroAtual(const unsigned int quadro)
+        {
+            mapImagem[estadoAtual]->setQuadroAtual(quadro);
+        }
+
+        void Animacao::setTempoTotal(const float tempo)
+        {
+            mapImagem[estadoAtual]->setTempoTotal(tempo);
+        }
+
+        const float Animacao::getTempoTotal()
+        {
+            return mapImagem[estadoAtual]->getTempoTotal();
+        }
+
+        const unsigned int Animacao::getQuadroAtual()
+        {
+            return mapImagem[estadoAtual]->getQuadroAtual();
+        }
+        
+        const std::string Animacao::getIMagemAtual()
+        {
+            return this->estadoAtual;
+        }
     }
 }

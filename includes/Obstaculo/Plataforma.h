@@ -13,7 +13,8 @@ namespace Game{
             class Plataforma : public Obstaculo{
 
             public:
-                Plataforma(sf::Vector2f pos, sf::Vector2f tam, IDs::IDs ID, IDs::IDs IDtextura);
+                Plataforma(sf::Vector2f pos, sf::Vector2f tam, IDs::IDs IDtextura);
+                Plataforma(nlohmann::ordered_json atributos, IDs::IDs IDtextura);
                 ~Plataforma();
                 void colisao(Entidade* outraEntidade, sf::Vector2f ds = sf::Vector2f(0.0f, 0.0f));
                 nlohmann::ordered_json salvar();

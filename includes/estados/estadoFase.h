@@ -27,6 +27,7 @@ namespace Game{
             void executar();
             Fase::Fase* getFase();
 
+            void criarFase(nlohmann::ordered_json entidades, IDs::IDs IDfase);
             void mudarEstadoListener(const bool ativo);
 
         };

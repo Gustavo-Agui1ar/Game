@@ -14,6 +14,7 @@ namespace Game{
 
             //contrutor e destrutor
             Forest();
+            Forest(nlohmann::ordered_json entidades);
             ~Forest();
            
             //metodos de criacao de mapa da fase
@@ -22,6 +23,7 @@ namespace Game{
            
             //metodo que cria uma plataforma
             void criarPlataforma(const sf::Vector2f pos);
+            void recuperarJogada(nlohmann::ordered_json entidades);
 
         };
     }

@@ -30,7 +30,7 @@ namespace Game {
                 void selecionaDireita();
                 
                 void deletarArquivos();
-                Card* getCardSelecionado();
+                Card* getCardSelecionado()const;
                 void criarBotoes();
                 void desenharCards();
                 void executar();

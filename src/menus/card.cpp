@@ -55,6 +55,11 @@ namespace Game{
             }
         }
 
+        sf::Vector2f Card::getPos()
+        {
+            return corpo->getPosition();
+        }
+
         const std::string Card::getCaminhoEntidade()
         {
             return caminhoEntidades;

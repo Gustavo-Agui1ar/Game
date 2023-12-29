@@ -24,6 +24,70 @@ namespace Game{
 
         }
         
+        Forest::Forest(nlohmann::ordered_json entidades):
+        Fase(IDs::IDs::forest, IDs::IDs::forest)
+        {
+            criarFundo();
+            recuperarJogada(entidades);
+        }
+
+        void Forest::recuperarJogada(nlohmann::ordered_json entidades)
+        {
+            nlohmann::ordered_json::iterator it;
+
+            for(it = entidades.begin(); it != entidades.end() ; it++)
+            {
+                IDs::IDs ID = static_cast<IDs::IDs>((*it)["ID"].template get<int>());
+
+                switch(ID)
+                {
+                    case(IDs::IDs::jogador):
+                    {
+                        nlohmann::ordered_json entidade = (*it);
+                        it++;
+                        nlohmann::ordered_json arma = (*it);
+
+                        criarEntidade(IDs::IDs::jogador, entidade, arma, true);
+                    }
+                    break;
+
+                    case(IDs::IDs::esqueleto):
+                    {
+                        nlohmann::ordered_json entidade = (*it);
+                        it++;
+                        nlohmann::ordered_json arma = (*it);
+
+                        criarEntidade(IDs::IDs::esqueleto, entidade, arma, true);
+                    }
+                    break;
+
+                    case(IDs::IDs::red_slime):
+                    {
+                        nlohmann::ordered_json entidade = (*it);
+                        it++;
+                        nlohmann::ordered_json arma = (*it);
+
+                        criarEntidade(IDs::IDs::red_slime, entidade, arma, true);
+                    }
+                    break;
+
+                    case(IDs::IDs::plataforma):
+                    {                
+                        criarEntidade(IDs::IDs::plataforma, (*it), false);
+                    }
+                    break;
+
+                    case(IDs::IDs::plataforma_invisivel):
+                    {
+                        criarEntidade(IDs::IDs::plataforma_invisivel, (*it), false);
+                    }
+                    break;
+
+                    default:
+                        break;
+                } 
+            }
+        }
          /**
          * destrutor da classe
         */
@@ -79,7 +143,7 @@ namespace Game{
                 j++;
             }
             listaPersonagens->removerEntidade(2);
-            listaPersonagens->removerEntidade(3);
+            listaPersonagens->removerEntidade(2);
             arquivo.close();
         }
 
@@ -89,7 +153,7 @@ namespace Game{
 
         void Forest::criarPlataforma(const sf::Vector2f pos)
         {
-            Entidade::Obstaculo::Plataforma* plataforma = new Entidade::Obstaculo::Plataforma(pos,sf::Vector2f(200.0f,40.0f), IDs::IDs::plataforma, IDs::IDs::forest);
+            Entidade::Obstaculo::Plataforma* plataforma = new Entidade::Obstaculo::Plataforma(pos,sf::Vector2f(200.0f,40.0f),  IDs::IDs::forest);
             if(plataforma == nullptr)
             {
                 std::cout<<"Fase::Forest: nao foi possivel criar uma plataforma";

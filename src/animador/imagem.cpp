@@ -19,12 +19,9 @@ namespace Game{
         */
 
         Imagem::Imagem(const char* caminhoTextura, const unsigned int totalDeQuadrosImagem, const float tempoTroca, sf::Vector2f escala):
-        pGrafico(pGrafico->getGerenciadorGrafico()),totalDeQuadrosImagem(totalDeQuadrosImagem),tempoTroca(tempoTroca),
-        textura(pGrafico->carregarTextura(caminhoTextura)),escala(escala)
+        pGrafico(pGrafico->getGerenciadorGrafico()),  escala(escala), textura(pGrafico->carregarTextura(caminhoTextura)),
+        totalDeQuadrosImagem(totalDeQuadrosImagem),quadroAtual(0),tempoTroca(tempoTroca),tempoTotal(0)
         {
-            quadroAtual = 0;
-            tempoTotal = 0.0f;
-
             tamanho.width = textura.getSize().x/ (float) totalDeQuadrosImagem;
             tamanho.height = textura.getSize().y;
         }
@@ -106,5 +103,25 @@ namespace Game{
             return escala;
         }
 
+        void Imagem::setQuadroAtual(const unsigned int imgAtual)
+        {
+            this->quadroAtual = imgAtual;
+        }
+
+        
+        void Imagem::setTempoTotal(const float tempo)
+        {
+            tempoTotal = tempo;
+        }
+
+        const float Imagem::getTempoTotal()
+        {
+            return tempoTotal;
+        }
+        
+        const unsigned int Imagem::getQuadroAtual()
+        {
+            return quadroAtual;    
+        }
     }
 }

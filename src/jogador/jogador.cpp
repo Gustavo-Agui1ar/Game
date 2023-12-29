@@ -43,13 +43,8 @@ namespace Game{
                     Personagem(pos,sf::Vector2f(TAM_JOGADOR_X,TAM_JOGADOR_Y), VELOCIDADE_JOGADOR_X, IDs::IDs::jogador, JOGADOR_TEMPO_LEVAR_DANO, JOGADOR_ANIMACAO_DE_MORTE, DANO_JOGADOR),noChao(false),
                     listenerJogador(new Listener::ListenerJogador(this))
                     {
-                       animacao.addAnimacao(CAMINHO_TEXTURA_IDLE,"PARADO",7,0.16,sf::Vector2f{6,2});
-                       animacao.addAnimacao(CAMINHO_TEXTURA_JUMP,"PULO",9,0.12,sf::Vector2f{6,2});
-                       animacao.addAnimacao(CAMINHO_TEXTURA_RUN,"CORRENDO",8,0.12,sf::Vector2f{6,2});
-                       animacao.addAnimacao(CAMINHO_TEXTURA_ATTACK,"ATACAR",4,0.15,sf::Vector2f{6,2});
-                       animacao.addAnimacao(CAMINHO_TEXTURA_DEAD,"MORRE",6,0.15,sf::Vector2f{6,2});
-                       animacao.addAnimacao(CAMINHO_TEXTURA_HIT,"TOMADANO",3,0.15,sf::Vector2f{6,2});
-                       corpo.setOrigin(sf::Vector2f(tam.x/2.5,tam.y/2.1));
+                      
+                       inicializarAnimacao();
 
                        inicializarBarraDeVida();
 
@@ -59,10 +54,58 @@ namespace Game{
                        }
                     }
 
-                   /* Jogador::Jogador(nlohmann::ordered_json atributos)
+                    Jogador::Jogador(nlohmann::ordered_json atributos):
+                    Personagem(pos,sf::Vector2f(TAM_JOGADOR_X,TAM_JOGADOR_Y), VELOCIDADE_JOGADOR_X, IDs::IDs::jogador, JOGADOR_TEMPO_LEVAR_DANO, JOGADOR_ANIMACAO_DE_MORTE, DANO_JOGADOR),
+                    listenerJogador(new Listener::ListenerJogador(this))
                     {
-                       
-                    }*/
+                        try
+                        {
+                            sf::Vector2f posAtual = sf::Vector2f(atributos["pos"]["x"].template get<float>(), atributos["pos"]["y"].template get<float>());
+                            sf::Vector2f tamAtual = sf::Vector2f(atributos["tam"]["x"].template get<float>(), atributos["tam"]["y"].template get<float>());
+                            sf::Vector2f velAtual = sf::Vector2f(atributos["velocidade"]["x"].template get<float>(), atributos["velocidade"]["y"].template get<float>());
+
+                            setPos(posAtual);
+                            setTam(tamAtual);
+                            setVelMax(velAtual);
+
+                            movendo = atributos["movendo"].template get<bool>();
+                            direcao = atributos["direcao"].template get<bool>();
+                            levandoDano = atributos["levandoDano"].template get<bool>();
+                            atacando = atributos["atacando"].template get<bool>();
+                            morrendo = atributos["morrendo"].template get<bool>();
+                            vida = atributos["vida"].template get<float>();
+                            tempoDano =  atributos["tempoDano"].template get<float>();
+                            tempoMorrer =  atributos["tempoMorrer"].template get<float>();
+                            dt =  atributos["vida"].template get<float>();
+                            dano =  atributos["dano"].template get<float>();
+                            noChao = atributos["noChao"].template get<bool>();
+
+                            inicializarAnimacao();
+                            inicializarBarraDeVida();
+
+                            animacao.setImgAtual(atributos["imagemAtual"].template get<std::string>());
+                            animacao.setQuadroAtual(atributos["tempoTotal"].template get<unsigned int>());
+                            animacao.setTempoTotal(atributos["tempoTotal"].template get<float>());
+
+                        }
+                        catch(const std::exception& e)
+                        {
+                            std::cerr <<e.what() << std::endl;
+                            podeRemover = true;
+                        }
+                    }
+
+                    void Jogador::inicializarAnimacao()
+                    {
+                        animacao.addAnimacao(CAMINHO_TEXTURA_IDLE,"PARADO",7,0.16,sf::Vector2f{6,2});
+                        animacao.addAnimacao(CAMINHO_TEXTURA_JUMP,"PULO",9,0.12,sf::Vector2f{6,2});
+                        animacao.addAnimacao(CAMINHO_TEXTURA_RUN,"CORRENDO",8,0.12,sf::Vector2f{6,2});
+                        animacao.addAnimacao(CAMINHO_TEXTURA_ATTACK,"ATACAR",4,0.15,sf::Vector2f{6,2});
+                        animacao.addAnimacao(CAMINHO_TEXTURA_DEAD,"MORRE",6,0.15,sf::Vector2f{6,2});
+                        animacao.addAnimacao(CAMINHO_TEXTURA_HIT,"TOMADANO",3,0.15,sf::Vector2f{6,2});
+                        corpo.setOrigin(sf::Vector2f(tam.x/2.5,tam.y/2.1));
+
+                    }
 
                     /**
                      * metodo  que atualiza a pois��o,aniimacao,
@@ -231,6 +274,9 @@ namespace Game{
                         nlohmann::ordered_json json = salvarPersonagem();
 
                         json["noChao"] = noChao;
+                        json["imagemAtual"] = animacao.getIMagemAtual();
+                        json["tempoTotal"] = animacao.getTempoTotal();
+                        json["quadroAtual"] = animacao.getQuadroAtual();
 
                         return json;
                     }

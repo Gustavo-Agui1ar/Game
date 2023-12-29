@@ -70,7 +70,21 @@ namespace Game{
             }
             
             pilhaEstados.push(estado);
-            std::cout << "empilhou !!" << std::endl ;
+        }
+
+        void GerenciadorDeEstado::addEstado(Estado::Estado* estado)
+        {
+             if(estado == nullptr)
+            {
+                std::cout << ":Gerenciador::GerenciadorEstado::estado nulo" << std::endl;
+                exit(1);
+            }
+            if(!pilhaEstados.empty())
+            {
+                desativarListener();
+            }
+            
+            pilhaEstados.push(estado);
         }
 
         void GerenciadorDeEstado::addContinuarGameOver(const IDs::IDs ID)

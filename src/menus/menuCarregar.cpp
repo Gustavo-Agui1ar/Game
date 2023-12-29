@@ -103,9 +103,9 @@ namespace Game{
             }
         }
 
-        Card* MenuCarregar::getCardSelecionado()
+        Card* MenuCarregar::getCardSelecionado()const
         {
-            return (*itCards);
+            return new Card(sf::Vector2f(0,0),"saves/SalvarEntidades/salvar1.json", "saves/SalvarIMagem/salvar1.png", "saves/SalvarFase/salvar1.json");
         }
 
         void MenuCarregar::criarBotoes()

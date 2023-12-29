@@ -37,6 +37,7 @@ namespace Game {
             const std::string getCaminhoFase();
 
             void setColor(const sf::Color cor);
+            sf::Vector2f getPos();
             void setSelecionado(const bool selecionado);
             const bool getSelecionado();
             const bool getExiste();

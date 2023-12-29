@@ -210,6 +210,9 @@ namespace Game{
                     json["tempoAtaque"] = tempoAtaque;
                     json["tempoMover"] = tempoMover;
                     json["mover"] = mover;
+                    json["imagemAtual"] = animacao.getIMagemAtual();
+                    json["tempoTotal"] = animacao.getTempoTotal();
+                    json["quadroAtual"] = animacao.getQuadroAtual();
 
                     return json;
                 }

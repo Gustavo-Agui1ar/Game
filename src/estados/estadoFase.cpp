@@ -9,8 +9,21 @@ namespace Game{
         Estado(ID)
         {
             fase = nullptr;
+        }
 
-            criarFase();
+        void EstadoFase::criarFase(nlohmann::ordered_json entidades, IDs::IDs IDfase)
+        {
+            switch (IDfase)
+            {
+            case(IDs::IDs::forest):
+            {
+                fase = static_cast<Fase::Fase*>(new Fase::Forest(entidades));
+            }
+                break;
+            
+            default:
+                break;
+            }
         }
 
         EstadoFase::~EstadoFase()

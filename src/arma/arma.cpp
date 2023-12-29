@@ -24,6 +24,24 @@ namespace Game{
                     dano = 0.0f;
                 }
 
+
+                Arma::Arma(nlohmann::ordered_json atributos):
+                Entidade(sf::Vector2f(-1000.0f, -1000.0f), static_cast<IDs::IDs>(atributos["ID"].template get<int>()))
+                {
+                    try{
+                        dano = atributos["dano"].template get<float>();
+                        setPos(sf::Vector2f(atributos["pos"]["x"].template get<float>(), atributos["pos"]["y"].template get<float>()));
+                        setTam(sf::Vector2f(atributos["tam"]["x"].template get<float>(), atributos["tam"]["y"].template get<float>()));
+                    
+                    }
+                    catch(const std::exception& e)
+                    {
+                        std::cerr << e.what() << '\n';
+                        podeRemover = true;
+                    }
+                }
+
+
                 /**
                  * destrutora da classe arma
                 */

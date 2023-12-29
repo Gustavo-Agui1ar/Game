@@ -15,11 +15,19 @@ namespace Game{
              *
              * pos: atributo nescessario da construtora de Entidade.
              * tam: atributo nescessario da construtora de Entidade.
-             *  ID: (ID::plataforma)constante por ser o "Rg" da classe.
+             *  ID: (ID::plataforma)constante.
              */
 
-            Plataforma::Plataforma(sf::Vector2f pos, sf::Vector2f tam, IDs::IDs ID, IDs::IDs IDtextura):
-            Obstaculo(pos,tam,ID, IDtextura)
+            Plataforma::Plataforma(sf::Vector2f pos, sf::Vector2f tam, IDs::IDs IDtextura):
+            Obstaculo(pos,tam,IDs::IDs::plataforma, IDtextura)
+            {
+
+            }
+
+            Plataforma::Plataforma(nlohmann::ordered_json atributos, IDs::IDs IDtextura):
+            Obstaculo(sf::Vector2f(atributos["pos"]["x"].get<float>(), atributos["pos"]["y"].get<float>()),
+            sf::Vector2f(atributos["tam"]["x"].get<float>(), atributos["tam"]["y"].get<float>()), 
+            IDs::IDs::plataforma, IDtextura)
             {
 
             }

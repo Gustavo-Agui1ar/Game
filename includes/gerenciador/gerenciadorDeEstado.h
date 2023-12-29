@@ -31,6 +31,7 @@ namespace Game{
             void executar();
             
             void addEstado(const IDs::IDs ID);
+            void addEstado(Estado::Estado* estado);
             void addContinuarGameOver(const IDs::IDs ID);
             void removerEstado();
             

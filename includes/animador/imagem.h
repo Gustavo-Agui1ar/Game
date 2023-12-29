@@ -33,12 +33,16 @@ namespace Game{
 
             //metodos de atualizacao da imagem.
             void atualizar(bool direcao,const float dt);
+            void setQuadroAtual(const unsigned int imgAtual);
+            void setTempoTotal(const float tempo);
             void resetar();
           
             //metodos geters dda classe
             const sf::IntRect  getTamanho() const;
             const sf::Texture* getTextura() const;
             const sf::Vector2f getEscala() const;
+            const float getTempoTotal();
+            const unsigned int getQuadroAtual();
         };
     }
 

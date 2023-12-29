@@ -23,12 +23,47 @@ namespace Game{
                  * 
                 */
 
-                Esqueleto::Esqueleto(sf::Vector2f pos, sf::Vector2f tam, const float vel, Jogador::Jogador *jogador, Item::Arma* arma):
-                Inimigo(pos, tam, vel,jogador,ESQUELETO_TEMPO_DE_ATAQUE,IDs::IDs::esqueleto,ESQUELETO_TEMPO_LEVAR_DANO, ESQUELETO_TEMPO_ANIMACAO_DE_MORTE,DANO_ESQUELETO, arma)
+                Esqueleto::Esqueleto(sf::Vector2f pos, Jogador::Jogador *jogador, Item::Arma* arma):
+                Inimigo(pos, sf::Vector2f(TAM_ESQUELETO_X, TAM_ESQUELETO_Y), VEL_ESQUELETO, jogador, ESQUELETO_TEMPO_DE_ATAQUE,
+                IDs::IDs::esqueleto, ESQUELETO_TEMPO_LEVAR_DANO, ESQUELETO_TEMPO_ANIMACAO_DE_MORTE,DANO_ESQUELETO, arma)
                 {
                     inicializaAnimacao();
                 }
 
+                Esqueleto::Esqueleto(nlohmann::ordered_json atributos, Jogador::Jogador* jogador):
+                Inimigo(pos, sf::Vector2f(TAM_ESQUELETO_X,TAM_ESQUELETO_Y), VEL_ESQUELETO, jogador, ESQUELETO_TEMPO_DE_ATAQUE,
+                IDs::IDs::esqueleto, ESQUELETO_TEMPO_LEVAR_DANO, ESQUELETO_TEMPO_ANIMACAO_DE_MORTE, DANO_ESQUELETO,  nullptr)
+                {
+                    try
+                    {
+                        tempoMorrer = atributos["tempoMorrer"].template get<float>();
+                        levandoDano = atributos["levandoDano"].template get<bool>();
+                        tempoDano = atributos["tempoDano"].template get<float>();
+                        morrendo = atributos["morrendo"].template get<bool>();
+                        atacando = atributos["atacando"].template get<bool>();
+                        movendo = atributos["movendo"].template get<bool>();
+                        direcao = atributos["direcao"].template get<bool>();
+                        dano = atributos["dano"].template get<float>();
+                        vida = atributos["vida"].template get<float>();
+                        dt = atributos["dt"].template get<float>();
+                        tempoAtaque = atributos["tempoAtaque"].template get<float>();
+                        tempoMover = atributos["tempoMover"].template get<float>();
+                        mover = atributos["mover"].template get<short>();
+                        
+                        inicializaAnimacao();
+
+                        animacao.setImgAtual(atributos["imagemAtual"].template get<std::string>());
+                        animacao.setTempoTotal(atributos["tempoTotal"].template get<float>());
+                        animacao.setQuadroAtual(atributos["quadroAtual"].template get<unsigned int>());
+                        
+                    }
+                    catch(const std::exception& e)
+                    {
+                        std::cerr << e.what() << '\n';
+                        podeRemover = true;
+                    }
+                    
+                }
                 
                 /**
                  * destrutora da classe esqueleto

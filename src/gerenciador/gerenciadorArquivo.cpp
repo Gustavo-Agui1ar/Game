@@ -49,7 +49,7 @@ namespace Game{
 
         void GerenciadorArquivo::fecharArquivoGravar()
         {
-            arquivoLeitura.close();
+            arquivoGravar.close();
         }
 
         nlohmann::ordered_json  GerenciadorArquivo::lerArquivo(const char* caminhoArquivo)

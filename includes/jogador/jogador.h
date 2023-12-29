@@ -46,6 +46,7 @@ namespace Game {
                     bool noChao;
                     
                     //metodos de atualizacao 
+                    void inicializarAnimacao();
                     void atualizarAnimacao();
                     void atualizar();
 
@@ -62,6 +63,7 @@ namespace Game {
                 public:
                     //construtores/destrutor
                     Jogador(const sf::Vector2f pos, Item::Arma* arma = nullptr);
+                    Jogador(nlohmann::ordered_json atributos);
                     ~Jogador();
                    
                     void mudarEstadoListener(const bool ativo);
