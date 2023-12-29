@@ -173,7 +173,7 @@ namespace Game{
             }
         }
 
-        void Fase::criarEntidade(IDs::IDs ID, nlohmann::ordered_json entidade , nlohmann::ordered_json arma, bool ehPersonagem)
+        void Fase::criarEntidade(IDs::IDs ID, nlohmann::ordered_json entidade , nlohmann::ordered_json arma)
         {
             Entidade::Entidade* personagem = nullptr;
             Entidade::Entidade* armaPersonagem = nullptr;
@@ -192,7 +192,7 @@ namespace Game{
 
                     Entidade::Item::Arma* pArma = new Entidade::Item::Arma(arma);
                     
-                    if(armaPersonagem == nullptr)
+                    if(pArma == nullptr)
                     {
                         std::cout << "Fase::nao foi possivel criar espada do jogador" << std::endl;
                         exit(1);
@@ -216,7 +216,7 @@ namespace Game{
 
                     Entidade::Item::Arma* pArma = new Entidade::Item::Arma(arma);
                     
-                    if(armaPersonagem == nullptr)
+                    if(pArma == nullptr)
                     {
                         std::cout << "Fase::nao foi possivel criar espada do inimigo" << std::endl;
                         exit(1);
@@ -240,7 +240,7 @@ namespace Game{
 
                     Entidade::Item::Arma* pArma = new Entidade::Item::Arma(arma);
                     
-                    if(armaPersonagem == nullptr)
+                    if(pArma == nullptr)
                     {
                         std::cout << "Fase::nao foi possivel criar espada do inimigo" << std::endl;
                         exit(1);
@@ -254,7 +254,7 @@ namespace Game{
 
                 case(IDs::IDs::plataforma):
                 {
-                    Entidade::Obstaculo::Plataforma* plataforma = new Entidade::Obstaculo::Plataforma(entidade, getID());
+                    Entidade::Obstaculo::Plataforma* plataforma = new Entidade::Obstaculo::Plataforma(entidade, IDs::IDs::plataforma, getID());
 
                     if(plataforma == nullptr)
                     {
@@ -267,7 +267,7 @@ namespace Game{
 
                 case(IDs::IDs::plataforma_invisivel):
                 {
-                     Entidade::Obstaculo::Plataforma* plataforma = new Entidade::Obstaculo::Plataforma(entidade, IDs::IDs::plataforma_invisivel);
+                     Entidade::Obstaculo::Plataforma* plataforma = new Entidade::Obstaculo::Plataforma(entidade, IDs::IDs::plataforma_invisivel, IDs::IDs::plataforma_invisivel);
 
                     if(plataforma == nullptr)
                     {
@@ -282,13 +282,19 @@ namespace Game{
                     break;
             }
 
-            if(personagem)
+            switch (ID)
             {
-                listaPersonagens->addEntidade(personagem);
-                listaPersonagens->addEntidade(armaPersonagem);
-            }
-            else{
-                listaObstaculos->addEntidade(personagem);
+                case (IDs::IDs::plataforma):
+                    listaObstaculos->addEntidade(personagem);
+                    break;
+                case (IDs::IDs::plataforma_invisivel):
+                    listaObstaculos->addEntidade(personagem);
+                    break;
+                
+                default:
+                    listaPersonagens->addEntidade(personagem);
+                    listaPersonagens->addEntidade(armaPersonagem);
+                    break;
             }
         }
 
@@ -387,7 +393,7 @@ namespace Game{
         void Fase::criarPlataformaInvisivel(const sf::Vector2f pos)
         {
             
-            Entidade::Obstaculo::Plataforma* plataforma = new Entidade::Obstaculo::Plataforma(pos,sf::Vector2f(50.0f,50.0f),  IDs::IDs::plataforma_invisivel);
+            Entidade::Obstaculo::Plataforma* plataforma = new Entidade::Obstaculo::Plataforma(pos,sf::Vector2f(50.0f,50.0f), IDs::IDs::plataforma_invisivel, IDs::IDs::plataforma_invisivel);
             if(plataforma == nullptr)
             {
                 std::cout<<"Fase::Forest: nao foi possivel criar uma plataforma";

@@ -52,6 +52,8 @@ namespace Game{
             inicialiarIterador();
         }
 
+     
+
         void MenuPausa::setFase(Fase::Fase* fase)
         {
             this->fase = fase;

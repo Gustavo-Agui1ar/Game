@@ -105,7 +105,17 @@ namespace Game{
 
         Card* MenuCarregar::getCardSelecionado()const
         {
-            return new Card(sf::Vector2f(0,0),"saves/SalvarEntidades/salvar1.json", "saves/SalvarIMagem/salvar1.png", "saves/SalvarFase/salvar1.json");
+            const std::string entidade = (*itCards)->getCaminhoEntidade(); 
+            const std::string imagem = (*itCards)->getCaminhoImagem(); 
+            const std::string fase = (*itCards)->getCaminhoFase(); 
+
+            return new Card(sf::Vector2f(0,0), entidade, imagem, fase);
+        }
+
+        void MenuCarregar::criarBotaoBug()
+        {
+            addBotao("Voltar", sf::Vector2f(tamJanela.x / 2.0f - tamBotao.x / 2.0f, tamJanela.y - tamJanela.y / 12.0f), IDs::IDs::botao_voltar, sf::Color{0, 255, 0});
+            inicialiarIterador();
         }
 
         void MenuCarregar::criarBotoes()

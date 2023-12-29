@@ -31,6 +31,7 @@ namespace Game {
                 
                 void deletarArquivos();
                 Card* getCardSelecionado()const;
+                void criarBotaoBug();
                 void criarBotoes();
                 void desenharCards();
                 void executar();

@@ -19,7 +19,7 @@ namespace Game {
             Gerenciador::GerenciadorDeEventos *gerenciadorDeEventos;
             Gerenciador::GerenciadorGrafico *gerenciadorGrafico;
             Gerenciador::GerenciadorDeEstado* pEstado;
-
+    
         public:
 
             Principal();

@@ -95,7 +95,7 @@ namespace Game{
 
         void Caverna::criarPlataforma(const sf::Vector2f pos)
         {
-            Entidade::Obstaculo::Plataforma* plataforma = new Entidade::Obstaculo::Plataforma(pos,sf::Vector2f(200.0f,40.0f), IDs::IDs::caverna);
+            Entidade::Obstaculo::Plataforma* plataforma = new Entidade::Obstaculo::Plataforma(pos,sf::Vector2f(200.0f,40.0f), IDs::IDs::plataforma, IDs::IDs::caverna);
             if(plataforma == nullptr)
             {
                 std::cout<<"Fase::Caverna: nao foi possivel criar uma plataforma";

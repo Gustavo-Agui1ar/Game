@@ -6,28 +6,28 @@
       "y": 60.0
     },
     "pos": {
-      "x": 1830.1016845703125,
-      "y": 640.0
+      "x": 1650.0,
+      "y": 790.0
     },
     "remover": false,
     "velocidade": {
       "x": 250.0,
       "y": 0.0
     },
-    "tempoMorrer": 0.0,
+    "tempoMorrer": -25269905408.0,
     "levandoDano": false,
-    "tempoDano": 5.823350429534912,
+    "tempoDano": 2.866520881652832,
     "morrendo": false,
     "atacando": false,
     "movendo": false,
     "direcao": false,
     "dano": 20.0,
     "vida": 100.0,
-    "dt": 0.002644999884068966,
+    "dt": 0.0016189999878406525,
     "noChao": true,
     "imagemAtual": "PARADO",
-    "tempoTotal": 0.0494539737701416,
-    "quadroAtual": 4
+    "tempoTotal": 0.039117954671382904,
+    "quadroAtual": 1
   },
   {
     "ID": 8,
@@ -49,7 +49,7 @@
       "y": 60.0
     },
     "pos": {
-      "x": 2341.082763671875,
+      "x": 2200.0,
       "y": 790.0
     },
     "remover": false,
@@ -59,19 +59,19 @@
     },
     "tempoMorrer": 2.3509885615147286e-38,
     "levandoDano": false,
-    "tempoDano": 5.823350429534912,
+    "tempoDano": 2.866520881652832,
     "morrendo": false,
     "atacando": false,
-    "movendo": true,
+    "movendo": false,
     "direcao": false,
     "dano": 10.0,
     "vida": 100.0,
-    "dt": 0.002644999884068966,
+    "dt": 0.0016189999878406525,
     "tempoAtaque": 0.0,
-    "tempoMover": 1.318879246711731,
-    "mover": 0,
-    "imagemAtual": "ANDAR",
-    "tempoTotal": 0.10163307189941406,
+    "tempoMover": 1.365920901298523,
+    "mover": 2,
+    "imagemAtual": "PARADO",
+    "tempoTotal": 0.009869996458292007,
     "quadroAtual": 3
   },
   {
@@ -94,7 +94,7 @@
       "y": 60.0
     },
     "pos": {
-      "x": 2591.082763671875,
+      "x": 2381.70458984375,
       "y": 790.0
     },
     "remover": false,
@@ -104,20 +104,20 @@
     },
     "tempoMorrer": 2.3509885615147286e-38,
     "levandoDano": false,
-    "tempoDano": 5.823350429534912,
+    "tempoDano": 2.866520881652832,
     "morrendo": false,
     "atacando": false,
     "movendo": true,
-    "direcao": false,
+    "direcao": true,
     "dano": 10.0,
     "vida": 100.0,
-    "dt": 0.002644999884068966,
+    "dt": 0.0016189999878406525,
     "tempoAtaque": 0.0,
-    "tempoMover": 1.318879246711731,
-    "mover": 0,
+    "tempoMover": 1.365920901298523,
+    "mover": 1,
     "imagemAtual": "ANDAR",
-    "tempoTotal": 0.1016329899430275,
-    "quadroAtual": 3
+    "tempoTotal": 0.12280312925577164,
+    "quadroAtual": 0
   },
   {
     "ID": 9,
@@ -139,7 +139,7 @@
       "y": 60.0
     },
     "pos": {
-      "x": 2658.917236328125,
+      "x": 2868.29541015625,
       "y": 340.0
     },
     "remover": false,
@@ -149,20 +149,20 @@
     },
     "tempoMorrer": 2.3509885615147286e-38,
     "levandoDano": false,
-    "tempoDano": 5.823350429534912,
+    "tempoDano": 2.866520881652832,
     "morrendo": false,
     "atacando": false,
     "movendo": true,
-    "direcao": true,
+    "direcao": false,
     "dano": 5.0,
     "vida": 100.0,
-    "dt": 0.002644999884068966,
+    "dt": 0.0016189999878406525,
     "tempoAtaque": 0.0,
-    "tempoMover": 1.318879246711731,
-    "mover": 1,
+    "tempoMover": 1.365920901298523,
+    "mover": 0,
     "imagemAtual": "ANDAR",
-    "tempoTotal": 0.1016351580619812,
-    "quadroAtual": 1
+    "tempoTotal": 0.11896608769893646,
+    "quadroAtual": 7
   },
   {
     "ID": 9,
@@ -184,7 +184,7 @@
       "y": 60.0
     },
     "pos": {
-      "x": 3016.07275390625,
+      "x": 2881.70458984375,
       "y": 790.0
     },
     "remover": false,
@@ -194,20 +194,20 @@
     },
     "tempoMorrer": 2.3509885615147286e-38,
     "levandoDano": false,
-    "tempoDano": 5.823350429534912,
+    "tempoDano": 2.866520881652832,
     "morrendo": false,
     "atacando": false,
     "movendo": true,
-    "direcao": false,
+    "direcao": true,
     "dano": 5.0,
     "vida": 100.0,
-    "dt": 0.002644999884068966,
+    "dt": 0.0016189999878406525,
     "tempoAtaque": 0.0,
-    "tempoMover": 1.318879246711731,
-    "mover": 0,
+    "tempoMover": 1.365920901298523,
+    "mover": 1,
     "imagemAtual": "ANDAR",
-    "tempoTotal": 0.0018510520458221436,
-    "quadroAtual": 3
+    "tempoTotal": 0.11573810875415802,
+    "quadroAtual": 7
   },
   {
     "ID": 9,
@@ -229,7 +229,7 @@
       "y": 60.0
     },
     "pos": {
-      "x": 3584.18359375,
+      "x": 3718.29541015625,
       "y": 790.0
     },
     "remover": false,
@@ -239,20 +239,20 @@
     },
     "tempoMorrer": 2.3509885615147286e-38,
     "levandoDano": false,
-    "tempoDano": 5.823350429534912,
+    "tempoDano": 2.866520881652832,
     "morrendo": false,
     "atacando": false,
     "movendo": true,
-    "direcao": true,
+    "direcao": false,
     "dano": 10.0,
     "vida": 100.0,
-    "dt": 0.002644999884068966,
+    "dt": 0.0016189999878406525,
     "tempoAtaque": 0.0,
-    "tempoMover": 1.318879246711731,
-    "mover": 1,
+    "tempoMover": 1.365920901298523,
+    "mover": 0,
     "imagemAtual": "ANDAR",
-    "tempoTotal": 0.0018100440502166748,
-    "quadroAtual": 6
+    "tempoTotal": 0.11209700256586075,
+    "quadroAtual": 0
   },
   {
     "ID": 9,
@@ -268,7 +268,7 @@
     "dano": 10.0
   },
   {
-    "ID": 4,
+    "ID": 5,
     "tam": {
       "x": 50.0,
       "y": 50.0
@@ -280,7 +280,7 @@
     "remover": false
   },
   {
-    "ID": 4,
+    "ID": 5,
     "tam": {
       "x": 50.0,
       "y": 50.0
@@ -292,7 +292,7 @@
     "remover": false
   },
   {
-    "ID": 4,
+    "ID": 5,
     "tam": {
       "x": 50.0,
       "y": 50.0
@@ -304,7 +304,7 @@
     "remover": false
   },
   {
-    "ID": 4,
+    "ID": 5,
     "tam": {
       "x": 50.0,
       "y": 50.0
@@ -316,7 +316,7 @@
     "remover": false
   },
   {
-    "ID": 4,
+    "ID": 5,
     "tam": {
       "x": 50.0,
       "y": 50.0
@@ -328,7 +328,7 @@
     "remover": false
   },
   {
-    "ID": 4,
+    "ID": 5,
     "tam": {
       "x": 50.0,
       "y": 50.0
@@ -340,7 +340,7 @@
     "remover": false
   },
   {
-    "ID": 4,
+    "ID": 5,
     "tam": {
       "x": 50.0,
       "y": 50.0
@@ -352,7 +352,7 @@
     "remover": false
   },
   {
-    "ID": 4,
+    "ID": 5,
     "tam": {
       "x": 50.0,
       "y": 50.0
@@ -400,7 +400,7 @@
     "remover": false
   },
   {
-    "ID": 4,
+    "ID": 5,
     "tam": {
       "x": 50.0,
       "y": 50.0
@@ -412,7 +412,7 @@
     "remover": false
   },
   {
-    "ID": 4,
+    "ID": 5,
     "tam": {
       "x": 50.0,
       "y": 50.0
@@ -436,7 +436,7 @@
     "remover": false
   },
   {
-    "ID": 4,
+    "ID": 5,
     "tam": {
       "x": 50.0,
       "y": 50.0
@@ -448,7 +448,7 @@
     "remover": false
   },
   {
-    "ID": 4,
+    "ID": 5,
     "tam": {
       "x": 50.0,
       "y": 50.0
@@ -472,7 +472,7 @@
     "remover": false
   },
   {
-    "ID": 4,
+    "ID": 5,
     "tam": {
       "x": 50.0,
       "y": 50.0
@@ -496,7 +496,7 @@
     "remover": false
   },
   {
-    "ID": 4,
+    "ID": 5,
     "tam": {
       "x": 50.0,
       "y": 50.0
@@ -532,7 +532,7 @@
     "remover": false
   },
   {
-    "ID": 4,
+    "ID": 5,
     "tam": {
       "x": 50.0,
       "y": 50.0
@@ -568,7 +568,7 @@
     "remover": false
   },
   {
-    "ID": 4,
+    "ID": 5,
     "tam": {
       "x": 50.0,
       "y": 50.0

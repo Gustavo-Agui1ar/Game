@@ -37,7 +37,7 @@ namespace Game{
 
             for(it = entidades.begin(); it != entidades.end() ; it++)
             {
-                IDs::IDs ID = static_cast<IDs::IDs>((*it)["ID"].template get<int>());
+                IDs::IDs ID = (*it)["ID"].template get<IDs::IDs>();
 
                 switch(ID)
                 {
@@ -47,7 +47,7 @@ namespace Game{
                         it++;
                         nlohmann::ordered_json arma = (*it);
 
-                        criarEntidade(IDs::IDs::jogador, entidade, arma, true);
+                        criarEntidade(IDs::IDs::jogador, entidade, arma);
                     }
                     break;
 
@@ -57,7 +57,7 @@ namespace Game{
                         it++;
                         nlohmann::ordered_json arma = (*it);
 
-                        criarEntidade(IDs::IDs::esqueleto, entidade, arma, true);
+                        criarEntidade(IDs::IDs::esqueleto, entidade, arma);
                     }
                     break;
 
@@ -67,19 +67,19 @@ namespace Game{
                         it++;
                         nlohmann::ordered_json arma = (*it);
 
-                        criarEntidade(IDs::IDs::red_slime, entidade, arma, true);
+                        criarEntidade(IDs::IDs::red_slime, entidade, arma);
                     }
                     break;
 
                     case(IDs::IDs::plataforma):
                     {                
-                        criarEntidade(IDs::IDs::plataforma, (*it), false);
+                        criarEntidade(IDs::IDs::plataforma, (*it) );
                     }
                     break;
 
                     case(IDs::IDs::plataforma_invisivel):
                     {
-                        criarEntidade(IDs::IDs::plataforma_invisivel, (*it), false);
+                        criarEntidade(IDs::IDs::plataforma_invisivel, (*it));
                     }
                     break;
 
@@ -153,7 +153,7 @@ namespace Game{
 
         void Forest::criarPlataforma(const sf::Vector2f pos)
         {
-            Entidade::Obstaculo::Plataforma* plataforma = new Entidade::Obstaculo::Plataforma(pos,sf::Vector2f(200.0f,40.0f),  IDs::IDs::forest);
+            Entidade::Obstaculo::Plataforma* plataforma = new Entidade::Obstaculo::Plataforma(pos,sf::Vector2f(200.0f,40.0f),IDs::IDs::plataforma,  IDs::IDs::forest);
             if(plataforma == nullptr)
             {
                 std::cout<<"Fase::Forest: nao foi possivel criar uma plataforma";

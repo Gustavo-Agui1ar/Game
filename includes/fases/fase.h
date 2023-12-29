@@ -53,7 +53,7 @@ namespace Game{
             virtual void criarPlataforma(const sf::Vector2f pos) = 0;
             void criarPlataformaInvisivel(const sf::Vector2f pos);
             void criarEntidade(char letra, const sf::Vector2i pos);
-            void criarEntidade(IDs::IDs ID, nlohmann::ordered_json entidade , nlohmann::ordered_json arma = nullptr, bool ehPersonagem = true);
+            void criarEntidade(IDs::IDs ID, nlohmann::ordered_json entidade , nlohmann::ordered_json arma = nullptr);
             void criarJogador(const sf::Vector2f pos);
             
             //metodos criadores de mapas da fase

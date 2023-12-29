@@ -153,6 +153,26 @@ namespace Game{
                 }
                 break;
 
+                 case(IDs::IDs::menu_bug):
+                {
+                    Menu::MenuCarregar* menuCarregar = nullptr; 
+
+                    if(estadoAtual->getID() == IDs::IDs::menu_pause)
+                         menuCarregar = new Menu::MenuCarregar(fase);
+                    else
+                        menuCarregar = new Menu::MenuCarregar();
+
+                    if(menuCarregar == nullptr)
+                    {
+                        std::cout<<"EstadoMenu::nao foi possivel criar menuCarregar";
+                        exit(1);
+                    }
+
+                    menuCarregar->criarBotaoBug();
+                    this->menu = static_cast<Menu::Menu*>(menuCarregar);
+                }
+                break;
+
                 default:
                     break;
 

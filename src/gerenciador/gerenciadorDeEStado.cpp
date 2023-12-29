@@ -53,7 +53,8 @@ namespace Game{
                     ID == IDs::IDs::menu_pause     ||
                     ID == IDs::IDs::menu_gameOver  ||
                     ID == IDs::IDs::menu_carregar  ||
-                    ID == IDs::IDs::menu_salvar)
+                    ID == IDs::IDs::menu_salvar    ||
+                    ID == IDs::IDs::menu_bug)
             {
                 Estado::EstadoMenu* mEstado = new Estado::EstadoMenu(ID);
                 estado = static_cast<Estado::Estado*>(mEstado);

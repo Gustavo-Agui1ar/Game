@@ -26,7 +26,7 @@ namespace Game{
 
 
                 Arma::Arma(nlohmann::ordered_json atributos):
-                Entidade(sf::Vector2f(-1000.0f, -1000.0f), static_cast<IDs::IDs>(atributos["ID"].template get<int>()))
+                Entidade(sf::Vector2f(-1000.0f, -1000.0f), (atributos["ID"].template get<IDs::IDs>()))
                 {
                     try{
                         dano = atributos["dano"].template get<float>();

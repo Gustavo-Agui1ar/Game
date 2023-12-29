@@ -44,7 +44,7 @@ void Game::Principal::executar()
         gerenciadorDeEventos->executar();
 
         gerenciadorGrafico->limpaJanela();
-
+        
         pEstado->executar();
 
         gerenciadorGrafico->mostraElementos();

@@ -36,6 +36,9 @@ namespace Game{
                 {
                     try
                     {
+                        sf::Vector2f posAtual = sf::Vector2f(atributos["pos"]["x"].template get<float>(), atributos["pos"]["y"].template get<float>());
+
+                        setPos(posAtual);
                         tempoMorrer = atributos["tempoMorrer"].template get<float>();
                         levandoDano = atributos["levandoDano"].template get<bool>();
                         tempoDano = atributos["tempoDano"].template get<float>();
