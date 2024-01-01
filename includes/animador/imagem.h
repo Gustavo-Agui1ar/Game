@@ -16,6 +16,7 @@ namespace Game{
             
             //metodos relacionados as dimencoes da imagem.
             const sf::Vector2f escala;
+            const sf::Vector2f origem;
             sf::Texture textura;
             sf::IntRect tamanho;
 
@@ -28,7 +29,7 @@ namespace Game{
         public:
 
             //construtor e destrutor.
-            Imagem(const char* caminhoTextura, const unsigned int totalDeQuadrosImagem, const float tempoTroca, sf::Vector2f escala);
+            Imagem(const char* caminhoTextura, const unsigned int totalDeQuadrosImagem, const float tempoTroca, sf::Vector2f escala, sf::Vector2f origin);
             ~Imagem();
 
             //metodos de atualizacao da imagem.
@@ -42,6 +43,7 @@ namespace Game{
             const sf::Texture* getTextura() const;
             const sf::Vector2f getEscala() const;
             const float getTempoTotal();
+            const sf::Vector2f getOrigem();
             const unsigned int getQuadroAtual();
         };
     }

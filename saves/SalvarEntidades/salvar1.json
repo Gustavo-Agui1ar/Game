@@ -6,7 +6,7 @@
       "y": 60.0
     },
     "pos": {
-      "x": 1650.0,
+      "x": 2070.228515625,
       "y": 790.0
     },
     "remover": false,
@@ -16,18 +16,19 @@
     },
     "tempoMorrer": -25269905408.0,
     "levandoDano": false,
-    "tempoDano": 2.866520881652832,
+    "tempoDano": 0.10675498843193054,
     "morrendo": false,
     "atacando": false,
     "movendo": false,
     "direcao": false,
     "dano": 20.0,
-    "vida": 100.0,
-    "dt": 0.0016189999878406525,
+    "vida": 10.0,
+    "dt": 0.0012809999752789736,
     "noChao": true,
+    "qtdPulo": 0,
     "imagemAtual": "PARADO",
-    "tempoTotal": 0.039117954671382904,
-    "quadroAtual": 1
+    "tempoTotal": 0.10830900073051453,
+    "quadroAtual": 0
   },
   {
     "ID": 8,
@@ -49,7 +50,7 @@
       "y": 60.0
     },
     "pos": {
-      "x": 2200.0,
+      "x": 2096.634765625,
       "y": 790.0
     },
     "remover": false,
@@ -59,20 +60,20 @@
     },
     "tempoMorrer": 2.3509885615147286e-38,
     "levandoDano": false,
-    "tempoDano": 2.866520881652832,
+    "tempoDano": 13.014830589294434,
     "morrendo": false,
-    "atacando": false,
+    "atacando": true,
     "movendo": false,
-    "direcao": false,
+    "direcao": true,
     "dano": 10.0,
     "vida": 100.0,
-    "dt": 0.0016189999878406525,
-    "tempoAtaque": 0.0,
-    "tempoMover": 1.365920901298523,
+    "dt": 0.0012809999752789736,
+    "tempoAtaque": 0.10852599143981934,
+    "tempoMover": 0.0012809999752789736,
     "mover": 2,
-    "imagemAtual": "PARADO",
-    "tempoTotal": 0.009869996458292007,
-    "quadroAtual": 3
+    "imagemAtual": "ATACA",
+    "tempoTotal": 0.1083030253648758,
+    "quadroAtual": 0
   },
   {
     "ID": 9,
@@ -81,8 +82,8 @@
       "y": 60.0
     },
     "pos": {
-      "x": 0.0,
-      "y": 0.0
+      "x": -1000.0,
+      "y": -1000.0
     },
     "remover": false,
     "dano": 10.0
@@ -94,7 +95,7 @@
       "y": 60.0
     },
     "pos": {
-      "x": 2381.70458984375,
+      "x": 2249.430419921875,
       "y": 790.0
     },
     "remover": false,
@@ -104,20 +105,20 @@
     },
     "tempoMorrer": 2.3509885615147286e-38,
     "levandoDano": false,
-    "tempoDano": 2.866520881652832,
+    "tempoDano": 13.014830589294434,
     "morrendo": false,
     "atacando": false,
     "movendo": true,
     "direcao": true,
     "dano": 10.0,
     "vida": 100.0,
-    "dt": 0.0016189999878406525,
+    "dt": 0.0012809999752789736,
     "tempoAtaque": 0.0,
-    "tempoMover": 1.365920901298523,
+    "tempoMover": 1.009018063545227,
     "mover": 1,
     "imagemAtual": "ANDAR",
-    "tempoTotal": 0.12280312925577164,
-    "quadroAtual": 0
+    "tempoTotal": 0.021917976438999176,
+    "quadroAtual": 6
   },
   {
     "ID": 9,
@@ -139,8 +140,8 @@
       "y": 60.0
     },
     "pos": {
-      "x": 2868.29541015625,
-      "y": 340.0
+      "x": 2899.601806640625,
+      "y": 790.0
     },
     "remover": false,
     "velocidade": {
@@ -149,20 +150,20 @@
     },
     "tempoMorrer": 2.3509885615147286e-38,
     "levandoDano": false,
-    "tempoDano": 2.866520881652832,
+    "tempoDano": 13.014830589294434,
     "morrendo": false,
     "atacando": false,
     "movendo": true,
-    "direcao": false,
+    "direcao": true,
     "dano": 5.0,
     "vida": 100.0,
-    "dt": 0.0016189999878406525,
+    "dt": 0.0012809999752789736,
     "tempoAtaque": 0.0,
-    "tempoMover": 1.365920901298523,
-    "mover": 0,
+    "tempoMover": 1.009018063545227,
+    "mover": 1,
     "imagemAtual": "ANDAR",
-    "tempoTotal": 0.11896608769893646,
-    "quadroAtual": 7
+    "tempoTotal": 0.08329745382070541,
+    "quadroAtual": 4
   },
   {
     "ID": 9,
@@ -184,7 +185,7 @@
       "y": 60.0
     },
     "pos": {
-      "x": 2881.70458984375,
+      "x": 2674.40576171875,
       "y": 790.0
     },
     "remover": false,
@@ -194,19 +195,19 @@
     },
     "tempoMorrer": 2.3509885615147286e-38,
     "levandoDano": false,
-    "tempoDano": 2.866520881652832,
+    "tempoDano": 13.014830589294434,
     "morrendo": false,
     "atacando": false,
     "movendo": true,
     "direcao": true,
     "dano": 5.0,
     "vida": 100.0,
-    "dt": 0.0016189999878406525,
+    "dt": 0.0012809999752789736,
     "tempoAtaque": 0.0,
-    "tempoMover": 1.365920901298523,
+    "tempoMover": 1.009018063545227,
     "mover": 1,
     "imagemAtual": "ANDAR",
-    "tempoTotal": 0.11573810875415802,
+    "tempoTotal": 0.04539233073592186,
     "quadroAtual": 7
   },
   {
@@ -229,7 +230,7 @@
       "y": 60.0
     },
     "pos": {
-      "x": 3718.29541015625,
+      "x": 3299.388427734375,
       "y": 790.0
     },
     "remover": false,
@@ -239,20 +240,20 @@
     },
     "tempoMorrer": 2.3509885615147286e-38,
     "levandoDano": false,
-    "tempoDano": 2.866520881652832,
+    "tempoDano": 13.014830589294434,
     "morrendo": false,
     "atacando": false,
     "movendo": true,
-    "direcao": false,
+    "direcao": true,
     "dano": 10.0,
     "vida": 100.0,
-    "dt": 0.0016189999878406525,
+    "dt": 0.0012809999752789736,
     "tempoAtaque": 0.0,
-    "tempoMover": 1.365920901298523,
-    "mover": 0,
+    "tempoMover": 1.009018063545227,
+    "mover": 1,
     "imagemAtual": "ANDAR",
-    "tempoTotal": 0.11209700256586075,
-    "quadroAtual": 0
+    "tempoTotal": 0.0489349439740181,
+    "quadroAtual": 6
   },
   {
     "ID": 9,

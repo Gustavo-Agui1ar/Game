@@ -66,6 +66,7 @@ namespace Game{
             img->atualizar(direcao,dt);
             corpo->setTextureRect(img->getTamanho());
             corpo->setTexture(img->getTextura());
+            corpo->setOrigin(img->getOrigem());
             corpo->setScale(escala.x,escala.y);
 
         }
@@ -83,9 +84,9 @@ namespace Game{
          * 
         */
 
-        void Animacao::addAnimacao(const char* caminhoTextura, std::string nomeDaAnimacao, const unsigned int qtdImagem, const float tempoTroca,sf::Vector2f escala)
+        void Animacao::addAnimacao(const char* caminhoTextura, std::string nomeDaAnimacao, const unsigned int qtdImagem, const float tempoTroca,sf::Vector2f escala, sf::Vector2f origem)
         {
-            Imagem* img = new Imagem(caminhoTextura,qtdImagem,tempoTroca,escala);
+            Imagem* img = new Imagem(caminhoTextura,qtdImagem,tempoTroca,escala, origem);
             mapImagem.insert(std::pair<std::string, Imagem*>(nomeDaAnimacao,img));
         }
 

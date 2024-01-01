@@ -84,12 +84,12 @@ namespace Game{
 
                 void Esqueleto::inicializaAnimacao()
                 {
-                    animacao.addAnimacao("..\\Game\\animations\\enemy\\Skeleton_Spearman\\Idle.png","PARADO",7,0.16,sf::Vector2f{6,2});
-                    animacao.addAnimacao("..\\Game\\animations\\enemy\\Skeleton_Spearman\\Walk.png","ANDAR",7,0.16,sf::Vector2f{6,2});
-                    animacao.addAnimacao("..\\Game\\animations\\enemy\\Skeleton_Spearman\\Attack_1.png","ATACA",4,0.2,sf::Vector2f{6,2});
-                    animacao.addAnimacao("..\\Game\\animations\\enemy\\Skeleton_Spearman\\Hurt.png","TOMADANO",3,0.2,sf::Vector2f{6,2});
-                    animacao.addAnimacao("..\\Game\\animations\\enemy\\Skeleton_Spearman\\Dead.png","MORRE",5,0.25,sf::Vector2f{6,2});
-                    corpo.setOrigin(sf::Vector2f(tam.x/2.5,tam.y/2.2));
+                    const sf::Vector2f origem = sf::Vector2f(tam.x/2.5,tam.y/2.2);
+                    animacao.addAnimacao("..\\Game\\animations\\enemy\\Skeleton_Spearman\\Idle.png","PARADO",7,0.16,sf::Vector2f{6,2},origem);
+                    animacao.addAnimacao("..\\Game\\animations\\enemy\\Skeleton_Spearman\\Walk.png","ANDAR",7,0.16,sf::Vector2f{6,2}, origem);
+                    animacao.addAnimacao("..\\Game\\animations\\enemy\\Skeleton_Spearman\\Attack_1.png","ATACA",4,0.2,sf::Vector2f{6,2}, origem);
+                    animacao.addAnimacao("..\\Game\\animations\\enemy\\Skeleton_Spearman\\Hurt.png","TOMADANO",3,0.2,sf::Vector2f{6,2}, origem);
+                    animacao.addAnimacao("..\\Game\\animations\\enemy\\Skeleton_Spearman\\Dead.png","MORRE",5,0.25,sf::Vector2f{6,2}, origem);
                 }
 
                 /**

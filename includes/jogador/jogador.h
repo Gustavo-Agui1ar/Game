@@ -14,14 +14,16 @@
 
 #define VELOCIDADE_JOGADOR_X 250.0f
 
+#define QTD_PULO 2
+
 #define TAMANHO_PULO 120.f
-#define CAMINHO_TEXTURA_ATTACK "..\\Game\\animations\\Player\\attack_1.png"
-#define CAMINHO_TEXTURA_DOWN "..\\Game\\animations\\Player\\teste-cair.png"
-#define CAMINHO_TEXTURA_IDLE "..\\Game\\animations\\Player\\Idle.png"
-#define CAMINHO_TEXTURA_JUMP "..\\Game\\animations\\Player\\jump.png"
-#define CAMINHO_TEXTURA_DEAD "..\\Game\\animations\\Player\\Dead.png"
-#define CAMINHO_TEXTURA_HIT "..\\Game\\animations\\Player\\Hurt.png"
-#define CAMINHO_TEXTURA_RUN "..\\Game\\animations\\Player\\run.png"
+#define CAMINHO_TEXTURA_ATTACK "animations/Player/Attack.png"
+#define CAMINHO_TEXTURA_IDLE   "animations/Player/Idle.png"
+#define CAMINHO_TEXTURA_JUMP   "animations/Player/Jump.png"
+#define CAMINHO_TEXTURA_DOWN   "animations/Player/Down.png"
+#define CAMINHO_TEXTURA_DEAD   "animations/Player/Dead.png"
+#define CAMINHO_TEXTURA_HIT    "animations/Player/Hit.png"
+#define CAMINHO_TEXTURA_RUN    "animations/Player/Run.png"
 
 #define JOGADOR_ANIMACAO_DE_MORTE  0.9f
 #define JOGADOR_TEMPO_LEVAR_DANO 0.5f
@@ -44,6 +46,7 @@ namespace Game {
 
                     //atributo de locomocao
                     bool noChao;
+                    int qtdPulo;
                     
                     //metodos de atualizacao 
                     void inicializarAnimacao();

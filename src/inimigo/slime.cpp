@@ -84,12 +84,13 @@ namespace Game{
 
                 void Slime::inicializaAnimacao()
                 {
-                    animacao.addAnimacao("..\\Game\\animations\\enemy\\Red_Slime\\Idle.png","PARADO",8,0.16,sf::Vector2f{6,2});
-                    animacao.addAnimacao("..\\Game\\animations\\enemy\\Red_Slime\\Walk.png","ANDAR",8,0.16,sf::Vector2f{6,2});
-                    animacao.addAnimacao("..\\Game\\animations\\enemy\\Red_Slime\\Attack_3.png","ATACA",5,0.16,sf::Vector2f{6,2});
-                    animacao.addAnimacao("..\\Game\\animations\\enemy\\Red_Slime\\Dead.png","MORRE",3,0.2,sf::Vector2f{6,2});
-                    animacao.addAnimacao("..\\Game\\animations\\enemy\\Red_Slime\\Hurt.png","TOMADANO",6,0.1,sf::Vector2f{6,2});
-                    corpo.setOrigin(sf::Vector2f(tam.x/2.5,tam.y/2.2));
+                    const sf::Vector2f origem = sf::Vector2f(tam.x/2.5,tam.y/2.2);
+                    animacao.addAnimacao("..\\Game\\animations\\enemy\\Red_Slime\\Idle.png","PARADO",8,0.16,sf::Vector2f{6,2}, origem);
+                    animacao.addAnimacao("..\\Game\\animations\\enemy\\Red_Slime\\Walk.png","ANDAR",8,0.16,sf::Vector2f{6,2}, origem);
+                    animacao.addAnimacao("..\\Game\\animations\\enemy\\Red_Slime\\Attack_3.png","ATACA",5,0.16,sf::Vector2f{6,2}, origem);
+                    animacao.addAnimacao("..\\Game\\animations\\enemy\\Red_Slime\\Dead.png","MORRE",3,0.2,sf::Vector2f{6,2}, origem);
+                    animacao.addAnimacao("..\\Game\\animations\\enemy\\Red_Slime\\Hurt.png","TOMADANO",6,0.1,sf::Vector2f{6,2}, origem);
+                  
                 }
 
                 /**

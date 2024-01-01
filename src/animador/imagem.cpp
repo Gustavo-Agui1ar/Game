@@ -18,8 +18,8 @@ namespace Game{
          * 
         */
 
-        Imagem::Imagem(const char* caminhoTextura, const unsigned int totalDeQuadrosImagem, const float tempoTroca, sf::Vector2f escala):
-        pGrafico(pGrafico->getGerenciadorGrafico()),  escala(escala), textura(pGrafico->carregarTextura(caminhoTextura)),
+        Imagem::Imagem(const char* caminhoTextura, const unsigned int totalDeQuadrosImagem, const float tempoTroca, sf::Vector2f escala, sf::Vector2f origem ):
+        pGrafico(pGrafico->getGerenciadorGrafico()),  escala(escala), origem(origem),  textura(pGrafico->carregarTextura(caminhoTextura)),
         totalDeQuadrosImagem(totalDeQuadrosImagem),quadroAtual(0),tempoTroca(tempoTroca),tempoTotal(0)
         {
             tamanho.width = textura.getSize().x/ (float) totalDeQuadrosImagem;
@@ -122,6 +122,9 @@ namespace Game{
         const unsigned int Imagem::getQuadroAtual()
         {
             return quadroAtual;    
+        }
+        const sf::Vector2f Imagem::getOrigem(){
+            return origem;
         }
     }
 }

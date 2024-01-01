@@ -41,7 +41,7 @@ namespace Game{
 
                     Jogador::Jogador(const sf::Vector2f pos,  Item::Arma* arma):
                     Personagem(pos,sf::Vector2f(TAM_JOGADOR_X,TAM_JOGADOR_Y), VELOCIDADE_JOGADOR_X, IDs::IDs::jogador, JOGADOR_TEMPO_LEVAR_DANO, JOGADOR_ANIMACAO_DE_MORTE, DANO_JOGADOR),noChao(false),
-                    listenerJogador(new Listener::ListenerJogador(this))
+                    qtdPulo(0), listenerJogador(new Listener::ListenerJogador(this))
                     {
                       
                        inicializarAnimacao();
@@ -79,6 +79,7 @@ namespace Game{
                             dt =  atributos["vida"].template get<float>();
                             dano =  atributos["dano"].template get<float>();
                             noChao = atributos["noChao"].template get<bool>();
+                            qtdPulo = atributos["qtdPulo"].template get<int>();
 
                             inicializarAnimacao();
                             inicializarBarraDeVida();
@@ -97,13 +98,14 @@ namespace Game{
 
                     void Jogador::inicializarAnimacao()
                     {
-                        animacao.addAnimacao(CAMINHO_TEXTURA_IDLE,"PARADO",7,0.16,sf::Vector2f{6,2});
-                        animacao.addAnimacao(CAMINHO_TEXTURA_JUMP,"PULO",9,0.12,sf::Vector2f{6,2});
-                        animacao.addAnimacao(CAMINHO_TEXTURA_RUN,"CORRENDO",8,0.12,sf::Vector2f{6,2});
-                        animacao.addAnimacao(CAMINHO_TEXTURA_ATTACK,"ATACAR",4,0.15,sf::Vector2f{6,2});
-                        animacao.addAnimacao(CAMINHO_TEXTURA_DEAD,"MORRE",6,0.15,sf::Vector2f{6,2});
-                        animacao.addAnimacao(CAMINHO_TEXTURA_HIT,"TOMADANO",3,0.15,sf::Vector2f{6,2});
-                        corpo.setOrigin(sf::Vector2f(tam.x/2.5,tam.y/2.1));
+                        const sf::Vector2f origemT = sf::Vector2f((tam.x/2),(tam.y/5));
+                        animacao.addAnimacao(CAMINHO_TEXTURA_IDLE,"PARADO",8,0.2,sf::Vector2f{2, 1.1}, sf::Vector2f(origemT.x, origemT.y/3));
+                        animacao.addAnimacao(CAMINHO_TEXTURA_JUMP,"PULO",3,0.16,sf::Vector2f{2.5, 1.25}, origemT);
+                        animacao.addAnimacao(CAMINHO_TEXTURA_DOWN,"CAINDO",3,0.12,sf::Vector2f{2.5, 1.25}, origemT);
+                        animacao.addAnimacao(CAMINHO_TEXTURA_RUN,"CORRENDO",8,0.12,sf::Vector2f{2.5, 1.25}, origemT);
+                        animacao.addAnimacao(CAMINHO_TEXTURA_ATTACK,"ATACAR",4,0.15,sf::Vector2f{2.5, 1.25},  sf::Vector2f(origemT.x, origemT.y/2));
+                        animacao.addAnimacao(CAMINHO_TEXTURA_DEAD,"MORRE",6,0.1,sf::Vector2f{2.5, 1.25}, origemT);
+                        animacao.addAnimacao(CAMINHO_TEXTURA_HIT,"TOMADANO",3,0.15,sf::Vector2f{2.2, 1.1}, sf::Vector2f(origemT.x, origemT.y/3));
 
                     }
 
@@ -132,6 +134,7 @@ namespace Game{
                     void Jogador::podePular()
                     {
                         noChao = true;
+                        qtdPulo = 0;
                     }
 
                     /**
@@ -140,10 +143,14 @@ namespace Game{
 
                     void Jogador::pular()
                     {
-                        if(noChao && !atacando && !levandoDano)
+                        if(!atacando && !levandoDano)
                         {
-                            velocidade.y = -sqrt(2.0f * GRAVIDADE * TAMANHO_PULO);
-                            noChao = false;
+                            if(noChao || qtdPulo < QTD_PULO)
+                            {
+                                velocidade.y = -sqrt(2.0f * GRAVIDADE * TAMANHO_PULO);
+                                noChao = false;
+                                qtdPulo++;
+                            }
                         }
                     }
 
@@ -155,15 +162,16 @@ namespace Game{
                     {
                         if(morrendo){
                             animacao.atualizar(direcao, "MORRE");
-                            tempoMorrer += pGrafico->getTempo();
+                            tempoMorrer += dt;
                             if(tempoMorrer > tempoAnimacaoDeMorrer)
                             {
                                 podeRemover = true;
-                                tempoMorrer = 0.0f;
                              }
                         }
                         else if(levandoDano)
                             animacao.atualizar(direcao,"TOMADANO");
+                        else if(!noChao && velocidade.y > 0.0f)
+                            animacao.atualizar(direcao,"CAINDO");
                         else if(!noChao )
                             animacao.atualizar(direcao,"PULO");
                         else if(movendo)
@@ -274,6 +282,7 @@ namespace Game{
                         nlohmann::ordered_json json = salvarPersonagem();
 
                         json["noChao"] = noChao;
+                        json["qtdPulo"] = qtdPulo;
                         json["imagemAtual"] = animacao.getIMagemAtual();
                         json["tempoTotal"] = animacao.getTempoTotal();
                         json["quadroAtual"] = animacao.getQuadroAtual();

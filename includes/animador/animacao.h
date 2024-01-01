@@ -32,7 +32,7 @@ namespace Game{
             void atualizar(bool direcao, std::string estadoAtual);
 
             //metodo de adicionar a animacao
-            void addAnimacao(const char* caminhoTextura, std::string nomeDaAnimacao, const unsigned int qtdImagem, const float tempoTroca, sf::Vector2f escala);
+            void addAnimacao(const char* caminhoTextura, std::string nomeDaAnimacao, const unsigned int qtdImagem, const float tempoTroca, sf::Vector2f escala, sf::Vector2f origem);
             void setTempoTotal(const float tempo);
             void setImgAtual(std::string img);
             void setQuadroAtual(const unsigned int quadro);

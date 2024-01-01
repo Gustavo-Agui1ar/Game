@@ -61,7 +61,7 @@ namespace Game{
                 aux = objListaEntidade.operator[](i);
                 if(aux->getRemover())
                 {
-                    objListaEntidade.removerElemento(aux);
+                    objListaEntidade.removerElemento(i);
                     delete(aux);
                     aux = nullptr;
                 } 

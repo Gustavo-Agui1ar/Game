@@ -304,8 +304,8 @@ namespace Game{
 
         void Fase::executar()
         {
-            
-            if(getJogador() != nullptr)
+            jogador = getJogador();
+            if(jogador)
             {
                 fundo.executar();
 
