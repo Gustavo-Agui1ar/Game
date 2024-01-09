@@ -217,6 +217,24 @@ namespace Game{
                     return json;
                 }
 
+
+                void Inimigo::atualizarTempoDano()
+                {
+                    if(levandoDano)
+                    {
+                        if(tempoDano > tempoAnimacaoDeLevarDano)
+                        {
+                            levandoDano = false;
+                            tempoDano = 0.0f;
+                        }
+                        if(tempoDano == 0.0f)
+                        {
+                            somDeDano.play();
+                        }
+                    }
+
+                    tempoDano += pGrafico->getTempo();
+                }
             }
         }
     }

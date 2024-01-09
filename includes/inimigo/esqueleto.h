@@ -11,6 +11,8 @@
 #define ESQUELETO_TEMPO_DE_ATAQUE 1.0f
 #define DANO_ESQUELETO 10.0F
 
+#define SOM_DE_DANO_ESQUELETO "Sounds/Skeleton-Sound-Effect.wav"
+
 
 namespace Game{
 
@@ -24,13 +26,19 @@ namespace Game{
                 private:
 
                     //metodos de inicializacao
+                  
                     void inicializaAnimacao();
+                    void inicializarSom();
+                  
+                    //metodos de atualizacao
+                  
                     void atualizarAnimacao();
                     void atualizarAtaque();
 
                 public:
 
                     //construtor e destrutor
+                  
                     Esqueleto(sf::Vector2f pos, Jogador::Jogador *jogador, Item::Arma* arma = nullptr);
                     Esqueleto(nlohmann::ordered_json atributos, Jogador::Jogador *jogador);
                     ~Esqueleto();

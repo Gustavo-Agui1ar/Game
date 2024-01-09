@@ -15,38 +15,44 @@ namespace Game{
         private:
 
             //cabeca e cauda da lista
+
             Elemento<TL>* pInicio;
             Elemento<TL>* pUltimo;
             
             //atributo relacionado ao tamanho da lista
+
             unsigned int tam;
         
         public:
         
             //construtor e destrutor
+
             Lista();
             ~Lista();
             
             //metodos de adicao
+
             void addElemento(TL* elemento, int pos);
             void addElemento(TL* elemento);
             
             //metodos de remocao
+
             void removerElemento(TL* elemento);
             void removerElemento(int pos);
             
             //metodos de passagem/percorrrer na lista
+
             TL* operator[](int pos);
             int getTam();
             
             // metodo que limpa a lista
+
             void limparLista();
         };
 
         /**
          * construtor da classe 
         */
-
         template<class TL>
         Lista<TL>::Lista():
             pInicio(nullptr), pUltimo(nullptr), tam(0)
@@ -57,7 +63,6 @@ namespace Game{
         /**
          * destrutor da classe 
         */
-
         template<class TL>
         Lista<TL>::~Lista()
         {
@@ -72,7 +77,6 @@ namespace Game{
          * elemento: elemento a ser adicionado
          * 
         */
-
         template<class TL>
         void Lista<TL>::addElemento(TL* elemento)
         {
@@ -105,7 +109,6 @@ namespace Game{
          * pos: posicao a ser adicionado
          * 
         */
-
         template<class TL>
         void Lista<TL>::addElemento(TL* elemento, int pos)
         {
@@ -153,7 +156,6 @@ namespace Game{
          * 
          * elemento:elemento a ser removido 
         */
-
         template<class TL>
         void Lista<TL>::removerElemento(TL* elemento)
         {
@@ -191,7 +193,6 @@ namespace Game{
          * 
          * pos:posicao do elemento a ser removido 
         */
-
         template<class TL>
         void Lista<TL>::removerElemento(int pos)
         {
@@ -202,7 +203,6 @@ namespace Game{
         /**
          *metodo que retorna o tamanho da lista 
         */
-
         template<class TL>
         int Lista<TL>::getTam(){
             return tam;
@@ -213,7 +213,6 @@ namespace Game{
          * com  a  vizualicao  de  um  vetor 
          * ex: minhaLista[1]
         */
-
         template<class TL>
         TL* Lista<TL>::operator[](int pos)
         {
@@ -233,7 +232,6 @@ namespace Game{
          * 
          * percorre a lista apagando todos os elementos 
         */
-
         template<class TL>
         void Lista<TL>::limparLista()
         {

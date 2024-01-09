@@ -1,1 +1,0 @@
- "C:/Program Files (x86)/SFML/lib/libsfml-graphics.a" "C:/Program Files (x86)/SFML/lib/libsfml-network.a" "C:/Program Files (x86)/SFML/lib/libsfml-audio.a" "C:/Program Files (x86)/SFML/lib/libsfml-window.a" "C:/Program Files (x86)/SFML/lib/libsfml-system.a" -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

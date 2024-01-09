@@ -28,6 +28,7 @@ namespace Game{
                 SLIME_TEMPO_DE_TOMAR_DANO, SLIME_TEMPO_ANIMACAO_DE_MORTE, DANO_SLIME, arma)
                 {
                     inicializaAnimacao();
+                    inicializarSom();
                 }
 
                 Slime::Slime(nlohmann::ordered_json atributos, Jogador::Jogador *jogador):
@@ -147,8 +148,18 @@ namespace Game{
                             arma->setPos(posArma);
                         }
                     }
-
                    
+                }
+
+                void Slime::inicializarSom()
+                {
+                    if(!somDeDanoBuffer.loadFromFile(SOM_DE_DANO_SLIME))
+                    {
+                        std::cout<< "Slime: não foi possivel carregar somAtaqueBuffer";
+                        exit(1);
+                    }
+                    somDeDano.setBuffer(somDeDanoBuffer);
+                    somDeDano.setVolume(40.0f);
                 }
             }
         }

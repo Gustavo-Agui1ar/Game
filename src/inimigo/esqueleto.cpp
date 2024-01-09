@@ -28,6 +28,7 @@ namespace Game{
                 IDs::IDs::esqueleto, ESQUELETO_TEMPO_LEVAR_DANO, ESQUELETO_TEMPO_ANIMACAO_DE_MORTE,DANO_ESQUELETO, arma)
                 {
                     inicializaAnimacao();
+                    inicializarSom();
                 }
 
                 Esqueleto::Esqueleto(nlohmann::ordered_json atributos, Jogador::Jogador* jogador):
@@ -145,6 +146,17 @@ namespace Game{
                             arma->setPos(posArma);
                         }
                     }
+                }
+
+                void Esqueleto::inicializarSom()
+                {
+                    if(!somDeDanoBuffer.loadFromFile(SOM_DE_DANO_ESQUELETO))
+                    {
+                        std::cout<< "Esqueleto: não foi possivel carregar somAtaqueBuffer";
+                        exit(1);
+                    }
+                    somDeDano.setBuffer(somDeDanoBuffer);
+                    somDeDano.setVolume(40.0f);
                 }
             }
         }

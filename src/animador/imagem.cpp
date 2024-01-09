@@ -7,17 +7,17 @@ namespace Game{
         
 
         /**
-         * costrutora da classe imagem
+         * @brief costrutora da classe imagem
          * 
-         * parametros:
+         * @param caminhoTextura: onde esta a textura
          * 
-         * caminhoTextura: onde esta a textura
-         * totalDeQuadrosImagem:quantidade de sprites da imagem.
-         * tempoDeTroca: tempo total entre cada troca de sprite.
-         * escala: escala da imagem.
+         * @param totalDeQuadrosImagem:quantidade de sprites da imagem.
+         * 
+         * @param tempoDeTroca: tempo total entre cada troca de sprite.
+         * 
+         * @param escala: escala da imagem.
          * 
         */
-
         Imagem::Imagem(const char* caminhoTextura, const unsigned int totalDeQuadrosImagem, const float tempoTroca, sf::Vector2f escala, sf::Vector2f origem ):
         pGrafico(pGrafico->getGerenciadorGrafico()),  escala(escala), origem(origem),  textura(pGrafico->carregarTextura(caminhoTextura)),
         totalDeQuadrosImagem(totalDeQuadrosImagem),quadroAtual(0),tempoTroca(tempoTroca),tempoTotal(0)
@@ -27,23 +27,22 @@ namespace Game{
         }
 
         /**
-         * destrutora da classe imagem.
+         * @brief destrutora da classe imagem.
         */
-
         Imagem::~Imagem()
         {
 
         }
 
         /**
-         * metodo que atualiza a imagem
+         * @brief metodo que atualiza a imagem
          * 
-         * parametros:
+         * @param direcao atributo que mostra a direcao do jogador.
+         *
+         * @param dt tempo decorrido com esta imagem.
          * 
-         * direcao: atributo que mostra a direcao do jogador.
-         * dt: tempo decorrido com esta imagem.
+         * @return metodo sem retorno (void)
         */
-
         void Imagem::atualizar(bool direcao, const float dt)
         {
             tempoTotal += dt;
@@ -66,10 +65,9 @@ namespace Game{
         }
 
         /**
-         * metodo que reinicia aq imagem 
-         * zerando o tempo e a imagem atual.
+         *  @brief metodo que reinicia aq imagem 
+         *  zerando o tempo e a imagem atual.
         */
-
         void Imagem::resetar()
         {
             tempoTotal = 0.0f;
@@ -77,32 +75,39 @@ namespace Game{
         }
 
         /**
-         * metodo que retorna o tamnha da imagem.
+         * @brief metodo que retorna o tamnha da imagem.
         */
-
         const sf::IntRect  Imagem::getTamanho() const
         {
             return tamanho;
         }
 
         /**
-         * metodo que retorna a textura da imagem.
+         * @brief metodo que retorna a textura da imagem.
+         * 
+         * @return retorna a textura da imagem
         */
-
         const sf::Texture* Imagem::getTextura() const
         {
             return &textura;
         }
 
         /**
-         *metodo que retorna a escala da imagem. 
+         * @brief metodo que retorna a escala da imagem. 
+         *
+         * @return retorna a escala da imagem
         */
-
         const sf::Vector2f Imagem::getEscala() const
         {
             return escala;
         }
-
+        
+        /**
+         * @brief metodo que modifica o atributo quadroAtual
+         * 
+         * @param imgAtual valor a ser atribuido em estadoAtual
+         * 
+        */
         void Imagem::setQuadroAtual(const unsigned int imgAtual)
         {
             this->quadroAtual = imgAtual;

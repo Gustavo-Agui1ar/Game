@@ -7,6 +7,7 @@ namespace Game{
     namespace Gerenciador{
 
          GerenciadorDeEstado* GerenciadorDeEstado::pEstado = nullptr;
+         GerenciadorDeMusica* GerenciadorDeEstado::pMusica = GerenciadorDeMusica::getGerenciadorDeMusica();
 
          GerenciadorDeEstado::GerenciadorDeEstado():
          pilhaEstados()
@@ -27,6 +28,11 @@ namespace Game{
                 delete(pEstado);
             
             pEstado = nullptr;
+
+            if(pMusica != nullptr)
+                delete(pMusica);
+            
+            pMusica = nullptr;
 
             while(!pilhaEstados.empty())
             {
@@ -70,28 +76,8 @@ namespace Game{
                 desativarListener();
             }
             
+            pMusica->mudarMusica(ID);
             pilhaEstados.push(estado);
-        }
-
-        void GerenciadorDeEstado::addEstado(Estado::Estado* estado)
-        {
-             if(estado == nullptr)
-            {
-                std::cout << ":Gerenciador::GerenciadorEstado::estado nulo" << std::endl;
-                exit(1);
-            }
-            if(!pilhaEstados.empty())
-            {
-                desativarListener();
-            }
-            
-            pilhaEstados.push(estado);
-        }
-
-        void GerenciadorDeEstado::addContinuarGameOver(const IDs::IDs ID)
-        {
-            removerEstado(2);
-            addEstado(ID);
         }
 
         void GerenciadorDeEstado::removerEstado()
@@ -105,6 +91,7 @@ namespace Game{
 
             if(!pilhaEstados.empty())
             {
+               pMusica->mudarMusica(pilhaEstados.top()->getID());
                ativarListener();
             }
             else
@@ -180,6 +167,7 @@ namespace Game{
             }
             if(!pilhaEstados.empty())
             {
+                pMusica->mudarMusica(pilhaEstados.top()->getID());
                 ativarListener();
             } 
             else 

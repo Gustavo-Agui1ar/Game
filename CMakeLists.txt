@@ -26,18 +26,8 @@ target_link_libraries(${PROJECT_NAME} sfml-system sfml-window sfml-graphics sfml
 #find_package(GTest REQUIRED)
 #include_directories(${GTEST_INCLUDE_DIRS})
 
-# Create a list of all test source files
-file(GLOB_RECURSE TEST_SOURCES "testes/*.cpp" "testes/**/*.cpp")
-
-# Create the test executable and link with SFML and Google Test libraries
-add_executable(testes ${TEST_SOURCES} ${SOURCES} ${HEADERS})
-target_link_libraries(testes ${GTEST_BOTH_LIBRARIES} pthread)
-target_link_libraries(testes sfml-system sfml-window sfml-graphics sfml-network sfml-audio)
-
 # Add include and src directories as include directories for the targets
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/includes" "${CMAKE_SOURCE_DIR}/src")
-target_include_directories(testes PUBLIC "${CMAKE_SOURCE_DIR}/includes" "${CMAKE_SOURCE_DIR}/src")
 
 # Link the SFML library to every file, directory, and subdirectory in the project
 target_link_libraries(${PROJECT_NAME} sfml-system sfml-window sfml-graphics sfml-network sfml-audio)
-target_link_libraries(testes sfml-system sfml-window sfml-graphics sfml-network sfml-audio)

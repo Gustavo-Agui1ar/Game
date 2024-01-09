@@ -21,18 +21,32 @@ namespace Game{
 
                 static Gerenciador::GerenciadorDeEstado* pEstado;
 
+                //atributo principal da classe
+              
                 Menu::Menu* menu;
-
-                void criarMenu();
+                
+                //metodo responsavel por inicializar o menu
+         
+               void criarMenu();
 
             public:
 
+                //construtor e destrutor 
+             
                 EstadoMenu(const IDs::IDs ID);
                 ~EstadoMenu();
 
+                //metodo que altera o estado do observador da classe
+              
                 void mudarEstadoListener(const bool ativo);
+                
+                //getters daa classe
+             
                 Menu::Menu* getMenu();
                 Fase::Fase* getFase();
+
+                //metodo responsavel pela atualizacao e visualizacao  da classe
+              
                 void executar();
         };
 

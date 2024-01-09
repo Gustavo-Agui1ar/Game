@@ -6,29 +6,36 @@
       "y": 60.0
     },
     "pos": {
-      "x": 2070.228515625,
-      "y": 790.0
+      "x": 2404.14697265625,
+      "y": 440.0
     },
     "remover": false,
     "velocidade": {
       "x": 250.0,
       "y": 0.0
     },
-    "tempoMorrer": -25269905408.0,
+    "tempoMorrer": 0.0,
     "levandoDano": false,
-    "tempoDano": 0.10675498843193054,
+    "tempoDano": 37.787391662597656,
     "morrendo": false,
     "atacando": false,
     "movendo": false,
     "direcao": false,
     "dano": 20.0,
-    "vida": 10.0,
-    "dt": 0.0012809999752789736,
+    "vida": 100.0,
+    "dt": 0.001471000025048852,
     "noChao": true,
     "qtdPulo": 0,
+    "tempoAtaque": 0.0,
+    "emDash": false,
+    "stamina": 99.9920654296875,
+    "podeDash": false,
+    "tempoDash": 0.0,
+    "velDash": 350.0,
+    "tempoAnimacaoAtaque": 0.6000000238418579,
     "imagemAtual": "PARADO",
-    "tempoTotal": 0.10830900073051453,
-    "quadroAtual": 0
+    "tempoTotal": 0.18358291685581207,
+    "quadroAtual": 5
   },
   {
     "ID": 8,
@@ -50,7 +57,7 @@
       "y": 60.0
     },
     "pos": {
-      "x": 2096.634765625,
+      "x": 2314.4892578125,
       "y": 790.0
     },
     "remover": false,
@@ -58,22 +65,22 @@
       "x": 50.0,
       "y": 0.0
     },
-    "tempoMorrer": 2.3509885615147286e-38,
+    "tempoMorrer": 0.0,
     "levandoDano": false,
-    "tempoDano": 13.014830589294434,
+    "tempoDano": 37.787391662597656,
     "morrendo": false,
-    "atacando": true,
+    "atacando": false,
     "movendo": false,
     "direcao": true,
     "dano": 10.0,
     "vida": 100.0,
-    "dt": 0.0012809999752789736,
-    "tempoAtaque": 0.10852599143981934,
-    "tempoMover": 0.0012809999752789736,
+    "dt": 0.001471000025048852,
+    "tempoAtaque": 0.0,
+    "tempoMover": 0.6656940579414368,
     "mover": 2,
-    "imagemAtual": "ATACA",
-    "tempoTotal": 0.1083030253648758,
-    "quadroAtual": 0
+    "imagemAtual": "PARADO",
+    "tempoTotal": 0.025699932128190994,
+    "quadroAtual": 4
   },
   {
     "ID": 9,
@@ -95,7 +102,7 @@
       "y": 60.0
     },
     "pos": {
-      "x": 2249.430419921875,
+      "x": 2352.7470703125,
       "y": 790.0
     },
     "remover": false,
@@ -103,22 +110,22 @@
       "x": 50.0,
       "y": 0.0
     },
-    "tempoMorrer": 2.3509885615147286e-38,
+    "tempoMorrer": 0.0,
     "levandoDano": false,
-    "tempoDano": 13.014830589294434,
+    "tempoDano": 37.787391662597656,
     "morrendo": false,
     "atacando": false,
     "movendo": true,
     "direcao": true,
     "dano": 10.0,
     "vida": 100.0,
-    "dt": 0.0012809999752789736,
+    "dt": 0.001471000025048852,
     "tempoAtaque": 0.0,
-    "tempoMover": 1.009018063545227,
+    "tempoMover": 0.6495131850242615,
     "mover": 1,
     "imagemAtual": "ANDAR",
-    "tempoTotal": 0.021917976438999176,
-    "quadroAtual": 6
+    "tempoTotal": 0.1304580569267273,
+    "quadroAtual": 1
   },
   {
     "ID": 9,
@@ -127,8 +134,8 @@
       "y": 60.0
     },
     "pos": {
-      "x": 0.0,
-      "y": 0.0
+      "x": -1000.0,
+      "y": -1000.0
     },
     "remover": false,
     "dano": 10.0
@@ -140,7 +147,7 @@
       "y": 60.0
     },
     "pos": {
-      "x": 2899.601806640625,
+      "x": 3095.55517578125,
       "y": 790.0
     },
     "remover": false,
@@ -148,22 +155,22 @@
       "x": 50.0,
       "y": 0.0
     },
-    "tempoMorrer": 2.3509885615147286e-38,
+    "tempoMorrer": 0.0,
     "levandoDano": false,
-    "tempoDano": 13.014830589294434,
+    "tempoDano": 37.787391662597656,
     "morrendo": false,
     "atacando": false,
     "movendo": true,
     "direcao": true,
     "dano": 5.0,
     "vida": 100.0,
-    "dt": 0.0012809999752789736,
+    "dt": 0.001471000025048852,
     "tempoAtaque": 0.0,
-    "tempoMover": 1.009018063545227,
+    "tempoMover": 0.8755356669425964,
     "mover": 1,
     "imagemAtual": "ANDAR",
-    "tempoTotal": 0.08329745382070541,
-    "quadroAtual": 4
+    "tempoTotal": 0.09833311289548874,
+    "quadroAtual": 1
   },
   {
     "ID": 9,
@@ -185,7 +192,7 @@
       "y": 60.0
     },
     "pos": {
-      "x": 2674.40576171875,
+      "x": 3270.596923828125,
       "y": 790.0
     },
     "remover": false,
@@ -193,22 +200,22 @@
       "x": 50.0,
       "y": 0.0
     },
-    "tempoMorrer": 2.3509885615147286e-38,
+    "tempoMorrer": 0.0,
     "levandoDano": false,
-    "tempoDano": 13.014830589294434,
+    "tempoDano": 37.787391662597656,
     "morrendo": false,
     "atacando": false,
     "movendo": true,
-    "direcao": true,
+    "direcao": false,
     "dano": 5.0,
     "vida": 100.0,
-    "dt": 0.0012809999752789736,
+    "dt": 0.001471000025048852,
     "tempoAtaque": 0.0,
-    "tempoMover": 1.009018063545227,
-    "mover": 1,
+    "tempoMover": 0.6710511445999146,
+    "mover": 0,
     "imagemAtual": "ANDAR",
-    "tempoTotal": 0.04539233073592186,
-    "quadroAtual": 7
+    "tempoTotal": 0.15259921550750732,
+    "quadroAtual": 6
   },
   {
     "ID": 9,
@@ -217,8 +224,8 @@
       "y": 60.0
     },
     "pos": {
-      "x": 0.0,
-      "y": 0.0
+      "x": -1000.0,
+      "y": -1000.0
     },
     "remover": false,
     "dano": 5.0
@@ -230,7 +237,7 @@
       "y": 60.0
     },
     "pos": {
-      "x": 3299.388427734375,
+      "x": 3299.3447265625,
       "y": 790.0
     },
     "remover": false,
@@ -238,21 +245,21 @@
       "x": 50.0,
       "y": 0.0
     },
-    "tempoMorrer": 2.3509885615147286e-38,
+    "tempoMorrer": 0.0,
     "levandoDano": false,
-    "tempoDano": 13.014830589294434,
+    "tempoDano": 37.787391662597656,
     "morrendo": false,
     "atacando": false,
-    "movendo": true,
+    "movendo": false,
     "direcao": true,
     "dano": 10.0,
     "vida": 100.0,
-    "dt": 0.0012809999752789736,
+    "dt": 0.001471000025048852,
     "tempoAtaque": 0.0,
-    "tempoMover": 1.009018063545227,
-    "mover": 1,
-    "imagemAtual": "ANDAR",
-    "tempoTotal": 0.0489349439740181,
+    "tempoMover": 1.0210676193237305,
+    "mover": 2,
+    "imagemAtual": "PARADO",
+    "tempoTotal": 0.061087142676115036,
     "quadroAtual": 6
   },
   {
@@ -262,8 +269,8 @@
       "y": 60.0
     },
     "pos": {
-      "x": 0.0,
-      "y": 0.0
+      "x": -1000.0,
+      "y": -1000.0
     },
     "remover": false,
     "dano": 10.0

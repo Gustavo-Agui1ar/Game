@@ -16,10 +16,12 @@ namespace Game{
             ~Caverna();
             
             //metodos de criacao de mapas da fase
+           
             void criarFundo();
             void criarMapa();
 
             //metoido que cria uma plataforma
+            
             void criarPlataforma(const sf::Vector2f pos);
 
         };

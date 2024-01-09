@@ -20,15 +20,28 @@ namespace Game{
 
             protected:
 
+                //atributo a ser aplicado no corpo do obstaculo
+                
                 sf::Texture textura;
 
             public:
 
+                //construtor e destrutor
+
                 Obstaculo(sf::Vector2f pos, sf::Vector2f tam, IDs::IDs ID, IDs::IDs IDtextura);
                 ~Obstaculo();
+
+                //metodo que analisa a colisao com outros objetos
+                
                 virtual void colisao(Entidade* outraEntidade, sf::Vector2f ds = sf::Vector2f(0.f,0.f)) = 0;
                 void colisaoObstaculo(sf::Vector2f ds, Personagem::Personagem* pPersonagem);
+                
+                //metodo que atualiza o estado de um objeto desta classe 
+                
                 virtual void atualizar() = 0;
+
+                //metodo que salva o estado  de um objeto desta classe
+
                 virtual nlohmann::ordered_json salvar() = 0;
             };
         }

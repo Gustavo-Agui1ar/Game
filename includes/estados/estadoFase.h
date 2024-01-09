@@ -15,19 +15,33 @@ namespace Game{
         class EstadoFase : public Estado{
 
         private:
-
-        Fase::Fase* fase;
+            
+            //atributo principal da classe
+            
+            Fase::Fase* fase;
 
         public:
 
+            //construtor e destrutor
+           
             EstadoFase(const IDs::IDs ID);
             ~EstadoFase();
 
-            void criarFase();
-            void executar();
-            Fase::Fase* getFase();
-
+            //metodo responsavel por inicializar o atributo fase
+           
             void criarFase(nlohmann::ordered_json entidades, IDs::IDs IDfase);
+            void criarFase();
+            
+            //metodo responsavel pela visualizacao e atualizacao da classe
+            
+            void executar();
+
+            //metodo de acesso ao atributo fase
+          
+            Fase::Fase* getFase();
+            
+            //metodo que altera o observador da classe
+           
             void mudarEstadoListener(const bool ativo);
 
         };

@@ -128,26 +128,12 @@ Jogo/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/build
 .PHONY : Jogo/fast
 
-#=============================================================================
-# Target rules for targets named testes
-
-# Build rule for target.
-testes: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 testes
-.PHONY : testes
-
-# fast build rule for target.
-testes/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/build
-.PHONY : testes/fast
-
 src/Obstaculo/Obstaculo.obj: src/Obstaculo/Obstaculo.cpp.obj
 .PHONY : src/Obstaculo/Obstaculo.obj
 
 # target to build an object file
 src/Obstaculo/Obstaculo.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/Obstaculo/Obstaculo.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/Obstaculo/Obstaculo.cpp.obj
 .PHONY : src/Obstaculo/Obstaculo.cpp.obj
 
 src/Obstaculo/Obstaculo.i: src/Obstaculo/Obstaculo.cpp.i
@@ -156,7 +142,6 @@ src/Obstaculo/Obstaculo.i: src/Obstaculo/Obstaculo.cpp.i
 # target to preprocess a source file
 src/Obstaculo/Obstaculo.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/Obstaculo/Obstaculo.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/Obstaculo/Obstaculo.cpp.i
 .PHONY : src/Obstaculo/Obstaculo.cpp.i
 
 src/Obstaculo/Obstaculo.s: src/Obstaculo/Obstaculo.cpp.s
@@ -165,7 +150,6 @@ src/Obstaculo/Obstaculo.s: src/Obstaculo/Obstaculo.cpp.s
 # target to generate assembly for a file
 src/Obstaculo/Obstaculo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/Obstaculo/Obstaculo.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/Obstaculo/Obstaculo.cpp.s
 .PHONY : src/Obstaculo/Obstaculo.cpp.s
 
 src/Obstaculo/Plataforma.obj: src/Obstaculo/Plataforma.cpp.obj
@@ -174,7 +158,6 @@ src/Obstaculo/Plataforma.obj: src/Obstaculo/Plataforma.cpp.obj
 # target to build an object file
 src/Obstaculo/Plataforma.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/Obstaculo/Plataforma.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/Obstaculo/Plataforma.cpp.obj
 .PHONY : src/Obstaculo/Plataforma.cpp.obj
 
 src/Obstaculo/Plataforma.i: src/Obstaculo/Plataforma.cpp.i
@@ -183,7 +166,6 @@ src/Obstaculo/Plataforma.i: src/Obstaculo/Plataforma.cpp.i
 # target to preprocess a source file
 src/Obstaculo/Plataforma.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/Obstaculo/Plataforma.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/Obstaculo/Plataforma.cpp.i
 .PHONY : src/Obstaculo/Plataforma.cpp.i
 
 src/Obstaculo/Plataforma.s: src/Obstaculo/Plataforma.cpp.s
@@ -192,7 +174,6 @@ src/Obstaculo/Plataforma.s: src/Obstaculo/Plataforma.cpp.s
 # target to generate assembly for a file
 src/Obstaculo/Plataforma.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/Obstaculo/Plataforma.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/Obstaculo/Plataforma.cpp.s
 .PHONY : src/Obstaculo/Plataforma.cpp.s
 
 src/animador/animacao.obj: src/animador/animacao.cpp.obj
@@ -201,7 +182,6 @@ src/animador/animacao.obj: src/animador/animacao.cpp.obj
 # target to build an object file
 src/animador/animacao.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/animador/animacao.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/animador/animacao.cpp.obj
 .PHONY : src/animador/animacao.cpp.obj
 
 src/animador/animacao.i: src/animador/animacao.cpp.i
@@ -210,7 +190,6 @@ src/animador/animacao.i: src/animador/animacao.cpp.i
 # target to preprocess a source file
 src/animador/animacao.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/animador/animacao.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/animador/animacao.cpp.i
 .PHONY : src/animador/animacao.cpp.i
 
 src/animador/animacao.s: src/animador/animacao.cpp.s
@@ -219,7 +198,6 @@ src/animador/animacao.s: src/animador/animacao.cpp.s
 # target to generate assembly for a file
 src/animador/animacao.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/animador/animacao.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/animador/animacao.cpp.s
 .PHONY : src/animador/animacao.cpp.s
 
 src/animador/imagem.obj: src/animador/imagem.cpp.obj
@@ -228,7 +206,6 @@ src/animador/imagem.obj: src/animador/imagem.cpp.obj
 # target to build an object file
 src/animador/imagem.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/animador/imagem.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/animador/imagem.cpp.obj
 .PHONY : src/animador/imagem.cpp.obj
 
 src/animador/imagem.i: src/animador/imagem.cpp.i
@@ -237,7 +214,6 @@ src/animador/imagem.i: src/animador/imagem.cpp.i
 # target to preprocess a source file
 src/animador/imagem.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/animador/imagem.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/animador/imagem.cpp.i
 .PHONY : src/animador/imagem.cpp.i
 
 src/animador/imagem.s: src/animador/imagem.cpp.s
@@ -246,7 +222,6 @@ src/animador/imagem.s: src/animador/imagem.cpp.s
 # target to generate assembly for a file
 src/animador/imagem.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/animador/imagem.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/animador/imagem.cpp.s
 .PHONY : src/animador/imagem.cpp.s
 
 src/arma/arma.obj: src/arma/arma.cpp.obj
@@ -255,7 +230,6 @@ src/arma/arma.obj: src/arma/arma.cpp.obj
 # target to build an object file
 src/arma/arma.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/arma/arma.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/arma/arma.cpp.obj
 .PHONY : src/arma/arma.cpp.obj
 
 src/arma/arma.i: src/arma/arma.cpp.i
@@ -264,7 +238,6 @@ src/arma/arma.i: src/arma/arma.cpp.i
 # target to preprocess a source file
 src/arma/arma.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/arma/arma.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/arma/arma.cpp.i
 .PHONY : src/arma/arma.cpp.i
 
 src/arma/arma.s: src/arma/arma.cpp.s
@@ -273,7 +246,6 @@ src/arma/arma.s: src/arma/arma.cpp.s
 # target to generate assembly for a file
 src/arma/arma.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/arma/arma.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/arma/arma.cpp.s
 .PHONY : src/arma/arma.cpp.s
 
 src/botao/botao.obj: src/botao/botao.cpp.obj
@@ -282,7 +254,6 @@ src/botao/botao.obj: src/botao/botao.cpp.obj
 # target to build an object file
 src/botao/botao.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/botao.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/botao/botao.cpp.obj
 .PHONY : src/botao/botao.cpp.obj
 
 src/botao/botao.i: src/botao/botao.cpp.i
@@ -291,7 +262,6 @@ src/botao/botao.i: src/botao/botao.cpp.i
 # target to preprocess a source file
 src/botao/botao.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/botao.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/botao/botao.cpp.i
 .PHONY : src/botao/botao.cpp.i
 
 src/botao/botao.s: src/botao/botao.cpp.s
@@ -300,7 +270,6 @@ src/botao/botao.s: src/botao/botao.cpp.s
 # target to generate assembly for a file
 src/botao/botao.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/botao.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/botao/botao.cpp.s
 .PHONY : src/botao/botao.cpp.s
 
 src/botao/botaoTexto.obj: src/botao/botaoTexto.cpp.obj
@@ -309,7 +278,6 @@ src/botao/botaoTexto.obj: src/botao/botaoTexto.cpp.obj
 # target to build an object file
 src/botao/botaoTexto.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/botaoTexto.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/botao/botaoTexto.cpp.obj
 .PHONY : src/botao/botaoTexto.cpp.obj
 
 src/botao/botaoTexto.i: src/botao/botaoTexto.cpp.i
@@ -318,7 +286,6 @@ src/botao/botaoTexto.i: src/botao/botaoTexto.cpp.i
 # target to preprocess a source file
 src/botao/botaoTexto.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/botaoTexto.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/botao/botaoTexto.cpp.i
 .PHONY : src/botao/botaoTexto.cpp.i
 
 src/botao/botaoTexto.s: src/botao/botaoTexto.cpp.s
@@ -327,7 +294,6 @@ src/botao/botaoTexto.s: src/botao/botaoTexto.cpp.s
 # target to generate assembly for a file
 src/botao/botaoTexto.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/botaoTexto.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/botao/botaoTexto.cpp.s
 .PHONY : src/botao/botaoTexto.cpp.s
 
 src/botao/texto.obj: src/botao/texto.cpp.obj
@@ -336,7 +302,6 @@ src/botao/texto.obj: src/botao/texto.cpp.obj
 # target to build an object file
 src/botao/texto.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/texto.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/botao/texto.cpp.obj
 .PHONY : src/botao/texto.cpp.obj
 
 src/botao/texto.i: src/botao/texto.cpp.i
@@ -345,7 +310,6 @@ src/botao/texto.i: src/botao/texto.cpp.i
 # target to preprocess a source file
 src/botao/texto.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/texto.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/botao/texto.cpp.i
 .PHONY : src/botao/texto.cpp.i
 
 src/botao/texto.s: src/botao/texto.cpp.s
@@ -354,7 +318,6 @@ src/botao/texto.s: src/botao/texto.cpp.s
 # target to generate assembly for a file
 src/botao/texto.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/texto.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/botao/texto.cpp.s
 .PHONY : src/botao/texto.cpp.s
 
 src/botao/textoEfeito.obj: src/botao/textoEfeito.cpp.obj
@@ -363,7 +326,6 @@ src/botao/textoEfeito.obj: src/botao/textoEfeito.cpp.obj
 # target to build an object file
 src/botao/textoEfeito.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/textoEfeito.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/botao/textoEfeito.cpp.obj
 .PHONY : src/botao/textoEfeito.cpp.obj
 
 src/botao/textoEfeito.i: src/botao/textoEfeito.cpp.i
@@ -372,7 +334,6 @@ src/botao/textoEfeito.i: src/botao/textoEfeito.cpp.i
 # target to preprocess a source file
 src/botao/textoEfeito.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/textoEfeito.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/botao/textoEfeito.cpp.i
 .PHONY : src/botao/textoEfeito.cpp.i
 
 src/botao/textoEfeito.s: src/botao/textoEfeito.cpp.s
@@ -381,7 +342,6 @@ src/botao/textoEfeito.s: src/botao/textoEfeito.cpp.s
 # target to generate assembly for a file
 src/botao/textoEfeito.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/textoEfeito.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/botao/textoEfeito.cpp.s
 .PHONY : src/botao/textoEfeito.cpp.s
 
 src/entidade/Ente.obj: src/entidade/Ente.cpp.obj
@@ -390,7 +350,6 @@ src/entidade/Ente.obj: src/entidade/Ente.cpp.obj
 # target to build an object file
 src/entidade/Ente.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/Ente.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/entidade/Ente.cpp.obj
 .PHONY : src/entidade/Ente.cpp.obj
 
 src/entidade/Ente.i: src/entidade/Ente.cpp.i
@@ -399,7 +358,6 @@ src/entidade/Ente.i: src/entidade/Ente.cpp.i
 # target to preprocess a source file
 src/entidade/Ente.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/Ente.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/entidade/Ente.cpp.i
 .PHONY : src/entidade/Ente.cpp.i
 
 src/entidade/Ente.s: src/entidade/Ente.cpp.s
@@ -408,7 +366,6 @@ src/entidade/Ente.s: src/entidade/Ente.cpp.s
 # target to generate assembly for a file
 src/entidade/Ente.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/Ente.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/entidade/Ente.cpp.s
 .PHONY : src/entidade/Ente.cpp.s
 
 src/entidade/entidade.obj: src/entidade/entidade.cpp.obj
@@ -417,7 +374,6 @@ src/entidade/entidade.obj: src/entidade/entidade.cpp.obj
 # target to build an object file
 src/entidade/entidade.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/entidade.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/entidade/entidade.cpp.obj
 .PHONY : src/entidade/entidade.cpp.obj
 
 src/entidade/entidade.i: src/entidade/entidade.cpp.i
@@ -426,7 +382,6 @@ src/entidade/entidade.i: src/entidade/entidade.cpp.i
 # target to preprocess a source file
 src/entidade/entidade.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/entidade.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/entidade/entidade.cpp.i
 .PHONY : src/entidade/entidade.cpp.i
 
 src/entidade/entidade.s: src/entidade/entidade.cpp.s
@@ -435,7 +390,6 @@ src/entidade/entidade.s: src/entidade/entidade.cpp.s
 # target to generate assembly for a file
 src/entidade/entidade.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/entidade.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/entidade/entidade.cpp.s
 .PHONY : src/entidade/entidade.cpp.s
 
 src/estados/estado.obj: src/estados/estado.cpp.obj
@@ -444,7 +398,6 @@ src/estados/estado.obj: src/estados/estado.cpp.obj
 # target to build an object file
 src/estados/estado.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/estados/estado.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/estados/estado.cpp.obj
 .PHONY : src/estados/estado.cpp.obj
 
 src/estados/estado.i: src/estados/estado.cpp.i
@@ -453,7 +406,6 @@ src/estados/estado.i: src/estados/estado.cpp.i
 # target to preprocess a source file
 src/estados/estado.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/estados/estado.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/estados/estado.cpp.i
 .PHONY : src/estados/estado.cpp.i
 
 src/estados/estado.s: src/estados/estado.cpp.s
@@ -462,7 +414,6 @@ src/estados/estado.s: src/estados/estado.cpp.s
 # target to generate assembly for a file
 src/estados/estado.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/estados/estado.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/estados/estado.cpp.s
 .PHONY : src/estados/estado.cpp.s
 
 src/estados/estadoFase.obj: src/estados/estadoFase.cpp.obj
@@ -471,7 +422,6 @@ src/estados/estadoFase.obj: src/estados/estadoFase.cpp.obj
 # target to build an object file
 src/estados/estadoFase.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/estados/estadoFase.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/estados/estadoFase.cpp.obj
 .PHONY : src/estados/estadoFase.cpp.obj
 
 src/estados/estadoFase.i: src/estados/estadoFase.cpp.i
@@ -480,7 +430,6 @@ src/estados/estadoFase.i: src/estados/estadoFase.cpp.i
 # target to preprocess a source file
 src/estados/estadoFase.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/estados/estadoFase.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/estados/estadoFase.cpp.i
 .PHONY : src/estados/estadoFase.cpp.i
 
 src/estados/estadoFase.s: src/estados/estadoFase.cpp.s
@@ -489,7 +438,6 @@ src/estados/estadoFase.s: src/estados/estadoFase.cpp.s
 # target to generate assembly for a file
 src/estados/estadoFase.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/estados/estadoFase.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/estados/estadoFase.cpp.s
 .PHONY : src/estados/estadoFase.cpp.s
 
 src/estados/estadoMenu.obj: src/estados/estadoMenu.cpp.obj
@@ -498,7 +446,6 @@ src/estados/estadoMenu.obj: src/estados/estadoMenu.cpp.obj
 # target to build an object file
 src/estados/estadoMenu.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/estados/estadoMenu.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/estados/estadoMenu.cpp.obj
 .PHONY : src/estados/estadoMenu.cpp.obj
 
 src/estados/estadoMenu.i: src/estados/estadoMenu.cpp.i
@@ -507,7 +454,6 @@ src/estados/estadoMenu.i: src/estados/estadoMenu.cpp.i
 # target to preprocess a source file
 src/estados/estadoMenu.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/estados/estadoMenu.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/estados/estadoMenu.cpp.i
 .PHONY : src/estados/estadoMenu.cpp.i
 
 src/estados/estadoMenu.s: src/estados/estadoMenu.cpp.s
@@ -516,7 +462,6 @@ src/estados/estadoMenu.s: src/estados/estadoMenu.cpp.s
 # target to generate assembly for a file
 src/estados/estadoMenu.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/estados/estadoMenu.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/estados/estadoMenu.cpp.s
 .PHONY : src/estados/estadoMenu.cpp.s
 
 src/fases/fase.obj: src/fases/fase.cpp.obj
@@ -525,7 +470,6 @@ src/fases/fase.obj: src/fases/fase.cpp.obj
 # target to build an object file
 src/fases/fase.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/fases/fase.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/fases/fase.cpp.obj
 .PHONY : src/fases/fase.cpp.obj
 
 src/fases/fase.i: src/fases/fase.cpp.i
@@ -534,7 +478,6 @@ src/fases/fase.i: src/fases/fase.cpp.i
 # target to preprocess a source file
 src/fases/fase.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/fases/fase.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/fases/fase.cpp.i
 .PHONY : src/fases/fase.cpp.i
 
 src/fases/fase.s: src/fases/fase.cpp.s
@@ -543,7 +486,6 @@ src/fases/fase.s: src/fases/fase.cpp.s
 # target to generate assembly for a file
 src/fases/fase.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/fases/fase.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/fases/fase.cpp.s
 .PHONY : src/fases/fase.cpp.s
 
 src/fases/level-1.obj: src/fases/level-1.cpp.obj
@@ -552,7 +494,6 @@ src/fases/level-1.obj: src/fases/level-1.cpp.obj
 # target to build an object file
 src/fases/level-1.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/fases/level-1.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/fases/level-1.cpp.obj
 .PHONY : src/fases/level-1.cpp.obj
 
 src/fases/level-1.i: src/fases/level-1.cpp.i
@@ -561,7 +502,6 @@ src/fases/level-1.i: src/fases/level-1.cpp.i
 # target to preprocess a source file
 src/fases/level-1.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/fases/level-1.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/fases/level-1.cpp.i
 .PHONY : src/fases/level-1.cpp.i
 
 src/fases/level-1.s: src/fases/level-1.cpp.s
@@ -570,7 +510,6 @@ src/fases/level-1.s: src/fases/level-1.cpp.s
 # target to generate assembly for a file
 src/fases/level-1.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/fases/level-1.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/fases/level-1.cpp.s
 .PHONY : src/fases/level-1.cpp.s
 
 src/fases/level-2.obj: src/fases/level-2.cpp.obj
@@ -579,7 +518,6 @@ src/fases/level-2.obj: src/fases/level-2.cpp.obj
 # target to build an object file
 src/fases/level-2.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/fases/level-2.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/fases/level-2.cpp.obj
 .PHONY : src/fases/level-2.cpp.obj
 
 src/fases/level-2.i: src/fases/level-2.cpp.i
@@ -588,7 +526,6 @@ src/fases/level-2.i: src/fases/level-2.cpp.i
 # target to preprocess a source file
 src/fases/level-2.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/fases/level-2.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/fases/level-2.cpp.i
 .PHONY : src/fases/level-2.cpp.i
 
 src/fases/level-2.s: src/fases/level-2.cpp.s
@@ -597,7 +534,6 @@ src/fases/level-2.s: src/fases/level-2.cpp.s
 # target to generate assembly for a file
 src/fases/level-2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/fases/level-2.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/fases/level-2.cpp.s
 .PHONY : src/fases/level-2.cpp.s
 
 src/fundo/camada.obj: src/fundo/camada.cpp.obj
@@ -606,7 +542,6 @@ src/fundo/camada.obj: src/fundo/camada.cpp.obj
 # target to build an object file
 src/fundo/camada.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/fundo/camada.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/fundo/camada.cpp.obj
 .PHONY : src/fundo/camada.cpp.obj
 
 src/fundo/camada.i: src/fundo/camada.cpp.i
@@ -615,7 +550,6 @@ src/fundo/camada.i: src/fundo/camada.cpp.i
 # target to preprocess a source file
 src/fundo/camada.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/fundo/camada.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/fundo/camada.cpp.i
 .PHONY : src/fundo/camada.cpp.i
 
 src/fundo/camada.s: src/fundo/camada.cpp.s
@@ -624,7 +558,6 @@ src/fundo/camada.s: src/fundo/camada.cpp.s
 # target to generate assembly for a file
 src/fundo/camada.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/fundo/camada.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/fundo/camada.cpp.s
 .PHONY : src/fundo/camada.cpp.s
 
 src/fundo/fundo.obj: src/fundo/fundo.cpp.obj
@@ -633,7 +566,6 @@ src/fundo/fundo.obj: src/fundo/fundo.cpp.obj
 # target to build an object file
 src/fundo/fundo.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/fundo/fundo.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/fundo/fundo.cpp.obj
 .PHONY : src/fundo/fundo.cpp.obj
 
 src/fundo/fundo.i: src/fundo/fundo.cpp.i
@@ -642,7 +574,6 @@ src/fundo/fundo.i: src/fundo/fundo.cpp.i
 # target to preprocess a source file
 src/fundo/fundo.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/fundo/fundo.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/fundo/fundo.cpp.i
 .PHONY : src/fundo/fundo.cpp.i
 
 src/fundo/fundo.s: src/fundo/fundo.cpp.s
@@ -651,7 +582,6 @@ src/fundo/fundo.s: src/fundo/fundo.cpp.s
 # target to generate assembly for a file
 src/fundo/fundo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/fundo/fundo.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/fundo/fundo.cpp.s
 .PHONY : src/fundo/fundo.cpp.s
 
 src/gerenciador/camera.obj: src/gerenciador/camera.cpp.obj
@@ -660,7 +590,6 @@ src/gerenciador/camera.obj: src/gerenciador/camera.cpp.obj
 # target to build an object file
 src/gerenciador/camera.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/gerenciador/camera.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/gerenciador/camera.cpp.obj
 .PHONY : src/gerenciador/camera.cpp.obj
 
 src/gerenciador/camera.i: src/gerenciador/camera.cpp.i
@@ -669,7 +598,6 @@ src/gerenciador/camera.i: src/gerenciador/camera.cpp.i
 # target to preprocess a source file
 src/gerenciador/camera.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/gerenciador/camera.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/gerenciador/camera.cpp.i
 .PHONY : src/gerenciador/camera.cpp.i
 
 src/gerenciador/camera.s: src/gerenciador/camera.cpp.s
@@ -678,7 +606,6 @@ src/gerenciador/camera.s: src/gerenciador/camera.cpp.s
 # target to generate assembly for a file
 src/gerenciador/camera.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/gerenciador/camera.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/gerenciador/camera.cpp.s
 .PHONY : src/gerenciador/camera.cpp.s
 
 src/gerenciador/gerenciadorArquivo.obj: src/gerenciador/gerenciadorArquivo.cpp.obj
@@ -687,7 +614,6 @@ src/gerenciador/gerenciadorArquivo.obj: src/gerenciador/gerenciadorArquivo.cpp.o
 # target to build an object file
 src/gerenciador/gerenciadorArquivo.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorArquivo.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/gerenciador/gerenciadorArquivo.cpp.obj
 .PHONY : src/gerenciador/gerenciadorArquivo.cpp.obj
 
 src/gerenciador/gerenciadorArquivo.i: src/gerenciador/gerenciadorArquivo.cpp.i
@@ -696,7 +622,6 @@ src/gerenciador/gerenciadorArquivo.i: src/gerenciador/gerenciadorArquivo.cpp.i
 # target to preprocess a source file
 src/gerenciador/gerenciadorArquivo.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorArquivo.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/gerenciador/gerenciadorArquivo.cpp.i
 .PHONY : src/gerenciador/gerenciadorArquivo.cpp.i
 
 src/gerenciador/gerenciadorArquivo.s: src/gerenciador/gerenciadorArquivo.cpp.s
@@ -705,7 +630,6 @@ src/gerenciador/gerenciadorArquivo.s: src/gerenciador/gerenciadorArquivo.cpp.s
 # target to generate assembly for a file
 src/gerenciador/gerenciadorArquivo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorArquivo.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/gerenciador/gerenciadorArquivo.cpp.s
 .PHONY : src/gerenciador/gerenciadorArquivo.cpp.s
 
 src/gerenciador/gerenciadorDeColisao.obj: src/gerenciador/gerenciadorDeColisao.cpp.obj
@@ -714,7 +638,6 @@ src/gerenciador/gerenciadorDeColisao.obj: src/gerenciador/gerenciadorDeColisao.c
 # target to build an object file
 src/gerenciador/gerenciadorDeColisao.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeColisao.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/gerenciador/gerenciadorDeColisao.cpp.obj
 .PHONY : src/gerenciador/gerenciadorDeColisao.cpp.obj
 
 src/gerenciador/gerenciadorDeColisao.i: src/gerenciador/gerenciadorDeColisao.cpp.i
@@ -723,7 +646,6 @@ src/gerenciador/gerenciadorDeColisao.i: src/gerenciador/gerenciadorDeColisao.cpp
 # target to preprocess a source file
 src/gerenciador/gerenciadorDeColisao.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeColisao.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/gerenciador/gerenciadorDeColisao.cpp.i
 .PHONY : src/gerenciador/gerenciadorDeColisao.cpp.i
 
 src/gerenciador/gerenciadorDeColisao.s: src/gerenciador/gerenciadorDeColisao.cpp.s
@@ -732,7 +654,6 @@ src/gerenciador/gerenciadorDeColisao.s: src/gerenciador/gerenciadorDeColisao.cpp
 # target to generate assembly for a file
 src/gerenciador/gerenciadorDeColisao.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeColisao.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/gerenciador/gerenciadorDeColisao.cpp.s
 .PHONY : src/gerenciador/gerenciadorDeColisao.cpp.s
 
 src/gerenciador/gerenciadorDeEstado.obj: src/gerenciador/gerenciadorDeEstado.cpp.obj
@@ -741,7 +662,6 @@ src/gerenciador/gerenciadorDeEstado.obj: src/gerenciador/gerenciadorDeEstado.cpp
 # target to build an object file
 src/gerenciador/gerenciadorDeEstado.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEstado.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/gerenciador/gerenciadorDeEstado.cpp.obj
 .PHONY : src/gerenciador/gerenciadorDeEstado.cpp.obj
 
 src/gerenciador/gerenciadorDeEstado.i: src/gerenciador/gerenciadorDeEstado.cpp.i
@@ -750,7 +670,6 @@ src/gerenciador/gerenciadorDeEstado.i: src/gerenciador/gerenciadorDeEstado.cpp.i
 # target to preprocess a source file
 src/gerenciador/gerenciadorDeEstado.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEstado.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/gerenciador/gerenciadorDeEstado.cpp.i
 .PHONY : src/gerenciador/gerenciadorDeEstado.cpp.i
 
 src/gerenciador/gerenciadorDeEstado.s: src/gerenciador/gerenciadorDeEstado.cpp.s
@@ -759,7 +678,6 @@ src/gerenciador/gerenciadorDeEstado.s: src/gerenciador/gerenciadorDeEstado.cpp.s
 # target to generate assembly for a file
 src/gerenciador/gerenciadorDeEstado.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEstado.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/gerenciador/gerenciadorDeEstado.cpp.s
 .PHONY : src/gerenciador/gerenciadorDeEstado.cpp.s
 
 src/gerenciador/gerenciadorDeEventos.obj: src/gerenciador/gerenciadorDeEventos.cpp.obj
@@ -768,7 +686,6 @@ src/gerenciador/gerenciadorDeEventos.obj: src/gerenciador/gerenciadorDeEventos.c
 # target to build an object file
 src/gerenciador/gerenciadorDeEventos.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEventos.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/gerenciador/gerenciadorDeEventos.cpp.obj
 .PHONY : src/gerenciador/gerenciadorDeEventos.cpp.obj
 
 src/gerenciador/gerenciadorDeEventos.i: src/gerenciador/gerenciadorDeEventos.cpp.i
@@ -777,7 +694,6 @@ src/gerenciador/gerenciadorDeEventos.i: src/gerenciador/gerenciadorDeEventos.cpp
 # target to preprocess a source file
 src/gerenciador/gerenciadorDeEventos.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEventos.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/gerenciador/gerenciadorDeEventos.cpp.i
 .PHONY : src/gerenciador/gerenciadorDeEventos.cpp.i
 
 src/gerenciador/gerenciadorDeEventos.s: src/gerenciador/gerenciadorDeEventos.cpp.s
@@ -786,8 +702,31 @@ src/gerenciador/gerenciadorDeEventos.s: src/gerenciador/gerenciadorDeEventos.cpp
 # target to generate assembly for a file
 src/gerenciador/gerenciadorDeEventos.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEventos.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/gerenciador/gerenciadorDeEventos.cpp.s
 .PHONY : src/gerenciador/gerenciadorDeEventos.cpp.s
+
+src/gerenciador/gerenciadorDeMusica.obj: src/gerenciador/gerenciadorDeMusica.cpp.obj
+.PHONY : src/gerenciador/gerenciadorDeMusica.obj
+
+# target to build an object file
+src/gerenciador/gerenciadorDeMusica.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeMusica.cpp.obj
+.PHONY : src/gerenciador/gerenciadorDeMusica.cpp.obj
+
+src/gerenciador/gerenciadorDeMusica.i: src/gerenciador/gerenciadorDeMusica.cpp.i
+.PHONY : src/gerenciador/gerenciadorDeMusica.i
+
+# target to preprocess a source file
+src/gerenciador/gerenciadorDeMusica.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeMusica.cpp.i
+.PHONY : src/gerenciador/gerenciadorDeMusica.cpp.i
+
+src/gerenciador/gerenciadorDeMusica.s: src/gerenciador/gerenciadorDeMusica.cpp.s
+.PHONY : src/gerenciador/gerenciadorDeMusica.s
+
+# target to generate assembly for a file
+src/gerenciador/gerenciadorDeMusica.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeMusica.cpp.s
+.PHONY : src/gerenciador/gerenciadorDeMusica.cpp.s
 
 src/gerenciador/gerenciadorGrafico.obj: src/gerenciador/gerenciadorGrafico.cpp.obj
 .PHONY : src/gerenciador/gerenciadorGrafico.obj
@@ -795,7 +734,6 @@ src/gerenciador/gerenciadorGrafico.obj: src/gerenciador/gerenciadorGrafico.cpp.o
 # target to build an object file
 src/gerenciador/gerenciadorGrafico.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorGrafico.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/gerenciador/gerenciadorGrafico.cpp.obj
 .PHONY : src/gerenciador/gerenciadorGrafico.cpp.obj
 
 src/gerenciador/gerenciadorGrafico.i: src/gerenciador/gerenciadorGrafico.cpp.i
@@ -804,7 +742,6 @@ src/gerenciador/gerenciadorGrafico.i: src/gerenciador/gerenciadorGrafico.cpp.i
 # target to preprocess a source file
 src/gerenciador/gerenciadorGrafico.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorGrafico.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/gerenciador/gerenciadorGrafico.cpp.i
 .PHONY : src/gerenciador/gerenciadorGrafico.cpp.i
 
 src/gerenciador/gerenciadorGrafico.s: src/gerenciador/gerenciadorGrafico.cpp.s
@@ -813,7 +750,6 @@ src/gerenciador/gerenciadorGrafico.s: src/gerenciador/gerenciadorGrafico.cpp.s
 # target to generate assembly for a file
 src/gerenciador/gerenciadorGrafico.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorGrafico.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/gerenciador/gerenciadorGrafico.cpp.s
 .PHONY : src/gerenciador/gerenciadorGrafico.cpp.s
 
 src/inimigo/esqueleto.obj: src/inimigo/esqueleto.cpp.obj
@@ -822,7 +758,6 @@ src/inimigo/esqueleto.obj: src/inimigo/esqueleto.cpp.obj
 # target to build an object file
 src/inimigo/esqueleto.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/inimigo/esqueleto.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/inimigo/esqueleto.cpp.obj
 .PHONY : src/inimigo/esqueleto.cpp.obj
 
 src/inimigo/esqueleto.i: src/inimigo/esqueleto.cpp.i
@@ -831,7 +766,6 @@ src/inimigo/esqueleto.i: src/inimigo/esqueleto.cpp.i
 # target to preprocess a source file
 src/inimigo/esqueleto.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/inimigo/esqueleto.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/inimigo/esqueleto.cpp.i
 .PHONY : src/inimigo/esqueleto.cpp.i
 
 src/inimigo/esqueleto.s: src/inimigo/esqueleto.cpp.s
@@ -840,7 +774,6 @@ src/inimigo/esqueleto.s: src/inimigo/esqueleto.cpp.s
 # target to generate assembly for a file
 src/inimigo/esqueleto.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/inimigo/esqueleto.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/inimigo/esqueleto.cpp.s
 .PHONY : src/inimigo/esqueleto.cpp.s
 
 src/inimigo/inimigo.obj: src/inimigo/inimigo.cpp.obj
@@ -849,7 +782,6 @@ src/inimigo/inimigo.obj: src/inimigo/inimigo.cpp.obj
 # target to build an object file
 src/inimigo/inimigo.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/inimigo/inimigo.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/inimigo/inimigo.cpp.obj
 .PHONY : src/inimigo/inimigo.cpp.obj
 
 src/inimigo/inimigo.i: src/inimigo/inimigo.cpp.i
@@ -858,7 +790,6 @@ src/inimigo/inimigo.i: src/inimigo/inimigo.cpp.i
 # target to preprocess a source file
 src/inimigo/inimigo.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/inimigo/inimigo.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/inimigo/inimigo.cpp.i
 .PHONY : src/inimigo/inimigo.cpp.i
 
 src/inimigo/inimigo.s: src/inimigo/inimigo.cpp.s
@@ -867,7 +798,6 @@ src/inimigo/inimigo.s: src/inimigo/inimigo.cpp.s
 # target to generate assembly for a file
 src/inimigo/inimigo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/inimigo/inimigo.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/inimigo/inimigo.cpp.s
 .PHONY : src/inimigo/inimigo.cpp.s
 
 src/inimigo/slime.obj: src/inimigo/slime.cpp.obj
@@ -876,7 +806,6 @@ src/inimigo/slime.obj: src/inimigo/slime.cpp.obj
 # target to build an object file
 src/inimigo/slime.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/inimigo/slime.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/inimigo/slime.cpp.obj
 .PHONY : src/inimigo/slime.cpp.obj
 
 src/inimigo/slime.i: src/inimigo/slime.cpp.i
@@ -885,7 +814,6 @@ src/inimigo/slime.i: src/inimigo/slime.cpp.i
 # target to preprocess a source file
 src/inimigo/slime.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/inimigo/slime.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/inimigo/slime.cpp.i
 .PHONY : src/inimigo/slime.cpp.i
 
 src/inimigo/slime.s: src/inimigo/slime.cpp.s
@@ -894,7 +822,6 @@ src/inimigo/slime.s: src/inimigo/slime.cpp.s
 # target to generate assembly for a file
 src/inimigo/slime.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/inimigo/slime.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/inimigo/slime.cpp.s
 .PHONY : src/inimigo/slime.cpp.s
 
 src/jogador/jogador.obj: src/jogador/jogador.cpp.obj
@@ -903,7 +830,6 @@ src/jogador/jogador.obj: src/jogador/jogador.cpp.obj
 # target to build an object file
 src/jogador/jogador.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/jogador/jogador.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/jogador/jogador.cpp.obj
 .PHONY : src/jogador/jogador.cpp.obj
 
 src/jogador/jogador.i: src/jogador/jogador.cpp.i
@@ -912,7 +838,6 @@ src/jogador/jogador.i: src/jogador/jogador.cpp.i
 # target to preprocess a source file
 src/jogador/jogador.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/jogador/jogador.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/jogador/jogador.cpp.i
 .PHONY : src/jogador/jogador.cpp.i
 
 src/jogador/jogador.s: src/jogador/jogador.cpp.s
@@ -921,7 +846,6 @@ src/jogador/jogador.s: src/jogador/jogador.cpp.s
 # target to generate assembly for a file
 src/jogador/jogador.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/jogador/jogador.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/jogador/jogador.cpp.s
 .PHONY : src/jogador/jogador.cpp.s
 
 src/jogador/personagem.obj: src/jogador/personagem.cpp.obj
@@ -930,7 +854,6 @@ src/jogador/personagem.obj: src/jogador/personagem.cpp.obj
 # target to build an object file
 src/jogador/personagem.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/jogador/personagem.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/jogador/personagem.cpp.obj
 .PHONY : src/jogador/personagem.cpp.obj
 
 src/jogador/personagem.i: src/jogador/personagem.cpp.i
@@ -939,7 +862,6 @@ src/jogador/personagem.i: src/jogador/personagem.cpp.i
 # target to preprocess a source file
 src/jogador/personagem.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/jogador/personagem.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/jogador/personagem.cpp.i
 .PHONY : src/jogador/personagem.cpp.i
 
 src/jogador/personagem.s: src/jogador/personagem.cpp.s
@@ -948,7 +870,6 @@ src/jogador/personagem.s: src/jogador/personagem.cpp.s
 # target to generate assembly for a file
 src/jogador/personagem.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/jogador/personagem.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/jogador/personagem.cpp.s
 .PHONY : src/jogador/personagem.cpp.s
 
 src/lista/listaEntidade.obj: src/lista/listaEntidade.cpp.obj
@@ -957,7 +878,6 @@ src/lista/listaEntidade.obj: src/lista/listaEntidade.cpp.obj
 # target to build an object file
 src/lista/listaEntidade.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/lista/listaEntidade.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/lista/listaEntidade.cpp.obj
 .PHONY : src/lista/listaEntidade.cpp.obj
 
 src/lista/listaEntidade.i: src/lista/listaEntidade.cpp.i
@@ -966,7 +886,6 @@ src/lista/listaEntidade.i: src/lista/listaEntidade.cpp.i
 # target to preprocess a source file
 src/lista/listaEntidade.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/lista/listaEntidade.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/lista/listaEntidade.cpp.i
 .PHONY : src/lista/listaEntidade.cpp.i
 
 src/lista/listaEntidade.s: src/lista/listaEntidade.cpp.s
@@ -975,7 +894,6 @@ src/lista/listaEntidade.s: src/lista/listaEntidade.cpp.s
 # target to generate assembly for a file
 src/lista/listaEntidade.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/lista/listaEntidade.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/lista/listaEntidade.cpp.s
 .PHONY : src/lista/listaEntidade.cpp.s
 
 src/lista/listaListener.obj: src/lista/listaListener.cpp.obj
@@ -984,7 +902,6 @@ src/lista/listaListener.obj: src/lista/listaListener.cpp.obj
 # target to build an object file
 src/lista/listaListener.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/lista/listaListener.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/lista/listaListener.cpp.obj
 .PHONY : src/lista/listaListener.cpp.obj
 
 src/lista/listaListener.i: src/lista/listaListener.cpp.i
@@ -993,7 +910,6 @@ src/lista/listaListener.i: src/lista/listaListener.cpp.i
 # target to preprocess a source file
 src/lista/listaListener.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/lista/listaListener.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/lista/listaListener.cpp.i
 .PHONY : src/lista/listaListener.cpp.i
 
 src/lista/listaListener.s: src/lista/listaListener.cpp.s
@@ -1002,7 +918,6 @@ src/lista/listaListener.s: src/lista/listaListener.cpp.s
 # target to generate assembly for a file
 src/lista/listaListener.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/lista/listaListener.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/lista/listaListener.cpp.s
 .PHONY : src/lista/listaListener.cpp.s
 
 src/listeners/listener.obj: src/listeners/listener.cpp.obj
@@ -1011,7 +926,6 @@ src/listeners/listener.obj: src/listeners/listener.cpp.obj
 # target to build an object file
 src/listeners/listener.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/listeners/listener.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/listeners/listener.cpp.obj
 .PHONY : src/listeners/listener.cpp.obj
 
 src/listeners/listener.i: src/listeners/listener.cpp.i
@@ -1020,7 +934,6 @@ src/listeners/listener.i: src/listeners/listener.cpp.i
 # target to preprocess a source file
 src/listeners/listener.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/listeners/listener.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/listeners/listener.cpp.i
 .PHONY : src/listeners/listener.cpp.i
 
 src/listeners/listener.s: src/listeners/listener.cpp.s
@@ -1029,7 +942,6 @@ src/listeners/listener.s: src/listeners/listener.cpp.s
 # target to generate assembly for a file
 src/listeners/listener.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/listeners/listener.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/listeners/listener.cpp.s
 .PHONY : src/listeners/listener.cpp.s
 
 src/listeners/listenerFase.obj: src/listeners/listenerFase.cpp.obj
@@ -1038,7 +950,6 @@ src/listeners/listenerFase.obj: src/listeners/listenerFase.cpp.obj
 # target to build an object file
 src/listeners/listenerFase.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/listeners/listenerFase.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/listeners/listenerFase.cpp.obj
 .PHONY : src/listeners/listenerFase.cpp.obj
 
 src/listeners/listenerFase.i: src/listeners/listenerFase.cpp.i
@@ -1047,7 +958,6 @@ src/listeners/listenerFase.i: src/listeners/listenerFase.cpp.i
 # target to preprocess a source file
 src/listeners/listenerFase.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/listeners/listenerFase.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/listeners/listenerFase.cpp.i
 .PHONY : src/listeners/listenerFase.cpp.i
 
 src/listeners/listenerFase.s: src/listeners/listenerFase.cpp.s
@@ -1056,7 +966,6 @@ src/listeners/listenerFase.s: src/listeners/listenerFase.cpp.s
 # target to generate assembly for a file
 src/listeners/listenerFase.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/listeners/listenerFase.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/listeners/listenerFase.cpp.s
 .PHONY : src/listeners/listenerFase.cpp.s
 
 src/listeners/listenerJogador.obj: src/listeners/listenerJogador.cpp.obj
@@ -1065,7 +974,6 @@ src/listeners/listenerJogador.obj: src/listeners/listenerJogador.cpp.obj
 # target to build an object file
 src/listeners/listenerJogador.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/listeners/listenerJogador.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/listeners/listenerJogador.cpp.obj
 .PHONY : src/listeners/listenerJogador.cpp.obj
 
 src/listeners/listenerJogador.i: src/listeners/listenerJogador.cpp.i
@@ -1074,7 +982,6 @@ src/listeners/listenerJogador.i: src/listeners/listenerJogador.cpp.i
 # target to preprocess a source file
 src/listeners/listenerJogador.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/listeners/listenerJogador.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/listeners/listenerJogador.cpp.i
 .PHONY : src/listeners/listenerJogador.cpp.i
 
 src/listeners/listenerJogador.s: src/listeners/listenerJogador.cpp.s
@@ -1083,7 +990,6 @@ src/listeners/listenerJogador.s: src/listeners/listenerJogador.cpp.s
 # target to generate assembly for a file
 src/listeners/listenerJogador.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/listeners/listenerJogador.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/listeners/listenerJogador.cpp.s
 .PHONY : src/listeners/listenerJogador.cpp.s
 
 src/listeners/listenerMenu.obj: src/listeners/listenerMenu.cpp.obj
@@ -1092,7 +998,6 @@ src/listeners/listenerMenu.obj: src/listeners/listenerMenu.cpp.obj
 # target to build an object file
 src/listeners/listenerMenu.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/listeners/listenerMenu.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/listeners/listenerMenu.cpp.obj
 .PHONY : src/listeners/listenerMenu.cpp.obj
 
 src/listeners/listenerMenu.i: src/listeners/listenerMenu.cpp.i
@@ -1101,7 +1006,6 @@ src/listeners/listenerMenu.i: src/listeners/listenerMenu.cpp.i
 # target to preprocess a source file
 src/listeners/listenerMenu.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/listeners/listenerMenu.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/listeners/listenerMenu.cpp.i
 .PHONY : src/listeners/listenerMenu.cpp.i
 
 src/listeners/listenerMenu.s: src/listeners/listenerMenu.cpp.s
@@ -1110,7 +1014,6 @@ src/listeners/listenerMenu.s: src/listeners/listenerMenu.cpp.s
 # target to generate assembly for a file
 src/listeners/listenerMenu.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/listeners/listenerMenu.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/listeners/listenerMenu.cpp.s
 .PHONY : src/listeners/listenerMenu.cpp.s
 
 src/main.obj: src/main.cpp.obj
@@ -1119,7 +1022,6 @@ src/main.obj: src/main.cpp.obj
 # target to build an object file
 src/main.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/main.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/main.cpp.obj
 .PHONY : src/main.cpp.obj
 
 src/main.i: src/main.cpp.i
@@ -1128,7 +1030,6 @@ src/main.i: src/main.cpp.i
 # target to preprocess a source file
 src/main.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/main.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -1137,7 +1038,6 @@ src/main.s: src/main.cpp.s
 # target to generate assembly for a file
 src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/main.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/menus/card.obj: src/menus/card.cpp.obj
@@ -1146,7 +1046,6 @@ src/menus/card.obj: src/menus/card.cpp.obj
 # target to build an object file
 src/menus/card.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/card.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/card.cpp.obj
 .PHONY : src/menus/card.cpp.obj
 
 src/menus/card.i: src/menus/card.cpp.i
@@ -1155,7 +1054,6 @@ src/menus/card.i: src/menus/card.cpp.i
 # target to preprocess a source file
 src/menus/card.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/card.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/card.cpp.i
 .PHONY : src/menus/card.cpp.i
 
 src/menus/card.s: src/menus/card.cpp.s
@@ -1164,7 +1062,6 @@ src/menus/card.s: src/menus/card.cpp.s
 # target to generate assembly for a file
 src/menus/card.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/card.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/card.cpp.s
 .PHONY : src/menus/card.cpp.s
 
 src/menus/menu.obj: src/menus/menu.cpp.obj
@@ -1173,7 +1070,6 @@ src/menus/menu.obj: src/menus/menu.cpp.obj
 # target to build an object file
 src/menus/menu.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menu.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/menu.cpp.obj
 .PHONY : src/menus/menu.cpp.obj
 
 src/menus/menu.i: src/menus/menu.cpp.i
@@ -1182,7 +1078,6 @@ src/menus/menu.i: src/menus/menu.cpp.i
 # target to preprocess a source file
 src/menus/menu.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menu.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/menu.cpp.i
 .PHONY : src/menus/menu.cpp.i
 
 src/menus/menu.s: src/menus/menu.cpp.s
@@ -1191,7 +1086,6 @@ src/menus/menu.s: src/menus/menu.cpp.s
 # target to generate assembly for a file
 src/menus/menu.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menu.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/menu.cpp.s
 .PHONY : src/menus/menu.cpp.s
 
 src/menus/menuCarregar.obj: src/menus/menuCarregar.cpp.obj
@@ -1200,7 +1094,6 @@ src/menus/menuCarregar.obj: src/menus/menuCarregar.cpp.obj
 # target to build an object file
 src/menus/menuCarregar.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menuCarregar.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/menuCarregar.cpp.obj
 .PHONY : src/menus/menuCarregar.cpp.obj
 
 src/menus/menuCarregar.i: src/menus/menuCarregar.cpp.i
@@ -1209,7 +1102,6 @@ src/menus/menuCarregar.i: src/menus/menuCarregar.cpp.i
 # target to preprocess a source file
 src/menus/menuCarregar.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menuCarregar.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/menuCarregar.cpp.i
 .PHONY : src/menus/menuCarregar.cpp.i
 
 src/menus/menuCarregar.s: src/menus/menuCarregar.cpp.s
@@ -1218,7 +1110,6 @@ src/menus/menuCarregar.s: src/menus/menuCarregar.cpp.s
 # target to generate assembly for a file
 src/menus/menuCarregar.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menuCarregar.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/menuCarregar.cpp.s
 .PHONY : src/menus/menuCarregar.cpp.s
 
 src/menus/menuGameOver.obj: src/menus/menuGameOver.cpp.obj
@@ -1227,7 +1118,6 @@ src/menus/menuGameOver.obj: src/menus/menuGameOver.cpp.obj
 # target to build an object file
 src/menus/menuGameOver.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menuGameOver.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/menuGameOver.cpp.obj
 .PHONY : src/menus/menuGameOver.cpp.obj
 
 src/menus/menuGameOver.i: src/menus/menuGameOver.cpp.i
@@ -1236,7 +1126,6 @@ src/menus/menuGameOver.i: src/menus/menuGameOver.cpp.i
 # target to preprocess a source file
 src/menus/menuGameOver.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menuGameOver.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/menuGameOver.cpp.i
 .PHONY : src/menus/menuGameOver.cpp.i
 
 src/menus/menuGameOver.s: src/menus/menuGameOver.cpp.s
@@ -1245,7 +1134,6 @@ src/menus/menuGameOver.s: src/menus/menuGameOver.cpp.s
 # target to generate assembly for a file
 src/menus/menuGameOver.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menuGameOver.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/menuGameOver.cpp.s
 .PHONY : src/menus/menuGameOver.cpp.s
 
 src/menus/menuPausa.obj: src/menus/menuPausa.cpp.obj
@@ -1254,7 +1142,6 @@ src/menus/menuPausa.obj: src/menus/menuPausa.cpp.obj
 # target to build an object file
 src/menus/menuPausa.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menuPausa.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/menuPausa.cpp.obj
 .PHONY : src/menus/menuPausa.cpp.obj
 
 src/menus/menuPausa.i: src/menus/menuPausa.cpp.i
@@ -1263,7 +1150,6 @@ src/menus/menuPausa.i: src/menus/menuPausa.cpp.i
 # target to preprocess a source file
 src/menus/menuPausa.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menuPausa.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/menuPausa.cpp.i
 .PHONY : src/menus/menuPausa.cpp.i
 
 src/menus/menuPausa.s: src/menus/menuPausa.cpp.s
@@ -1272,7 +1158,6 @@ src/menus/menuPausa.s: src/menus/menuPausa.cpp.s
 # target to generate assembly for a file
 src/menus/menuPausa.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menuPausa.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/menuPausa.cpp.s
 .PHONY : src/menus/menuPausa.cpp.s
 
 src/menus/menuPrincipal.obj: src/menus/menuPrincipal.cpp.obj
@@ -1281,7 +1166,6 @@ src/menus/menuPrincipal.obj: src/menus/menuPrincipal.cpp.obj
 # target to build an object file
 src/menus/menuPrincipal.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menuPrincipal.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/menuPrincipal.cpp.obj
 .PHONY : src/menus/menuPrincipal.cpp.obj
 
 src/menus/menuPrincipal.i: src/menus/menuPrincipal.cpp.i
@@ -1290,7 +1174,6 @@ src/menus/menuPrincipal.i: src/menus/menuPrincipal.cpp.i
 # target to preprocess a source file
 src/menus/menuPrincipal.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menuPrincipal.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/menuPrincipal.cpp.i
 .PHONY : src/menus/menuPrincipal.cpp.i
 
 src/menus/menuPrincipal.s: src/menus/menuPrincipal.cpp.s
@@ -1299,7 +1182,6 @@ src/menus/menuPrincipal.s: src/menus/menuPrincipal.cpp.s
 # target to generate assembly for a file
 src/menus/menuPrincipal.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menuPrincipal.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/menuPrincipal.cpp.s
 .PHONY : src/menus/menuPrincipal.cpp.s
 
 src/menus/menuSalvar.obj: src/menus/menuSalvar.cpp.obj
@@ -1308,7 +1190,6 @@ src/menus/menuSalvar.obj: src/menus/menuSalvar.cpp.obj
 # target to build an object file
 src/menus/menuSalvar.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menuSalvar.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/menuSalvar.cpp.obj
 .PHONY : src/menus/menuSalvar.cpp.obj
 
 src/menus/menuSalvar.i: src/menus/menuSalvar.cpp.i
@@ -1317,7 +1198,6 @@ src/menus/menuSalvar.i: src/menus/menuSalvar.cpp.i
 # target to preprocess a source file
 src/menus/menuSalvar.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menuSalvar.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/menuSalvar.cpp.i
 .PHONY : src/menus/menuSalvar.cpp.i
 
 src/menus/menuSalvar.s: src/menus/menuSalvar.cpp.s
@@ -1326,7 +1206,6 @@ src/menus/menuSalvar.s: src/menus/menuSalvar.cpp.s
 # target to generate assembly for a file
 src/menus/menuSalvar.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menuSalvar.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/menus/menuSalvar.cpp.s
 .PHONY : src/menus/menuSalvar.cpp.s
 
 src/principal.obj: src/principal.cpp.obj
@@ -1335,7 +1214,6 @@ src/principal.obj: src/principal.cpp.obj
 # target to build an object file
 src/principal.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/principal.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/principal.cpp.obj
 .PHONY : src/principal.cpp.obj
 
 src/principal.i: src/principal.cpp.i
@@ -1344,7 +1222,6 @@ src/principal.i: src/principal.cpp.i
 # target to preprocess a source file
 src/principal.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/principal.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/principal.cpp.i
 .PHONY : src/principal.cpp.i
 
 src/principal.s: src/principal.cpp.s
@@ -1353,7 +1230,6 @@ src/principal.s: src/principal.cpp.s
 # target to generate assembly for a file
 src/principal.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/principal.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testes.dir\build.make CMakeFiles/testes.dir/src/principal.cpp.s
 .PHONY : src/principal.cpp.s
 
 # Help Target
@@ -1365,7 +1241,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Jogo
-	@echo ... testes
 	@echo ... src/Obstaculo/Obstaculo.obj
 	@echo ... src/Obstaculo/Obstaculo.i
 	@echo ... src/Obstaculo/Obstaculo.s
@@ -1438,6 +1313,9 @@ help:
 	@echo ... src/gerenciador/gerenciadorDeEventos.obj
 	@echo ... src/gerenciador/gerenciadorDeEventos.i
 	@echo ... src/gerenciador/gerenciadorDeEventos.s
+	@echo ... src/gerenciador/gerenciadorDeMusica.obj
+	@echo ... src/gerenciador/gerenciadorDeMusica.i
+	@echo ... src/gerenciador/gerenciadorDeMusica.s
 	@echo ... src/gerenciador/gerenciadorGrafico.obj
 	@echo ... src/gerenciador/gerenciadorGrafico.i
 	@echo ... src/gerenciador/gerenciadorGrafico.s

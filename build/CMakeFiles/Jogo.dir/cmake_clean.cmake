@@ -50,6 +50,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEstado.cpp.obj.d"
   "CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEventos.cpp.obj"
   "CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEventos.cpp.obj.d"
+  "CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeMusica.cpp.obj"
+  "CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeMusica.cpp.obj.d"
   "CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorGrafico.cpp.obj"
   "CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorGrafico.cpp.obj.d"
   "CMakeFiles/Jogo.dir/src/inimigo/esqueleto.cpp.obj"

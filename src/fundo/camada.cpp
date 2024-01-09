@@ -16,9 +16,8 @@ namespace Game{
          * velociadade: velocidade com que a camada se movimentara na tela.
          * 
         */
-
         Camada::Camada(const sf::Vector2f tamJanela, sf::Texture textura,const float velocidade):
-        tamJanela(tamJanela),textura(textura),escala(0,0,0,0),velocidade(velocidade)
+        tamJanela(tamJanela), velocidade(velocidade), textura(textura),escala(0,0,0,0)
         {
             escala.width = -(textura.getSize().x);
             escala.height = (textura.getSize().y);
@@ -37,7 +36,6 @@ namespace Game{
         /**
          *  destrutora da classe camada.
         */
-
         Camada::~Camada(){}
 
         /**
@@ -45,7 +43,6 @@ namespace Game{
          * e do fundo Principal.
          * 
         */
-
         void Camada::trocarTextura()
         {
             sf::RectangleShape auxTroca = fundo;
@@ -62,7 +59,6 @@ namespace Game{
          * window: janela a ser desenhada a camada.
          *  
         */
-
         void Camada::desenharCamada(sf::RenderWindow* window)
         {
             window->draw(fundo);
@@ -80,7 +76,6 @@ namespace Game{
          * posCameraAtual: nescessario para determinar as extremidades da janela.
          *  
         */
-
         void Camada::atualizar(const sf::Vector2f ds, const sf::Vector2f posCameraAtual)
         {
             sf::Vector2f posFundo = fundo.getPosition();
@@ -121,7 +116,7 @@ namespace Game{
                         }
                     }
                 }
-                //seta o fundo comecando na extremidade esquuerda caso o fundo nao tenha movimento.
+                //seta o fundo comecando na extremidade esquerda caso o fundo nao tenha movimento.
                 else
                 {
                     fundo.setPosition(posEsquerda, posFundo.y);

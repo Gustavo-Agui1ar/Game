@@ -20,15 +20,42 @@ namespace Game{
         {
             if(!jogador->getMorrer())
             {
-                if(tecPadrao[tecla] == 'a')
-                    jogador->andar(true);
-                else if(tecPadrao[tecla] == 'd')
-                    jogador->andar(false);
-                else if(tecPadrao[tecla] == 'w')
-                    jogador->pular();
-                else if(tecPadrao[tecla] == 'e')
-                    if(jogador->getNoChao())
-                        jogador->atacar();
+                switch (tecPadrao[tecla])
+                {
+                    case('a'):
+                    {
+                        jogador->andar(true);
+                    }
+                        break;
+
+                    case('d'):
+                    {
+                        jogador->andar(false);
+                    }
+                        break;
+
+                    case('w'):
+                    {
+                        jogador->pular();
+                    }
+                        break;
+
+                    case('e'):
+                    {
+                        if(jogador->getNoChao())
+                            jogador->atacar();
+                    }
+                        break;
+
+                    case('r'):
+                    {
+                        jogador->fazerDash();
+                    }
+                        break;
+                
+                    default:
+                        break;
+                }
             }
         }
 
@@ -40,6 +67,8 @@ namespace Game{
                     jogador->parar();
                 else if(tecPadrao[tecla] == 'w' || tecPadrao[tecla] == 'e')
                     jogador->pararAtaque();
+                else if(tecPadrao[tecla] == 'r')
+                    jogador->pararDash();
             }
         }
     }

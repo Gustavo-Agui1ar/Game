@@ -26,7 +26,9 @@ namespace Game{
              */
 
             Personagem::Personagem(const sf::Vector2f pos, const sf::Vector2f tam, const float vel, const IDs::IDs ID, const float tempoAnimacaoDeLevarDano, const float tempoAnimacaoDeMorrer, const float dano):
-            Entidade(tam,ID, pos),animacao(&corpo),velocidade(sf::Vector2f(vel,0)) , velMax(vel), movendo(false),direcao(false), dt(0.0f),tempoAnimacaoDeLevarDano(tempoAnimacaoDeLevarDano),tempoAnimacaoDeMorrer(tempoAnimacaoDeMorrer), vidaMaxima(100.0f)
+            Entidade(tam,ID, pos),animacao(&corpo),velocidade(sf::Vector2f(vel,0)) , velMax(vel),
+             movendo(false),direcao(false), dt(0.0f),tempoAnimacaoDeLevarDano(tempoAnimacaoDeLevarDano),
+             tempoAnimacaoDeMorrer(tempoAnimacaoDeMorrer), vidaMaxima(100.0f),tempoMorrer(0.0f)
             {
                 levandoDano = false;
                 this->dano = dano;
@@ -185,11 +187,13 @@ namespace Game{
                 if(!levandoDano)
                 {
                     levandoDano = true;
+                    atacando = false;
                     movendo = false;
                     vida -= dano;
                     if(vida <= 0.0f)
                     {
                         morrendo = true;
+                        levandoDano = false;
                         vida = 0.0f;
                         
                         if(arma != nullptr)
@@ -215,6 +219,7 @@ namespace Game{
                     levandoDano = false;
                     tempoDano = 0.0f;
                 }
+                
             }
 
             /**

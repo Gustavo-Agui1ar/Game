@@ -11,8 +11,13 @@ namespace Game {
         
         public:
 
+            //construtor e destrutor
+
             MenuGameOver(Fase::Fase* fase);
             ~MenuGameOver();
+
+            //metodo que cria botoes
+
             void criarBotoes();
         };
     }

@@ -24,37 +24,64 @@ namespace Game{
 
         protected:
 
+            //atributos relacionado aos botoes do menu
+
             std::list<Botao::BotaoTexto*> listaDeBotao;
             std::list<Botao::BotaoTexto*>::iterator it;
+            Botao::Texto titulo;
+
             const sf::Vector2f tamJanela;
             const sf::Vector2f tamBotao;
 
             sf::Vector2f posFundo;
 
-            Botao::Texto titulo;
             Listener::ListenerMenu* listenerMenu;
             bool mouseSelecionado;
+            
+            //metodo de atualiazcao da classe
 
             void  atualizarPosicaoFundo();
+           
             virtual void criarFundo();
             virtual void criarBotoes() = 0;
+           
+            //metodo de inicializacao da classe
+
             void inicialiarIterador();
 
         public:
 
+            //construtor e destrutor
+
             Menu(const IDs::IDs ID, const sf::Vector2f tamBotao, const std::string titulo, const unsigned int tamFonte);
             virtual ~Menu();
 
+            //metodo de adicao de um objeto botao
+
             void addBotao(const std::string infoTexto, const sf::Vector2f pos , const IDs::IDs ID, const  sf::Color corSelecionado);
+
+            //metodo que altera o estado do observer da classe
+
             void mudarEstadoListener(const bool ativo);
+           
+            //metodo de verificacao do botao
+            
             void selecionaParaCima();
             void selecionaParaBaixo();
             virtual void selecionaEsquerda();
             virtual void selecionaDireita();
 
+            //getters da classe
+
             const IDs::IDs getIDBotaoSelecionado();
-            void eventoMouse(const sf::Vector2f posMouse);
             const bool getMouseSelecionado();
+           
+            //metodo que verifica eventos d o mouse
+
+            void eventoMouse(const sf::Vector2f posMouse);
+           
+            //metodos de atualizacao e visualizacao
+
             virtual void executar() = 0;
             void desenhar();  
         };

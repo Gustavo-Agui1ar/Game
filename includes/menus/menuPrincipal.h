@@ -14,19 +14,30 @@ namespace Game{
 
         protected:
 
+            //atributo relacionado ao fundo
+
             Fundo::Fundo fundo;
 
         private:
+
+            //metodo criador do fundo
 
             void criarFundo();
 
         public:
 
+            //construtores e destrutor
+
             MenuPrincipal();
             MenuPrincipal(const IDs::IDs ID, std::string titulo, const unsigned int tamFonte);
             virtual ~MenuPrincipal();
 
+            //metodo criador de Botoes
+            
             virtual void criarBotoes();
+            
+            //metodo que atualiza o estado de um objeto desta classe 
+
             virtual void executar();
             
         };

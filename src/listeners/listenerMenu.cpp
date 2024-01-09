@@ -56,13 +56,7 @@ namespace Game{
 
                     case(IDs::IDs::botao_voltar):
                     {
-                         pEstado->removerEstado();
-
-                        if(pEstado->getEstadoAtual()->getID() == IDs::IDs::menu_pause)
-                        {
-                            pEstado->removerEstado();
-                            pEstado->addEstado(IDs::IDs::menu_pause);
-                        }
+                        pEstado->removerEstado();
                     }
                     break;
 
@@ -142,7 +136,19 @@ namespace Game{
 
                     case(IDs::IDs::botao_reniciar_jogo):
                     {
-                        pEstado->addContinuarGameOver(IDs::IDs::forest);
+                        Estado::Estado* estado = pEstado->getEstadoAtual();
+                        
+                        if(estado->getID() == IDs::IDs::menu_gameOver)
+                        {
+                            Estado::EstadoMenu* pMenu = dynamic_cast<Estado::EstadoMenu*>(estado);
+                            Menu::MenuGameOver* menuGO = dynamic_cast<Menu::MenuGameOver*>(pMenu->getMenu());
+                            IDs::IDs IDfase = menuGO->getFase()->getID();     
+
+                            pEstado->removerEstado(2);
+                            pEstado->addEstado(IDfase); 
+                            Estado::EstadoFase* pFase = dynamic_cast<Estado::EstadoFase*>(pEstado->getEstadoAtual());
+                            pFase->criarFase();
+                        }
                     }
                     break;
 
@@ -217,12 +223,6 @@ namespace Game{
                             case (IDs::IDs::botao_voltar):
                             {
                                 pEstado->removerEstado();
-
-                                if(IDmenu == IDs::IDs::menu_pause)
-                                {
-                                    pEstado->removerEstado();
-                                    pEstado->addEstado(IDs::IDs::menu_pause);
-                                }
                             }
                                 break;
                             case (IDs::IDs::botao_salvar):
@@ -245,9 +245,22 @@ namespace Game{
                             }
                                 break;
                             case(IDs::IDs::botao_reniciar_jogo):
-                                //por enquanto...
-                                pEstado->addContinuarGameOver(IDs::IDs::forest);
-                                break;
+                            {
+                                Estado::Estado* estado = pEstado->getEstadoAtual();
+                        
+                                if(estado->getID() == IDs::IDs::menu_gameOver)
+                                {
+                                    Estado::EstadoMenu* pMenu = dynamic_cast<Estado::EstadoMenu*>(estado);
+                                    Menu::MenuGameOver* menuGO = dynamic_cast<Menu::MenuGameOver*>(pMenu->getMenu());
+                                    IDs::IDs IDfase = menuGO->getFase()->getID();     
+
+                                    pEstado->removerEstado(2);
+                                    pEstado->addEstado(IDfase); 
+                                    Estado::EstadoFase* pFase = dynamic_cast<Estado::EstadoFase*>(pEstado->getEstadoAtual());
+                                    pFase->criarFase();
+                                }
+                            }
+                            break;
 
                             case(IDs::IDs::botao_salvar_jogo):
                             {

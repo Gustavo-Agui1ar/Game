@@ -16,29 +16,43 @@ namespace Game{
         private:
 
             //atributo grafico
+          
             GerenciadorGrafico *pGrafico;
+           
+            // ponteiro do gerenciador de estado
+        
             GerenciadorDeEstado* pEstado;
+
+            // lista de observers
+   
             static Lista::ListaListener* listaListener;
 
 
-            //ponteiro responsavel por 'distribuir' o mesmo objeto a outras classes (padrao singlenton)
+            //ponteiro que aponta para a classe (padrao singlenton)
+           
             static GerenciadorDeEventos *pEventos;
 
             //construtora
+          
             GerenciadorDeEventos();
 
         public:
 
             //destrutora
+       
             ~GerenciadorDeEventos();
             
             //metodo de acesso a classe
+           
             static GerenciadorDeEventos* getGerenciadorDeEventos();
+
+            //metodos de adicao e remocao de um observer
 
             void removerListener(Listener::Listener* listener);
             void addListener(Listener::Listener* listener);
             
             //metodo de verificacao de eventos
+          
             void executar();
         };
     }

@@ -48,7 +48,6 @@ namespace Game{
          *  
          * realiza a destrucao das camadas utilizadas no fundo
         */
-
         Fundo::~Fundo()
         {
             for(int i = 0 ; i < camadas.size() ; i++)
@@ -69,7 +68,6 @@ namespace Game{
          * o fundo atualizando todas as camadas
          * existentes do fundo
         */
-
         void Fundo::executar()
         {
             sf::Vector2f posCamera = pGrafico->getCamera().getCenter();
@@ -90,7 +88,6 @@ namespace Game{
          * metodo que percorre a array de camadas
          * desenhando as camadas na janela. 
         */
-
         void Fundo::desenhar()
         {
             for(int i = 0 ; i < camadas.size() ; i++){

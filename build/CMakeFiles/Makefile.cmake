@@ -55,5 +55,4 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Jogo.dir/DependInfo.cmake"
-  "CMakeFiles/testes.dir/DependInfo.cmake"
   )

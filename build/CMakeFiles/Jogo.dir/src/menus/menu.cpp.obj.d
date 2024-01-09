@@ -361,6 +361,26 @@ CMakeFiles/Jogo.dir/src/menus/menu.cpp.obj: \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/arma/arma.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/Obstaculo/Obstaculo.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/jogador/jogador.h \
+ C:/PROGRA~2/SFML/include/SFML/Audio.hpp \
+ C:/PROGRA~2/SFML/include/SFML/Audio/InputSoundFile.hpp \
+ C:/PROGRA~2/SFML/include/SFML/Audio/Export.hpp \
+ C:/PROGRA~2/SFML/include/SFML/Audio/Listener.hpp \
+ C:/PROGRA~2/SFML/include/SFML/Audio/Music.hpp \
+ C:/PROGRA~2/SFML/include/SFML/Audio/SoundStream.hpp \
+ C:/PROGRA~2/SFML/include/SFML/Audio/SoundSource.hpp \
+ C:/PROGRA~2/SFML/include/SFML/Audio/AlResource.hpp \
+ C:/PROGRA~2/SFML/include/SFML/Audio/OutputSoundFile.hpp \
+ C:/PROGRA~2/SFML/include/SFML/Audio/Sound.hpp \
+ C:/PROGRA~2/SFML/include/SFML/Audio/SoundBuffer.hpp \
+ C:/msys64/mingw64/include/c++/13.1.0/set \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/stl_set.h \
+ C:/msys64/mingw64/include/c++/13.1.0/bits/stl_multiset.h \
+ C:/PROGRA~2/SFML/include/SFML/Audio/SoundBufferRecorder.hpp \
+ C:/PROGRA~2/SFML/include/SFML/Audio/SoundRecorder.hpp \
+ C:/PROGRA~2/SFML/include/SFML/Audio/SoundFileFactory.hpp \
+ C:/PROGRA~2/SFML/include/SFML/Audio/SoundFileFactory.inl \
+ C:/PROGRA~2/SFML/include/SFML/Audio/SoundFileReader.hpp \
+ C:/PROGRA~2/SFML/include/SFML/Audio/SoundFileWriter.hpp \
  C:/msys64/mingw64/include/c++/13.1.0/math.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/inimigo/inimigo.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/inimigo/esqueleto.h \

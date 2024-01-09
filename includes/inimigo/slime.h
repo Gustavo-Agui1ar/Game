@@ -11,6 +11,8 @@
 #define TAM_SLIME_Y 60.0f
 #define DANO_SLIME 5.0F
 
+#define SOM_DE_DANO_SLIME "Sounds/Slime-Sound-Effect.wav"
+
 namespace Game{
 
     namespace Entidade{
@@ -22,8 +24,13 @@ namespace Game{
                 class Slime : public Inimigo{
                 private:
 
-                    //metodos de inicializacao
+                    //metodos de inicializacao da classe
+                    
                     void inicializaAnimacao();
+                    void inicializarSom();
+                    
+                    //metodos de atualizacao da classe
+
                     void atualizarAnimacao();
                     void atualizarAtaque();
 

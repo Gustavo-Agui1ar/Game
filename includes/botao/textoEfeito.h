@@ -13,20 +13,37 @@ namespace Game{
 
             private:
 
+                //atributos referentes ao efeito do botao
+              
                 int transparente;
                 bool apagando;
 
+                //metodo de atualizacao dos atributos de efeito
+                
                 void atualizar();
 
             public:
 
+                //construtor e destrutor
+               
                 TextoEfeito(const sf::Font fonte, const std::string infoTexto);
                 ~TextoEfeito();
 
+                //metodo que aplica o efeito inverso ao atual
+              
                 void mudarTransparencia();
+                
+                //getters da classe
+              
                 const bool getApagando();
                 const int getTransparente();
+              
+                //setters da classe
+              
                 void setTransparente(int tansparente);
+
+                //metodo que reinicia o efeito do botao
+               
                 void resetar();
 
             };

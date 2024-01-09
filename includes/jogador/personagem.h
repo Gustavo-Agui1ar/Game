@@ -23,64 +23,97 @@ namespace Game {
             protected:
 
                 //atributos de animacao e visualizacao
+
                 animador::Animacao animacao;
 
-                //metodos de vida
+                //metodos de inicializacao
+
                 virtual void inicializarBarraDeVida() = 0;
+                
+                //metodos de atuallizacao da classe
+
                 virtual void atualizarAnimacao() = 0;
                 virtual void atualizarBarraDeVida();
 
-                //atributos de locomocao
+                //atributos relacionados a velocidade 
+
                 sf::Vector2f velocidade;
                 const float velMax;
+              
+                //atributos de locomocao
+              
                 bool movendo;
                 bool direcao;
                 float dt;
 
                 //atributos de vida
-                const float tempoAnimacaoDeLevarDano;
-                const float tempoAnimacaoDeMorrer;
                 sf::RectangleShape barraDeVida;
                 const float vidaMaxima;
+                float vida;
+                
+                //  atributos de controle de tempo
+
+                const float tempoAnimacaoDeLevarDano;
+                const float tempoAnimacaoDeMorrer;
                 float tempoMorrer;
                 float tempoDano;
+                
+                // atributo relacionado a vida 
+                
                 bool morrendo;
-                float vida;
 
                 //atributos de ataque
                 bool levandoDano;
-                Item::Arma* arma;
                 bool atacando;
+
+                //atributos reacionados aoo dano 
+
+                Item::Arma* arma;
                 float dano;
 
             public:
 
                 //construtores e destrutores
+                
                 Personagem(const sf::Vector2f pos, const sf::Vector2f tam, const float vel,IDs::IDs ID,const float tempoAnimacaoDeLevarDano, const float tempoAnimacaoDeMorrer,const float dano);
                 virtual ~Personagem();
 
-                //metodos de locomocao
+                //metodos setters da classe
+                
                 void setVelMax(sf::Vector2f vel);
-                sf::Vector2f getVelocidade();
+                void setArma(Item::Arma* arma);
+                
+                //metodos de locomocao
+
                 void andar(bool direcao);
-                void atualizarPosicao();
                 void parar();
 
+                //metodos de atualizacao de atributos da classe
+
+                virtual void atualizarTempoDano();
+                virtual void atualizarPosicao();
 
                 //metodos de ataque
+              
                 void tomarDano(const float dano);
-                void setArma(Item::Arma* arma);
-                void atualizarTempoDano();
+
+                //metodos de ataque
+
                 void pararAtaque();
                 void atacar();
+
+                //metodos que salvam os atributos de um objeto desta classe
 
                 nlohmann::ordered_json salvarPersonagem();
                 virtual nlohmann::ordered_json salvar() = 0;
 
-                //metodos de vida
+                //getters daa classe
+               
+                sf::Vector2f getVelocidade();
                 const bool getMorrer();
 
                 //metodos de animacao e visualizacao
+              
                 virtual void desenhar();
             };
         }

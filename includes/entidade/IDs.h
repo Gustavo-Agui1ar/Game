@@ -29,7 +29,11 @@ namespace IDs{
             botao_opcao, 
             botao_sair , 
             botao_voltar, 
+            
+            //menu para solucionar bug em evento
             menu_bug,
+
+            //botoes dos menus
             botao_salvar , 
             botao_salvar_jogo , 
             botao_carregar , 
