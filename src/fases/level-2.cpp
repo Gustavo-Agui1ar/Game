@@ -15,15 +15,19 @@ namespace Game{
 
 
         /**
-         * construtor da classe floresta
+         * @brief construtor da classe floresta
         */
-       
         Forest::Forest():
         Fase(IDs::IDs::forest, IDs::IDs::forest)
         {
 
         }
         
+        /**
+         * @brief  construtora da classe floresta
+         * 
+         * @param entidades json contendo informacoes das entidades a serem criadas na fase
+        */
         Forest::Forest(nlohmann::ordered_json entidades):
         Fase(IDs::IDs::forest, IDs::IDs::forest)
         {
@@ -31,6 +35,11 @@ namespace Game{
             recuperarJogada(entidades);
         }
 
+        /**
+         * @brief metodo que cria as entidades da fase
+         * 
+         * @param entidades json contendo as entidades a serem criadas na fase
+        */
         void Forest::recuperarJogada(nlohmann::ordered_json entidades)
         {
             nlohmann::ordered_json::iterator it;
@@ -88,19 +97,17 @@ namespace Game{
                 } 
             }
         }
-         /**
-         * destrutor da classe
+        /**
+         * @brief destrutor da classe
         */
-        
         Forest::~Forest()
         {
 
         }
 
         /**
-         * metodo responsavel pela criacao do fundo da fase floresta
+         * @brief metodo responsavel pela criacao do fundo da fase floresta
         */
-
         void Forest::criarFundo()
         {
             fundo.addCamada(CAMADA_1_5,0.0f);
@@ -112,10 +119,9 @@ namespace Game{
         }
 
          /**
-         * metodo  que  cria fase  com  base  em  seu arquivo txt
+         * @brief metodo  que  cria fase  com  base  em  seu arquivo txt
          * quando nescessario chama o metodo criador de entidades
         */
-
         void Forest::criarMapa()
         {
             std::ifstream arquivo;
@@ -148,9 +154,10 @@ namespace Game{
         }
 
         /**
-         * metodo que cria uma plataforma
+         * @brief metodo que cria uma plataforma
+         * 
+         * @param pos posicao da plataforma
         */
-
         void Forest::criarPlataforma(const sf::Vector2f pos)
         {
             Entidade::Obstaculo::Plataforma* plataforma = new Entidade::Obstaculo::Plataforma(pos,sf::Vector2f(200.0f,40.0f),IDs::IDs::plataforma,  IDs::IDs::forest);

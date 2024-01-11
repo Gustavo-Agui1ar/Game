@@ -10,19 +10,15 @@ namespace Game{
             namespace Inimigo{
 
                 /**
-                 * contrutora da classe slime 
+                 * @brief contrutora da classe slime 
                  * 
-                 * parametros:
                  * 
-                 * (nescessarios para a costrutora do inimigo)
-                 * 
-                 * pos: posicao onde o corpo do slime tera sua posicao inicial.
-                 * tam: tamanho do corpo do slime.
-                 * vel: velocidade com que o mesmo sera movimentado.
-                 * jogador: ponteiro para jogador que sera preciso para a movimentacao do slime.
+                 * @param pos posicao onde o corpo do slime tera sua posicao inicial.
+                 * @param tam tamanho do corpo do slime.
+                 * @param vel velocidade com que o mesmo sera movimentado.
+                 * @param jogador ponteiro para jogador que sera preciso para a movimentacao do slime.
                  * 
                 */
-
                 Slime::Slime(sf::Vector2f pos, Jogador::Jogador *jogador, Item::Arma* arma):
                 Inimigo(pos,  sf::Vector2f(TAM_SLIME_X, TAM_SLIME_Y), VEL_SLIME, jogador, SLIME_TEMPO_DE_ATAQUE, IDs::IDs::red_slime, 
                 SLIME_TEMPO_DE_TOMAR_DANO, SLIME_TEMPO_ANIMACAO_DE_MORTE, DANO_SLIME, arma)
@@ -30,7 +26,13 @@ namespace Game{
                     inicializaAnimacao();
                     inicializarSom();
                 }
-
+                
+                /**
+                 * @brief construtora da classe Slime
+                 * 
+                 * @param atributos json contendo todas as informcoes da classe
+                 * @param jogador ponteiro para o jogador
+                */
                 Slime::Slime(nlohmann::ordered_json atributos, Jogador::Jogador *jogador):
                 Inimigo(pos,  sf::Vector2f(TAM_SLIME_X, TAM_SLIME_Y), VEL_SLIME, jogador, SLIME_TEMPO_DE_ATAQUE, IDs::IDs::red_slime, 
                 SLIME_TEMPO_DE_TOMAR_DANO, SLIME_TEMPO_ANIMACAO_DE_MORTE, DANO_SLIME, nullptr)
@@ -70,19 +72,17 @@ namespace Game{
 
 
                 /**
-                 * destrutora da classe slime
+                 * @brief destrutora da classe slime
                 */
-
                 Slime::~Slime()
                 {
 
                 }
 
                 /**
-                 * metodo que adiciona os sprites do 
+                 * @brief metodo que adiciona os sprites do 
                  * inimigo slime para que este possa ser utilizado pela animacao
                 */
-
                 void Slime::inicializaAnimacao()
                 {
                     const sf::Vector2f origem = sf::Vector2f(tam.x/2.5,tam.y/2.2);
@@ -95,11 +95,10 @@ namespace Game{
                 }
 
                 /**
-                 * metodo que define qual sprite sera 
+                 * @brief metodo que define qual sprite sera 
                  * chamado e atualizado no momento da
                  * chamada do metodo.
                 */
-
                 void Slime::atualizarAnimacao()
                 {
                      if(morrendo && !podeRemover){
@@ -127,10 +126,9 @@ namespace Game{
                 }
 
                 /**
-                 * metodo  que   atualiza   a   parte 
+                 * @brief metodo que atualiza a parte 
                  * relacionada ao ataque do slime
                 */
-
                 void Slime::atualizarAtaque()
                 {
                     if(atacando && !morrendo)
@@ -151,6 +149,9 @@ namespace Game{
                    
                 }
 
+                /**
+                 * @brief metodo que inicializa os efeitos sonoros da classe
+                */
                 void Slime::inicializarSom()
                 {
                     if(!somDeDanoBuffer.loadFromFile(SOM_DE_DANO_SLIME))

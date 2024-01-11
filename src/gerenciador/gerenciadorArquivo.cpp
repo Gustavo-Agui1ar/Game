@@ -4,13 +4,19 @@
 namespace Game{
 
     namespace Gerenciador{
-
+        
+        /**
+         * @brief construtora da classe GerenciadorArquivo
+        */
         GerenciadorArquivo::GerenciadorArquivo():
         arquivoLeitura(), arquivoGravar()
         {
 
         }
 
+        /**
+         * @brief destrutora da classe GerenciadorArquivo
+        */
         GerenciadorArquivo::~GerenciadorArquivo()
         {
             if(arquivoGravar.is_open())
@@ -20,6 +26,11 @@ namespace Game{
                 arquivoLeitura.close();
         }
 
+        /**
+         * @brief metodo que abre um arquivo para leitura
+         * 
+         * @param caminhoArquivo caminho ate o arquivo a ser aberto
+        */
         void GerenciadorArquivo::abrirArquivoLeitura(const char* caminhoArquivo)
         {
             arquivoLeitura.open(caminhoArquivo);
@@ -31,11 +42,19 @@ namespace Game{
             }
         }
 
+        /**
+         * @brief metodo que fecha o arquivo de leitura aberto
+        */
         void GerenciadorArquivo::fecharArquivoLeitura()
         {
             arquivoLeitura.close();
         }
 
+        /**
+         * @brief metodo que abre um arquivo de gravar
+         * 
+         * @param caminhoArquivo caminho ate o arquivo a ser aberto
+        */
         void GerenciadorArquivo::abrirArquivoGravar(const char* caminhoArquivo)
         {
             arquivoGravar.open(caminhoArquivo, std::ios::app);
@@ -47,11 +66,21 @@ namespace Game{
             }
         }
 
+        /**
+         * @brief metodo que fecha o arquivo de gravar aberto
+        */
         void GerenciadorArquivo::fecharArquivoGravar()
         {
             arquivoGravar.close();
         }
 
+        /**
+         * @brief metodo que le um arquivo
+         * 
+         * @param caminhoArquivo caminho do arquivo a ser lido
+         * 
+         * @return retorna um json com as informacoes do arquivo
+        */
         nlohmann::ordered_json  GerenciadorArquivo::lerArquivo(const char* caminhoArquivo)
         {
             abrirArquivoLeitura(caminhoArquivo);
@@ -64,7 +93,14 @@ namespace Game{
 
             return json;
         }
-
+        
+        /**
+         * @brief metodo que grava um conteudo em um arquivo
+         * 
+         * @param caminhoArquivo caminho do arquivo a ser gravado
+         * 
+         * @param json conteudo a ser gravado no arquivo
+        */
         void GerenciadorArquivo::gravarConteudo(const char* caminhoArquivo, nlohmann::ordered_json json)
         {
             abrirArquivoGravar(caminhoArquivo);
@@ -74,6 +110,11 @@ namespace Game{
             fecharArquivoGravar();
         }
 
+        /**
+         * @brief metodo que remove um arquivo 
+         * 
+         * @param caminhoArquivo arquivo a ser deletado
+        */
         void GerenciadorArquivo::removeArquivo(const char* caminhoArquivo)
         {
             remove(caminhoArquivo);

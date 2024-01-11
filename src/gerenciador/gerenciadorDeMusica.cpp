@@ -7,6 +7,9 @@ namespace Game{
 
         GerenciadorDeMusica* GerenciadorDeMusica::pMusica = nullptr;
 
+        /**
+         * @brief construtora da classe GerenciadordeMusica nela é inicializada as musicas a serem tocadas
+        */
         GerenciadorDeMusica::GerenciadorDeMusica():
         mapMusica(),volumeGeral(100.0f)
         {
@@ -17,6 +20,10 @@ namespace Game{
             IDmusicaAtual = IDs::IDs::vazio;
         }
 
+
+        /**
+         * @brief destrutora da classe GerenciadorDeMusica
+        */
         GerenciadorDeMusica::~GerenciadorDeMusica()
         {
             std::map<IDs::IDs,sf::Music*>::iterator it;
@@ -31,7 +38,11 @@ namespace Game{
             mapMusica.clear();
         }
 
-
+        /**
+         * @brief metodo de acesso a classe GerenciadorDeMusica
+         * 
+         * @return retorna um ponteiro para classe GerenciadorDeMusica
+        */
         GerenciadorDeMusica* GerenciadorDeMusica::getGerenciadorDeMusica()
         {
             if(pMusica == nullptr)
@@ -39,6 +50,12 @@ namespace Game{
             return pMusica;
         }
 
+        /**
+         * @brief adiciona uma musica no map de musicas
+         * 
+         * @param ID identificador da musica
+         * @param caminhoMusica caminho ate o arquivo da musica
+        */
         void GerenciadorDeMusica::addMusica(IDs::IDs ID, const char* caminhoMusica)
         {
             sf::Music* musica = new sf::Music();
@@ -52,6 +69,11 @@ namespace Game{
             mapMusica.insert(std::pair<IDs::IDs, sf::Music*>(ID, musica));
         }
 
+        /**
+         * @brief muda a musica a ser tocada no momento
+         * 
+         * @param IDMusica identificacao da musica a ser tocada
+        */
         void GerenciadorDeMusica::mudarMusica(const IDs::IDs IDmusica)
         {
             switch (IDmusica)
@@ -121,32 +143,50 @@ namespace Game{
             }
         }
 
+        /**
+         * @brief pausa a musica sendo tocada no momento
+        */
         void GerenciadorDeMusica::pausar()
         {
             mapMusica[IDmusicaAtual]->pause();
         }
 
+        /**
+         * @brief despausa a musica sento tocada no momento
+        */
         void GerenciadorDeMusica::despausar()
         {
             mapMusica[IDmusicaAtual]->play();
         
         }
+
+        /**
+         * @brief para  a musica sendo tocada o momento 
+        */
         void GerenciadorDeMusica::parar()
         {
             mapMusica[IDmusicaAtual]->stop();
         }
 
+        /**
+         * @brief atualiza o volume da musica sendo tocada no momento
+         * 
+         * @param volumeGeral volume a ser aplicado na musica
+        */
         void GerenciadorDeMusica::setVolume(const float volumeGeral)
         {
             mapMusica[IDmusicaAtual]->setVolume(volumeGeral);
             this->volumeGeral = volumeGeral;
         }
 
+        /**
+         * @brief metodo de acesso ao volumeGeral
+         * 
+         * @return retorna o atributo volumeGeral
+        */
         const float GerenciadorDeMusica::getVolumeGeral()
         {
             return volumeGeral;
         }
-
-
     }
 }

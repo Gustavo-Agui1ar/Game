@@ -9,12 +9,20 @@ namespace Game{
          GerenciadorDeEstado* GerenciadorDeEstado::pEstado = nullptr;
          GerenciadorDeMusica* GerenciadorDeEstado::pMusica = GerenciadorDeMusica::getGerenciadorDeMusica();
 
+         /**
+          * @brief construtora da classe GerenciadoDeEstado
+         */
          GerenciadorDeEstado::GerenciadorDeEstado():
          pilhaEstados()
          {
 
          }
 
+        /**
+         * @brief metodo de acesso a um objeto da classe GerenciadorDeEstado
+         * 
+         * @return retorna um ponteiro para um objeto da classe GerenciadorDeEstado
+        */
         GerenciadorDeEstado* GerenciadorDeEstado::getGerenciadorDeEstado()
         {
             if(pEstado == nullptr)
@@ -22,6 +30,9 @@ namespace Game{
             return pEstado;
         }
 
+        /**
+         * @brief destrutora da classe GerenciadorDeEstado
+        */
         GerenciadorDeEstado::~GerenciadorDeEstado()
         {
             if(pEstado != nullptr)
@@ -47,6 +58,11 @@ namespace Game{
             }
         }
 
+        /**
+         * @brief adiciona um estado a pilha de estados
+         * 
+         * @param ID identificador de qual estado deve ser criado
+        */
         void GerenciadorDeEstado::addEstado(IDs::IDs ID)
         {
             Estado::Estado* estado = nullptr;
@@ -80,6 +96,9 @@ namespace Game{
             pilhaEstados.push(estado);
         }
 
+        /**
+         * @brief metodo responsavel por remover 1 estado da pilha de estados
+        */
         void GerenciadorDeEstado::removerEstado()
         {
             if(pilhaEstados.top() != nullptr && !pilhaEstados.empty())
@@ -101,7 +120,9 @@ namespace Game{
             }
         }
 
-
+        /**
+         * @brief metodo que ativa o observador do estado
+        */
         void GerenciadorDeEstado::ativarListener()
         {
             Estado::Estado* estadoAtual = getEstadoAtual();
@@ -109,7 +130,9 @@ namespace Game{
             estadoAtual->mudarEstadoListener(true);
         }
 
-
+        /**
+         * @brief metodo que desativa o observador do estado
+        */
         void GerenciadorDeEstado::desativarListener()
         {
             Estado::Estado* estadoAtual = getEstadoAtual();
@@ -117,6 +140,11 @@ namespace Game{
             estadoAtual->mudarEstadoListener(false);
         }
 
+        /**
+         * @brief metodo de acesso ao estado no topo da pilha de estados
+         * 
+         * @return retorna o estado do topo da pilha de estados
+        */
         Estado::Estado* GerenciadorDeEstado::getEstadoAtual()
         {
             if(!pilhaEstados.empty())
@@ -126,6 +154,13 @@ namespace Game{
             return nullptr;
         }
 
+        /**
+         * @brief metodo de acesso a um estado da pilha de estados
+         * 
+         * @param qtd quantidade de estados anteriores a ser percorrida ate o estado desejado
+         * 
+         * @return retorna o estado desejado da pilha de estados
+        */
         Estado::Estado* GerenciadorDeEstado::getEstado(int qtd)
         {
             std::stack<Estado::Estado*> pilhaAux = pilhaEstados;
@@ -144,6 +179,9 @@ namespace Game{
             return nullptr;
         }
 
+        /**
+         * @brief metodo que executa o estado do topo da pilha
+        */
         void GerenciadorDeEstado::executar()
         {
             if(!pilhaEstados.empty())
@@ -152,6 +190,12 @@ namespace Game{
                 estado->executar();
             }
         }
+
+        /**
+         * @brief remove um ou mais estados da pilha de estados
+         * 
+         * @param quantidade quantidades a ser removida de estados
+        */
         void GerenciadorDeEstado::removerEstado(const int quantidade)
         {
             int i = 0;

@@ -10,19 +10,14 @@ namespace Game{
             namespace Inimigo{
                 
                 /**
-                 * contrutora da classe slime 
+                 * @brief contrutora da classe slime 
                  * 
-                 * parametros:
-                 * 
-                 * (nescessarios para a costrutora do inimigo)
-                 * 
-                 * pos: posicao onde o corpo do esqueleto tera sua posicao inicial.
-                 * tam: tamanho do corpo do esqueleto
-                 * vel: velocidade com que o mesmo sera movimentado.
-                 * jogador: ponteiro para jogador que sera preciso para a movimentacao do esqueleto.
+                 * @param pos posicao onde o corpo do esqueleto tera sua posicao inicial.
+                 * @param tam tamanho do corpo do esqueleto
+                 * @param vel velocidade com que o mesmo sera movimentado.
+                 * @param jogador ponteiro para jogador que sera preciso para a movimentacao do esqueleto.
                  * 
                 */
-
                 Esqueleto::Esqueleto(sf::Vector2f pos, Jogador::Jogador *jogador, Item::Arma* arma):
                 Inimigo(pos, sf::Vector2f(TAM_ESQUELETO_X, TAM_ESQUELETO_Y), VEL_ESQUELETO, jogador, ESQUELETO_TEMPO_DE_ATAQUE,
                 IDs::IDs::esqueleto, ESQUELETO_TEMPO_LEVAR_DANO, ESQUELETO_TEMPO_ANIMACAO_DE_MORTE,DANO_ESQUELETO, arma)
@@ -31,6 +26,12 @@ namespace Game{
                     inicializarSom();
                 }
 
+                /**
+                 * @brief construtora da classe Esqueleto 
+                 * 
+                 * @param atributos json contendo as informacoes da classe
+                 * @param jogador ponteiro do jogador
+                */
                 Esqueleto::Esqueleto(nlohmann::ordered_json atributos, Jogador::Jogador* jogador):
                 Inimigo(pos, sf::Vector2f(TAM_ESQUELETO_X,TAM_ESQUELETO_Y), VEL_ESQUELETO, jogador, ESQUELETO_TEMPO_DE_ATAQUE,
                 IDs::IDs::esqueleto, ESQUELETO_TEMPO_LEVAR_DANO, ESQUELETO_TEMPO_ANIMACAO_DE_MORTE, DANO_ESQUELETO,  nullptr)
@@ -70,19 +71,16 @@ namespace Game{
                 }
                 
                 /**
-                 * destrutora da classe esqueleto
+                 * @brief destrutora da classe esqueleto
                 */
-
                 Esqueleto::~Esqueleto()
                 {
 
                 }
 
                  /**
-                 * metodo que adiciona os sprites do 
-                 * inimigo slime para que este possa ser utilizado pela animacao
+                 * @brief metodo que adiciona os sprites do inimigo esqueoeto para que este possa ser utilizado pela animacao
                 */
-
                 void Esqueleto::inicializaAnimacao()
                 {
                     const sf::Vector2f origem = sf::Vector2f(tam.x/2.5,tam.y/2.2);
@@ -94,11 +92,8 @@ namespace Game{
                 }
 
                 /**
-                 * metodo que define qual sprite sera 
-                 * chamado e atualizado no momento da
-                 * chamada do metodo.
+                 * @brief metodo que define qual sprite sera chamado e atualizado no momento da chamada do metodo.
                 */
-
                  void Esqueleto::atualizarAnimacao()
                  {
                      if(morrendo){
@@ -125,10 +120,8 @@ namespace Game{
                  }
                 
                 /**
-                 * metodo  que   atualiza   a   parte 
-                 * relacionada ao ataque do esqueleto
+                 * @brief metodo que atualiza a parte relacionada ao ataque do esqueleto
                 */
-
                 void Esqueleto::atualizarAtaque()
                 {
                     if(atacando && !morrendo)
@@ -148,6 +141,9 @@ namespace Game{
                     }
                 }
 
+                /**
+                 * @brief metodo que inicializa os efeitos sonoros do esqueleto
+                */
                 void Esqueleto::inicializarSom()
                 {
                     if(!somDeDanoBuffer.loadFromFile(SOM_DE_DANO_ESQUELETO))

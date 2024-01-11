@@ -31,11 +31,9 @@ namespace Game{
     namespace Fundo{
 
         /**
-         * construtora da classe fundo
+         * @brief construtora da classe fundo
          * 
-         * parametros:
-         * 
-         * ID: identificacao da fase(nescessario para a construtora de Ente)
+         * @param ID identificacao da fase(nescessario para a construtora de Ente)
         */
         Fundo::Fundo(IDs::IDs ID):
         Ente(ID),posCameraAnterior(pGrafico->getCamera().getCenter())
@@ -44,7 +42,7 @@ namespace Game{
         }
 
         /**
-         * destrutora da classe Fundo
+         *  @brief destrutora da classe Fundo
          *  
          * realiza a destrucao das camadas utilizadas no fundo
         */
@@ -64,7 +62,7 @@ namespace Game{
         }
 
         /**
-         * metodo  que aplica o fundo na janela
+         * @brief metodo  que aplica o fundo na janela
          * o fundo atualizando todas as camadas
          * existentes do fundo
         */
@@ -85,7 +83,7 @@ namespace Game{
         }
 
         /**
-         * metodo que percorre a array de camadas
+         * @brief metodo que percorre a array de camadas
          * desenhando as camadas na janela. 
         */
         void Fundo::desenhar()
@@ -97,13 +95,10 @@ namespace Game{
         }
 
         /**
-         * metodo que adiciona uma camada a array de camadas.
+         * @brief metodo que adiciona uma camada a array de camadas.
          * 
-         * parametros:
-         * 
-         * caminhoTextura: char que contem o caminho ate a textura
-         * vel: velociadade com que a camada se movimentara
-         * 
+         * @param caminhoTextura char que contem o caminho ate a textura
+         * @param vel velociadade com que a camada se movimentara
         */
         void Fundo::addCamada(const char* caminhoTextura, const float vel)
         {

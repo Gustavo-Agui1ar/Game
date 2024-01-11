@@ -13,14 +13,20 @@ namespace Game{
         
         Gerenciador::GerenciadorDeEstado* EstadoMenu::pEstado = Gerenciador::GerenciadorDeEstado::getGerenciadorDeEstado();
 
+        /**
+         * @brief construtora da classe EstadoMenu
+         * 
+         * @param ID identificacao do menu
+        */
         EstadoMenu::EstadoMenu(const IDs::IDs ID):
         Estado(ID), menu(nullptr)
         {
             criarMenu();
         }
 
-        
-
+        /**
+         * @brief destrutora da classe EstadoMenu
+        */
         EstadoMenu::~EstadoMenu()
         {
             if(menu)
@@ -30,11 +36,17 @@ namespace Game{
             }
         }
 
+        /**
+         * @brief metodo que altera o estado do observador do menu
+        */
         void EstadoMenu::mudarEstadoListener(const bool ativo)
         {
             menu->mudarEstadoListener(ativo);
         }
 
+        /**
+         * @brief metodo que cria o menu com base no id passado na contrutora
+        */
         void EstadoMenu::criarMenu()
         {
             Estado* estadoAtual = pEstado->getEstadoAtual();
@@ -182,17 +194,29 @@ namespace Game{
               
         }
         
-
+        /**
+         * @brief metodo que executa o menu 
+        */
         void EstadoMenu::executar()
         {
             menu->executar();
         }
 
+        /**
+         * @brief metodo de acesso ao atributo  menu
+         * 
+         * @return retorna o atributo menu 
+        */
         Menu::Menu* EstadoMenu::getMenu()
         {
             return menu;
         }
-
+        
+        /**
+         * @brief metodo de acesso ao atributo fase do menu
+         * 
+         * @return se o menu tiver o atributo fase ele o retorna se nao se retorna nullptr
+        */
         Fase::Fase* EstadoMenu::getFase()
         {
             if(ID == IDs::IDs::menu_pause)

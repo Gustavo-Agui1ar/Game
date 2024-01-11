@@ -7,15 +7,11 @@ namespace Game{
     namespace Gerenciador{
 
         /**
-         * construtor da classe gerenciadorDeColisao
+         * @brief construtor da classe gerenciadorDeColisao
          * 
-         * parametros:
-         * 
-         * personagem: lista de personagem a serem analizados
-         * obstaculos: lista de obstaculos a serem analizados
-         * 
+         * @param personagem lista de personagem a serem analizados
+         * @param obstaculos lista de obstaculos a serem analizados
         */
-
         GerenciadorDeColisao::GerenciadorDeColisao(Lista::ListaEntidade* personagem, Lista::ListaEntidade* obstaculo):
         listaPersonagem(personagem), listaObstaculo(obstaculo)
         {
@@ -23,10 +19,9 @@ namespace Game{
         }
 
         /**
-         * destrutora da  classe  gerenciadorDeColisao 
+         * @brief destrutora da  classe  gerenciadorDeColisao 
          * destroi as listas de personagem e obstaculo 
         */
-
         GerenciadorDeColisao::~GerenciadorDeColisao()
         {
              delete(listaObstaculo);
@@ -37,12 +32,13 @@ namespace Game{
         }
 
         /**
-         * metodo responsavel   por  calcular a  colisao   analizando-se  a 
-         * distancia entre nos centros  das  entidades a  serem verificadas
-         * se a distancia for negativa em distanciaEntreCentrosDasEntidades
-         * significa que houve colisao
+         * @brief metodo responsavel   por  calcular a  colisao entre duas entidades
+         * 
+         * @param ent1 entidades a ser analisada a colisao
+         * @param ent2 entidades a ser analizada a colisao
+         * 
+         * @return retorna um vetor de 2 posicoes com a distancia entre os centros em x e em y se for negativo houve colisao
         */
-
         const sf::Vector2f GerenciadorDeColisao::calculaColisao(Entidade::Entidade* ent1, Entidade::Entidade* ent2)
         {
 
@@ -64,12 +60,11 @@ namespace Game{
         }
 
         /**
-         *  metodo responsavel por verificar se houve colisao entre
+         *  @brief metodo responsavel por verificar se houve colisao entre
          *  personagens e entre  personagens e obstaculos se houver
          *  entao chama-se o metodo do objeto de colisao que trata 
          *  a cosicao os dois objetos
         */
-
         void GerenciadorDeColisao::executar()
         {
 

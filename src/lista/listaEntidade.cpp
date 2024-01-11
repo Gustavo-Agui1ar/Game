@@ -5,7 +5,10 @@
 namespace Game{
 
     namespace Lista{
-
+        
+        /**
+         * @brief construtora da classe 
+        */
         ListaEntidade::ListaEntidade():
         objListaEntidade()
         {

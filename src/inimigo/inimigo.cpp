@@ -19,14 +19,14 @@ namespace Game{
             namespace Inimigo{
 
                 /**
-                 * construtor da classe inimigo
+                 * @brief construtor da classe inimigo
                  *
-                 * parametros:
-                 *
-                 * pos,tam,vel,ID::inimigo: parametros nescessarios para inicializar a classe Personagem.
-                 * jogador: ponteiro para um objeto da classe jogador.
+                 * @param pos posicao do inimigo
+                 * @param tam tamanho do inimigo 
+                 * @param vel velocidade do inimigo
+                 * @param ID identificacao do inimigo
+                 * @param jogador ponteiro para um objeto da classe jogador.
                  */
-
                 Inimigo::Inimigo(sf::Vector2f pos, sf::Vector2f tam, const float vel, Jogador::Jogador *jogador,const float tempoAnimacaoAtaque ,IDs::IDs ID, const float tempoAnimacaoDeLevarDano, const float tempoAnimacaoDeMorrer, float dano, Item::Arma* arma):
                 Personagem(pos,tam,vel,ID, tempoAnimacaoDeLevarDano, tempoAnimacaoDeMorrer, dano),tempoAnimacaoAtaque(tempoAnimacaoAtaque)
                 {
@@ -46,14 +46,11 @@ namespace Game{
                 }
 
                 /**
-                 * metodo que faz o inimigo perseguir o jogador atualizando a movimenta��o do inimigo de acordo com a pos do jogador.
+                 * @brief metodo que faz o inimigo perseguir o jogador atualizando a movimentacao do inimigo de acordo com a pos do jogador.
                  *
-                 * parametros:
-                 *
-                 * posJogador: posi��o atual do jogador
-                 * posInimigo: posi��o atual do inimigo
+                 * @param posJogador posicao atual do jogador
+                 * @param posInimigo posicao atual do inimigo
                  */
-
                 void Inimigo::persegueJogador(sf::Vector2f posJogador, sf::Vector2f posInimigo)
                 {
                     if(posJogador.x - posInimigo.x > 0.0f){
@@ -64,10 +61,9 @@ namespace Game{
                 }
 
                 /**
-                 * metodo que faz com que o inimigo ande euma dire��o aleatoria
-                 * sendo as dire��es possiveis esquerda direita e parado.
+                 * @brief metodo que faz com que o inimigo ande euma direcao aleatoria
+                 * sendo as direcoes possiveis esquerda direita e parado.
                  */
-
                 void Inimigo::movimentoAleatorio()
                 {
                     if(tempoMover > 1.5f){
@@ -84,9 +80,9 @@ namespace Game{
                 }
 
                 /**
-                 * metodo que serve para atualizar  a movimenta��o  do  inimigo
-                 * atualizando esta de acordo se o jogador esta ou n�o no campo
-                 * campo de vis�o do inimigo(se  sim  ele  persegue  se n�o ele
+                 * @brief metodo que serve para atualizar  a movimentacao  do  inimigo
+                 * atualizando esta de acordo se o jogador esta ou nao no campo
+                 * campo de visao do inimigo(se  sim  ele  persegue  se nao ele
                  * se move aleatoriamente).
                  */
                 void Inimigo::atualizar()
@@ -103,12 +99,12 @@ namespace Game{
 
                     atualizarAnimacao();
                 }
-                /**
-                 * metodo  que  atualiza  a  anima��o  do  inimigo   de  acordo  com  o
-                 * que ele esta fazendo exemplo: movendo = true e paraEsquerda = true
-                 * a anima��o resultante  e  o sprite  de andar  no sentido da esquerdajo
-                 */
 
+                /**
+                 * @brief metodo  que  atualiza  a  animacao  do  inimigo   de  acordo  com  o
+                 * que ele esta fazendo exemplo: movendo = true e paraEsquerda = true
+                 * a animacao resultante  e  o sprite  de andar  no sentido da esquerdajo
+                 */
                 void Inimigo::atualizarAnimacao()
                 {
                     if(morrendo && podeRemover == false)
@@ -137,10 +133,9 @@ namespace Game{
                 }
 
                 /**
-                 * metodo que move o inimigo de acordo com os atributos 
+                 * @brief metodo que move o inimigo de acordo com os atributos 
                  * atacando e posicao do jogador.
                 */
-
                 void Inimigo::moveInimigo()
                 {
                      if(!atacando && !morrendo && !levandoDano)
@@ -164,7 +159,7 @@ namespace Game{
                 }
 
                 /**
-                 * metodo que verifica se o inimigo  esta atacando 
+                 * @brief metodo que verifica se o inimigo  esta atacando 
                  * se estiver atualiza o tempo decorrido da animacao de ataque.
                 */
                 void Inimigo::atualizarAtaque()
@@ -181,7 +176,7 @@ namespace Game{
                 }
                 
                 /**
-                 * metodo que inicializa a barra de vida do inimigo
+                 * @brief metodo que inicializa a barra de vida do inimigo
                  * definido posicao, tamanho e textura a mesma.
                 */
                 void Inimigo::inicializarBarraDeVida()
@@ -193,9 +188,8 @@ namespace Game{
                 }
 
                 /**
-                 * destrutora da classe desaloca a textura da barra de vida e retira o apontamento de arma
+                 * 2brief destrutora da classe desaloca a textura da barra de vida e retira o apontamento de arma
                 */
-
                 Inimigo::~Inimigo()
                 {
                     if(barraDeVida.getTexture()){
@@ -203,6 +197,11 @@ namespace Game{
                     }
                 }
 
+                /**
+                 * @brief metodo que salva o estado de um objeto desta classe
+                 * 
+                 * @return retorna json contendo as infomacoes de um objeto desta classe 
+                */
                 nlohmann::ordered_json Inimigo::salvar()
                 {
                     nlohmann::ordered_json json = salvarPersonagem();
@@ -217,7 +216,9 @@ namespace Game{
                     return json;
                 }
 
-
+                /**
+                 * @brief atualiza atributos relacionados a levar dano
+                */
                 void Inimigo::atualizarTempoDano()
                 {
                     if(levandoDano)

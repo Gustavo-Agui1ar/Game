@@ -11,9 +11,8 @@ namespace Game{
             Lista::ListaListener* GerenciadorDeEventos::listaListener = nullptr;
 
             /**
-             *construtora da classe gerenciadorDeEventos 
+             * @brief construtora da classe gerenciadorDeEventos 
             */
-
             GerenciadorDeEventos::GerenciadorDeEventos():
             pGrafico(pGrafico->getGerenciadorGrafico()),
             pEstado(pEstado->getGerenciadorDeEstado())
@@ -22,9 +21,8 @@ namespace Game{
             }
 
             /**
-             * destrutora da classe
+             * @brief destrutora da classe
             */
-
             GerenciadorDeEventos::~GerenciadorDeEventos()
             {
                 if(pEventos != nullptr)
@@ -33,9 +31,8 @@ namespace Game{
             }
 
             /**
-             * metodo acessador da classe
+             * @brief metodo acessador da classe
             */
-
             GerenciadorDeEventos* GerenciadorDeEventos::getGerenciadorDeEventos()
             {
                 if(pEventos == nullptr)
@@ -46,9 +43,8 @@ namespace Game{
             }
 
             /**
-             * metod responsavel pela verificacao de eventos 
+             * @brief metodo responsavel pela verificacao de eventos caso acontecer algum evento é acionado o tratamento do mesmo aos observers
             */
-
             void GerenciadorDeEventos::executar()
             {
                 sf::Event evento;
@@ -68,11 +64,19 @@ namespace Game{
                 }
             }
 
+            /**
+             * @brief adiciona um observer a lista
+             * 
+             * @param listener observer a ser adicionado
+            */
             void GerenciadorDeEventos::addListener(Listener::Listener* listener)
             {
                 listaListener->addListener(listener);
             }
 
+            /**
+             * @brief remove um observer da lista 
+            */
             void GerenciadorDeEventos::removerListener(Listener::Listener* listener)
             {
                 listaListener->removerListener(listener);

@@ -9,22 +9,18 @@ namespace Game{
         namespace Personagem{
 
             /**
-             * destrutora da classe personagem.
+             * @brief destrutora da classe personagem.
              */
-
             Personagem::~Personagem(){}
 
             /**
-             * costrutora da classe personagem.
+             * @brief costrutora da classe personagem.
              *
-             * parametros:
-             *
-             * pos: posi��o do corpo nescessario para construtora de entidade.
-             * tam: tamanho do corpo nescessario para construtora de entidade.
-             * ID:  ID a ser enviado nescessario para de entidade.
-             * vel: velocidade de movimento do personagem.
+             * @param pos posicao do corpo nescessario para construtora de entidade.
+             * @param tam tamanho do corpo nescessario para construtora de entidade.
+             * @param ID  ID a ser enviado nescessario para de entidade.
+             * @param vel velocidade de movimento do personagem.
              */
-
             Personagem::Personagem(const sf::Vector2f pos, const sf::Vector2f tam, const float vel, const IDs::IDs ID, const float tempoAnimacaoDeLevarDano, const float tempoAnimacaoDeMorrer, const float dano):
             Entidade(tam,ID, pos),animacao(&corpo),velocidade(sf::Vector2f(vel,0)) , velMax(vel),
              movendo(false),direcao(false), dt(0.0f),tempoAnimacaoDeLevarDano(tempoAnimacaoDeLevarDano),
@@ -40,22 +36,18 @@ namespace Game{
             }
 
             /**
-             * metodo que muda o atributo booleano movendo para false.
+             * @brief metodo que muda o atributo booleano movendo para false.
              */
-
             void Personagem::parar()
             {
                 movendo = false;
             }
 
             /**
-             * matodo que altera o estado do atributo direcao e movendo.
+             * @brief metodo que altera o estado do atributo direcao e movendo.
              *
-             * parametros:
-             *
-             * paraEsqurda: booleano que diz qual dire��o o personagem esta.
+             * @param direcao booleano que diz qual direcao o personagem esta olhando.
              */
-
             void Personagem::andar(bool direcao)
             {
                 this->direcao = direcao;
@@ -63,14 +55,8 @@ namespace Game{
             }
 
             /**
-             * metodo que move o personagem nas 4 dire��es esquerda direita cima e baixo.
-             *
-             * explica��o longa: o metodo pega a varia��o do tempo e atualiza a posi��o x
-             * em uma das 2 dire��es esquerda(distancia negativa) ou direita(distancia positiva)
-             * apos isto aplica um efeito que simula o efeito da gravidade assim alterando a posi�a� em y.
-             *
+             * @brief metodo que move o personagem nas 4 direcoes esquerda direita cima e baixo.
              */
-
             void Personagem::atualizarPosicao()
             {
                 dt = pGrafico->getTempo();
@@ -99,32 +85,28 @@ namespace Game{
             }
 
             /**
-             * metodo que retorna a velocidade do personagem.
+             * @brief metodo de acesso a velocidade do personagem.
+             * 
+             * @return retorna a velocidade do personagem
             */
-
             sf::Vector2f Personagem::getVelocidade()
             {
                 return velocidade;
             }
 
             /**
-             * metodo que seta a velocidade do personagem(este metodo altera tanto a velocidade em x quanto em y).
+             * @brief metodo que seta a velocidade do personagem(este metodo altera tanto a velocidade em x quanto em y).
              *
-             * parametros:
-             *
-             * vel: valor a ser inserido em velocidade.
+             * @param vel valor a ser inserido em velocidade.
             */
-
             void Personagem::setVelMax(sf::Vector2f vel)
             {
                 velocidade = vel;
             }
             
             /**
-             * metodo que altera o estado do boleano de ataque do personagem
-             * 
+             * @brief metodo que altera o estado do boleano de ataque do personagem
             */
-
             void Personagem::atacar()
             {
                 atacando = true;
@@ -133,17 +115,15 @@ namespace Game{
 
 
             /**
-             * metodo que altera o estado do boleano de ataque do personagem
-             * 
+             * @brief metodo que altera o estado do boleano de ataque do personagem
             */
-
             void Personagem::pararAtaque()
             {
                 atacando = false;
             }
 
             /**
-             * metodo que atualiza a barra de vida do personagem
+             * @brief metodo que atualiza a barra de vida do personagem
              * de acordo com sua posicao
             */
             void Personagem::atualizarBarraDeVida()
@@ -154,9 +134,8 @@ namespace Game{
             }
             
             /**
-             * metodo que mostra o corpo e a barra de vida na tela.
+             * @brief metodo que mostra o corpo e a barra de vida na tela.
             */
-           
             void Personagem::desenhar()
             {
                 pGrafico->desenhaElemento(barraDeVida);
@@ -165,23 +144,19 @@ namespace Game{
             }
 
             /**
-             * metodo que  retorna o estado do 
+             * @brief metodo que  retorna o estado do 
              * boleano de morrer do personagem
             */
-
             const bool Personagem::getMorrer()
             {
                 return morrendo;
             }
             
             /**
-             * metodo que auxilia na tomada de dano.
+             * @brief metodo que auxilia na tomada de dano.
              * 
-             * parametros:
-             * 
-             * dano: valor a ser descontado da vida do jogador.
+             * @param dano valor a ser descontado da vida do jogador.
             */
-
             void Personagem::tomarDano(const float dano)
             {
                 if(!levandoDano)
@@ -206,10 +181,9 @@ namespace Game{
             }
 
             /**
-             * metodo responsavel por atualiar o
+             * @brief metodo responsavel por atualiar o
              * estado de tomarDano do personagem
             */
-
             void Personagem::atualizarTempoDano()
             {
                 tempoDano += pGrafico->getTempo();
@@ -223,10 +197,9 @@ namespace Game{
             }
 
             /**
-             * metodo que seta a arma do personagem atribuindo a ela: dano e tamanho.
+             * @brief metodo que seta a arma do personagem atribuindo a ela: dano e tamanho.
              * ( posicao  é  inicializada  no  construtor  do  objeto  arma )
             */
-            
             void Personagem::setArma(Item::Arma* arma)
             {
                 this->arma = arma;
@@ -234,6 +207,11 @@ namespace Game{
                 this->arma->setTam(tam);
             }
 
+            /**
+             * @brief metodo que salva o estado de um objeto desta classe 
+             * 
+             * @return retorna um json contendo o estado atual de um objeto desta classe
+            */
             nlohmann::ordered_json Personagem::salvarPersonagem()
             {
                 nlohmann::ordered_json json = salvarEntidade();

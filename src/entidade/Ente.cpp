@@ -6,13 +6,10 @@ namespace Game{
         Gerenciador::GerenciadorGrafico* Ente::pGrafico = Gerenciador::GerenciadorGrafico::getGerenciadorGrafico();
 
         /**
-         * construtora da classe ente
+         * @brief construtora da classe ente
          * 
-         * parametros:
-         * 
-         * ID: id a ser colocado no atributo id de ente
+         * @param ID id a ser colocado no atributo id de ente
         */
-
         Ente::Ente(const IDs::IDs ID):
         ID(ID)
         {
@@ -20,22 +17,25 @@ namespace Game{
         }
 
         /**
-         * destrutora da classe ente
+         * @brief destrutora da classe ente
         */
-
         Ente::~Ente(){
 
         }
 
         /**
-         * metodo que retorna o id de ente
+         * @brief metodo que retorna o id de ente
         */
-
         const IDs::IDs Ente::getID()
         {
             return ID;
         }
 
+        /**
+         * @brief metodo que salva o estado de um objeto desta classe
+         * 
+         * @return retorna um json contendo o estado atual de um objeto desta classe
+        */
         nlohmann::ordered_json Ente::salvarEnte()
         {
             nlohmann::ordered_json json;

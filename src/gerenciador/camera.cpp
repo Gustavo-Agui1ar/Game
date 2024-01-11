@@ -7,13 +7,10 @@ namespace Game {
     namespace Gerenciador {
 
             /**
-             * construtor da classe camera
+             * @brief construtor da classe camera
              * 
-             * parametros:
-             * 
-             * tamJanela: tamanho que a camera deve assumir
+             * @param tamJanela tamanho que a camera deve assumir
             */
-
             Camera::Camera(const sf::Vector2f tamJanela):
             tamJanela(tamJanela),camera(sf::Vector2f(tamJanela.x / 2.0f, tamJanela.y / 2.0f), tamJanela)
             {
@@ -21,34 +18,36 @@ namespace Game {
             }
 
             /**
-             *destrutor da classe 
+             *@brief destrutor da classe 
             */
-
             Camera::~Camera()
             {
 
             }
 
             /**
-             *metodo que retorna a camera 
+             * @brief metodo de acesso a camera
+             * 
+             * @return retorna a camera
             */
-
             sf::View Camera::getCamera(){
                 return camera;
             }
 
             /**
-             * metodo que atualiza a posicao da camera
+             * @brief metodo que atualiza a posicao da camera
+             * 
+             * @param posCenter posicao a ser o foco da camera
             */
-
             void Camera::resetar(const sf::Vector2f posCenter){
                 camera.setCenter(posCenter);
             }
 
             /**
-             * metodo que atualiza a posicao da camera
+             * @brief metodo que atualiza a posicao da camera
+             * 
+             * @param pos posicao a ser atribuida a camera
             */
-           
             void Camera::atualizar(const sf::Vector2f pos){
                 camera.setCenter(pos);
             }

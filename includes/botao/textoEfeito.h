@@ -15,7 +15,7 @@ namespace Game{
 
                 //atributos referentes ao efeito do botao
               
-                int transparente;
+                int transparencia;
                 bool apagando;
 
                 //metodo de atualizacao dos atributos de efeito

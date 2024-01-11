@@ -5,15 +5,12 @@ namespace Game{
     namespace Entidade{
 
         /**
-         * costrutora da classe entidade
+         * @brief costrutora da classe entidade
          *
-         * parametros:
-         *
-         * pos:   inicializa a posi��o do corpo.
-         * tam:   inicializa o tamanho do corpo.
-         * corpo: inicializa o corpo da entidade.
+         * @param pos posicao do corpo.
+         * @param tam tamanho do corpo.
+         * @param ID identificacao do objeto da classe.
          */
-        
         Entidade::Entidade(const sf::Vector2f tam,const IDs::IDs ID, const sf::Vector2f pos):
         Ente(ID)
         {
@@ -25,29 +22,29 @@ namespace Game{
         }
 
         /**
-         * metodo que retorna a posicao do corpo da entidade.
+         * @brief metodo de acesso a posicao do corpo.
+         * 
+         * @return retorna a posicaop do corpo de entidade
          */
-
         sf::Vector2f Entidade::getPos()
         {
             return pos;
         }
 
         /**
-         * metodo que retorna o tamanho do corpo da entidade.
+         * @brief metodo de acesso ao tamanho do corpo.
+         * 
+         * @return retorna o tamanho do corpo de entidade
          */
-
         sf::Vector2f Entidade::getTam()
         {
             return tam;
         }
 
         /**
-         * metodo que seta a posi��o do corpo da entidade.
+         * @brief metodo que modifica posicao do corpo.
          *
-         * parametros:
-         *
-         * pos: valor a ser atribuido a pos de entidade.
+         * @param pos valor a ser atribuido como posicao vdo corpo.
          */
 
         void Entidade::setPos(sf::Vector2f pos)
@@ -57,52 +54,54 @@ namespace Game{
         }
 
         /**
-         * metodo que desenha o corpo da entidade na tela.
+         * @brief metodo que desenha a entidade na tela.
          */
-
         void Entidade::desenhar()
         {
             pGrafico->desenhaElemento(corpo);
         }
 
         /**
-         * metodo que retorna o estado da variavel remover
+         * @brief  metodo qde acesso ao atributo remover
+         * 
+         * @return retorna o estado do boleano remover 
         */
-
         const bool Entidade::getRemover()
         {
             return podeRemover;
         }
 
         /**
-         * metodo  que  altera  o estado da 
+         * @brief metodo  que  altera  o estado da 
          * variavel remover para verdadeiro
         */
-
         void Entidade::remover()
         {
             podeRemover = true;
         }
 
         /**
-         * metodo que altera/define tamanho 
-         * do  atributo  corpo  de entidade
+         * @brief metodo que define o tamanho 
+         * do atributo tam de entidade
         */
-
         void Entidade::setTam(const sf::Vector2f tam){
             corpo.setSize(tam);
             this->tam = tam;
         }
 
         /**
-         * destrutora da classe entidade
+         * @brief destrutora da classe entidade
         */
-
         Entidade::~Entidade()
         {
 
         }
 
+        /**
+         * @brief metodo que salva o estado de um objeto desta classe
+         * 
+         * @return retorna um json contendo o estado atual de um objeto desta classe
+        */
         nlohmann::ordered_json Entidade::salvarEntidade()
         {
             nlohmann::ordered_json json = salvarEnte();

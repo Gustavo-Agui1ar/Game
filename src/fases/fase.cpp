@@ -6,17 +6,14 @@ namespace Game{
 
     namespace Fase{
         
-        /**
-         * construtor da classe fase
-         * 
-         * parametros:
-         * 
-         * ID_Fase: identificador da fase
-         * ID_Fundo: identificador do fundo
-        */
-        
         Listener::ListenerFase* Fase::listenerFase = nullptr;
-
+        
+        /**
+         * @brief construtor da classe fase
+         * 
+         * @param ID_Fase identificador da fase
+         * @param ID_Fundo identificador do fundo
+        */
         Fase::Fase(const IDs::IDs ID_Fase, const IDs::IDs ID_Fundo):
         Ente(ID_Fase),fundo(ID_Fundo)
         {
@@ -41,10 +38,9 @@ namespace Game{
         }
 
         /**
-         * destrutor da fase desaloca todos
-         * os  ponteiros existentes da fase 
+         * @brief destrutor da fase desaloca todos
+         * os ponteiros existentes da fase 
         */
-
         Fase::~Fase()
         {
             if(pColisao != nullptr)
@@ -59,13 +55,10 @@ namespace Game{
         }
 
         /**
-         * metodo responsavel por criar o jogador da fase
+         * @brief metodo responsavel por criar o jogador da fase
          * 
-         * parametros:
-         * 
-         * pos: posicao de onde o player deve ser criado
+         * @param pos posicao de onde o player deve ser criado
         */
-
         void Fase::criarJogador(const sf::Vector2f pos)
         {
             Entidade::Item::Arma* armaJogador = new Entidade::Item::Arma(IDs::IDs::armaDoJogador); 
@@ -91,14 +84,11 @@ namespace Game{
         }
 
         /**
-         * metodo rtesponsavel por criar o inimigo da fase
+         * @brief metodo responsavel por criar o inimigo da fase
          * 
-         * parametros:
-         * 
-         * pos: posicao de onde o inimigo deve ser criado
-         * letra: indetificador de qual inimigo deve ser criado
+         * @param pos posicao de onde o inimigo deve ser criado
+         * @param letra indetificador de qual inimigo deve ser criado
         */
-
         void Fase::criarInimigo(const sf::Vector2f pos, const char letra)
         {
             Entidade::Item::Arma* arma = new Entidade::Item::Arma(IDs::IDs::armaDoIimigo);
@@ -143,14 +133,11 @@ namespace Game{
         }
 
         /**
-         * metodo responsavel por analizar qual entidade deve ser criada
+         * @brief metodo responsavel por analizar qual entidade deve ser criada
          * 
-         * parametros:
-         * 
-         * letra: inde3tificador para filtrar qual entidade deve ser criada
-         * pos: posicao inicial da entidade
+         * @param letra inde3tificador para filtrar qual entidade deve ser criada
+         * @param pos posicao inicial da entidade
         */
-
         void Fase::criarEntidade(char letra, const sf::Vector2i pos)
         {
             switch(letra)
@@ -173,6 +160,13 @@ namespace Game{
             }
         }
 
+        /**
+         * @brief metodo que cria uma entidade com base no id
+         * 
+         * @param ID identificacao da entidade a ser criada
+         * @param entidade json com as informacoes da entidade
+         * @param arma json com as informcaoes da arma a ser criada
+        */
         void Fase::criarEntidade(IDs::IDs ID, nlohmann::ordered_json entidade , nlohmann::ordered_json arma)
         {
             Entidade::Entidade* personagem = nullptr;
@@ -299,9 +293,8 @@ namespace Game{
         }
 
         /**
-         * atualiza a lista de entidades  juntamente com a verificacao da colisao e atulizacao do fundo da fase
+         * @brief atualiza a lista de entidades  juntamente com a verificacao da colisao e atulizacao do fundo da fase
         */
-
         void Fase::executar()
         {
             jogador = getJogador();
@@ -320,10 +313,9 @@ namespace Game{
         }
 
         /**
-         * metodo responsascvel por atualizar as
+         * @brief metodo responsavel por desenhar as
          * listas  de  personagens  e obstaculos
         */
-
         void Fase::desenhar()
         {
             fundo.executar();
@@ -334,10 +326,10 @@ namespace Game{
         }
 
         /**
-         * metodo   que  retorna  o  ponteiro  do
-         * jogador se existir se nao retorna null
+         * @brief metodo que retorna o ponteiro do jogador se existir se nao retorna null
+         * 
+         * @return retorna o jogador se ele existir 
         */
-
          Entidade::Personagem::Jogador::Jogador* Fase::getJogador()
          {
             for(int i = 0; i < listaPersonagens->getTam(); i++)
@@ -351,11 +343,19 @@ namespace Game{
             return nullptr;
         }
 
+        /**
+         * @brief metodo que altera o estado do observador da fase 
+        */
         void Fase::mudarEstadoListener(const bool ativo)
         {
             listenerFase->mudarEstado(ativo);
         }
 
+        /**
+         * @brief salva informacoes da fase
+         * 
+         * @return retorna um json contendo as informacoes da fase
+        */
         nlohmann::ordered_json Fase::salvarFase()
         {
             nlohmann::ordered_json json = salvarEnte();
@@ -363,6 +363,11 @@ namespace Game{
             return json;
         }
 
+        /**
+         * @brief metodo que salva as informacoes da lista de personagens e obstaculos
+         * 
+         * @return retorna um json contendo  as informacoes da lista personagens e lista de obstaculos
+        */
         nlohmann::ordered_json Fase::salvarEntidades()
         {
             nlohmann::ordered_json json;
@@ -390,6 +395,11 @@ namespace Game{
             return json;
         }
 
+        /**
+         * @brief metodo que cria uma plataforma sem textura
+         * 
+         * @param pos posicao da plataforma
+        */
         void Fase::criarPlataformaInvisivel(const sf::Vector2f pos)
         {
             

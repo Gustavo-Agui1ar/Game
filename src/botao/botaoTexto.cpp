@@ -6,7 +6,16 @@ namespace Game{
     namespace Menu{
 
         namespace Botao{
-
+            
+            /**
+             * @brief construtora da classe BotaoTexto
+             * 
+             * @param infoTexto informacao do botao (texto)
+             * @param pos posicao do botao
+             * @param tam tamanho do botao
+             * @param id identificacao do botao
+             * @param corSelecionado cor do botao ao ser selecionado
+            */
             BotaoTexto::BotaoTexto(const std::string infoTexto, const sf::Vector2f pos, const sf::Vector2f tam, const IDs::IDs ID, const sf::Color corSelecionado):
             Botao(tam,pos,ID,TEMPO_TROCA),corSelecionado(corSelecionado),texto(pGrafico->carregarFonte("../Game/animations/botton/menu.ttf"), infoTexto)
             {
@@ -19,17 +28,28 @@ namespace Game{
                 );
                 this->texto.setPos(posTexto);
             }
-
+            
+            /**
+             * @brief destrutora da classe BotaoTexto
+            */
             BotaoTexto::~BotaoTexto()
             {
 
             }
 
+            /**
+             * @brief metodo de acesso ao atributo tamanho do texto
+             * 
+             * @return retorna um retangulo que determina o tamanho do texto
+            */
             const sf::Vector2f BotaoTexto::getTamTexto()
             {
                 return sf::Vector2f(texto.getTexto().getGlobalBounds().width, texto.getTexto().getGlobalBounds().height);
             }
-
+            
+            /**
+             * @brief metodo responsavel por mostrar o botao na tela
+            */
             void BotaoTexto::desenhar()
             {
                 atualizarAnimacao();
@@ -37,6 +57,9 @@ namespace Game{
                 pGrafico->desenhaElemento(texto.getTexto());
             }
 
+            /**
+             * @brief metodo responsavel por atualizar a animacao do botao
+            */
             void BotaoTexto::atualizarAnimacao()
             {
                 tempo += pGrafico->getTempo();
@@ -73,7 +96,12 @@ namespace Game{
                     tempo = 0.0f;
                 }
             }
-
+            
+            /**
+             * @brief metodo que atualiaza a posicao do botao
+             * 
+             * @param pos posicao a ser definida no botao 
+            */
             void BotaoTexto::atualizarPosicaoDaCaixa(const sf::Vector2f pos)
             {
                 this->pos = pos;
@@ -87,6 +115,11 @@ namespace Game{
 
             }
 
+            /**
+             * @brief metodo que altera o atributo botaoSelecionado
+             * 
+             * @param selecionado boleano a ser atribuido em botaoSelecionado
+            */
             void BotaoTexto::setSelecionado(bool selecionado)
             {
                 texto.setCorTexto(selecionado ? corSelecionado : sf::Color::White);
@@ -94,6 +127,11 @@ namespace Game{
                 texto.resetar();
             }
 
+            /**
+             * @brief metodo de acesso ao atributo botaoSelecionado
+             * 
+             * @return rretorna um boleano com o valor do atributo botaoSelecionado
+            */
             const bool BotaoTexto::getSelecionado()
             {
                 return botaoSelecionado;

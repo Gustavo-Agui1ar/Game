@@ -113,21 +113,45 @@ namespace Game{
             this->quadroAtual = imgAtual;
         }
 
-        
+        /**
+         * @brief metodo que modifica o atributo tempoTotal
+         * 
+         * @param tempo valor a ser atribuido em tempototal
+         * 
+        */
         void Imagem::setTempoTotal(const float tempo)
         {
             tempoTotal = tempo;
         }
 
+        /**
+         * @brief metodo que retorna o atributo tempoTotal
+         * 
+         * @return retorna o valor em tempototal
+         * 
+        */
         const float Imagem::getTempoTotal()
         {
             return tempoTotal;
         }
         
+        /**
+         * @brief metodo que retorna o atributo quadroAtual
+         * 
+         * @return retorna o valor em quadroAtual
+         * 
+        */
         const unsigned int Imagem::getQuadroAtual()
         {
             return quadroAtual;    
         }
+
+        /**
+         * @brief metodo que retorna o atributo origem
+         * 
+         * @return retorna o valor em origem
+         * 
+        */
         const sf::Vector2f Imagem::getOrigem(){
             return origem;
         }

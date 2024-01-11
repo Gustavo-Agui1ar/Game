@@ -16,9 +16,8 @@ namespace Game{
     namespace Fase{
         
         /**
-         * construtor da classe caverna
+         * @brief construtor da classe caverna
         */
-
         Caverna::Caverna():
         Fase(IDs::IDs::caverna, IDs::IDs::caverna)
         {
@@ -26,18 +25,16 @@ namespace Game{
         }
 
         /**
-         * destrutor da classe
+         * @brief destrutor da classe
         */
-
         Caverna::~Caverna()
         {
 
         }
 
         /**
-         * metodo responsavel pela criacao do fundo da fase caverna
+         * @brief metodo responsavel pela criacao do fundo da fase caverna
         */
-
         void Caverna::criarFundo()
         {
             fundo.addCamada(CAMADA_8_1,0.0f);
@@ -52,16 +49,15 @@ namespace Game{
 
 
         /**
-         * metodo  que  cria  fase  com  base  em seu arquivo txt
+         * @brief metodo  que  cria  fase  com  base  em seu arquivo txt
          * quando nescessario chama o metodo criador de entidades
         */
-
         void Caverna::criarMapa()
         {
             std::ifstream arquivo;
             std::string linha;
 
-            arquivo.open("..//Game//includes//fases//fase-1.txt");
+            arquivo.open("../Game/includes/fases/fase-1.txt");
 
             if(!arquivo.is_open())
             {
@@ -90,9 +86,10 @@ namespace Game{
         }
 
         /**
-         * metodo que cria uma plataforma
+         * @brief metodo que cria uma plataforma
+         * 
+         * @param pos posicao da plataforma
         */
-
         void Caverna::criarPlataforma(const sf::Vector2f pos)
         {
             Entidade::Obstaculo::Plataforma* plataforma = new Entidade::Obstaculo::Plataforma(pos,sf::Vector2f(200.0f,40.0f), IDs::IDs::plataforma, IDs::IDs::caverna);

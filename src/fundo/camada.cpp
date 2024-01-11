@@ -7,13 +7,11 @@ namespace Game{
     namespace Fundo{
 
         /**
-         * construtora da classe camada 
+         * @brief construtora da classe camada 
          * 
-         * parametros:
-         * 
-         * tamjanela: tamanho desta camada.
-         * textura: textura a ser usada nesta camada.
-         * velociadade: velocidade com que a camada se movimentara na tela.
+         * @param tamjanela tamanho desta camada.
+         * @param textura textura a ser usada nesta camada.
+         * @param velociadade velocidade com que a camada se movimentara na tela.
          * 
         */
         Camada::Camada(const sf::Vector2f tamJanela, sf::Texture textura,const float velocidade):
@@ -34,12 +32,12 @@ namespace Game{
         }
         
         /**
-         *  destrutora da classe camada.
+         * @brief destrutora da classe camada.
         */
         Camada::~Camada(){}
 
         /**
-         * metodo que faz a troca do fundo Auxiliar 
+         * @brief metodo que faz a troca do fundo Auxiliar 
          * e do fundo Principal.
          * 
         */
@@ -52,11 +50,9 @@ namespace Game{
         }
 
         /**
-         * metodo desenha a camada na tela
+         * @brief metodo desenha a camada na tela
          * 
-         * parametros:
-         * 
-         * window: janela a ser desenhada a camada.
+         * @param window janela a ser desenhada a camada.
          *  
         */
         void Camada::desenharCamada(sf::RenderWindow* window)
@@ -70,10 +66,10 @@ namespace Game{
 
 
         /**
-         * metodo que atualiza a posicao da camada na tela 
+         * @brief metodo que atualiza a posicao da camada na tela 
          * 
-         * ds: variacao na distancia percorrida pelo jogador.
-         * posCameraAtual: nescessario para determinar as extremidades da janela.
+         * @param ds variacao na distancia percorrida pelo jogador.
+         * @param posCameraAtual nescessario para determinar as extremidades da janela.
          *  
         */
         void Camada::atualizar(const sf::Vector2f ds, const sf::Vector2f posCameraAtual)

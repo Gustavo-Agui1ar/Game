@@ -97,9 +97,5 @@ namespace Game{
                 listener = nullptr;
             }
         }
-
-
     }
-
-
 }

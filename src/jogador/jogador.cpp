@@ -11,7 +11,10 @@ namespace Game{
         namespace Personagem{
 
             namespace Jogador{
-
+                    
+                    /**
+                     * @brief destrutora da classe Jogador 
+                    */
                     Jogador::~Jogador()
                     {
                         if(listenerJogador != nullptr)
@@ -29,14 +32,10 @@ namespace Game{
                     }
                     
                     /**
-                     * construtora da classe Jogador
+                     * @brief construtora da classe Jogador
                      *
-                     * parametros:
-                     *
-                     * pos: atributo nescessario para inicializar a classe Entidade
-                     * tam: atributo nescessario para inicializar a classe Entidade
-                     * vel: atributo nescessario para inicializar a classe Personagem
-                     * ID jogador : atributo de identificacao da classe jogador.
+                     * @param pos posicao do jogador
+                     * @param arma arma do jogador
                      */
                     Jogador::Jogador(const sf::Vector2f pos,  Item::Arma* arma):
                     Personagem(pos,sf::Vector2f(TAM_JOGADOR_X,TAM_JOGADOR_Y), VELOCIDADE_JOGADOR_X, IDs::IDs::jogador, JOGADOR_TEMPO_LEVAR_DANO, JOGADOR_ANIMACAO_DE_MORTE, DANO_JOGADOR),noChao(false),
@@ -58,6 +57,11 @@ namespace Game{
                        }
                     }
 
+                    /**
+                     * @brief construtora da classe jogador
+                     * 
+                     * @param atributos json contendo todas as informacoes da classe jogador
+                    */
                     Jogador::Jogador(nlohmann::ordered_json atributos):
                     Personagem(pos,sf::Vector2f(TAM_JOGADOR_X,TAM_JOGADOR_Y), VELOCIDADE_JOGADOR_X, IDs::IDs::jogador, JOGADOR_TEMPO_LEVAR_DANO, JOGADOR_ANIMACAO_DE_MORTE, DANO_JOGADOR),
                     tempoAnimacaoDash(TEMPO_DASH), velDash(VELOCIDADE_DASH_JOGADOR_X), tempoAnimacaoAtaque(JOGADOR_TEMPO_DANO) ,tempoAtaque(0.0f), listenerJogador(new Listener::ListenerJogador(this))
@@ -106,6 +110,9 @@ namespace Game{
                         }
                     }
 
+                    /**
+                     * @brief metodo que inicializa a animacao  do jogador
+                    */
                     void Jogador::inicializarAnimacao()
                     {
                         const sf::Vector2f origemT = sf::Vector2f((tam.x/2),(tam.y/5));
@@ -121,10 +128,9 @@ namespace Game{
                     }
 
                     /**
-                     * metodo  que atualiza a pois��o,aniimacao,
+                     * @brief metodo  que atualiza a poiscao,aniimacao,
                      * barra de vida e camera que seque o jogador
                      */
-
                     void Jogador::atualizar()
                     {
                         atualizarPosicao();
@@ -147,9 +153,8 @@ namespace Game{
                     }
 
                     /**
-                     * metodo que muda o booleano que dita se o jogador pode pular ou n�o
+                     * @brief metodo que muda o booleano que dita se o jogador pode pular ou nao
                      */
-
                     void Jogador::podePular()
                     {
                         noChao = true;
@@ -157,9 +162,8 @@ namespace Game{
                     }
 
                     /**
-                     *metodo que faz o pulo do jogador.
+                     *@brief metodo que faz o pulo do jogador.
                      */
-
                     void Jogador::pular()
                     {
                         if(!atacando && !levandoDano)
@@ -174,9 +178,8 @@ namespace Game{
                     }
 
                     /**
-                     * metodo que atulaiza a anima��o do jogador de acordo com seu estado atual.
+                     * @brief metodo que atualiza a animacao do jogador de acordo com seu estado atual.
                      */
-
                     void Jogador::atualizarAnimacao()
                     {
                         if(morrendo){
@@ -204,9 +207,11 @@ namespace Game{
                     }
 
                     /**
-                     * metodo que define a colisao do personnagem com outras entidades  
+                     * @brief metodo que define a colisao do personagem com outras entidades  
+                     * 
+                     * @param outraEntidade entidade a ser analizada a colisao com o jogador
+                     * @param ds distancia entre as duas entidades
                     */
-
                     void Jogador::colisao(Entidade* outraEntidade, sf::Vector2f ds)
                     {
                         if(outraEntidade->getID() == IDs::IDs::red_slime ||
@@ -226,10 +231,9 @@ namespace Game{
                     }
 
                     /**
-                    * metodo que inicializa e define a posicao da barra de vida do jogador
+                    * @brief metodo que inicializa e define a posicao da barra de vida do jogador
                     * alem disso define a textura que a barra tera jutamente com o seu tamanho.
                     */
-                   
                     void Jogador::inicializarBarraDeVida()
                     {
                         sf::Vector2f tuboDeVida = sf::Vector2f(BARRA_VIDA_JOGADOR_X, BARRA_VIDA_JOGADOR_Y);
@@ -242,7 +246,10 @@ namespace Game{
                         barraDeVida.setTexture(texturaVida);
                         tuboVida.setTexture(texturaBarra);
                     }
-
+                    
+                    /**
+                     * @brief metodo queinicializa a barra de stamina do jogador
+                    */
                     void Jogador::inicializarBarraDeStamina()
                     {
                         sf::Vector2f stamina = sf::Vector2f(BARRA_VIDA_JOGADOR_X, BARRA_VIDA_JOGADOR_Y/2.0f);
@@ -258,11 +265,9 @@ namespace Game{
                     }
                     
                     /**
-                     * metodo que atualiza a posicaoda barra de vida do jogador
-                     * tanto atualizando a sua posicao como seu tamanho de acordo
-                     * com o atributo vida do jogador. 
+                     * @brief  metodo que atualiza a posicao da barra de vida do jogador
+                     * assim como seu tamanho de acordo com o atributo vida do jogador. 
                     */
-
                     void Jogador::atualizarBarraDeVida()
                     {
                         
@@ -275,6 +280,10 @@ namespace Game{
                         barraDeVida.setPosition(sf::Vector2f(posBarra.x + 7.0f, posBarra.y + tuboVida.getSize().y / 2.0f - barraDeVida.getSize().y / 2.0f));
                     }
 
+                    /**
+                     * @brief  metodo que atualiza a posicao da barra de stamina do jogador
+                     * assim como seu tamanho de acordo com o atributo stamina do jogador. 
+                    */
                     void Jogador::atualizarBarraDeStamina()
                     {
                         
@@ -290,7 +299,7 @@ namespace Game{
                     }
 
                     /**
-                    * metodo responsavel por desenhar a vida e o personagem na tela 
+                    * @brief metodo responsavel por desenhar a vida, stamina e o personagem na tela 
                     * com a ajuda do metodo desenhar elemento.
                     */
                     void Jogador::desenhar()
@@ -303,10 +312,9 @@ namespace Game{
                     }
 
                     /**
-                     * metodo  responsavel  por   atualizar   a  posicao 
+                     * @brief metodo  responsavel  por   atualizar   a  posicao 
                      * da arma do jogador dependendo de seu estado atual
                     */
-
                     void Jogador::atualizarArma()
                     {
                         if(atacando && !morrendo)
@@ -333,17 +341,30 @@ namespace Game{
                             tempoAtaque = 0.0f;
                         }
                     }
-
+                    
+                    /**
+                     * @brief metodo de acesso ao atributo noChao do jogador 
+                     * 
+                     * @return retorna o atributo noChao do jogador
+                    */
                     const bool Jogador::getNoChao()
                     {
                         return noChao;
                     }
 
+                    /**
+                     * @brief metodo que muda o estado do observador do jogador
+                    */
                     void Jogador::mudarEstadoListener(const bool ativo)
                     {
                         listenerJogador->mudarEstado(ativo);
                     }
 
+                    /**
+                     * @brief metodo que salva o estado de um objeto da classe jogador
+                     * 
+                     * @return retorna um json contendo as informacoes de um objeto jogador
+                    */
                     nlohmann::ordered_json Jogador::salvar()
                     {
                         nlohmann::ordered_json json = salvarPersonagem();
@@ -364,6 +385,9 @@ namespace Game{
                         return json;
                     }
 
+                    /**
+                     * @brief metodo que inicializa os efeitos sonoros do jogador
+                    */
                     void Jogador::inicializarSom()
                     {
                         if(!somAtaqueBuffer.loadFromFile(CAMINHO_SOM_ATAQUE))
@@ -374,6 +398,9 @@ namespace Game{
                         somAtaque.setBuffer(somAtaqueBuffer);
                     }
 
+                    /**
+                     * @brief metodo que atualiza a posicao do jogador
+                    */
                     void Jogador::atualizarPosicao()
                     {
                         dt = pGrafico->getTempo();
@@ -399,6 +426,9 @@ namespace Game{
                         velocidade.x = velMax;
                     }
 
+                    /**
+                     * @brief metodo que atualiza o dash do jogador
+                    */
                     void Jogador::AtualizarDash()
                     {
                         sf::Vector2f ds(0.0f, 0.0f);
@@ -423,6 +453,9 @@ namespace Game{
                         }
                     }
 
+                    /**
+                     * @brief muda o estado dos atributos relacionados ao dash
+                    */
                     void Jogador::pararDash()
                     {
                         emDash = false;
@@ -430,6 +463,9 @@ namespace Game{
                         tempoDash = 0.0f;
                     }
 
+                    /**
+                     * @brief muda o estado dos atributos relacionados ao dash
+                    */
                     void Jogador::fazerDash()
                     {
                         if(tempoDash == 0.0f)
@@ -438,7 +474,14 @@ namespace Game{
                                 podeDash = true;
                         }
                     }
-
+                    
+                    /**
+                     * @brief metodo que altera o atributo estamina
+                     * 
+                     * @param qtdUso quantidade de estamina a ser consumida
+                     * 
+                     * @return retorna um boleano dizendo se foi possivel consumir a quantidade de estamina recebida
+                    */
                     bool Jogador::usarStamina(float qtdUso)
                     {
                         if(stamina - qtdUso >= 0)
@@ -450,6 +493,9 @@ namespace Game{
                         return false;
                     }
 
+                    /**
+                     * @brief metodo que atualiza os atributos relacionados a stamina
+                    */
                     void Jogador::atualizarRegeneracaoStamina()
                     {
                         if(stamina != STAMINA_MAXIMA)
@@ -479,7 +525,6 @@ namespace Game{
                             }
                         }
                     }
-
             }
         }
     }
