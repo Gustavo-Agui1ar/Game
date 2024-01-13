@@ -4,7 +4,12 @@
 namespace Game{
 
     namespace Menu{
-
+        
+        /**
+         * @brief contrutora da classe MenuCarregar
+         * 
+         * @param fase fase a ser desenhada como fundo
+        */
         MenuCarregar::MenuCarregar(Fase::Fase* fase):
         MenuPrincipal(IDs::IDs::menu_carregar, "CARREGAR JOGO", 100),gerenciadorArquivo(),fase(fase)
         {
@@ -22,6 +27,9 @@ namespace Game{
             inicializarCards();
         }
 
+        /**
+         * @brief destrutora da classe MenuCarregar
+        */
         MenuCarregar::~MenuCarregar()
         {
             std::list<Card*>::iterator it;
@@ -40,6 +48,9 @@ namespace Game{
         
         }
 
+        /**
+         * @brief inicializa os cards de carregamento
+        */
         void MenuCarregar::inicializarCards()
         {
             float espacamento = (tamJanela.x/5.0f)/5.0f;
@@ -67,6 +78,9 @@ namespace Game{
             (*itCards)->setSelecionado(true);
         }
 
+        /**
+         * @brief metodo que seleciona o card anterior da lista de cards caso este esteja no inicio voltasse ao final da lista
+        */
         void MenuCarregar::selecionaEsquerda()
         {
             (*itCards)->setSelecionado(false);
@@ -79,6 +93,9 @@ namespace Game{
             (*itCards)->setSelecionado(true);
         }
 
+        /**
+         * @brief metodo que seleciona o proximo card da lista de cards caso este esteja no final voltasse ao inicio da lista
+        */
         void MenuCarregar::selecionaDireita()
         {
             (*itCards)->setSelecionado(false);
@@ -90,6 +107,9 @@ namespace Game{
             (*itCards)->setSelecionado(true);
         }
         
+        /**
+         * @brief metodo que deleta as informacoes do card selecionado
+        */
         void MenuCarregar::deletarArquivos()
         {
             Card* card = (*itCards);
@@ -102,7 +122,12 @@ namespace Game{
                 card->deletarTextura();
             }
         }
-
+        
+        /**
+         * @brief metodo de acesso ao card selecionado
+         * 
+         * @return retorna um card com as informcoes do card selecionado
+        */
         Card* MenuCarregar::getCardSelecionado()const
         {
             const std::string entidade = (*itCards)->getCaminhoEntidade(); 
@@ -112,12 +137,18 @@ namespace Game{
             return new Card(sf::Vector2f(0,0), entidade, imagem, fase);
         }
 
+        /**
+         * @brief metodo de correcao do evento de entrar em menus 
+        */
         void MenuCarregar::criarBotaoBug()
         {
             addBotao("Voltar", sf::Vector2f(tamJanela.x / 2.0f - tamBotao.x / 2.0f, tamJanela.y - tamJanela.y / 12.0f), IDs::IDs::botao_voltar, sf::Color{0, 255, 0});
             inicialiarIterador();
         }
-
+        
+        /**
+         * @brief cria os botoes do menuCarregar
+        */
         void MenuCarregar::criarBotoes()
         {
             const float posBotaoX = tamJanela.x/2.0f - tamBotao.x/2.0f;
@@ -140,6 +171,9 @@ namespace Game{
             }
         }
 
+        /**
+         * @brief metodo que desenha os elementos graficos do menuCarregar
+        */
         void MenuCarregar::executar()
         {
             if(fase != nullptr)
@@ -161,6 +195,9 @@ namespace Game{
             desenharCards();
         }
 
+        /**
+         * @brief metodo que desenha os cards do menuCarregar
+        */
         void MenuCarregar::desenharCards()
         {
             for(std::list<Card*>::iterator it = listaCards.begin() ; it != listaCards.end() ; it++)

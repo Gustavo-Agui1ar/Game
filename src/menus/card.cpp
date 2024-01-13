@@ -7,6 +7,14 @@ namespace Game{
 
         Gerenciador::GerenciadorGrafico* Card::pGrafico = Gerenciador::GerenciadorGrafico::getGerenciadorGrafico();
 
+        /**
+         * @brief construtora da classe Card
+         * 
+         * @param pos posicao do card
+         * @param caminhoEntidades variavel a ser atrbuida em caminhoEntidades de card
+         * @param caminhoImagem variavel a ser atrbuida em caminhoImagem de card
+         * @param caminhoFase variavel a ser atrbuida em caminhoFase de card
+        */
         Card::Card(const sf::Vector2f pos, const std::string caminhoEntidades, const std::string caminhoImagem, const std::string caminhoFase):
         corpo(nullptr), textura(nullptr), caminhoEntidades(caminhoEntidades),caminhoImagem(caminhoImagem), caminhoFase(caminhoFase),
         cor(sf::Color(245, 170, 0)),selecionado(false), existe(false)
@@ -41,6 +49,9 @@ namespace Game{
 
         }
 
+        /**
+         * @brief destrutora da classe card
+        */
         Card::~Card()
         {
             if(textura != nullptr)
@@ -55,31 +66,61 @@ namespace Game{
             }
         }
 
+        /**
+         * @brief metodo de acesso ao atributo position de card
+         * 
+         * @return retorna  a posicao do card
+        */
         sf::Vector2f Card::getPos()
         {
             return corpo->getPosition();
         }
 
+        /**
+         * @brief metodo de acesso ao atributo caminhoEntidades
+         * 
+         * @return retorna  caminhoEntidades
+        */
         const std::string Card::getCaminhoEntidade()
         {
             return caminhoEntidades;
         }
 
+        /**
+         * @brief metodo de acesso ao atributo caminhoImagem
+         * 
+         * @return retorna  caminhoImagem
+        */
         const std::string Card::getCaminhoImagem()
         {
             return caminhoImagem;
         }
 
+        /**
+         * @brief metodo de acesso ao atributo caminhoFase
+         * 
+         * @return retorna  caminhoFase
+        */
         const std::string Card::getCaminhoFase()
         {
             return caminhoFase;
         }
 
+        /**
+         * @brief metodo modificador do atributo cor 
+         * 
+         * @param cor cor a ser atribuida em cor do card
+        */
         void Card::setColor(sf::Color cor)
         {
             this->cor = cor;
         }
 
+        /**
+         * @brief metodo que altera o estado do cboleano selecianado
+         * 
+         * @param selecionado boleano aser atribuido em selecionado
+        */
         void Card::setSelecionado(const bool selecionado)
         {
             this->selecionado = selecionado;
@@ -87,16 +128,29 @@ namespace Game{
             
         }
 
+        /**
+         * @brief metodo de acesso ao atributo selecionado
+         * 
+         * @return retornao boleano selecionado
+        */
         const bool Card::getSelecionado()
         {
             return selecionado;
         }
 
+        /**
+         * @brief metodo de acesso ao atributo existe
+         * 
+         * @return retorna o boleano existe
+        */
         const bool Card::getExiste()
         {
             return existe;
         }
 
+        /**
+         * @brief metodo que deleta as informacoes do card
+        */
         void Card::deletarTextura(){
             if(textura){
                 sf::Vector2u tamImgAnt = textura->getSize();
@@ -112,6 +166,9 @@ namespace Game{
             }
         }
 
+        /**
+         *  @brief metodo que desenha o card na tela
+        */
         void Card::desenhar()
         {
             pGrafico->desenhaElemento(*corpo);

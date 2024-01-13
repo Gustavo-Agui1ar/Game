@@ -5,18 +5,31 @@
 namespace Game{
 
     namespace Listener{
-
+        
+        /**
+         * @brief contrutora da classe ListenerMenu
+         * 
+         * @param menu menu a ser atribuido no atributo menu
+        */
         ListenerMenu::ListenerMenu(Menu::Menu* menu):
         Listener(),menu(menu)
         {
 
         }
-
+        
+        /**
+         * @brief destrutora da classe ListenerMenu
+        */
         ListenerMenu::~ListenerMenu()
         {
 
         }
 
+        /**
+         * @brief metodo que trata teclas pressionadas 
+         * 
+         * @param tecla tecla a ser tratada
+        */
         void ListenerMenu::teclaPressionada(const sf::Keyboard::Key tecla)
         {
           
@@ -166,6 +179,11 @@ namespace Game{
             }
         }
 
+        /**
+         * @brief metodo que trata uma tecla solta
+         * 
+         * @param tecla tecla ser tratada
+        */
         void ListenerMenu::teclaSolta(const sf::Keyboard::Key tecla)
         {
             if(tecEspecial[tecla] == "Up")
@@ -188,11 +206,21 @@ namespace Game{
 
         }
 
+        /**
+         * @brief metodo que trata quando eventod de movimento do mouse
+         * 
+         * @param posMOuse posicao Atual do mouse 
+        */
         void ListenerMenu::moveMouse(const sf::Vector2f posMouse)
         {
             menu->eventoMouse(posMouse);
         }
 
+        /**
+         * @brief metodo que trata quando um botao do mouse eh solto
+         * 
+         * @param botaoMouse botao do mouse que foi solto
+        */
         void ListenerMenu::botaoMouseSolta(const sf::Mouse::Button botaoMouse)
         {
             if(menu->getMouseSelecionado())

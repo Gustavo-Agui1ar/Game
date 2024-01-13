@@ -4,7 +4,12 @@
 namespace Game{
 
     namespace Menu{
-
+        
+        /**
+         * @brief construtora da classe MenuSalvar 
+         * 
+         * @param fase fase a ser desenhada como fundo 
+        */
         MenuSalvar::MenuSalvar(Fase::Fase* fase):
         MenuPausa(IDs::IDs::menu_salvar, "SALVAR JOGADA", fase),gArquivo()
         {
@@ -19,6 +24,9 @@ namespace Game{
             inicializarCards();
         }
 
+        /**
+         * @brief destrutora da classe MenuSalvar
+        */
         MenuSalvar::~MenuSalvar()
         {
             std::list<Card*>::iterator it;
@@ -36,6 +44,9 @@ namespace Game{
             fase = nullptr;
         }
 
+        /**
+         * @brief metodo que inicializa os cards de salvamento
+        */
         void MenuSalvar::inicializarCards()
         {
             float espacamento = (tamJanela.x/5.0f)/5.0f;
@@ -58,6 +69,9 @@ namespace Game{
         }
 
 
+        /**
+         * @brief metodo que salva as infomacoes e estados dos objetos da fase atual no card selecionado
+        */
         void MenuSalvar::salvar()
         {
             nlohmann::ordered_json jsonEntidades = fase->salvarEntidades();
@@ -87,6 +101,9 @@ namespace Game{
             imagem.saveToFile(caminhoImagem);
         }
 
+        /**
+         * @brief metodo que seleciona o card anterior da lista de cards caso este esteja no inicio voltasse ao final da lista
+        */
         void MenuSalvar::selecionaEsquerda()
         {
             std::cout << "i"<< std::endl;
@@ -97,7 +114,10 @@ namespace Game{
             itCard--;
             (*itCard)->setSelecionado(true);
         }
-        
+
+        /**
+         * @brief metodo que seleciona o proximo card da lista de cards caso este esteja no final voltasse ao inicio da lista
+        */
         void MenuSalvar::selecionaDireita()
         {
             (*itCard)->setSelecionado(false);
@@ -109,6 +129,9 @@ namespace Game{
             (*itCard)->setSelecionado(true);
         }
 
+        /**
+         * @brief metodo que cria os botoes da classe MenuSalvar
+        */
         void MenuSalvar::criarBotoes()
         {   
             addBotao( "Salvar", sf::Vector2f(0.0f, 0.0f), IDs::IDs::botao_salvar , sf::Color{238,173,45});
@@ -120,6 +143,9 @@ namespace Game{
             inicialiarIterador();
         }
 
+        /**
+         * @brief metodo que desenha os cards do menu na tela
+        */
         void MenuSalvar::desenharCards()
         {
             for(std::list<Card*>::iterator it = listaCards.begin() ; it != listaCards.end() ; it++)
@@ -129,6 +155,9 @@ namespace Game{
             }
         }
         
+        /**
+         * @brief metodo que desenha todos os elementos graficos do menu na tela
+        */
         void MenuSalvar::executar()
         {
             fase->desenhar();

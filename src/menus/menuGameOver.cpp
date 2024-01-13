@@ -4,6 +4,11 @@ namespace Game{
 
     namespace Menu{
 
+        /**
+         * @brief contrutora da classe MenuGameOver 
+         * 
+         * @param fase a ser desenhado o fundo
+        */
         MenuGameOver::MenuGameOver(Fase::Fase* fase):
         MenuPausa(IDs::IDs::menu_gameOver, "Game Over", fase)
         {
@@ -15,10 +20,16 @@ namespace Game{
             titulo.setCorTexto(sf::Color::Red);
         }
 
+        /**
+         * @brief destrutora da classe MenuGameOver
+        */
         MenuGameOver::~MenuGameOver(){
 
         }
 
+        /**
+         * |@brief metodo que cria os botoes do menu game over
+        */
         void MenuGameOver::criarBotoes()
         {
             addBotao("Tentar Novamente", sf::Vector2f(0.0f, 0.0f), IDs::IDs::botao_reniciar_jogo, sf::Color{255, 0, 0});

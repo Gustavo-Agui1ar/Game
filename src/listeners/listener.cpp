@@ -11,6 +11,9 @@ namespace Game{
         Gerenciador::GerenciadorDeEventos* Listener::pEvento = Gerenciador::GerenciadorDeEventos::getGerenciadorDeEventos();
         Gerenciador::GerenciadorDeEstado* Listener::pEstado = Gerenciador::GerenciadorDeEstado::getGerenciadorDeEstado();
 
+        /**
+         * @brief construtora da classe Listener
+        */
         Listener::Listener():
         tecPadrao(),tecEspecial() , ativo(true)
         {
@@ -18,11 +21,17 @@ namespace Game{
             inicializarComandosteclado();
         }
 
+        /**
+         * @brief destrutora da classe Listener
+        */
         Listener::~Listener()
         {
             removerListener();
         }
 
+        /**
+         * @brief metodo que inicializa os map de teclado e teclado especial
+        */
         void Listener::inicializarComandosteclado()
         {
             tecPadrao.insert(std::pair<sf::Keyboard::Key,char>(sf::Keyboard::Num0, '0'));
@@ -71,27 +80,49 @@ namespace Game{
             tecEspecial.insert(std::pair<sf::Keyboard::Key, std::string>(sf::Keyboard::Up, "Up"));
             tecEspecial.insert(std::pair<sf::Keyboard::Key, std::string>(sf::Keyboard::LShift, "LShift"));
         }
-
+        /**
+         * @brief ,metodo que remove o listener da lista de listener
+        */
         void Listener::removerListener()
         {
             pEvento->removerListener(this);
         }
 
+        /**
+         * @brief metodo que altera o estado  do listener
+         * 
+         * @param ativo boleano a ser atribuido em ativo
+        */
         void Listener::mudarEstado(const bool ativo)
         {
             this->ativo = ativo;
         }
 
+        /**
+         * @brief metodo de acesso ao atributo ativo 
+         * 
+         * @return retorna um boleano com o estado  de ativo
+        */
         const bool Listener::getAtivo()
         {
             return this->ativo;
         }
 
+        /**
+         * @brief metodo que trata o movimento do mouse 
+         * 
+         * @param posMouse posicao atual do mouse
+        */
         void Listener::moveMouse(const sf::Vector2f posMouse)
         {
             
         }
 
+        /**
+         * @brief metodo que trata quando um botao do mouse eh solto
+         * 
+         * @param botaoMouse botao a ser tratado
+        */
         void Listener::botaoMouseSolta(const sf::Mouse::Button botaoMouse)
         {
             

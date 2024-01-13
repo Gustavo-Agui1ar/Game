@@ -4,18 +4,31 @@
 namespace Game{
 
     namespace Listener{
-
+        
+        /**
+         * @brief construtora do listener do jogador
+         * 
+         * @param jogador jogador a ser atribuito no atributo jogador do listenerJogador 
+        */
         ListenerJogador::ListenerJogador(Entidade::Personagem::Jogador::Jogador* jogador):
         Listener()
         {
             this->jogador = jogador;
         }
 
+        /**
+         * @brief destrutora da classe listenerJogador
+        */
         ListenerJogador::~ListenerJogador()
         {
             
         }
 
+        /**
+         * @brief metodo que trata teclas pressionadas
+         * 
+         * @param tecla tecla a ser tratada
+        */
         void ListenerJogador::teclaPressionada(sf::Keyboard::Key tecla)
         {
             if(!jogador->getMorrer())
@@ -59,6 +72,11 @@ namespace Game{
             }
         }
 
+        /**
+         * @brief metodo que trata teclas soltas
+         * 
+         * @param tecla tecla a ser tratada
+        */
         void ListenerJogador::teclaSolta(sf::Keyboard::Key tecla)
         {
             if(!jogador->getMorrer())

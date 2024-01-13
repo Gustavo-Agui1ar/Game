@@ -5,7 +5,12 @@
 namespace Game{
 
     namespace Menu{
-
+        
+        /**
+         * @brief contrutora da classe MenuPause
+         * 
+         * @param fase fase a ser desenhada como fundo 
+        */
         MenuPausa::MenuPausa(Fase::Fase* fase):
         Menu(IDs::IDs::menu_pause, sf::Vector2f(TAM_BOTAO_X, TAM_BOTAO_Y), "PAUSA", 100),
         painel(sf::Vector2f(tamJanela.x/2.0f,tamJanela.y)), fase(fase), fundoEscuro(tamJanela)
@@ -20,6 +25,13 @@ namespace Game{
             this->titulo.setPos(sf::Vector2f(posFundo.x - titulo.getTam().x / 2.1f, posFundoEscuro.y + tamJanela.y / 5.0f));
         }
 
+        /**
+         * @brief construtora da classe MenuPausa
+         * 
+         * @param ID identidicador da classe
+         * @param titulo titulo do menu  
+         * @param fase fase a ser desenhada como fundo
+        */
         MenuPausa::MenuPausa(const IDs::IDs ID, const std::string titulo, Fase::Fase* fase):
         Menu(ID, sf::Vector2f(TAM_BOTAO_X, TAM_BOTAO_Y), titulo, 100), fase(fase),
         fundoEscuro(tamJanela)
@@ -28,16 +40,27 @@ namespace Game{
             fundoEscuro.setFillColor(sf::Color{0, 0, 0, 180});
         }
 
+        /**
+         * @brief destrutora da classe MenuPausa
+        */
         MenuPausa::~MenuPausa()
         {
 
         }
 
+        /**
+         * @brief metodo de acesso ao atributo fase 
+         * 
+         * @return retorna o atributo fase da classe
+        */
         Fase::Fase* MenuPausa::getFase()
         {
             return fase;
         }
 
+        /**
+         * @brief metodo que cria os botoes da classe MenuPausa
+        */
         void MenuPausa::criarBotoes()
         {
             addBotao("Continuar", sf::Vector2f(0.0f, 0.0f), IDs::IDs::botao_voltar, sf::Color{245, 170, 0});
@@ -52,13 +75,19 @@ namespace Game{
             inicialiarIterador();
         }
 
-     
-
+        /**
+         * @brief metodo modificador do atributo fase
+         * 
+         * @param fase fase a ser atribuida em fase da classe
+        */
         void MenuPausa::setFase(Fase::Fase* fase)
         {
             this->fase = fase;
         }
 
+        /**
+         * @brief metodo que atualiza a posicao dos botoes 
+        */
         void MenuPausa::atualizarBotoes()
         {
             std::list<Botao::BotaoTexto*>::iterator aux;
@@ -72,6 +101,9 @@ namespace Game{
             desenhar();
         }
 
+        /**
+         * @brief metodo que mostra todos os elementos graficos do menu na tela
+        */
          void MenuPausa::executar()
          {
             //desenha a fase sem atualizar as entidades

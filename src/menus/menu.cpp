@@ -6,9 +6,17 @@ namespace Game {
 
     namespace Menu{
 
+        /**
+         * @brief construtora da classe Menu
+         * 
+         * @param ID identificador da classe 
+         * @param tamBotao tamanho dos botoes do menu 
+         * @param titulo texto  principal do menu
+         * @param tamFonte tamanho do texto
+        */
         Menu::Menu(const IDs::IDs ID, const sf::Vector2f tamBotao, const std::string titulo, const unsigned int tamFonte):
-        Ente(ID), listaDeBotao(), it(), tamJanela(pGrafico->getTamJanela()), tamBotao(tamBotao), posFundo(sf::Vector2f(0.0f,0.0f)),
-        titulo(pGrafico->carregarFonte( "../Game/animations/botton/menu.ttf"), titulo, tamFonte), listenerMenu(new Listener::ListenerMenu(this)),
+        Ente(ID), listaDeBotao(), it(),  titulo(pGrafico->carregarFonte( "../Game/animations/botton/menu.ttf"), titulo, tamFonte), 
+        tamJanela(pGrafico->getTamJanela()), tamBotao(tamBotao), posFundo(sf::Vector2f(0.0f,0.0f)), listenerMenu(new Listener::ListenerMenu(this)),
         mouseSelecionado(false)
         {
             if(listenerMenu == nullptr){
@@ -16,7 +24,10 @@ namespace Game {
                 exit(1);
             }
         }
-
+        
+        /**
+         * @brief destrutora da classe Menu
+        */
         Menu::~Menu()
         {
             if(!listaDeBotao.empty())
@@ -34,12 +45,25 @@ namespace Game {
                 listenerMenu = nullptr;
             }
         }
-
+        
+        /**
+         * @brief muda o estado do observador do menu
+         * 
+         * @param ativo boleano que dita se o observador sera ativo ou desativado
+        */
         void Menu::mudarEstadoListener(const bool ativo)
         {
             listenerMenu->mudarEstado(ativo);
         }
 
+        /**
+         * @brief metodo que adiciona um botao ao menu
+         * 
+         * @param infoTexto informacao do texto do botao
+         * @param pos posicao do botao
+         * @param ID identificador do botao 
+         * @param corSelecionado cor do botao ao ser selecionado
+        */
         void Menu::addBotao(const std::string infoTexto, const sf::Vector2f pos, const IDs::IDs ID, const sf::Color corSelecionado)
         {
             Botao::BotaoTexto* botao = new Botao::BotaoTexto(infoTexto, pos,tamBotao, ID, corSelecionado);
@@ -51,11 +75,17 @@ namespace Game {
             listaDeBotao.push_back(botao);
         }
 
+        /**
+         * @brief atualiza a posicao do fundo do menu caso este tenha um fundo movel
+        */
         void Menu::atualizarPosicaoFundo()
         {
             posFundo = pGrafico->getCamera().getCenter();
         }
 
+        /**
+         * @brief metodo que inicializa o iterador da lista de botoes 
+        */
         void Menu::inicialiarIterador()
         {
             try 
@@ -70,6 +100,9 @@ namespace Game {
             }
         }
 
+        /**
+         * @brief metodo que troca o botao selecionado para o anterior da lista caso este esteja no inicio da lista na hora de chamar o metodo voltasse ao final da lista
+        */
         void Menu::selecionaParaCima()
         {
             Botao::BotaoTexto* botao = *it;
@@ -84,6 +117,9 @@ namespace Game {
             botao->setSelecionado(true);
         }
 
+        /**
+         * @brief metodo que troca o botao selecionado para o proximo da lista caso este esteja no final da lista na hora de chamar o metodo voltasse ao inicio da lista
+        */
         void Menu::selecionaParaBaixo()
         {
             Botao::BotaoTexto* botao = *it;
@@ -97,17 +133,32 @@ namespace Game {
             botao->setSelecionado(true);
         }
 
+        /**
+         * @brief metodo de acesso ao boleano mouseSelecionado 
+         * 
+         * @return retorna um boleano se o mouse selecionou algo
+        */
         const bool Menu::getMouseSelecionado()
         {
             return mouseSelecionado;
         }
 
+        /**
+         * @brief metodo de acesso ao identificador do botao selecionado
+         * 
+         * @return retorna o id do botao selecionado
+        */
         const IDs::IDs Menu::getIDBotaoSelecionado()
         {
             return (*it)->getID();
         }
 
-       void Menu::eventoMouse(const sf::Vector2f posMouse){
+        /**
+         * @brief  metodo que trata do movimento do mouse 
+         * 
+         * @param poMouse posicao atual do mouse
+        */
+        void Menu::eventoMouse(const sf::Vector2f posMouse){
             std::list<Botao::BotaoTexto*>::iterator aux;
             mouseSelecionado = false;
             for(aux = listaDeBotao.begin(); aux != listaDeBotao.end(); aux++)
@@ -127,6 +178,9 @@ namespace Game {
             }
         }
 
+        /**
+         * @brief metodo que desenha todos os elemntos graficos do menu
+        */
         void Menu::desenhar()
         {
             std::list<Botao::BotaoTexto*>::iterator itAux;
@@ -139,16 +193,26 @@ namespace Game {
             }
         }
 
+        /**
+         * @brief metodo que cria o fundo do menu
+        */
         void Menu::criarFundo()
         {
             
         }
 
+        /**
+         * @brief metodo que seleciona para a esquerda
+        */
         void Menu::selecionaEsquerda()
         {
 
         }
 
+
+        /**
+         * @brief metodo que seleciona para a direita
+        */
         void Menu::selecionaDireita()
         {
 

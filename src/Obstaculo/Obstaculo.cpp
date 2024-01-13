@@ -8,16 +8,13 @@ namespace Game{
         namespace Obstaculo{
 
             /**
-             * metodo contrutor da classe Obstaculo
+             * @brief metodo contrutor da classe Obstaculo
              *
-             * parametro:
-             *
-             * pos: atributo nescessario para a contrutora de Entidade;
-             * tam: atributo nescessario para a contrutora de Entidade;
-             * ID:  recebido das filhas de OBstaculo(plataforma,caixa e etc).
-             *
+             * @param pos atributo nescessario para a contrutora de Entidade;
+             * @param tam atributo nescessario para a contrutora de Entidade;
+             * @param ID  recebido das filhas de OBstaculo(plataforma,caixa e etc).
+             * @param IDtextura indica a textura a ser carregada no obstaculo
              */
-
             Obstaculo::Obstaculo(sf::Vector2f pos, sf::Vector2f tam, IDs::IDs ID, IDs::IDs IDtextura):
             Entidade(tam, ID, pos)
             {
@@ -42,22 +39,20 @@ namespace Game{
             
             }
             /**
-             * destrutora da classe.
+             * @brief destrutora da classe.
              */
-
             Obstaculo::~Obstaculo()
             {
                 
             }
 
             /**
-             * metodo que ajusta a posicao entre personagem e plataforma
+             * @brief metodo que ajusta a posicao entre personagem e plataforma
              * levando em conta sua posicao em relacao a plataforma.
              *
-             * ds: distancia entre os centros de  OBstaculo e personagem.
-             * pPresonagem: personagem a ser ajustado a posicao.
+             * @param ds distancia entre os centros de  OBstaculo e personagem.
+             * @param pPresonagem personagem a ser ajustado a posicao.
              */
-
             void Obstaculo::colisaoObstaculo(sf::Vector2f ds, Personagem::Personagem* pPersonagem)
             {
                 sf::Vector2f posOutro = pPersonagem->getPos();
