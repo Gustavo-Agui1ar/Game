@@ -11,7 +11,7 @@ namespace Game{
          * @brief construtora da classe GerenciadordeMusica nela é inicializada as musicas a serem tocadas
         */
         GerenciadorDeMusica::GerenciadorDeMusica():
-        mapMusica(),volumeGeral(100.0f)
+        mapMusica(), volumeGeral(100.0f), volumeEfeitoSonoro(40.0f)
         {
             addMusica(IDs::IDs::forest, "musics/adventure-begins.ogg");
             addMusica(IDs::IDs::menu_principal, "musics/main-theme.ogg");
@@ -169,14 +169,39 @@ namespace Game{
         }
 
         /**
+         * @brief atualiza o volume de todas as musicas 
+         * 
+         * @param volumeGeral volume a ser aplicado
+        */
+        void GerenciadorDeMusica::setVolumeGeral(const float volumeGeral)
+        {
+            std::map<IDs::IDs, sf::Music*>::iterator itMusica;
+
+            for(itMusica = mapMusica.begin() ; itMusica != mapMusica.end() ; itMusica++)
+                itMusica->second->setVolume(volumeGeral);
+
+            this->volumeGeral = volumeGeral;
+            volumeEfeitoSonoro = volumeGeral;
+        }
+     
+        /**
          * @brief atualiza o volume da musica sendo tocada no momento
          * 
-         * @param volumeGeral volume a ser aplicado na musica
+         * @param ID musica a ser trocada o volume
         */
-        void GerenciadorDeMusica::setVolume(const float volumeGeral)
+        void GerenciadorDeMusica::setVolume( IDs::IDs ID, const float volume)
         {
-            mapMusica[IDmusicaAtual]->setVolume(volumeGeral);
-            this->volumeGeral = volumeGeral;
+            mapMusica[ID]->setVolume(volume);
+        }
+
+        /**
+         * @brief atualiza os efeitos sonoros sendo tocados no momento
+         * 
+         * @param volumeEfeitoSonoro volume a ser aplicado nos efeitos sonoros
+        */
+        void GerenciadorDeMusica::setVolumeEfeitoSonoro(const float volumeEfeitoSonoro)
+        {
+            this->volumeEfeitoSonoro = volumeEfeitoSonoro;
         }
 
         /**
@@ -187,6 +212,26 @@ namespace Game{
         const float GerenciadorDeMusica::getVolumeGeral()
         {
             return volumeGeral;
+        }
+       
+        /**
+         * @brief metodo de acesso ao volume da musica sendo tocada
+         * 
+         * @return retorna o volume da musica
+        */
+        const float GerenciadorDeMusica::getVolume(IDs::IDs ID)
+        {
+            return mapMusica[ID]->getVolume();
+        }
+       
+        /**
+         * @brief metodo de acesso ao volumeEfeitoSonoro
+         * 
+         * @return retorna o atributo volumeEfeitoSonoro
+        */
+        const float GerenciadorDeMusica::getVolumeEfeitoSonoro()
+        {
+            return volumeEfeitoSonoro;
         }
     }
 }

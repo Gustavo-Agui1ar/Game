@@ -16,6 +16,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Jogo.dir/src/botao/botao.cpp.obj.d"
   "CMakeFiles/Jogo.dir/src/botao/botaoTexto.cpp.obj"
   "CMakeFiles/Jogo.dir/src/botao/botaoTexto.cpp.obj.d"
+  "CMakeFiles/Jogo.dir/src/botao/botaoVolume.cpp.obj"
+  "CMakeFiles/Jogo.dir/src/botao/botaoVolume.cpp.obj.d"
   "CMakeFiles/Jogo.dir/src/botao/texto.cpp.obj"
   "CMakeFiles/Jogo.dir/src/botao/texto.cpp.obj.d"
   "CMakeFiles/Jogo.dir/src/botao/textoEfeito.cpp.obj"

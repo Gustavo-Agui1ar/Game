@@ -39,6 +39,9 @@ namespace IDs{
             botao_carregar , 
             botao_remover ,
             botao_reniciar_jogo,
+            botao_volume_efeito_sonoro,
+            botao_volume_do_jogo,
+            botao_volume_geral,
 
             //IDs menus
 

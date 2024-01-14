@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/arma/arma.cpp" "CMakeFiles/Jogo.dir/src/arma/arma.cpp.obj" "gcc" "CMakeFiles/Jogo.dir/src/arma/arma.cpp.obj.d"
   "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/botao/botao.cpp" "CMakeFiles/Jogo.dir/src/botao/botao.cpp.obj" "gcc" "CMakeFiles/Jogo.dir/src/botao/botao.cpp.obj.d"
   "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/botao/botaoTexto.cpp" "CMakeFiles/Jogo.dir/src/botao/botaoTexto.cpp.obj" "gcc" "CMakeFiles/Jogo.dir/src/botao/botaoTexto.cpp.obj.d"
+  "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/botao/botaoVolume.cpp" "CMakeFiles/Jogo.dir/src/botao/botaoVolume.cpp.obj" "gcc" "CMakeFiles/Jogo.dir/src/botao/botaoVolume.cpp.obj.d"
   "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/botao/texto.cpp" "CMakeFiles/Jogo.dir/src/botao/texto.cpp.obj" "gcc" "CMakeFiles/Jogo.dir/src/botao/texto.cpp.obj.d"
   "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/botao/textoEfeito.cpp" "CMakeFiles/Jogo.dir/src/botao/textoEfeito.cpp.obj" "gcc" "CMakeFiles/Jogo.dir/src/botao/textoEfeito.cpp.obj.d"
   "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/entidade/Ente.cpp" "CMakeFiles/Jogo.dir/src/entidade/Ente.cpp.obj" "gcc" "CMakeFiles/Jogo.dir/src/entidade/Ente.cpp.obj.d"

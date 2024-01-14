@@ -296,6 +296,30 @@ src/botao/botaoTexto.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/botaoTexto.cpp.s
 .PHONY : src/botao/botaoTexto.cpp.s
 
+src/botao/botaoVolume.obj: src/botao/botaoVolume.cpp.obj
+.PHONY : src/botao/botaoVolume.obj
+
+# target to build an object file
+src/botao/botaoVolume.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/botaoVolume.cpp.obj
+.PHONY : src/botao/botaoVolume.cpp.obj
+
+src/botao/botaoVolume.i: src/botao/botaoVolume.cpp.i
+.PHONY : src/botao/botaoVolume.i
+
+# target to preprocess a source file
+src/botao/botaoVolume.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/botaoVolume.cpp.i
+.PHONY : src/botao/botaoVolume.cpp.i
+
+src/botao/botaoVolume.s: src/botao/botaoVolume.cpp.s
+.PHONY : src/botao/botaoVolume.s
+
+# target to generate assembly for a file
+src/botao/botaoVolume.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/botaoVolume.cpp.s
+.PHONY : src/botao/botaoVolume.cpp.s
+
 src/botao/texto.obj: src/botao/texto.cpp.obj
 .PHONY : src/botao/texto.obj
 
@@ -1262,6 +1286,9 @@ help:
 	@echo ... src/botao/botaoTexto.obj
 	@echo ... src/botao/botaoTexto.i
 	@echo ... src/botao/botaoTexto.s
+	@echo ... src/botao/botaoVolume.obj
+	@echo ... src/botao/botaoVolume.i
+	@echo ... src/botao/botaoVolume.s
 	@echo ... src/botao/texto.obj
 	@echo ... src/botao/texto.i
 	@echo ... src/botao/texto.s

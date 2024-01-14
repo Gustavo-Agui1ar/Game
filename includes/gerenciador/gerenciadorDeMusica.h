@@ -25,12 +25,14 @@ namespace Game{
                 //atributo de volume da musica
                 
                 float volumeGeral;
+                float volumeEfeitoSonoro;
 
                 //metodo que adiciona uma musica 
 
                 void addMusica(const IDs::IDs ID, const char* caminhoMusica);
                
                 //ponteiro da classe( padrao singleton)
+                
                 static GerenciadorDeMusica* pMusica;
                
                 //construtora
@@ -58,8 +60,14 @@ namespace Game{
                 void parar();
 
                 //metodos acessadores e modificadores do volume
-                void setVolume(const float volumeGeral);
+
+                void setVolumeGeral(const float volumeGeral);
+                void setVolume(IDs::IDs ID, const float volume);
+                void setVolumeEfeitoSonoro(const float volumeEfeitoSonoro);
+            
                 const float getVolumeGeral();
+                const float getVolume(IDs::IDs ID);
+                const float getVolumeEfeitoSonoro();
         };
     }
 }

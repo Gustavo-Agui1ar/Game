@@ -13,7 +13,7 @@ namespace Game{
 
             class BotaoTexto : public Botao{
                 
-            private:
+            protected:
 
                 //atributos de botao selecionado
                
