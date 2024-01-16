@@ -2,6 +2,7 @@
 #include "../../includes/inimigo/esqueleto.h"
 #include "../../includes/jogador/jogador.h"
 #include "../../includes/inimigo/slime.h"
+#include "../../includes/gerenciador/gerenciadorDeColisao.h"
 
 
 namespace Game{
@@ -324,6 +325,7 @@ namespace Game{
                             {
                                 arma->setPos(sf::Vector2f(-1000.0f, -1000.0f));
                                 tempoAtaque = 0.0f;
+                                atacando = false;
                             }
                             else if(tempoAtaque > (tempoAnimacaoAtaque/3.0f)*2)
                             {
@@ -334,11 +336,6 @@ namespace Game{
                             {
                                 somAtaque.play();
                             }
-                        }
-                        else
-                        {
-                            arma->setPos(sf::Vector2f(-1000.0f, -1000.0f));
-                            tempoAtaque = 0.0f;
                         }
                     }
                     
@@ -524,6 +521,13 @@ namespace Game{
                                 }
                             }
                         }
+                    }
+
+                    void Jogador::procurarIteracoes()
+                    {
+                        Gerenciador::GerenciadorDeColisao* pColisao = pColisao->getGerenciadorDeColisao();
+
+                        pColisao->procurarEntidade(getPos(), sf::Vector2f(100.0f, 100.0f), IDs::IDs::esqueleto);
                     }
             }
         }

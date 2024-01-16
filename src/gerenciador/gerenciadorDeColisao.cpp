@@ -5,6 +5,16 @@
 namespace Game{
 
     namespace Gerenciador{
+        
+        Gerenciador::GerenciadorDeColisao* GerenciadorDeColisao::pColisao = nullptr;
+
+
+        GerenciadorDeColisao* GerenciadorDeColisao::getGerenciadorDeColisao()
+        {
+            if(pColisao == nullptr)
+                pColisao = new GerenciadorDeColisao();
+            return pColisao;
+        }
 
         /**
          * @brief construtor da classe gerenciadorDeColisao
@@ -12,8 +22,8 @@ namespace Game{
          * @param personagem lista de personagem a serem analizados
          * @param obstaculos lista de obstaculos a serem analizados
         */
-        GerenciadorDeColisao::GerenciadorDeColisao(Lista::ListaEntidade* personagem, Lista::ListaEntidade* obstaculo):
-        listaPersonagem(personagem), listaObstaculo(obstaculo)
+        GerenciadorDeColisao::GerenciadorDeColisao():
+        listaPersonagem(), listaObstaculo()
         {
 
         }
@@ -103,5 +113,48 @@ namespace Game{
                 }
             }
         }
+        Entidade::Entidade* GerenciadorDeColisao::procurarEntidade(sf::Vector2f posPersonagem, sf::Vector2f raioDeDistancia, IDs::IDs objProcurado)
+        {
+            int tam = listaPersonagem->getTam();
+
+            for(int i = 0 ; i < tam ; i++)
+            {
+
+                Entidade::Entidade* ent = listaPersonagem->operator[](i);
+
+                if(ent->getID() == objProcurado)
+                {
+                    float posX = fabs(posPersonagem.x - ent->getPos().x);
+                    float posY = fabs(posPersonagem.y - ent->getPos().y);
+                    
+                    if(posX <= raioDeDistancia.x && posY <= raioDeDistancia.y)
+                    {
+                        std::cout<<"obj achado"<<std::endl;
+                        return ent;
+                    }
+                }
+            }
+            std::cout<<"obj nao achado"<<std::endl;
+            return nullptr;
+        }
+
+        void GerenciadorDeColisao::setListaPersonagem(Lista::ListaEntidade* personagem)
+        {
+            this->listaPersonagem = personagem;
+        }
+
+        void GerenciadorDeColisao::setListaObstaculo( Lista::ListaEntidade* obstaculo)
+        {
+            this->listaObstaculo = obstaculo;
+        }
+
+         void GerenciadorDeColisao::limparListas()
+         {
+            delete(listaObstaculo);
+            delete(listaPersonagem);
+
+            listaObstaculo = nullptr;
+            listaPersonagem = nullptr;
+         }
     }
 }

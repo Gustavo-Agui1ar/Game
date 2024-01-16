@@ -8,15 +8,15 @@ namespace Game{
         namespace Botao{
             
          BotaoVolume::BotaoVolume(const std::string info, sf::Vector2f tam, const sf::Vector2f pos, const IDs::IDs ID, const sf::Color corSelecionado, const float posInicioFundo):
-         BotaoTexto(info, tam, pos, ID, corSelecionado), fundoVolume(sf::Vector2f(TAMANHO_BARRA_VOLUME_X, TAMANHO_BARRA_VOLUME_Y)),
+         BotaoTexto(info, pos, tam, ID, corSelecionado), fundoVolume(sf::Vector2f(TAMANHO_BARRA_VOLUME_X, TAMANHO_BARRA_VOLUME_Y)),
          corpoVolume(sf::Vector2f(TAMANHO_BOTAO_VOLUME_X, TAMANHO_BOTAO_VOLUME_Y)), pMusica(pMusica->getGerenciadorDeMusica()), posInicioFundo(posInicioFundo),
-         parametrizacao((TAMANHO_BARRA_VOLUME_X - TAMANHO_BOTAO_VOLUME_X) / 100.0f), posInicioBarra(pGrafico->getCamera().getCenter().x + posInicioFundo),
-         posFimBarra(pGrafico->getCamera().getCenter().x + posInicioFundo + TAMANHO_BARRA_VOLUME_X)
+         parametrizacao((TAMANHO_BARRA_VOLUME_X - TAMANHO_BOTAO_VOLUME_X) / 100.0f), posInicioBarra(posInicioFundo),
+         posFimBarra(posInicioFundo + TAMANHO_BARRA_VOLUME_X)
          {
             fundoVolume.setFillColor(sf::Color::Black);
-            fundoVolume.setPosition(sf::Vector2f(pGrafico->getCamera().getCenter().x + posInicioFundo, getPos().y + getTamTexto().y - 5.0f));
+            fundoVolume.setPosition(sf::Vector2f(posInicioFundo, getPos().y + getTamTexto().y - 15.0f));
 
-            corpoVolume.setFillColor(sf::Color{0, 255, 0 ,150});
+            corpoVolume.setFillColor(sf::Color{238,173,45});
 
             float volume = 0.0f;
 
@@ -25,18 +25,21 @@ namespace Game{
                 case(IDs::IDs::botao_volume_geral):
                 {
                     volume = pMusica->getVolumeGeral();
+                    corpoVolume.setPosition(sf::Vector2f(posInicioFundo + volume * parametrizacao, getPos().y + getTamTexto().y - 15.0f));
                 }
                 break;
                 
                 case(IDs::IDs::botao_volume_do_jogo):
                 {
                     volume = pMusica->getVolume(IDs::IDs::forest);
+                    corpoVolume.setPosition(sf::Vector2f(posInicioFundo + volume * parametrizacao, getPos().y + getTamTexto().y - 15.0f));
                 }
                 break;
                 
                 case(IDs::IDs::botao_volume_efeito_sonoro):
                 {
                     volume = pMusica->getVolumeEfeitoSonoro();
+                    corpoVolume.setPosition(sf::Vector2f(posInicioFundo + volume * parametrizacao, getPos().y + getTamTexto().y - 15.0f));
                 }
                 break;
 
@@ -44,7 +47,6 @@ namespace Game{
                     break;
             }
 
-            corpoVolume.setPosition(volume * parametrizacao + pGrafico->getCamera().getCenter().x + posInicioBarra, getPos().y + getTamTexto().y - 5.0f);
          }
 
          BotaoVolume::~BotaoVolume()
@@ -58,7 +60,7 @@ namespace Game{
 
             posVolume.x += volume;
 
-            if(posVolume.x +TAMANHO_BOTAO_VOLUME_X > posFimBarra)
+            if(posVolume.x + TAMANHO_BOTAO_VOLUME_X > posFimBarra)
             {
                 posVolume.x =  posFimBarra - TAMANHO_BOTAO_VOLUME_X;
             }

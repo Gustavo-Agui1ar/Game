@@ -387,4 +387,7 @@ CMakeFiles/Jogo.dir/src/menus/menu.cpp.obj: \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/inimigo/slime.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/menus/menuGameOver.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/menus/menuPausa.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/menus/menuSalvar.h
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/menus/menuSalvar.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/menus/menuOpcao.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/botao/botaoVolume.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/gerenciador/gerenciadorDeMusica.h

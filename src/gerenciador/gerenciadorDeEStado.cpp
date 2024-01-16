@@ -73,6 +73,7 @@ namespace Game{
             }
             else if(ID == IDs::IDs::menu_principal ||
                     ID == IDs::IDs::menu_pause     ||
+                    ID == IDs::IDs::menu_opcao     ||
                     ID == IDs::IDs::menu_gameOver  ||
                     ID == IDs::IDs::menu_carregar  ||
                     ID == IDs::IDs::menu_salvar    ||

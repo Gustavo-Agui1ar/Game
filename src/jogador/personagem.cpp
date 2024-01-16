@@ -115,6 +115,7 @@ namespace Game{
             void Personagem::pararAtaque()
             {
                 atacando = false;
+                arma->setPos(sf::Vector2f(-1000.0f, -1000.f));
             }
 
             /**

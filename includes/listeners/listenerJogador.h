@@ -27,6 +27,8 @@ namespace Game{
 
                 void teclaPressionada(const sf::Keyboard::Key tecla);
                 void teclaSolta(const sf::Keyboard::Key tecla);
+                void botaoMouseSolta(const sf::Mouse::Button botaoMouse);
+        
 
         };
 

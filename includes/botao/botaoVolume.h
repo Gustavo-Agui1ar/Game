@@ -4,7 +4,7 @@
 #include "botaoTexto.h"
 #include "../gerenciador/gerenciadorDeMusica.h"
 
-#define TAMANHO_BARRA_VOLUME_X 300.0f
+#define TAMANHO_BARRA_VOLUME_X 450.0f
 #define TAMANHO_BARRA_VOLUME_Y 30.0f
 
 #define TAMANHO_BOTAO_VOLUME_X 50.0f

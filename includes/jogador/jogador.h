@@ -159,6 +159,8 @@ namespace Game {
                     
                     void desenhar();
 
+                    void procurarIteracoes();
+
                 };
             }
         }

@@ -43,10 +43,14 @@ namespace Game{
                         {
                             pEstado->removerEstado(2);
                         }
-                        else
+                        else if(menu->getID() == IDs::IDs::menu_opcao)
                         {
+                            Menu::MenuOpcao* menuOpcao = static_cast<Menu::MenuOpcao*>(menu);
+
                             pEstado->removerEstado();
                         }
+                        else    
+                            pEstado->removerEstado();
                     }
                     break;
                     
@@ -66,6 +70,14 @@ namespace Game{
                         pEstado->addEstado(IDs::IDs::menu_bug);      
                     }
                     break;
+
+                     
+                    case (IDs::IDs::botao_opcao):
+                    {
+                        pEstado->addEstado(IDs::IDs::menu_opcao);
+                        pEstado->addEstado(IDs::IDs::menu_bug);
+                    }
+                        break;
 
                     case(IDs::IDs::botao_voltar):
                     {
@@ -177,6 +189,14 @@ namespace Game{
                 }
             
             }
+            else if(tecEspecial[tecla] == "Left")
+            {
+                menu->selecionaEsquerda();
+            }
+            else if(tecEspecial[tecla] == "Right")
+            {
+                menu->selecionaDireita();
+            }
         }
 
         /**
@@ -194,11 +214,11 @@ namespace Game{
             {
                 menu->selecionaParaBaixo();
             }
-            else if(tecEspecial[tecla] == "Left")
+            else if(tecEspecial[tecla] == "Left"  && pEstado->getEstadoAtual()->getID() != IDs::IDs::menu_opcao)
             {
                 menu->selecionaEsquerda();
             }
-            else if(tecEspecial[tecla] == "Right")
+            else if(tecEspecial[tecla] == "Right" && pEstado->getEstadoAtual()->getID() != IDs::IDs::menu_opcao)
             {
                 menu->selecionaDireita();
             }
@@ -272,6 +292,13 @@ namespace Game{
                                 pEstado->addEstado(IDs::IDs::menu_carregar);
                             }
                                 break;
+                           
+                            case (IDs::IDs::botao_opcao):
+                            {
+                                pEstado->addEstado(IDs::IDs::menu_opcao);
+                            }
+                                break;
+                           
                             case(IDs::IDs::botao_reniciar_jogo):
                             {
                                 Estado::Estado* estado = pEstado->getEstadoAtual();

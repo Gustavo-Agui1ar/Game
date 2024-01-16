@@ -7,6 +7,7 @@
 #include  "../menus/menuCarregar.h"
 #include  "../menus/menuGameOver.h"
 #include  "../menus/menuSalvar.h"
+#include  "../menus/menuOpcao.h"
 
 namespace Game{
 

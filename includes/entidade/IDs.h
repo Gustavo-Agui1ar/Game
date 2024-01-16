@@ -49,6 +49,7 @@ namespace IDs{
             menu_pause ,
             menu_gameOver ,
             menu_carregar ,
+            menu_opcao ,
             menu_salvar 
         };
 }

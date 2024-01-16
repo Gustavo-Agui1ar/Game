@@ -88,6 +88,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Jogo.dir/src/menus/menuCarregar.cpp.obj.d"
   "CMakeFiles/Jogo.dir/src/menus/menuGameOver.cpp.obj"
   "CMakeFiles/Jogo.dir/src/menus/menuGameOver.cpp.obj.d"
+  "CMakeFiles/Jogo.dir/src/menus/menuOpcao.cpp.obj"
+  "CMakeFiles/Jogo.dir/src/menus/menuOpcao.cpp.obj.d"
   "CMakeFiles/Jogo.dir/src/menus/menuPausa.cpp.obj"
   "CMakeFiles/Jogo.dir/src/menus/menuPausa.cpp.obj.d"
   "CMakeFiles/Jogo.dir/src/menus/menuPrincipal.cpp.obj"

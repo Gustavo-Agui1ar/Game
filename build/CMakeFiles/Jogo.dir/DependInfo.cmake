@@ -51,6 +51,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/menus/menu.cpp" "CMakeFiles/Jogo.dir/src/menus/menu.cpp.obj" "gcc" "CMakeFiles/Jogo.dir/src/menus/menu.cpp.obj.d"
   "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/menus/menuCarregar.cpp" "CMakeFiles/Jogo.dir/src/menus/menuCarregar.cpp.obj" "gcc" "CMakeFiles/Jogo.dir/src/menus/menuCarregar.cpp.obj.d"
   "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/menus/menuGameOver.cpp" "CMakeFiles/Jogo.dir/src/menus/menuGameOver.cpp.obj" "gcc" "CMakeFiles/Jogo.dir/src/menus/menuGameOver.cpp.obj.d"
+  "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/menus/menuOpcao.cpp" "CMakeFiles/Jogo.dir/src/menus/menuOpcao.cpp.obj" "gcc" "CMakeFiles/Jogo.dir/src/menus/menuOpcao.cpp.obj.d"
   "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/menus/menuPausa.cpp" "CMakeFiles/Jogo.dir/src/menus/menuPausa.cpp.obj" "gcc" "CMakeFiles/Jogo.dir/src/menus/menuPausa.cpp.obj.d"
   "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/menus/menuPrincipal.cpp" "CMakeFiles/Jogo.dir/src/menus/menuPrincipal.cpp.obj" "gcc" "CMakeFiles/Jogo.dir/src/menus/menuPrincipal.cpp.obj.d"
   "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/menus/menuSalvar.cpp" "CMakeFiles/Jogo.dir/src/menus/menuSalvar.cpp.obj" "gcc" "CMakeFiles/Jogo.dir/src/menus/menuSalvar.cpp.obj.d"

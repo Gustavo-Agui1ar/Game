@@ -16,8 +16,8 @@ namespace Game{
          * @param caminhoFase variavel a ser atrbuida em caminhoFase de card
         */
         Card::Card(const sf::Vector2f pos, const std::string caminhoEntidades, const std::string caminhoImagem, const std::string caminhoFase):
-        corpo(nullptr), textura(nullptr), caminhoEntidades(caminhoEntidades),caminhoImagem(caminhoImagem), caminhoFase(caminhoFase),
-        cor(sf::Color(245, 170, 0)),selecionado(false), existe(false)
+        corpo(nullptr), textura(nullptr),selecionado(false), cor(sf::Color(245, 170, 0)),  existe(false), caminhoEntidades(caminhoEntidades),
+        caminhoImagem(caminhoImagem), caminhoFase(caminhoFase)
         {
             sf::Vector2f tamJanela = pGrafico->getTamJanela();
             corpo = new sf::RectangleShape(sf::Vector2f(tamJanela.x/5.0f, (tamJanela.x/5.0f) - 20.0f ));

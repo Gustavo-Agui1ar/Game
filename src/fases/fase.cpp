@@ -20,7 +20,10 @@ namespace Game{
             listaPersonagens = new Lista::ListaEntidade();
             listaObstaculos = new Lista::ListaEntidade();
 
-            pColisao = new Gerenciador::GerenciadorDeColisao(listaPersonagens, listaObstaculos);
+            pColisao = Gerenciador::GerenciadorDeColisao::getGerenciadorDeColisao();
+
+            pColisao->setListaObstaculo(listaObstaculos);
+            pColisao->setListaPersonagem(listaPersonagens);
 
             if(pColisao == nullptr)
             {
@@ -45,7 +48,8 @@ namespace Game{
         {
             if(pColisao != nullptr)
             {
-                delete(pColisao);
+                pColisao->limparListas();
+                pColisao = nullptr;
             }
             
             if(listenerFase != nullptr){

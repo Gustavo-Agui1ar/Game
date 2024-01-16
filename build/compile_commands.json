@@ -259,6 +259,12 @@
 },
 {
   "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\menus\\menuOpcao.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\menus\\menuOpcao.cpp\"",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/menus/menuOpcao.cpp",
+  "output": "CMakeFiles/Jogo.dir/src/menus/menuOpcao.cpp.obj"
+},
+{
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\menus\\menuPausa.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\menus\\menuPausa.cpp\"",
   "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/menus/menuPausa.cpp",
   "output": "CMakeFiles/Jogo.dir/src/menus/menuPausa.cpp.obj"

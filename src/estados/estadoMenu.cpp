@@ -3,6 +3,7 @@
 #include "../includes/menus/menuPausa.h"
 #include "../includes/menus/menuGameOver.h"
 #include "../includes/menus/menuPrincipal.h"
+#include "../includes/menus/menuOpcao.h"
 #include "../includes/menus/menuCarregar.h"
 #include "../includes/menus/menuSalvar.h"
 #include "../includes/gerenciador/gerenciadorDeEstado.h"
@@ -100,6 +101,26 @@ namespace Game{
                     menuPause->criarBotoes();
                     
                     this->menu = static_cast<Menu::Menu*>(menuPause);
+                }
+                break;
+                
+                case(IDs::IDs::menu_opcao):
+                {
+                    Menu::MenuOpcao* menuOpcao = nullptr; 
+
+                    if(estadoAtual->getID() == IDs::IDs::menu_pause)
+                         menuOpcao = new Menu::MenuOpcao(fase);
+                    else
+                        menuOpcao = new Menu::MenuOpcao();
+
+                    if(menuOpcao == nullptr)
+                    {
+                        std::cout<<"EstadoMenu::nao foi possivel criar menu de opcoes";
+                        exit(1);
+                    }
+
+                    menuOpcao->criarBotoes();
+                    this->menu = static_cast<Menu::Menu*>(menuOpcao);
                 }
                 break;
 

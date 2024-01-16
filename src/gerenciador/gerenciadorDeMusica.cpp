@@ -105,6 +105,12 @@ namespace Game{
                 IDmusicaAtual = IDmusica;
             }
                 break;
+           
+            case(IDs::IDs::menu_opcao):
+            {
+
+            }
+                break;
 
             case(IDs::IDs::menu_pause):
             {

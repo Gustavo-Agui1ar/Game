@@ -1160,6 +1160,30 @@ src/menus/menuGameOver.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menuGameOver.cpp.s
 .PHONY : src/menus/menuGameOver.cpp.s
 
+src/menus/menuOpcao.obj: src/menus/menuOpcao.cpp.obj
+.PHONY : src/menus/menuOpcao.obj
+
+# target to build an object file
+src/menus/menuOpcao.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menuOpcao.cpp.obj
+.PHONY : src/menus/menuOpcao.cpp.obj
+
+src/menus/menuOpcao.i: src/menus/menuOpcao.cpp.i
+.PHONY : src/menus/menuOpcao.i
+
+# target to preprocess a source file
+src/menus/menuOpcao.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menuOpcao.cpp.i
+.PHONY : src/menus/menuOpcao.cpp.i
+
+src/menus/menuOpcao.s: src/menus/menuOpcao.cpp.s
+.PHONY : src/menus/menuOpcao.s
+
+# target to generate assembly for a file
+src/menus/menuOpcao.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menuOpcao.cpp.s
+.PHONY : src/menus/menuOpcao.cpp.s
+
 src/menus/menuPausa.obj: src/menus/menuPausa.cpp.obj
 .PHONY : src/menus/menuPausa.obj
 
@@ -1394,6 +1418,9 @@ help:
 	@echo ... src/menus/menuGameOver.obj
 	@echo ... src/menus/menuGameOver.i
 	@echo ... src/menus/menuGameOver.s
+	@echo ... src/menus/menuOpcao.obj
+	@echo ... src/menus/menuOpcao.i
+	@echo ... src/menus/menuOpcao.s
 	@echo ... src/menus/menuPausa.obj
 	@echo ... src/menus/menuPausa.i
 	@echo ... src/menus/menuPausa.s

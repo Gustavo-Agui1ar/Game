@@ -53,14 +53,20 @@ namespace Game{
                     }
                         break;
 
-                    case('e'):
+                    case('k'):
                     {
                         if(jogador->getNoChao())
                             jogador->atacar();
                     }
                         break;
+                    
+                    case('e'):
+                    {
+                        jogador->procurarIteracoes();
+                    }
+                        break;
 
-                    case('r'):
+                    case('j'):
                     {
                         jogador->fazerDash();
                     }
@@ -83,11 +89,24 @@ namespace Game{
             {
                 if(tecPadrao[tecla] == 'a' || tecPadrao[tecla] == 'd')
                     jogador->parar();
-                else if(tecPadrao[tecla] == 'w' || tecPadrao[tecla] == 'e')
+                else if(tecPadrao[tecla] == 'w' || tecPadrao[tecla] == 'k')
                     jogador->pararAtaque();
-                else if(tecPadrao[tecla] == 'r')
+                else if(tecPadrao[tecla] == 'j')
                     jogador->pararDash();
             }
         }
+
+        
+        /**
+         * @brief metodo que trata botao do mouse  solto
+         * 
+         * @param tecla botao a ser tratado
+        */
+        void ListenerJogador::botaoMouseSolta(const sf::Mouse::Button botaoMouse)
+        {
+             if(botaoMouse == sf::Mouse::Button::Left)
+                jogador->atacar();
+        }
+        
     }
 }

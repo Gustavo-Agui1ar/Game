@@ -1,4 +1,6 @@
 
+#pragma once
+
 #include "botao.h"
 #include "textoEfeito.h"
 
