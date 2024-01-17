@@ -65,7 +65,7 @@ namespace Game{
         */
         void Fase::criarJogador(const sf::Vector2f pos)
         {
-            Entidade::Item::Arma* armaJogador = new Entidade::Item::Arma(IDs::IDs::armaDoJogador); 
+            Entidade::Arma::Arma* armaJogador = new Entidade::Arma::Arma(IDs::IDs::armaDoJogador); 
             Entidade::Personagem::Jogador::Jogador* jogador =  new Entidade::Personagem::Jogador::Jogador(pos);
 
             if(jogador == nullptr)
@@ -95,7 +95,7 @@ namespace Game{
         */
         void Fase::criarInimigo(const sf::Vector2f pos, const char letra)
         {
-            Entidade::Item::Arma* arma = new Entidade::Item::Arma(IDs::IDs::armaDoIimigo);
+            Entidade::Arma::Arma* arma = new Entidade::Arma::Arma(IDs::IDs::armaDoIimigo);
             Entidade::Entidade* personagem = nullptr;
            
             if(arma == nullptr)
@@ -188,7 +188,7 @@ namespace Game{
                         exit(1);
                     }
 
-                    Entidade::Item::Arma* pArma = new Entidade::Item::Arma(arma);
+                    Entidade::Arma::Arma* pArma = new Entidade::Arma::Arma(arma);
                     
                     if(pArma == nullptr)
                     {
@@ -212,7 +212,7 @@ namespace Game{
                         exit(1);
                     }
 
-                    Entidade::Item::Arma* pArma = new Entidade::Item::Arma(arma);
+                    Entidade::Arma::Arma* pArma = new Entidade::Arma::Arma(arma);
                     
                     if(pArma == nullptr)
                     {
@@ -236,7 +236,7 @@ namespace Game{
                         exit(1);
                     }
 
-                    Entidade::Item::Arma* pArma = new Entidade::Item::Arma(arma);
+                    Entidade::Arma::Arma* pArma = new Entidade::Arma::Arma(arma);
                     
                     if(pArma == nullptr)
                     {

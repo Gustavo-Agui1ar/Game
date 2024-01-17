@@ -1,7 +1,7 @@
 CMakeFiles/Jogo.dir/src/fases/fase.cpp.obj: \
  C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos\ a\ parte\Game\src\fases\fase.cpp \
  C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/fases/fase.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/gerenciador/gerenciadorDeColisao.h \
+ C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/gerenciador/gerenciadorDeColisao.h \
  C:/PROGRA~2/SFML/include/SFML/Graphics.hpp \
  C:/PROGRA~2/SFML/include/SFML/Window.hpp \
  C:/PROGRA~2/SFML/include/SFML/System.hpp \
@@ -338,13 +338,13 @@ CMakeFiles/Jogo.dir/src/fases/fase.cpp.obj: \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/gerenciador/camera.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/listeners/listenerFase.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/listeners/listener.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/Obstaculo/Plataforma.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/jogador/personagem.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/animador/animacao.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/animador/imagem.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/arma/arma.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/Obstaculo/Obstaculo.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/jogador/jogador.h \
+ C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/entidade/Obstaculo/Plataforma.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/jogador/personagem.h \
+ C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/animador/animacao.h \
+ C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/animador/imagem.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/arma/arma.h \
+ C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/entidade/Obstaculo/Obstaculo.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/jogador/jogador.h \
  C:/PROGRA~2/SFML/include/SFML/Audio.hpp \
  C:/PROGRA~2/SFML/include/SFML/Audio/InputSoundFile.hpp \
  C:/PROGRA~2/SFML/include/SFML/Audio/Export.hpp \
@@ -366,9 +366,9 @@ CMakeFiles/Jogo.dir/src/fases/fase.cpp.obj: \
  C:/PROGRA~2/SFML/include/SFML/Audio/SoundFileReader.hpp \
  C:/PROGRA~2/SFML/include/SFML/Audio/SoundFileWriter.hpp \
  C:/msys64/mingw64/include/c++/13.1.0/math.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/inimigo/inimigo.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/inimigo/esqueleto.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/inimigo/slime.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/inimigo/inimigo.h \
+ C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/entidade/inimigo/esqueleto.h \
+ C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/entidade/inimigo/slime.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/fundo/fundo.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/fundo/camada.h \
  C:/msys64/mingw64/include/unistd.h C:/msys64/mingw64/include/io.h \

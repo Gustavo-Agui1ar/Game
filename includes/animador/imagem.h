@@ -6,7 +6,7 @@
 
 namespace Game{
 
-    namespace animador{
+    namespace Animador{
 
         class Imagem{
 

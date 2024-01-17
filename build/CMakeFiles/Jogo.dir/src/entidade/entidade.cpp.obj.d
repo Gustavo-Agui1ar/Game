@@ -1,6 +1,6 @@
 CMakeFiles/Jogo.dir/src/entidade/entidade.cpp.obj: \
  C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos\ a\ parte\Game\src\entidade\entidade.cpp \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/entidade.h \
+ C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/entidade/entidade.h \
  C:/PROGRA~2/SFML/include/SFML/Graphics.hpp \
  C:/PROGRA~2/SFML/include/SFML/Window.hpp \
  C:/PROGRA~2/SFML/include/SFML/System.hpp \
@@ -242,8 +242,8 @@ CMakeFiles/Jogo.dir/src/entidade/entidade.cpp.obj: \
  C:/PROGRA~2/SFML/include/SFML/Graphics/Sprite.hpp \
  C:/PROGRA~2/SFML/include/SFML/Graphics/Text.hpp \
  C:/PROGRA~2/SFML/include/SFML/Graphics/VertexBuffer.hpp \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/Ente.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/IDs.h \
+ C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/entidade/Ente.h \
+ C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/entidade/IDs.h \
  C:/msys64/mingw64/include/c++/13.1.0/fstream \
  C:/msys64/mingw64/include/c++/13.1.0/istream \
  C:/msys64/mingw64/include/c++/13.1.0/bits/istream.tcc \

@@ -1,7 +1,7 @@
 CMakeFiles/Jogo.dir/src/listeners/listenerJogador.cpp.obj: \
  C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos\ a\ parte\Game\src\listeners\listenerJogador.cpp \
  C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/listeners/listenerJogador.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/jogador/jogador.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/jogador/jogador.h \
  C:/PROGRA~2/SFML/include/SFML/Graphics.hpp \
  C:/PROGRA~2/SFML/include/SFML/Window.hpp \
  C:/PROGRA~2/SFML/include/SFML/System.hpp \
@@ -263,10 +263,10 @@ CMakeFiles/Jogo.dir/src/listeners/listenerJogador.cpp.obj: \
  C:/PROGRA~2/SFML/include/SFML/Audio/SoundFileFactory.inl \
  C:/PROGRA~2/SFML/include/SFML/Audio/SoundFileReader.hpp \
  C:/PROGRA~2/SFML/include/SFML/Audio/SoundFileWriter.hpp \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/jogador/personagem.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/entidade.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/Ente.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/IDs.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/jogador/personagem.h \
+ C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/entidade/entidade.h \
+ C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/entidade/Ente.h \
+ C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/entidade/IDs.h \
  C:/msys64/mingw64/include/c++/13.1.0/fstream \
  C:/msys64/mingw64/include/c++/13.1.0/istream \
  C:/msys64/mingw64/include/c++/13.1.0/bits/istream.tcc \
@@ -354,8 +354,8 @@ CMakeFiles/Jogo.dir/src/listeners/listenerJogador.cpp.obj: \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/gerenciador/gerenciadorGrafico.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/gerenciador/camera.h \
  C:/msys64/mingw64/include/c++/13.1.0/iostream \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/animador/animacao.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/animador/imagem.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/arma/arma.h \
+ C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/animador/animacao.h \
+ C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/animador/imagem.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/arma/arma.h \
  C:/msys64/mingw64/include/c++/13.1.0/math.h \
  C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/listeners/listener.h

@@ -3,7 +3,7 @@
 
 namespace Game{
 
-    namespace animador{
+    namespace Animador{
         
 
         /**

@@ -1,4 +1,4 @@
-#include "../../includes/entidade/entidade.h"
+#include "../includes/entidade/entidade.h"
 
 namespace Game{
 

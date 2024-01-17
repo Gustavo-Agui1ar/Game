@@ -2,8 +2,8 @@
 #pragma once
 
 #include "../entidade/Ente.h"
-#include "../botao/botao.h"
-#include "../botao/botaoTexto.h"
+#include "../menus/botao/botao.h"
+#include "../menus/botao/botaoTexto.h"
 #include "../fundo/fundo.h"
 #include "card.h"
 #include <list>

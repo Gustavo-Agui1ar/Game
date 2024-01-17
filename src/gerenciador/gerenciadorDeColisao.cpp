@@ -113,6 +113,16 @@ namespace Game{
                 }
             }
         }
+
+        /**
+         * @brief metodo que procura entidades proximas ao objeto que chamopu o metodo
+         * 
+         * @param posPersonagem posicao do personagem 
+         * @param raioDeDistancia raio de distancia a ser procurado
+         * @param objProcurado objetod a ser procurado
+         * 
+         * @return retorna a entidade procurada
+        */
         Entidade::Entidade* GerenciadorDeColisao::procurarEntidade(sf::Vector2f posPersonagem, sf::Vector2f raioDeDistancia, IDs::IDs objProcurado)
         {
             int tam = listaPersonagem->getTam();
@@ -138,16 +148,29 @@ namespace Game{
             return nullptr;
         }
 
+        /**
+         * @brief altwera a lista do gerenciador de colisao 
+         * 
+         * @param lista a ser atribuida
+        */
         void GerenciadorDeColisao::setListaPersonagem(Lista::ListaEntidade* personagem)
         {
             this->listaPersonagem = personagem;
         }
 
+        /**
+         * @brief altwera a lista do gerenciador de colisao 
+         * 
+         * @param lista a ser atribuida
+        */
         void GerenciadorDeColisao::setListaObstaculo( Lista::ListaEntidade* obstaculo)
         {
             this->listaObstaculo = obstaculo;
         }
 
+        /**
+         * @brief limpa as listas do gerenciador de colisao
+        */
          void GerenciadorDeColisao::limparListas()
          {
             delete(listaObstaculo);

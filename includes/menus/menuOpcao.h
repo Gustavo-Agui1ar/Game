@@ -3,7 +3,7 @@
 
 #include "menuPrincipal.h"
 #include "../includes/fases/fase.h"
-#include "../botao/botaoVolume.h"
+#include "../menus/botao/botaoVolume.h"
 
 #define TAMANHO_BOTAO_MENU_OPCAO_X 350.0f
 #define TAMANHO_BOTAO_MENU_OPCAO_Y 80.0f

@@ -1,19 +1,19 @@
 
 #pragma once
 
-#include "../gerenciador/gerenciadorDeColisao.h"
+#include "../includes/gerenciador/gerenciadorDeColisao.h"
 
 #include "../listeners/listenerFase.h"
 
-#include "../Obstaculo/Plataforma.h"
+#include "../includes/entidade/Obstaculo/Plataforma.h"
 
 #include "../lista/listaEntidade.h"
 
-#include "../inimigo/esqueleto.h"
+#include "../includes/entidade/inimigo/esqueleto.h"
 
-#include "../jogador/jogador.h"
+#include "../includes/entidade/jogador/jogador.h"
 
-#include "../inimigo/slime.h"
+#include "../includes/entidade/inimigo/slime.h"
 
 #include "../fundo/fundo.h"
 

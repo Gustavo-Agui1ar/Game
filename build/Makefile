@@ -128,54 +128,6 @@ Jogo/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/build
 .PHONY : Jogo/fast
 
-src/Obstaculo/Obstaculo.obj: src/Obstaculo/Obstaculo.cpp.obj
-.PHONY : src/Obstaculo/Obstaculo.obj
-
-# target to build an object file
-src/Obstaculo/Obstaculo.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/Obstaculo/Obstaculo.cpp.obj
-.PHONY : src/Obstaculo/Obstaculo.cpp.obj
-
-src/Obstaculo/Obstaculo.i: src/Obstaculo/Obstaculo.cpp.i
-.PHONY : src/Obstaculo/Obstaculo.i
-
-# target to preprocess a source file
-src/Obstaculo/Obstaculo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/Obstaculo/Obstaculo.cpp.i
-.PHONY : src/Obstaculo/Obstaculo.cpp.i
-
-src/Obstaculo/Obstaculo.s: src/Obstaculo/Obstaculo.cpp.s
-.PHONY : src/Obstaculo/Obstaculo.s
-
-# target to generate assembly for a file
-src/Obstaculo/Obstaculo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/Obstaculo/Obstaculo.cpp.s
-.PHONY : src/Obstaculo/Obstaculo.cpp.s
-
-src/Obstaculo/Plataforma.obj: src/Obstaculo/Plataforma.cpp.obj
-.PHONY : src/Obstaculo/Plataforma.obj
-
-# target to build an object file
-src/Obstaculo/Plataforma.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/Obstaculo/Plataforma.cpp.obj
-.PHONY : src/Obstaculo/Plataforma.cpp.obj
-
-src/Obstaculo/Plataforma.i: src/Obstaculo/Plataforma.cpp.i
-.PHONY : src/Obstaculo/Plataforma.i
-
-# target to preprocess a source file
-src/Obstaculo/Plataforma.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/Obstaculo/Plataforma.cpp.i
-.PHONY : src/Obstaculo/Plataforma.cpp.i
-
-src/Obstaculo/Plataforma.s: src/Obstaculo/Plataforma.cpp.s
-.PHONY : src/Obstaculo/Plataforma.s
-
-# target to generate assembly for a file
-src/Obstaculo/Plataforma.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/Obstaculo/Plataforma.cpp.s
-.PHONY : src/Obstaculo/Plataforma.cpp.s
-
 src/animador/animacao.obj: src/animador/animacao.cpp.obj
 .PHONY : src/animador/animacao.obj
 
@@ -224,150 +176,6 @@ src/animador/imagem.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/animador/imagem.cpp.s
 .PHONY : src/animador/imagem.cpp.s
 
-src/arma/arma.obj: src/arma/arma.cpp.obj
-.PHONY : src/arma/arma.obj
-
-# target to build an object file
-src/arma/arma.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/arma/arma.cpp.obj
-.PHONY : src/arma/arma.cpp.obj
-
-src/arma/arma.i: src/arma/arma.cpp.i
-.PHONY : src/arma/arma.i
-
-# target to preprocess a source file
-src/arma/arma.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/arma/arma.cpp.i
-.PHONY : src/arma/arma.cpp.i
-
-src/arma/arma.s: src/arma/arma.cpp.s
-.PHONY : src/arma/arma.s
-
-# target to generate assembly for a file
-src/arma/arma.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/arma/arma.cpp.s
-.PHONY : src/arma/arma.cpp.s
-
-src/botao/botao.obj: src/botao/botao.cpp.obj
-.PHONY : src/botao/botao.obj
-
-# target to build an object file
-src/botao/botao.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/botao.cpp.obj
-.PHONY : src/botao/botao.cpp.obj
-
-src/botao/botao.i: src/botao/botao.cpp.i
-.PHONY : src/botao/botao.i
-
-# target to preprocess a source file
-src/botao/botao.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/botao.cpp.i
-.PHONY : src/botao/botao.cpp.i
-
-src/botao/botao.s: src/botao/botao.cpp.s
-.PHONY : src/botao/botao.s
-
-# target to generate assembly for a file
-src/botao/botao.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/botao.cpp.s
-.PHONY : src/botao/botao.cpp.s
-
-src/botao/botaoTexto.obj: src/botao/botaoTexto.cpp.obj
-.PHONY : src/botao/botaoTexto.obj
-
-# target to build an object file
-src/botao/botaoTexto.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/botaoTexto.cpp.obj
-.PHONY : src/botao/botaoTexto.cpp.obj
-
-src/botao/botaoTexto.i: src/botao/botaoTexto.cpp.i
-.PHONY : src/botao/botaoTexto.i
-
-# target to preprocess a source file
-src/botao/botaoTexto.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/botaoTexto.cpp.i
-.PHONY : src/botao/botaoTexto.cpp.i
-
-src/botao/botaoTexto.s: src/botao/botaoTexto.cpp.s
-.PHONY : src/botao/botaoTexto.s
-
-# target to generate assembly for a file
-src/botao/botaoTexto.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/botaoTexto.cpp.s
-.PHONY : src/botao/botaoTexto.cpp.s
-
-src/botao/botaoVolume.obj: src/botao/botaoVolume.cpp.obj
-.PHONY : src/botao/botaoVolume.obj
-
-# target to build an object file
-src/botao/botaoVolume.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/botaoVolume.cpp.obj
-.PHONY : src/botao/botaoVolume.cpp.obj
-
-src/botao/botaoVolume.i: src/botao/botaoVolume.cpp.i
-.PHONY : src/botao/botaoVolume.i
-
-# target to preprocess a source file
-src/botao/botaoVolume.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/botaoVolume.cpp.i
-.PHONY : src/botao/botaoVolume.cpp.i
-
-src/botao/botaoVolume.s: src/botao/botaoVolume.cpp.s
-.PHONY : src/botao/botaoVolume.s
-
-# target to generate assembly for a file
-src/botao/botaoVolume.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/botaoVolume.cpp.s
-.PHONY : src/botao/botaoVolume.cpp.s
-
-src/botao/texto.obj: src/botao/texto.cpp.obj
-.PHONY : src/botao/texto.obj
-
-# target to build an object file
-src/botao/texto.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/texto.cpp.obj
-.PHONY : src/botao/texto.cpp.obj
-
-src/botao/texto.i: src/botao/texto.cpp.i
-.PHONY : src/botao/texto.i
-
-# target to preprocess a source file
-src/botao/texto.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/texto.cpp.i
-.PHONY : src/botao/texto.cpp.i
-
-src/botao/texto.s: src/botao/texto.cpp.s
-.PHONY : src/botao/texto.s
-
-# target to generate assembly for a file
-src/botao/texto.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/texto.cpp.s
-.PHONY : src/botao/texto.cpp.s
-
-src/botao/textoEfeito.obj: src/botao/textoEfeito.cpp.obj
-.PHONY : src/botao/textoEfeito.obj
-
-# target to build an object file
-src/botao/textoEfeito.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/textoEfeito.cpp.obj
-.PHONY : src/botao/textoEfeito.cpp.obj
-
-src/botao/textoEfeito.i: src/botao/textoEfeito.cpp.i
-.PHONY : src/botao/textoEfeito.i
-
-# target to preprocess a source file
-src/botao/textoEfeito.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/textoEfeito.cpp.i
-.PHONY : src/botao/textoEfeito.cpp.i
-
-src/botao/textoEfeito.s: src/botao/textoEfeito.cpp.s
-.PHONY : src/botao/textoEfeito.s
-
-# target to generate assembly for a file
-src/botao/textoEfeito.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/botao/textoEfeito.cpp.s
-.PHONY : src/botao/textoEfeito.cpp.s
-
 src/entidade/Ente.obj: src/entidade/Ente.cpp.obj
 .PHONY : src/entidade/Ente.obj
 
@@ -392,6 +200,78 @@ src/entidade/Ente.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/Ente.cpp.s
 .PHONY : src/entidade/Ente.cpp.s
 
+src/entidade/Obstaculo/Obstaculo.obj: src/entidade/Obstaculo/Obstaculo.cpp.obj
+.PHONY : src/entidade/Obstaculo/Obstaculo.obj
+
+# target to build an object file
+src/entidade/Obstaculo/Obstaculo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/Obstaculo/Obstaculo.cpp.obj
+.PHONY : src/entidade/Obstaculo/Obstaculo.cpp.obj
+
+src/entidade/Obstaculo/Obstaculo.i: src/entidade/Obstaculo/Obstaculo.cpp.i
+.PHONY : src/entidade/Obstaculo/Obstaculo.i
+
+# target to preprocess a source file
+src/entidade/Obstaculo/Obstaculo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/Obstaculo/Obstaculo.cpp.i
+.PHONY : src/entidade/Obstaculo/Obstaculo.cpp.i
+
+src/entidade/Obstaculo/Obstaculo.s: src/entidade/Obstaculo/Obstaculo.cpp.s
+.PHONY : src/entidade/Obstaculo/Obstaculo.s
+
+# target to generate assembly for a file
+src/entidade/Obstaculo/Obstaculo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/Obstaculo/Obstaculo.cpp.s
+.PHONY : src/entidade/Obstaculo/Obstaculo.cpp.s
+
+src/entidade/Obstaculo/Plataforma.obj: src/entidade/Obstaculo/Plataforma.cpp.obj
+.PHONY : src/entidade/Obstaculo/Plataforma.obj
+
+# target to build an object file
+src/entidade/Obstaculo/Plataforma.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/Obstaculo/Plataforma.cpp.obj
+.PHONY : src/entidade/Obstaculo/Plataforma.cpp.obj
+
+src/entidade/Obstaculo/Plataforma.i: src/entidade/Obstaculo/Plataforma.cpp.i
+.PHONY : src/entidade/Obstaculo/Plataforma.i
+
+# target to preprocess a source file
+src/entidade/Obstaculo/Plataforma.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/Obstaculo/Plataforma.cpp.i
+.PHONY : src/entidade/Obstaculo/Plataforma.cpp.i
+
+src/entidade/Obstaculo/Plataforma.s: src/entidade/Obstaculo/Plataforma.cpp.s
+.PHONY : src/entidade/Obstaculo/Plataforma.s
+
+# target to generate assembly for a file
+src/entidade/Obstaculo/Plataforma.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/Obstaculo/Plataforma.cpp.s
+.PHONY : src/entidade/Obstaculo/Plataforma.cpp.s
+
+src/entidade/arma/arma.obj: src/entidade/arma/arma.cpp.obj
+.PHONY : src/entidade/arma/arma.obj
+
+# target to build an object file
+src/entidade/arma/arma.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/arma/arma.cpp.obj
+.PHONY : src/entidade/arma/arma.cpp.obj
+
+src/entidade/arma/arma.i: src/entidade/arma/arma.cpp.i
+.PHONY : src/entidade/arma/arma.i
+
+# target to preprocess a source file
+src/entidade/arma/arma.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/arma/arma.cpp.i
+.PHONY : src/entidade/arma/arma.cpp.i
+
+src/entidade/arma/arma.s: src/entidade/arma/arma.cpp.s
+.PHONY : src/entidade/arma/arma.s
+
+# target to generate assembly for a file
+src/entidade/arma/arma.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/arma/arma.cpp.s
+.PHONY : src/entidade/arma/arma.cpp.s
+
 src/entidade/entidade.obj: src/entidade/entidade.cpp.obj
 .PHONY : src/entidade/entidade.obj
 
@@ -415,6 +295,126 @@ src/entidade/entidade.s: src/entidade/entidade.cpp.s
 src/entidade/entidade.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/entidade.cpp.s
 .PHONY : src/entidade/entidade.cpp.s
+
+src/entidade/inimigo/esqueleto.obj: src/entidade/inimigo/esqueleto.cpp.obj
+.PHONY : src/entidade/inimigo/esqueleto.obj
+
+# target to build an object file
+src/entidade/inimigo/esqueleto.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/inimigo/esqueleto.cpp.obj
+.PHONY : src/entidade/inimigo/esqueleto.cpp.obj
+
+src/entidade/inimigo/esqueleto.i: src/entidade/inimigo/esqueleto.cpp.i
+.PHONY : src/entidade/inimigo/esqueleto.i
+
+# target to preprocess a source file
+src/entidade/inimigo/esqueleto.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/inimigo/esqueleto.cpp.i
+.PHONY : src/entidade/inimigo/esqueleto.cpp.i
+
+src/entidade/inimigo/esqueleto.s: src/entidade/inimigo/esqueleto.cpp.s
+.PHONY : src/entidade/inimigo/esqueleto.s
+
+# target to generate assembly for a file
+src/entidade/inimigo/esqueleto.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/inimigo/esqueleto.cpp.s
+.PHONY : src/entidade/inimigo/esqueleto.cpp.s
+
+src/entidade/inimigo/inimigo.obj: src/entidade/inimigo/inimigo.cpp.obj
+.PHONY : src/entidade/inimigo/inimigo.obj
+
+# target to build an object file
+src/entidade/inimigo/inimigo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/inimigo/inimigo.cpp.obj
+.PHONY : src/entidade/inimigo/inimigo.cpp.obj
+
+src/entidade/inimigo/inimigo.i: src/entidade/inimigo/inimigo.cpp.i
+.PHONY : src/entidade/inimigo/inimigo.i
+
+# target to preprocess a source file
+src/entidade/inimigo/inimigo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/inimigo/inimigo.cpp.i
+.PHONY : src/entidade/inimigo/inimigo.cpp.i
+
+src/entidade/inimigo/inimigo.s: src/entidade/inimigo/inimigo.cpp.s
+.PHONY : src/entidade/inimigo/inimigo.s
+
+# target to generate assembly for a file
+src/entidade/inimigo/inimigo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/inimigo/inimigo.cpp.s
+.PHONY : src/entidade/inimigo/inimigo.cpp.s
+
+src/entidade/inimigo/slime.obj: src/entidade/inimigo/slime.cpp.obj
+.PHONY : src/entidade/inimigo/slime.obj
+
+# target to build an object file
+src/entidade/inimigo/slime.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/inimigo/slime.cpp.obj
+.PHONY : src/entidade/inimigo/slime.cpp.obj
+
+src/entidade/inimigo/slime.i: src/entidade/inimigo/slime.cpp.i
+.PHONY : src/entidade/inimigo/slime.i
+
+# target to preprocess a source file
+src/entidade/inimigo/slime.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/inimigo/slime.cpp.i
+.PHONY : src/entidade/inimigo/slime.cpp.i
+
+src/entidade/inimigo/slime.s: src/entidade/inimigo/slime.cpp.s
+.PHONY : src/entidade/inimigo/slime.s
+
+# target to generate assembly for a file
+src/entidade/inimigo/slime.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/inimigo/slime.cpp.s
+.PHONY : src/entidade/inimigo/slime.cpp.s
+
+src/entidade/jogador/jogador.obj: src/entidade/jogador/jogador.cpp.obj
+.PHONY : src/entidade/jogador/jogador.obj
+
+# target to build an object file
+src/entidade/jogador/jogador.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/jogador/jogador.cpp.obj
+.PHONY : src/entidade/jogador/jogador.cpp.obj
+
+src/entidade/jogador/jogador.i: src/entidade/jogador/jogador.cpp.i
+.PHONY : src/entidade/jogador/jogador.i
+
+# target to preprocess a source file
+src/entidade/jogador/jogador.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/jogador/jogador.cpp.i
+.PHONY : src/entidade/jogador/jogador.cpp.i
+
+src/entidade/jogador/jogador.s: src/entidade/jogador/jogador.cpp.s
+.PHONY : src/entidade/jogador/jogador.s
+
+# target to generate assembly for a file
+src/entidade/jogador/jogador.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/jogador/jogador.cpp.s
+.PHONY : src/entidade/jogador/jogador.cpp.s
+
+src/entidade/jogador/personagem.obj: src/entidade/jogador/personagem.cpp.obj
+.PHONY : src/entidade/jogador/personagem.obj
+
+# target to build an object file
+src/entidade/jogador/personagem.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/jogador/personagem.cpp.obj
+.PHONY : src/entidade/jogador/personagem.cpp.obj
+
+src/entidade/jogador/personagem.i: src/entidade/jogador/personagem.cpp.i
+.PHONY : src/entidade/jogador/personagem.i
+
+# target to preprocess a source file
+src/entidade/jogador/personagem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/jogador/personagem.cpp.i
+.PHONY : src/entidade/jogador/personagem.cpp.i
+
+src/entidade/jogador/personagem.s: src/entidade/jogador/personagem.cpp.s
+.PHONY : src/entidade/jogador/personagem.s
+
+# target to generate assembly for a file
+src/entidade/jogador/personagem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/jogador/personagem.cpp.s
+.PHONY : src/entidade/jogador/personagem.cpp.s
 
 src/estados/estado.obj: src/estados/estado.cpp.obj
 .PHONY : src/estados/estado.obj
@@ -776,126 +776,6 @@ src/gerenciador/gerenciadorGrafico.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorGrafico.cpp.s
 .PHONY : src/gerenciador/gerenciadorGrafico.cpp.s
 
-src/inimigo/esqueleto.obj: src/inimigo/esqueleto.cpp.obj
-.PHONY : src/inimigo/esqueleto.obj
-
-# target to build an object file
-src/inimigo/esqueleto.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/inimigo/esqueleto.cpp.obj
-.PHONY : src/inimigo/esqueleto.cpp.obj
-
-src/inimigo/esqueleto.i: src/inimigo/esqueleto.cpp.i
-.PHONY : src/inimigo/esqueleto.i
-
-# target to preprocess a source file
-src/inimigo/esqueleto.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/inimigo/esqueleto.cpp.i
-.PHONY : src/inimigo/esqueleto.cpp.i
-
-src/inimigo/esqueleto.s: src/inimigo/esqueleto.cpp.s
-.PHONY : src/inimigo/esqueleto.s
-
-# target to generate assembly for a file
-src/inimigo/esqueleto.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/inimigo/esqueleto.cpp.s
-.PHONY : src/inimigo/esqueleto.cpp.s
-
-src/inimigo/inimigo.obj: src/inimigo/inimigo.cpp.obj
-.PHONY : src/inimigo/inimigo.obj
-
-# target to build an object file
-src/inimigo/inimigo.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/inimigo/inimigo.cpp.obj
-.PHONY : src/inimigo/inimigo.cpp.obj
-
-src/inimigo/inimigo.i: src/inimigo/inimigo.cpp.i
-.PHONY : src/inimigo/inimigo.i
-
-# target to preprocess a source file
-src/inimigo/inimigo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/inimigo/inimigo.cpp.i
-.PHONY : src/inimigo/inimigo.cpp.i
-
-src/inimigo/inimigo.s: src/inimigo/inimigo.cpp.s
-.PHONY : src/inimigo/inimigo.s
-
-# target to generate assembly for a file
-src/inimigo/inimigo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/inimigo/inimigo.cpp.s
-.PHONY : src/inimigo/inimigo.cpp.s
-
-src/inimigo/slime.obj: src/inimigo/slime.cpp.obj
-.PHONY : src/inimigo/slime.obj
-
-# target to build an object file
-src/inimigo/slime.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/inimigo/slime.cpp.obj
-.PHONY : src/inimigo/slime.cpp.obj
-
-src/inimigo/slime.i: src/inimigo/slime.cpp.i
-.PHONY : src/inimigo/slime.i
-
-# target to preprocess a source file
-src/inimigo/slime.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/inimigo/slime.cpp.i
-.PHONY : src/inimigo/slime.cpp.i
-
-src/inimigo/slime.s: src/inimigo/slime.cpp.s
-.PHONY : src/inimigo/slime.s
-
-# target to generate assembly for a file
-src/inimigo/slime.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/inimigo/slime.cpp.s
-.PHONY : src/inimigo/slime.cpp.s
-
-src/jogador/jogador.obj: src/jogador/jogador.cpp.obj
-.PHONY : src/jogador/jogador.obj
-
-# target to build an object file
-src/jogador/jogador.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/jogador/jogador.cpp.obj
-.PHONY : src/jogador/jogador.cpp.obj
-
-src/jogador/jogador.i: src/jogador/jogador.cpp.i
-.PHONY : src/jogador/jogador.i
-
-# target to preprocess a source file
-src/jogador/jogador.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/jogador/jogador.cpp.i
-.PHONY : src/jogador/jogador.cpp.i
-
-src/jogador/jogador.s: src/jogador/jogador.cpp.s
-.PHONY : src/jogador/jogador.s
-
-# target to generate assembly for a file
-src/jogador/jogador.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/jogador/jogador.cpp.s
-.PHONY : src/jogador/jogador.cpp.s
-
-src/jogador/personagem.obj: src/jogador/personagem.cpp.obj
-.PHONY : src/jogador/personagem.obj
-
-# target to build an object file
-src/jogador/personagem.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/jogador/personagem.cpp.obj
-.PHONY : src/jogador/personagem.cpp.obj
-
-src/jogador/personagem.i: src/jogador/personagem.cpp.i
-.PHONY : src/jogador/personagem.i
-
-# target to preprocess a source file
-src/jogador/personagem.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/jogador/personagem.cpp.i
-.PHONY : src/jogador/personagem.cpp.i
-
-src/jogador/personagem.s: src/jogador/personagem.cpp.s
-.PHONY : src/jogador/personagem.s
-
-# target to generate assembly for a file
-src/jogador/personagem.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/jogador/personagem.cpp.s
-.PHONY : src/jogador/personagem.cpp.s
-
 src/lista/listaEntidade.obj: src/lista/listaEntidade.cpp.obj
 .PHONY : src/lista/listaEntidade.obj
 
@@ -1063,6 +943,126 @@ src/main.s: src/main.cpp.s
 src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/menus/botao/botao.obj: src/menus/botao/botao.cpp.obj
+.PHONY : src/menus/botao/botao.obj
+
+# target to build an object file
+src/menus/botao/botao.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/botao/botao.cpp.obj
+.PHONY : src/menus/botao/botao.cpp.obj
+
+src/menus/botao/botao.i: src/menus/botao/botao.cpp.i
+.PHONY : src/menus/botao/botao.i
+
+# target to preprocess a source file
+src/menus/botao/botao.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/botao/botao.cpp.i
+.PHONY : src/menus/botao/botao.cpp.i
+
+src/menus/botao/botao.s: src/menus/botao/botao.cpp.s
+.PHONY : src/menus/botao/botao.s
+
+# target to generate assembly for a file
+src/menus/botao/botao.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/botao/botao.cpp.s
+.PHONY : src/menus/botao/botao.cpp.s
+
+src/menus/botao/botaoTexto.obj: src/menus/botao/botaoTexto.cpp.obj
+.PHONY : src/menus/botao/botaoTexto.obj
+
+# target to build an object file
+src/menus/botao/botaoTexto.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/botao/botaoTexto.cpp.obj
+.PHONY : src/menus/botao/botaoTexto.cpp.obj
+
+src/menus/botao/botaoTexto.i: src/menus/botao/botaoTexto.cpp.i
+.PHONY : src/menus/botao/botaoTexto.i
+
+# target to preprocess a source file
+src/menus/botao/botaoTexto.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/botao/botaoTexto.cpp.i
+.PHONY : src/menus/botao/botaoTexto.cpp.i
+
+src/menus/botao/botaoTexto.s: src/menus/botao/botaoTexto.cpp.s
+.PHONY : src/menus/botao/botaoTexto.s
+
+# target to generate assembly for a file
+src/menus/botao/botaoTexto.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/botao/botaoTexto.cpp.s
+.PHONY : src/menus/botao/botaoTexto.cpp.s
+
+src/menus/botao/botaoVolume.obj: src/menus/botao/botaoVolume.cpp.obj
+.PHONY : src/menus/botao/botaoVolume.obj
+
+# target to build an object file
+src/menus/botao/botaoVolume.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/botao/botaoVolume.cpp.obj
+.PHONY : src/menus/botao/botaoVolume.cpp.obj
+
+src/menus/botao/botaoVolume.i: src/menus/botao/botaoVolume.cpp.i
+.PHONY : src/menus/botao/botaoVolume.i
+
+# target to preprocess a source file
+src/menus/botao/botaoVolume.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/botao/botaoVolume.cpp.i
+.PHONY : src/menus/botao/botaoVolume.cpp.i
+
+src/menus/botao/botaoVolume.s: src/menus/botao/botaoVolume.cpp.s
+.PHONY : src/menus/botao/botaoVolume.s
+
+# target to generate assembly for a file
+src/menus/botao/botaoVolume.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/botao/botaoVolume.cpp.s
+.PHONY : src/menus/botao/botaoVolume.cpp.s
+
+src/menus/botao/texto.obj: src/menus/botao/texto.cpp.obj
+.PHONY : src/menus/botao/texto.obj
+
+# target to build an object file
+src/menus/botao/texto.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/botao/texto.cpp.obj
+.PHONY : src/menus/botao/texto.cpp.obj
+
+src/menus/botao/texto.i: src/menus/botao/texto.cpp.i
+.PHONY : src/menus/botao/texto.i
+
+# target to preprocess a source file
+src/menus/botao/texto.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/botao/texto.cpp.i
+.PHONY : src/menus/botao/texto.cpp.i
+
+src/menus/botao/texto.s: src/menus/botao/texto.cpp.s
+.PHONY : src/menus/botao/texto.s
+
+# target to generate assembly for a file
+src/menus/botao/texto.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/botao/texto.cpp.s
+.PHONY : src/menus/botao/texto.cpp.s
+
+src/menus/botao/textoEfeito.obj: src/menus/botao/textoEfeito.cpp.obj
+.PHONY : src/menus/botao/textoEfeito.obj
+
+# target to build an object file
+src/menus/botao/textoEfeito.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/botao/textoEfeito.cpp.obj
+.PHONY : src/menus/botao/textoEfeito.cpp.obj
+
+src/menus/botao/textoEfeito.i: src/menus/botao/textoEfeito.cpp.i
+.PHONY : src/menus/botao/textoEfeito.i
+
+# target to preprocess a source file
+src/menus/botao/textoEfeito.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/botao/textoEfeito.cpp.i
+.PHONY : src/menus/botao/textoEfeito.cpp.i
+
+src/menus/botao/textoEfeito.s: src/menus/botao/textoEfeito.cpp.s
+.PHONY : src/menus/botao/textoEfeito.s
+
+# target to generate assembly for a file
+src/menus/botao/textoEfeito.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/botao/textoEfeito.cpp.s
+.PHONY : src/menus/botao/textoEfeito.cpp.s
 
 src/menus/card.obj: src/menus/card.cpp.obj
 .PHONY : src/menus/card.obj
@@ -1289,42 +1289,42 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Jogo
-	@echo ... src/Obstaculo/Obstaculo.obj
-	@echo ... src/Obstaculo/Obstaculo.i
-	@echo ... src/Obstaculo/Obstaculo.s
-	@echo ... src/Obstaculo/Plataforma.obj
-	@echo ... src/Obstaculo/Plataforma.i
-	@echo ... src/Obstaculo/Plataforma.s
 	@echo ... src/animador/animacao.obj
 	@echo ... src/animador/animacao.i
 	@echo ... src/animador/animacao.s
 	@echo ... src/animador/imagem.obj
 	@echo ... src/animador/imagem.i
 	@echo ... src/animador/imagem.s
-	@echo ... src/arma/arma.obj
-	@echo ... src/arma/arma.i
-	@echo ... src/arma/arma.s
-	@echo ... src/botao/botao.obj
-	@echo ... src/botao/botao.i
-	@echo ... src/botao/botao.s
-	@echo ... src/botao/botaoTexto.obj
-	@echo ... src/botao/botaoTexto.i
-	@echo ... src/botao/botaoTexto.s
-	@echo ... src/botao/botaoVolume.obj
-	@echo ... src/botao/botaoVolume.i
-	@echo ... src/botao/botaoVolume.s
-	@echo ... src/botao/texto.obj
-	@echo ... src/botao/texto.i
-	@echo ... src/botao/texto.s
-	@echo ... src/botao/textoEfeito.obj
-	@echo ... src/botao/textoEfeito.i
-	@echo ... src/botao/textoEfeito.s
 	@echo ... src/entidade/Ente.obj
 	@echo ... src/entidade/Ente.i
 	@echo ... src/entidade/Ente.s
+	@echo ... src/entidade/Obstaculo/Obstaculo.obj
+	@echo ... src/entidade/Obstaculo/Obstaculo.i
+	@echo ... src/entidade/Obstaculo/Obstaculo.s
+	@echo ... src/entidade/Obstaculo/Plataforma.obj
+	@echo ... src/entidade/Obstaculo/Plataforma.i
+	@echo ... src/entidade/Obstaculo/Plataforma.s
+	@echo ... src/entidade/arma/arma.obj
+	@echo ... src/entidade/arma/arma.i
+	@echo ... src/entidade/arma/arma.s
 	@echo ... src/entidade/entidade.obj
 	@echo ... src/entidade/entidade.i
 	@echo ... src/entidade/entidade.s
+	@echo ... src/entidade/inimigo/esqueleto.obj
+	@echo ... src/entidade/inimigo/esqueleto.i
+	@echo ... src/entidade/inimigo/esqueleto.s
+	@echo ... src/entidade/inimigo/inimigo.obj
+	@echo ... src/entidade/inimigo/inimigo.i
+	@echo ... src/entidade/inimigo/inimigo.s
+	@echo ... src/entidade/inimigo/slime.obj
+	@echo ... src/entidade/inimigo/slime.i
+	@echo ... src/entidade/inimigo/slime.s
+	@echo ... src/entidade/jogador/jogador.obj
+	@echo ... src/entidade/jogador/jogador.i
+	@echo ... src/entidade/jogador/jogador.s
+	@echo ... src/entidade/jogador/personagem.obj
+	@echo ... src/entidade/jogador/personagem.i
+	@echo ... src/entidade/jogador/personagem.s
 	@echo ... src/estados/estado.obj
 	@echo ... src/estados/estado.i
 	@echo ... src/estados/estado.s
@@ -1370,21 +1370,6 @@ help:
 	@echo ... src/gerenciador/gerenciadorGrafico.obj
 	@echo ... src/gerenciador/gerenciadorGrafico.i
 	@echo ... src/gerenciador/gerenciadorGrafico.s
-	@echo ... src/inimigo/esqueleto.obj
-	@echo ... src/inimigo/esqueleto.i
-	@echo ... src/inimigo/esqueleto.s
-	@echo ... src/inimigo/inimigo.obj
-	@echo ... src/inimigo/inimigo.i
-	@echo ... src/inimigo/inimigo.s
-	@echo ... src/inimigo/slime.obj
-	@echo ... src/inimigo/slime.i
-	@echo ... src/inimigo/slime.s
-	@echo ... src/jogador/jogador.obj
-	@echo ... src/jogador/jogador.i
-	@echo ... src/jogador/jogador.s
-	@echo ... src/jogador/personagem.obj
-	@echo ... src/jogador/personagem.i
-	@echo ... src/jogador/personagem.s
 	@echo ... src/lista/listaEntidade.obj
 	@echo ... src/lista/listaEntidade.i
 	@echo ... src/lista/listaEntidade.s
@@ -1406,6 +1391,21 @@ help:
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... src/menus/botao/botao.obj
+	@echo ... src/menus/botao/botao.i
+	@echo ... src/menus/botao/botao.s
+	@echo ... src/menus/botao/botaoTexto.obj
+	@echo ... src/menus/botao/botaoTexto.i
+	@echo ... src/menus/botao/botaoTexto.s
+	@echo ... src/menus/botao/botaoVolume.obj
+	@echo ... src/menus/botao/botaoVolume.i
+	@echo ... src/menus/botao/botaoVolume.s
+	@echo ... src/menus/botao/texto.obj
+	@echo ... src/menus/botao/texto.i
+	@echo ... src/menus/botao/texto.s
+	@echo ... src/menus/botao/textoEfeito.obj
+	@echo ... src/menus/botao/textoEfeito.i
+	@echo ... src/menus/botao/textoEfeito.s
 	@echo ... src/menus/card.obj
 	@echo ... src/menus/card.i
 	@echo ... src/menus/card.s

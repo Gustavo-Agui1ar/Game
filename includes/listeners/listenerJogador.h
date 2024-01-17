@@ -1,7 +1,7 @@
 
 #pragma once
 
-#include "../jogador/jogador.h"
+#include "../entidade/jogador/jogador.h"
 #include "listener.h"
 
 namespace Game{

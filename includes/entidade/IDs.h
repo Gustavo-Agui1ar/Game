@@ -13,6 +13,8 @@ namespace IDs{
             red_slime ,
             plataforma ,
             plataforma_invisivel,
+            projetil_inimigo,
+            projetil_jogador,
             
             //IDs fases
             caverna,
