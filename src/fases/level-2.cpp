@@ -43,8 +43,9 @@ namespace Game{
         void Forest::recuperarJogada(nlohmann::ordered_json entidades)
         {
             nlohmann::ordered_json::iterator it;
+            int i;
 
-            for(it = entidades.begin(); it != entidades.end() ; it++)
+            for(it = entidades.begin(),  i = 0 ; it != entidades.end() ; it++, i++)
             {
                 IDs::IDs ID = (*it)["ID"].template get<IDs::IDs>();
 
@@ -52,6 +53,7 @@ namespace Game{
                 {
                     case(IDs::IDs::jogador):
                     {
+                        i++;
                         nlohmann::ordered_json entidade = (*it);
                         it++;
                         nlohmann::ordered_json arma = (*it);
@@ -62,6 +64,7 @@ namespace Game{
 
                     case(IDs::IDs::esqueleto):
                     {
+                        i++;
                         nlohmann::ordered_json entidade = (*it);
                         it++;
                         nlohmann::ordered_json arma = (*it);
@@ -70,8 +73,20 @@ namespace Game{
                     }
                     break;
 
+                    case(IDs::IDs::arqueiro):
+                    {
+                        i++;
+                        nlohmann::ordered_json entidade = (*it);
+                        it++;
+                        nlohmann::ordered_json arma = (*it);
+
+                        criarEntidade(IDs::IDs::arqueiro, entidade, arma);
+                    }
+                    break;
+
                     case(IDs::IDs::red_slime):
                     {
+                        i++;
                         nlohmann::ordered_json entidade = (*it);
                         it++;
                         nlohmann::ordered_json arma = (*it);
@@ -82,7 +97,7 @@ namespace Game{
 
                     case(IDs::IDs::plataforma):
                     {                
-                        criarEntidade(IDs::IDs::plataforma, (*it) );
+                        criarEntidade(IDs::IDs::plataforma, (*it));
                     }
                     break;
 

@@ -229,6 +229,14 @@ namespace Game{
                             Arma::Arma* arma = static_cast<Arma::Arma*>(outraEntidade);
                             tomarDano(arma->getDano());
                         }
+                        else if(outraEntidade->getID() == IDs::IDs::projetil_inimigo)
+                        {
+                            Arma::Projetil* projetil = dynamic_cast<Arma::Projetil*>(outraEntidade);
+
+                            tomarDano(projetil->getDano());
+
+                            projetil->setColidiu(true);
+                        }
 
                     }
 

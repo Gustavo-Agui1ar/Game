@@ -98,7 +98,7 @@ namespace Game{
                 */
                 void Arma::desenhar()
                 {
-
+                    
                 }
 
                 /**

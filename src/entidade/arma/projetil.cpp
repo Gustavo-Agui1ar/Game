@@ -8,14 +8,14 @@ namespace Game{
         namespace Arma{
 
             Projetil::Projetil( IDs::IDs ID):
-            Arma(ID), colidiu(true),direcao(false),animcao(&corpo) velocidade(sf::Vector2f(0.0f, 0.0f))
+            Arma(ID), direcao(false), colidiu(true), velocidade(sf::Vector2f(0.0f, 0.0f)), animacao(&corpo)
             {
                 setPos(sf::Vector2f(-1000.0f, -1000.0f));
                 inicializarAnimacao();
             }
 
             Projetil::Projetil( nlohmann::ordered_json atributos):
-            Arma(atributos["ID"].template get<IDs::IDs>())
+            Arma(atributos["ID"].template get<IDs::IDs>()), animacao(&corpo)
             {
                 try{
                     dano = atributos["dano"].template get<float>();
@@ -30,7 +30,7 @@ namespace Game{
                     animacao.setQuadroAtual(atributos["tempoTotal"].template get<unsigned int>());
                     animacao.setTempoTotal(atributos["tempoTotal"].template get<float>());
 
-                    setVelocidade(sf::Vector2f(atributos["vel"]["x"].template get<float>(), atributos["vel"]["y"].template get<float>()));
+                    setVelocidade(sf::Vector2f(atributos["velocidade"]["x"].template get<float>(), atributos["velocidade"]["y"].template get<float>()));
 
                 
                 }
@@ -48,14 +48,16 @@ namespace Game{
 
             void Projetil::inicializarAnimacao()
             {
-                if(getID() ==IDs::IDs::projetil_inimigo)
+                if(getID() == IDs::IDs::projetil_inimigo)
                 {
-                    animacao.addAnimacao("../animations/enemy/Skeleton_Archer/Arrow.png", "ATACA", 1, 10.0f, 2f, sf::Vector2f(5.0f, 5.0f), sf::Vector2f(tam.x / 2.0f, tam.y / 2.0f));
+                    setTam(sf::Vector2f(TAMANHO_PROJETIL, TAMANHO_PROJETIL));
+                    animacao.addAnimacao("../Game/animations/enemy/Skeleton_Archer/Arrow.png", "ATACA", 1, 10.0f, sf::Vector2f(1.5f, 0.2f), sf::Vector2f(tam.x / 2.0f, tam.y / 2.0f));
                 }
                 else
                 {
                     animacao.addAnimacao("../animations/enemy/Player/Fire-ball.png", "ATACA", 4, 0.12f, sf::Vector2f(5.0f, 5.0f), sf::Vector2f(tam.x / 2.0f, tam.y / 2.0f));
                 }
+                animacao.setImgAtual("ATACA"); 
             }
 
             void Projetil::setVelocidade(sf::Vector2f velocidade)
@@ -72,6 +74,11 @@ namespace Game{
                     setPos(sf::Vector2f(-1000.0f, -1000.0f));
                     setVelocidade(sf::Vector2f(0.0f, 0.0f));
                 }
+            }
+
+            const bool Projetil::getColidiu()
+            {
+                return colidiu;
             }
 
             void Projetil::setDirecao(bool direcao)
@@ -95,11 +102,11 @@ namespace Game{
             void Projetil::atualizarPosicao()
             {
                 const float dt = pGrafico->getTempo();
-                sf::Vector2f posFinal(0.0f, 0.0f);
+                sf::Vector2f posFinal(0.0f, pos.y);
 
                 posFinal.x = pos.x + velocidade.x * dt;
 
-                setPos(posfinal);
+                setPos(posFinal);
             }
 
             void Projetil::atualizarAnimacao()
@@ -134,7 +141,7 @@ namespace Game{
                     atualizarAnimacao();
                     verificarSaiuTela();
 
-                    desenhar();
+                    pGrafico->desenhaElemento(corpo);
                 }
             }
 

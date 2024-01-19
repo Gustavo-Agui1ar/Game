@@ -4,6 +4,8 @@
 #include "arma.h"
 #include "../includes/animador/animacao.h"
 
+#define TAMANHO_PROJETIL 25.0f
+
 namespace Game{
 
     namespace Entidade{
@@ -22,7 +24,7 @@ namespace Game{
 
                     void atualizarAnimacao();
                     void verificarSaiuTela();
-                    void atualiarPosicao();
+                    void atualizarPosicao();
 
                 public:
 

@@ -272,6 +272,30 @@ src/entidade/arma/arma.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/arma/arma.cpp.s
 .PHONY : src/entidade/arma/arma.cpp.s
 
+src/entidade/arma/projetil.obj: src/entidade/arma/projetil.cpp.obj
+.PHONY : src/entidade/arma/projetil.obj
+
+# target to build an object file
+src/entidade/arma/projetil.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/arma/projetil.cpp.obj
+.PHONY : src/entidade/arma/projetil.cpp.obj
+
+src/entidade/arma/projetil.i: src/entidade/arma/projetil.cpp.i
+.PHONY : src/entidade/arma/projetil.i
+
+# target to preprocess a source file
+src/entidade/arma/projetil.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/arma/projetil.cpp.i
+.PHONY : src/entidade/arma/projetil.cpp.i
+
+src/entidade/arma/projetil.s: src/entidade/arma/projetil.cpp.s
+.PHONY : src/entidade/arma/projetil.s
+
+# target to generate assembly for a file
+src/entidade/arma/projetil.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/arma/projetil.cpp.s
+.PHONY : src/entidade/arma/projetil.cpp.s
+
 src/entidade/entidade.obj: src/entidade/entidade.cpp.obj
 .PHONY : src/entidade/entidade.obj
 
@@ -295,6 +319,30 @@ src/entidade/entidade.s: src/entidade/entidade.cpp.s
 src/entidade/entidade.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/entidade.cpp.s
 .PHONY : src/entidade/entidade.cpp.s
+
+src/entidade/inimigo/arqueiro.obj: src/entidade/inimigo/arqueiro.cpp.obj
+.PHONY : src/entidade/inimigo/arqueiro.obj
+
+# target to build an object file
+src/entidade/inimigo/arqueiro.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/inimigo/arqueiro.cpp.obj
+.PHONY : src/entidade/inimigo/arqueiro.cpp.obj
+
+src/entidade/inimigo/arqueiro.i: src/entidade/inimigo/arqueiro.cpp.i
+.PHONY : src/entidade/inimigo/arqueiro.i
+
+# target to preprocess a source file
+src/entidade/inimigo/arqueiro.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/inimigo/arqueiro.cpp.i
+.PHONY : src/entidade/inimigo/arqueiro.cpp.i
+
+src/entidade/inimigo/arqueiro.s: src/entidade/inimigo/arqueiro.cpp.s
+.PHONY : src/entidade/inimigo/arqueiro.s
+
+# target to generate assembly for a file
+src/entidade/inimigo/arqueiro.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/inimigo/arqueiro.cpp.s
+.PHONY : src/entidade/inimigo/arqueiro.cpp.s
 
 src/entidade/inimigo/esqueleto.obj: src/entidade/inimigo/esqueleto.cpp.obj
 .PHONY : src/entidade/inimigo/esqueleto.obj
@@ -1307,9 +1355,15 @@ help:
 	@echo ... src/entidade/arma/arma.obj
 	@echo ... src/entidade/arma/arma.i
 	@echo ... src/entidade/arma/arma.s
+	@echo ... src/entidade/arma/projetil.obj
+	@echo ... src/entidade/arma/projetil.i
+	@echo ... src/entidade/arma/projetil.s
 	@echo ... src/entidade/entidade.obj
 	@echo ... src/entidade/entidade.i
 	@echo ... src/entidade/entidade.s
+	@echo ... src/entidade/inimigo/arqueiro.obj
+	@echo ... src/entidade/inimigo/arqueiro.i
+	@echo ... src/entidade/inimigo/arqueiro.s
 	@echo ... src/entidade/inimigo/esqueleto.obj
 	@echo ... src/entidade/inimigo/esqueleto.i
 	@echo ... src/entidade/inimigo/esqueleto.s

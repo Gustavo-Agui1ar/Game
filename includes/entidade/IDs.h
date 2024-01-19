@@ -10,6 +10,7 @@ namespace IDs{
             //personagens 
             jogador ,
             esqueleto,
+            arqueiro,
             red_slime ,
             plataforma ,
             plataforma_invisivel,
@@ -18,7 +19,7 @@ namespace IDs{
             
             //IDs fases
             caverna,
-            forest = 7,
+            forest,
             
             //IDs das armas
             armaDoJogador,

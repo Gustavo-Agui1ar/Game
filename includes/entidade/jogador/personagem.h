@@ -111,6 +111,7 @@ namespace Game {
                
                 sf::Vector2f getVelocidade();
                 const bool getMorrer();
+                const bool getDirecao();
 
                 //metodos de animacao e visualizacao
               

@@ -147,6 +147,15 @@ namespace Game{
             {
                 return morrendo;
             }
+           
+            /**
+             * @brief metodo que  retorna o estado do 
+             * boleano de morrer do personagem
+            */
+            const bool Personagem::getDirecao()
+            {
+                return direcao;
+            }
             
             /**
              * @brief metodo que auxilia na tomada de dano.
@@ -213,16 +222,16 @@ namespace Game{
                 nlohmann::ordered_json json = salvarEntidade();
 
                 json["velocidade"] = {{"x", velocidade.x}, {"y", velocidade.y}};
-                json["tempoMorrer"] = this->tempoMorrer;
-                json["levandoDano"] = this->levandoDano;
-                json["tempoDano"] = this->tempoDano;
-                json["morrendo"] = this->morrendo;
-                json["atacando"] = this->atacando;
-                json["movendo"] = this->movendo;
-                json["direcao"] = this->direcao;
-                json["dano"] = this->dano;
-                json["vida"] = this->vida;
-                json["dt"] = this->dt;
+                json["tempoMorrer"] = (float)tempoMorrer;
+                json["levandoDano"] = levandoDano;
+                json["tempoDano"] = tempoDano;
+                json["morrendo"] = morrendo;
+                json["atacando"] = atacando;
+                json["movendo"] = movendo;
+                json["direcao"] = direcao;
+                json["dano"] = dano;
+                json["vida"] = vida;
+                json["dt"] = dt;
 
                 return json;
             }

@@ -47,7 +47,7 @@ namespace Game{
 
                     //metodos de movimento
                 
-                    void moveInimigo();
+                    virtual void moveInimigo();
 
                     //metodos de ataque
                    

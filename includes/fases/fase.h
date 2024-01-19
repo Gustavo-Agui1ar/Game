@@ -11,6 +11,8 @@
 
 #include "../includes/entidade/inimigo/esqueleto.h"
 
+#include "../includes/entidade/inimigo/arqueiro.h"
+
 #include "../includes/entidade/jogador/jogador.h"
 
 #include "../includes/entidade/inimigo/slime.h"

@@ -95,14 +95,10 @@ namespace Game{
         */
         void Fase::criarInimigo(const sf::Vector2f pos, const char letra)
         {
-            Entidade::Arma::Arma* arma = new Entidade::Arma::Arma(IDs::IDs::armaDoIimigo);
+            Entidade::Arma::Arma* arma = nullptr;
             Entidade::Entidade* personagem = nullptr;
            
-            if(arma == nullptr)
-            {
-                std::cout<<"Fase::Fase: nao foi possivel criar a arma do inimigo";
-                exit(1);
-            }
+           
             
             if(letra == 'e'){
                 
@@ -113,6 +109,14 @@ namespace Game{
                     exit(1);
                 }
                 
+                arma = new Entidade::Arma::Arma(IDs::IDs::armaDoIimigo);
+                
+                if(arma == nullptr)
+                {
+                    std::cout<<"Fase::Fase: nao foi possivel criar a arma do inimigo";
+                    exit(1);
+                }
+
                 esqueleto->setArma(arma);
                 personagem = static_cast<Entidade::Entidade*>(esqueleto);
             }
@@ -124,8 +128,40 @@ namespace Game{
                     std::cout<<"Fase::Fase: nao foi possivel criar um slime";
                     exit(1);
                 }
+
+                arma = new Entidade::Arma::Arma(IDs::IDs::armaDoIimigo);
+
+                if(arma == nullptr)
+                {
+                    std::cout<<"Fase::Fase: nao foi possivel criar a arma do inimigo";
+                    exit(1);
+                }
+
                 slime->setArma(arma);
                 personagem = static_cast<Entidade::Entidade*>(slime);
+            }
+            else if (letra == 'a'){
+                
+                Entidade::Personagem::Inimigo::Arqueiro* arqueiro = new Entidade::Personagem::Inimigo::Arqueiro(pos, this->jogador);
+                if(arqueiro == nullptr)
+                {
+                    std::cout<<"Fase::Fase: nao foi possivel criar um arqueiro";
+                    exit(1);
+                }
+
+                Entidade::Arma::Projetil* projetil = new Entidade::Arma::Projetil(IDs::IDs::projetil_inimigo);
+
+                arma = static_cast<Entidade::Arma::Arma*>(projetil);
+
+                if(arma == nullptr)
+                {
+                    std::cout<<"Fase::Fase: nao foi possivel criar a arma do inimigo";
+                    exit(1);
+                }
+
+
+                arqueiro->setArma(arma);
+                personagem = static_cast<Entidade::Entidade*>(arqueiro);
             }
             
              if(personagem != nullptr){
@@ -150,6 +186,9 @@ namespace Game{
                     criarInimigo(sf::Vector2f(pos.x * 50.0f, pos.y * 50.0f),letra);
                     break;
                 case('s'):
+                    criarInimigo(sf::Vector2f(pos.x * 50.0f, pos.y * 50.0f),letra);
+                    break;
+                case('a'):
                     criarInimigo(sf::Vector2f(pos.x * 50.0f, pos.y * 50.0f),letra);
                     break;
                 case('#'):
@@ -222,6 +261,32 @@ namespace Game{
 
                     esqueleto->setArma(pArma);
                     personagem = static_cast<Entidade::Entidade*>(esqueleto);
+                    armaPersonagem = static_cast<Entidade::Entidade*>(pArma);
+                }
+                break;
+                
+                case(IDs::IDs::arqueiro):
+                {
+                    Entidade::Personagem::Inimigo::Arqueiro* arqueiro = new Entidade::Personagem::Inimigo::Arqueiro(entidade, this->jogador); 
+                    
+                     if(arqueiro == nullptr)
+                    {
+                        std::cout<<"Fase::Fase: nao foi possvel criar o arqueiro";
+                        exit(1);
+                    }
+
+                    Entidade::Arma::Projetil* projetil = new Entidade::Arma::Projetil(arma);
+
+                    Entidade::Arma::Arma* pArma = static_cast<Entidade::Arma::Arma*>(projetil);
+                    
+                    if(pArma == nullptr)
+                    {
+                        std::cout << "Fase::nao foi possivel criar espada do inimigo" << std::endl;
+                        exit(1);
+                    }
+
+                    arqueiro->setArma(pArma);
+                    personagem = static_cast<Entidade::Entidade*>(arqueiro);
                     armaPersonagem = static_cast<Entidade::Entidade*>(pArma);
                 }
                 break;
