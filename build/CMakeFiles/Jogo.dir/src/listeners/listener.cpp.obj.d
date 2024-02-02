@@ -370,11 +370,12 @@ CMakeFiles/Jogo.dir/src/listeners/listener.cpp.obj: \
  C:/PROGRA~2/SFML/include/SFML/Audio/SoundFileFactory.inl \
  C:/PROGRA~2/SFML/include/SFML/Audio/SoundFileReader.hpp \
  C:/PROGRA~2/SFML/include/SFML/Audio/SoundFileWriter.hpp \
+ C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/entidade/arma/projetil.h \
  C:/msys64/mingw64/include/c++/13.1.0/math.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/inimigo/inimigo.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/npcs/npc.h \
  C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/entidade/inimigo/esqueleto.h \
  C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/entidade/inimigo/arqueiro.h \
- C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/entidade/arma/projetil.h \
  C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/entidade/inimigo/slime.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/fundo/fundo.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/fundo/camada.h \
@@ -389,6 +390,12 @@ CMakeFiles/Jogo.dir/src/listeners/listener.cpp.obj: \
  C:/msys64/mingw64/include/c++/13.1.0/list \
  C:/msys64/mingw64/include/c++/13.1.0/bits/stl_list.h \
  C:/msys64/mingw64/include/c++/13.1.0/bits/list.tcc \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/estados/estadoDialogo.h \
+ C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/gerenciador/gerenciadorDeDialogo.h \
+ C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/menus/botao/balaoDeFala.h \
+ C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/menus/botao/textoFala.h \
+ C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/gerenciador/gerenciadorArquivo.h \
+ C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/json.hpp \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/gerenciador/gerenciadorDeMusica.h \
  C:/msys64/mingw64/include/c++/13.1.0/stack \
  C:/msys64/mingw64/include/c++/13.1.0/deque \

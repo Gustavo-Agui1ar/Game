@@ -464,6 +464,30 @@ src/entidade/jogador/personagem.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/jogador/personagem.cpp.s
 .PHONY : src/entidade/jogador/personagem.cpp.s
 
+src/entidade/npcs/npc.obj: src/entidade/npcs/npc.cpp.obj
+.PHONY : src/entidade/npcs/npc.obj
+
+# target to build an object file
+src/entidade/npcs/npc.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/npcs/npc.cpp.obj
+.PHONY : src/entidade/npcs/npc.cpp.obj
+
+src/entidade/npcs/npc.i: src/entidade/npcs/npc.cpp.i
+.PHONY : src/entidade/npcs/npc.i
+
+# target to preprocess a source file
+src/entidade/npcs/npc.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/npcs/npc.cpp.i
+.PHONY : src/entidade/npcs/npc.cpp.i
+
+src/entidade/npcs/npc.s: src/entidade/npcs/npc.cpp.s
+.PHONY : src/entidade/npcs/npc.s
+
+# target to generate assembly for a file
+src/entidade/npcs/npc.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/npcs/npc.cpp.s
+.PHONY : src/entidade/npcs/npc.cpp.s
+
 src/estados/estado.obj: src/estados/estado.cpp.obj
 .PHONY : src/estados/estado.obj
 
@@ -487,6 +511,30 @@ src/estados/estado.s: src/estados/estado.cpp.s
 src/estados/estado.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/estados/estado.cpp.s
 .PHONY : src/estados/estado.cpp.s
+
+src/estados/estadoDialogo.obj: src/estados/estadoDialogo.cpp.obj
+.PHONY : src/estados/estadoDialogo.obj
+
+# target to build an object file
+src/estados/estadoDialogo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/estados/estadoDialogo.cpp.obj
+.PHONY : src/estados/estadoDialogo.cpp.obj
+
+src/estados/estadoDialogo.i: src/estados/estadoDialogo.cpp.i
+.PHONY : src/estados/estadoDialogo.i
+
+# target to preprocess a source file
+src/estados/estadoDialogo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/estados/estadoDialogo.cpp.i
+.PHONY : src/estados/estadoDialogo.cpp.i
+
+src/estados/estadoDialogo.s: src/estados/estadoDialogo.cpp.s
+.PHONY : src/estados/estadoDialogo.s
+
+# target to generate assembly for a file
+src/estados/estadoDialogo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/estados/estadoDialogo.cpp.s
+.PHONY : src/estados/estadoDialogo.cpp.s
 
 src/estados/estadoFase.obj: src/estados/estadoFase.cpp.obj
 .PHONY : src/estados/estadoFase.obj
@@ -728,6 +776,30 @@ src/gerenciador/gerenciadorDeColisao.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeColisao.cpp.s
 .PHONY : src/gerenciador/gerenciadorDeColisao.cpp.s
 
+src/gerenciador/gerenciadorDeDialogo.obj: src/gerenciador/gerenciadorDeDialogo.cpp.obj
+.PHONY : src/gerenciador/gerenciadorDeDialogo.obj
+
+# target to build an object file
+src/gerenciador/gerenciadorDeDialogo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeDialogo.cpp.obj
+.PHONY : src/gerenciador/gerenciadorDeDialogo.cpp.obj
+
+src/gerenciador/gerenciadorDeDialogo.i: src/gerenciador/gerenciadorDeDialogo.cpp.i
+.PHONY : src/gerenciador/gerenciadorDeDialogo.i
+
+# target to preprocess a source file
+src/gerenciador/gerenciadorDeDialogo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeDialogo.cpp.i
+.PHONY : src/gerenciador/gerenciadorDeDialogo.cpp.i
+
+src/gerenciador/gerenciadorDeDialogo.s: src/gerenciador/gerenciadorDeDialogo.cpp.s
+.PHONY : src/gerenciador/gerenciadorDeDialogo.s
+
+# target to generate assembly for a file
+src/gerenciador/gerenciadorDeDialogo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeDialogo.cpp.s
+.PHONY : src/gerenciador/gerenciadorDeDialogo.cpp.s
+
 src/gerenciador/gerenciadorDeEstado.obj: src/gerenciador/gerenciadorDeEstado.cpp.obj
 .PHONY : src/gerenciador/gerenciadorDeEstado.obj
 
@@ -896,6 +968,30 @@ src/listeners/listener.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/listeners/listener.cpp.s
 .PHONY : src/listeners/listener.cpp.s
 
+src/listeners/listenerDialogo.obj: src/listeners/listenerDialogo.cpp.obj
+.PHONY : src/listeners/listenerDialogo.obj
+
+# target to build an object file
+src/listeners/listenerDialogo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/listeners/listenerDialogo.cpp.obj
+.PHONY : src/listeners/listenerDialogo.cpp.obj
+
+src/listeners/listenerDialogo.i: src/listeners/listenerDialogo.cpp.i
+.PHONY : src/listeners/listenerDialogo.i
+
+# target to preprocess a source file
+src/listeners/listenerDialogo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/listeners/listenerDialogo.cpp.i
+.PHONY : src/listeners/listenerDialogo.cpp.i
+
+src/listeners/listenerDialogo.s: src/listeners/listenerDialogo.cpp.s
+.PHONY : src/listeners/listenerDialogo.s
+
+# target to generate assembly for a file
+src/listeners/listenerDialogo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/listeners/listenerDialogo.cpp.s
+.PHONY : src/listeners/listenerDialogo.cpp.s
+
 src/listeners/listenerFase.obj: src/listeners/listenerFase.cpp.obj
 .PHONY : src/listeners/listenerFase.obj
 
@@ -991,6 +1087,30 @@ src/main.s: src/main.cpp.s
 src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/menus/botao/balaoDeFala.obj: src/menus/botao/balaoDeFala.cpp.obj
+.PHONY : src/menus/botao/balaoDeFala.obj
+
+# target to build an object file
+src/menus/botao/balaoDeFala.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/botao/balaoDeFala.cpp.obj
+.PHONY : src/menus/botao/balaoDeFala.cpp.obj
+
+src/menus/botao/balaoDeFala.i: src/menus/botao/balaoDeFala.cpp.i
+.PHONY : src/menus/botao/balaoDeFala.i
+
+# target to preprocess a source file
+src/menus/botao/balaoDeFala.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/botao/balaoDeFala.cpp.i
+.PHONY : src/menus/botao/balaoDeFala.cpp.i
+
+src/menus/botao/balaoDeFala.s: src/menus/botao/balaoDeFala.cpp.s
+.PHONY : src/menus/botao/balaoDeFala.s
+
+# target to generate assembly for a file
+src/menus/botao/balaoDeFala.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/botao/balaoDeFala.cpp.s
+.PHONY : src/menus/botao/balaoDeFala.cpp.s
 
 src/menus/botao/botao.obj: src/menus/botao/botao.cpp.obj
 .PHONY : src/menus/botao/botao.obj
@@ -1111,6 +1231,30 @@ src/menus/botao/textoEfeito.s: src/menus/botao/textoEfeito.cpp.s
 src/menus/botao/textoEfeito.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/botao/textoEfeito.cpp.s
 .PHONY : src/menus/botao/textoEfeito.cpp.s
+
+src/menus/botao/textoFala.obj: src/menus/botao/textoFala.cpp.obj
+.PHONY : src/menus/botao/textoFala.obj
+
+# target to build an object file
+src/menus/botao/textoFala.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/botao/textoFala.cpp.obj
+.PHONY : src/menus/botao/textoFala.cpp.obj
+
+src/menus/botao/textoFala.i: src/menus/botao/textoFala.cpp.i
+.PHONY : src/menus/botao/textoFala.i
+
+# target to preprocess a source file
+src/menus/botao/textoFala.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/botao/textoFala.cpp.i
+.PHONY : src/menus/botao/textoFala.cpp.i
+
+src/menus/botao/textoFala.s: src/menus/botao/textoFala.cpp.s
+.PHONY : src/menus/botao/textoFala.s
+
+# target to generate assembly for a file
+src/menus/botao/textoFala.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/botao/textoFala.cpp.s
+.PHONY : src/menus/botao/textoFala.cpp.s
 
 src/menus/card.obj: src/menus/card.cpp.obj
 .PHONY : src/menus/card.obj
@@ -1379,9 +1523,15 @@ help:
 	@echo ... src/entidade/jogador/personagem.obj
 	@echo ... src/entidade/jogador/personagem.i
 	@echo ... src/entidade/jogador/personagem.s
+	@echo ... src/entidade/npcs/npc.obj
+	@echo ... src/entidade/npcs/npc.i
+	@echo ... src/entidade/npcs/npc.s
 	@echo ... src/estados/estado.obj
 	@echo ... src/estados/estado.i
 	@echo ... src/estados/estado.s
+	@echo ... src/estados/estadoDialogo.obj
+	@echo ... src/estados/estadoDialogo.i
+	@echo ... src/estados/estadoDialogo.s
 	@echo ... src/estados/estadoFase.obj
 	@echo ... src/estados/estadoFase.i
 	@echo ... src/estados/estadoFase.s
@@ -1412,6 +1562,9 @@ help:
 	@echo ... src/gerenciador/gerenciadorDeColisao.obj
 	@echo ... src/gerenciador/gerenciadorDeColisao.i
 	@echo ... src/gerenciador/gerenciadorDeColisao.s
+	@echo ... src/gerenciador/gerenciadorDeDialogo.obj
+	@echo ... src/gerenciador/gerenciadorDeDialogo.i
+	@echo ... src/gerenciador/gerenciadorDeDialogo.s
 	@echo ... src/gerenciador/gerenciadorDeEstado.obj
 	@echo ... src/gerenciador/gerenciadorDeEstado.i
 	@echo ... src/gerenciador/gerenciadorDeEstado.s
@@ -1433,6 +1586,9 @@ help:
 	@echo ... src/listeners/listener.obj
 	@echo ... src/listeners/listener.i
 	@echo ... src/listeners/listener.s
+	@echo ... src/listeners/listenerDialogo.obj
+	@echo ... src/listeners/listenerDialogo.i
+	@echo ... src/listeners/listenerDialogo.s
 	@echo ... src/listeners/listenerFase.obj
 	@echo ... src/listeners/listenerFase.i
 	@echo ... src/listeners/listenerFase.s
@@ -1445,6 +1601,9 @@ help:
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... src/menus/botao/balaoDeFala.obj
+	@echo ... src/menus/botao/balaoDeFala.i
+	@echo ... src/menus/botao/balaoDeFala.s
 	@echo ... src/menus/botao/botao.obj
 	@echo ... src/menus/botao/botao.i
 	@echo ... src/menus/botao/botao.s
@@ -1460,6 +1619,9 @@ help:
 	@echo ... src/menus/botao/textoEfeito.obj
 	@echo ... src/menus/botao/textoEfeito.i
 	@echo ... src/menus/botao/textoEfeito.s
+	@echo ... src/menus/botao/textoFala.obj
+	@echo ... src/menus/botao/textoFala.i
+	@echo ... src/menus/botao/textoFala.s
 	@echo ... src/menus/card.obj
 	@echo ... src/menus/card.i
 	@echo ... src/menus/card.s

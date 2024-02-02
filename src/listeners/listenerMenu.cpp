@@ -43,12 +43,6 @@ namespace Game{
                         {
                             pEstado->removerEstado(2);
                         }
-                        else if(menu->getID() == IDs::IDs::menu_opcao)
-                        {
-                            Menu::MenuOpcao* menuOpcao = static_cast<Menu::MenuOpcao*>(menu);
-
-                            pEstado->removerEstado();
-                        }
                         else    
                             pEstado->removerEstado();
                     }

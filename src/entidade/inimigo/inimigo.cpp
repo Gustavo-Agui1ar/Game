@@ -236,6 +236,19 @@ namespace Game{
 
                     tempoDano += pGrafico->getTempo();
                 }
+
+                void Inimigo::colisao(Entidade* outraEntidade, sf::Vector2f ds)
+                {
+                    IDs::IDs IDent = outraEntidade->getID();
+
+                    if(IDent == IDs::IDs::projetil_jogador)
+                    {
+                        Arma::Projetil* projetil = dynamic_cast<Arma::Projetil*>(outraEntidade);
+
+                        tomarDano(projetil->getDano());
+                        projetil->setColidiu(true);
+                    } 
+                }
             }
         }
     }

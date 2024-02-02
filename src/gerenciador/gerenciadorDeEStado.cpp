@@ -82,6 +82,18 @@ namespace Game{
                 Estado::EstadoMenu* mEstado = new Estado::EstadoMenu(ID);
                 estado = static_cast<Estado::Estado*>(mEstado);
             }
+            else if(ID == IDs::IDs::estado_dialogo)
+            {
+                Estado::Estado* estadoAtual = getEstadoAtual();
+
+                Estado::EstadoFase* eFase = static_cast<Estado::EstadoFase*>(estadoAtual);
+                
+                Estado::EstadoDialogo* mEstado = new Estado::EstadoDialogo(ID);
+
+                mEstado->setFase(eFase->getFase());
+
+                estado = static_cast<Estado::Estado*>(mEstado);
+            }
 
             if(estado == nullptr)
             {

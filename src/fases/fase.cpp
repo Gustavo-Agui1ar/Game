@@ -66,6 +66,7 @@ namespace Game{
         void Fase::criarJogador(const sf::Vector2f pos)
         {
             Entidade::Arma::Arma* armaJogador = new Entidade::Arma::Arma(IDs::IDs::armaDoJogador); 
+            Entidade::Arma::Projetil* projetilJogador = new Entidade::Arma::Projetil(IDs::IDs::projetil_jogador); 
             Entidade::Personagem::Jogador::Jogador* jogador =  new Entidade::Personagem::Jogador::Jogador(pos);
 
             if(jogador == nullptr)
@@ -78,12 +79,20 @@ namespace Game{
                 std::cout<<"Fase::Fase: nao foi possvel criar a arma do jogador";
                 exit(1);
             }
+            
+            if(projetilJogador == nullptr)
+            {
+                std::cout<<"Fase::Fase: nao foi possvel criar o projetil do jogador";
+                exit(1);
+            }
            
             jogador->setArma(armaJogador);
+            jogador->setProjetil(projetilJogador);
             this->jogador = jogador;
 
             listaPersonagens->addEntidade(static_cast<Entidade::Entidade*>(jogador));
             listaPersonagens->addEntidade(static_cast<Entidade::Entidade*>(armaJogador));
+            listaPersonagens->addEntidade(static_cast<Entidade::Entidade*>(projetilJogador));
 
         }
 
@@ -210,10 +219,11 @@ namespace Game{
          * @param entidade json com as informacoes da entidade
          * @param arma json com as informcaoes da arma a ser criada
         */
-        void Fase::criarEntidade(IDs::IDs ID, nlohmann::ordered_json entidade , nlohmann::ordered_json arma)
+        void Fase::criarEntidade(IDs::IDs ID, nlohmann::ordered_json entidade , nlohmann::ordered_json arma, nlohmann::ordered_json arma2)
         {
             Entidade::Entidade* personagem = nullptr;
             Entidade::Entidade* armaPersonagem = nullptr;
+            Entidade::Entidade* armaProjetilJogador = nullptr;
 
             switch(ID)
             {
@@ -235,9 +245,19 @@ namespace Game{
                         exit(1);
                     }
 
+                    Entidade::Arma::Projetil* pProjetil = new Entidade::Arma::Projetil(arma2);
+                    
+                    if(pProjetil == nullptr)
+                    {
+                        std::cout << "Fase::nao foi possivel criar o projetil do jogador" << std::endl;
+                        exit(1);
+                    }
+
                     jogador->setArma(pArma);
+                    jogador->setProjetil(pProjetil);
                     personagem = static_cast<Entidade::Entidade*>(this->jogador);
                     armaPersonagem = static_cast<Entidade::Entidade*>(pArma);
+                    armaProjetilJogador = static_cast<Entidade::Entidade*>(pProjetil);
                 }
                 break;
 
@@ -352,6 +372,11 @@ namespace Game{
                     break;
                 case (IDs::IDs::plataforma_invisivel):
                     listaObstaculos->addEntidade(personagem);
+                    break;
+                case (IDs::IDs::jogador):
+                    listaPersonagens->addEntidade(personagem);
+                    listaPersonagens->addEntidade(armaPersonagem);
+                    listaPersonagens->addEntidade(armaProjetilJogador);
                     break;
                 
                 default:

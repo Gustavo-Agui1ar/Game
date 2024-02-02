@@ -236,6 +236,20 @@ namespace Game{
                 return json;
             }
 
+            bool Personagem::verificaDentroTela()
+            {
+                sf::Vector2f centroTela = pGrafico->getCamera().getCenter();
+                sf::Vector2f tamJanela = pGrafico->getTamJanela();
+
+                if(pos.x < centroTela.x - tamJanela.x/2.0f || pos.x > centroTela.x + tamJanela.x/2.0f ||
+                   pos.y < centroTela.y - tamJanela.y/2.0f || pos.y > centroTela.y + tamJanela.y/2.0f )
+                {
+                    return false;
+                }
+
+                return true;
+            }
+
         }
 
     }

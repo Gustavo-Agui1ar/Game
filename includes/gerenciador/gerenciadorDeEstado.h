@@ -3,6 +3,7 @@
 
 #include "../estados/estadoFase.h"
 #include "../estados/estadoMenu.h"
+#include "../estados/estadoDialogo.h"
 #include "gerenciadorDeMusica.h"
 #include <stack>
 

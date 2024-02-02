@@ -358,5 +358,7 @@ CMakeFiles/Jogo.dir/src/entidade/Obstaculo/Plataforma.cpp.obj: \
  C:/PROGRA~2/SFML/include/SFML/Audio/SoundFileFactory.inl \
  C:/PROGRA~2/SFML/include/SFML/Audio/SoundFileReader.hpp \
  C:/PROGRA~2/SFML/include/SFML/Audio/SoundFileWriter.hpp \
+ C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/entidade/arma/projetil.h \
  C:/msys64/mingw64/include/c++/13.1.0/math.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/inimigo/inimigo.h
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/inimigo/inimigo.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/npcs/npc.h

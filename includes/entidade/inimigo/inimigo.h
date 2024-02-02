@@ -76,7 +76,7 @@ namespace Game{
                     
                     //metodo de colisao
                    
-                    void colisao(Entidade* outraEntidade, sf::Vector2f ds = sf::Vector2f(0.f,0.f)){}
+                    void colisao(Entidade* outraEntidade, sf::Vector2f ds = sf::Vector2f(0.f,0.f));
                    
                     // metodos de atualizar inimigo
                    

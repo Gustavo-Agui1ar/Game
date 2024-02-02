@@ -12,6 +12,7 @@ namespace IDs{
             esqueleto,
             arqueiro,
             red_slime ,
+            npc,
             plataforma ,
             plataforma_invisivel,
             projetil_inimigo,
@@ -20,6 +21,8 @@ namespace IDs{
             //IDs fases
             caverna,
             forest,
+            
+            estado_dialogo,
             
             //IDs das armas
             armaDoJogador,

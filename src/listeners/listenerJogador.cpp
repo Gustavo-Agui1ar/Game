@@ -1,5 +1,6 @@
 
 #include "../includes/listeners/listenerJogador.h"
+#include "../includes/gerenciador/gerenciadorArquivo.h"
 
 namespace Game{
 
@@ -59,19 +60,23 @@ namespace Game{
                             jogador->atacar();
                     }
                         break;
-                    
-                    case('e'):
-                    {
-                        jogador->procurarIteracoes();
-                    }
-                        break;
 
                     case('j'):
                     {
                         jogador->fazerDash();
                     }
                         break;
-                
+                  
+                    case('q'):
+                    {
+                        jogador->ativarFuria();
+                    }
+                        break;
+                    case('l'):
+                    {
+                        jogador->lancarProjetil();
+                    }
+                        break;
                     default:
                         break;
                 }
@@ -93,6 +98,8 @@ namespace Game{
                     jogador->pararAtaque();
                 else if(tecPadrao[tecla] == 'j')
                     jogador->pararDash();
+                else if(tecPadrao[tecla] == 'r')
+                    jogador->procurarIteracoes();
             }
         }
 

@@ -136,6 +136,7 @@ namespace Game{
                         tempoAtaque += pGrafico->getTempo();
                         if(tempoAtaque > tempoAnimacaoAtaque)
                         {
+                            jogador->aumentarFuria(arma->getDano());
                             arma->setPos(sf::Vector2f(-1000.0f, -1000.0f));
                             atacando = false;
                             tempoAtaque = 0.0f;

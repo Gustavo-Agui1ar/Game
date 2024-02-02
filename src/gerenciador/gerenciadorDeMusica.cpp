@@ -11,7 +11,7 @@ namespace Game{
          * @brief construtora da classe GerenciadordeMusica nela é inicializada as musicas a serem tocadas
         */
         GerenciadorDeMusica::GerenciadorDeMusica():
-        mapMusica(), volumeGeral(100.0f), volumeEfeitoSonoro(40.0f)
+        mapMusica(), volumeGeral(0.0f), volumeEfeitoSonoro(40.0f)
         {
             addMusica(IDs::IDs::forest, "musics/adventure-begins.ogg");
             addMusica(IDs::IDs::menu_principal, "musics/main-theme.ogg");

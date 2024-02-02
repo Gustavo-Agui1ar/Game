@@ -93,6 +93,29 @@ namespace Game{
 
             return json;
         }
+       
+        /**
+         * @brief metodo que le um arquivo
+         * 
+         * @param caminhoArquivo caminho do arquivo a ser lido
+         * 
+         * @return retorna uma string com as informacoes do arquivo
+        */
+        std::vector<std::string>  GerenciadorArquivo::lerArquivoDeFala(const char* caminhoArquivo)
+        {
+            abrirArquivoLeitura(caminhoArquivo);
+            
+            std::vector<std::string> falas;
+
+            std::string fala = "";
+
+            while(std::getline(arquivoLeitura, fala))
+                falas.push_back(fala);
+
+            fecharArquivoLeitura();
+
+            return falas;
+        }
         
         /**
          * @brief metodo que grava um conteudo em um arquivo

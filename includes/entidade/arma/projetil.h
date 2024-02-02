@@ -5,6 +5,7 @@
 #include "../includes/animador/animacao.h"
 
 #define TAMANHO_PROJETIL 25.0f
+#define TAMANHO_PROJETIL_JOGADOR 8.0f
 
 namespace Game{
 
@@ -39,6 +40,8 @@ namespace Game{
                     const bool getColidiu();
 
                     nlohmann::ordered_json salvar();
+
+                    void colisao(Entidade* outraEntidade, sf::Vector2f ds = sf::Vector2f(0.0f, 0.0f));
 
                     void desenhar();
                     void atualizar();

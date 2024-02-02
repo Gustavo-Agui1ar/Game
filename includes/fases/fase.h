@@ -63,7 +63,7 @@ namespace Game{
 
             //metodos responaveis por criar as respectivas entidades 
          
-            void criarEntidade(IDs::IDs ID, nlohmann::ordered_json entidade , nlohmann::ordered_json arma = nullptr);
+            void criarEntidade(IDs::IDs ID, nlohmann::ordered_json entidade , nlohmann::ordered_json arma = nullptr, nlohmann::ordered_json arma2 = nullptr);
             void criarInimigo(const sf::Vector2f pos, const char letra);
             virtual void criarPlataforma(const sf::Vector2f pos) = 0;
             void criarEntidade(char letra, const sf::Vector2i pos);

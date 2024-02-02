@@ -263,7 +263,8 @@ CMakeFiles/Jogo.dir/src/listeners/listenerJogador.cpp.obj: \
  C:/PROGRA~2/SFML/include/SFML/Audio/SoundFileFactory.inl \
  C:/PROGRA~2/SFML/include/SFML/Audio/SoundFileReader.hpp \
  C:/PROGRA~2/SFML/include/SFML/Audio/SoundFileWriter.hpp \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/jogador/personagem.h \
+ C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/entidade/arma/projetil.h \
+ C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/entidade/arma/arma.h \
  C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/entidade/entidade.h \
  C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/entidade/Ente.h \
  C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/entidade/IDs.h \
@@ -356,6 +357,8 @@ CMakeFiles/Jogo.dir/src/listeners/listenerJogador.cpp.obj: \
  C:/msys64/mingw64/include/c++/13.1.0/iostream \
  C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/animador/animacao.h \
  C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/animador/imagem.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/arma/arma.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/jogador/personagem.h \
  C:/msys64/mingw64/include/c++/13.1.0/math.h \
- C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/listeners/listener.h
+ C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/listeners/listener.h \
+ C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/gerenciador/gerenciadorArquivo.h \
+ C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/json.hpp

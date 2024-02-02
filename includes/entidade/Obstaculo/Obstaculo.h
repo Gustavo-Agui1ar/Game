@@ -3,6 +3,7 @@
 
 #include "../jogador/jogador.h"
 #include "../inimigo/inimigo.h"
+#include "../npcs/npc.h"
 #include "../includes/entidade/entidade.h"
 #include "../includes/animador/animacao.h"
 

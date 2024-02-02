@@ -74,7 +74,7 @@ namespace Game{
              * 
              * @param infoTexto informacao a ser colocada em texto
             */
-            void Texto::setString(std::string infoTexto)
+            void Texto::setString(sf::String infoTexto)
             {
                 this->infoTexto = infoTexto;
                 texto.setString(infoTexto);

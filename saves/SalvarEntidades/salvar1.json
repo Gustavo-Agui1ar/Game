@@ -6,7 +6,7 @@
       "y": 60.0
     },
     "pos": {
-      "x": 1650.0,
+      "x": 2046.3675537109375,
       "y": 790.0
     },
     "remover": false,
@@ -16,14 +16,14 @@
     },
     "tempoMorrer": 0.0,
     "levandoDano": false,
-    "tempoDano": 1.1363942623138428,
+    "tempoDano": 0.08382800221443176,
     "morrendo": false,
     "atacando": false,
     "movendo": false,
     "direcao": false,
     "dano": 20.0,
-    "vida": 100.0,
-    "dt": 0.0016530000139027834,
+    "vida": 20.0,
+    "dt": 0.0049749999307096004,
     "noChao": true,
     "qtdPulo": 0,
     "tempoAtaque": 0.0,
@@ -32,9 +32,15 @@
     "podeDash": false,
     "tempoDash": 0.0,
     "velDash": 350.0,
+    "furia": 40.0,
+    "emFuria": true,
+    "entrandoEmFuria": false,
+    "tempoEntrandoFuria": 0.0,
+    "lancandoProjetil": false,
+    "tempoAtaqueProjetil": 0.0,
     "tempoAnimacaoAtaque": 0.6000000238418579,
-    "imagemAtual": "PARADO",
-    "tempoTotal": 0.022833000868558884,
+    "imagemAtual": "PARADO-F",
+    "tempoTotal": 0.08382199704647064,
     "quadroAtual": 0
   },
   {
@@ -51,94 +57,17 @@
     "dano": 20.0
   },
   {
-    "ID": 2,
+    "ID": 8,
     "tam": {
-      "x": 30.0,
-      "y": 60.0
-    },
-    "pos": {
-      "x": 2150.0,
-      "y": 790.0
-    },
-    "remover": false,
-    "velocidade": {
-      "x": 50.0,
-      "y": 0.0
-    },
-    "tempoMorrer": 0.0,
-    "levandoDano": false,
-    "tempoDano": 1.1363942623138428,
-    "morrendo": false,
-    "atacando": false,
-    "movendo": false,
-    "direcao": false,
-    "dano": 10.0,
-    "vida": 100.0,
-    "dt": 0.0016530000139027834,
-    "tempoAtaque": 0.0,
-    "tempoMover": 1.1363942623138428,
-    "mover": 0,
-    "imagemAtual": "PARADO",
-    "tempoTotal": 0.12174097448587418,
-    "quadroAtual": 6
-  },
-  {
-    "ID": 12,
-    "tam": {
-      "x": 30.0,
-      "y": 60.0
-    },
-    "pos": {
-      "x": 0.0,
-      "y": 0.0
-    },
-    "remover": false,
-    "dano": 10.0
-  },
-  {
-    "ID": 3,
-    "tam": {
-      "x": 30.0,
-      "y": 60.0
-    },
-    "pos": {
-      "x": 2400.0,
-      "y": 440.0
-    },
-    "remover": false,
-    "velocidade": {
-      "x": 50.0,
-      "y": 0.0
-    },
-    "tempoMorrer": 0.0,
-    "levandoDano": false,
-    "tempoDano": 1.1363942623138428,
-    "morrendo": false,
-    "atacando": false,
-    "movendo": false,
-    "direcao": true,
-    "dano": 10.0,
-    "vida": 100.0,
-    "dt": 0.0016530000139027834,
-    "tempoAtaque": 0.0,
-    "tempoMover": 1.1363942623138428,
-    "mover": 0,
-    "imagemAtual": "PARADO",
-    "tempoTotal": 0.11145899444818497,
-    "quadroAtual": 6
-  },
-  {
-    "ID": 7,
-    "tam": {
-      "x": 30.0,
-      "y": 60.0
+      "x": 8.0,
+      "y": 8.0
     },
     "pos": {
       "x": -1000.0,
       "y": -1000.0
     },
     "remover": false,
-    "dano": 10.0,
+    "dano": 30.0,
     "direcao": false,
     "velocidade": {
       "x": 0.0,
@@ -150,13 +79,58 @@
     "quadroAtual": 0
   },
   {
-    "ID": 3,
+    "ID": 2,
     "tam": {
       "x": 30.0,
       "y": 60.0
     },
     "pos": {
-      "x": 2600.0,
+      "x": 2066.94384765625,
+      "y": 790.0
+    },
+    "remover": false,
+    "velocidade": {
+      "x": 50.0,
+      "y": 0.0
+    },
+    "tempoMorrer": 0.0,
+    "levandoDano": false,
+    "tempoDano": 11.266140937805176,
+    "morrendo": false,
+    "atacando": true,
+    "movendo": false,
+    "direcao": true,
+    "dano": 10.0,
+    "vida": 100.0,
+    "dt": 0.0049749999307096004,
+    "tempoAtaque": 0.08382800221443176,
+    "tempoMover": 0.0049749999307096004,
+    "mover": 1,
+    "imagemAtual": "ATACA",
+    "tempoTotal": 0.08382199704647064,
+    "quadroAtual": 0
+  },
+  {
+    "ID": 12,
+    "tam": {
+      "x": 30.0,
+      "y": 60.0
+    },
+    "pos": {
+      "x": -1000.0,
+      "y": -1000.0
+    },
+    "remover": false,
+    "dano": 10.0
+  },
+  {
+    "ID": 4,
+    "tam": {
+      "x": 30.0,
+      "y": 60.0
+    },
+    "pos": {
+      "x": 2612.38525390625,
       "y": 340.0
     },
     "remover": false,
@@ -166,73 +140,19 @@
     },
     "tempoMorrer": 0.0,
     "levandoDano": false,
-    "tempoDano": 1.1363942623138428,
+    "tempoDano": 11.266140937805176,
     "morrendo": false,
     "atacando": false,
-    "movendo": false,
+    "movendo": true,
     "direcao": true,
-    "dano": 10.0,
-    "vida": 100.0,
-    "dt": 0.0016530000139027834,
-    "tempoAtaque": 0.0,
-    "tempoMover": 1.1363942623138428,
-    "mover": 0,
-    "imagemAtual": "PARADO",
-    "tempoTotal": 0.09889601916074753,
-    "quadroAtual": 6
-  },
-  {
-    "ID": 7,
-    "tam": {
-      "x": 30.0,
-      "y": 60.0
-    },
-    "pos": {
-      "x": -1000.0,
-      "y": -1000.0
-    },
-    "remover": false,
-    "dano": 10.0,
-    "direcao": false,
-    "velocidade": {
-      "x": 0.0,
-      "y": 0.0
-    },
-    "colidiu": true,
-    "imagemAtual": "ATACA",
-    "tempoTotal": 0.0,
-    "quadroAtual": 0
-  },
-  {
-    "ID": 4,
-    "tam": {
-      "x": 30.0,
-      "y": 60.0
-    },
-    "pos": {
-      "x": 3200.0,
-      "y": 790.0
-    },
-    "remover": false,
-    "velocidade": {
-      "x": 50.0,
-      "y": 0.0
-    },
-    "tempoMorrer": 0.0,
-    "levandoDano": false,
-    "tempoDano": 1.1363942623138428,
-    "morrendo": false,
-    "atacando": false,
-    "movendo": false,
-    "direcao": false,
     "dano": 5.0,
     "vida": 100.0,
-    "dt": 0.0016530000139027834,
+    "dt": 0.0049749999307096004,
     "tempoAtaque": 0.0,
-    "tempoMover": 1.1363942623138428,
-    "mover": 0,
-    "imagemAtual": "PARADO",
-    "tempoTotal": 0.08726911246776581,
+    "tempoMover": 0.7520110607147217,
+    "mover": 1,
+    "imagemAtual": "ANDAR",
+    "tempoTotal": 0.013062132522463799,
     "quadroAtual": 6
   },
   {
@@ -255,7 +175,7 @@
       "y": 60.0
     },
     "pos": {
-      "x": 3500.0,
+      "x": 3250.208251953125,
       "y": 790.0
     },
     "remover": false,
@@ -265,20 +185,20 @@
     },
     "tempoMorrer": 0.0,
     "levandoDano": false,
-    "tempoDano": 1.1363942623138428,
+    "tempoDano": 11.266140937805176,
     "morrendo": false,
     "atacando": false,
     "movendo": false,
     "direcao": false,
     "dano": 10.0,
     "vida": 100.0,
-    "dt": 0.0016530000139027834,
+    "dt": 0.0049749999307096004,
     "tempoAtaque": 0.0,
-    "tempoMover": 1.1363942623138428,
-    "mover": 0,
+    "tempoMover": 0.7520110607147217,
+    "mover": 2,
     "imagemAtual": "PARADO",
-    "tempoTotal": 0.06643705815076828,
-    "quadroAtual": 6
+    "tempoTotal": 0.11209098994731903,
+    "quadroAtual": 4
   },
   {
     "ID": 12,

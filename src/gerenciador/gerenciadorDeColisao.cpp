@@ -115,7 +115,7 @@ namespace Game{
         }
 
         /**
-         * @brief metodo que procura entidades proximas ao objeto que chamopu o metodo
+         * @brief metodo que procura a entidade mais proxima ao objeto que chamou o metodo
          * 
          * @param posPersonagem posicao do personagem 
          * @param raioDeDistancia raio de distancia a ser procurado
@@ -126,6 +126,11 @@ namespace Game{
         Entidade::Entidade* GerenciadorDeColisao::procurarEntidade(sf::Vector2f posPersonagem, sf::Vector2f raioDeDistancia, IDs::IDs objProcurado)
         {
             int tam = listaPersonagem->getTam();
+          
+            Entidade::Entidade* entMaisProxima = nullptr;
+          
+            float posXmaisProximo = 0.f;
+            float posYmaisProximo = 0.f;
 
             for(int i = 0 ; i < tam ; i++)
             {
@@ -139,13 +144,25 @@ namespace Game{
                     
                     if(posX <= raioDeDistancia.x && posY <= raioDeDistancia.y)
                     {
-                        std::cout<<"obj achado"<<std::endl;
-                        return ent;
+                        if(entMaisProxima == nullptr)
+                        {
+                            posXmaisProximo = posX;
+                            posYmaisProximo = posY;
+
+                            entMaisProxima = ent;
+                        }
+                        else if(posX < posXmaisProximo &&  posY < posYmaisProximo)
+                        {
+                            posXmaisProximo = posX;
+                            posYmaisProximo = posY;
+
+                            entMaisProxima = ent;
+                        }
                     }
                 }
             }
-            std::cout<<"obj nao achado"<<std::endl;
-            return nullptr;
+
+            return entMaisProxima;
         }
 
         /**

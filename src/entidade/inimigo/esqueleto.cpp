@@ -101,6 +101,7 @@ namespace Game{
                         tempoMorrer = tempoMorrer + pGrafico->getTempo();
                         if(tempoMorrer > tempoAnimacaoDeMorrer)
                         {
+                            jogador->aumentarFuria(arma->getDano());
                             podeRemover = true;
                             tempoMorrer = 0.0f;
                             if(arma != nullptr)

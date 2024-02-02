@@ -11,8 +11,8 @@ namespace Game{
             
             class Texto{
 
-            private:
-                
+            protected:
+               
                 //atributo de fonte do texto
                
                 const sf::Font fonte;
@@ -20,8 +20,6 @@ namespace Game{
                 //atributo de informacao
                
                 std::string infoTexto;
-
-            protected:
 
                 void inicializa();
 
@@ -60,7 +58,7 @@ namespace Game{
                 void setCorTexto(const sf::Color corTexto);
                 void setTamanhoBorda(const float tamBorda);
                 void setEspacamento(const float tamEspaco);
-                void setString(std::string infoTexto);
+                void setString(sf::String infoTexto);
                 void setPos(const sf::Vector2f pos);
                 
             };

@@ -1,5 +1,6 @@
 
 #include "../includes/entidade/arma/projetil.h"
+#include "../includes/entidade/inimigo/inimigo.h"
 
 namespace Game{
 
@@ -55,7 +56,8 @@ namespace Game{
                 }
                 else
                 {
-                    animacao.addAnimacao("../animations/enemy/Player/Fire-ball.png", "ATACA", 4, 0.12f, sf::Vector2f(5.0f, 5.0f), sf::Vector2f(tam.x / 2.0f, tam.y / 2.0f));
+                    setTam(sf::Vector2f(TAMANHO_PROJETIL_JOGADOR, TAMANHO_PROJETIL_JOGADOR));
+                    animacao.addAnimacao("../Game/animations/Player/Fire-ball.png", "ATACA", 4, 0.12f, sf::Vector2f(5.0f, 5.0f), sf::Vector2f(tam.x / 2.0f, tam.y / 2.0f));
                 }
                 animacao.setImgAtual("ATACA"); 
             }
@@ -142,6 +144,31 @@ namespace Game{
                     verificarSaiuTela();
 
                     pGrafico->desenhaElemento(corpo);
+                }
+            }
+
+            /**
+             * @brief metodo que trata da colisao da arma
+             * com outtras entidades dependendo de 
+             * seu id.
+             * 
+             * @param outraEntidade entidade a verificar colisao
+             * @param ds distancia entre os centros de arma e outra entidade. 
+            */
+            void Projetil::colisao(Entidade* outraEntidade, sf::Vector2f ds)
+            {
+                if(ID == IDs::IDs::projetil_jogador)
+                {
+                    if(outraEntidade->getID() == IDs::IDs::red_slime ||
+                        outraEntidade->getID() == IDs::IDs::esqueleto)
+                    {
+                        Personagem::Inimigo::Inimigo* inimigo = static_cast<Personagem::Inimigo::Inimigo*>(outraEntidade);
+                        if(!inimigo->getMorrer())
+                        {
+                            inimigo->tomarDano(dano);
+                            setColidiu(true);
+                        }
+                    }
                 }
             }
 

@@ -54,7 +54,8 @@ namespace Game{
                 if(outraEntidade->getID() == IDs::IDs::jogador   ||
                    outraEntidade->getID() == IDs::IDs::esqueleto ||
                    outraEntidade->getID() == IDs::IDs::red_slime ||
-                   outraEntidade->getID() == IDs::IDs::arqueiro  )
+                   outraEntidade->getID() == IDs::IDs::arqueiro  ||
+                   outraEntidade->getID() == IDs::IDs::npc  )
                 {
                     colisaoObstaculo(ds, static_cast<Personagem::Personagem*>(outraEntidade));
                 }

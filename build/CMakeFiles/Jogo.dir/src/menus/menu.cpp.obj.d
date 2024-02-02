@@ -381,11 +381,12 @@ CMakeFiles/Jogo.dir/src/menus/menu.cpp.obj: \
  C:/PROGRA~2/SFML/include/SFML/Audio/SoundFileFactory.inl \
  C:/PROGRA~2/SFML/include/SFML/Audio/SoundFileReader.hpp \
  C:/PROGRA~2/SFML/include/SFML/Audio/SoundFileWriter.hpp \
+ C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/entidade/arma/projetil.h \
  C:/msys64/mingw64/include/c++/13.1.0/math.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/inimigo/inimigo.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/npcs/npc.h \
  C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/entidade/inimigo/esqueleto.h \
  C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/entidade/inimigo/arqueiro.h \
- C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/entidade/arma/projetil.h \
  C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/entidade/inimigo/slime.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/menus/menuGameOver.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/menus/menuPausa.h \

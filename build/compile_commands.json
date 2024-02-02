@@ -85,9 +85,21 @@
 },
 {
   "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\entidade\\npcs\\npc.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\entidade\\npcs\\npc.cpp\"",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/entidade/npcs/npc.cpp",
+  "output": "CMakeFiles/Jogo.dir/src/entidade/npcs/npc.cpp.obj"
+},
+{
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\estados\\estado.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\estados\\estado.cpp\"",
   "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/estados/estado.cpp",
   "output": "CMakeFiles/Jogo.dir/src/estados/estado.cpp.obj"
+},
+{
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\estados\\estadoDialogo.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\estados\\estadoDialogo.cpp\"",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/estados/estadoDialogo.cpp",
+  "output": "CMakeFiles/Jogo.dir/src/estados/estadoDialogo.cpp.obj"
 },
 {
   "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
@@ -151,6 +163,12 @@
 },
 {
   "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\gerenciador\\gerenciadorDeDialogo.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\gerenciador\\gerenciadorDeDialogo.cpp\"",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/gerenciador/gerenciadorDeDialogo.cpp",
+  "output": "CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeDialogo.cpp.obj"
+},
+{
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\gerenciador\\gerenciadorDeEstado.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\gerenciador\\gerenciadorDeEstado.cpp\"",
   "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/gerenciador/gerenciadorDeEstado.cpp",
   "output": "CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEstado.cpp.obj"
@@ -193,6 +211,12 @@
 },
 {
   "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\listeners\\listenerDialogo.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\listeners\\listenerDialogo.cpp\"",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/listeners/listenerDialogo.cpp",
+  "output": "CMakeFiles/Jogo.dir/src/listeners/listenerDialogo.cpp.obj"
+},
+{
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\listeners\\listenerFase.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\listeners\\listenerFase.cpp\"",
   "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/listeners/listenerFase.cpp",
   "output": "CMakeFiles/Jogo.dir/src/listeners/listenerFase.cpp.obj"
@@ -214,6 +238,12 @@
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\main.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\main.cpp\"",
   "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/main.cpp",
   "output": "CMakeFiles/Jogo.dir/src/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\menus\\botao\\balaoDeFala.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\menus\\botao\\balaoDeFala.cpp\"",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/menus/botao/balaoDeFala.cpp",
+  "output": "CMakeFiles/Jogo.dir/src/menus/botao/balaoDeFala.cpp.obj"
 },
 {
   "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
@@ -244,6 +274,12 @@
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\menus\\botao\\textoEfeito.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\menus\\botao\\textoEfeito.cpp\"",
   "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/menus/botao/textoEfeito.cpp",
   "output": "CMakeFiles/Jogo.dir/src/menus/botao/textoEfeito.cpp.obj"
+},
+{
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\menus\\botao\\textoFala.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\menus\\botao\\textoFala.cpp\"",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/menus/botao/textoFala.cpp",
+  "output": "CMakeFiles/Jogo.dir/src/menus/botao/textoFala.cpp.obj"
 },
 {
   "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",

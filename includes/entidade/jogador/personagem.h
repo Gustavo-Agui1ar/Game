@@ -95,7 +95,7 @@ namespace Game {
 
                 //metodos de ataque
               
-                void tomarDano(const float dano);
+                virtual void tomarDano(const float dano);
 
                 //metodos de ataque
 
@@ -116,6 +116,7 @@ namespace Game {
                 //metodos de animacao e visualizacao
               
                 virtual void desenhar();
+                bool verificaDentroTela();
             };
         }
     }

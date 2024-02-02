@@ -1,8 +1,8 @@
 #include "../includes/listeners/listenerJogador.h"
 #include "../includes/entidade/inimigo/esqueleto.h"
+#include "../includes/entidade/npcs/npc.h"
 #include "../includes/entidade/jogador/jogador.h"
 #include "../includes/entidade/inimigo/slime.h"
-#include "../includes/entidade/arma/projetil.h"
 #include "../includes/gerenciador/gerenciadorDeColisao.h"
 
 
@@ -39,10 +39,11 @@ namespace Game{
                      * @param pos posicao do jogador
                      * @param arma arma do jogador
                      */
-                    Jogador::Jogador(const sf::Vector2f pos,  Arma::Arma* arma):
+                    Jogador::Jogador(const sf::Vector2f pos,  Arma::Arma* arma, Arma::Projetil* projetil):
                     Personagem(pos,sf::Vector2f(TAM_JOGADOR_X,TAM_JOGADOR_Y), VELOCIDADE_JOGADOR_X, IDs::IDs::jogador, JOGADOR_TEMPO_LEVAR_DANO, JOGADOR_ANIMACAO_DE_MORTE, DANO_JOGADOR),noChao(false),
                     qtdPulo(0), tempoAnimacaoDash(TEMPO_DASH), velDash(VELOCIDADE_DASH_JOGADOR_X), tempoDash(0.0f), podeDash(false), emDash(false), tempoAnimacaoAtaque(JOGADOR_TEMPO_DANO), 
-                    tempoAtaque(0.0f), podeRegenerarStamina(false), tempoRegStamina(0.0f),  stamina(STAMINA_MAXIMA) ,listenerJogador(new Listener::ListenerJogador(this))
+                    tempoAtaque(0.0f), podeRegenerarStamina(false), tempoRegStamina(0.0f),  stamina(STAMINA_MAXIMA) , furia(100.0f), emFuria(false),  entrandoEmFuria(false), tempoAnimacaoFuria(JOGADOR_TEMPO_ATE_FURIA), tempoEntrandoFuria(0.0f),
+                    listenerJogador(new Listener::ListenerJogador(this)), projetil(projetil), lancandoProjetil(false), tempoAnimacaoProjetil(JOGADOR_TEMPO_PROJEIL), tempoAtaqueProjetil(0.0f)
                     {
                       
                        inicializarAnimacao();
@@ -51,12 +52,20 @@ namespace Game{
 
                        inicializarBarraDeStamina();
 
+                       inicializarBarraDeFuria();
+
                        inicializarSom();
 
                        if(arma != nullptr)
                        {
                           setArma(arma);
                        }
+                      
+                       if(projetil != nullptr)
+                       {
+                          setProjetil(projetil);
+                       }
+
                     }
 
                     /**
@@ -66,7 +75,8 @@ namespace Game{
                     */
                     Jogador::Jogador(nlohmann::ordered_json atributos):
                     Personagem(pos,sf::Vector2f(TAM_JOGADOR_X,TAM_JOGADOR_Y), VELOCIDADE_JOGADOR_X, IDs::IDs::jogador, JOGADOR_TEMPO_LEVAR_DANO, JOGADOR_ANIMACAO_DE_MORTE, DANO_JOGADOR),
-                    tempoAnimacaoDash(TEMPO_DASH), velDash(VELOCIDADE_DASH_JOGADOR_X), tempoAnimacaoAtaque(JOGADOR_TEMPO_DANO) ,tempoAtaque(0.0f), listenerJogador(new Listener::ListenerJogador(this))
+                    tempoAnimacaoDash(TEMPO_DASH), velDash(VELOCIDADE_DASH_JOGADOR_X), tempoAnimacaoAtaque(JOGADOR_TEMPO_DANO) ,tempoAtaque(0.0f), tempoAnimacaoFuria(JOGADOR_TEMPO_ATE_FURIA), listenerJogador(new Listener::ListenerJogador(this)),
+                    projetil(nullptr) , tempoAnimacaoProjetil(JOGADOR_TEMPO_PROJEIL)
                     {
                         try
                         {
@@ -94,10 +104,16 @@ namespace Game{
                             emDash = atributos["emDash"].template get<bool>();
                             podeDash = atributos["podeDash"].template get<bool>();
                             tempoDash = atributos["tempoDash"].template get<float>();
+                            furia = atributos["furia"].template get<float>();
+                            emFuria = atributos["emFuria"].template get<bool>();
+                            lancandoProjetil = atributos["lancandoProjetil"].template get<bool>();
+                            entrandoEmFuria = atributos["entrandoEmFuria"].template get<bool>();
+                            tempoAtaqueProjetil = atributos["tempoAtaqueProjetil"].template get<float>();
 
                             inicializarAnimacao();
                             inicializarBarraDeVida();
                             inicializarBarraDeStamina();
+                            inicializarBarraDeFuria();
                             inicializarSom();
 
                             animacao.setImgAtual(atributos["imagemAtual"].template get<std::string>());
@@ -126,6 +142,18 @@ namespace Game{
                         animacao.addAnimacao(CAMINHO_TEXTURA_ATTACK,"ATACAR",4,0.15f,sf::Vector2f{3.0, 1.1},  sf::Vector2f(origemT.x, origemT.y/2));
                         animacao.addAnimacao(CAMINHO_TEXTURA_DEAD,"MORRE",12,0.15f,sf::Vector2f{3, 1.5}, sf::Vector2f(origemT.x - origemT.x/2, origemT.y));
                         animacao.addAnimacao(CAMINHO_TEXTURA_HIT,"TOMADANO",3,0.15f,sf::Vector2f{2.2, 1.1}, sf::Vector2f(origemT.x, origemT.y/3));
+                        animacao.addAnimacao(CAMINHO_TEXTURA_PROJETIL,"LANCANDO_PROJETIL",9,0.1f,sf::Vector2f{3.5, 1.12}, sf::Vector2f(origemT.x, origemT.y/5));
+                   
+                        animacao.addAnimacao(CAMINHO_TEXTURA_IDLE_FIRE,"PARADO-F",8,0.2f,sf::Vector2f{2, 1.1}, sf::Vector2f(origemT.x, origemT.y/5));
+                        animacao.addAnimacao(CAMINHO_TEXTURA_JUMP_FIRE,"PULO-F",3,0.16f,sf::Vector2f{2.5, 1.25}, origemT);
+                        animacao.addAnimacao(CAMINHO_TEXTURA_DOWN_FIRE,"CAINDO-F",3,0.12f,sf::Vector2f{2.5, 1.25}, origemT);
+                        animacao.addAnimacao(CAMINHO_TEXTURA_DASH_FIRE,"DASH-F",4,0.12f,sf::Vector2f{4.5,  0.8},  sf::Vector2f(origemT.x, origemT.y/4));
+                        animacao.addAnimacao(CAMINHO_TEXTURA_RUN_FIRE,"CORRENDO-F",8,0.12f,sf::Vector2f{2.5, 1.1},  sf::Vector2f(origemT.x, origemT.y/4));
+                        animacao.addAnimacao(CAMINHO_TEXTURA_ATTACK_FIRE,"ATACAR-F",4,0.15f,sf::Vector2f{3.0, 1.1},  sf::Vector2f(origemT.x, origemT.y/4));
+                        animacao.addAnimacao(CAMINHO_TEXTURA_DEAD_FIRE,"MORRE-F",11,0.15f,sf::Vector2f{3, 1.5}, sf::Vector2f(origemT.x - origemT.x/2, origemT.y));
+                        animacao.addAnimacao(CAMINHO_TEXTURA_HIT_FIRE,"TOMADANO-F",4,0.15f,sf::Vector2f{2.2, 1.1}, sf::Vector2f(origemT.x, origemT.y/3));
+                        animacao.addAnimacao(CAMINHO_TEXTURA_PROJETIL_FIRE,"LANCANDO_PROJETIL-F",9,0.1f,sf::Vector2f{3.5, 1.12}, sf::Vector2f(origemT.x, origemT.y/5));
+                        animacao.addAnimacao(CAMINHO_TEXTURA_FURIA,"ENTRANDO_FURIA",12,0.1f,sf::Vector2f{3.0, 1.12}, sf::Vector2f(origemT.x, origemT.y/5));
 
                     }
 
@@ -139,6 +167,8 @@ namespace Game{
 
                         atualizarArma();
 
+                        atualizarProjetil();
+
                         pGrafico->atualizarCamera(getPos());
 
                         atualizarAnimacao();
@@ -146,6 +176,8 @@ namespace Game{
                         atualizarBarraDeVida();
 
                         atualizarBarraDeStamina();
+
+                        atualizarBarraDeFuria();
 
                         atualizarTempoDano();
 
@@ -184,28 +216,78 @@ namespace Game{
                      */
                     void Jogador::atualizarAnimacao()
                     {
-                        if(morrendo){
-                            animacao.atualizar(direcao, "MORRE");
-                            tempoMorrer += pGrafico->getTempo();
-                            if(tempoMorrer > tempoAnimacaoDeMorrer)
-                            {
-                                podeRemover = true;
-                             }
+                        if(!emFuria)
+                        {
+                            if(morrendo){
+                                animacao.atualizar(direcao, "MORRE");
+                                tempoMorrer += pGrafico->getTempo();
+                                if(tempoMorrer > tempoAnimacaoDeMorrer)
+                                {
+                                    podeRemover = true;
+                                }
+                            }
+                            else if(entrandoEmFuria){
+                                animacao.atualizar(direcao, "ENTRANDO_FURIA");
+                                tempoEntrandoFuria += pGrafico->getTempo();
+                                if(tempoEntrandoFuria > tempoAnimacaoFuria)
+                                {
+                                    emFuria = true;
+                                    entrandoEmFuria = false;
+                                    tempoEntrandoFuria = 0.0f;
+                                }
+                            }
+                            else if(levandoDano)
+                                animacao.atualizar(direcao,"TOMADANO");
+                            else if(emDash)
+                                animacao.atualizar(direcao, "DASH");
+                            else if(!noChao && velocidade.y > 0.0f)
+                                animacao.atualizar(direcao,"CAINDO");
+                            else if(!noChao )
+                                animacao.atualizar(direcao,"PULO");
+                            else if(movendo)
+                                animacao.atualizar(direcao,"CORRENDO");
+                            else if(atacando && lancandoProjetil)
+                                animacao.atualizar(direcao,"LANCANDO_PROJETIL");
+                            else if(atacando)
+                                animacao.atualizar(direcao,"ATACAR");
+                            else
+                                animacao.atualizar(direcao,"PARADO");
                         }
-                        else if(levandoDano)
-                            animacao.atualizar(direcao,"TOMADANO");
-                        else if(emDash)
-                            animacao.atualizar(direcao, "DASH");
-                        else if(!noChao && velocidade.y > 0.0f)
-                            animacao.atualizar(direcao,"CAINDO");
-                        else if(!noChao )
-                            animacao.atualizar(direcao,"PULO");
-                        else if(movendo)
-                            animacao.atualizar(direcao,"CORRENDO");
-                        else if(atacando)
-                             animacao.atualizar(direcao,"ATACAR");
-                        else
-                            animacao.atualizar(direcao,"PARADO");
+                        else{
+                            if(morrendo){
+                                animacao.atualizar(direcao, "MORRE-F");
+                                tempoMorrer += pGrafico->getTempo();
+                                if(tempoMorrer > (tempoAnimacaoDeMorrer/12) * 11)
+                                {
+                                    podeRemover = true;
+                                }
+                            }
+                            else if(entrandoEmFuria){
+                                animacao.atualizar(direcao, "ENTRANDO_FURIA");
+                                tempoEntrandoFuria += pGrafico->getTempo();
+                                if(tempoEntrandoFuria > tempoAnimacaoFuria)
+                                {
+                                    emFuria = true;
+                                }
+                            }
+                            else if(levandoDano)
+                                animacao.atualizar(direcao,"TOMADANO-F");
+                            else if(emDash)
+                                animacao.atualizar(direcao, "DASH-F");
+                            else if(!noChao && velocidade.y > 0.0f)
+                                animacao.atualizar(direcao,"CAINDO-F");
+                            else if(!noChao )
+                                animacao.atualizar(direcao,"PULO-F");
+                            else if(movendo)
+                                animacao.atualizar(direcao,"CORRENDO-F");
+                            else if(atacando && lancandoProjetil)
+                                animacao.atualizar(direcao,"LANCANDO_PROJETIL-F");
+                            else if(atacando)
+                                animacao.atualizar(direcao,"ATACAR-F");
+                            else
+                                animacao.atualizar(direcao,"PARADO-F");
+
+                        }
                     }
 
                     /**
@@ -227,13 +309,20 @@ namespace Game{
                         else if(outraEntidade->getID() == IDs::IDs::armaDoIimigo)
                         {
                             Arma::Arma* arma = static_cast<Arma::Arma*>(outraEntidade);
-                            tomarDano(arma->getDano());
+                            
+                            if(emFuria)
+                                tomarDano(arma->getDano()/2.0f);
+                            else
+                                tomarDano(arma->getDano());
                         }
                         else if(outraEntidade->getID() == IDs::IDs::projetil_inimigo)
                         {
                             Arma::Projetil* projetil = dynamic_cast<Arma::Projetil*>(outraEntidade);
 
-                            tomarDano(projetil->getDano());
+                            if(emFuria)
+                                tomarDano(projetil->getDano()/2.0f);
+                            else
+                                tomarDano(projetil->getDano());
 
                             projetil->setColidiu(true);
                         }
@@ -258,20 +347,29 @@ namespace Game{
                     }
                     
                     /**
-                     * @brief metodo queinicializa a barra de stamina do jogador
+                     * @brief metodo que inicializa a barra de stamina do jogador
                     */
                     void Jogador::inicializarBarraDeStamina()
                     {
                         sf::Vector2f stamina = sf::Vector2f(BARRA_VIDA_JOGADOR_X, BARRA_VIDA_JOGADOR_Y/2.0f);
-                        tuboStamina.setSize(stamina);
                         barraStamina.setSize(stamina);
-                        sf::Texture* texturaVida = new sf::Texture(); 
-                        sf::Texture* texturaBarra = new sf::Texture();
-                        texturaVida->loadFromFile("animations/Life/VidaJogador.png");
-                        texturaBarra->loadFromFile("animations/Life/BarraVida.png");
-                        barraStamina.setTexture(texturaVida);
-                        barraStamina.setFillColor(sf::Color::Blue);
-                        tuboStamina.setTexture(texturaBarra);
+                        sf::Texture* texturaStamina = new sf::Texture(); 
+                        texturaStamina->loadFromFile("animations/Life/BarraEnergia.png");
+                        barraStamina.setTexture(texturaStamina);
+                    }
+                   
+                    /**
+                     * @brief metodo que inicializa a barra de furia do jogador
+                    */
+                    void Jogador::inicializarBarraDeFuria()
+                    {
+                        sf::Vector2f tamFuria = sf::Vector2f(furia, BARRA_VIDA_JOGADOR_Y/2.0f);
+                        barraDeFuria.setSize(tamFuria);
+                        sf::Texture* texturaFuria = new sf::Texture(); 
+                        texturaFuria->loadFromFile("animations/Life/BarraEnergia.png");
+                        barraDeFuria.setTexture(texturaFuria);
+                        barraDeFuria.setFillColor(sf::Color::Magenta);
+
                     }
                     
                     /**
@@ -303,9 +401,25 @@ namespace Game{
                         sf::Vector2f tamJanela = pGrafico->getTamJanela();
                         
                         sf::Vector2f posBarra = sf::Vector2f(posJanela.x - tamJanela.x / 2.0f + 10.0f, 60.0f);
-                        tuboStamina.setPosition(posBarra);
-                        barraStamina.setSize(sf::Vector2f((BARRA_VIDA_JOGADOR_X - 40.0f) * (stamina / STAMINA_MAXIMA), BARRA_VIDA_JOGADOR_Y - 13.0f));
-                        barraStamina.setPosition(sf::Vector2f(posBarra.x + 7.0f, posBarra.y + tuboStamina.getSize().y / 2.0f - barraStamina.getSize().y / 2.0f));
+                        barraStamina.setSize(sf::Vector2f((BARRA_VIDA_JOGADOR_X - 30.0f) * (stamina / STAMINA_MAXIMA), BARRA_VIDA_JOGADOR_Y - 13.0f));
+                        barraStamina.setPosition(sf::Vector2f(posBarra.x + 7.0f, posBarra.y - barraStamina.getSize().y / 2.0f));
+                    }
+                  
+                    /**
+                     * @brief  metodo que atualiza a posicao da barra de furia do jogador
+                     * assim como seu tamanho de acordo com o atributo furia do jogador. 
+                    */
+                    void Jogador::atualizarBarraDeFuria()
+                    {
+                        if(emFuria)
+                            consumirFuria();
+
+                        sf::Vector2f posJanela = pGrafico->getCamera().getCenter();
+                        sf::Vector2f tamJanela = pGrafico->getTamJanela();
+                        
+                        sf::Vector2f posBarra = sf::Vector2f(posJanela.x - tamJanela.x / 2.0f + 10.0f, 80.0f);
+                        barraDeFuria.setSize(sf::Vector2f((BARRA_VIDA_JOGADOR_X - 30.0f) * (furia / FURIA_MAXIMA), BARRA_VIDA_JOGADOR_Y - 13.0f));
+                        barraDeFuria.setPosition(sf::Vector2f(posBarra.x + 7.0f, posBarra.y - barraDeFuria.getSize().y / 2.0f));
                     }
 
                     /**
@@ -317,8 +431,8 @@ namespace Game{
                         pGrafico->desenhaElemento(corpo);
                         pGrafico->desenhaElemento(tuboVida);
                         pGrafico->desenhaElemento(barraDeVida);
-                        pGrafico->desenhaElemento(tuboStamina);
                         pGrafico->desenhaElemento(barraStamina);
+                        pGrafico->desenhaElemento(barraDeFuria);
                     }
 
                     /**
@@ -327,7 +441,7 @@ namespace Game{
                     */
                     void Jogador::atualizarArma()
                     {
-                        if(atacando && !morrendo)
+                        if(atacando && !morrendo && !lancandoProjetil)
                         {
                             tempoAtaque += pGrafico->getTempo();
                             if(tempoAtaque > tempoAnimacaoAtaque)
@@ -345,6 +459,44 @@ namespace Game{
                             {
                                 somAtaque.play();
                             }
+                        }
+                    }
+                    
+                    /**
+                     * @brief metodo  responsavel  por   atualizar   a  posicao 
+                     * o prpjetil do jogador dependendo de seu estado atual
+                    */
+                    void Jogador::atualizarProjetil()
+                    {
+                        if(atacando && !morrendo && lancandoProjetil)
+                        {
+                            tempoAtaqueProjetil += pGrafico->getTempo();
+                            if(tempoAtaqueProjetil > tempoAnimacaoProjetil)
+                            {
+                                atacando = false;
+                                lancandoProjetil = false;
+                                tempoAtaqueProjetil = 0.0f;
+                            }
+                            else if(tempoAtaqueProjetil > (tempoAnimacaoProjetil/4) * 3)
+                            {
+                                float x = direcao ? pos.x - 29.0f : pos.x + tam.x + 15.0f;
+                                projetil->setPos(sf::Vector2f(x, (pos.y +  tam.y / 3.0f) + 10.0f));
+                                projetil->setColidiu(false);
+                                projetil->setVelocidade(sf::Vector2f(350.0f, 0.0f));
+                                projetil->setDirecao(direcao);
+                            }
+
+                        }
+                    }
+
+                    void Jogador::lancarProjetil()
+                    {
+                        if(projetil->getColidiu())
+                        {
+                            parar();
+                            consumirStamina((STAMINA_MAXIMA/5) * 2);
+                            lancandoProjetil = true;
+                            atacando = true;
                         }
                     }
                     
@@ -383,6 +535,12 @@ namespace Game{
                         json["podeDash"] = podeDash;
                         json["tempoDash"] = tempoDash;
                         json["velDash"] = velDash;
+                        json["furia"] = furia;
+                        json["emFuria"] = emFuria;
+                        json["entrandoEmFuria"] = entrandoEmFuria;
+                        json["tempoEntrandoFuria"] = tempoEntrandoFuria;
+                        json["lancandoProjetil"] = lancandoProjetil;
+                        json["tempoAtaqueProjetil"] = tempoAtaqueProjetil;
                         json["tempoAnimacaoAtaque"] = tempoAnimacaoAtaque;
                         json["imagemAtual"] = animacao.getIMagemAtual();
                         json["tempoTotal"] = animacao.getTempoTotal();
@@ -476,19 +634,19 @@ namespace Game{
                     {
                         if(tempoDash == 0.0f)
                         {
-                            if(usarStamina(STAMINA_MAXIMA/3.0f))
+                            if(consumirStamina(STAMINA_MAXIMA/3.0f))
                                 podeDash = true;
                         }
                     }
                     
                     /**
-                     * @brief metodo que altera o atributo estamina
+                     * @brief metodo que altera o atributo stamina
                      * 
-                     * @param qtdUso quantidade de estamina a ser consumida
+                     * @param qtdUso quantidade de stamina a ser consumida
                      * 
                      * @return retorna um boleano dizendo se foi possivel consumir a quantidade de estamina recebida
                     */
-                    bool Jogador::usarStamina(float qtdUso)
+                    bool Jogador::consumirStamina(float qtdUso)
                     {
                         if(stamina - qtdUso >= 0)
                         {
@@ -497,6 +655,27 @@ namespace Game{
                             return true;
                         }
                         return false;
+                    }
+                   
+                    /**
+                     * @brief metodo que altera o atributo furia
+                     * 
+                     * @return retorna um boleano dizendo se foi possivel consumir a quantidade de furia
+                    */
+                    bool Jogador::consumirFuria()
+                    {
+                        if(furia - FURIA_CONSUMO >= 0)
+                        {
+                            furia -= FURIA_CONSUMO;
+                            return true;
+                        }
+                        else
+                        {
+                            arma->setDano(dano);
+                            projetil->setDano(dano);
+                            emFuria = false; 
+                            return false;
+                        }
                     }
 
                     /**
@@ -535,9 +714,76 @@ namespace Game{
                     void Jogador::procurarIteracoes()
                     {
                         Gerenciador::GerenciadorDeColisao* pColisao = pColisao->getGerenciadorDeColisao();
+                        Entidade* ent =  pColisao->procurarEntidade(getPos(), sf::Vector2f(100.0f, 100.0f), IDs::IDs::npc);
 
-                        pColisao->procurarEntidade(getPos(), sf::Vector2f(100.0f, 100.0f), IDs::IDs::esqueleto);
+                        if(ent != nullptr)
+                        {
+                            Npc::Npc* npc = static_cast<Npc::Npc*>(ent);
+                            movendo = false;
+                            atacando = false; 
+                            levandoDano = false;
+                            noChao = true;
+                            atualizarAnimacao();
+                            desenhar();
+                            npc->iniciarDialogo();
+                        }
                     }
+
+                    void Jogador::setProjetil(Arma::Projetil* projetil)
+                    {
+                        this->projetil = projetil;
+                        this->projetil->setDano(dano * 1.5f);
+                    }
+
+                    /**
+                     * @brief metodo que auxilia na tomada de dano.
+                     * 
+                     * @param dano valor a ser descontado da vida do jogador.
+                    */
+                    void Jogador::tomarDano(const float dano)
+                    {
+                        if(!levandoDano)
+                        {
+                            levandoDano = true;
+                            atacando = false;
+                            entrandoEmFuria = false;
+                            movendo = false;
+                            vida -= dano;
+                            if(vida <= 0.0f)
+                            {
+                                morrendo = true;
+                                levandoDano = false;
+                                vida = 0.0f;
+                                
+                                if(arma != nullptr)
+                                {
+                                    arma->remover();
+                                }
+                            }
+                            tempoDano = 0.0f;
+                            tempoAtaqueProjetil = 0.0f;
+                            aumentarFuria(dano / 2.0f);
+                        }
+                    }
+
+                    void Jogador::aumentarFuria(float qtdFuria)
+                    {
+                        if(furia + qtdFuria <= FURIA_MAXIMA)
+                        {
+                            furia += qtdFuria;
+                        }
+                    }
+
+                    void Jogador::ativarFuria()
+                    {
+                        if(furia == FURIA_MAXIMA && !entrandoEmFuria && !morrendo)
+                        {
+                            arma->setDano(dano*2);
+                            projetil->setDano(dano*2);
+                            entrandoEmFuria = true;
+                        }
+                    }
+
             }
         }
     }
