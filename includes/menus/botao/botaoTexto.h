@@ -26,9 +26,6 @@ namespace Game{
                
                 TextoEfeito texto;
 
-                //metodo de acesso ao tamanho do texto
-              
-                const sf::Vector2f getTamTexto();
 
             public:
 
@@ -42,6 +39,10 @@ namespace Game{
                 void atualizarPosicaoDaCaixa(const sf::Vector2f pos);
                 void atualizarAnimacao();
 
+                //metodo de acesso ao tamanho do texto
+              
+                const sf::Vector2f getTamTexto();
+               
                 //metodo modificador do atributo selecionado
              
                 void setSelecionado(bool selecionado);
@@ -52,7 +53,7 @@ namespace Game{
                 
                 //metodo responsavel pela visualizacao do botao
               
-                void desenhar();
+                virtual void desenhar();
 
             };
         }

@@ -11,13 +11,15 @@ namespace Game{
          * @brief construtora da classe GerenciadordeMusica nela é inicializada as musicas a serem tocadas
         */
         GerenciadorDeMusica::GerenciadorDeMusica():
-        mapMusica(), volumeGeral(0.0f), volumeEfeitoSonoro(40.0f)
+        mapMusica(), volumeGeral(100.0f), volumeEfeitoSonoro(40.0f)
         {
-            addMusica(IDs::IDs::forest, "musics/adventure-begins.ogg");
+            addMusica(IDs::IDs::floresta_do_amanhecer, "musics/adventure-begins.ogg");
+            addMusica(IDs::IDs::caverna, "musics/Summer-Nights.ogg");
             addMusica(IDs::IDs::menu_principal, "musics/main-theme.ogg");
             addMusica(IDs::IDs::menu_pause, "musics/Menu-Pause.ogg");
             addMusica(IDs::IDs::menu_gameOver, "musics/Game-Over.ogg");
             IDmusicaAtual = IDs::IDs::vazio;
+            setVolumeGeral(volumeGeral);
         }
 
 
@@ -76,76 +78,64 @@ namespace Game{
         */
         void GerenciadorDeMusica::mudarMusica(const IDs::IDs IDmusica)
         {
+            setVolumeGeral(volumeGeral);
             switch (IDmusica)
             {
-            case(IDs::IDs::menu_principal):
-            {
-                if(IDmusicaAtual != IDs::IDs::vazio && IDmusicaAtual != IDmusica)
+                case(IDs::IDs::menu_principal):
                 {
-                    parar();
+                    if(IDmusicaAtual != IDs::IDs::vazio && IDmusicaAtual != IDmusica)
+                    {
+                        parar();
+                    }
+                    if(IDmusicaAtual != IDmusica)
+                        mapMusica[IDmusica]->play();
+                    IDmusicaAtual = IDmusica;
                 }
-                if(IDmusicaAtual != IDmusica)
+                    break;
+                case(IDs::IDs::floresta_do_amanhecer):
+                {
+                    if(IDmusicaAtual != IDs::IDs::vazio)
+                        parar();
                     mapMusica[IDmusica]->play();
-                IDmusicaAtual = IDmusica;
-            }
-                break;
-            case(IDs::IDs::forest):
-            {
-                if(IDmusicaAtual != IDs::IDs::vazio)
-                    parar();
-                mapMusica[IDmusica]->play();
-                IDmusicaAtual = IDmusica;
-            }
-                break;
-            case(IDs::IDs::menu_gameOver):
-            {
-                if(IDmusicaAtual != IDs::IDs::vazio)
-                    parar();
-                mapMusica[IDmusica]->play();
-                IDmusicaAtual = IDmusica;
-            }
-                break;
-           
-            case(IDs::IDs::menu_opcao):
-            {
-
-            }
-                break;
-
-            case(IDs::IDs::menu_pause):
-            {
-                if(IDmusicaAtual != IDs::IDs::vazio && IDmusica != IDmusicaAtual)
-                    pausar();
-                if(IDmusica != IDmusicaAtual)
-                    mapMusica[IDmusica]->play();
-                IDmusicaAtual = IDmusica;
-            }
-                break;
-
-            case(IDs::IDs::menu_carregar):
-            {
-               
-            }
-                break;
-
-            case(IDs::IDs::menu_salvar):
-            {
-             
-            }
-                break;
-            case(IDs::IDs::menu_bug):
-            {
+                    IDmusicaAtual = IDmusica;
+                }
+                    break;
                 
-            }
-                break;
-            
-            default:
-            {
-                if(IDmusicaAtual != IDs::IDs::vazio)
-                    pausar();
-                IDmusicaAtual =IDs::IDs::vazio;
-            }
-                break;
+                case(IDs::IDs::caverna):
+                {
+                    if(IDmusicaAtual != IDs::IDs::vazio)
+                        parar();
+                    mapMusica[IDmusica]->play();
+                    IDmusicaAtual = IDmusica;
+                }
+                    break;
+                case(IDs::IDs::menu_gameOver):
+                {
+                    if(IDmusicaAtual != IDs::IDs::vazio)
+                        parar();
+                    mapMusica[IDmusica]->play();
+                    IDmusicaAtual = IDmusica;
+                }
+                    break;
+                case(IDs::IDs::estado_dialogo):
+                {
+                    setVolume(IDmusicaAtual, volumeGeral * 0.4f);
+                }
+                    break;
+                case(IDs::IDs::menu_pause):
+                {
+                    if(IDmusicaAtual != IDs::IDs::vazio && IDmusica != IDmusicaAtual)
+                        pausar();
+                    if(IDmusica != IDmusicaAtual)
+                        mapMusica[IDmusica]->play();
+                    IDmusicaAtual = IDmusica;
+                }
+                    break;
+                default:
+                {
+                    
+                }
+                    break;
             }
         }
 

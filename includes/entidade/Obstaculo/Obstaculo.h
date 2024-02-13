@@ -7,7 +7,7 @@
 #include "../includes/entidade/entidade.h"
 #include "../includes/animador/animacao.h"
 
-#define CAMINHO_TEXTURA_PLATAFORMA_CAVERNA "..\\Game\\animations\\platform\\Platform-cave.png"
+#define CAMINHO_TEXTURA_PLATAFORMA_CAVERNA "..\\Game\\animations\\platform\\Platform_cave.png"
 #define CAMINHO_TEXTURA_PLATAFORMA_FOREST "..\\Game\\animations\\platform\\Platform-forest.png"
 
 

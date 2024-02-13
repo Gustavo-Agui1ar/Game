@@ -26,14 +26,19 @@ namespace Game{
         {
             switch (IDfase)
             {
-            case(IDs::IDs::forest):
-            {
-                fase = static_cast<Fase::Fase*>(new Fase::Forest(entidades));
-            }
-                break;
-            
-            default:
-                break;
+                case(IDs::IDs::floresta_do_amanhecer):
+                {
+                    fase = static_cast<Fase::Fase*>(new Fase::Forest(entidades));
+                }
+                    break;
+                case(IDs::IDs::caverna):
+                {
+                    fase = static_cast<Fase::Fase*>(new Fase::Caverna(entidades));
+                }
+                    break;
+                
+                default:
+                    break;
             }
         }
 
@@ -58,7 +63,7 @@ namespace Game{
                 fase = static_cast<Fase::Fase*>(caverna);
   
             }
-            else if(ID == IDs::IDs::forest)
+            else if(ID == IDs::IDs::floresta_do_amanhecer)
             {
                 Fase::Forest* floresta = new Fase::Forest();
                 fase = static_cast<Fase::Fase*>(floresta);

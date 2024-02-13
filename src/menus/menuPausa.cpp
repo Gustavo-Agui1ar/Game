@@ -64,6 +64,7 @@ namespace Game{
         void MenuPausa::criarBotoes()
         {
             addBotao("Continuar", sf::Vector2f(0.0f, 0.0f), IDs::IDs::botao_voltar, sf::Color{245, 170, 0});
+            addBotao("Selecionar Fase", sf::Vector2f(0.0f, 0.0f), IDs::IDs::botao_menu_selecao_fase, sf::Color{245, 170, 0});
             addBotao("Carregar", sf::Vector2f(0.0f, 0.0f), IDs::IDs::botao_carregar_jogo, sf::Color{245, 170, 0});
             addBotao("Salvar", sf::Vector2f(0.0f, 0.0f), IDs::IDs::botao_salvar_jogo, sf::Color{245, 170, 0});
             addBotao("Opcao", sf::Vector2f(0.0f, 0.0f), IDs::IDs::botao_opcao, sf::Color{245, 170, 0});

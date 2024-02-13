@@ -101,7 +101,7 @@ namespace Game{
          * 
          * @return retorna uma string com as informacoes do arquivo
         */
-        std::vector<std::string>  GerenciadorArquivo::lerArquivoDeFala(const char* caminhoArquivo)
+        std::vector<std::string>  GerenciadorArquivo::lerArquivoDeTexto(const char* caminhoArquivo)
         {
             abrirArquivoLeitura(caminhoArquivo);
             

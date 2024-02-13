@@ -20,7 +20,7 @@ namespace IDs{
             
             //IDs fases
             caverna,
-            forest,
+            floresta_do_amanhecer,
             
             estado_dialogo,
             
@@ -41,6 +41,9 @@ namespace IDs{
 
             //botoes dos menus
             botao_salvar , 
+            botao_jogar , 
+            botao_selecao_fase , 
+            botao_menu_selecao_fase , 
             botao_salvar_jogo , 
             botao_carregar , 
             botao_remover ,
@@ -52,6 +55,7 @@ namespace IDs{
             //IDs menus
 
             menu_principal ,
+            menu_de_selecao_fase ,
             menu_pause ,
             menu_gameOver ,
             menu_carregar ,

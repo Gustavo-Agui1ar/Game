@@ -41,6 +41,8 @@ namespace Game{
                     pGDialogo->pularDialogo();
                 }
             }
+            else if(tecEspecial[tecla] == "Escape")
+                pEstado->addEstado(IDs::IDs::menu_pause);
         }
 
         void ListenerDialogo::setGerenciadorDialogo(Gerenciador::GerenciadorDeDialogo* pGDialogo)

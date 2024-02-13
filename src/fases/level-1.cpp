@@ -25,6 +25,98 @@ namespace Game{
         }
 
         /**
+         * @brief  construtora da classe caverna
+         * 
+         * @param entidades json contendo informacoes das entidades a serem criadas na fase
+        */
+        Caverna::Caverna(nlohmann::ordered_json entidades):
+        Fase(IDs::IDs::caverna, IDs::IDs::caverna)
+        {
+            criarFundo();
+            recuperarJogada(entidades);
+        }
+
+        /**
+         * @brief metodo que cria as entidades da fase
+         * 
+         * @param entidades json contendo as entidades a serem criadas na fase
+        */
+        void Caverna::recuperarJogada(nlohmann::ordered_json entidades)
+        {
+            nlohmann::ordered_json::iterator it;
+            int i;
+
+            for(it = entidades.begin(),  i = 0 ; it != entidades.end() ; it++, i++)
+            {
+                IDs::IDs ID = (*it)["ID"].template get<IDs::IDs>();
+
+                switch(ID)
+                {
+                    case(IDs::IDs::jogador):
+                    {
+                        i++;
+                        nlohmann::ordered_json entidade = (*it);
+                        it++;
+                        nlohmann::ordered_json arma = (*it);
+                        it++;
+                        nlohmann::ordered_json projetil = (*it);
+
+                        criarEntidade(IDs::IDs::jogador, entidade, arma, projetil);
+                    }
+                    break;
+
+                    case(IDs::IDs::esqueleto):
+                    {
+                        i++;
+                        nlohmann::ordered_json entidade = (*it);
+                        it++;
+                        nlohmann::ordered_json arma = (*it);
+
+                        criarEntidade(IDs::IDs::esqueleto, entidade, arma);
+                    }
+                    break;
+
+                    case(IDs::IDs::arqueiro):
+                    {
+                        i++;
+                        nlohmann::ordered_json entidade = (*it);
+                        it++;
+                        nlohmann::ordered_json arma = (*it);
+
+                        criarEntidade(IDs::IDs::arqueiro, entidade, arma);
+                    }
+                    break;
+
+                    case(IDs::IDs::red_slime):
+                    {
+                        i++;
+                        nlohmann::ordered_json entidade = (*it);
+                        it++;
+                        nlohmann::ordered_json arma = (*it);
+
+                        criarEntidade(IDs::IDs::red_slime, entidade, arma);
+                    }
+                    break;
+
+                    case(IDs::IDs::plataforma):
+                    {                
+                        criarEntidade(IDs::IDs::plataforma, (*it));
+                    }
+                    break;
+
+                    case(IDs::IDs::plataforma_invisivel):
+                    {
+                        criarEntidade(IDs::IDs::plataforma_invisivel, (*it));
+                    }
+                    break;
+
+                    default:
+                        break;
+                } 
+            }
+        }
+
+        /**
          * @brief destrutor da classe
         */
         Caverna::~Caverna()
@@ -79,8 +171,8 @@ namespace Game{
                 j++;
             }
 
-        listaPersonagens->removerEntidade(2);    
-        listaPersonagens->removerEntidade(3);    
+        listaPersonagens->removerEntidade(4);    
+        listaPersonagens->removerEntidade(4);    
 
             arquivo.close();
         }

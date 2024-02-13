@@ -31,7 +31,7 @@ namespace Game{
                 
                 case(IDs::IDs::botao_volume_do_jogo):
                 {
-                    volume = pMusica->getVolume(IDs::IDs::forest);
+                    volume = pMusica->getVolume(IDs::IDs::floresta_do_amanhecer);
                     corpoVolume.setPosition(sf::Vector2f(posInicioFundo + volume * parametrizacao, getPos().y + getTamTexto().y - 15.0f));
                 }
                 break;
@@ -81,7 +81,7 @@ namespace Game{
             {
                 case(IDs::IDs::botao_volume_do_jogo):
                 {
-                    pMusica->setVolume(IDs::IDs::forest, vol);
+                    pMusica->setVolume(IDs::IDs::floresta_do_amanhecer, vol);
                 }
                 break;
                 

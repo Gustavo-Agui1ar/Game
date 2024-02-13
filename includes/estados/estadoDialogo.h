@@ -26,6 +26,8 @@ namespace Game{
                 ~EstadoDialogo();
 
                 void setFase(Fase::Fase* fase);
+                Fase::Fase* getFase();
+
                 void setDialogo(const char* arquivoDialogo);
                 
                 void executar();

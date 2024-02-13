@@ -45,26 +45,25 @@ namespace Game{
                     tempoAtaque(0.0f), podeRegenerarStamina(false), tempoRegStamina(0.0f),  stamina(STAMINA_MAXIMA) , furia(100.0f), emFuria(false),  entrandoEmFuria(false), tempoAnimacaoFuria(JOGADOR_TEMPO_ATE_FURIA), tempoEntrandoFuria(0.0f),
                     listenerJogador(new Listener::ListenerJogador(this)), projetil(projetil), lancandoProjetil(false), tempoAnimacaoProjetil(JOGADOR_TEMPO_PROJEIL), tempoAtaqueProjetil(0.0f)
                     {
-                      
-                       inicializarAnimacao();
+                        inicializarAnimacao();
 
-                       inicializarBarraDeVida();
+                        inicializarBarraDeVida();
 
-                       inicializarBarraDeStamina();
+                        inicializarBarraDeStamina();
 
-                       inicializarBarraDeFuria();
+                        inicializarBarraDeFuria();
 
-                       inicializarSom();
+                        inicializarSom();
 
-                       if(arma != nullptr)
-                       {
-                          setArma(arma);
-                       }
-                      
-                       if(projetil != nullptr)
-                       {
-                          setProjetil(projetil);
-                       }
+                        if(arma != nullptr)
+                        {
+                            setArma(arma);
+                        }
+                        
+                        if(projetil != nullptr)
+                        {
+                            setProjetil(projetil);
+                        }
 
                     }
 
@@ -727,6 +726,11 @@ namespace Game{
                             desenhar();
                             npc->iniciarDialogo();
                         }
+
+                        int i = 11;
+                        IDs::IDs iDs = static_cast<IDs::IDs>(i);
+                       
+                        std::cout<< static_cast<int>(iDs);
                     }
 
                     void Jogador::setProjetil(Arma::Projetil* projetil)

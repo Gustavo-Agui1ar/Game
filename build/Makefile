@@ -1136,6 +1136,30 @@ src/menus/botao/botao.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/botao/botao.cpp.s
 .PHONY : src/menus/botao/botao.cpp.s
 
+src/menus/botao/botaoSelecao.obj: src/menus/botao/botaoSelecao.cpp.obj
+.PHONY : src/menus/botao/botaoSelecao.obj
+
+# target to build an object file
+src/menus/botao/botaoSelecao.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/botao/botaoSelecao.cpp.obj
+.PHONY : src/menus/botao/botaoSelecao.cpp.obj
+
+src/menus/botao/botaoSelecao.i: src/menus/botao/botaoSelecao.cpp.i
+.PHONY : src/menus/botao/botaoSelecao.i
+
+# target to preprocess a source file
+src/menus/botao/botaoSelecao.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/botao/botaoSelecao.cpp.i
+.PHONY : src/menus/botao/botaoSelecao.cpp.i
+
+src/menus/botao/botaoSelecao.s: src/menus/botao/botaoSelecao.cpp.s
+.PHONY : src/menus/botao/botaoSelecao.s
+
+# target to generate assembly for a file
+src/menus/botao/botaoSelecao.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/botao/botaoSelecao.cpp.s
+.PHONY : src/menus/botao/botaoSelecao.cpp.s
+
 src/menus/botao/botaoTexto.obj: src/menus/botao/botaoTexto.cpp.obj
 .PHONY : src/menus/botao/botaoTexto.obj
 
@@ -1327,6 +1351,30 @@ src/menus/menuCarregar.s: src/menus/menuCarregar.cpp.s
 src/menus/menuCarregar.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menuCarregar.cpp.s
 .PHONY : src/menus/menuCarregar.cpp.s
+
+src/menus/menuDeSelecao.obj: src/menus/menuDeSelecao.cpp.obj
+.PHONY : src/menus/menuDeSelecao.obj
+
+# target to build an object file
+src/menus/menuDeSelecao.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menuDeSelecao.cpp.obj
+.PHONY : src/menus/menuDeSelecao.cpp.obj
+
+src/menus/menuDeSelecao.i: src/menus/menuDeSelecao.cpp.i
+.PHONY : src/menus/menuDeSelecao.i
+
+# target to preprocess a source file
+src/menus/menuDeSelecao.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menuDeSelecao.cpp.i
+.PHONY : src/menus/menuDeSelecao.cpp.i
+
+src/menus/menuDeSelecao.s: src/menus/menuDeSelecao.cpp.s
+.PHONY : src/menus/menuDeSelecao.s
+
+# target to generate assembly for a file
+src/menus/menuDeSelecao.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/menus/menuDeSelecao.cpp.s
+.PHONY : src/menus/menuDeSelecao.cpp.s
 
 src/menus/menuGameOver.obj: src/menus/menuGameOver.cpp.obj
 .PHONY : src/menus/menuGameOver.obj
@@ -1607,6 +1655,9 @@ help:
 	@echo ... src/menus/botao/botao.obj
 	@echo ... src/menus/botao/botao.i
 	@echo ... src/menus/botao/botao.s
+	@echo ... src/menus/botao/botaoSelecao.obj
+	@echo ... src/menus/botao/botaoSelecao.i
+	@echo ... src/menus/botao/botaoSelecao.s
 	@echo ... src/menus/botao/botaoTexto.obj
 	@echo ... src/menus/botao/botaoTexto.i
 	@echo ... src/menus/botao/botaoTexto.s
@@ -1631,6 +1682,9 @@ help:
 	@echo ... src/menus/menuCarregar.obj
 	@echo ... src/menus/menuCarregar.i
 	@echo ... src/menus/menuCarregar.s
+	@echo ... src/menus/menuDeSelecao.obj
+	@echo ... src/menus/menuDeSelecao.i
+	@echo ... src/menus/menuDeSelecao.s
 	@echo ... src/menus/menuGameOver.obj
 	@echo ... src/menus/menuGameOver.i
 	@echo ... src/menus/menuGameOver.s

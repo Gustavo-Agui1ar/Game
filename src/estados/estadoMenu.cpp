@@ -5,6 +5,7 @@
 #include "../includes/menus/menuPrincipal.h"
 #include "../includes/menus/menuOpcao.h"
 #include "../includes/menus/menuCarregar.h"
+#include "../includes/menus/menuDeSelecao.h"
 #include "../includes/menus/menuSalvar.h"
 #include "../includes/gerenciador/gerenciadorDeEstado.h"
 
@@ -55,7 +56,7 @@ namespace Game{
             
             if(estadoAtual != nullptr)
             {
-                if(estadoAtual->getID() == IDs::IDs::forest || estadoAtual->getID() == IDs::IDs::caverna)
+                if(estadoAtual->getID() == IDs::IDs::floresta_do_amanhecer || estadoAtual->getID() == IDs::IDs::caverna)
                 {
                     EstadoFase* estadoFase = static_cast<EstadoFase*>(estadoAtual);
                     fase = estadoFase->getFase();
@@ -63,6 +64,11 @@ namespace Game{
                 else if(estadoAtual->getID() == IDs::IDs::menu_pause){
                     EstadoMenu* estadoMenu = static_cast<EstadoMenu*>(estadoAtual);
                     fase = estadoMenu->getFase();
+                }
+                else if(estadoAtual->getID() == IDs::IDs::estado_dialogo)
+                {
+                    EstadoDialogo* dialogo = static_cast<EstadoDialogo*>(estadoAtual);
+                    fase = dialogo->getFase();
                 }
             }
 
@@ -101,6 +107,26 @@ namespace Game{
                     menuPause->criarBotoes();
                     
                     this->menu = static_cast<Menu::Menu*>(menuPause);
+                }
+                break;
+               
+                case(IDs::IDs::menu_de_selecao_fase):
+                {
+                    if(fase == nullptr)
+                    {
+                        std::cout<<"EstadoMenu:: nao foi possivel recuperar fase";
+                        exit(1);
+                    }
+
+                    Menu::MenuDeSelecao* menuSelecao = new Menu::MenuDeSelecao(fase);
+
+                    if(menuSelecao == nullptr)
+                    {
+                        std::cout<<"EstadoMenu:: nao foi possivel criar um menu de selecao";
+                        exit(1);
+                    }
+                    
+                    this->menu = static_cast<Menu::Menu*>(menuSelecao);
                 }
                 break;
                 

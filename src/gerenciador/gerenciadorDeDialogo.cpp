@@ -97,5 +97,7 @@ namespace Game{
         {
             pLDialogo->mudarEstado(ativo);
         }
+
+       
     }
 }

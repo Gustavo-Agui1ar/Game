@@ -50,7 +50,7 @@ namespace Game{
         {
             Gerenciador::GerenciadorArquivo arquivo;
 
-            std::vector<std::string> falas = arquivo.lerArquivoDeFala(arquivoDialogo);
+            std::vector<std::string> falas = arquivo.lerArquivoDeTexto(arquivoDialogo);
 
             inicializarFalas(falas);
         }
@@ -72,5 +72,9 @@ namespace Game{
             pDialogo->mudarEstadoListener(ativo);
         }
         
+        Fase::Fase* EstadoDialogo::getFase()
+        {
+            return fase;
+        }
     }
 }

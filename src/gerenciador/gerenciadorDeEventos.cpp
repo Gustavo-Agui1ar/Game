@@ -65,7 +65,7 @@ namespace Game{
                             pGrafico->fechaJanela();
                     }
                     else{
-                        if(pEstado->getEstadoAtual()->getID() == IDs::IDs::forest)
+                        if(pEstado->getEstadoAtual()->getID() == IDs::IDs::floresta_do_amanhecer)
                             pEstado->addEstado(IDs::IDs::menu_pause);
                     }
                 }

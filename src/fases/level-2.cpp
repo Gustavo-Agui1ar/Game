@@ -18,7 +18,7 @@ namespace Game{
          * @brief construtor da classe floresta
         */
         Forest::Forest():
-        Fase(IDs::IDs::forest, IDs::IDs::forest)
+        Fase(IDs::IDs::floresta_do_amanhecer, IDs::IDs::floresta_do_amanhecer)
         {
 
         }
@@ -29,7 +29,7 @@ namespace Game{
          * @param entidades json contendo informacoes das entidades a serem criadas na fase
         */
         Forest::Forest(nlohmann::ordered_json entidades):
-        Fase(IDs::IDs::forest, IDs::IDs::forest)
+        Fase(IDs::IDs::floresta_do_amanhecer, IDs::IDs::floresta_do_amanhecer)
         {
             criarFundo();
             recuperarJogada(entidades);
@@ -181,7 +181,7 @@ namespace Game{
         */
         void Forest::criarPlataforma(const sf::Vector2f pos)
         {
-            Entidade::Obstaculo::Plataforma* plataforma = new Entidade::Obstaculo::Plataforma(pos,sf::Vector2f(200.0f,40.0f),IDs::IDs::plataforma,  IDs::IDs::forest);
+            Entidade::Obstaculo::Plataforma* plataforma = new Entidade::Obstaculo::Plataforma(pos,sf::Vector2f(200.0f,40.0f),IDs::IDs::plataforma,  IDs::IDs::floresta_do_amanhecer);
             if(plataforma == nullptr)
             {
                 std::cout<<"Fase::Forest: nao foi possivel criar uma plataforma";

@@ -41,7 +41,10 @@ namespace Game{
                     { 
                         if(menu->getID() == IDs::IDs::menu_pause || menu->getID() == IDs::IDs::menu_gameOver)
                         {
-                            pEstado->removerEstado(2);
+                            if(pEstado->getEstado(1)->getID() == IDs::IDs::estado_dialogo)
+                                pEstado->removerEstado(3);
+                            else
+                                pEstado->removerEstado(2);
                         }
                         else    
                             pEstado->removerEstado();
@@ -51,7 +54,7 @@ namespace Game{
                     
                     case(IDs::IDs::botao_novoJogo):
                     {
-                        pEstado->addEstado(IDs::IDs::forest);
+                        pEstado->addEstado(IDs::IDs::floresta_do_amanhecer);
                         Estado::EstadoFase* fase = dynamic_cast<Estado::EstadoFase*>(pEstado->getEstadoAtual());
                         fase->criarFase();
                     }
@@ -65,6 +68,33 @@ namespace Game{
                     }
                     break;
 
+                    case (IDs::IDs::botao_jogar):
+                    {
+                        Estado::EstadoMenu* menu = static_cast<Estado::EstadoMenu*>(pEstado->getEstadoAtual());
+                        Menu::MenuDeSelecao* selecao = static_cast<Menu::MenuDeSelecao*>(menu->getMenu());
+
+                        IDs::IDs IDfase = selecao->getIDdeSelecao();
+
+                        pEstado->removerEstado(2);
+
+                        if(pEstado->getEstadoAtual()->getID() == IDs::IDs::estado_dialogo)
+                            pEstado->removerEstado(2);
+                        else
+                            pEstado->removerEstado(1);
+                        
+                        pEstado->addEstado(IDfase);
+                            
+                        Estado::EstadoFase* fase = dynamic_cast<Estado::EstadoFase*>(pEstado->getEstadoAtual());
+                        fase->criarFase();
+                    }
+                        break;
+                    
+                    case(IDs::IDs::botao_menu_selecao_fase):
+                    {
+                        pEstado->addEstado(IDs::IDs::menu_de_selecao_fase);      
+                        pEstado->addEstado(IDs::IDs::menu_bug);      
+                    }
+                    break;
                      
                     case (IDs::IDs::botao_opcao):
                     {
@@ -121,15 +151,8 @@ namespace Game{
                                 
                                 IDs::IDs ID = jsonFase["ID"].template get<IDs::IDs>();
 
-                                if(ID == IDs::IDs::forest)
-                                {
-                                    pEstado->addEstado(IDs::IDs::forest);
-                                }
-                                else 
-                                {
-                                    std::cout << "nao foi possivel criar uma fase" << std::endl;
-                                    exit(1);
-                                }
+                                pEstado->addEstado(ID);
+
                                 Estado::EstadoFase* estadoFase = dynamic_cast<Estado::EstadoFase*>(pEstado->getEstadoAtual());
                                 estadoFase->criarFase(jsonEntidaes, ID);
                             }
@@ -183,11 +206,11 @@ namespace Game{
                 }
             
             }
-            else if(tecEspecial[tecla] == "Left")
+            else if(tecEspecial[tecla] == "Left"  && pEstado->getEstadoAtual()->getID() == IDs::IDs::menu_opcao)
             {
                 menu->selecionaEsquerda();
             }
-            else if(tecEspecial[tecla] == "Right")
+            else if(tecEspecial[tecla] == "Right" && pEstado->getEstadoAtual()->getID() == IDs::IDs::menu_opcao)
             {
                 menu->selecionaDireita();
             }
@@ -248,7 +271,7 @@ namespace Game{
                         {
                             case (IDs::IDs::botao_novoJogo):
                             {
-                                pEstado->addEstado(IDs::IDs::forest);
+                                pEstado->addEstado(IDs::IDs::floresta_do_amanhecer);
                                 Estado::EstadoFase* fase = dynamic_cast<Estado::EstadoFase*>(pEstado->getEstadoAtual());
                                 fase->criarFase();
                             }
@@ -262,6 +285,28 @@ namespace Game{
                                     pEstado->removerEstado();
                             }
                                 break;
+                          
+                            case (IDs::IDs::botao_jogar):
+                            {
+                                Estado::EstadoMenu* menu = static_cast<Estado::EstadoMenu*>(pEstado->getEstadoAtual());
+                                Menu::MenuDeSelecao* selecao = static_cast<Menu::MenuDeSelecao*>(menu->getMenu());
+
+                                IDs::IDs IDfase = selecao->getIDdeSelecao();
+
+                                pEstado->removerEstado(2);
+
+                                if(pEstado->getEstadoAtual()->getID() == IDs::IDs::estado_dialogo)
+                                    pEstado->removerEstado(2);
+                                else
+                                    pEstado->removerEstado(1);
+                                
+                                pEstado->addEstado(IDfase);
+                                    
+                                Estado::EstadoFase* fase = dynamic_cast<Estado::EstadoFase*>(pEstado->getEstadoAtual());
+                                fase->criarFase();
+                            }
+                                break;
+
                             case (IDs::IDs::botao_voltar):
                             {
                                 pEstado->removerEstado();
@@ -279,6 +324,11 @@ namespace Game{
                                     pEstado->removerEstado(); 
                                 }
                             
+                            }
+                                break;
+                            case(IDs::IDs::botao_menu_selecao_fase):
+                            {
+                                pEstado->addEstado(IDs::IDs::menu_de_selecao_fase);      
                             }
                                 break;
                             case (IDs::IDs::botao_carregar_jogo):
@@ -360,15 +410,8 @@ namespace Game{
                                      
                                         IDs::IDs ID = jsonFase["ID"].template get<IDs::IDs>();
 
-                                        if(ID == IDs::IDs::forest)
-                                        {
-                                            pEstado->addEstado(IDs::IDs::forest);
-                                        }
-                                        else 
-                                        {
-                                            std::cout << "nao foi possivel criar uma fase" << std::endl;
-                                            exit(1);
-                                        }
+                                        pEstado->addEstado(ID);
+
                                         Estado::EstadoFase* estadoFase = dynamic_cast<Estado::EstadoFase*>(pEstado->getEstadoAtual());
                                         estadoFase->criarFase(jsonEntidaes, ID);
                                     }

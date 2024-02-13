@@ -67,7 +67,7 @@ namespace Game{
         {
             Estado::Estado* estado = nullptr;
 
-            if(ID == IDs::IDs::forest || ID == IDs::IDs::caverna)
+            if(ID == IDs::IDs::floresta_do_amanhecer || ID == IDs::IDs::caverna)
             {
                 estado = static_cast<Estado::Estado*>(new Estado::EstadoFase(ID));
             }
@@ -77,6 +77,7 @@ namespace Game{
                     ID == IDs::IDs::menu_gameOver  ||
                     ID == IDs::IDs::menu_carregar  ||
                     ID == IDs::IDs::menu_salvar    ||
+                    ID == IDs::IDs::menu_de_selecao_fase    ||
                     ID == IDs::IDs::menu_bug)
             {
                 Estado::EstadoMenu* mEstado = new Estado::EstadoMenu(ID);

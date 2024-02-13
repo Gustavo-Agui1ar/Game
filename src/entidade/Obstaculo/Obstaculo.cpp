@@ -25,8 +25,9 @@ namespace Game{
                     case(IDs::IDs::caverna):
                          textura = pGrafico->carregarTextura(CAMINHO_TEXTURA_PLATAFORMA_CAVERNA);
                          corpo.setTexture(&textura);
+                         corpo.setFillColor(sf::Color{100,100,100});
                          break;
-                    case(IDs::IDs::forest):
+                    case(IDs::IDs::floresta_do_amanhecer):
                         textura = pGrafico->carregarTextura(CAMINHO_TEXTURA_PLATAFORMA_FOREST);
                         corpo.setTexture(&textura);
                         break;

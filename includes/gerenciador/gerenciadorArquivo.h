@@ -39,7 +39,7 @@ namespace Game {
                 //metodo que le e devolve o arquivo solicitado
 
                 nlohmann::ordered_json lerArquivo(const char* caminhoArquivo);
-                std::vector<std::string> lerArquivoDeFala(const char* caminhoArquivo);
+                std::vector<std::string> lerArquivoDeTexto(const char* caminhoArquivo);
                
                 //metodo que grava o conteudo json no arquivo
 
