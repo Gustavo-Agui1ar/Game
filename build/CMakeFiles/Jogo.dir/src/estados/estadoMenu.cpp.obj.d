@@ -401,6 +401,8 @@ CMakeFiles/Jogo.dir/src/estados/estadoMenu.cpp.obj: \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/estados/estadoFase.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/fases/level-1.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/fases/level-2.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/fases/vila.h \
+ C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/entidade/Obstaculo/casa.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/estados/estadoDialogo.h \
  C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/gerenciador/gerenciadorDeDialogo.h \
  C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/menus/botao/balaoDeFala.h \

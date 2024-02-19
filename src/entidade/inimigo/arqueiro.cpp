@@ -136,7 +136,7 @@ namespace Game{
                             Arma::Projetil* projetil = dynamic_cast<Arma::Projetil*>(arma);
                             projetil->setPos(sf::Vector2f(pos.x + tam.x ,pos.y +  tam.y / 3.0f));
                             projetil->setColidiu(false);
-                            projetil->setVelocidade(sf::Vector2f(250.0f, 0.0f));
+                            projetil->setVelocidade(sf::Vector2f(VEL_ARQUEIRO, 0.0f));
                             projetil->setDirecao(direcao);
                             atacando = false;
                             tempoAtaque = 0.0f;

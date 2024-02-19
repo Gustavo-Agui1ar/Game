@@ -125,7 +125,7 @@ namespace Game{
             //apenas desenha as Entidades
             int tam = objListaEntidade.getTam();
             Entidade::Entidade* aux = nullptr;
-            for(int i = 0; i < tam; i++)
+            for(int i = tam - 1 ; i >= 0 ; i--)
             {
                 aux = objListaEntidade.operator[](i);
                 aux->desenhar();

@@ -51,6 +51,11 @@ namespace Game {
             void Camera::atualizar(const sf::Vector2f pos){
                 camera.setCenter(pos);
             }
+
+            void Camera::setTam(sf::Vector2f tam)
+            {
+                camera.setSize(tam);
+            }
     }
 
 }

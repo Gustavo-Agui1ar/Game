@@ -31,6 +31,12 @@
 },
 {
   "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\entidade\\Obstaculo\\casa.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\entidade\\Obstaculo\\casa.cpp\"",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/entidade/Obstaculo/casa.cpp",
+  "output": "CMakeFiles/Jogo.dir/src/entidade/Obstaculo/casa.cpp.obj"
+},
+{
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\entidade\\arma\\arma.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\entidade\\arma\\arma.cpp\"",
   "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/entidade/arma/arma.cpp",
   "output": "CMakeFiles/Jogo.dir/src/entidade/arma/arma.cpp.obj"
@@ -130,6 +136,12 @@
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\fases\\level-2.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\fases\\level-2.cpp\"",
   "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/fases/level-2.cpp",
   "output": "CMakeFiles/Jogo.dir/src/fases/level-2.cpp.obj"
+},
+{
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\fases\\vila.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\fases\\vila.cpp\"",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/fases/vila.cpp",
+  "output": "CMakeFiles/Jogo.dir/src/fases/vila.cpp.obj"
 },
 {
   "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",

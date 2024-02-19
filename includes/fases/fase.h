@@ -81,8 +81,8 @@ namespace Game{
             
             //metodos de atualizacao e vizualizacao
          
-            void executar();
-            void desenhar();
+            virtual void executar();
+            virtual void desenhar();
 
         };
     }

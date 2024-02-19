@@ -17,6 +17,7 @@ namespace Game{
             addMusica(IDs::IDs::caverna, "musics/Summer-Nights.ogg");
             addMusica(IDs::IDs::menu_principal, "musics/main-theme.ogg");
             addMusica(IDs::IDs::menu_pause, "musics/Menu-Pause.ogg");
+            addMusica(IDs::IDs::vila, "../Game/musics/vila-tema.ogg");
             addMusica(IDs::IDs::menu_gameOver, "musics/Game-Over.ogg");
             IDmusicaAtual = IDs::IDs::vazio;
             setVolumeGeral(volumeGeral);
@@ -93,6 +94,15 @@ namespace Game{
                 }
                     break;
                 case(IDs::IDs::floresta_do_amanhecer):
+                {
+                    if(IDmusicaAtual != IDs::IDs::vazio)
+                        parar();
+                    mapMusica[IDmusica]->play();
+                    IDmusicaAtual = IDmusica;
+                }
+                    break;
+                
+                case(IDs::IDs::vila):
                 {
                     if(IDmusicaAtual != IDs::IDs::vazio)
                         parar();

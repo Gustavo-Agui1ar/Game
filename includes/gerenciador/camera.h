@@ -25,6 +25,7 @@ namespace Game {
                 //metodo acessador do atributo camera
                 
                 sf::View getCamera();
+                void setTam(sf::Vector2f tam);
 
                 //metodos de atualizacao da camera
               

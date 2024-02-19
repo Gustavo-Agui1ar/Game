@@ -172,7 +172,7 @@ namespace Game{
         void GerenciadorGrafico::atualizarCamera(sf::Vector2f pos)
         {
            // camera.atualizar(pos);
-            camera.atualizar(sf::Vector2f(pos.x,ALTURA_TELA/2));
+            camera.atualizar(sf::Vector2f(pos));
             window->setView(camera.getCamera());
         }
 
@@ -211,6 +211,11 @@ namespace Game{
         void GerenciadorGrafico::resetarJanela(){
             camera.resetar(sf::Vector2f(LARGURA_TELA / 2.0f, ALTURA_TELA / 2.0f));
             window->setView(camera.getCamera());
+        }
+
+        void GerenciadorGrafico::setTamCamera(sf::Vector2f tam)
+        {
+            camera.setTam(tam);
         }
     }
 }

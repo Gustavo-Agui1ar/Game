@@ -61,6 +61,7 @@ namespace Game{
        
             void atualizarCamera(sf::Vector2f pos);
             sf::View getCamera();
+            void setTamCamera(sf::Vector2f tam);
            
             //metodos relacionados ao tempo
         

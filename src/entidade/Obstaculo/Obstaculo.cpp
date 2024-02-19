@@ -31,6 +31,11 @@ namespace Game{
                         textura = pGrafico->carregarTextura(CAMINHO_TEXTURA_PLATAFORMA_FOREST);
                         corpo.setTexture(&textura);
                         break;
+                    case(IDs::IDs::vila):
+                        textura = pGrafico->carregarTextura(CAMINHO_TEXTURA_PLATAFORMA_VILA);
+                        corpo.setTexture(&textura);
+                        corpo.setFillColor(sf::Color{170,170,170});
+                        break;
                     case(IDs::IDs::plataforma_invisivel):
                         corpo.setFillColor(sf::Color::Transparent);
                     default:

@@ -26,12 +26,14 @@ namespace Game{
                         static Gerenciador::GerenciadorDeEstado* pEstado;
                         const char* caminhoDialogo;
 
+                        const IDs::IDs IDpersonagem;
+
                         void inicializarBarraDeVida(){}
                         void inicializarAnimacao();
 
                     public:
                         
-                        Npc(sf::Vector2f pos, const IDs::IDs ID, const char* caminhoDialogo = nullptr);
+                        Npc(sf::Vector2f pos, const IDs::IDs IDpersonagem, const char* caminhoDialogo = nullptr);
                         ~Npc();
 
                         virtual void atualizarAnimacao();

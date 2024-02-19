@@ -158,13 +158,9 @@ namespace Game{
             {
                 for(int i = 0 ; i < (int)linha.size() ; i++)
                 {
-                    if(linha[i] != ' ' && linha[i] != 'n')
+                    if(linha[i] != ' ')
                     {
                         criarEntidade(linha[i],sf::Vector2i(i,j));
-                    }
-                    else if(linha[i] == 'n')
-                    {
-                        criarNpc(sf::Vector2i(i,j));
                     }
                 }
                 j++;
@@ -189,20 +185,6 @@ namespace Game{
             }
             Entidade::Entidade* plat = static_cast<Entidade::Entidade*>(plataforma);
             listaObstaculos->addEntidade(plat);
-        }
-
-        void Forest::criarNpc(sf::Vector2i pos)
-        {
-            //provisorio
-            Entidade::Personagem::Npc::Npc* npc = new Entidade::Personagem::Npc::Npc(sf::Vector2f(pos.x * 50.f, pos.y * 50.f), IDs::IDs::npc, "../Game/falas/teste.txt");
-
-            if(npc == nullptr)
-            {
-                std::cout<<"Forest::erro ao criar npc";
-                exit(1);
-            } 
-
-            listaPersonagens->addEntidade(static_cast<Entidade::Entidade*>(npc));
         }
     }
 }

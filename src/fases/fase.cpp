@@ -201,7 +201,7 @@ namespace Game{
                     criarInimigo(sf::Vector2f(pos.x * 50.0f, pos.y * 50.0f),letra);
                     break;
                 case('#'):
-                    criarPlataforma(sf::Vector2f(pos.x * 50.0f, pos.y * 50.0f));
+                    criarPlataforma(sf::Vector2f(pos.x * 50.0f, pos.y * 50.0f + 10.f));
                     break;
                 case('j'):
                     criarJogador(sf::Vector2f(pos.x * 50.0f, pos.y * 50.0f));

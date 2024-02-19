@@ -54,7 +54,7 @@ namespace Game{
                     
                     case(IDs::IDs::botao_novoJogo):
                     {
-                        pEstado->addEstado(IDs::IDs::floresta_do_amanhecer);
+                        pEstado->addEstado(IDs::IDs::vila);
                         Estado::EstadoFase* fase = dynamic_cast<Estado::EstadoFase*>(pEstado->getEstadoAtual());
                         fase->criarFase();
                     }
@@ -271,7 +271,7 @@ namespace Game{
                         {
                             case (IDs::IDs::botao_novoJogo):
                             {
-                                pEstado->addEstado(IDs::IDs::floresta_do_amanhecer);
+                                pEstado->addEstado(IDs::IDs::vila);
                                 Estado::EstadoFase* fase = dynamic_cast<Estado::EstadoFase*>(pEstado->getEstadoAtual());
                                 fase->criarFase();
                             }

@@ -248,6 +248,30 @@ src/entidade/Obstaculo/Plataforma.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/Obstaculo/Plataforma.cpp.s
 .PHONY : src/entidade/Obstaculo/Plataforma.cpp.s
 
+src/entidade/Obstaculo/casa.obj: src/entidade/Obstaculo/casa.cpp.obj
+.PHONY : src/entidade/Obstaculo/casa.obj
+
+# target to build an object file
+src/entidade/Obstaculo/casa.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/Obstaculo/casa.cpp.obj
+.PHONY : src/entidade/Obstaculo/casa.cpp.obj
+
+src/entidade/Obstaculo/casa.i: src/entidade/Obstaculo/casa.cpp.i
+.PHONY : src/entidade/Obstaculo/casa.i
+
+# target to preprocess a source file
+src/entidade/Obstaculo/casa.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/Obstaculo/casa.cpp.i
+.PHONY : src/entidade/Obstaculo/casa.cpp.i
+
+src/entidade/Obstaculo/casa.s: src/entidade/Obstaculo/casa.cpp.s
+.PHONY : src/entidade/Obstaculo/casa.s
+
+# target to generate assembly for a file
+src/entidade/Obstaculo/casa.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/entidade/Obstaculo/casa.cpp.s
+.PHONY : src/entidade/Obstaculo/casa.cpp.s
+
 src/entidade/arma/arma.obj: src/entidade/arma/arma.cpp.obj
 .PHONY : src/entidade/arma/arma.obj
 
@@ -655,6 +679,30 @@ src/fases/level-2.s: src/fases/level-2.cpp.s
 src/fases/level-2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/fases/level-2.cpp.s
 .PHONY : src/fases/level-2.cpp.s
+
+src/fases/vila.obj: src/fases/vila.cpp.obj
+.PHONY : src/fases/vila.obj
+
+# target to build an object file
+src/fases/vila.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/fases/vila.cpp.obj
+.PHONY : src/fases/vila.cpp.obj
+
+src/fases/vila.i: src/fases/vila.cpp.i
+.PHONY : src/fases/vila.i
+
+# target to preprocess a source file
+src/fases/vila.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/fases/vila.cpp.i
+.PHONY : src/fases/vila.cpp.i
+
+src/fases/vila.s: src/fases/vila.cpp.s
+.PHONY : src/fases/vila.s
+
+# target to generate assembly for a file
+src/fases/vila.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Jogo.dir\build.make CMakeFiles/Jogo.dir/src/fases/vila.cpp.s
+.PHONY : src/fases/vila.cpp.s
 
 src/fundo/camada.obj: src/fundo/camada.cpp.obj
 .PHONY : src/fundo/camada.obj
@@ -1544,6 +1592,9 @@ help:
 	@echo ... src/entidade/Obstaculo/Plataforma.obj
 	@echo ... src/entidade/Obstaculo/Plataforma.i
 	@echo ... src/entidade/Obstaculo/Plataforma.s
+	@echo ... src/entidade/Obstaculo/casa.obj
+	@echo ... src/entidade/Obstaculo/casa.i
+	@echo ... src/entidade/Obstaculo/casa.s
 	@echo ... src/entidade/arma/arma.obj
 	@echo ... src/entidade/arma/arma.i
 	@echo ... src/entidade/arma/arma.s
@@ -1595,6 +1646,9 @@ help:
 	@echo ... src/fases/level-2.obj
 	@echo ... src/fases/level-2.i
 	@echo ... src/fases/level-2.s
+	@echo ... src/fases/vila.obj
+	@echo ... src/fases/vila.i
+	@echo ... src/fases/vila.s
 	@echo ... src/fundo/camada.obj
 	@echo ... src/fundo/camada.i
 	@echo ... src/fundo/camada.s

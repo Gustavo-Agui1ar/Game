@@ -12,7 +12,13 @@ namespace IDs{
             esqueleto,
             arqueiro,
             red_slime ,
+
             npc,
+            mulher,
+            barman,
+            jovem,
+            velho,
+
             plataforma ,
             plataforma_invisivel,
             projetil_inimigo,
@@ -20,8 +26,13 @@ namespace IDs{
             
             //IDs fases
             caverna,
+            vila,
             floresta_do_amanhecer,
             
+            casa_pequena,
+            casa_media,
+            casa_grande,
+
             estado_dialogo,
             
             //IDs das armas

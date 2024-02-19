@@ -67,7 +67,7 @@ namespace Game{
         {
             Estado::Estado* estado = nullptr;
 
-            if(ID == IDs::IDs::floresta_do_amanhecer || ID == IDs::IDs::caverna)
+            if(ID == IDs::IDs::floresta_do_amanhecer || ID == IDs::IDs::caverna || ID == IDs::IDs::vila)
             {
                 estado = static_cast<Estado::Estado*>(new Estado::EstadoFase(ID));
             }

@@ -167,8 +167,8 @@ namespace Game{
                         atualizarArma();
 
                         atualizarProjetil();
-
-                        pGrafico->atualizarCamera(getPos());
+                        
+                        pGrafico->atualizarCamera(sf::Vector2f(getPos().x, ALTURA_TELA/2.f));
 
                         atualizarAnimacao();
                         

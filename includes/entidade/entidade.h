@@ -26,7 +26,7 @@ namespace Game{
 
             //construtores/destrutor
           
-            Entidade(const sf::Vector2f tam,const IDs::IDs, const sf::Vector2f pos = {0,0});
+            Entidade(const sf::Vector2f tam,const IDs::IDs ID, const sf::Vector2f pos = {0,0});
             virtual ~Entidade();
 
             //metodos referentes ao corpo
