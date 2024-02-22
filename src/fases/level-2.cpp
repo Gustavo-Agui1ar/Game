@@ -1,5 +1,5 @@
 
-#include "..\includes\fases\level-2.h"
+#include "../includes/fases/level-2.h"
 
 #define CAMADA_1_5 "../Game/animations/backgorund/level-5/camada-1.png"
 #define CAMADA_2_5 "../Game/animations/backgorund/level-5/camada-2.png"
@@ -144,7 +144,7 @@ namespace Game{
             std::ifstream arquivo;
             std::string linha;
 
-            arquivo.open("..//Game//includes//fases//fase-2.txt");
+            arquivo.open("../Game/includes/fases/fase-2.txt");
 
             if(!arquivo.is_open())
             {

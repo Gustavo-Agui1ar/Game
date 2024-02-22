@@ -1,7 +1,7 @@
 CMakeFiles/Jogo.dir/src/fases/level-2.cpp.obj: \
  C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos\ a\ parte\Game\src\fases\level-2.cpp \
- C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/..\includes\fases\level-2.h \
- C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/..\includes\fases\fase.h \
+ C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/fases/level-2.h \
+ C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/fases/fase.h \
  C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/gerenciador/gerenciadorDeColisao.h \
  C:/PROGRA~2/SFML/include/SFML/Graphics.hpp \
  C:/PROGRA~2/SFML/include/SFML/Window.hpp \

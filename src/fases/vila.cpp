@@ -1,8 +1,8 @@
 
 #include "../includes/fases/vila.h"
 
-#define CAMADA_1_VILA "../Game/Animations/backgorund/vila/background.png"
-#define CAMADA_2_VILA "../Game/Animations/backgorund/vila/middleground.png"
+#define CAMADA_1_VILA "../Game/animations/backgorund/vila/background.png"
+#define CAMADA_2_VILA "../Game/animations/backgorund/vila/middleground.png"
 
 namespace Game{
 
