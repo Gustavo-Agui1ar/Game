@@ -8014,9 +8014,9 @@ CMakeFiles/Jogo.dir/src/fases/level-2.cpp.obj: C:/Users/gusta/OneDrive/Documento
   C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/inimigo/arqueiro.h \
   C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/inimigo/esqueleto.h \
   C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/inimigo/slime.h \
-  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/gerenciador/gerenciadorDeColisao.h \
   C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/fases/fase.h \
   C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/fases/level-2.h \
+  C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/gerenciador/gerenciadorDeColisao.h \
   C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/Ente.h \
   C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/IDs.h \
   C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/arma/arma.h \
