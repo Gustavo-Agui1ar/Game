@@ -67,13 +67,13 @@ namespace Game{
         */
         void MenuPrincipal::executar()
         {
-            posFundo = sf::Vector2f(posFundo.x + pGrafico->getTempo() * 80.0f, posFundo.y);
-            pGrafico->atualizarCamera(sf::Vector2f(posFundo.x + tamJanela.x / 2.0f, posFundo.y + tamJanela.y / 2.0f));
+            posFundo = sf::Vector2f(posFundo.x + m_pGrafic->getTempo() * 80.0f, posFundo.y);
+            m_pGrafic->atualizarCamera(sf::Vector2f(posFundo.x + tamJanela.x / 2.0f, posFundo.y + tamJanela.y / 2.0f));
             fundo.executar();
-            pGrafico->resetarJanela();
+            m_pGrafic->resetarJanela();
           
-            desenhar();
-            pGrafico->desenhaElemento(titulo.getTexto());
+            draw();
+            m_pGrafic->desenhaElemento(titulo.getTexto());
         }
     }
 }

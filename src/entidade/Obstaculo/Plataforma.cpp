@@ -57,16 +57,16 @@ namespace Game{
                    outraEntidade->getID() == IDs::IDs::arqueiro  ||
                    outraEntidade->getID() == IDs::IDs::npc  )
                 {
-                    colisaoObstaculo(ds, static_cast<Personagem::Personagem*>(outraEntidade));
+                    colisaoObstaculo(ds, static_cast<Character::Character*>(outraEntidade));
                 }
             }
 
             /**
              * @brief metodo que desenha a plataforma na janela.
             */
-            void Plataforma::atualizar()
+            void Plataforma::update()
             {
-                desenhar();
+                draw();
             }
 
             /**

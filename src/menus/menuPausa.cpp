@@ -99,7 +99,7 @@ namespace Game{
                 botao = nullptr;
             }
 
-            desenhar();
+            draw();
         }
 
         /**
@@ -108,17 +108,17 @@ namespace Game{
          void MenuPausa::executar()
          {
             //desenha a fase sem atualizar as entidades
-            fase->desenhar();
+            fase->draw();
 
             //atualiza o menu 
-            pGrafico->desenhaElemento(fundoEscuro);
-            pGrafico->desenhaElemento(painel);
+            m_pGrafic->desenhaElemento(fundoEscuro);
+            m_pGrafic->desenhaElemento(painel);
 
             //desenha o titulo 
-            pGrafico->desenhaElemento(titulo.getTexto());
+            m_pGrafic->desenhaElemento(titulo.getTexto());
 
             //desenha os botoes
-            desenhar();
+            draw();
         }
     }
 }

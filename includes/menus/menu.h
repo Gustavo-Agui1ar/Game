@@ -54,7 +54,7 @@ namespace Game{
             //construtor e destrutor
 
             Menu(const IDs::IDs ID, const sf::Vector2f tamBotao, const std::string titulo, const unsigned int tamFonte);
-            virtual ~Menu();
+            ~Menu() override;
 
             //metodo de adicao de um objeto botao
 
@@ -83,7 +83,7 @@ namespace Game{
             //metodos de atualizacao e visualizacao
 
             virtual void executar() = 0;
-            void desenhar();  
+            void draw() override;  
         };
     }
 }

@@ -10,34 +10,30 @@
 #include  "../menus/menuDeSelecao.h"
 #include  "../menus/menuOpcao.h"
 
-namespace Game{
+namespace Game::Listener{
+    class ListenerMenu : public Listener{
 
-    namespace Listener{
+    private:
 
-        class ListenerMenu : public Listener{
+        //atributo a ser observado pelo observer
 
-        private:
+        Menu::Menu* menu;
 
-            //atributo a ser observado pelo observer
+    public:
 
-            Menu::Menu* menu;
+        //destrutor e destrutor
 
-        public:
+        explicit ListenerMenu(Menu::Menu* menu);
+        ~ListenerMenu() override;
 
-            //destrutor e destrutor
+        //metodos de tratamento de teclas
 
-            ListenerMenu(Menu::Menu* menu);
-            ~ListenerMenu();
+        void teclaPressionada(const sf::Keyboard::Key tecla) override;
+        void teclaSolta(const sf::Keyboard::Key tecla) override;
 
-            //metodos de tratamento de teclas
+        //metodos de tratamento de eventos do mouse
 
-            void teclaPressionada(const sf::Keyboard::Key tecla);
-            void teclaSolta(const sf::Keyboard::Key tecla);
-
-            //metodos de tratamento de eventos do mouse
-
-            void moveMouse(const  sf::Vector2f posMouse);
-            void botaoMouseSolta(const sf::Mouse::Button botaoMouse);
-        };
-    }
+        void moveMouse(const  sf::Vector2f posMouse) override;
+        void botaoMouseSolta(const sf::Mouse::Button botaoMouse) override;
+    };
 }

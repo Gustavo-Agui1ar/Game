@@ -10,33 +10,29 @@
 
 #define VELOCIDADE_BOTAO_VOLUME 100.0f
 
-namespace Game{
+namespace Game::Menu{
+    class MenuOpcao : public MenuPrincipal {
 
-    namespace Menu{
+    private:
+
+        const float velBotaoVolume;
+        Gerenciador::GerenciadorDeMusica* pMusica;
+        Fase::Fase* fase;
+        sf::RectangleShape fundoEscuro;
         
-        class MenuOpcao : public MenuPrincipal {
 
-            private:
+        void addBotao(const std::string info, const sf::Vector2f pos, IDs::IDs ID, const sf::Color corSelecionado, const float posInicioFundo);
+        void atualizarVolume(const float volume, Botao::BotaoVolume* botao);
+        void alterarVolume(const bool aumentando);
 
-                const float velBotaoVolume;
-                Gerenciador::GerenciadorDeMusica* pMusica;
-                Fase::Fase* fase;
-                sf::RectangleShape fundoEscuro;
-                
+    public:
 
-                void addBotao(const std::string info, const sf::Vector2f pos, IDs::IDs ID, const sf::Color corSelecionado, const float posInicioFundo);
-                void atualizarVolume(const float volume, Botao::BotaoVolume* botao);
-                void alterarVolume(const bool aumentando);
+        explicit MenuOpcao(Fase::Fase* fase = nullptr);
+        ~MenuOpcao() override;
 
-            public:
-
-                MenuOpcao(Fase::Fase* fase = nullptr);
-                ~MenuOpcao();
-
-                void criarBotoes();
-                void selecionaEsquerda();
-                void selecionaDireita();
-                void executar();
-        };
-    }
+        void criarBotoes() override;
+        void selecionaEsquerda() override;
+        void selecionaDireita() override;
+        void executar() override;
+    };
 }

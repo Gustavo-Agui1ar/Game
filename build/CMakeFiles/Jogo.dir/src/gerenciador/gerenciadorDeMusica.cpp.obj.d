@@ -1,6 +1,6 @@
 CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeMusica.cpp.obj: \
- C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos\ a\ parte\Game\src\gerenciador\gerenciadorDeMusica.cpp \
- C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/gerenciador/gerenciadorDeMusica.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/gerenciador/gerenciadorDeMusica.cpp \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/gerenciador/gerenciadorDeMusica.h \
  C:/msys64/mingw64/include/c++/13.1.0/iostream \
  C:/msys64/mingw64/include/c++/13.1.0/bits/requires_hosted.h \
  C:/msys64/mingw64/include/c++/13.1.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -137,23 +137,23 @@ CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeMusica.cpp.obj: \
  C:/msys64/mingw64/include/c++/13.1.0/bits/ostream.tcc \
  C:/msys64/mingw64/include/c++/13.1.0/istream \
  C:/msys64/mingw64/include/c++/13.1.0/bits/istream.tcc \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/IDs.h \
- C:/PROGRA~2/SFML/include/SFML/Audio.hpp \
- C:/PROGRA~2/SFML/include/SFML/System.hpp \
- C:/PROGRA~2/SFML/include/SFML/Config.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/Clock.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/Export.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/Time.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/Err.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/FileInputStream.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/InputStream.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/NonCopyable.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/Lock.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/MemoryInputStream.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/Mutex.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/Sleep.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/String.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/Utf.hpp \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/entidade/IDs.h \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Audio.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Config.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/Clock.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/Export.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/Time.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/Err.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/FileInputStream.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/InputStream.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/NonCopyable.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/Lock.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/MemoryInputStream.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/Mutex.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/Sleep.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/String.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/Utf.hpp \
  C:/msys64/mingw64/include/c++/13.1.0/algorithm \
  C:/msys64/mingw64/include/c++/13.1.0/bits/stl_algo.h \
  C:/msys64/mingw64/include/c++/13.1.0/bits/algorithmfwd.h \
@@ -170,34 +170,34 @@ CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeMusica.cpp.obj: \
  C:/msys64/mingw64/include/c++/13.1.0/bits/codecvt.h \
  C:/msys64/mingw64/include/c++/13.1.0/bits/locale_facets_nonio.tcc \
  C:/msys64/mingw64/include/c++/13.1.0/bits/locale_conv.h \
- C:/PROGRA~2/SFML/include/SFML/System/Utf.inl \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/Utf.inl \
  C:/msys64/mingw64/include/c++/13.1.0/iterator \
  C:/msys64/mingw64/include/c++/13.1.0/bits/stream_iterator.h \
- C:/PROGRA~2/SFML/include/SFML/System/String.inl \
- C:/PROGRA~2/SFML/include/SFML/System/Thread.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/Thread.inl \
- C:/PROGRA~2/SFML/include/SFML/System/ThreadLocal.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/ThreadLocalPtr.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/ThreadLocalPtr.inl \
- C:/PROGRA~2/SFML/include/SFML/System/Vector2.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/Vector2.inl \
- C:/PROGRA~2/SFML/include/SFML/System/Vector3.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/Vector3.inl \
- C:/PROGRA~2/SFML/include/SFML/Audio/InputSoundFile.hpp \
- C:/PROGRA~2/SFML/include/SFML/Audio/Export.hpp \
- C:/PROGRA~2/SFML/include/SFML/Audio/Listener.hpp \
- C:/PROGRA~2/SFML/include/SFML/Audio/Music.hpp \
- C:/PROGRA~2/SFML/include/SFML/Audio/SoundStream.hpp \
- C:/PROGRA~2/SFML/include/SFML/Audio/SoundSource.hpp \
- C:/PROGRA~2/SFML/include/SFML/Audio/AlResource.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/String.inl \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/Thread.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/Thread.inl \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/ThreadLocal.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/ThreadLocalPtr.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/ThreadLocalPtr.inl \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/Vector2.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/Vector2.inl \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/Vector3.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/Vector3.inl \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Audio/InputSoundFile.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Audio/Export.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Audio/Listener.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Audio/Music.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Audio/SoundStream.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Audio/SoundSource.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Audio/AlResource.hpp \
  C:/msys64/mingw64/include/c++/13.1.0/vector \
  C:/msys64/mingw64/include/c++/13.1.0/bits/stl_uninitialized.h \
  C:/msys64/mingw64/include/c++/13.1.0/bits/stl_vector.h \
  C:/msys64/mingw64/include/c++/13.1.0/bits/stl_bvector.h \
  C:/msys64/mingw64/include/c++/13.1.0/bits/vector.tcc \
- C:/PROGRA~2/SFML/include/SFML/Audio/OutputSoundFile.hpp \
- C:/PROGRA~2/SFML/include/SFML/Audio/Sound.hpp \
- C:/PROGRA~2/SFML/include/SFML/Audio/SoundBuffer.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Audio/OutputSoundFile.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Audio/Sound.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Audio/SoundBuffer.hpp \
  C:/msys64/mingw64/include/c++/13.1.0/set \
  C:/msys64/mingw64/include/c++/13.1.0/bits/stl_tree.h \
  C:/msys64/mingw64/include/c++/13.1.0/ext/aligned_buffer.h \
@@ -205,12 +205,12 @@ CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeMusica.cpp.obj: \
  C:/msys64/mingw64/include/c++/13.1.0/bits/stl_set.h \
  C:/msys64/mingw64/include/c++/13.1.0/bits/stl_multiset.h \
  C:/msys64/mingw64/include/c++/13.1.0/bits/erase_if.h \
- C:/PROGRA~2/SFML/include/SFML/Audio/SoundBufferRecorder.hpp \
- C:/PROGRA~2/SFML/include/SFML/Audio/SoundRecorder.hpp \
- C:/PROGRA~2/SFML/include/SFML/Audio/SoundFileFactory.hpp \
- C:/PROGRA~2/SFML/include/SFML/Audio/SoundFileFactory.inl \
- C:/PROGRA~2/SFML/include/SFML/Audio/SoundFileReader.hpp \
- C:/PROGRA~2/SFML/include/SFML/Audio/SoundFileWriter.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Audio/SoundBufferRecorder.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Audio/SoundRecorder.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Audio/SoundFileFactory.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Audio/SoundFileFactory.inl \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Audio/SoundFileReader.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Audio/SoundFileWriter.hpp \
  C:/msys64/mingw64/include/c++/13.1.0/map \
  C:/msys64/mingw64/include/c++/13.1.0/bits/stl_map.h \
  C:/msys64/mingw64/include/c++/13.1.0/bits/stl_multimap.h

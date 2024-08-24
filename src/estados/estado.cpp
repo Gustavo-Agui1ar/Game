@@ -27,7 +27,7 @@ namespace  Game{
         /**
          * @brief metodo responsavel por mostrar o estado
         */
-        void Estado::desenhar()
+        void Estado::draw()
         {
 
         }

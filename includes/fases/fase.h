@@ -9,81 +9,78 @@
 
 #include "../lista/listaEntidade.h"
 
-#include "../includes/entidade/inimigo/esqueleto.h"
+#include "../includes/entidade/Enemy/Enemy.h"
 
-#include "../includes/entidade/inimigo/arqueiro.h"
+#include "../includes/entidade/Enemy/Archer.h"
 
-#include "../includes/entidade/jogador/jogador.h"
+#include "../includes/entidade/Enemy/Skeleton.h"
 
-#include "../includes/entidade/inimigo/slime.h"
+#include "../includes/entidade/Enemy/Slime.h"
+
+#include "../includes/entidade/Player/Player.h"
 
 #include "../fundo/fundo.h"
+namespace Game::Fase{
+    class Fase : public Ente{
 
-namespace Game{
+    protected:
+        static Listener::ListenerFase* listenerFase;
 
-    namespace Fase{
-
-        class Fase : public Ente{
-
-        protected:
-            static Listener::ListenerFase* listenerFase;
-
-            //listas de entidades
-         
-            Lista::ListaEntidade* listaPersonagens;
-            Lista::ListaEntidade* listaObstaculos;
-            Entidade::Personagem::Jogador::Jogador* jogador;
-
-            //objeto responsavel pela verificacao da colisao entre entidades
+        //listas de entidades
         
-            Gerenciador::GerenciadorDeColisao* pColisao;
-            
-            //objeto responsavel poer criar o fundo da fase
-         
-            Fundo::Fundo fundo;
+        Lista::ListaEntidade* listaPersonagens;
+        Lista::ListaEntidade* listaObstaculos;
+        Entidade::Character::Player::Player* jogador;
 
-        public:   
-
-            //contrutor e destrutor
+        //objeto responsavel pela verificacao da colisao entre entidades
+    
+        Gerenciador::GerenciadorDeColisao* pColisao;
         
-            Fase(const IDs::IDs ID_Fase, const IDs::IDs ID_Fundo);
-            virtual ~Fase();
-            
-            //metodo que altera o estado do observador da classe
-          
-            void mudarEstadoListener(const bool ativo);
+        //objeto responsavel poer criar o fundo da fase
+        
+        Fundo::Fundo fundo;
 
-            //metodo que salva o estado de um objeto desta classe
-           
-            nlohmann::ordered_json salvarFase();
+    public:   
 
-            //metodo que salva o estado das entidades  da listaPersonagens e listaObstaculos
-           
-            nlohmann::ordered_json salvarEntidades();
+        //contrutor e destrutor
+    
+        Fase(const IDs::IDs ID_Fase, const IDs::IDs ID_Fundo);
+        ~Fase() override;
+        
+        //metodo que altera o estado do observador da classe
+        
+        void mudarEstadoListener(const bool ativo);
 
-            //metodos responaveis por criar as respectivas entidades 
-         
-            void criarEntidade(IDs::IDs ID, nlohmann::ordered_json entidade , nlohmann::ordered_json arma = nullptr, nlohmann::ordered_json arma2 = nullptr);
-            void criarInimigo(const sf::Vector2f pos, const char letra);
-            virtual void criarPlataforma(const sf::Vector2f pos) = 0;
-            void criarEntidade(char letra, const sf::Vector2i pos);
-            void criarPlataformaInvisivel(const sf::Vector2f pos);
-            void criarJogador(const sf::Vector2f pos);
-            
-            //metodos criadores de mapas da fase
-         
-            virtual void criarFundo() = 0;
-            virtual void criarMapa() = 0;
-            
-            //metodo que retorna o jogador da fase
-           
-            Entidade::Personagem::Jogador::Jogador* getJogador();
-            
-            //metodos de atualizacao e vizualizacao
-         
-            virtual void executar();
-            virtual void desenhar();
+        //metodo que salva o estado de um objeto desta classe
+        
+        nlohmann::ordered_json salvarFase();
 
-        };
-    }
+        //metodo que salva o estado das entidades  da listaPersonagens e listaObstaculos
+        
+        nlohmann::ordered_json salvarEntidades();
+
+        //metodos responaveis por criar as respectivas entidades 
+        
+        void criarEntidade(IDs::IDs ID, nlohmann::ordered_json entidade , nlohmann::ordered_json arma = nullptr, nlohmann::ordered_json arma2 = nullptr);
+        void criarInimigo(const sf::Vector2f pos, const char letra);
+        virtual void criarPlataforma(const sf::Vector2f pos) = 0;
+        void criarEntidade(char letra, const sf::Vector2i pos);
+        void criarPlataformaInvisivel(const sf::Vector2f pos);
+        void criarJogador(const sf::Vector2f pos);
+        
+        //metodos criadores de mapas da fase
+        
+        virtual void criarFundo() = 0;
+        virtual void criarMapa() = 0;
+        
+        //metodo que retorna o jogador da fase
+        
+        Entidade::Character::Player::Player* getJogador();
+        
+        //metodos de atualizacao e vizualizacao
+        
+        virtual void executar();
+        void draw() override;
+
+    };
 }

@@ -1,7 +1,7 @@
 
 #pragma once
 
-#include "../includes/entidade/jogador/personagem.h"
+#include "../includes/entidade/Player/Character.h"
 
 #define TAM_NPC_GENERICO_X 15.f
 #define TAM_NPC_GENERICO_Y 30.f
@@ -13,40 +13,33 @@ namespace Game{
         class GerenciadorDeEstado;
     }
 
-    namespace Entidade{
-
-        namespace Personagem{
+    namespace Entidade::Character::Npc{
+        class Npc : public Character {
             
-            namespace Npc{
+            protected:
 
-                class Npc : public Personagem {
-                    
-                    protected:
+                static Gerenciador::GerenciadorDeEstado* pEstado;
+                const char* caminhoDialogo;
 
-                        static Gerenciador::GerenciadorDeEstado* pEstado;
-                        const char* caminhoDialogo;
+                const IDs::IDs IDpersonagem;
 
-                        const IDs::IDs IDpersonagem;
+                void bootLifeBar() override{/**/}
+                void inicializarAnimacao();
 
-                        void inicializarBarraDeVida(){}
-                        void inicializarAnimacao();
+            public:
+                
+                Npc(sf::Vector2f pos, const IDs::IDs IDpersonagem, const char* caminhoDialogo = nullptr);
+                ~Npc() override;
 
-                    public:
-                        
-                        Npc(sf::Vector2f pos, const IDs::IDs IDpersonagem, const char* caminhoDialogo = nullptr);
-                        ~Npc();
+                void updateAnimation() override;
+                void updatePosition() override;
 
-                        virtual void atualizarAnimacao();
-                        virtual void atualizarPosicao();
-
-                        nlohmann::ordered_json salvar();
-                        void iniciarDialogo();
-                        const char* getCaminhoDialogo();
-                        void colisao(Entidade* outraEntidade, sf::Vector2f ds = sf::Vector2f(0.f,0.f));
-                        void desenhar();
-                        void atualizar();
-                };
-            }
-        }
-    }
+                nlohmann::ordered_json salvar() override;
+                void iniciarDialogo();
+                const char* getCaminhoDialogo();
+                void colisao(Entidade* outraEntidade, sf::Vector2f ds = sf::Vector2f(0.f,0.f)) override;
+                void draw() override;
+                void update() override;
+        };
+}
 }

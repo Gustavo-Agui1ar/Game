@@ -24,12 +24,12 @@ namespace Game{
             //construtor e destrutor
 
             ListenerFase();
-            ~ListenerFase();
+            ~ListenerFase() override;
 
             //metodos de tratamento de teclas
 
-            void teclaPressionada(sf::Keyboard::Key tecla);
-            void teclaSolta(sf::Keyboard::Key tecla);
+            void teclaPressionada(sf::Keyboard::Key tecla) override;
+            void teclaSolta(sf::Keyboard::Key tecla) override;
         
             // metodo que modifica o atributo fase
 

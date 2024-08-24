@@ -5,54 +5,50 @@
 #include "../gerenciador/gerenciadorArquivo.h"
 #include "../fases/fase.h"
 
-namespace Game {
+namespace Game::Menu {
+    class MenuCarregar : public MenuPrincipal {
 
-    namespace Menu {
+    private:
 
-        class MenuCarregar : public MenuPrincipal {
+        Gerenciador::GerenciadorArquivo gerenciadorArquivo;
 
-            private:
+        //atributos relacionados aos cards de carregamento
 
-                Gerenciador::GerenciadorArquivo gerenciadorArquivo;
+        std::list<Card*> listaCards;
+        std::list<Card*>::iterator itCards;
 
-                //atributos relacionados aos cards de carregamento
+        //atributo do fundo
 
-                std::list<Card*> listaCards;
-                std::list<Card*>::iterator itCards;
+        Fase::Fase* fase;
+        sf::RectangleShape fundoEscuro;
 
-                //atributo do fundo
+        //metodo de inicializacao
 
-                Fase::Fase* fase;
-                sf::RectangleShape fundoEscuro;
+        void inicializarCards();
 
-                //metodo de inicializacao
+    public:
+        
+        //construtor e destrutor
 
-                void inicializarCards();
+        explicit MenuCarregar(Fase::Fase* fase = nullptr);
+        ~MenuCarregar() override;
 
-            public:
-                
-                //construtor e destrutor
+        //metodo de verificao de botoes
 
-                MenuCarregar(Fase::Fase* fase = nullptr);
-                ~MenuCarregar();
+        void selecionaEsquerda() override;
+        void selecionaDireita() override;
+        
+        void deletarArquivos();
+        Card* getCardSelecionado()const;
+        
+        //metodos criadores de botoes
 
-                //metodo de verificao de botoes
+        void criarBotaoBug();
+        void criarBotoes() override;
+        
+        //metodos de atualizacao e visualizacao
 
-                void selecionaEsquerda();
-                void selecionaDireita();
-                
-                void deletarArquivos();
-                Card* getCardSelecionado()const;
-               
-                //metodos criadores de botoes
-
-                void criarBotaoBug();
-                void criarBotoes();
-               
-                //metodos de atualizacao e visualizacao
-
-                void desenharCards();
-                void executar();
-        };
-    }
+        void desenharCards();
+        void executar() override;
+    };
 }

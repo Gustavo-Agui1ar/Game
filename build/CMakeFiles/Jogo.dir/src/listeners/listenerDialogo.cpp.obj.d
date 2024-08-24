@@ -1,18 +1,18 @@
 CMakeFiles/Jogo.dir/src/listeners/listenerDialogo.cpp.obj: \
- C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos\ a\ parte\Game\src\listeners\listenerDialogo.cpp \
- C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/listeners/listenerDialogo.h \
- C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/gerenciador/gerenciadorDeDialogo.h \
- C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/menus/botao/balaoDeFala.h \
- C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/menus/botao/textoFala.h \
- C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/menus/botao/texto.h \
- C:/PROGRA~2/SFML/include/SFML/Graphics.hpp \
- C:/PROGRA~2/SFML/include/SFML/Window.hpp \
- C:/PROGRA~2/SFML/include/SFML/System.hpp \
- C:/PROGRA~2/SFML/include/SFML/Config.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/Clock.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/Export.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/Time.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/Err.hpp \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/listeners/listenerDialogo.cpp \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/listeners/listenerDialogo.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/gerenciador/gerenciadorDeDialogo.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/botao/balaoDeFala.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/botao/textoFala.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/botao/texto.h \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Graphics.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Window.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Config.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/Clock.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/Export.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/Time.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/Err.hpp \
  C:/msys64/mingw64/include/c++/13.1.0/ostream \
  C:/msys64/mingw64/include/c++/13.1.0/bits/requires_hosted.h \
  C:/msys64/mingw64/include/c++/13.1.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -146,15 +146,15 @@ CMakeFiles/Jogo.dir/src/listeners/listenerDialogo.cpp.obj: \
  C:/msys64/mingw64/include/c++/13.1.0/bits/locale_facets.tcc \
  C:/msys64/mingw64/include/c++/13.1.0/bits/basic_ios.tcc \
  C:/msys64/mingw64/include/c++/13.1.0/bits/ostream.tcc \
- C:/PROGRA~2/SFML/include/SFML/System/FileInputStream.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/InputStream.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/NonCopyable.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/Lock.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/MemoryInputStream.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/Mutex.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/Sleep.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/String.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/Utf.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/FileInputStream.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/InputStream.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/NonCopyable.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/Lock.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/MemoryInputStream.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/Mutex.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/Sleep.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/String.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/Utf.hpp \
  C:/msys64/mingw64/include/c++/13.1.0/algorithm \
  C:/msys64/mingw64/include/c++/13.1.0/bits/stl_algo.h \
  C:/msys64/mingw64/include/c++/13.1.0/bits/algorithmfwd.h \
@@ -171,63 +171,63 @@ CMakeFiles/Jogo.dir/src/listeners/listenerDialogo.cpp.obj: \
  C:/msys64/mingw64/include/c++/13.1.0/bits/codecvt.h \
  C:/msys64/mingw64/include/c++/13.1.0/bits/locale_facets_nonio.tcc \
  C:/msys64/mingw64/include/c++/13.1.0/bits/locale_conv.h \
- C:/PROGRA~2/SFML/include/SFML/System/Utf.inl \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/Utf.inl \
  C:/msys64/mingw64/include/c++/13.1.0/iterator \
  C:/msys64/mingw64/include/c++/13.1.0/bits/stream_iterator.h \
- C:/PROGRA~2/SFML/include/SFML/System/String.inl \
- C:/PROGRA~2/SFML/include/SFML/System/Thread.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/Thread.inl \
- C:/PROGRA~2/SFML/include/SFML/System/ThreadLocal.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/ThreadLocalPtr.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/ThreadLocalPtr.inl \
- C:/PROGRA~2/SFML/include/SFML/System/Vector2.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/Vector2.inl \
- C:/PROGRA~2/SFML/include/SFML/System/Vector3.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/Vector3.inl \
- C:/PROGRA~2/SFML/include/SFML/Window/Clipboard.hpp \
- C:/PROGRA~2/SFML/include/SFML/Window/Export.hpp \
- C:/PROGRA~2/SFML/include/SFML/Window/Context.hpp \
- C:/PROGRA~2/SFML/include/SFML/Window/GlResource.hpp \
- C:/PROGRA~2/SFML/include/SFML/Window/ContextSettings.hpp \
- C:/PROGRA~2/SFML/include/SFML/Window/Cursor.hpp \
- C:/PROGRA~2/SFML/include/SFML/Window/Event.hpp \
- C:/PROGRA~2/SFML/include/SFML/Window/Joystick.hpp \
- C:/PROGRA~2/SFML/include/SFML/Window/Keyboard.hpp \
- C:/PROGRA~2/SFML/include/SFML/Window/Mouse.hpp \
- C:/PROGRA~2/SFML/include/SFML/Window/Sensor.hpp \
- C:/PROGRA~2/SFML/include/SFML/Window/Touch.hpp \
- C:/PROGRA~2/SFML/include/SFML/Window/VideoMode.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/String.inl \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/Thread.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/Thread.inl \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/ThreadLocal.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/ThreadLocalPtr.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/ThreadLocalPtr.inl \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/Vector2.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/Vector2.inl \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/Vector3.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/System/Vector3.inl \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Window/Clipboard.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Window/Export.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Window/Context.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Window/GlResource.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Window/ContextSettings.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Window/Cursor.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Window/Event.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Window/Joystick.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Window/Keyboard.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Window/Mouse.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Window/Sensor.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Window/Touch.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Window/VideoMode.hpp \
  C:/msys64/mingw64/include/c++/13.1.0/vector \
  C:/msys64/mingw64/include/c++/13.1.0/bits/stl_uninitialized.h \
  C:/msys64/mingw64/include/c++/13.1.0/bits/stl_vector.h \
  C:/msys64/mingw64/include/c++/13.1.0/bits/stl_bvector.h \
  C:/msys64/mingw64/include/c++/13.1.0/bits/vector.tcc \
- C:/PROGRA~2/SFML/include/SFML/Window/Window.hpp \
- C:/PROGRA~2/SFML/include/SFML/Window/WindowBase.hpp \
- C:/PROGRA~2/SFML/include/SFML/Window/Vulkan.hpp \
- C:/PROGRA~2/SFML/include/SFML/Window/WindowHandle.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Window/Window.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Window/WindowBase.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Window/Vulkan.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Window/WindowHandle.hpp \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h \
  C:/msys64/mingw64/include/stdint.h \
- C:/PROGRA~2/SFML/include/SFML/Window/WindowStyle.hpp \
- C:/PROGRA~2/SFML/include/SFML/Graphics/BlendMode.hpp \
- C:/PROGRA~2/SFML/include/SFML/Graphics/Export.hpp \
- C:/PROGRA~2/SFML/include/SFML/Graphics/CircleShape.hpp \
- C:/PROGRA~2/SFML/include/SFML/Graphics/Shape.hpp \
- C:/PROGRA~2/SFML/include/SFML/Graphics/Drawable.hpp \
- C:/PROGRA~2/SFML/include/SFML/Graphics/RenderStates.hpp \
- C:/PROGRA~2/SFML/include/SFML/Graphics/Transform.hpp \
- C:/PROGRA~2/SFML/include/SFML/Graphics/Rect.hpp \
- C:/PROGRA~2/SFML/include/SFML/Graphics/Rect.inl \
- C:/PROGRA~2/SFML/include/SFML/Graphics/Transformable.hpp \
- C:/PROGRA~2/SFML/include/SFML/Graphics/VertexArray.hpp \
- C:/PROGRA~2/SFML/include/SFML/Graphics/Vertex.hpp \
- C:/PROGRA~2/SFML/include/SFML/Graphics/Color.hpp \
- C:/PROGRA~2/SFML/include/SFML/Graphics/PrimitiveType.hpp \
- C:/PROGRA~2/SFML/include/SFML/Graphics/ConvexShape.hpp \
- C:/PROGRA~2/SFML/include/SFML/Graphics/Font.hpp \
- C:/PROGRA~2/SFML/include/SFML/Graphics/Glyph.hpp \
- C:/PROGRA~2/SFML/include/SFML/Graphics/Texture.hpp \
- C:/PROGRA~2/SFML/include/SFML/Graphics/Image.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Window/WindowStyle.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Graphics/BlendMode.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Graphics/Export.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Graphics/CircleShape.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Graphics/Shape.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Graphics/Drawable.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Graphics/RenderStates.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Graphics/Transform.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Graphics/Rect.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Graphics/Rect.inl \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Graphics/Transformable.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Graphics/VertexArray.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Graphics/Vertex.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Graphics/Color.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Graphics/PrimitiveType.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Graphics/ConvexShape.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Graphics/Font.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Graphics/Glyph.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Graphics/Texture.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Graphics/Image.hpp \
  C:/msys64/mingw64/include/c++/13.1.0/map \
  C:/msys64/mingw64/include/c++/13.1.0/bits/stl_tree.h \
  C:/msys64/mingw64/include/c++/13.1.0/ext/aligned_buffer.h \
@@ -235,19 +235,19 @@ CMakeFiles/Jogo.dir/src/listeners/listenerDialogo.cpp.obj: \
  C:/msys64/mingw64/include/c++/13.1.0/bits/stl_map.h \
  C:/msys64/mingw64/include/c++/13.1.0/bits/stl_multimap.h \
  C:/msys64/mingw64/include/c++/13.1.0/bits/erase_if.h \
- C:/PROGRA~2/SFML/include/SFML/Graphics/RectangleShape.hpp \
- C:/PROGRA~2/SFML/include/SFML/Graphics/RenderTarget.hpp \
- C:/PROGRA~2/SFML/include/SFML/Graphics/View.hpp \
- C:/PROGRA~2/SFML/include/SFML/Graphics/RenderTexture.hpp \
- C:/PROGRA~2/SFML/include/SFML/Graphics/RenderWindow.hpp \
- C:/PROGRA~2/SFML/include/SFML/Graphics/Shader.hpp \
- C:/PROGRA~2/SFML/include/SFML/Graphics/Glsl.hpp \
- C:/PROGRA~2/SFML/include/SFML/Graphics/Glsl.inl \
- C:/PROGRA~2/SFML/include/SFML/Graphics/Sprite.hpp \
- C:/PROGRA~2/SFML/include/SFML/Graphics/Text.hpp \
- C:/PROGRA~2/SFML/include/SFML/Graphics/VertexBuffer.hpp \
- C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/gerenciador/gerenciadorGrafico.h \
- C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/gerenciador/camera.h \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Graphics/RectangleShape.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Graphics/RenderTarget.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Graphics/View.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Graphics/RenderTexture.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Graphics/RenderWindow.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Graphics/Shader.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Graphics/Glsl.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Graphics/Glsl.inl \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Graphics/Sprite.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Graphics/Text.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Graphics/VertexBuffer.hpp \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/gerenciador/gerenciadorGrafico.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/gerenciador/camera.h \
  C:/msys64/mingw64/include/c++/13.1.0/iostream \
  C:/msys64/mingw64/include/c++/13.1.0/istream \
  C:/msys64/mingw64/include/c++/13.1.0/bits/istream.tcc \
@@ -255,17 +255,17 @@ CMakeFiles/Jogo.dir/src/listeners/listenerDialogo.cpp.obj: \
  C:/msys64/mingw64/include/c++/13.1.0/bits/stl_list.h \
  C:/msys64/mingw64/include/c++/13.1.0/bits/allocated_ptr.h \
  C:/msys64/mingw64/include/c++/13.1.0/bits/list.tcc \
- C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/listeners/listener.h \
- C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/gerenciador/gerenciadorDeEstado.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/estados/estadoFase.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/estados/estado.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/Ente.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/IDs.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/listeners/listener.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/gerenciador/gerenciadorDeEstado.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/estados/estadoFase.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/estados/estado.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/entidade/Ente.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/entidade/IDs.h \
  C:/msys64/mingw64/include/c++/13.1.0/fstream \
  C:/msys64/mingw64/include/c++/13.1.0/x86_64-w64-mingw32/bits/basic_file.h \
  C:/msys64/mingw64/include/c++/13.1.0/x86_64-w64-mingw32/bits/c++io.h \
  C:/msys64/mingw64/include/c++/13.1.0/bits/fstream.tcc \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/json.hpp \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/json.hpp \
  C:/msys64/mingw64/include/c++/13.1.0/functional \
  C:/msys64/mingw64/include/c++/13.1.0/bits/std_function.h \
  C:/msys64/mingw64/include/c++/13.1.0/unordered_map \
@@ -342,63 +342,68 @@ CMakeFiles/Jogo.dir/src/listeners/listenerDialogo.cpp.obj: \
  C:/msys64/mingw64/include/c++/13.1.0/bits/stl_numeric.h \
  C:/msys64/mingw64/include/c++/13.1.0/pstl/glue_numeric_defs.h \
  C:/msys64/mingw64/include/c++/13.1.0/any \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/fases/level-1.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/fases/fase.h \
- C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/gerenciador/gerenciadorDeColisao.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/lista/listaEntidade.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/lista/lista.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/lista/elemento.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/entidade.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/listeners/listenerFase.h \
- C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/entidade/Obstaculo/Plataforma.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/jogador/personagem.h \
- C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/animador/animacao.h \
- C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/animador/imagem.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/arma/arma.h \
- C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/entidade/Obstaculo/Obstaculo.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/jogador/jogador.h \
- C:/PROGRA~2/SFML/include/SFML/Audio.hpp \
- C:/PROGRA~2/SFML/include/SFML/Audio/InputSoundFile.hpp \
- C:/PROGRA~2/SFML/include/SFML/Audio/Export.hpp \
- C:/PROGRA~2/SFML/include/SFML/Audio/Listener.hpp \
- C:/PROGRA~2/SFML/include/SFML/Audio/Music.hpp \
- C:/PROGRA~2/SFML/include/SFML/Audio/SoundStream.hpp \
- C:/PROGRA~2/SFML/include/SFML/Audio/SoundSource.hpp \
- C:/PROGRA~2/SFML/include/SFML/Audio/AlResource.hpp \
- C:/PROGRA~2/SFML/include/SFML/Audio/OutputSoundFile.hpp \
- C:/PROGRA~2/SFML/include/SFML/Audio/Sound.hpp \
- C:/PROGRA~2/SFML/include/SFML/Audio/SoundBuffer.hpp \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/fases/level-1.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/fases/fase.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/gerenciador/gerenciadorDeColisao.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/lista/listaEntidade.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/lista/lista.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/lista/elemento.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/entidade/entidade.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/listeners/listenerFase.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/entidade/Obstaculo/Plataforma.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/entidade/Player/Character.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/animador/Animation.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/animador/image.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/json.hpp \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/entidade/Weapon/Weapon.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/entidade/Obstaculo/Obstaculo.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/entidade/Player/Player.h \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Audio.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Audio/InputSoundFile.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Audio/Export.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Audio/Listener.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Audio/Music.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Audio/SoundStream.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Audio/SoundSource.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Audio/AlResource.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Audio/OutputSoundFile.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Audio/Sound.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Audio/SoundBuffer.hpp \
  C:/msys64/mingw64/include/c++/13.1.0/set \
  C:/msys64/mingw64/include/c++/13.1.0/bits/stl_set.h \
  C:/msys64/mingw64/include/c++/13.1.0/bits/stl_multiset.h \
- C:/PROGRA~2/SFML/include/SFML/Audio/SoundBufferRecorder.hpp \
- C:/PROGRA~2/SFML/include/SFML/Audio/SoundRecorder.hpp \
- C:/PROGRA~2/SFML/include/SFML/Audio/SoundFileFactory.hpp \
- C:/PROGRA~2/SFML/include/SFML/Audio/SoundFileFactory.inl \
- C:/PROGRA~2/SFML/include/SFML/Audio/SoundFileReader.hpp \
- C:/PROGRA~2/SFML/include/SFML/Audio/SoundFileWriter.hpp \
- C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/entidade/arma/projetil.h \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Audio/SoundBufferRecorder.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Audio/SoundRecorder.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Audio/SoundFileFactory.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Audio/SoundFileFactory.inl \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Audio/SoundFileReader.hpp \
+ C:/Program\ Files\ (x86)/SFML/include/SFML/Audio/SoundFileWriter.hpp \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/entidade/Weapon/Bullet.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/entidade/Player/Skils/Dash.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/entidade/Player/Skils/Rage.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/entidade/Player/Skils/Stamina.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/entidade/Player/Skils/FireBall.h \
  C:/msys64/mingw64/include/c++/13.1.0/math.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/inimigo/inimigo.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/entidade/npcs/npc.h \
- C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/entidade/inimigo/esqueleto.h \
- C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/entidade/inimigo/arqueiro.h \
- C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/entidade/inimigo/slime.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/fundo/fundo.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/fundo/camada.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/fases/level-2.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/fases/vila.h \
- C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/entidade/Obstaculo/casa.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/estados/estadoMenu.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/menus/menu.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/menus/botao/botao.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/menus/botao/botaoTexto.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/menus/botao/textoEfeito.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/menus/card.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos\ a\ parte/Game/includes/estados/estadoDialogo.h \
- C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/gerenciador/gerenciadorArquivo.h \
- C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/json.hpp \
- C:/Users/gusta/OneDrive/DOCUME~1/FACULD~1/1-PERI~1/PROJET~1/Game/includes/../includes/gerenciador/gerenciadorDeMusica.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/entidade/Enemy/Enemy.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/entidade/npcs/npc.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/entidade/Enemy/Archer.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/entidade/Enemy/Skeleton.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/entidade/Enemy/Slime.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/fundo/fundo.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/fundo/camada.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/fases/level-2.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/fases/vila.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/entidade/Obstaculo/casa.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/estados/estadoMenu.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/menu.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/botao/botao.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/botao/botaoTexto.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/botao/textoEfeito.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/card.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/estados/estadoDialogo.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/gerenciador/gerenciadorArquivo.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/json.hpp \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/gerenciador/gerenciadorDeMusica.h \
  C:/msys64/mingw64/include/c++/13.1.0/stack \
  C:/msys64/mingw64/include/c++/13.1.0/deque \
  C:/msys64/mingw64/include/c++/13.1.0/bits/stl_deque.h \

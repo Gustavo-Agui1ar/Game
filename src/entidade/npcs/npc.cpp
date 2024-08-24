@@ -7,14 +7,14 @@ namespace Game{
 
     namespace Entidade{
 
-        namespace Personagem{ 
+        namespace Character{ 
             
             namespace Npc{
 
-                Gerenciador::GerenciadorDeEstado* Npc::pEstado = pEstado->getGerenciadorDeEstado();
+                Gerenciador::GerenciadorDeEstado* Npc::pEstado = Gerenciador::GerenciadorDeEstado::getGerenciadorDeEstado();
                 
                 Npc::Npc(sf::Vector2f pos, const IDs::IDs IDpersonagem , const char* caminhoDialogo):
-                Personagem(pos,sf::Vector2f(TAM_NPC_GENERICO_X, TAM_NPC_GENERICO_Y), 0.0f, IDs::IDs::npc, 0.0f, 0.0f, 0.0f), caminhoDialogo(caminhoDialogo),IDpersonagem(IDpersonagem)
+                Character(pos,sf::Vector2f(TAM_NPC_GENERICO_X, TAM_NPC_GENERICO_Y), 0.0f, IDs::IDs::npc, 0.0f, 0.0f, 0.0f), caminhoDialogo(caminhoDialogo),IDpersonagem(IDpersonagem)
                 {
                     inicializarAnimacao();
                     switch(IDpersonagem)
@@ -40,31 +40,28 @@ namespace Game{
                     }
 
                 }
-                Npc::~Npc()
-                {
-            
-                }
+                Npc::~Npc() = default;
             
                 void Npc::inicializarAnimacao()
                 {
-                    const sf::Vector2f origem = sf::Vector2f(tam.x/2.5,tam.y/2.2);
+                    const auto origem = sf::Vector2f(tam.x/2.5,tam.y/2.2);
 
                     switch(IDpersonagem)
                     {
                         case(IDs::IDs::barman):
-                            animacao.addAnimacao("../Game/animations/Npc/bearded-idle.png","PARADO",5,0.6,sf::Vector2f{6,2},origem);
+                            m_animation.addAnimation("../Game/animations/Npc/bearded-idle.png","PARADO",5,0.6,sf::Vector2f{6,2},origem);
                         break;
                         
                         case(IDs::IDs::mulher):
-                            animacao.addAnimacao("../Game/animations/Npc/woman-idle.png","PARADO",7,0.5,sf::Vector2f{5,2},origem);
+                            m_animation.addAnimation("../Game/animations/Npc/woman-idle.png","PARADO",7,0.5,sf::Vector2f{5,2},origem);
                         break;
                         
                         case(IDs::IDs::jovem):
-                            animacao.addAnimacao("../Game/animations/Npc/hat-man-idle.png","PARADO",4,0.5,sf::Vector2f{6,2},origem);
+                            m_animation.addAnimation("../Game/animations/Npc/hat-man-idle.png","PARADO",4,0.5,sf::Vector2f{6,2},origem);
                         break;
                         
                         case(IDs::IDs::velho):
-                            animacao.addAnimacao("../Game/animations/Npc/oldman-idle.png","PARADO",3,1.5,sf::Vector2f{6,2},origem);
+                            m_animation.addAnimation("../Game/animations/Npc/oldman-idle.png","PARADO",3,1.5,sf::Vector2f{6,2},origem);
                         break;
                         
                         default:   
@@ -72,20 +69,20 @@ namespace Game{
                     }
                 }
 
-                void Npc::atualizarAnimacao()
+                void Npc::updateAnimation()
                 {
-                    animacao.atualizar(direcao, "PARADO");
+                    m_animation.update(m_direction, "PARADO");
                 }
                 
-                void Npc::atualizarPosicao()
+                void Npc::updatePosition()
                 {
-                    dt = pGrafico->getTempo();
+                    dt = m_pGrafic->getTempo();
                     sf::Vector2f ds(0.f,0.f);
 
                     //efeito da gravidade
                 
-                    const float Vy = velocidade.y;
-                    velocidade.y = velocidade.y + GRAVIDADE * dt;
+                    const float Vy = m_speed.y;
+                    m_speed.y = m_speed.y + GRAVIDADE * dt;
                     ds.y = Vy * dt + (GRAVIDADE * dt * dt) / 2.0f;
 
                     setPos(sf::Vector2f(pos.x + ds.x, pos.y + ds.y ));
@@ -93,7 +90,7 @@ namespace Game{
 
                 nlohmann::ordered_json Npc::salvar()
                 {
-                    nlohmann::ordered_json json = salvarPersonagem();
+                    nlohmann::ordered_json json = saveCharacter();
 
                     json["dialogo"] = caminhoDialogo;
                     
@@ -105,33 +102,33 @@ namespace Game{
                     return caminhoDialogo;
                 }
 
-                void Npc::desenhar()
+                void Npc::draw()
                 {
-                    pGrafico->desenhaElemento(corpo);
+                    m_pGrafic->desenhaElemento(corpo);
                 }
 
-                void Npc::atualizar()
+                void Npc::update()
                 {
-                    atualizarPosicao();
-                    atualizarAnimacao();
-                    desenhar();
+                    updatePosition();
+                    updateAnimation();
+                    draw();
                 }
 
                 void Npc::iniciarDialogo()
                 {
-                    Estado::EstadoFase* eFase = static_cast<Estado::EstadoFase*>(pEstado->getEstadoAtual());
+                    auto* eFase = static_cast<Estado::EstadoFase*>(pEstado->getEstadoAtual());
                     Fase::Fase* fase = eFase->getFase();
                     
                     sf::Vector2f posDirecao = fase->getJogador()->getPos();
 
-                    direcao = pos.x - posDirecao.x > 0 ? true : false;
+                    m_direction = pos.x - posDirecao.x > 0 ? true : false;
 
-                    atualizarAnimacao();
+                    updateAnimation();
 
                     pEstado->addEstado(IDs::IDs::estado_dialogo);
 
                     Estado::Estado* estado = pEstado->getEstadoAtual();
-                    Estado::EstadoDialogo* eDialogo = static_cast<Estado::EstadoDialogo*>(estado);
+                    auto* eDialogo = static_cast<Estado::EstadoDialogo*>(estado);
 
                     eDialogo->setDialogo(caminhoDialogo);
                 }

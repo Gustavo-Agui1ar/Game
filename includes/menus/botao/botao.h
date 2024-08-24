@@ -3,57 +3,50 @@
 
 #include "../includes/entidade/Ente.h"
 
-namespace Game{
+namespace Game::Menu::Botao{
+    class Botao : public Ente{
 
-    namespace Menu{
+    protected:
+        
+        //atributo responsavel por determinar o corpo do botao 
+        
+        sf::RectangleShape caixa;
+        sf::Texture* textura;
+        
+        //atributo de posicao e tamanho
+        
+        sf::Vector2f pos;
+        sf::Vector2f tam;
 
-        namespace Botao{
+        //atributos de tempo
+        
+        const float tempoTroca;
+        float tempo;
 
-            class Botao : public Ente{
+    public:
 
-            protected:
-                
-                //atributo responsavel por determinar o corpo do botao 
-              
-                sf::RectangleShape caixa;
-                sf::Texture* textura;
-                
-                //atributo de posicao e tamanho
-              
-                sf::Vector2f pos;
-                sf::Vector2f tam;
+        //construtor e destrutor
+        
+        Botao(const sf::Vector2f tam, const sf::Vector2f pos, const IDs::IDs ID, const float tempoTroca = 0.0f);
+        ~Botao() override;
 
-                //atributos de tempo
-              
-                const float tempoTroca;
-                float tempo;
+        //metodo responsavel pela visualizacao do botao
+        
+        void draw() override;
 
-            public:
+        //metodos de atualizacao
+        
+        virtual void atualizarPosicaoBotao(const sf::Vector2f pos);
+        virtual void atualizarAnimacao();
 
-                //construtor e destrutor
-              
-                Botao(const sf::Vector2f tam, const sf::Vector2f pos, const IDs::IDs ID, const float tempoTroca = 0.0f);
-                virtual ~Botao();
+        //seters dos atributos referente a classe
+        
+        void setTextura(sf::Texture* texture);
 
-                //metodo responsavel pela visualizacao do botao
-              
-                virtual void desenhar();
+        //geters dos atributos referente a classe
+        
+        sf::RectangleShape getCaixa();
+        const sf::Vector2f getPos();
 
-                //metodos de atualizacao
-              
-                virtual void atualizarPosicaoBotao(const sf::Vector2f pos);
-                virtual void atualizarAnimacao();
-
-                //seters dos atributos referente a classe
-              
-                void setTextura(sf::Texture* texture);
-
-                //geters dos atributos referente a classe
-              
-                sf::RectangleShape getCaixa();
-                const sf::Vector2f getPos();
-
-            };
-        }
-    }
+    };
 }

@@ -75,12 +75,12 @@ namespace Game{
         void GerenciadorDeDialogo::atualizar()
         {
             (*dialogoAtual)->atualizar();
-            desenhar();
+            draw();
         }
 
-        void GerenciadorDeDialogo::desenhar()
+        void GerenciadorDeDialogo::draw()
         {
-            (*dialogoAtual)->desenhar();
+            (*dialogoAtual)->draw();
         }
 
         const bool GerenciadorDeDialogo::getFimUltimaFala()

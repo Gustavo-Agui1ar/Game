@@ -8,55 +8,50 @@
 #include <stack>
 
 
-namespace Game{
+namespace Game::Gerenciador{
+    class GerenciadorDeEstado{
 
-    namespace Gerenciador{
+    private:
 
+        //pilha de stados
+        
+        std::stack<Estado::Estado*> pilhaEstados;
+        
+        //construtora
 
-        class GerenciadorDeEstado{
+        GerenciadorDeEstado();
 
-        private:
+        //ponteiros de outros gerenciadores
+        
+        static GerenciadorDeEstado* pEstado;
+        static GerenciadorDeMusica* pMusica;
 
-            //pilha de stados
-            
-            std::stack<Estado::Estado*> pilhaEstados;
-            
-            //construtora
+    public:
+        
+        //destrutora
 
-            GerenciadorDeEstado();
+        ~GerenciadorDeEstado();
+        
+        //metodo de acesso a classe
+        
+        static GerenciadorDeEstado* getGerenciadorDeEstado();
+        
+        //metodos de adivacao e desativacao de um observer
+        
+        void desativarListener();
+        void ativarListener();
 
-            //ponteiros de outros gerenciadores
-          
-            static GerenciadorDeEstado* pEstado;
-            static GerenciadorDeMusica* pMusica;
+        //metodo que atualiza o estado dwe um objeto desta classe
 
-        public:
-            
-            //destrutora
+        void executar();
+        
+        void addEstado(const IDs::IDs ID);
+        void removerEstado();
+        
+        Estado::Estado* getEstadoAtual();
+        Estado::Estado* getEstado(int qtd);
+        void removerEstado(const int quantidade);
 
-            ~GerenciadorDeEstado();
-          
-            //metodo de acesso a classe
-          
-            static GerenciadorDeEstado* getGerenciadorDeEstado();
-          
-            //metodos de adivacao e desativacao de um observer
-          
-            void desativarListener();
-            void ativarListener();
-
-            //metodo que atualiza o estado dwe um objeto desta classe
-
-            void executar();
-            
-            void addEstado(const IDs::IDs ID);
-            void removerEstado();
-            
-            Estado::Estado* getEstadoAtual();
-            Estado::Estado* getEstado(int qtd);
-            void removerEstado(const int quantidade);
-
-        };
-    }
+    };
 
 }

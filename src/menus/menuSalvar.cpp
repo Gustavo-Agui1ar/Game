@@ -87,9 +87,9 @@ namespace Game{
             gArquivo.gravarConteudo(caminhoEntidade.c_str(), jsonEntidades);
             gArquivo.gravarConteudo(caminhoFase.c_str(), jsonFase);
 
-            fase->desenhar();
+            fase->draw();
 
-            sf::RenderWindow* window = pGrafico->getWindow();
+            sf::RenderWindow* window = m_pGrafic->getWindow();
 
             sf::Texture textura;
 
@@ -151,7 +151,7 @@ namespace Game{
             for(std::list<Card*>::iterator it = listaCards.begin() ; it != listaCards.end() ; it++)
             {
                 Card* card = *it;
-                card->desenhar();
+                card->draw();
             }
         }
         
@@ -160,13 +160,13 @@ namespace Game{
         */
         void MenuSalvar::executar()
         {
-            fase->desenhar();
+            fase->draw();
 
-            pGrafico->desenhaElemento(fundoEscuro);
+            m_pGrafic->desenhaElemento(fundoEscuro);
 
-            pGrafico->desenhaElemento(titulo.getTexto());
+            m_pGrafic->desenhaElemento(titulo.getTexto());
 
-            desenhar();
+            draw();
 
             desenharCards();
         }

@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game
+# Install script for directory: C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Project")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Jogo")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

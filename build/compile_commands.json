@@ -1,362 +1,386 @@
 [
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\animador\\animacao.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\animador\\animacao.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/animador/animacao.cpp",
-  "output": "CMakeFiles/Jogo.dir/src/animador/animacao.cpp.obj"
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/animador/Animation.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/animador/Animation.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/animador/Animation.cpp",
+  "output": "CMakeFiles/Jogo.dir/src/animador/Animation.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\animador\\imagem.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\animador\\imagem.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/animador/imagem.cpp",
-  "output": "CMakeFiles/Jogo.dir/src/animador/imagem.cpp.obj"
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/animador/image.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/animador/image.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/animador/image.cpp",
+  "output": "CMakeFiles/Jogo.dir/src/animador/image.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\entidade\\Ente.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\entidade\\Ente.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/entidade/Ente.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/entidade/Enemy/Archer.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/entidade/Enemy/Archer.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/entidade/Enemy/Archer.cpp",
+  "output": "CMakeFiles/Jogo.dir/src/entidade/Enemy/Archer.cpp.obj"
+},
+{
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/entidade/Enemy/Enemy.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/entidade/Enemy/Enemy.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/entidade/Enemy/Enemy.cpp",
+  "output": "CMakeFiles/Jogo.dir/src/entidade/Enemy/Enemy.cpp.obj"
+},
+{
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/entidade/Enemy/Skeleton.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/entidade/Enemy/Skeleton.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/entidade/Enemy/Skeleton.cpp",
+  "output": "CMakeFiles/Jogo.dir/src/entidade/Enemy/Skeleton.cpp.obj"
+},
+{
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/entidade/Enemy/Slime.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/entidade/Enemy/Slime.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/entidade/Enemy/Slime.cpp",
+  "output": "CMakeFiles/Jogo.dir/src/entidade/Enemy/Slime.cpp.obj"
+},
+{
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/entidade/Ente.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/entidade/Ente.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/entidade/Ente.cpp",
   "output": "CMakeFiles/Jogo.dir/src/entidade/Ente.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\entidade\\Obstaculo\\Obstaculo.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\entidade\\Obstaculo\\Obstaculo.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/entidade/Obstaculo/Obstaculo.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/entidade/Obstaculo/Obstaculo.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/entidade/Obstaculo/Obstaculo.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/entidade/Obstaculo/Obstaculo.cpp",
   "output": "CMakeFiles/Jogo.dir/src/entidade/Obstaculo/Obstaculo.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\entidade\\Obstaculo\\Plataforma.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\entidade\\Obstaculo\\Plataforma.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/entidade/Obstaculo/Plataforma.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/entidade/Obstaculo/Plataforma.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/entidade/Obstaculo/Plataforma.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/entidade/Obstaculo/Plataforma.cpp",
   "output": "CMakeFiles/Jogo.dir/src/entidade/Obstaculo/Plataforma.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\entidade\\Obstaculo\\casa.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\entidade\\Obstaculo\\casa.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/entidade/Obstaculo/casa.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/entidade/Obstaculo/casa.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/entidade/Obstaculo/casa.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/entidade/Obstaculo/casa.cpp",
   "output": "CMakeFiles/Jogo.dir/src/entidade/Obstaculo/casa.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\entidade\\arma\\arma.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\entidade\\arma\\arma.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/entidade/arma/arma.cpp",
-  "output": "CMakeFiles/Jogo.dir/src/entidade/arma/arma.cpp.obj"
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/entidade/Player/Character.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/entidade/Player/Character.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/entidade/Player/Character.cpp",
+  "output": "CMakeFiles/Jogo.dir/src/entidade/Player/Character.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\entidade\\arma\\projetil.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\entidade\\arma\\projetil.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/entidade/arma/projetil.cpp",
-  "output": "CMakeFiles/Jogo.dir/src/entidade/arma/projetil.cpp.obj"
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/entidade/Player/Player.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/entidade/Player/Player.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/entidade/Player/Player.cpp",
+  "output": "CMakeFiles/Jogo.dir/src/entidade/Player/Player.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\entidade\\entidade.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\entidade\\entidade.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/entidade/entidade.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/entidade/Player/Skils/Dash.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/entidade/Player/Skils/Dash.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/entidade/Player/Skils/Dash.cpp",
+  "output": "CMakeFiles/Jogo.dir/src/entidade/Player/Skils/Dash.cpp.obj"
+},
+{
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/entidade/Player/Skils/FireBall.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/entidade/Player/Skils/FireBall.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/entidade/Player/Skils/FireBall.cpp",
+  "output": "CMakeFiles/Jogo.dir/src/entidade/Player/Skils/FireBall.cpp.obj"
+},
+{
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/entidade/Player/Skils/Rage.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/entidade/Player/Skils/Rage.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/entidade/Player/Skils/Rage.cpp",
+  "output": "CMakeFiles/Jogo.dir/src/entidade/Player/Skils/Rage.cpp.obj"
+},
+{
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/entidade/Player/Skils/Stamina.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/entidade/Player/Skils/Stamina.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/entidade/Player/Skils/Stamina.cpp",
+  "output": "CMakeFiles/Jogo.dir/src/entidade/Player/Skils/Stamina.cpp.obj"
+},
+{
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/entidade/Weapon/Bullet.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/entidade/Weapon/Bullet.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/entidade/Weapon/Bullet.cpp",
+  "output": "CMakeFiles/Jogo.dir/src/entidade/Weapon/Bullet.cpp.obj"
+},
+{
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/entidade/Weapon/Weapon.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/entidade/Weapon/Weapon.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/entidade/Weapon/Weapon.cpp",
+  "output": "CMakeFiles/Jogo.dir/src/entidade/Weapon/Weapon.cpp.obj"
+},
+{
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/entidade/entidade.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/entidade/entidade.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/entidade/entidade.cpp",
   "output": "CMakeFiles/Jogo.dir/src/entidade/entidade.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\entidade\\inimigo\\arqueiro.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\entidade\\inimigo\\arqueiro.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/entidade/inimigo/arqueiro.cpp",
-  "output": "CMakeFiles/Jogo.dir/src/entidade/inimigo/arqueiro.cpp.obj"
-},
-{
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\entidade\\inimigo\\esqueleto.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\entidade\\inimigo\\esqueleto.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/entidade/inimigo/esqueleto.cpp",
-  "output": "CMakeFiles/Jogo.dir/src/entidade/inimigo/esqueleto.cpp.obj"
-},
-{
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\entidade\\inimigo\\inimigo.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\entidade\\inimigo\\inimigo.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/entidade/inimigo/inimigo.cpp",
-  "output": "CMakeFiles/Jogo.dir/src/entidade/inimigo/inimigo.cpp.obj"
-},
-{
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\entidade\\inimigo\\slime.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\entidade\\inimigo\\slime.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/entidade/inimigo/slime.cpp",
-  "output": "CMakeFiles/Jogo.dir/src/entidade/inimigo/slime.cpp.obj"
-},
-{
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\entidade\\jogador\\jogador.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\entidade\\jogador\\jogador.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/entidade/jogador/jogador.cpp",
-  "output": "CMakeFiles/Jogo.dir/src/entidade/jogador/jogador.cpp.obj"
-},
-{
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\entidade\\jogador\\personagem.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\entidade\\jogador\\personagem.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/entidade/jogador/personagem.cpp",
-  "output": "CMakeFiles/Jogo.dir/src/entidade/jogador/personagem.cpp.obj"
-},
-{
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\entidade\\npcs\\npc.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\entidade\\npcs\\npc.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/entidade/npcs/npc.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/entidade/npcs/npc.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/entidade/npcs/npc.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/entidade/npcs/npc.cpp",
   "output": "CMakeFiles/Jogo.dir/src/entidade/npcs/npc.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\estados\\estado.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\estados\\estado.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/estados/estado.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/estados/estado.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/estados/estado.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/estados/estado.cpp",
   "output": "CMakeFiles/Jogo.dir/src/estados/estado.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\estados\\estadoDialogo.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\estados\\estadoDialogo.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/estados/estadoDialogo.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/estados/estadoDialogo.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/estados/estadoDialogo.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/estados/estadoDialogo.cpp",
   "output": "CMakeFiles/Jogo.dir/src/estados/estadoDialogo.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\estados\\estadoFase.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\estados\\estadoFase.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/estados/estadoFase.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/estados/estadoFase.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/estados/estadoFase.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/estados/estadoFase.cpp",
   "output": "CMakeFiles/Jogo.dir/src/estados/estadoFase.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\estados\\estadoMenu.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\estados\\estadoMenu.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/estados/estadoMenu.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/estados/estadoMenu.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/estados/estadoMenu.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/estados/estadoMenu.cpp",
   "output": "CMakeFiles/Jogo.dir/src/estados/estadoMenu.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\fases\\fase.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\fases\\fase.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/fases/fase.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/fases/fase.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/fases/fase.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/fases/fase.cpp",
   "output": "CMakeFiles/Jogo.dir/src/fases/fase.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\fases\\level-1.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\fases\\level-1.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/fases/level-1.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/fases/level-1.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/fases/level-1.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/fases/level-1.cpp",
   "output": "CMakeFiles/Jogo.dir/src/fases/level-1.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\fases\\level-2.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\fases\\level-2.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/fases/level-2.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/fases/level-2.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/fases/level-2.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/fases/level-2.cpp",
   "output": "CMakeFiles/Jogo.dir/src/fases/level-2.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\fases\\vila.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\fases\\vila.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/fases/vila.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/fases/vila.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/fases/vila.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/fases/vila.cpp",
   "output": "CMakeFiles/Jogo.dir/src/fases/vila.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\fundo\\camada.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\fundo\\camada.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/fundo/camada.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/fundo/camada.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/fundo/camada.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/fundo/camada.cpp",
   "output": "CMakeFiles/Jogo.dir/src/fundo/camada.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\fundo\\fundo.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\fundo\\fundo.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/fundo/fundo.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/fundo/fundo.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/fundo/fundo.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/fundo/fundo.cpp",
   "output": "CMakeFiles/Jogo.dir/src/fundo/fundo.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\gerenciador\\camera.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\gerenciador\\camera.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/gerenciador/camera.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/gerenciador/camera.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/gerenciador/camera.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/gerenciador/camera.cpp",
   "output": "CMakeFiles/Jogo.dir/src/gerenciador/camera.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\gerenciador\\gerenciadorArquivo.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\gerenciador\\gerenciadorArquivo.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/gerenciador/gerenciadorArquivo.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorArquivo.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/gerenciador/gerenciadorArquivo.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/gerenciador/gerenciadorArquivo.cpp",
   "output": "CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorArquivo.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\gerenciador\\gerenciadorDeColisao.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\gerenciador\\gerenciadorDeColisao.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/gerenciador/gerenciadorDeColisao.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeColisao.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/gerenciador/gerenciadorDeColisao.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/gerenciador/gerenciadorDeColisao.cpp",
   "output": "CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeColisao.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\gerenciador\\gerenciadorDeDialogo.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\gerenciador\\gerenciadorDeDialogo.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/gerenciador/gerenciadorDeDialogo.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeDialogo.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/gerenciador/gerenciadorDeDialogo.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/gerenciador/gerenciadorDeDialogo.cpp",
   "output": "CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeDialogo.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\gerenciador\\gerenciadorDeEstado.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\gerenciador\\gerenciadorDeEstado.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/gerenciador/gerenciadorDeEstado.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEstado.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/gerenciador/gerenciadorDeEstado.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/gerenciador/gerenciadorDeEstado.cpp",
   "output": "CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEstado.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\gerenciador\\gerenciadorDeEventos.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\gerenciador\\gerenciadorDeEventos.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/gerenciador/gerenciadorDeEventos.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEventos.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/gerenciador/gerenciadorDeEventos.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/gerenciador/gerenciadorDeEventos.cpp",
   "output": "CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeEventos.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\gerenciador\\gerenciadorDeMusica.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\gerenciador\\gerenciadorDeMusica.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/gerenciador/gerenciadorDeMusica.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeMusica.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/gerenciador/gerenciadorDeMusica.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/gerenciador/gerenciadorDeMusica.cpp",
   "output": "CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorDeMusica.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\gerenciador\\gerenciadorGrafico.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\gerenciador\\gerenciadorGrafico.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/gerenciador/gerenciadorGrafico.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorGrafico.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/gerenciador/gerenciadorGrafico.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/gerenciador/gerenciadorGrafico.cpp",
   "output": "CMakeFiles/Jogo.dir/src/gerenciador/gerenciadorGrafico.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\lista\\listaEntidade.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\lista\\listaEntidade.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/lista/listaEntidade.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/lista/listaEntidade.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/lista/listaEntidade.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/lista/listaEntidade.cpp",
   "output": "CMakeFiles/Jogo.dir/src/lista/listaEntidade.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\lista\\listaListener.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\lista\\listaListener.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/lista/listaListener.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/lista/listaListener.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/lista/listaListener.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/lista/listaListener.cpp",
   "output": "CMakeFiles/Jogo.dir/src/lista/listaListener.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\listeners\\listener.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\listeners\\listener.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/listeners/listener.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/listeners/listener.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/listeners/listener.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/listeners/listener.cpp",
   "output": "CMakeFiles/Jogo.dir/src/listeners/listener.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\listeners\\listenerDialogo.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\listeners\\listenerDialogo.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/listeners/listenerDialogo.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/listeners/listenerDialogo.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/listeners/listenerDialogo.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/listeners/listenerDialogo.cpp",
   "output": "CMakeFiles/Jogo.dir/src/listeners/listenerDialogo.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\listeners\\listenerFase.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\listeners\\listenerFase.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/listeners/listenerFase.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/listeners/listenerFase.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/listeners/listenerFase.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/listeners/listenerFase.cpp",
   "output": "CMakeFiles/Jogo.dir/src/listeners/listenerFase.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\listeners\\listenerJogador.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\listeners\\listenerJogador.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/listeners/listenerJogador.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/listeners/listenerJogador.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/listeners/listenerJogador.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/listeners/listenerJogador.cpp",
   "output": "CMakeFiles/Jogo.dir/src/listeners/listenerJogador.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\listeners\\listenerMenu.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\listeners\\listenerMenu.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/listeners/listenerMenu.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/listeners/listenerMenu.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/listeners/listenerMenu.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/listeners/listenerMenu.cpp",
   "output": "CMakeFiles/Jogo.dir/src/listeners/listenerMenu.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\main.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\main.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/main.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/main.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/main.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/main.cpp",
   "output": "CMakeFiles/Jogo.dir/src/main.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\menus\\botao\\balaoDeFala.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\menus\\botao\\balaoDeFala.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/menus/botao/balaoDeFala.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/menus/botao/balaoDeFala.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/botao/balaoDeFala.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/botao/balaoDeFala.cpp",
   "output": "CMakeFiles/Jogo.dir/src/menus/botao/balaoDeFala.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\menus\\botao\\botao.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\menus\\botao\\botao.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/menus/botao/botao.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/menus/botao/botao.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/botao/botao.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/botao/botao.cpp",
   "output": "CMakeFiles/Jogo.dir/src/menus/botao/botao.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\menus\\botao\\botaoSelecao.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\menus\\botao\\botaoSelecao.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/menus/botao/botaoSelecao.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/menus/botao/botaoSelecao.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/botao/botaoSelecao.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/botao/botaoSelecao.cpp",
   "output": "CMakeFiles/Jogo.dir/src/menus/botao/botaoSelecao.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\menus\\botao\\botaoTexto.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\menus\\botao\\botaoTexto.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/menus/botao/botaoTexto.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/menus/botao/botaoTexto.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/botao/botaoTexto.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/botao/botaoTexto.cpp",
   "output": "CMakeFiles/Jogo.dir/src/menus/botao/botaoTexto.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\menus\\botao\\botaoVolume.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\menus\\botao\\botaoVolume.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/menus/botao/botaoVolume.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/menus/botao/botaoVolume.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/botao/botaoVolume.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/botao/botaoVolume.cpp",
   "output": "CMakeFiles/Jogo.dir/src/menus/botao/botaoVolume.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\menus\\botao\\texto.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\menus\\botao\\texto.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/menus/botao/texto.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/menus/botao/texto.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/botao/texto.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/botao/texto.cpp",
   "output": "CMakeFiles/Jogo.dir/src/menus/botao/texto.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\menus\\botao\\textoEfeito.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\menus\\botao\\textoEfeito.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/menus/botao/textoEfeito.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/menus/botao/textoEfeito.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/botao/textoEfeito.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/botao/textoEfeito.cpp",
   "output": "CMakeFiles/Jogo.dir/src/menus/botao/textoEfeito.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\menus\\botao\\textoFala.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\menus\\botao\\textoFala.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/menus/botao/textoFala.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/menus/botao/textoFala.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/botao/textoFala.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/botao/textoFala.cpp",
   "output": "CMakeFiles/Jogo.dir/src/menus/botao/textoFala.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\menus\\card.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\menus\\card.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/menus/card.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/menus/card.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/card.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/card.cpp",
   "output": "CMakeFiles/Jogo.dir/src/menus/card.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\menus\\menu.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\menus\\menu.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/menus/menu.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/menus/menu.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/menu.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/menu.cpp",
   "output": "CMakeFiles/Jogo.dir/src/menus/menu.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\menus\\menuCarregar.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\menus\\menuCarregar.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/menus/menuCarregar.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/menus/menuCarregar.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/menuCarregar.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/menuCarregar.cpp",
   "output": "CMakeFiles/Jogo.dir/src/menus/menuCarregar.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\menus\\menuDeSelecao.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\menus\\menuDeSelecao.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/menus/menuDeSelecao.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/menus/menuDeSelecao.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/menuDeSelecao.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/menuDeSelecao.cpp",
   "output": "CMakeFiles/Jogo.dir/src/menus/menuDeSelecao.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\menus\\menuGameOver.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\menus\\menuGameOver.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/menus/menuGameOver.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/menus/menuGameOver.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/menuGameOver.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/menuGameOver.cpp",
   "output": "CMakeFiles/Jogo.dir/src/menus/menuGameOver.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\menus\\menuOpcao.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\menus\\menuOpcao.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/menus/menuOpcao.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/menus/menuOpcao.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/menuOpcao.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/menuOpcao.cpp",
   "output": "CMakeFiles/Jogo.dir/src/menus/menuOpcao.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\menus\\menuPausa.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\menus\\menuPausa.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/menus/menuPausa.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/menus/menuPausa.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/menuPausa.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/menuPausa.cpp",
   "output": "CMakeFiles/Jogo.dir/src/menus/menuPausa.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\menus\\menuPrincipal.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\menus\\menuPrincipal.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/menus/menuPrincipal.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/menus/menuPrincipal.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/menuPrincipal.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/menuPrincipal.cpp",
   "output": "CMakeFiles/Jogo.dir/src/menus/menuPrincipal.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\menus\\menuSalvar.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\menus\\menuSalvar.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/menus/menuSalvar.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/menus/menuSalvar.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/menuSalvar.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/menuSalvar.cpp",
   "output": "CMakeFiles/Jogo.dir/src/menus/menuSalvar.cpp.obj"
 },
 {
-  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Jogo.dir\\src\\principal.cpp.obj -c \"C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\1-Periodo\\projetos a parte\\Game\\src\\principal.cpp\"",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/1-Periodo/projetos a parte/Game/src/principal.cpp",
+  "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Jogo.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles/Jogo.dir/src/principal.cpp.obj -c C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/principal.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/principal.cpp",
   "output": "CMakeFiles/Jogo.dir/src/principal.cpp.obj"
 }
 ]

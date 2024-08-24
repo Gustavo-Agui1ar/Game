@@ -6,68 +6,64 @@
 #include <SFML/Audio.hpp>
 #include <map>
 
-namespace Game{
+namespace Game::Gerenciador{
+    class GerenciadorDeMusica {
 
-    namespace Gerenciador{
+    private:
 
-        class GerenciadorDeMusica {
+        //mapa de musicas a serem todcadas
+        
+        std::map<IDs::IDs, sf::Music*> mapMusica;
+        
+        //atributo para se saber em qual musica o map tocou por ultimo
+        
+        IDs::IDs IDmusicaAtual;
+        
+        //atributo de volume da musica
+        
+        float volumeGeral;
+        float volumeEfeitoSonoro;
 
-            private:
+        //metodo que adiciona uma musica 
 
-                //mapa de musicas a serem todcadas
-                
-                std::map<IDs::IDs, sf::Music*> mapMusica;
-                
-                //atributo para se saber em qual musica o map tocou por ultimo
-                
-                IDs::IDs IDmusicaAtual;
-               
-                //atributo de volume da musica
-                
-                float volumeGeral;
-                float volumeEfeitoSonoro;
+        void addMusica(const IDs::IDs ID, const char* caminhoMusica);
+        
+        //ponteiro da classe( padrao singleton)
+        
+        static GerenciadorDeMusica* pMusica;
+        
+        //construtora
 
-                //metodo que adiciona uma musica 
+        GerenciadorDeMusica();
 
-                void addMusica(const IDs::IDs ID, const char* caminhoMusica);
-               
-                //ponteiro da classe( padrao singleton)
-                
-                static GerenciadorDeMusica* pMusica;
-               
-                //construtora
+    public:
 
-                GerenciadorDeMusica();
+        //destrutora
 
-            public:
+        ~GerenciadorDeMusica();
 
-                //destrutora
+        //metodo de acesso a classe
+                        
+        static GerenciadorDeMusica* getGerenciadorDeMusica();
+        
+        // metodo que altera a musica atual
+        
+        void mudarMusica(const IDs::IDs IDmusica);
+        
+        //metodos de modificacao da musica atual
 
-                ~GerenciadorDeMusica();
+        void despausar();
+        void pausar();
+        void parar();
 
-                //metodo de acesso a classe
-                               
-                static GerenciadorDeMusica* getGerenciadorDeMusica();
-                
-                // metodo que altera a musica atual
-                
-                void mudarMusica(const IDs::IDs IDmusica);
-               
-               //metodos de modificacao da musica atual
+        //metodos acessadores e modificadores do volume
 
-                void despausar();
-                void pausar();
-                void parar();
-
-                //metodos acessadores e modificadores do volume
-
-                void setVolumeGeral(const float volumeGeral);
-                void setVolume(IDs::IDs ID, const float volume);
-                void setVolumeEfeitoSonoro(const float volumeEfeitoSonoro);
-            
-                const float getVolumeGeral();
-                const float getVolume(IDs::IDs ID);
-                const float getVolumeEfeitoSonoro();
-        };
-    }
+        void setVolumeGeral(const float volumeGeral);
+        void setVolume(IDs::IDs ID, const float volume);
+        void setVolumeEfeitoSonoro(const float volumeEfeitoSonoro);
+    
+        const float getVolumeGeral();
+        const float getVolume(IDs::IDs ID);
+        const float getVolumeEfeitoSonoro();
+    };
 }

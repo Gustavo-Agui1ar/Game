@@ -5,52 +5,48 @@
 #include "../listeners/listener.h"
 #include "SFML/Graphics.hpp"
 
-namespace Game{
+namespace Game::Lista{
+    class ListaListener{
 
-    namespace Lista{
+    private:
 
-        class ListaListener{
+        //lista a armazenar observers
 
-            private:
+        Lista<Listener::Listener> objListaListener;
 
-            //lista a armazenar observers
+    public:
 
-            Lista<Listener::Listener> objListaListener;
+        //construtor e destrutor
 
-            public:
+        ListaListener();
+        ~ListaListener();
 
-            //construtor e destrutor
+        //metodo de adicao de novos elementos
 
-            ListaListener();
-            ~ListaListener();
+        void addListener(Listener::Listener* listener);
 
-            //metodo de adicao de novos elementos
+        //metodos de remocao de elementos
 
-            void addListener(Listener::Listener* listener);
+        void removerListener(Listener::Listener* listener);
+        void removerListener(int pos);
+        
+        //sobrecarga de operador 
 
-            //metodos de remocao de elementos
+        Listener::Listener* operator[](int pos);
+        
+        //metodo de acesso ao atributo tam
 
-            void removerListener(Listener::Listener* listener);
-            void removerListener(int pos);
-            
-            //sobrecarga de operador 
+        int getTam();
 
-            Listener::Listener* operator[](int pos);
-          
-            //metodo de acesso ao atributo tam
+        //metodo para tratar eventos do teclado
 
-            int getTam();
+        void tratarTeclaPressionada(const sf::Keyboard::Key tecla);
+        void tratarTeclaSolta(const sf::Keyboard::Key tecla);
+        
+        //metodos de tratar eventod do mouse
 
-            //metodo para tratar eventos do teclado
+        void notificarBotaoMouseSolta(const sf::Mouse::Button botaoMouse);
+        void notificarMovimentoMouse(const sf::Event::MouseMoveEvent mouse);
 
-            void tratarTeclaPressionada(const sf::Keyboard::Key tecla);
-            void tratarTeclaSolta(const sf::Keyboard::Key tecla);
-            
-            //metodos de tratar eventod do mouse
-
-            void notificarBotaoMouseSolta(const sf::Mouse::Button botaoMouse);
-            void notificarMovimentoMouse(const sf::Event::MouseMoveEvent mouse);
-
-        };
-    }
+    };
 }

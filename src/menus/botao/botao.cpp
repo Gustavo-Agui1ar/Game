@@ -72,9 +72,9 @@ namespace Game{
             /**
              * @brief metodo responsavel por mostrar o botao na tela  
             */
-            void Botao::desenhar()
+            void Botao::draw()
             {
-                pGrafico->desenhaElemento(caixa);
+                m_pGrafic->desenhaElemento(caixa);
             }
 
             /**

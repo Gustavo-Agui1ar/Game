@@ -6,59 +6,57 @@
 
 #define CARD_FONTE "/Game/animations/backgorund/card/card-vazio.png"
 
-namespace Game {
-
-    namespace Menu{
-
-        class Card {
-
-        private:
-    
-            //atributos visuais
-
-            sf::RectangleShape* corpo;
-            sf::Texture* textura;
-            bool selecionado;
-            sf::Color cor;
-            bool existe;
-
-            //atributos de informacao
-
-            const std::string caminhoEntidades;
-            const std::string caminhoImagem;
-            const std::string caminhoFase;
+namespace Game::Menu {
 
 
-            static Gerenciador::GerenciadorGrafico* pGrafico;
+    class Card {
 
-        public:
+    private:
 
-            //coonstrutor e destrutor
+        //atributos visuais
 
-            Card(const sf::Vector2f pos, const std::string caminhoEntidades, const std::string caminhoImagem, const std::string caminhoFase);
-            ~Card();
+        sf::RectangleShape* corpo;
+        sf::Texture* textura;
+        bool selecionado;
+        sf::Color cor;
+        bool existe;
 
-            //getters da classe
+        //atributos de informacao
 
-            const std::string getCaminhoEntidade();
-            const std::string getCaminhoImagem();
-            const std::string getCaminhoFase();
-            const bool getSelecionado();
-            const bool getExiste();
-            sf::Vector2f getPos();
+        const std::string caminhoEntidades;
+        const std::string caminhoImagem;
+        const std::string caminhoFase;
 
-            //setters da classe
 
-            void setColor(const sf::Color cor);
-            void setSelecionado(const bool selecionado);
+        static Gerenciador::GerenciadorGrafico* pGrafico;
 
-            //metodo de delecao dos atributos que contem caminho a um arquivo
+    public:
 
-            void deletarTextura();
+        //coonstrutor e destrutor
 
-            //metodo que mostraa na tela o card
+        Card(const sf::Vector2f pos, const std::string caminhoEntidades, const std::string caminhoImagem, const std::string caminhoFase);
+        ~Card();
 
-            void desenhar();
-        };
-    }
+        //getters da classe
+
+        const std::string getCaminhoEntidade();
+        const std::string getCaminhoImagem();
+        const std::string getCaminhoFase();
+        const bool getSelecionado();
+        const bool getExiste();
+        sf::Vector2f getPos();
+
+        //setters da classe
+
+        void setColor(const sf::Color cor);
+        void setSelecionado(const bool selecionado);
+
+        //metodo de delecao dos atributos que contem caminho a um arquivo
+
+        void deletarTextura();
+
+        //metodo que mostraa na tela o card
+
+        void draw();
+    };
 }

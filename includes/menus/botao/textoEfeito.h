@@ -3,50 +3,43 @@
 
 #include "texto.h"
 
-namespace Game{
+namespace Game::Menu::Botao{
+    class TextoEfeito : public Texto{
 
-    namespace Menu{
+    private:
 
-        namespace Botao{
+        //atributos referentes ao efeito do botao
+        
+        int transparencia;
+        bool apagando;
 
-            class TextoEfeito : public Texto{
+        //metodo de atualizacao dos atributos de efeito
+        
+        void atualizar();
 
-            private:
+    public:
 
-                //atributos referentes ao efeito do botao
-              
-                int transparencia;
-                bool apagando;
+        //construtor e destrutor
+        
+        TextoEfeito(const sf::Font fonte, const std::string infoTexto);
+        ~TextoEfeito();
 
-                //metodo de atualizacao dos atributos de efeito
-                
-                void atualizar();
+        //metodo que aplica o efeito inverso ao atual
+        
+        void mudarTransparencia();
+        
+        //getters da classe
+        
+        const bool getApagando();
+        const int getTransparente();
+        
+        //setters da classe
+        
+        void setTransparente(int tansparente);
 
-            public:
+        //metodo que reinicia o efeito do botao
+        
+        void resetar();
 
-                //construtor e destrutor
-               
-                TextoEfeito(const sf::Font fonte, const std::string infoTexto);
-                ~TextoEfeito();
-
-                //metodo que aplica o efeito inverso ao atual
-              
-                void mudarTransparencia();
-                
-                //getters da classe
-              
-                const bool getApagando();
-                const int getTransparente();
-              
-                //setters da classe
-              
-                void setTransparente(int tansparente);
-
-                //metodo que reinicia o efeito do botao
-               
-                void resetar();
-
-            };
-        }
-    }
+    };
 }

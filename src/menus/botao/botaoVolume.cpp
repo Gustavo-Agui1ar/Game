@@ -102,13 +102,13 @@ namespace Game{
             }
          }
 
-         void BotaoVolume::desenhar()
+         void BotaoVolume::draw()
          {
             atualizarAnimacao();
 
-            pGrafico->desenhaElemento(fundoVolume);
-            pGrafico->desenhaElemento(corpoVolume);
-            pGrafico->desenhaElemento(texto.getTexto());
+            m_pGrafic->desenhaElemento(fundoVolume);
+            m_pGrafic->desenhaElemento(corpoVolume);
+            m_pGrafic->desenhaElemento(texto.getTexto());
          }
 
         }

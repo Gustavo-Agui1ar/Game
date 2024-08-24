@@ -62,5 +62,6 @@
         "valarray": "cpp",
         "variant": "cpp",
         "set": "cpp"
-    }
+    },
+    "sonarlint.pathToCompileCommands": "${workspaceFolder}\\build\\compile_commands.json"
 }

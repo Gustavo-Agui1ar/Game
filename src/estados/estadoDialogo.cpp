@@ -24,7 +24,7 @@ namespace Game{
 
         void EstadoDialogo::inicializarFalas(std::vector<std::string> arquivoFalas)
         {
-            std::vector<std::string>::iterator it = arquivoFalas.begin();
+            auto it = arquivoFalas.begin();
             
             std::vector<std::string> nomes; 
             std::vector<std::string> falas;
@@ -57,14 +57,14 @@ namespace Game{
         
         void EstadoDialogo::executar()
         {
-            fase->desenhar();
+            fase->draw();
             pDialogo->atualizar();
         }
 
-        void EstadoDialogo::desenhar()
+        void EstadoDialogo::draw()
         {
-            fase->desenhar();
-            pDialogo->desenhar();
+            fase->draw();
+            pDialogo->draw();
         }
 
         void EstadoDialogo::mudarEstadoListener(const bool ativo)

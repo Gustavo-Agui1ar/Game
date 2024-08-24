@@ -4,30 +4,23 @@
 #include "../includes/gerenciador/gerenciadorDeDialogo.h"
 #include "listener.h"
 
-namespace Game{
+namespace Game::Listener{
+    class ListenerDialogo : public Listener{
 
-    namespace Listener{
+    private:
 
-        class ListenerDialogo : public Listener{
+        Gerenciador::GerenciadorDeDialogo* pGDialogo;
 
-            
-            private:
-
-                Gerenciador::GerenciadorDeDialogo* pGDialogo;
-
-            public:
+    public:
 
 
-                ListenerDialogo(Gerenciador::GerenciadorDeDialogo* pGDialogo);
-                ~ListenerDialogo();
+        explicit ListenerDialogo(Gerenciador::GerenciadorDeDialogo* pGDialogo);
+        ~ListenerDialogo() override;
 
-                void teclaPressionada(const sf::Keyboard::Key tecla);
-                void teclaSolta(const sf::Keyboard::Key tecla);
+        void teclaPressionada(const sf::Keyboard::Key tecla) override;
+        void teclaSolta(const sf::Keyboard::Key tecla) override;
 
-                void setGerenciadorDialogo(Gerenciador::GerenciadorDeDialogo* pGDialogo);
-                Gerenciador::GerenciadorDeDialogo* getGerenciadorDialogo(Gerenciador::GerenciadorDeDialogo* pGDialogo);
-
-
-        };
-    }
+        void setGerenciadorDialogo(Gerenciador::GerenciadorDeDialogo* pGDialogo);
+        Gerenciador::GerenciadorDeDialogo* getGerenciadorDialogo(Gerenciador::GerenciadorDeDialogo* pGDialogo);
+    };
 }

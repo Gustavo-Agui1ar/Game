@@ -1,128 +1,118 @@
 
 #include "../includes/estados/estadoFase.h"
 
-namespace Game{
+namespace Game::Estado{
 
-    namespace Estado{
-        
-        /**
-         * @brief construtora da classe EstadoFase
-         * 
-         * @param ID identificacao da fase
-        */
-        EstadoFase::EstadoFase(const IDs::IDs ID):
-        Estado(ID)
-        {
-            fase = nullptr;
-        }
+    
+    /**
+     * @brief construtora da classe EstadoFase
+     * 
+     * @param ID identificacao da fase
+    */
+    EstadoFase::EstadoFase(const IDs::IDs ID):
+    Estado(ID)
+    {
+        fase = nullptr;
+    }
 
-        /**
-         * @brief metodo que cria a fase apartir do json 
-         * 
-         * @param entidades json contendo as infomacoes da fase
-         * @param IDfase fase a ser criada
-        */
-        void EstadoFase::criarFase(nlohmann::ordered_json entidades, IDs::IDs IDfase)
+    /**
+     * @brief metodo que cria a fase apartir do json 
+     * 
+     * @param entidades json contendo as infomacoes da fase
+     * @param IDfase fase a ser criada
+    */
+    void EstadoFase::criarFase(nlohmann::ordered_json entidades, IDs::IDs IDfase)
+    {
+        switch (IDfase)
         {
-            switch (IDfase)
+            case(IDs::IDs::floresta_do_amanhecer):
             {
-                case(IDs::IDs::floresta_do_amanhecer):
-                {
-                    fase = static_cast<Fase::Fase*>(new Fase::Forest(entidades));
-                }
-                    break;
-                case(IDs::IDs::caverna):
-                {
-                    fase = static_cast<Fase::Fase*>(new Fase::Caverna(entidades));
-                }
-                    break;
-                
-                default:
-                    break;
+                fase = static_cast<Fase::Fase*>(new Fase::Forest(entidades));
             }
-        }
-
-        /**
-         * destrutora da classe EstadoFase
-        */
-        EstadoFase::~EstadoFase()
-        {
-            if(fase != nullptr)
-               delete(fase);
-            fase = nullptr;
-        }
-
-        /**
-         * @brief metodo que cria a fase de acordo com o id atribuido na contrutora
-        */
-        void EstadoFase::criarFase()
-        {
-            switch (ID)
+                break;
+            case(IDs::IDs::caverna):
             {
-                case(IDs::IDs::floresta_do_amanhecer):
-                {
-                    fase = static_cast<Fase::Fase*>(new Fase::Forest());
-                }
-                    break;
-                case(IDs::IDs::caverna):
-                {
-                    fase = static_cast<Fase::Fase*>(new Fase::Caverna());
-                }
-                    break;
-              
-                case(IDs::IDs::vila):
-                {
-                    fase = static_cast<Fase::Fase*>(new Fase::Vila());
-                }
-                    break;
-                
-                default:
-                    break;
+                fase = static_cast<Fase::Fase*>(new Fase::Caverna(entidades));
             }
-
-            if(fase == nullptr)
-            {
-                std::cout<<"Estados::EstadoFase: nao foi possivel criar um estadoFase";
-                exit(1);
-            }
-
-            fase->criarFundo();
-            fase->criarMapa();
+                break;
+            
+            default:
+                break;
         }
+    }
 
-        /**
-         * @brief metodo que executa a fase atualizando o estado das entidades
-        */
-        void EstadoFase::executar()
+    /**
+     * destrutora da classe EstadoFase
+    */
+    EstadoFase::~EstadoFase()
+    {
+        if(fase != nullptr)
+            delete(fase);
+        fase = nullptr;
+    }
+
+    /**
+     * @brief metodo que cria a fase de acordo com o id atribuido na contrutora
+    */
+    void EstadoFase::criarFase()
+    {
+        switch (ID)
         {
-            fase->executar();
+            case(IDs::IDs::floresta_do_amanhecer):
+                fase = static_cast<Fase::Fase*>(new Fase::Forest());
+                break;
+            case(IDs::IDs::caverna):
+                fase = static_cast<Fase::Fase*>(new Fase::Caverna());
+                break;
+            case(IDs::IDs::vila):
+                fase = static_cast<Fase::Fase*>(new Fase::Vila());
+                break;
+            default:
+                break;
         }
 
-        /**
-         * @brief metodo que altera o estado do  observador da fase
-        */
-        void EstadoFase::mudarEstadoListener(const bool ativo)
+        if(fase == nullptr)
         {
-            Entidade::Personagem::Jogador::Jogador* jogador = fase->getJogador();
-
-            if(jogador != nullptr)
-            {
-                jogador->mudarEstadoListener(ativo);
-            }
-
-            fase->mudarEstadoListener(ativo);
-
-        
+            std::cout<<"Estados::EstadoFase: nao foi possivel criar um estadoFase";
+            exit(1);
         }
 
-        /**
-         * @brief metodo e acesso ao atributo fase
-         * 
-         * @return retorna o atributo fase 
-        */
-        Fase::Fase* EstadoFase::getFase()
+        fase->criarFundo();
+        fase->criarMapa();
+    }
+
+    /**
+     * @brief metodo que executa a fase atualizando o estado das entidades
+    */
+    void EstadoFase::executar()
+    {
+        fase->executar();
+    }
+
+    /**
+     * @brief metodo que altera o estado do  observador da fase
+    */
+    void EstadoFase::mudarEstadoListener(const bool ativo)
+    {
+        Entidade::Character::Player::Player* jogador = fase->getJogador();
+
+        if(jogador != nullptr)
         {
-            return fase;
+            jogador->changeObserverEstate(ativo);
         }
+
+        fase->mudarEstadoListener(ativo);
+
+    
+    }
+
+    /**
+     * @brief metodo e acesso ao atributo fase
+     * 
+     * @return retorna o atributo fase 
+    */
+    Fase::Fase* EstadoFase::getFase()
+    {
+        return fase;
     }
 }

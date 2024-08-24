@@ -8,30 +8,23 @@
 #define TAM_V_FASE_X 800.f
 #define TAM_V_FASE_Y 400.f
 
-namespace Game{
+namespace Game::Menu::Botao{
+    class BotaoSelecao : public BotaoTexto {
 
-    namespace Menu{
+    private:
 
-        namespace Botao{
+        sf::RectangleShape visualizacaoFase;
+        sf::Texture texture;
+        IDs::IDs IDFase;
 
-            class BotaoSelecao : public BotaoTexto {
+    public:
 
-                private:
+    BotaoSelecao(const std::string infoTexto, const sf::Vector2f pos, const sf::Vector2f tam, const IDs::IDs ID, const sf::Color corSelecionado, IDs::IDs IDFase);
+    ~BotaoSelecao() override;
 
-                    sf::RectangleShape visualizacaoFase;
-                    sf::Texture texture;
-                    IDs::IDs IDFase;
+    const IDs::IDs getIDFase();
+    void setImagemFase(const char* caminhoImagem);
+    void draw() override; 
 
-                public:
-
-                BotaoSelecao(const std::string infoTexto, const sf::Vector2f pos, const sf::Vector2f tam, const IDs::IDs ID, const sf::Color corSelecionado, IDs::IDs IDFase);
-                ~BotaoSelecao();
-
-                const IDs::IDs getIDFase();
-                void setImagemFase(const char* caminhoImagem);
-                void desenhar();
-
-            };
-        }
-    }
+    };
 }

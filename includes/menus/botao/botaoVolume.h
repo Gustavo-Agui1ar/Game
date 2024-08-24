@@ -10,37 +10,30 @@
 #define TAMANHO_BOTAO_VOLUME_X 50.0f
 #define TAMANHO_BOTAO_VOLUME_Y 30.0f
 
-namespace Game{
+namespace Game::Menu::Botao{
+    class BotaoVolume : public BotaoTexto{
 
-    namespace Menu{
+    
+    private:
 
-        namespace Botao{
-            
-            class BotaoVolume : public BotaoTexto{
+        sf::RectangleShape fundoVolume;
+        sf::RectangleShape corpoVolume;
 
-                
-                private:
+        Gerenciador::GerenciadorDeMusica* pMusica;
 
-                    sf::RectangleShape fundoVolume;
-                    sf::RectangleShape corpoVolume;
+        const float posInicioFundo;
+        const float parametrizacao;
 
-                    Gerenciador::GerenciadorDeMusica* pMusica;
+        float posInicioBarra;
+        float posFimBarra;
 
-                    const float posInicioFundo;
-                    const float parametrizacao;
+        void atualizarVolume();
 
-                    float posInicioBarra;
-                    float posFimBarra;
+    public:
 
-                    void atualizarVolume();
-
-                public:
-
-                    BotaoVolume(const std::string info, sf::Vector2f tam, const sf::Vector2f pos, const IDs::IDs ID, const sf::Color corSelecionado, const float posInicioFundo);
-                    ~BotaoVolume();
-                    void desenhar();
-                    void alterarVolume(const float volume);
-            };
-        }   
-    }
+        BotaoVolume(const std::string info, sf::Vector2f tam, const sf::Vector2f pos, const IDs::IDs ID, const sf::Color corSelecionado, const float posInicioFundo);
+        ~BotaoVolume() override;
+        void draw() override;
+        void alterarVolume(const float volume);
+};
 }

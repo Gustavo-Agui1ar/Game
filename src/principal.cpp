@@ -57,6 +57,10 @@ void Game::Principal::executar()
 
 Game::Principal::~Principal()
 {
+    if(gerenciadorDeEventos != nullptr)
+        delete gerenciadorDeEventos;
+    if(gerenciadorGrafico != nullptr)
+        delete gerenciadorGrafico;
 
 }
 

@@ -15,8 +15,8 @@ namespace Game {
          * @param tamFonte tamanho do texto
         */
         Menu::Menu(const IDs::IDs ID, const sf::Vector2f tamBotao, const std::string titulo, const unsigned int tamFonte):
-        Ente(ID), listaDeBotao(), it(),  titulo(pGrafico->carregarFonte( "../Game/animations/botton/menu.ttf"), titulo, tamFonte), 
-        tamJanela(pGrafico->getTamJanela()), tamBotao(tamBotao), posFundo(sf::Vector2f(0.0f,0.0f)), listenerMenu(new Listener::ListenerMenu(this)),
+        Ente(ID), listaDeBotao(), it(),  titulo(m_pGrafic->carregarFonte( "../Game/animations/botton/menu.ttf"), titulo, tamFonte), 
+        tamJanela(m_pGrafic->getTamJanela()), tamBotao(tamBotao), posFundo(sf::Vector2f(0.0f,0.0f)), listenerMenu(new Listener::ListenerMenu(this)),
         mouseSelecionado(false)
         {
             if(listenerMenu == nullptr){
@@ -80,7 +80,7 @@ namespace Game {
         */
         void Menu::atualizarPosicaoFundo()
         {
-            posFundo = pGrafico->getCamera().getCenter();
+            posFundo = m_pGrafic->getCamera().getCenter();
         }
 
         /**
@@ -165,7 +165,7 @@ namespace Game {
             {
                 Botao::BotaoTexto* botao = *aux;
                 sf::RectangleShape caixa = botao->getCaixa();
-                sf::Vector2f posMouseJan = pGrafico->getWindow()->mapPixelToCoords((sf::Vector2i)posMouse);
+                sf::Vector2f posMouseJan = m_pGrafic->getWindow()->mapPixelToCoords((sf::Vector2i)posMouse);
                 
                 if(caixa.getGlobalBounds().contains(posMouseJan))
                 {
@@ -181,14 +181,14 @@ namespace Game {
         /**
          * @brief metodo que desenha todos os elemntos graficos do menu
         */
-        void Menu::desenhar()
+        void Menu::draw()
         {
             std::list<Botao::BotaoTexto*>::iterator itAux;
 
             for(itAux = listaDeBotao.begin() ; itAux != listaDeBotao.end() ; itAux++)
             {
                 Botao::BotaoTexto* botao = *itAux;
-                botao->desenhar();
+                botao->draw();
                 botao = nullptr;
             }
         }

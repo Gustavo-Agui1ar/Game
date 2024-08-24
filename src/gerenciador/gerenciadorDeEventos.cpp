@@ -14,8 +14,8 @@ namespace Game{
              * @brief construtora da classe gerenciadorDeEventos 
             */
             GerenciadorDeEventos::GerenciadorDeEventos():
-            pGrafico(pGrafico->getGerenciadorGrafico()),
-            pEstado(pEstado->getGerenciadorDeEstado())
+            pGrafico(GerenciadorGrafico::getGerenciadorGrafico()),
+            pEstado(GerenciadorDeEstado::getGerenciadorDeEstado())
             {
                 listaListener = new Lista::ListaListener();
             }
@@ -25,8 +25,8 @@ namespace Game{
             */
             GerenciadorDeEventos::~GerenciadorDeEventos()
             {
-                if(pEventos != nullptr)
-                    delete(pEventos);
+                if(pEstado != nullptr)
+                    delete pEstado;
                 pEventos = nullptr;
             }
 

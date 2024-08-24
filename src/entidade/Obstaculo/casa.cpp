@@ -1,45 +1,36 @@
 
 #include "../includes/entidade/Obstaculo/casa.h"
 
-namespace Game{
+namespace Game::Entidade::Obstaculo{
 
-    namespace Entidade{
+    Casa::Casa(const sf::Vector2f tam, const IDs::IDs ID, const sf::Vector2f pos):
+    Entidade(tam, ID, pos)
+    {
 
-        namespace Obstaculo{
+    }
 
-            Casa::Casa(const sf::Vector2f tam, const IDs::IDs ID, const sf::Vector2f pos):
-            Entidade(tam, ID, pos)
-            {
+    Casa::~Casa() = default;
 
-            }
+    void Casa::update()
+    {
+        m_pGrafic->desenhaElemento(corpo);
+    }
 
-            Casa::~Casa()
-            {
+    void Casa::setTextura(const char* caminhoTextura)
+    {
+        textura = m_pGrafic->carregarTextura(caminhoTextura);
 
-            }
+        corpo.setTexture(&textura);
+    }
 
-            void Casa::atualizar()
-            {
-                pGrafico->desenhaElemento(corpo);
-            }
+    nlohmann::ordered_json Casa::salvar()
+    {
+        nlohmann::ordered_json json = salvarEntidade();
+        return json;
+    }
+    
+    void Casa::colisao(Entidade* outraEntidade, sf::Vector2f ds)
+    {
 
-            void Casa::setTextura(const char* caminhoTextura)
-            {
-                textura = pGrafico->carregarTextura(caminhoTextura);
-
-                corpo.setTexture(&textura);
-            }
-
-            nlohmann::ordered_json Casa::salvar()
-            {
-                nlohmann::ordered_json json = salvarEntidade();
-                return json;
-            }
-            
-            void Casa::colisao(Entidade* outraEntidade, sf::Vector2f ds)
-            {
-
-            }
-        }
     }
 }

@@ -14,7 +14,7 @@ namespace Game{
 
         //atributo usado por suas filhas
      
-        static Gerenciador::GerenciadorGrafico* pGrafico;
+        static Gerenciador::GerenciadorGrafico* m_pGrafic;
         
         //atributo de identificacao da filha
        
@@ -24,8 +24,8 @@ namespace Game{
 
         //construtor e destrutor
        
-        Ente(const IDs::IDs ID);
-        ~Ente();
+        explicit Ente(const IDs::IDs ID);
+        virtual ~Ente();
 
         //metodo de acesso a id
      
@@ -37,7 +37,7 @@ namespace Game{
         
         //metodo usado por suas filhas para vizualizacao
         
-        virtual void desenhar() = 0;
+        virtual void draw() = 0;
     };
 
 }

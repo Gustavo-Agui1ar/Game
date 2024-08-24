@@ -134,10 +134,10 @@ namespace Game{
                 if(fala.getPos().x + fala.getTam().x >= 
                    caixaDialogo.getPosition().x + caixaDialogo.getSize().x -  caixaDialogo.getSize().x / 10.f)
 
-                desenhar();
+                draw();
             }
 
-            void BalaoDeFala::desenhar()
+            void BalaoDeFala::draw()
             {
                 pGrafico->desenhaElemento(caixaDialogo);
                 pGrafico->desenhaElemento(caixaNome);

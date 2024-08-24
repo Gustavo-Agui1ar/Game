@@ -4,44 +4,40 @@
 #include "../entidade/Ente.h"
 
 
-namespace Game{
-
-    namespace Estado{
-
-        class Estado : public Ente{
+namespace Game::Estado{
+    class Estado : public Ente{
 
 
-        private:
+    private:
 
-            //aributo de controle de remocao
-         
-            bool remover;
+        //aributo de controle de remocao
+        
+        bool remover;
 
-        public:
+    public:
 
-            //construtor e destrutor
-           
-            Estado(const IDs::IDs ID);
-            virtual ~Estado();
+        //construtor e destrutor
+        
+        explicit Estado(const IDs::IDs ID);
+        ~Estado() override;
 
-            //metodos responsaveis pela visualizacao e atualizacao da classe
-           
-            virtual void executar() = 0;
-            virtual void desenhar();
+        //metodos responsaveis pela visualizacao e atualizacao da classe
+        
+        virtual void executar() = 0;
+        void draw() override;
 
-            //metodo que altera oo estado do observador da classe
-         
-            virtual void mudarEstadoListener(const bool ativo) = 0;
-            
-            //metodo de acesso ao atributo remover
-          
-            const bool getRemover();
+        //metodo que altera oo estado do observador da classe
+        
+        virtual void mudarEstadoListener(const bool ativo) = 0;
+        
+        //metodo de acesso ao atributo remover
+        
+        const bool getRemover();
 
-            //metodo modificacao ao atributo remover
-          
-            void setRemover();
+        //metodo modificacao ao atributo remover
+        
+        void setRemover();
 
-        };
+    };
 
-    }
 }

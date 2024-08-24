@@ -8,7 +8,7 @@ namespace Game{
         MenuDeSelecao::MenuDeSelecao(Fase::Fase* fase):
         MenuPausa(IDs::IDs::menu_de_selecao_fase,"Menu de Selecao", fase), pArquivo(new Gerenciador::GerenciadorArquivo()), listaDeSelecao()
         {
-            sf::Vector2f posJanela = pGrafico->getCamera().getCenter();
+            sf::Vector2f posJanela = m_pGrafic->getCamera().getCenter();
             
             atualizarPosicaoFundo();
             sf::Vector2f posFundoEscuro = sf::Vector2f(posFundo.x - tamJanela.x / 2.0f, posFundo.y - tamJanela.y / 2.0f);
@@ -39,7 +39,7 @@ namespace Game{
         void MenuDeSelecao::inicializarBotoes()
         {
             std::list<Botao::BotaoTexto*>::iterator itAux = listaDeBotao.begin();
-            sf::Vector2f posJanela = pGrafico->getCamera().getCenter();
+            sf::Vector2f posJanela = m_pGrafic->getCamera().getCenter();
             int auxTam = 0;
             
             while (itAux != listaDeBotao.end())
@@ -102,15 +102,15 @@ namespace Game{
 
         void MenuDeSelecao::executar()
         {
-            fase->desenhar();
+            fase->draw();
 
-            pGrafico->desenhaElemento(fundoEscuro);
+            m_pGrafic->desenhaElemento(fundoEscuro);
 
-            pGrafico->desenhaElemento(titulo.getTexto());
+            m_pGrafic->desenhaElemento(titulo.getTexto());
 
-            (*itSelecaoFase)->desenhar();
+            (*itSelecaoFase)->draw();
 
-            desenhar();
+            draw();
         }
 
         const IDs::IDs MenuDeSelecao::getIDdeSelecao()

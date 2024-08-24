@@ -35,13 +35,8 @@ namespace Game{
         */
         GerenciadorDeEstado::~GerenciadorDeEstado()
         {
-            if(pEstado != nullptr)
-                delete(pEstado);
-            
-            pEstado = nullptr;
-
             if(pMusica != nullptr)
-                delete(pMusica);
+                delete pMusica;
             
             pMusica = nullptr;
 
@@ -53,7 +48,6 @@ namespace Game{
             }
 
             if(pEstado){
-                delete(pEstado);
                 pEstado = nullptr;
             }
         }
@@ -129,8 +123,8 @@ namespace Game{
             }
             else
             {
-                Gerenciador::GerenciadorGrafico* pGrafico = pGrafico->getGerenciadorGrafico();
-                pGrafico->fechaJanela();
+                Gerenciador::GerenciadorGrafico* m_pGrafic = m_pGrafic->getGerenciadorGrafico();
+                m_pGrafic->fechaJanela();
             }
         }
 

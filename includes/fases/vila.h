@@ -5,36 +5,34 @@
 #include "../includes/entidade/npcs/npc.h"
 #include "../includes/entidade/Obstaculo/casa.h"
 
-namespace Game{
-
-    namespace Fase{
-
-        class Vila : public Fase{
+namespace Game::Fase{
 
 
-            private:
+    class Vila : public Fase{
 
-                std::vector<sf::RectangleShape> objCenarios;
 
-            public:
+    private:
 
-                Vila();
-                ~Vila();
+        std::vector<sf::RectangleShape> objCenarios;
 
-                void criarFundo();
-                void criarMapa();
-                void criarPlataforma(const sf::Vector2f pos);
-                void criarNpc(sf::Vector2i pos, const IDs::IDs IDnpc);
-                void criarCasaPequena(sf::Vector2i pos);
-                void criarCasaMedia(sf::Vector2i pos);
-                void criarCasaGrande(sf::Vector2i pos);
-                void criarCaixotes(sf::Vector2i pos);
-                void criarCarroca(sf::Vector2i pos);
-                void criarPostes(sf::Vector2i pos);
-                void desenharObjsCenario();
+    public:
 
-                void desenhar();
-                void executar();
-        };
-    }
+        Vila();
+        ~Vila() override;
+
+        void criarFundo() override;
+        void criarMapa() override;
+        void criarPlataforma(const sf::Vector2f pos) override;
+        void criarNpc(sf::Vector2i pos, const IDs::IDs IDnpc);
+        void criarCasaPequena(sf::Vector2i pos);
+        void criarCasaMedia(sf::Vector2i pos);
+        void criarCasaGrande(sf::Vector2i pos);
+        void criarCaixotes(sf::Vector2i pos);
+        void criarCarroca(sf::Vector2i pos);
+        void criarPostes(sf::Vector2i pos);
+        void desenharObjsCenario();
+
+        void draw() override;
+        void executar() override;
+    };
 }

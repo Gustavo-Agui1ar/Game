@@ -3,50 +3,44 @@
 
 #include <SFML/Graphics.hpp>
 
-namespace Game{
+namespace Game::Fundo{
+    class Camada{
 
-    namespace Fundo{
+    private:
 
-        class Camada{
+        //atributo de locomocao do fundo
+    
+        const sf::Vector2f tamJanela;
+        const float velocidade;
 
-        private:
-
-            //atributo de locomocao do fundo
+        //atributos do fundo da camada 
         
-            const sf::Vector2f tamJanela;
-            const float velocidade;
+        sf::RectangleShape fundoAuxiliar;
+        sf::RectangleShape fundo;
+        
+        //atributos da imageem do fundo
+        
+        sf::Texture textura;
+        sf::IntRect escala;
 
-            //atributos do fundo da camada 
-          
-            sf::RectangleShape fundoAuxiliar;
-            sf::RectangleShape fundo;
-            
-            //atributos da imageem do fundo
-           
-            sf::Texture textura;
-            sf::IntRect escala;
+        //metodo que faz a troca de fundos
+        
+        void trocarTextura();
 
-            //metodo que faz a troca de fundos
-         
-            void trocarTextura();
+    public:
 
-        public:
+        //construtor e destrutor
+        
+        Camada(const sf::Vector2f tamJanela, sf::Texture textura,const float velocidade);
+        ~Camada();
 
-            //construtor e destrutor
-         
-            Camada(const sf::Vector2f tamJanela, sf::Texture textura,const float velocidade);
-            ~Camada();
+        //metodo de vizualizacao
+        
+        void desenharCamada(sf::RenderWindow* window);
+        
+        //metodo de atualizacao da camada
+        
+        void atualizar(const sf::Vector2f ds, const sf::Vector2f posCameraAtual);
 
-            //metodo de vizualizacao
-          
-            void desenharCamada(sf::RenderWindow* window);
-            
-            //metodo de atualizacao da camada
-         
-            void atualizar(const sf::Vector2f ds, const sf::Vector2f posCameraAtual);
-
-        };
-
-
-    }
+    };
 }

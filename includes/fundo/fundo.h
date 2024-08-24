@@ -4,42 +4,36 @@
 #include "../entidade/Ente.h"
 #include "camada.h"
 
-namespace Game{
+namespace Game::Fundo{
+    class Fundo : public Ente{
 
-    namespace Fundo{
+    private:
 
-        class Fundo : public Ente{
+        //atributo de posicao da camera antetrior
+        
+        sf::Vector2f posCameraAnterior;
 
-        private:
+        //atributo que armazena todas as camadas que geram o fundo
+        
+        std::vector<Camada*> camadas;
 
-            //atributo de posicao da camera antetrior
-           
-            sf::Vector2f posCameraAnterior;
+    public:
 
-            //atributo que armazena todas as camadas que geram o fundo
-            
-            std::vector<Camada*> camadas;
+        //construtor e destrutor
+        
+        explicit Fundo(IDs::IDs ID);
+        ~Fundo() override;
 
-        public:
+        //metodo de vizualizacao
+        
+        void draw() override;
 
-            //construtor e destrutor
-           
-            Fundo(IDs::IDs ID);
-            ~Fundo();
-
-            //metodo de vizualizacao
-         
-            void desenhar();
-
-            //metodo de adicao de camada
-          
-            void addCamada(const char* caminhoTextura, const float vel);
-            
-            //metodo de satualizacao
-         
-            void executar();
-        };
-
-    }
-
+        //metodo de adicao de camada
+        
+        void addCamada(const char* caminhoTextura, const float vel);
+        
+        //metodo de satualizacao
+        
+        void executar();
+    };
 }

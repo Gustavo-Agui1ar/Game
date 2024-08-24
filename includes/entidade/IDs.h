@@ -9,6 +9,7 @@ namespace IDs{
            
             //personagens 
             jogador ,
+           
             esqueleto,
             arqueiro,
             red_slime ,

@@ -4,50 +4,48 @@
 #include "menuPausa.h"
 #include "../gerenciador/gerenciadorArquivo.h"
 
-namespace Game{
+namespace Game::Menu{
 
-    namespace Menu{
 
-        class MenuSalvar : public MenuPausa{
+    class MenuSalvar : public MenuPausa{
 
-            private:
-               
-                Gerenciador::GerenciadorArquivo gArquivo;
-                
-                //atributos relacionados aos cards 
+    private:
+        
+        Gerenciador::GerenciadorArquivo gArquivo;
+        
+        //atributos relacionados aos cards 
 
-                std::list<Card*> listaCards;
-                std::list<Card*>::iterator itCard;
+        std::list<Card*> listaCards;
+        std::list<Card*>::iterator itCard;
 
-                //metodo de inicializacao
+        //metodo de inicializacao
 
-                void inicializarCards();
-                
-            public:
+        void inicializarCards();
+        
+    public:
 
-                //construtor e destrutor
+        //construtor e destrutor
 
-                MenuSalvar(Fase::Fase* fase);
-                ~MenuSalvar();
+        explicit MenuSalvar(Fase::Fase* fase);
+        ~MenuSalvar() override;
 
-                //metodo criador de botoes
+        //metodo criador de botoes
 
-                void criarBotoes();
+        void criarBotoes() override;
 
-                //metodo ue salva as informacoes do atributo fase da classe MenuPausa
+        //metodo ue salva as informacoes do atributo fase da classe MenuPausa
 
-                void salvar();
+        void salvar();
 
-                //metodo de verificacao de eventos card
+        //metodo de verificacao de eventos card
 
-                void selecionaEsquerda();
-                void selecionaDireita();
+        void selecionaEsquerda() override;
+        void selecionaDireita() override;
 
-                //metodos de atualizacao e visualizacao
+        //metodos de atualizacao e visualizacao
 
-                void desenharCards();
-                void executar();
+        void desenharCards();
+        void executar() override;
 
-        };
-    }
+    };
 }

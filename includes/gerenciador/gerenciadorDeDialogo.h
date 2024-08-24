@@ -15,34 +15,33 @@ namespace Game{
 
         class GerenciadorDeDialogo{
 
+        private:
 
-            private:
+            std::list<Menu::Botao::BalaoDeFala*> dialogos;
+            std::list<Menu::Botao::BalaoDeFala*>::iterator dialogoAtual;
 
-                std::list<Menu::Botao::BalaoDeFala*> dialogos;
-                std::list<Menu::Botao::BalaoDeFala*>::iterator dialogoAtual;
+            bool fimUltimaFala;
+            bool nomeEsquerda;
 
-                bool fimUltimaFala;
-                bool nomeEsquerda;
+            Listener::ListenerDialogo* pLDialogo;
 
-                Listener::ListenerDialogo* pLDialogo;
+            void inicializarDialogos(std::vector<std::string> nomes, std::vector<std::string> falas);
 
-                void inicializarDialogos(std::vector<std::string> nomes, std::vector<std::string> falas);
+        public:
 
-            public:
+            GerenciadorDeDialogo(std::vector<std::string> nomes, std::vector<std::string> falas);
+            ~GerenciadorDeDialogo();
 
-                GerenciadorDeDialogo(std::vector<std::string> nomes, std::vector<std::string> falas);
-                ~GerenciadorDeDialogo();
+            void mudarEstadoListener(const bool ativo);
 
-                void mudarEstadoListener(const bool ativo);
+            void pularDialogo();
+            void proximaFala();
 
-                void pularDialogo();
-                void proximaFala();
+            void atualizar();
+            void draw();
 
-                void atualizar();
-                void desenhar();
-
-                const bool getFimUltimaFala();
-                const bool getFimFalaAtual();
+            const bool getFimUltimaFala();
+            const bool getFimFalaAtual();
 
         };
     }

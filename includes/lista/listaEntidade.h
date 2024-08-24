@@ -5,49 +5,45 @@
 #include  "../entidade/entidade.h"
 
 
-namespace Game{
+namespace Game::Lista{
+    class ListaEntidade
+    {
 
-     namespace Lista{
+    private:
+        //lista
 
-        class ListaEntidade
-        {
+        Lista<Entidade::Entidade> objListaEntidade;
+    
+    public:
 
-        private:
-            //lista
+        //construtor e detrutor
 
-            Lista<Entidade::Entidade> objListaEntidade;
+        ListaEntidade();
+        ~ListaEntidade();
+    
+        //metodos de adicao 
+
+        void addEntidade(Entidade::Entidade* entidade, int pos);
+        void addEntidade(Entidade::Entidade* entidade);
         
-        public:
+        //metodos de remocao
 
-            //construtor e detrutor
-
-            ListaEntidade();
-            ~ListaEntidade();
+        void removerEntidade(Entidade::Entidade* entidade);
+        void removerEntidade(int pos);
         
-            //metodos de adicao 
+        //metodos de percorrer a lista
 
-            void addEntidade(Entidade::Entidade* entidade, int pos);
-            void addEntidade(Entidade::Entidade* entidade);
-            
-            //metodos de remocao
+        Entidade::Entidade* operator[](int pos);
+        const int getTam();
+        
+        //metodo que limpa alista
 
-            void removerEntidade(Entidade::Entidade* entidade);
-            void removerEntidade(int pos);
-            
-            //metodos de percorrer a lista
+        void limparLista();
+        
+        //metodos de atualizacao/visualizacao
+        
+        void desenharEntidades();
+        void executar();
 
-            Entidade::Entidade* operator[](int pos);
-            const int getTam();
-            
-            //metodo que limpa alista
-
-            void limparLista();
-            
-            //metodos de atualizacao/visualizacao
-            
-            void desenharEntidades();
-            void executar();
-
-        };
-     }
+    };
 }

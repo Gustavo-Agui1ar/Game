@@ -4,35 +4,31 @@
 
 #include "fase.h"
 
-namespace Game{
+namespace Game::Fase{
+    class Forest : public Fase{
 
-    namespace Fase{
+    public:
 
-        class Forest : public Fase{
+        //contrutores e destrutor
+        
+        explicit Forest(nlohmann::ordered_json entidades);
+        Forest();
+        ~Forest() override;
+        
+        //metodos de criacao de mapa da fase
+        
+        void criarFundo() override;
+        void criarMapa() override;
+        
+        //metodo que cria uma plataforma
+        
+        void criarPlataforma(const sf::Vector2f pos) override;
+        
+        //metodo que recupera o estado salvo da fase
+        
+        void recuperarJogada(nlohmann::ordered_json entidades);
 
-        public:
-
-            //contrutores e destrutor
-          
-            Forest(nlohmann::ordered_json entidades);
-            Forest();
-            ~Forest();
-           
-            //metodos de criacao de mapa da fase
-          
-            void criarFundo();
-            void criarMapa();
-           
-            //metodo que cria uma plataforma
-          
-            void criarPlataforma(const sf::Vector2f pos);
-            
-            //metodo que recupera o estado salvo da fase
-           
-            void recuperarJogada(nlohmann::ordered_json entidades);
-
-        };
-    }
+    };
 
 }
 

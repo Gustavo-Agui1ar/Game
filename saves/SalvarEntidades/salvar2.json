@@ -6,8 +6,8 @@
       "y": 60.0
     },
     "pos": {
-      "x": 900.0,
-      "y": 490.0
+      "x": 1993.4356689453125,
+      "y": 800.0
     },
     "remover": false,
     "velocidade": {
@@ -16,48 +16,48 @@
     },
     "tempoMorrer": 0.0,
     "levandoDano": false,
-    "tempoDano": 2.0213229656219482,
+    "tempoDano": 22.870718002319336,
     "morrendo": false,
     "atacando": false,
     "movendo": false,
     "direcao": false,
     "dano": 20.0,
     "vida": 100.0,
-    "dt": 0.004922000225633383,
+    "dt": 0.0016899999463930726,
     "noChao": true,
     "qtdPulo": 0,
     "tempoAtaque": 0.0,
     "emDash": false,
-    "stamina": 100.0,
-    "podeDash": false,
     "tempoDash": 0.0,
+    "podeDash": false,
     "velDash": 350.0,
     "furia": 100.0,
     "emFuria": false,
     "entrandoEmFuria": false,
     "tempoEntrandoFuria": 0.0,
+    "stamina": 99.96281433105469,
     "lancandoProjetil": false,
     "tempoAtaqueProjetil": 0.0,
-    "tempoAnimacaoAtaque": 0.6000000238418579,
+    "tempoAnimacaoAtaque": 0.8999999761581421,
     "imagemAtual": "PARADO",
-    "tempoTotal": 0.114564910531044,
-    "quadroAtual": 5
+    "tempoTotal": 0.07567401975393295,
+    "quadroAtual": 7
   },
   {
-    "ID": 13,
+    "ID": 21,
     "tam": {
       "x": 30.0,
       "y": 60.0
     },
     "pos": {
-      "x": 0.0,
-      "y": 0.0
+      "x": -1000.0,
+      "y": -1000.0
     },
     "remover": false,
     "dano": 20.0
   },
   {
-    "ID": 9,
+    "ID": 13,
     "tam": {
       "x": 8.0,
       "y": 8.0
@@ -75,8 +75,8 @@
     },
     "colidiu": true,
     "imagemAtual": "ATACA",
-    "tempoTotal": 0.0,
-    "quadroAtual": 0
+    "tempoTotal": 0.005719282198697329,
+    "quadroAtual": 3
   },
   {
     "ID": 2,
@@ -85,8 +85,8 @@
       "y": 60.0
     },
     "pos": {
-      "x": 1576.034423828125,
-      "y": 290.0
+      "x": 1495.7080078125,
+      "y": 800.0
     },
     "remover": false,
     "velocidade": {
@@ -95,23 +95,23 @@
     },
     "tempoMorrer": 0.0,
     "levandoDano": false,
-    "tempoDano": 2.0213229656219482,
+    "tempoDano": 13.956842422485352,
     "morrendo": false,
     "atacando": false,
-    "movendo": true,
+    "movendo": false,
     "direcao": false,
     "dano": 10.0,
-    "vida": 100.0,
-    "dt": 0.004922000225633383,
+    "vida": 40.0,
+    "dt": 0.0016899999463930726,
     "tempoAtaque": 0.0,
-    "tempoMover": 0.5206899046897888,
-    "mover": 0,
-    "imagemAtual": "ANDAR",
-    "tempoTotal": 0.040768031030893326,
-    "quadroAtual": 3
+    "tempoMover": 0.4471067488193512,
+    "mover": 2,
+    "imagemAtual": "PARADO",
+    "tempoTotal": 0.127049058675766,
+    "quadroAtual": 2
   },
   {
-    "ID": 14,
+    "ID": 22,
     "tam": {
       "x": 30.0,
       "y": 60.0
@@ -124,467 +124,422 @@
     "dano": 10.0
   },
   {
-    "ID": 4,
-    "tam": {
-      "x": 30.0,
-      "y": 60.0
-    },
-    "pos": {
-      "x": 2326.035400390625,
-      "y": 790.0
-    },
-    "remover": false,
-    "velocidade": {
-      "x": 50.0,
-      "y": 0.0
-    },
-    "tempoMorrer": 0.0,
-    "levandoDano": false,
-    "tempoDano": 2.0213229656219482,
-    "morrendo": false,
-    "atacando": false,
-    "movendo": true,
-    "direcao": false,
-    "dano": 5.0,
-    "vida": 100.0,
-    "dt": 0.004922000225633383,
-    "tempoAtaque": 0.0,
-    "tempoMover": 0.5206899046897888,
-    "mover": 0,
-    "imagemAtual": "ANDAR",
-    "tempoTotal": 0.04076001048088074,
-    "quadroAtual": 3
-  },
-  {
-    "ID": 14,
-    "tam": {
-      "x": 30.0,
-      "y": 60.0
-    },
-    "pos": {
-      "x": 0.0,
-      "y": 0.0
-    },
-    "remover": false,
-    "dano": 5.0
-  },
-  {
-    "ID": 6,
+    "ID": 10,
     "tam": {
       "x": 200.0,
       "y": 40.0
     },
     "pos": {
       "x": 1400.0,
-      "y": 350.0
+      "y": 360.0
     },
     "remover": false
   },
   {
-    "ID": 6,
+    "ID": 10,
     "tam": {
       "x": 200.0,
       "y": 40.0
     },
     "pos": {
       "x": 1600.0,
-      "y": 350.0
+      "y": 360.0
     },
     "remover": false
   },
   {
-    "ID": 6,
+    "ID": 10,
     "tam": {
       "x": 200.0,
       "y": 40.0
     },
     "pos": {
       "x": 1100.0,
-      "y": 450.0
+      "y": 460.0
     },
     "remover": false
   },
   {
-    "ID": 6,
+    "ID": 10,
     "tam": {
       "x": 200.0,
       "y": 40.0
     },
     "pos": {
       "x": 1900.0,
-      "y": 450.0
+      "y": 460.0
     },
     "remover": false
   },
   {
-    "ID": 6,
+    "ID": 10,
     "tam": {
       "x": 200.0,
       "y": 40.0
     },
     "pos": {
       "x": 1550.0,
-      "y": 500.0
+      "y": 510.0
     },
     "remover": false
   },
   {
-    "ID": 6,
+    "ID": 10,
     "tam": {
       "x": 200.0,
       "y": 40.0
     },
     "pos": {
       "x": 0.0,
-      "y": 550.0
+      "y": 560.0
     },
     "remover": false
   },
   {
-    "ID": 6,
+    "ID": 10,
     "tam": {
       "x": 200.0,
       "y": 40.0
     },
     "pos": {
       "x": 200.0,
-      "y": 550.0
+      "y": 560.0
     },
     "remover": false
   },
   {
-    "ID": 6,
+    "ID": 10,
     "tam": {
       "x": 200.0,
       "y": 40.0
     },
     "pos": {
       "x": 850.0,
-      "y": 550.0
+      "y": 560.0
     },
     "remover": false
   },
   {
-    "ID": 6,
+    "ID": 10,
     "tam": {
       "x": 200.0,
       "y": 40.0
     },
     "pos": {
       "x": 650.0,
-      "y": 650.0
+      "y": 660.0
     },
     "remover": false
   },
   {
-    "ID": 6,
+    "ID": 10,
     "tam": {
       "x": 200.0,
       "y": 40.0
     },
     "pos": {
       "x": 150.0,
-      "y": 750.0
+      "y": 760.0
     },
     "remover": false
   },
   {
-    "ID": 6,
+    "ID": 10,
     "tam": {
       "x": 200.0,
       "y": 40.0
     },
     "pos": {
       "x": 500.0,
-      "y": 750.0
+      "y": 760.0
     },
     "remover": false
   },
   {
-    "ID": 6,
+    "ID": 10,
     "tam": {
       "x": 200.0,
       "y": 40.0
     },
     "pos": {
       "x": 0.0,
-      "y": 850.0
+      "y": 860.0
     },
     "remover": false
   },
   {
-    "ID": 6,
+    "ID": 10,
     "tam": {
       "x": 200.0,
       "y": 40.0
     },
     "pos": {
       "x": 200.0,
-      "y": 850.0
+      "y": 860.0
     },
     "remover": false
   },
   {
-    "ID": 6,
+    "ID": 10,
     "tam": {
       "x": 200.0,
       "y": 40.0
     },
     "pos": {
       "x": 400.0,
-      "y": 850.0
+      "y": 860.0
     },
     "remover": false
   },
   {
-    "ID": 6,
+    "ID": 10,
     "tam": {
       "x": 200.0,
       "y": 40.0
     },
     "pos": {
       "x": 600.0,
-      "y": 850.0
+      "y": 860.0
     },
     "remover": false
   },
   {
-    "ID": 6,
+    "ID": 10,
     "tam": {
       "x": 200.0,
       "y": 40.0
     },
     "pos": {
       "x": 800.0,
-      "y": 850.0
+      "y": 860.0
     },
     "remover": false
   },
   {
-    "ID": 6,
+    "ID": 10,
     "tam": {
       "x": 200.0,
       "y": 40.0
     },
     "pos": {
       "x": 1000.0,
-      "y": 850.0
+      "y": 860.0
     },
     "remover": false
   },
   {
-    "ID": 6,
+    "ID": 10,
     "tam": {
       "x": 200.0,
       "y": 40.0
     },
     "pos": {
       "x": 1200.0,
-      "y": 850.0
+      "y": 860.0
     },
     "remover": false
   },
   {
-    "ID": 6,
+    "ID": 10,
     "tam": {
       "x": 200.0,
       "y": 40.0
     },
     "pos": {
       "x": 1400.0,
-      "y": 850.0
+      "y": 860.0
     },
     "remover": false
   },
   {
-    "ID": 6,
+    "ID": 10,
     "tam": {
       "x": 200.0,
       "y": 40.0
     },
     "pos": {
       "x": 1600.0,
-      "y": 850.0
+      "y": 860.0
     },
     "remover": false
   },
   {
-    "ID": 6,
+    "ID": 10,
     "tam": {
       "x": 200.0,
       "y": 40.0
     },
     "pos": {
       "x": 1800.0,
-      "y": 850.0
+      "y": 860.0
     },
     "remover": false
   },
   {
-    "ID": 6,
+    "ID": 10,
     "tam": {
       "x": 200.0,
       "y": 40.0
     },
     "pos": {
       "x": 2000.0,
-      "y": 850.0
+      "y": 860.0
     },
     "remover": false
   },
   {
-    "ID": 6,
+    "ID": 10,
     "tam": {
       "x": 200.0,
       "y": 40.0
     },
     "pos": {
       "x": 2200.0,
-      "y": 850.0
+      "y": 860.0
     },
     "remover": false
   },
   {
-    "ID": 6,
+    "ID": 10,
     "tam": {
       "x": 200.0,
       "y": 40.0
     },
     "pos": {
       "x": 2400.0,
-      "y": 850.0
+      "y": 860.0
     },
     "remover": false
   },
   {
-    "ID": 6,
+    "ID": 10,
     "tam": {
       "x": 200.0,
       "y": 40.0
     },
     "pos": {
       "x": 2600.0,
-      "y": 850.0
+      "y": 860.0
     },
     "remover": false
   },
   {
-    "ID": 6,
+    "ID": 10,
     "tam": {
       "x": 200.0,
       "y": 40.0
     },
     "pos": {
       "x": 2800.0,
-      "y": 850.0
+      "y": 860.0
     },
     "remover": false
   },
   {
-    "ID": 6,
+    "ID": 10,
     "tam": {
       "x": 200.0,
       "y": 40.0
     },
     "pos": {
       "x": 3000.0,
-      "y": 850.0
+      "y": 860.0
     },
     "remover": false
   },
   {
-    "ID": 6,
+    "ID": 10,
     "tam": {
       "x": 200.0,
       "y": 40.0
     },
     "pos": {
       "x": 3200.0,
-      "y": 850.0
+      "y": 860.0
     },
     "remover": false
   },
   {
-    "ID": 6,
+    "ID": 10,
     "tam": {
       "x": 200.0,
       "y": 40.0
     },
     "pos": {
       "x": 3400.0,
-      "y": 850.0
+      "y": 860.0
     },
     "remover": false
   },
   {
-    "ID": 6,
+    "ID": 10,
     "tam": {
       "x": 200.0,
       "y": 40.0
     },
     "pos": {
       "x": 3600.0,
-      "y": 850.0
+      "y": 860.0
     },
     "remover": false
   },
   {
-    "ID": 6,
+    "ID": 10,
     "tam": {
       "x": 200.0,
       "y": 40.0
     },
     "pos": {
       "x": 3800.0,
-      "y": 850.0
+      "y": 860.0
     },
     "remover": false
   },
   {
-    "ID": 6,
+    "ID": 10,
     "tam": {
       "x": 200.0,
       "y": 40.0
     },
     "pos": {
       "x": 4000.0,
-      "y": 850.0
+      "y": 860.0
     },
     "remover": false
   },
   {
-    "ID": 6,
+    "ID": 10,
     "tam": {
       "x": 200.0,
       "y": 40.0
     },
     "pos": {
       "x": 4200.0,
-      "y": 850.0
+      "y": 860.0
     },
     "remover": false
   },
   {
-    "ID": 6,
+    "ID": 10,
     "tam": {
       "x": 200.0,
       "y": 40.0
     },
     "pos": {
       "x": 4400.0,
-      "y": 850.0
+      "y": 860.0
     },
     "remover": false
   },
   {
-    "ID": 6,
+    "ID": 10,
     "tam": {
       "x": 200.0,
       "y": 40.0
     },
     "pos": {
       "x": 4600.0,
-      "y": 850.0
+      "y": 860.0
     },
     "remover": false
   }

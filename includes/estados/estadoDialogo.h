@@ -7,34 +7,30 @@
 #include "../includes/gerenciador/gerenciadorDeDialogo.h"
 #include "../includes/gerenciador/gerenciadorArquivo.h"
 
-namespace Game{
-    
-    namespace Estado{
-
+namespace Game::Estado{
         class EstadoDialogo : public Estado {
 
-            private:
+        private:
 
-                Fase::Fase* fase;
-                Gerenciador::GerenciadorDeDialogo* pDialogo;
+            Fase::Fase* fase;
+            Gerenciador::GerenciadorDeDialogo* pDialogo;
 
-                void inicializarFalas(std::vector<std::string> arquivoFalas);
+            void inicializarFalas(std::vector<std::string> arquivoFalas);
 
-            public:
+        public:
 
-                EstadoDialogo(const IDs::IDs ID);
-                ~EstadoDialogo();
+            explicit EstadoDialogo(const IDs::IDs ID);
+            ~EstadoDialogo() override;
 
-                void setFase(Fase::Fase* fase);
-                Fase::Fase* getFase();
+            void setFase(Fase::Fase* fase);
+            Fase::Fase* getFase();
 
-                void setDialogo(const char* arquivoDialogo);
-                
-                void executar();
-                void desenhar();
+            void setDialogo(const char* arquivoDialogo);
+            
+            void executar() override;
+            void draw() override;
 
-                void mudarEstadoListener(const bool ativo);
-        
-        };
-    }
+            void mudarEstadoListener(const bool ativo) override;
+    
+    };
 }

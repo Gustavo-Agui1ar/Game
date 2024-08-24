@@ -169,7 +169,7 @@ namespace Game{
         /**
          *  @brief metodo que desenha o card na tela
         */
-        void Card::desenhar()
+        void Card::draw()
         {
             pGrafico->desenhaElemento(*corpo);
         }

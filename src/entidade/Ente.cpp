@@ -3,7 +3,7 @@
 namespace Game{
 
         //inicializa o ponteiro estatico de ente.
-        Gerenciador::GerenciadorGrafico* Ente::pGrafico = Gerenciador::GerenciadorGrafico::getGerenciadorGrafico();
+        Gerenciador::GerenciadorGrafico* Ente::m_pGrafic = Gerenciador::GerenciadorGrafico::getGerenciadorGrafico();
 
         /**
          * @brief construtora da classe ente
@@ -19,9 +19,7 @@ namespace Game{
         /**
          * @brief destrutora da classe ente
         */
-        Ente::~Ente(){
-
-        }
+        Ente::~Ente() = default;
 
         /**
          * @brief metodo que retorna o id de ente

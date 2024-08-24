@@ -32,12 +32,9 @@ namespace Game{
         {
             if(window)
             {
-                delete (window);
+                delete window;
                 window = nullptr;
             }
-            if(pGrafico != nullptr)
-                delete(pGrafico);
-                
             pGrafico = nullptr;
         }
 

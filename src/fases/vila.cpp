@@ -88,7 +88,7 @@ namespace Game{
         void Vila::criarNpc(sf::Vector2i pos, const IDs::IDs IDnpc)
         {
             //provisorio
-            Entidade::Personagem::Npc::Npc* npc = new Entidade::Personagem::Npc::Npc(sf::Vector2f(pos.x * 50.f, pos.y * 50.f), IDnpc);
+            auto* npc = new Entidade::Character::Npc::Npc(sf::Vector2f(pos.x * 50.f, pos.y * 50.f), IDnpc);
 
             if(npc == nullptr)
             {
@@ -101,7 +101,7 @@ namespace Game{
 
         void Vila::criarCasaPequena (sf::Vector2i pos)
         {
-            Entidade::Obstaculo::Casa* casa = new Entidade::Obstaculo::Casa(sf::Vector2f(300.0f, 250.0f), IDs::IDs::casa_pequena, sf::Vector2f(pos.x * 50.f, pos.y * 50.f + 10.f)); 
+            auto* casa = new Entidade::Obstaculo::Casa(sf::Vector2f(300.0f, 250.0f), IDs::IDs::casa_pequena, sf::Vector2f(pos.x * 50.f, pos.y * 50.f + 10.f)); 
 
             casa->setTextura("../Game/animations/cenarioVila/house-c.png");
 
@@ -109,7 +109,7 @@ namespace Game{
         }
         void Vila::criarCasaMedia (sf::Vector2i pos)
         {   
-            Entidade::Obstaculo::Casa* casa = new Entidade::Obstaculo::Casa(sf::Vector2f(250.0f, 300.0f), IDs::IDs::casa_media, sf::Vector2f(pos.x * 50.f - 30.f, pos.y * 50.f - 40.f)); 
+            auto* casa = new Entidade::Obstaculo::Casa(sf::Vector2f(250.0f, 300.0f), IDs::IDs::casa_media, sf::Vector2f(pos.x * 50.f - 30.f, pos.y * 50.f - 40.f)); 
 
             casa->setTextura("../Game/animations/cenarioVila/house-a.png");
 
@@ -118,7 +118,7 @@ namespace Game{
        
         void Vila::criarCasaGrande(sf::Vector2i pos)
         {
-            Entidade::Obstaculo::Casa* casa = new Entidade::Obstaculo::Casa(sf::Vector2f(300.0f, 350.0f), IDs::IDs::casa_grande, sf::Vector2f(pos.x * 50.f - 30.f, pos.y * 50.f - 90.f)); 
+            auto* casa = new Entidade::Obstaculo::Casa(sf::Vector2f(300.0f, 350.0f), IDs::IDs::casa_grande, sf::Vector2f(pos.x * 50.f - 30.f, pos.y * 50.f - 90.f)); 
 
             casa->setTextura("../Game/animations/cenarioVila/house-b.png");
 
@@ -127,13 +127,13 @@ namespace Game{
 
         void Vila::criarPlataforma(const sf::Vector2f pos)
         {
-            Entidade::Obstaculo::Plataforma* plataforma = new Entidade::Obstaculo::Plataforma(pos,sf::Vector2f(200.0f,40.0f),IDs::IDs::plataforma,  IDs::IDs::vila);
+            auto* plataforma = new Entidade::Obstaculo::Plataforma(pos,sf::Vector2f(200.0f,40.0f),IDs::IDs::plataforma,  IDs::IDs::vila);
             if(plataforma == nullptr)
             {
                 std::cout<<"Fase::Vila: nao foi possivel criar uma plataforma";
                 exit(1);
             }
-            Entidade::Entidade* plat = static_cast<Entidade::Entidade*>(plataforma);
+            auto* plat = static_cast<Entidade::Entidade*>(plataforma);
             listaObstaculos->addEntidade(plat);
         }
        
@@ -141,7 +141,7 @@ namespace Game{
         {
             sf::RectangleShape caixa(sf::Vector2f(50.f, 50.f));
 
-            sf::Texture* texCaixa = new sf::Texture(pGrafico->carregarTextura("../Game/animations/cenarioVila/cenario1.png"));
+            sf::Texture* texCaixa = new sf::Texture(m_pGrafic->carregarTextura("../Game/animations/cenarioVila/cenario1.png"));
             
             caixa.setPosition(sf::Vector2f(pos.x * 50.f , pos.y * 50.f + 10.f));
             caixa.setTexture(texCaixa);
@@ -152,7 +152,7 @@ namespace Game{
         {
             sf::RectangleShape poste(sf::Vector2f(50.f, 100.f));
 
-            sf::Texture* texPoste = new sf::Texture(pGrafico->carregarTextura("../Game/animations/cenarioVila/cenario2.png"));
+            sf::Texture* texPoste = new sf::Texture(m_pGrafic->carregarTextura("../Game/animations/cenarioVila/cenario2.png"));
             
             poste.setPosition(sf::Vector2f(pos.x * 50.f , pos.y * 50.f + 10.f));
             poste.setTexture(texPoste);
@@ -164,7 +164,7 @@ namespace Game{
         {
             sf::RectangleShape carroca(sf::Vector2f(100.f, 100.f));
 
-            sf::Texture* texCarroca = new sf::Texture(pGrafico->carregarTextura("../Game/animations/cenarioVila/cenario3.png"));
+            sf::Texture* texCarroca = new sf::Texture(m_pGrafic->carregarTextura("../Game/animations/cenarioVila/cenario3.png"));
             
             carroca.setPosition(sf::Vector2f(pos.x * 50.f , pos.y * 50.f + 10.f));
             carroca.setTexture(texCarroca);
@@ -200,7 +200,7 @@ namespace Game{
          * @brief metodo responsavel por desenhar as
          * listas  de  personagens  e obstaculos
         */
-        void Vila::desenhar()
+        void Vila::draw()
         {
             fundo.executar();
 
@@ -216,7 +216,7 @@ namespace Game{
 
             while(it != objCenarios.end())
             {
-                pGrafico->desenhaElemento((*it));
+                m_pGrafic->desenhaElemento((*it));
                 it++;
             }
         }

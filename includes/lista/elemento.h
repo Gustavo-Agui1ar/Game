@@ -1,101 +1,90 @@
 
 #pragma once
 
-namespace Game{
-
-    namespace Lista{
-
-        template<class TE>
-        class Elemento
-        {
-            
-        private:
-
-            //atributos de lista
-            Elemento<TE>* prox;
-
-            TE* elemento;
-
-        public:
+namespace Game::Lista{
+    template<class TE>
+    class Elemento
+    {
         
-            //construtora e destrutora
+    private:
 
-            Elemento();
-            ~Elemento();
-            
-            //metodos seters
+        //atributos de lista
+        Elemento<TE>* m_next = nullptr;
 
-            void setProx(Elemento<TE>* prox);
-            void setElemento(TE* elemento);
-            
-            //metodos geters
+        TE* m_element = nullptr;
 
-            Elemento<TE>* getProx();
-            TE* getElemento();
-        };
+    public:
+    
+        //construtora e destrutora
+
+        Elemento();
+        ~Elemento();
         
-        /**
-         * construtora da classe
-        */
-        template<class TE>
-        Elemento<TE>::Elemento()
-        {
-            elemento = nullptr;
-            prox = nullptr;
-        }
+        //metodos seters
+
+        void setProx(Elemento<TE>* next);
+        void setElemento(TE* element);
         
-        /**
-         * destrutora da classe
-        */
-        template<class TE>
-        Elemento<TE>::~Elemento()
-        {
-            
-        }
+        //metodos geters
 
-        /**
-         * metodo que seta o apontamento do proximo elemento
-         * 
-         * parametros:
-         * 
-         * prox: elemento a ser setado
-        */
-        template<class TE>
-        void Elemento<TE>::setProx(Elemento<TE>* prox)
-        {
-            this->prox = prox;
-        }
+        Elemento<TE>* getProx();
+        TE* getElemento();
+    };
+    
+    /**
+     * construtora da classe
+    */
+    template<class TE>
+    Elemento<TE>::Elemento() = default;
+    
+    /**
+     * destrutora da classe
+    */
+    template<class TE>
+    Elemento<TE>::~Elemento() = default;
 
-        /**
-         * metodo que seta o apontamento do elemento
-         * 
-         * parametros:
-         * 
-         * elemento : elemento a ser setado
-        */
-        template<class TE>
-        void Elemento<TE>::setElemento(TE* elemento)
-        {
-            this->elemento = elemento;
-        }
-
-        /**
-         * metodo que retorna o proximo
-        */
-        template<class TE>
-        Elemento<TE>* Elemento<TE>::getProx()
-        {
-            return prox;
-        }
-
-        /**
-         * metodo que retorna o elemento
-        */
-        template<class TE>
-        TE* Elemento<TE>::getElemento()
-        {
-            return elemento;
-        }
-
+    /**
+     * metodo que seta o apontamento do proximo elemento
+     * 
+     * parametros:
+     * 
+     * prox: elemento a ser setado
+    */
+    template<class TE>
+    void Elemento<TE>::setProx(Elemento<TE>* next)
+    {
+        m_next = next;
     }
+
+    /**
+     * metodo que seta o apontamento do elemento
+     * 
+     * parametros:
+     * 
+     * elemento : elemento a ser setado
+    */
+    template<class TE>
+    void Elemento<TE>::setElemento(TE* element)
+    {
+        m_element = element;
+    }
+
+    /**
+     * metodo que retorna o proximo
+    */
+    template<class TE>
+    Elemento<TE>* Elemento<TE>::getProx()
+    {
+        return m_next;
+    }
+
+    /**
+     * metodo que retorna o elemento
+    */
+    template<class TE>
+    TE* Elemento<TE>::getElemento()
+    {
+        return m_element;
+    }
+
 }

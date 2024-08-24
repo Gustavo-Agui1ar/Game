@@ -112,7 +112,7 @@ namespace Game{
                 } 
                 else 
                 {
-                    aux->atualizar();
+                    aux->update();
                 }
             }
         }
@@ -128,7 +128,7 @@ namespace Game{
             for(int i = tam - 1 ; i >= 0 ; i--)
             {
                 aux = objListaEntidade.operator[](i);
-                aux->desenhar();
+                aux->draw();
             }
         }
 

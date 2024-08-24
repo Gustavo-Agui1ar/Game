@@ -5,42 +5,34 @@
 #include "texto.h"
 #include "../includes/gerenciador/gerenciadorGrafico.h"
 
-namespace Game{
+namespace Game::Menu::Botao{
+    class TextoFala : public Texto{
 
-    namespace Menu{
+        private:
 
-        namespace Botao{
+        const float tempoDeTroca;
+        float tempo;
+        bool fimTexto;
 
-            class TextoFala : public Texto{
+        Gerenciador::GerenciadorGrafico* pGrafico;
 
-                
-                private:
+        std::string falaCompleta;
+        std::string::iterator letraFala;
 
-                    const float tempoDeTroca;
-                    float tempo;
-                    bool fimTexto;
+    public:
 
-                    Gerenciador::GerenciadorGrafico* pGrafico;
+        TextoFala(const float tempoTroca, const sf::Font fonte, const std::string infoTexto, const unsigned int fonteTam = 50);
+        ~TextoFala();
 
-                    std::string falaCompleta;
-                    std::string::iterator letraFala;
+        void incrementarFala();
+        void inicializarIterador();
+        void mostrarFalaInteira();
+        const bool getFimTexto();
+        const float getTempoTroca();
+        void setTexto(sf::String texto);
+        std::string getFalaCompleta();
+        void atualizar();
 
-                public:
+    };
 
-                    TextoFala(const float tempoTroca, const sf::Font fonte, const std::string infoTexto, const unsigned int fonteTam = 50);
-                    ~TextoFala();
-
-                    void incrementarFala();
-                    void inicializarIterador();
-                    void mostrarFalaInteira();
-                    const bool getFimTexto();
-                    const float getTempoTroca();
-                    void setTexto(sf::String texto);
-                    std::string getFalaCompleta();
-                    void atualizar();
-
-            };
-
-        }
-    }
 }

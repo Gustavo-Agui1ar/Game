@@ -3,36 +3,30 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
 
-namespace Game {
+namespace Game::Gerenciador {
+    class Camera {
+        private:
 
-    namespace Gerenciador {
+            //atributos de visualizacao 
+            
+            sf::Vector2f tamJanela;
+            sf::View camera;
 
-        class Camera {
-            private:
+        public:
 
-                //atributos de visualizacao 
-              
-                sf::Vector2f tamJanela;
-                sf::View camera;
+            //construtor e destrutor
+            
+            explicit Camera(const sf::Vector2f tamJanela);
+            ~Camera();
 
-            public:
+            //metodo acessador do atributo camera
+            
+            sf::View getCamera();
+            void setTam(sf::Vector2f tam);
 
-                //construtor e destrutor
-               
-                Camera(const sf::Vector2f tamJanela);
-                ~Camera();
-
-                //metodo acessador do atributo camera
-                
-                sf::View getCamera();
-                void setTam(sf::Vector2f tam);
-
-                //metodos de atualizacao da camera
-              
-                void resetar(const sf::Vector2f posCenter);
-                void atualizar(const sf::Vector2f pos);
-        };
-
-    }
-
+            //metodos de atualizacao da camera
+            
+            void resetar(const sf::Vector2f posCenter);
+            void atualizar(const sf::Vector2f pos);
+    };
 }

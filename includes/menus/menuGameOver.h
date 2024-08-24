@@ -3,22 +3,18 @@
 
 #include "menuPausa.h"
 
-namespace Game {
+namespace Game::Menu {
+    class MenuGameOver : public MenuPausa{
+    
+    public:
 
-    namespace Menu{
+        //construtor e destrutor
 
-        class MenuGameOver : public MenuPausa{
-        
-        public:
+        explicit MenuGameOver(Fase::Fase* fase);
+        ~MenuGameOver() override;
 
-            //construtor e destrutor
+        //metodo que cria botoes
 
-            MenuGameOver(Fase::Fase* fase);
-            ~MenuGameOver();
-
-            //metodo que cria botoes
-
-            void criarBotoes();
-        };
-    }
+        void criarBotoes() override;
+    };
 }

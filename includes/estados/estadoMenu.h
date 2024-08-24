@@ -33,12 +33,12 @@ namespace Game{
 
                 //construtor e destrutor 
              
-                EstadoMenu(const IDs::IDs ID);
-                ~EstadoMenu();
+                explicit EstadoMenu(const IDs::IDs ID);
+                ~EstadoMenu() override;
 
                 //metodo que altera o estado do observador da classe
               
-                void mudarEstadoListener(const bool ativo);
+                void mudarEstadoListener(const bool ativo) override;
                 
                 //getters daa classe
              
@@ -47,7 +47,7 @@ namespace Game{
 
                 //metodo responsavel pela atualizacao e visualizacao  da classe
               
-                void executar();
+                void executar() override;
         };
 
     }

@@ -17,7 +17,7 @@ namespace Game{
              * @param corSelecionado cor do botao ao ser selecionado
             */
             BotaoTexto::BotaoTexto(const std::string infoTexto, const sf::Vector2f pos, const sf::Vector2f tam, const IDs::IDs ID, const sf::Color corSelecionado):
-            Botao(tam,pos,ID,TEMPO_TROCA),corSelecionado(corSelecionado),texto(pGrafico->carregarFonte("../Game/animations/botton/menu.ttf"), infoTexto)
+            Botao(tam,pos,ID,TEMPO_TROCA),corSelecionado(corSelecionado),texto(m_pGrafic->carregarFonte("../Game/animations/botton/menu.ttf"), infoTexto)
             {
                 botaoSelecionado = false;
 
@@ -50,11 +50,11 @@ namespace Game{
             /**
              * @brief metodo responsavel por mostrar o botao na tela
             */
-            void BotaoTexto::desenhar()
+            void BotaoTexto::draw()
             {
                 atualizarAnimacao();
-                //pGrafico->desenhaElemento(caixa);
-                pGrafico->desenhaElemento(texto.getTexto());
+                //m_pGrafic->desenhaElemento(caixa);
+                m_pGrafic->desenhaElemento(texto.getTexto());
             }
 
             /**
@@ -62,7 +62,7 @@ namespace Game{
             */
             void BotaoTexto::atualizarAnimacao()
             {
-                tempo += pGrafico->getTempo();
+                tempo += m_pGrafic->getTempo();
                 
                 if(botaoSelecionado) 
                 {

@@ -5,32 +5,28 @@
 #include "../includes/menus/botao/botaoSelecao.h"
 #include "../includes/gerenciador/gerenciadorArquivo.h"
 
-namespace Game{
+namespace Game::Menu{
+    class MenuDeSelecao : public MenuPausa{
+        
+        private:
 
-    namespace Menu{
+            Gerenciador::GerenciadorArquivo* pArquivo;
+            std::list<Botao::BotaoSelecao*> listaDeSelecao;
+            std::list<Botao::BotaoSelecao*>::iterator itSelecaoFase;
 
-        class MenuDeSelecao : public MenuPausa{
-            
-            private:
+        public:
 
-                Gerenciador::GerenciadorArquivo* pArquivo;
-                std::list<Botao::BotaoSelecao*> listaDeSelecao;
-                std::list<Botao::BotaoSelecao*>::iterator itSelecaoFase;
+            explicit MenuDeSelecao(Fase::Fase* fase = nullptr);
+            ~MenuDeSelecao() override;
 
-            public:
+            void criarBotoes() override;
+            void criarBotoesDeSelecao();
+            void selecionaEsquerda() override;
+            void inicializarBotoes();
+            void selecionaDireita() override;
 
-                MenuDeSelecao(Fase::Fase* fase = nullptr);
-                ~MenuDeSelecao();
+            void executar() override;
 
-                void criarBotoes();
-                void criarBotoesDeSelecao();
-                void selecionaEsquerda();
-                void inicializarBotoes();
-                void selecionaDireita();
-
-                void executar();
-
-                const IDs::IDs getIDdeSelecao();
-        };
-    }
+            const IDs::IDs getIDdeSelecao();
+    };
 }

@@ -59,10 +59,10 @@ namespace Game{
              * @param ds distancia entre os centros de  OBstaculo e personagem.
              * @param pPresonagem personagem a ser ajustado a posicao.
              */
-            void Obstaculo::colisaoObstaculo(sf::Vector2f ds, Personagem::Personagem* pPersonagem)
+            void Obstaculo::colisaoObstaculo(sf::Vector2f ds, Character::Character* pCharacter)
             {
-                sf::Vector2f posOutro = pPersonagem->getPos();
-                sf::Vector2f velFinal = pPersonagem->getVelocidade();
+                sf::Vector2f posOutro = pCharacter->getPos();
+                sf::Vector2f velFinal = pCharacter->getSpeed();
                 if(ds.x < 0.0f && ds.y < 0.0f){ //houve colisao
                     if(ds.x > ds.y)
                     {
@@ -82,10 +82,10 @@ namespace Game{
                         {
                             posOutro.y += ds.y;
 
-                            if(pPersonagem->getID() == IDs::IDs::jogador)
+                            if(pCharacter->getID() == IDs::IDs::jogador)
                             {
-                                Personagem::Jogador::Jogador* pJogador = static_cast<Personagem::Jogador::Jogador*>(pPersonagem);
-                                pJogador->podePular();
+                                auto* pJogador = static_cast<Character::Player::Player*>(pCharacter);
+                                pJogador->canJump();
                             }
                         }
                         else
@@ -95,8 +95,8 @@ namespace Game{
                         velFinal.y = 0.0f;
                     }
                 }
-                pPersonagem->setPos(posOutro);
-                pPersonagem->setVelMax(velFinal);
+                pCharacter->setPos(posOutro);
+                pCharacter->setMaxSpeed(velFinal);
             }
         }
 

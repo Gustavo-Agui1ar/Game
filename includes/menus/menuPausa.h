@@ -4,54 +4,50 @@
 #include "menu.h"
 #include "../fases/fase.h"
 
-namespace Game{
+namespace Game::Menu{
+    class MenuPausa : public Menu{
 
-    namespace Menu{
+    private:
 
-        class MenuPausa : public Menu{
+        //atributo relacionado ao fundo
 
-        private:
+        sf::RectangleShape painel;
 
-            //atributo relacionado ao fundo
+    protected:
 
-            sf::RectangleShape painel;
+        //atributos relacionados ao fundo
 
-        protected:
+        Fase::Fase* fase;
+        sf::RectangleShape fundoEscuro;
+        
+        //atributo e metodo de atualizacao do botao
+        
+        void atualizarBotoes();
+        float posBotaoY;
+        
+    public:
 
-            //atributos relacionados ao fundo
+        //construtores e destrutor
 
-            Fase::Fase* fase;
-            sf::RectangleShape fundoEscuro;
-            
-            //atributo e metodo de atualizacao do botao
-            
-            void atualizarBotoes();
-            float posBotaoY;
-            
-        public:
+        explicit MenuPausa(Fase::Fase* fase = nullptr);
+        MenuPausa(const IDs::IDs ID, const std::string titulo, Fase::Fase* fase = nullptr);
+        ~MenuPausa() override;
 
-            //construtores e destrutor
+        //metodo criador de botoes
 
-            MenuPausa(Fase::Fase* fase = nullptr);
-            MenuPausa(const IDs::IDs ID, const std::string titulo, Fase::Fase* fase = nullptr);
-            ~MenuPausa();
+        void criarBotoes() override;
+        
+        //metodo de modificacao do atributo fase
 
-            //metodo criador de botoes
+        void setFase(Fase::Fase* fase);
+        
+        //metodo de acesso ao atributo fase
 
-            virtual void criarBotoes();
-            
-            //metodo de modificacao do atributo fase
+        Fase::Fase* getFase();
 
-            void setFase(Fase::Fase* fase);
-            
-            //metodo de acesso ao atributo fase
+        //metodo de atualizacao de um objeto desta classe
 
-            Fase::Fase* getFase();
+        void executar() override;
 
-            //metodo de atualizacao de um objeto desta classe
-
-            virtual void executar();
-
-        };
-    }
+    };
 }

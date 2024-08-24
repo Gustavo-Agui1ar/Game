@@ -6,54 +6,50 @@
 #include "../lista/listaListener.h"
 #include <iostream>
 
-namespace Game{
-
-    namespace Gerenciador{
-
-        class GerenciadorDeEventos{
+namespace Game::Gerenciador{
+    class GerenciadorDeEventos{
 
 
-        private:
+    private:
 
-            //atributo grafico
-          
-            GerenciadorGrafico *pGrafico;
-           
-            // ponteiro do gerenciador de estado
+        //atributo grafico
         
-            GerenciadorDeEstado* pEstado;
+        GerenciadorGrafico *pGrafico;
+        
+        // ponteiro do gerenciador de estado
+    
+        GerenciadorDeEstado* pEstado;
 
-            // lista de observers
-   
-            static Lista::ListaListener* listaListener;
+        // lista de observers
+
+        static Lista::ListaListener* listaListener;
 
 
-            //ponteiro que aponta para a classe (padrao singlenton)
-           
-            static GerenciadorDeEventos *pEventos;
+        //ponteiro que aponta para a classe (padrao singlenton)
+        
+        static GerenciadorDeEventos *pEventos;
 
-            //construtora
-          
-            GerenciadorDeEventos();
+        //construtora
+        
+        GerenciadorDeEventos();
 
-        public:
+    public:
 
-            //destrutora
-       
-            ~GerenciadorDeEventos();
-            
-            //metodo de acesso a classe
-           
-            static GerenciadorDeEventos* getGerenciadorDeEventos();
+        //destrutora
+    
+        ~GerenciadorDeEventos();
+        
+        //metodo de acesso a classe
+        
+        static GerenciadorDeEventos* getGerenciadorDeEventos();
 
-            //metodos de adicao e remocao de um observer
+        //metodos de adicao e remocao de um observer
 
-            void removerListener(Listener::Listener* listener);
-            void addListener(Listener::Listener* listener);
-            
-            //metodo de verificacao de eventos
-          
-            void executar();
-        };
-    }
+        void removerListener(Listener::Listener* listener);
+        void addListener(Listener::Listener* listener);
+        
+        //metodo de verificacao de eventos
+        
+        void executar();
+    };
 }
