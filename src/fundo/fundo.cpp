@@ -36,7 +36,7 @@ namespace Game{
          * @param ID identificacao da fase(nescessario para a construtora de Ente)
         */
         Fundo::Fundo(IDs::IDs ID):
-        Ente(ID),posCameraAnterior(m_pGrafic->getCamera().getCenter())
+        Ente(ID),posCameraAnterior(m_graphic->getCamera().getCenter())
         {
 
         }
@@ -68,7 +68,7 @@ namespace Game{
         */
         void Fundo::executar()
         {
-            sf::Vector2f posCamera = m_pGrafic->getCamera().getCenter();
+            sf::Vector2f posCamera = m_graphic->getCamera().getCenter();
             sf::Vector2f ds =  posCamera - posCameraAnterior;
             posCameraAnterior = posCamera;
 
@@ -90,7 +90,7 @@ namespace Game{
         {
             for(int i = 0 ; i < camadas.size() ; i++){
                 Camada* camada = camadas.at(i);
-                camada->desenharCamada(m_pGrafic->getWindow());
+                camada->desenharCamada(m_graphic->getWindow());
             }
         }
 
@@ -102,7 +102,7 @@ namespace Game{
         */
         void Fundo::addCamada(const char* caminhoTextura, const float vel)
         {
-            Camada* camada = new Camada((sf::Vector2f)m_pGrafic->getWindow()->getSize(),m_pGrafic->carregarTextura(caminhoTextura),vel);
+            Camada* camada = new Camada((sf::Vector2f)m_graphic->getWindow()->getSize(),m_graphic->carregarTextura(caminhoTextura),vel);
             if(camada == nullptr)
                 std::cout<<"Fundo::Fundo: erro ao adicionar camada de fundo";
             camadas.push_back(camada);

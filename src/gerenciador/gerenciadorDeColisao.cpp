@@ -49,14 +49,14 @@ namespace Game{
          * 
          * @return retorna um vetor de 2 posicoes com a distancia entre os centros em x e em y se for negativo houve colisao
         */
-        const sf::Vector2f GerenciadorDeColisao::calculaColisao(Entidade::Entidade* ent1, Entidade::Entidade* ent2)
+        const sf::Vector2f GerenciadorDeColisao::calculaColisao(Entity::Entity* ent1, Entity::Entity* ent2)
         {
 
-            sf::Vector2f pos1 = ent1->getPos();
-            sf::Vector2f pos2 = ent2->getPos();
+            sf::Vector2f pos1 = ent1->getPosition();
+            sf::Vector2f pos2 = ent2->getPosition();
 
-            sf::Vector2f tam1 = ent1->getTam();
-            sf::Vector2f tam2 = ent2->getTam();
+            sf::Vector2f tam1 = ent1->getSize();
+            sf::Vector2f tam2 = ent2->getSize();
 
             sf::Vector2f distanciaEntreCentros(
                 fabs((pos1.x + tam1.x/2.0f) - (pos2.x + tam2.x/2.0f)),
@@ -81,16 +81,16 @@ namespace Game{
             //personagem e personagem.
             for(int i = 0 ; i < listaPersonagem->getTam() - 1 ; i++)
             {
-                Entidade::Entidade* ent1 = listaPersonagem->operator[](i);
+                Entity::Entity* ent1 = listaPersonagem->operator[](i);
 
                 for(int j = i + 1 ; j < listaPersonagem->getTam() ; j++)
                 {
-                    Entidade::Entidade* ent2 = listaPersonagem->operator[](j);
+                    Entity::Entity* ent2 = listaPersonagem->operator[](j);
                     sf::Vector2f ds = calculaColisao(ent1, ent2);
 
                     if(ds.x < 0.0f && ds.y < 0.0f)
                     {
-                        ent1->colisao(ent2,ds);
+                        ent1->collision(ent2,ds);
                     }
                 }
             }
@@ -98,17 +98,17 @@ namespace Game{
             //personagem e obstaculo
              for(int i = 0 ; i < listaPersonagem->getTam(); i++)
             {
-                Entidade::Entidade* ent1 = listaPersonagem->operator[](i);
+                Entity::Entity* ent1 = listaPersonagem->operator[](i);
 
                 for(int j = 0 ; j < listaObstaculo->getTam() ; j++)
                 {
-                    Entidade::Entidade* ent2 = listaObstaculo->operator[](j);
+                    Entity::Entity* ent2 = listaObstaculo->operator[](j);
 
                     sf::Vector2f ds = calculaColisao(ent1, ent2);
 
                     if(ds.x < 0.0f && ds.y < 0.0f)
                     {
-                        ent2->colisao(ent1,ds);
+                        ent2->collision(ent1,ds);
                     }
                 }
             }
@@ -123,11 +123,11 @@ namespace Game{
          * 
          * @return retorna a entidade procurada
         */
-        Entidade::Entidade* GerenciadorDeColisao::procurarEntidade(sf::Vector2f posPersonagem, sf::Vector2f raioDeDistancia, IDs::IDs objProcurado)
+        Entity::Entity* GerenciadorDeColisao::procurarEntidade(sf::Vector2f posPersonagem, sf::Vector2f raioDeDistancia, IDs::IDs objProcurado)
         {
             int tam = listaPersonagem->getTam();
           
-            Entidade::Entidade* entMaisProxima = nullptr;
+            Entity::Entity* entMaisProxima = nullptr;
           
             float posXmaisProximo = 0.f;
             float posYmaisProximo = 0.f;
@@ -135,12 +135,12 @@ namespace Game{
             for(int i = 0 ; i < tam ; i++)
             {
 
-                Entidade::Entidade* ent = listaPersonagem->operator[](i);
+                Entity::Entity* ent = listaPersonagem->operator[](i);
 
                 if(ent->getID() == objProcurado)
                 {
-                    float posX = fabs(posPersonagem.x - ent->getPos().x);
-                    float posY = fabs(posPersonagem.y - ent->getPos().y);
+                    float posX = fabs(posPersonagem.x - ent->getPosition().x);
+                    float posY = fabs(posPersonagem.y - ent->getPosition().y);
                     
                     if(posX <= raioDeDistancia.x && posY <= raioDeDistancia.y)
                     {

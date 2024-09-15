@@ -59,35 +59,35 @@ namespace Game{
         */
         void GerenciadorDeEstado::addEstado(IDs::IDs ID)
         {
-            Estado::Estado* estado = nullptr;
+            State::State* estado = nullptr;
 
-            if(ID == IDs::IDs::floresta_do_amanhecer || ID == IDs::IDs::caverna || ID == IDs::IDs::vila)
+            if(ID == IDs::IDs::dawn_forest || ID == IDs::IDs::cave || ID == IDs::IDs::village)
             {
-                estado = static_cast<Estado::Estado*>(new Estado::EstadoFase(ID));
+                estado = static_cast<State::State*>(new State::LevelState(ID));
             }
-            else if(ID == IDs::IDs::menu_principal ||
-                    ID == IDs::IDs::menu_pause     ||
-                    ID == IDs::IDs::menu_opcao     ||
-                    ID == IDs::IDs::menu_gameOver  ||
-                    ID == IDs::IDs::menu_carregar  ||
-                    ID == IDs::IDs::menu_salvar    ||
-                    ID == IDs::IDs::menu_de_selecao_fase    ||
-                    ID == IDs::IDs::menu_bug)
+            else if(ID == IDs::IDs::main_menu ||
+                    ID == IDs::IDs::pause_menu     ||
+                    ID == IDs::IDs::option_menu     ||
+                    ID == IDs::IDs::game_over_menu  ||
+                    ID == IDs::IDs::load_menu  ||
+                    ID == IDs::IDs::save_menu    ||
+                    ID == IDs::IDs::select_fase_menu    ||
+                    ID == IDs::IDs::bug_menu)
             {
-                Estado::EstadoMenu* mEstado = new Estado::EstadoMenu(ID);
-                estado = static_cast<Estado::Estado*>(mEstado);
+                auto* mEstado = new State::MenuState(ID);
+                estado = static_cast<State::State*>(mEstado);
             }
-            else if(ID == IDs::IDs::estado_dialogo)
+            else if(ID == IDs::IDs::dialogue_estate)
             {
-                Estado::Estado* estadoAtual = getEstadoAtual();
+                State::State* estadoAtual = getEstadoAtual();
 
-                Estado::EstadoFase* eFase = static_cast<Estado::EstadoFase*>(estadoAtual);
+                auto* eFase = static_cast<State::LevelState*>(estadoAtual);
                 
-                Estado::EstadoDialogo* mEstado = new Estado::EstadoDialogo(ID);
+                auto* mEstado = new State::DialogueState(ID);
 
-                mEstado->setFase(eFase->getFase());
+                mEstado->setFase(eFase->getLevel());
 
-                estado = static_cast<Estado::Estado*>(mEstado);
+                estado = static_cast<State::State*>(mEstado);
             }
 
             if(estado == nullptr)
@@ -96,9 +96,7 @@ namespace Game{
                 exit(1);
             }
             if(!pilhaEstados.empty())
-            {
                 desativarListener();
-            }
             
             pMusica->mudarMusica(ID);
             pilhaEstados.push(estado);
@@ -123,7 +121,7 @@ namespace Game{
             }
             else
             {
-                Gerenciador::GerenciadorGrafico* m_pGrafic = m_pGrafic->getGerenciadorGrafico();
+                Gerenciador::GerenciadorGrafico* m_pGrafic = Gerenciador::GerenciadorGrafico::getGerenciadorGrafico();
                 m_pGrafic->fechaJanela();
             }
         }
@@ -133,9 +131,9 @@ namespace Game{
         */
         void GerenciadorDeEstado::ativarListener()
         {
-            Estado::Estado* estadoAtual = getEstadoAtual();
+            State::State* estadoAtual = getEstadoAtual();
 
-            estadoAtual->mudarEstadoListener(true);
+            estadoAtual->changeEstateObserver(true);
         }
 
         /**
@@ -143,9 +141,9 @@ namespace Game{
         */
         void GerenciadorDeEstado::desativarListener()
         {
-            Estado::Estado* estadoAtual = getEstadoAtual();
+            State::State* estadoAtual = getEstadoAtual();
 
-            estadoAtual->mudarEstadoListener(false);
+            estadoAtual->changeEstateObserver(false);
         }
 
         /**
@@ -153,7 +151,7 @@ namespace Game{
          * 
          * @return retorna o estado do topo da pilha de estados
         */
-        Estado::Estado* GerenciadorDeEstado::getEstadoAtual()
+        State::State* GerenciadorDeEstado::getEstadoAtual()
         {
             if(!pilhaEstados.empty())
             {
@@ -169,9 +167,9 @@ namespace Game{
          * 
          * @return retorna o estado desejado da pilha de estados
         */
-        Estado::Estado* GerenciadorDeEstado::getEstado(int qtd)
+        State::State* GerenciadorDeEstado::getEstado(int qtd)
         {
-            std::stack<Estado::Estado*> pilhaAux = pilhaEstados;
+            std::stack<State::State*> pilhaAux = pilhaEstados;
 
             int i = 0;
 
@@ -194,8 +192,8 @@ namespace Game{
         {
             if(!pilhaEstados.empty())
             {
-                Estado::Estado* estado = pilhaEstados.top();
-                estado->executar();
+                State::State* estado = pilhaEstados.top();
+                estado->execute();
             }
         }
 
@@ -209,7 +207,7 @@ namespace Game{
             int i = 0;
             while(!pilhaEstados.empty() && i < quantidade)
             {
-                Estado::Estado* estado = pilhaEstados.top();
+                State::State* estado = pilhaEstados.top();
                 if(estado != nullptr){
                     delete(estado);
                     estado = nullptr; 

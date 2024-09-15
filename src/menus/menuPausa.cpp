@@ -11,8 +11,8 @@ namespace Game{
          * 
          * @param fase fase a ser desenhada como fundo 
         */
-        MenuPausa::MenuPausa(Fase::Fase* fase):
-        Menu(IDs::IDs::menu_pause, sf::Vector2f(TAM_BOTAO_X, TAM_BOTAO_Y), "PAUSA", 100),
+        MenuPausa::MenuPausa(Level::Level* fase):
+        Menu(IDs::IDs::pause_menu, sf::Vector2f(TAM_BOTAO_X, TAM_BOTAO_Y), "PAUSA", 100),
         painel(sf::Vector2f(tamJanela.x/2.0f,tamJanela.y)), fase(fase), fundoEscuro(tamJanela)
         {
             atualizarPosicaoFundo();
@@ -32,7 +32,7 @@ namespace Game{
          * @param titulo titulo do menu  
          * @param fase fase a ser desenhada como fundo
         */
-        MenuPausa::MenuPausa(const IDs::IDs ID, const std::string titulo, Fase::Fase* fase):
+        MenuPausa::MenuPausa(const IDs::IDs ID, const std::string titulo, Level::Level* fase):
         Menu(ID, sf::Vector2f(TAM_BOTAO_X, TAM_BOTAO_Y), titulo, 100), fase(fase),
         fundoEscuro(tamJanela)
         {
@@ -53,7 +53,7 @@ namespace Game{
          * 
          * @return retorna o atributo fase da classe
         */
-        Fase::Fase* MenuPausa::getFase()
+        Level::Level* MenuPausa::getFase()
         {
             return fase;
         }
@@ -63,12 +63,12 @@ namespace Game{
         */
         void MenuPausa::criarBotoes()
         {
-            addBotao("Continuar", sf::Vector2f(0.0f, 0.0f), IDs::IDs::botao_voltar, sf::Color{245, 170, 0});
-            addBotao("Selecionar Fase", sf::Vector2f(0.0f, 0.0f), IDs::IDs::botao_menu_selecao_fase, sf::Color{245, 170, 0});
-            addBotao("Carregar", sf::Vector2f(0.0f, 0.0f), IDs::IDs::botao_carregar_jogo, sf::Color{245, 170, 0});
-            addBotao("Salvar", sf::Vector2f(0.0f, 0.0f), IDs::IDs::botao_salvar_jogo, sf::Color{245, 170, 0});
-            addBotao("Opcao", sf::Vector2f(0.0f, 0.0f), IDs::IDs::botao_opcao, sf::Color{245, 170, 0});
-            addBotao("Sair", sf::Vector2f(0.0f, 0.0f), IDs::IDs::botao_sair, sf::Color{245, 170, 0});
+            addBotao("Continuar", sf::Vector2f(0.0f, 0.0f), IDs::IDs::back_button, sf::Color{245, 170, 0});
+            addBotao("Selecionar Level", sf::Vector2f(0.0f, 0.0f), IDs::IDs::select_menu_level_button, sf::Color{245, 170, 0});
+            addBotao("Carregar", sf::Vector2f(0.0f, 0.0f), IDs::IDs::load_game_button, sf::Color{245, 170, 0});
+            addBotao("Salvar", sf::Vector2f(0.0f, 0.0f), IDs::IDs::save_game_button, sf::Color{245, 170, 0});
+            addBotao("Opcao", sf::Vector2f(0.0f, 0.0f), IDs::IDs::option_button, sf::Color{245, 170, 0});
+            addBotao("Sair", sf::Vector2f(0.0f, 0.0f), IDs::IDs::close_button, sf::Color{245, 170, 0});
           
             posBotaoY = 1.5f;
             atualizarBotoes();
@@ -81,7 +81,7 @@ namespace Game{
          * 
          * @param fase fase a ser atribuida em fase da classe
         */
-        void MenuPausa::setFase(Fase::Fase* fase)
+        void MenuPausa::setFase(Level::Level* fase)
         {
             this->fase = fase;
         }
@@ -111,11 +111,11 @@ namespace Game{
             fase->draw();
 
             //atualiza o menu 
-            m_pGrafic->desenhaElemento(fundoEscuro);
-            m_pGrafic->desenhaElemento(painel);
+            m_graphic->desenhaElemento(fundoEscuro);
+            m_graphic->desenhaElemento(painel);
 
             //desenha o titulo 
-            m_pGrafic->desenhaElemento(titulo.getTexto());
+            m_graphic->desenhaElemento(titulo.getTexto());
 
             //desenha os botoes
             draw();

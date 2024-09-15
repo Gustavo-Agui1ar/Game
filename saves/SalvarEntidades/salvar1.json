@@ -1,1017 +1,681 @@
 [
   {
     "ID": 1,
-    "tam": {
+    "size": {
       "x": 30.0,
       "y": 60.0
     },
-    "pos": {
-      "x": 3166.22900390625,
-      "y": 800.0
+    "position": {
+      "x": 1444.133056640625,
+      "y": 300.0
     },
-    "remover": false,
-    "velocidade": {
+    "remove": false,
+    "speed": {
       "x": 250.0,
       "y": 0.0
     },
-    "tempoMorrer": 0.0,
-    "levandoDano": false,
-    "tempoDano": 14.005677223205566,
-    "morrendo": false,
-    "atacando": false,
-    "movendo": false,
-    "direcao": false,
-    "dano": 20.0,
-    "vida": 100.0,
-    "dt": 0.004406000021845102,
-    "noChao": true,
-    "qtdPulo": 0,
-    "tempoAtaque": 0.0,
-    "emDash": false,
+    "deathTime": 0.0,
+    "InDamage": false,
+    "timeDamage": 4.299499988555908,
+    "dying": false,
+    "attacking": false,
+    "moving": false,
+    "direction": false,
+    "damage": 20.0,
+    "life": 100.0,
+    "dt": 0.002471999963745475,
+    "onFloor": true,
+    "qtdJump": 0,
+    "timeAttack": 0.0,
+    "inDash": false,
+    "timeDash": 0.0,
+    "canDash": false,
+    "dashSpeed": 350.0,
+    "rage": 100.0,
+    "inRage": false,
+    "startingRage": false,
+    "timeStartingRage": 0.0,
     "stamina": 100.0,
-    "podeDash": false,
-    "tempoDash": 0.0,
-    "velDash": 350.0,
-    "furia": 100.0,
-    "emFuria": false,
-    "entrandoEmFuria": false,
-    "tempoEntrandoFuria": 0.0,
-    "lancandoProjetil": false,
-    "tempoAtaqueProjetil": 0.0,
-    "tempoAnimacaoAtaque": 0.6000000238418579,
-    "imagemAtual": "PARADO",
-    "tempoTotal": 0.19203902781009674,
-    "quadroAtual": 2
+    "trhowBullet": false,
+    "timeTrhowBullet": 0.0,
+    "timeAnimationBullet": 0.8999999761581421,
+    "currentImg": "IDLE",
+    "totalTime": 0.08771306276321411,
+    "currentFrame": 2
   },
   {
     "ID": 21,
-    "tam": {
+    "size": {
       "x": 30.0,
       "y": 60.0
     },
-    "pos": {
+    "position": {
       "x": -1000.0,
       "y": -1000.0
     },
-    "remover": false,
-    "dano": 20.0
+    "remove": false,
+    "damage": 20.0
   },
   {
     "ID": 13,
-    "tam": {
+    "size": {
       "x": 8.0,
       "y": 8.0
     },
-    "pos": {
+    "position": {
       "x": -1000.0,
       "y": -1000.0
     },
-    "remover": false,
-    "dano": 30.0,
-    "direcao": false,
-    "velocidade": {
+    "remove": false,
+    "damage": 30.0,
+    "direction": false,
+    "speed": {
       "x": 0.0,
       "y": 0.0
     },
-    "colidiu": true,
-    "imagemAtual": "ATACA",
-    "tempoTotal": 0.0,
-    "quadroAtual": 0
+    "collision": true,
+    "currentImg": "ATACA",
+    "totalTime": 0.0,
+    "currentFrame": 0
   },
   {
     "ID": 2,
-    "tam": {
+    "size": {
       "x": 30.0,
       "y": 60.0
     },
-    "pos": {
-      "x": 2251.492431640625,
-      "y": 800.0
+    "position": {
+      "x": 1596.9510498046875,
+      "y": 300.0
     },
-    "remover": false,
-    "velocidade": {
+    "remove": false,
+    "speed": {
       "x": 50.0,
       "y": 0.0
     },
-    "tempoMorrer": 0.0,
-    "levandoDano": false,
-    "tempoDano": 14.005677223205566,
-    "morrendo": false,
-    "atacando": false,
-    "movendo": true,
-    "direcao": false,
-    "dano": 10.0,
-    "vida": 100.0,
-    "dt": 0.004406000021845102,
-    "tempoAtaque": 0.0,
-    "tempoMover": 0.4371589422225952,
-    "mover": 0,
-    "imagemAtual": "ANDAR",
-    "tempoTotal": 0.11728402227163315,
-    "quadroAtual": 2
+    "deathTime": 0.0,
+    "InDamage": false,
+    "timeDamage": 4.299499988555908,
+    "dying": false,
+    "attacking": false,
+    "moving": true,
+    "direction": true,
+    "damage": 10.0,
+    "life": 100.0,
+    "dt": 0.002471999963745475,
+    "timeAttack": 0.0,
+    "timeMove": 1.2980105876922607,
+    "move": 2,
+    "currentImg": "ANDAR",
+    "totalTime": 0.08243097364902496,
+    "currentFrame": 3
   },
   {
     "ID": 22,
-    "tam": {
+    "size": {
       "x": 30.0,
       "y": 60.0
     },
-    "pos": {
+    "position": {
       "x": 0.0,
       "y": 0.0
     },
-    "remover": false,
-    "dano": 10.0
-  },
-  {
-    "ID": 2,
-    "tam": {
-      "x": 30.0,
-      "y": 60.0
-    },
-    "pos": {
-      "x": 2809.70263671875,
-      "y": 800.0
-    },
-    "remover": false,
-    "velocidade": {
-      "x": 50.0,
-      "y": 0.0
-    },
-    "tempoMorrer": 0.0,
-    "levandoDano": false,
-    "tempoDano": 14.005677223205566,
-    "morrendo": false,
-    "atacando": false,
-    "movendo": true,
-    "direcao": true,
-    "dano": 10.0,
-    "vida": 100.0,
-    "dt": 0.004406000021845102,
-    "tempoAtaque": 0.0,
-    "tempoMover": 0.4861679971218109,
-    "mover": 1,
-    "imagemAtual": "ANDAR",
-    "tempoTotal": 0.1569419652223587,
-    "quadroAtual": 0
-  },
-  {
-    "ID": 22,
-    "tam": {
-      "x": 30.0,
-      "y": 60.0
-    },
-    "pos": {
-      "x": 0.0,
-      "y": 0.0
-    },
-    "remover": false,
-    "dano": 10.0
+    "remove": false,
+    "damage": 10.0
   },
   {
     "ID": 4,
-    "tam": {
+    "size": {
       "x": 30.0,
       "y": 60.0
     },
-    "pos": {
-      "x": 2950.8544921875,
-      "y": 350.0
+    "position": {
+      "x": 2439.968505859375,
+      "y": 800.0
     },
-    "remover": false,
-    "velocidade": {
+    "remove": false,
+    "speed": {
       "x": 50.0,
       "y": 0.0
     },
-    "tempoMorrer": 0.0,
-    "levandoDano": false,
-    "tempoDano": 14.005677223205566,
-    "morrendo": false,
-    "atacando": false,
-    "movendo": true,
-    "direcao": true,
-    "dano": 5.0,
-    "vida": 100.0,
-    "dt": 0.004406000021845102,
-    "tempoAtaque": 0.0,
-    "tempoMover": 0.4861679971218109,
-    "mover": 1,
-    "imagemAtual": "ANDAR",
-    "tempoTotal": 0.15692518651485443,
-    "quadroAtual": 1
+    "deathTime": 0.0,
+    "InDamage": false,
+    "timeDamage": 4.299499988555908,
+    "dying": false,
+    "attacking": false,
+    "moving": true,
+    "direction": false,
+    "damage": 5.0,
+    "life": 100.0,
+    "dt": 0.002471999963745475,
+    "timeAttack": 0.0,
+    "timeMove": 1.2980105876922607,
+    "move": 0,
+    "currentImg": "ANDAR",
+    "totalTime": 0.07967208325862885,
+    "currentFrame": 1
   },
   {
     "ID": 22,
-    "tam": {
+    "size": {
       "x": 30.0,
       "y": 60.0
     },
-    "pos": {
+    "position": {
       "x": 0.0,
       "y": 0.0
     },
-    "remover": false,
-    "dano": 5.0
+    "remove": false,
+    "damage": 5.0
   },
   {
-    "ID": 2,
-    "tam": {
+    "ID": 4,
+    "size": {
       "x": 30.0,
       "y": 60.0
     },
-    "pos": {
-      "x": 3376.0302734375,
+    "position": {
+      "x": 2474.932373046875,
       "y": 800.0
     },
-    "remover": false,
-    "velocidade": {
+    "remove": false,
+    "speed": {
       "x": 50.0,
       "y": 0.0
     },
-    "tempoMorrer": 0.0,
-    "levandoDano": false,
-    "tempoDano": 14.005677223205566,
-    "morrendo": false,
-    "atacando": false,
-    "movendo": true,
-    "direcao": true,
-    "dano": 10.0,
-    "vida": 100.0,
-    "dt": 0.004406000021845102,
-    "tempoAtaque": 0.0,
-    "tempoMover": 1.2719045877456665,
-    "mover": 1,
-    "imagemAtual": "ANDAR",
-    "tempoTotal": 0.08453004062175751,
-    "quadroAtual": 1
+    "deathTime": 0.0,
+    "InDamage": false,
+    "timeDamage": 4.299499988555908,
+    "dying": false,
+    "attacking": false,
+    "moving": false,
+    "direction": true,
+    "damage": 5.0,
+    "life": 100.0,
+    "dt": 0.002471999963745475,
+    "timeAttack": 0.0,
+    "timeMove": 1.2980105876922607,
+    "move": 2,
+    "currentImg": "PARADO",
+    "totalTime": 0.01821102946996689,
+    "currentFrame": 0
   },
   {
     "ID": 22,
-    "tam": {
+    "size": {
       "x": 30.0,
       "y": 60.0
     },
-    "pos": {
+    "position": {
       "x": 0.0,
       "y": 0.0
     },
-    "remover": false,
-    "dano": 10.0
+    "remove": false,
+    "damage": 5.0
   },
   {
-    "ID": 3,
-    "tam": {
+    "ID": 4,
+    "size": {
       "x": 30.0,
       "y": 60.0
     },
-    "pos": {
-      "x": 6021.61328125,
-      "y": 802.6890258789063
-    },
-    "remover": false,
-    "velocidade": {
-      "x": 350.0,
-      "y": 80.33519744873047
-    },
-    "tempoMorrer": 0.0,
-    "levandoDano": false,
-    "tempoDano": 14.005677223205566,
-    "morrendo": false,
-    "atacando": false,
-    "movendo": true,
-    "direcao": false,
-    "dano": 10.0,
-    "vida": 100.0,
-    "dt": 0.004406000021845102,
-    "tempoAtaque": 0.0,
-    "tempoMover": 0.4861679971218109,
-    "mover": 0,
-    "imagemAtual": "ANDAR",
-    "tempoTotal": 0.0061779809184372425,
-    "quadroAtual": 3
-  },
-  {
-    "ID": 12,
-    "tam": {
-      "x": 30.0,
-      "y": 60.0
-    },
-    "pos": {
-      "x": -1000.0,
-      "y": -1000.0
-    },
-    "remover": false,
-    "dano": 10.0,
-    "direcao": false,
-    "velocidade": {
-      "x": 0.0,
-      "y": 0.0
-    },
-    "colidiu": true,
-    "imagemAtual": "ATACA",
-    "tempoTotal": 0.0,
-    "quadroAtual": 0
-  },
-  {
-    "ID": 3,
-    "tam": {
-      "x": 30.0,
-      "y": 60.0
-    },
-    "pos": {
-      "x": 4007.175537109375,
+    "position": {
+      "x": 2814.90087890625,
       "y": 800.0
     },
-    "remover": false,
-    "velocidade": {
-      "x": 350.0,
+    "remove": false,
+    "speed": {
+      "x": 50.0,
       "y": 0.0
     },
-    "tempoMorrer": 0.0,
-    "levandoDano": false,
-    "tempoDano": 14.005677223205566,
-    "morrendo": false,
-    "atacando": false,
-    "movendo": false,
-    "direcao": true,
-    "dano": 10.0,
-    "vida": 100.0,
-    "dt": 0.004406000021845102,
-    "tempoAtaque": 0.6517852544784546,
-    "tempoMover": 0.6561622619628906,
-    "mover": 1,
-    "imagemAtual": "PARADO",
-    "tempoTotal": 0.016270004212856293,
-    "quadroAtual": 4
+    "deathTime": 0.0,
+    "InDamage": false,
+    "timeDamage": 4.299499988555908,
+    "dying": false,
+    "attacking": false,
+    "moving": true,
+    "direction": false,
+    "damage": 5.0,
+    "life": 100.0,
+    "dt": 0.002471999963745475,
+    "timeAttack": 0.0,
+    "timeMove": 1.2980105876922607,
+    "move": 0,
+    "currentImg": "ANDAR",
+    "totalTime": 0.018175888806581497,
+    "currentFrame": 0
   },
   {
-    "ID": 12,
-    "tam": {
+    "ID": 22,
+    "size": {
       "x": 30.0,
       "y": 60.0
     },
-    "pos": {
-      "x": -1000.0,
-      "y": -1000.0
-    },
-    "remover": false,
-    "dano": 10.0,
-    "direcao": true,
-    "velocidade": {
+    "position": {
       "x": 0.0,
       "y": 0.0
     },
-    "colidiu": true,
-    "imagemAtual": "ATACA",
-    "tempoTotal": 2.8948745727539063,
-    "quadroAtual": 0
-  },
-  {
-    "ID": 11,
-    "tam": {
-      "x": 50.0,
-      "y": 50.0
-    },
-    "pos": {
-      "x": 900.0,
-      "y": 50.0
-    },
-    "remover": false
-  },
-  {
-    "ID": 11,
-    "tam": {
-      "x": 50.0,
-      "y": 50.0
-    },
-    "pos": {
-      "x": 900.0,
-      "y": 100.0
-    },
-    "remover": false
-  },
-  {
-    "ID": 11,
-    "tam": {
-      "x": 50.0,
-      "y": 50.0
-    },
-    "pos": {
-      "x": 900.0,
-      "y": 150.0
-    },
-    "remover": false
-  },
-  {
-    "ID": 11,
-    "tam": {
-      "x": 50.0,
-      "y": 50.0
-    },
-    "pos": {
-      "x": 900.0,
-      "y": 200.0
-    },
-    "remover": false
-  },
-  {
-    "ID": 11,
-    "tam": {
-      "x": 50.0,
-      "y": 50.0
-    },
-    "pos": {
-      "x": 900.0,
-      "y": 250.0
-    },
-    "remover": false
-  },
-  {
-    "ID": 11,
-    "tam": {
-      "x": 50.0,
-      "y": 50.0
-    },
-    "pos": {
-      "x": 900.0,
-      "y": 300.0
-    },
-    "remover": false
-  },
-  {
-    "ID": 11,
-    "tam": {
-      "x": 50.0,
-      "y": 50.0
-    },
-    "pos": {
-      "x": 900.0,
-      "y": 350.0
-    },
-    "remover": false
-  },
-  {
-    "ID": 11,
-    "tam": {
-      "x": 50.0,
-      "y": 50.0
-    },
-    "pos": {
-      "x": 900.0,
-      "y": 400.0
-    },
-    "remover": false
+    "remove": false,
+    "damage": 5.0
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
-      "x": 2900.0,
-      "y": 410.0
+    "position": {
+      "x": 1400.0,
+      "y": 360.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
-      "x": 3100.0,
-      "y": 410.0
+    "position": {
+      "x": 1600.0,
+      "y": 360.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
-      "x": 3400.0,
-      "y": 410.0
+    "position": {
+      "x": 1100.0,
+      "y": 460.0
     },
-    "remover": false
-  },
-  {
-    "ID": 11,
-    "tam": {
-      "x": 50.0,
-      "y": 50.0
-    },
-    "pos": {
-      "x": 900.0,
-      "y": 450.0
-    },
-    "remover": false
-  },
-  {
-    "ID": 11,
-    "tam": {
-      "x": 50.0,
-      "y": 50.0
-    },
-    "pos": {
-      "x": 900.0,
-      "y": 500.0
-    },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
-      "x": 2600.0,
+    "position": {
+      "x": 1900.0,
+      "y": 460.0
+    },
+    "remove": false
+  },
+  {
+    "ID": 10,
+    "size": {
+      "x": 200.0,
+      "y": 40.0
+    },
+    "position": {
+      "x": 1550.0,
       "y": 510.0
     },
-    "remover": false
-  },
-  {
-    "ID": 11,
-    "tam": {
-      "x": 50.0,
-      "y": 50.0
-    },
-    "pos": {
-      "x": 900.0,
-      "y": 550.0
-    },
-    "remover": false
-  },
-  {
-    "ID": 11,
-    "tam": {
-      "x": 50.0,
-      "y": 50.0
-    },
-    "pos": {
-      "x": 900.0,
-      "y": 600.0
-    },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
-      "x": 2350.0,
-      "y": 610.0
+    "position": {
+      "x": 0.0,
+      "y": 560.0
     },
-    "remover": false
-  },
-  {
-    "ID": 11,
-    "tam": {
-      "x": 50.0,
-      "y": 50.0
-    },
-    "pos": {
-      "x": 900.0,
-      "y": 650.0
-    },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
-      "x": 4350.0,
+    "position": {
+      "x": 200.0,
+      "y": 560.0
+    },
+    "remove": false
+  },
+  {
+    "ID": 10,
+    "size": {
+      "x": 200.0,
+      "y": 40.0
+    },
+    "position": {
+      "x": 850.0,
+      "y": 560.0
+    },
+    "remove": false
+  },
+  {
+    "ID": 10,
+    "size": {
+      "x": 200.0,
+      "y": 40.0
+    },
+    "position": {
+      "x": 650.0,
       "y": 660.0
     },
-    "remover": false
-  },
-  {
-    "ID": 11,
-    "tam": {
-      "x": 50.0,
-      "y": 50.0
-    },
-    "pos": {
-      "x": 900.0,
-      "y": 700.0
-    },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
-      "x": 2100.0,
-      "y": 710.0
-    },
-    "remover": false
-  },
-  {
-    "ID": 10,
-    "tam": {
-      "x": 200.0,
-      "y": 40.0
-    },
-    "pos": {
-      "x": 4950.0,
-      "y": 710.0
-    },
-    "remover": false
-  },
-  {
-    "ID": 10,
-    "tam": {
-      "x": 200.0,
-      "y": 40.0
-    },
-    "pos": {
-      "x": 1750.0,
+    "position": {
+      "x": 150.0,
       "y": 760.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
-      "x": 5250.0,
+    "position": {
+      "x": 500.0,
       "y": 760.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 0.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 200.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 400.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 600.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 800.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 1000.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 1200.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 1400.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 1600.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 1800.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 2000.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 2200.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 2400.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 2600.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 2800.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 3000.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 3200.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 3400.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 3600.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 3800.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 4000.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 4200.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 4400.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 4600.0,
       "y": 860.0
     },
-    "remover": false
-  },
-  {
-    "ID": 10,
-    "tam": {
-      "x": 200.0,
-      "y": 40.0
-    },
-    "pos": {
-      "x": 4800.0,
-      "y": 860.0
-    },
-    "remover": false
-  },
-  {
-    "ID": 10,
-    "tam": {
-      "x": 200.0,
-      "y": 40.0
-    },
-    "pos": {
-      "x": 5000.0,
-      "y": 860.0
-    },
-    "remover": false
-  },
-  {
-    "ID": 10,
-    "tam": {
-      "x": 200.0,
-      "y": 40.0
-    },
-    "pos": {
-      "x": 5200.0,
-      "y": 860.0
-    },
-    "remover": false
-  },
-  {
-    "ID": 10,
-    "tam": {
-      "x": 200.0,
-      "y": 40.0
-    },
-    "pos": {
-      "x": 5400.0,
-      "y": 860.0
-    },
-    "remover": false
-  },
-  {
-    "ID": 10,
-    "tam": {
-      "x": 200.0,
-      "y": 40.0
-    },
-    "pos": {
-      "x": 5600.0,
-      "y": 860.0
-    },
-    "remover": false
-  },
-  {
-    "ID": 10,
-    "tam": {
-      "x": 200.0,
-      "y": 40.0
-    },
-    "pos": {
-      "x": 5800.0,
-      "y": 860.0
-    },
-    "remover": false
+    "remove": false
   }
 ]

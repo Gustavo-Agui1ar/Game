@@ -1,7 +1,7 @@
 
 #pragma once
 
-#include "../entidade/Ente.h"
+#include "../Entity/Ente.h"
 #include "../menus/botao/botao.h"
 #include "../menus/botao/botaoTexto.h"
 #include "../fundo/fundo.h"

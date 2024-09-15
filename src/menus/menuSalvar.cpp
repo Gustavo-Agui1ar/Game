@@ -10,8 +10,8 @@ namespace Game{
          * 
          * @param fase fase a ser desenhada como fundo 
         */
-        MenuSalvar::MenuSalvar(Fase::Fase* fase):
-        MenuPausa(IDs::IDs::menu_salvar, "SALVAR JOGADA", fase),gArquivo()
+        MenuSalvar::MenuSalvar(Level::Level* fase):
+        MenuPausa(IDs::IDs::save_menu, "SALVAR JOGADA", fase),gArquivo()
         {
             atualizarPosicaoFundo();
             fundoEscuro.setPosition(0.0f, 0.0f);
@@ -74,8 +74,8 @@ namespace Game{
         */
         void MenuSalvar::salvar()
         {
-            nlohmann::ordered_json jsonEntidades = fase->salvarEntidades();
-            nlohmann::ordered_json jsonFase = fase->salvarFase();
+            nlohmann::ordered_json jsonEntidades = fase->SaveEntity();
+            nlohmann::ordered_json jsonFase = fase->SaveLevel();
             
             const std::string caminhoImagem = (*itCard)->getCaminhoImagem();
             const std::string caminhoEntidade = (*itCard)->getCaminhoEntidade();
@@ -89,7 +89,7 @@ namespace Game{
 
             fase->draw();
 
-            sf::RenderWindow* window = m_pGrafic->getWindow();
+            sf::RenderWindow* window = m_graphic->getWindow();
 
             sf::Texture textura;
 
@@ -134,8 +134,8 @@ namespace Game{
         */
         void MenuSalvar::criarBotoes()
         {   
-            addBotao( "Salvar", sf::Vector2f(0.0f, 0.0f), IDs::IDs::botao_salvar , sf::Color{238,173,45});
-            addBotao( "Voltar", sf::Vector2f(0.0f, 0.0f), IDs::IDs::botao_voltar, sf::Color{238,173,45});
+            addBotao( "Salvar", sf::Vector2f(0.0f, 0.0f), IDs::IDs::save_button , sf::Color{238,173,45});
+            addBotao( "Voltar", sf::Vector2f(0.0f, 0.0f), IDs::IDs::back_button, sf::Color{238,173,45});
 
             posBotaoY = 0.8f;
             atualizarBotoes();
@@ -162,9 +162,9 @@ namespace Game{
         {
             fase->draw();
 
-            m_pGrafic->desenhaElemento(fundoEscuro);
+            m_graphic->desenhaElemento(fundoEscuro);
 
-            m_pGrafic->desenhaElemento(titulo.getTexto());
+            m_graphic->desenhaElemento(titulo.getTexto());
 
             draw();
 

@@ -1,7 +1,7 @@
 
 #pragma once
 
-#include "../entidade/Player/Player.h"
+#include "../Entity/Player/Player.h"
 #include "listener.h"
 
 namespace Game::Listener{
@@ -11,13 +11,13 @@ namespace Game::Listener{
         
         //atributo a ser observado pelo observer
 
-        Entidade::Character::Player::Player* jogador;
+        Entity::Character::Player::Player* jogador;
 
     public:
 
         //construtor e destrutor
 
-        explicit ListenerJogador(Entidade::Character::Player::Player* jogador);
+        explicit ListenerJogador(Entity::Character::Player::Player* jogador);
         ~ListenerJogador() override;
 
         //metodos de tratamento de teclas

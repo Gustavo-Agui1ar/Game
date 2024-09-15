@@ -15,6 +15,8 @@ namespace Game::Menu::Botao{
         bool fimTexto;
 
         Gerenciador::GerenciadorGrafico* pGrafico;
+        const int m_numenberOfLetters = 82;
+        int m_currentNumberOfLetter;
 
         std::string falaCompleta;
         std::string::iterator letraFala;

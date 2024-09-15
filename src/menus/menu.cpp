@@ -15,8 +15,8 @@ namespace Game {
          * @param tamFonte tamanho do texto
         */
         Menu::Menu(const IDs::IDs ID, const sf::Vector2f tamBotao, const std::string titulo, const unsigned int tamFonte):
-        Ente(ID), listaDeBotao(), it(),  titulo(m_pGrafic->carregarFonte( "../Game/animations/botton/menu.ttf"), titulo, tamFonte), 
-        tamJanela(m_pGrafic->getTamJanela()), tamBotao(tamBotao), posFundo(sf::Vector2f(0.0f,0.0f)), listenerMenu(new Listener::ListenerMenu(this)),
+        Ente(ID), listaDeBotao(), it(),  titulo(m_graphic->carregarFonte( "../Game/animations/botton/menu.ttf"), titulo, tamFonte), 
+        tamJanela(m_graphic->getTamJanela()), tamBotao(tamBotao), posFundo(sf::Vector2f(0.0f,0.0f)), listenerMenu(new Listener::ListenerMenu(this)),
         mouseSelecionado(false)
         {
             if(listenerMenu == nullptr){
@@ -66,7 +66,7 @@ namespace Game {
         */
         void Menu::addBotao(const std::string infoTexto, const sf::Vector2f pos, const IDs::IDs ID, const sf::Color corSelecionado)
         {
-            Botao::BotaoTexto* botao = new Botao::BotaoTexto(infoTexto, pos,tamBotao, ID, corSelecionado);
+            auto* botao = new Botao::BotaoTexto(infoTexto, pos,tamBotao, ID, corSelecionado);
             if(botao == nullptr)
             {
                 throw("Menu::nao foi possivel criar um botao");
@@ -80,7 +80,7 @@ namespace Game {
         */
         void Menu::atualizarPosicaoFundo()
         {
-            posFundo = m_pGrafic->getCamera().getCenter();
+            posFundo = m_graphic->getCamera().getCenter();
         }
 
         /**
@@ -165,7 +165,7 @@ namespace Game {
             {
                 Botao::BotaoTexto* botao = *aux;
                 sf::RectangleShape caixa = botao->getCaixa();
-                sf::Vector2f posMouseJan = m_pGrafic->getWindow()->mapPixelToCoords((sf::Vector2i)posMouse);
+                sf::Vector2f posMouseJan = m_graphic->getWindow()->mapPixelToCoords((sf::Vector2i)posMouse);
                 
                 if(caixa.getGlobalBounds().contains(posMouseJan))
                 {

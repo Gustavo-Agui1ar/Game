@@ -5,10 +5,10 @@ namespace Game{
 
     namespace Menu{
 
-        MenuDeSelecao::MenuDeSelecao(Fase::Fase* fase):
-        MenuPausa(IDs::IDs::menu_de_selecao_fase,"Menu de Selecao", fase), pArquivo(new Gerenciador::GerenciadorArquivo()), listaDeSelecao()
+        MenuDeSelecao::MenuDeSelecao(Level::Level* fase):
+        MenuPausa(IDs::IDs::select_fase_menu,"Menu de Selecao", fase), pArquivo(new Gerenciador::GerenciadorArquivo()), listaDeSelecao()
         {
-            sf::Vector2f posJanela = m_pGrafic->getCamera().getCenter();
+            sf::Vector2f posJanela = m_graphic->getCamera().getCenter();
             
             atualizarPosicaoFundo();
             sf::Vector2f posFundoEscuro = sf::Vector2f(posFundo.x - tamJanela.x / 2.0f, posFundo.y - tamJanela.y / 2.0f);
@@ -26,8 +26,8 @@ namespace Game{
 
         void MenuDeSelecao::criarBotoes()
         {
-            addBotao("Jogar", sf::Vector2f(0.0f, 0.0f), IDs::IDs::botao_jogar, sf::Color{245, 170, 0});
-            addBotao("Voltar", sf::Vector2f(0.0f, 0.0f), IDs::IDs::botao_voltar, sf::Color{245, 170, 0});
+            addBotao("Jogar", sf::Vector2f(0.0f, 0.0f), IDs::IDs::play_button, sf::Color{245, 170, 0});
+            addBotao("Voltar", sf::Vector2f(0.0f, 0.0f), IDs::IDs::back_button, sf::Color{245, 170, 0});
             
             inicializarBotoes();
            
@@ -39,7 +39,7 @@ namespace Game{
         void MenuDeSelecao::inicializarBotoes()
         {
             std::list<Botao::BotaoTexto*>::iterator itAux = listaDeBotao.begin();
-            sf::Vector2f posJanela = m_pGrafic->getCamera().getCenter();
+            sf::Vector2f posJanela = m_graphic->getCamera().getCenter();
             int auxTam = 0;
             
             while (itAux != listaDeBotao.end())
@@ -56,13 +56,13 @@ namespace Game{
         void MenuDeSelecao::criarBotoesDeSelecao()
         {
             std::vector<std::string> faseNomes = pArquivo->lerArquivoDeTexto("../Game/saves/fases.txt");
-            std::vector<std::string>::iterator itFases = faseNomes.begin();
-            IDs::IDs IDFaseAux = IDs::IDs::caverna;
+            auto itFases = faseNomes.begin();
+            IDs::IDs IDFaseAux = IDs::IDs::cave;
 
             while(itFases != faseNomes.end())
             {
                 Botao::BotaoSelecao* botao = nullptr;
-                botao = new Botao::BotaoSelecao((*itFases),sf::Vector2f(0.f, 0.f), tamBotao,IDs::IDs::botao_selecao_fase, sf::Color{245,170,0} ,IDFaseAux); 
+                botao = new Botao::BotaoSelecao((*itFases),sf::Vector2f(0.f, 0.f), tamBotao,IDs::IDs::select_level_button, sf::Color{245,170,0} ,IDFaseAux); 
                 if(botao == nullptr)
                 {
                     std::cout<<"nao foi possive criar o botao de selecao de fase";
@@ -104,9 +104,9 @@ namespace Game{
         {
             fase->draw();
 
-            m_pGrafic->desenhaElemento(fundoEscuro);
+            m_graphic->desenhaElemento(fundoEscuro);
 
-            m_pGrafic->desenhaElemento(titulo.getTexto());
+            m_graphic->desenhaElemento(titulo.getTexto());
 
             (*itSelecaoFase)->draw();
 

@@ -1,7 +1,7 @@
 
 #pragma once
 
-#include "../entidade/Ente.h"
+#include "../Entity/Ente.h"
 #include "camada.h"
 
 namespace Game::Fundo{

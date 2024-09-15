@@ -5,8 +5,8 @@
 
 namespace Game{
 
-    namespace Fase{
-        class Fase;
+    namespace Level{
+        class Level;
     }
 
     namespace Listener{
@@ -17,12 +17,13 @@ namespace Game{
 
             //atributo a ser observado pelo observer
 
-            Fase::Fase* fase;
+            Level::Level* fase;
 
         public:
 
             //construtor e destrutor
 
+            explicit ListenerFase(Level::Level* level);
             ListenerFase();
             ~ListenerFase() override;
 
@@ -33,7 +34,7 @@ namespace Game{
         
             // metodo que modifica o atributo fase
 
-            void setFase(Fase::Fase* fase);
+            void setFase(Level::Level* fase);
         
             //metodo que notifica que o jogador morreu
 

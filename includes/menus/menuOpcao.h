@@ -2,7 +2,7 @@
 #pragma once 
 
 #include "menuPrincipal.h"
-#include "../includes/fases/fase.h"
+#include "../includes/Levels/Level.h"
 #include "../menus/botao/botaoVolume.h"
 
 #define TAMANHO_BOTAO_MENU_OPCAO_X 350.0f
@@ -17,7 +17,7 @@ namespace Game::Menu{
 
         const float velBotaoVolume;
         Gerenciador::GerenciadorDeMusica* pMusica;
-        Fase::Fase* fase;
+        Level::Level* fase;
         sf::RectangleShape fundoEscuro;
         
 
@@ -27,7 +27,7 @@ namespace Game::Menu{
 
     public:
 
-        explicit MenuOpcao(Fase::Fase* fase = nullptr);
+        explicit MenuOpcao(Level::Level* fase = nullptr);
         ~MenuOpcao() override;
 
         void criarBotoes() override;

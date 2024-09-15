@@ -10,7 +10,7 @@ namespace Game{
             BotaoSelecao::BotaoSelecao(const std::string infoTexto, const sf::Vector2f pos, const sf::Vector2f tam, const IDs::IDs ID, const sf::Color corSelecionado, IDs::IDs IDFase):
             BotaoTexto(infoTexto, pos,  tam, ID, corSelecionado ), IDFase(IDFase)
             {
-                sf::Vector2f posJanela = m_pGrafic->getCamera().getCenter();
+                sf::Vector2f posJanela = m_graphic->getCamera().getCenter();
                 sf::Vector2f posicaoCaixa(posJanela.x - TAM_V_FASE_X/2.f, posJanela.y - TAM_V_FASE_Y/2.f);
                 
                 atualizarPosicaoDaCaixa(sf::Vector2f(posJanela.x - caixa.getSize().x/2.f, posicaoCaixa.y - 80.f));          
@@ -31,15 +31,15 @@ namespace Game{
 
             void BotaoSelecao::setImagemFase(const char* caminhoImagem)
             {
-                texture = m_pGrafic->carregarTextura(caminhoImagem);
+                texture = m_graphic->carregarTextura(caminhoImagem);
 
                 visualizacaoFase.setTexture(&texture);                
             }
 
             void BotaoSelecao::draw()
             {
-                m_pGrafic->desenhaElemento(texto.getTexto());
-                m_pGrafic->desenhaElemento(visualizacaoFase);
+                m_graphic->desenhaElemento(texto.getTexto());
+                m_graphic->desenhaElemento(visualizacaoFase);
             }
         }
     }

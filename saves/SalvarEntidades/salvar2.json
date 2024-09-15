@@ -1,546 +1,681 @@
 [
   {
     "ID": 1,
-    "tam": {
+    "size": {
       "x": 30.0,
       "y": 60.0
     },
-    "pos": {
-      "x": 1993.4356689453125,
-      "y": 800.0
+    "position": {
+      "x": 1265.0972900390625,
+      "y": 400.0
     },
-    "remover": false,
-    "velocidade": {
+    "remove": false,
+    "speed": {
       "x": 250.0,
       "y": 0.0
     },
-    "tempoMorrer": 0.0,
-    "levandoDano": false,
-    "tempoDano": 22.870718002319336,
-    "morrendo": false,
-    "atacando": false,
-    "movendo": false,
-    "direcao": false,
-    "dano": 20.0,
-    "vida": 100.0,
-    "dt": 0.0016899999463930726,
-    "noChao": true,
-    "qtdPulo": 0,
-    "tempoAtaque": 0.0,
-    "emDash": false,
-    "tempoDash": 0.0,
-    "podeDash": false,
-    "velDash": 350.0,
-    "furia": 100.0,
-    "emFuria": false,
-    "entrandoEmFuria": false,
-    "tempoEntrandoFuria": 0.0,
-    "stamina": 99.96281433105469,
-    "lancandoProjetil": false,
-    "tempoAtaqueProjetil": 0.0,
-    "tempoAnimacaoAtaque": 0.8999999761581421,
-    "imagemAtual": "PARADO",
-    "tempoTotal": 0.07567401975393295,
-    "quadroAtual": 7
+    "deathTime": 0.0,
+    "InDamage": false,
+    "timeDamage": 3.598087787628174,
+    "dying": false,
+    "attackinh": false,
+    "moving": false,
+    "direction": false,
+    "damage": 20.0,
+    "life": 100.0,
+    "dt": 0.0019859999883919954,
+    "onFloor": true,
+    "qtdJump": 0,
+    "timeAttack": 0.0,
+    "inDash": false,
+    "timeDash": 0.0,
+    "canDash": false,
+    "dashSpeed": 350.0,
+    "rage": 100.0,
+    "inRage": false,
+    "startingRage": false,
+    "timeStartingRage": 0.0,
+    "stamina": 100.0,
+    "trhowBullet": false,
+    "timeTrhowBullet": 0.0,
+    "timeAnimationBullet": 0.8999999761581421,
+    "imagemAtual": "IDLE",
+    "tempoTotal": 0.09526193141937256,
+    "quadroAtual": 5
   },
   {
     "ID": 21,
-    "tam": {
+    "size": {
       "x": 30.0,
       "y": 60.0
     },
-    "pos": {
+    "position": {
       "x": -1000.0,
       "y": -1000.0
     },
-    "remover": false,
+    "remove": false,
     "dano": 20.0
   },
   {
     "ID": 13,
-    "tam": {
+    "size": {
       "x": 8.0,
       "y": 8.0
     },
-    "pos": {
+    "position": {
       "x": -1000.0,
       "y": -1000.0
     },
-    "remover": false,
+    "remove": false,
     "dano": 30.0,
-    "direcao": false,
-    "velocidade": {
+    "direction": false,
+    "speed": {
       "x": 0.0,
       "y": 0.0
     },
-    "colidiu": true,
-    "imagemAtual": "ATACA",
-    "tempoTotal": 0.005719282198697329,
-    "quadroAtual": 3
+    "collision": true,
+    "currentImg": "ATACA",
+    "totalTime": 0.0,
+    "currentFrame": 0
   },
   {
     "ID": 2,
-    "tam": {
+    "size": {
       "x": 30.0,
       "y": 60.0
     },
-    "pos": {
-      "x": 1495.7080078125,
-      "y": 800.0
+    "position": {
+      "x": 1579.821533203125,
+      "y": 300.0
     },
-    "remover": false,
-    "velocidade": {
+    "remove": false,
+    "speed": {
       "x": 50.0,
       "y": 0.0
     },
-    "tempoMorrer": 0.0,
-    "levandoDano": false,
-    "tempoDano": 13.956842422485352,
-    "morrendo": false,
-    "atacando": false,
-    "movendo": false,
-    "direcao": false,
-    "dano": 10.0,
-    "vida": 40.0,
-    "dt": 0.0016899999463930726,
-    "tempoAtaque": 0.0,
-    "tempoMover": 0.4471067488193512,
-    "mover": 2,
-    "imagemAtual": "PARADO",
-    "tempoTotal": 0.127049058675766,
-    "quadroAtual": 2
+    "deathTime": 0.0,
+    "InDamage": false,
+    "timeDamage": 3.598087787628174,
+    "dying": false,
+    "attackinh": false,
+    "moving": true,
+    "direction": false,
+    "damage": 10.0,
+    "life": 100.0,
+    "dt": 0.0019859999883919954,
+    "timeAttack": 0.0,
+    "timeMove": 0.5964339375495911,
+    "move": 0,
+    "imagemAtual": "ANDAR",
+    "tempoTotal": 0.11639097332954407,
+    "quadroAtual": 3
   },
   {
     "ID": 22,
-    "tam": {
+    "size": {
       "x": 30.0,
       "y": 60.0
     },
-    "pos": {
+    "position": {
       "x": 0.0,
       "y": 0.0
     },
-    "remover": false,
+    "remove": false,
     "dano": 10.0
   },
   {
+    "ID": 4,
+    "size": {
+      "x": 30.0,
+      "y": 60.0
+    },
+    "position": {
+      "x": 2329.822509765625,
+      "y": 800.0
+    },
+    "remove": false,
+    "speed": {
+      "x": 50.0,
+      "y": 0.0
+    },
+    "deathTime": 0.0,
+    "InDamage": false,
+    "timeDamage": 3.598087787628174,
+    "dying": false,
+    "attackinh": false,
+    "moving": true,
+    "direction": false,
+    "damage": 5.0,
+    "life": 100.0,
+    "dt": 0.0019859999883919954,
+    "timeAttack": 0.0,
+    "timeMove": 0.5964339375495911,
+    "move": 0,
+    "imagemAtual": "ANDAR",
+    "tempoTotal": 0.1163899302482605,
+    "quadroAtual": 3
+  },
+  {
+    "ID": 22,
+    "size": {
+      "x": 30.0,
+      "y": 60.0
+    },
+    "position": {
+      "x": 0.0,
+      "y": 0.0
+    },
+    "remove": false,
+    "dano": 5.0
+  },
+  {
+    "ID": 4,
+    "size": {
+      "x": 30.0,
+      "y": 60.0
+    },
+    "position": {
+      "x": 2445.099365234375,
+      "y": 800.0
+    },
+    "remove": false,
+    "speed": {
+      "x": 50.0,
+      "y": 0.0
+    },
+    "deathTime": 0.0,
+    "InDamage": false,
+    "timeDamage": 3.598087787628174,
+    "dying": false,
+    "attackinh": false,
+    "moving": true,
+    "direction": true,
+    "damage": 5.0,
+    "life": 100.0,
+    "dt": 0.0019859999883919954,
+    "timeAttack": 0.0,
+    "timeMove": 0.5964339375495911,
+    "move": 1,
+    "imagemAtual": "ANDAR",
+    "tempoTotal": 0.018130166456103325,
+    "quadroAtual": 5
+  },
+  {
+    "ID": 22,
+    "size": {
+      "x": 30.0,
+      "y": 60.0
+    },
+    "position": {
+      "x": 0.0,
+      "y": 0.0
+    },
+    "remove": false,
+    "dano": 5.0
+  },
+  {
+    "ID": 4,
+    "size": {
+      "x": 30.0,
+      "y": 60.0
+    },
+    "position": {
+      "x": 2779.822509765625,
+      "y": 800.0
+    },
+    "remove": false,
+    "speed": {
+      "x": 50.0,
+      "y": 0.0
+    },
+    "deathTime": 0.0,
+    "InDamage": false,
+    "timeDamage": 3.598087787628174,
+    "dying": false,
+    "attackinh": false,
+    "moving": true,
+    "direction": false,
+    "damage": 5.0,
+    "life": 100.0,
+    "dt": 0.0019859999883919954,
+    "timeAttack": 0.0,
+    "timeMove": 0.5964339375495911,
+    "move": 0,
+    "imagemAtual": "ANDAR",
+    "tempoTotal": 0.11636700481176376,
+    "quadroAtual": 3
+  },
+  {
+    "ID": 22,
+    "size": {
+      "x": 30.0,
+      "y": 60.0
+    },
+    "position": {
+      "x": 0.0,
+      "y": 0.0
+    },
+    "remove": false,
+    "dano": 5.0
+  },
+  {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 1400.0,
       "y": 360.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 1600.0,
       "y": 360.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 1100.0,
       "y": 460.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 1900.0,
       "y": 460.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 1550.0,
       "y": 510.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 0.0,
       "y": 560.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 200.0,
       "y": 560.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 850.0,
       "y": 560.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 650.0,
       "y": 660.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 150.0,
       "y": 760.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 500.0,
       "y": 760.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 0.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 200.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 400.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 600.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 800.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 1000.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 1200.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 1400.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 1600.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 1800.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 2000.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 2200.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 2400.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 2600.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 2800.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 3000.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 3200.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 3400.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 3600.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 3800.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 4000.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 4200.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 4400.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   },
   {
     "ID": 10,
-    "tam": {
+    "size": {
       "x": 200.0,
       "y": 40.0
     },
-    "pos": {
+    "position": {
       "x": 4600.0,
       "y": 860.0
     },
-    "remover": false
+    "remove": false
   }
 ]

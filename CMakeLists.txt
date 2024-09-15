@@ -1,6 +1,12 @@
-cmake_minimum_required(VERSION 3.26.4)
+cmake_minimum_required(VERSION 3.5)
 
-project(Jogo)
+project(Game
+    LANGUAGES CXX
+    VERSION 1.0
+)
+
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(DCMAKE_CXX_USE_RESPONSE_FILE_FOR_INCLUDES OFF)
 
 # Find the SFML library
 find_package(SFML 2.6 COMPONENTS system window graphics REQUIRED)
@@ -22,12 +28,8 @@ file(GLOB_RECURSE HEADERS "includes/*.h" "includes/**/*.h")
 add_executable(${PROJECT_NAME}  ${SOURCES} ${HEADERS})
 target_link_libraries(${PROJECT_NAME} sfml-system sfml-window sfml-graphics sfml-network sfml-audio)
 
-# Add the Google Test library and create the test executable
-#find_package(GTest REQUIRED)
-#include_directories(${GTEST_INCLUDE_DIRS})
-
 # Add include and src directories as include directories for the targets
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/includes" "${CMAKE_SOURCE_DIR}/src")
 
 # Link the SFML library to every file, directory, and subdirectory in the project
-target_link_libraries(${PROJECT_NAME} sfml-system sfml-window sfml-graphics sfml-network sfml-audio)
+target_link_libraries(${PROJECT_NAME} sfml-system sfml-window sfml-graphics sfml-network sfml-audio) 

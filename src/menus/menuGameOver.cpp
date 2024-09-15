@@ -9,8 +9,8 @@ namespace Game{
          * 
          * @param fase a ser desenhado o fundo
         */
-        MenuGameOver::MenuGameOver(Fase::Fase* fase):
-        MenuPausa(IDs::IDs::menu_gameOver, "Game Over", fase)
+        MenuGameOver::MenuGameOver(Level::Level* fase):
+        MenuPausa(IDs::IDs::game_over_menu, "Game Over", fase)
         {
             atualizarPosicaoFundo();
 
@@ -32,8 +32,8 @@ namespace Game{
         */
         void MenuGameOver::criarBotoes()
         {
-            addBotao("Tentar Novamente", sf::Vector2f(0.0f, 0.0f), IDs::IDs::botao_reniciar_jogo, sf::Color{255, 0, 0});
-            addBotao("Sair", sf::Vector2f(0.0f, 0.0f), IDs::IDs::botao_sair, sf::Color{255, 0, 0});
+            addBotao("Tentar Novamente", sf::Vector2f(0.0f, 0.0f), IDs::IDs::restart_button, sf::Color{255, 0, 0});
+            addBotao("Sair", sf::Vector2f(0.0f, 0.0f), IDs::IDs::close_button, sf::Color{255, 0, 0});
 
             posBotaoY = 0.8f;
             atualizarBotoes();

@@ -4,7 +4,7 @@
 #include "menu.h"
 #include "../fundo/fundo.h"
 
-#define CAMINHO_IMAGEM_FUNDO "../Game/animations/backgorund/menu/menuPrincipal.png"
+#define CAMINHO_IMAGEM_FUNDO "../Game/animations/background/menu/menuPrincipal.png"
 
 namespace Game::Menu{
     class MenuPrincipal : public Menu{

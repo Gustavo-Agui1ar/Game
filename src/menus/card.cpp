@@ -22,9 +22,8 @@ namespace Game{
             sf::Vector2f tamJanela = pGrafico->getTamJanela();
             corpo = new sf::RectangleShape(sf::Vector2f(tamJanela.x/5.0f, (tamJanela.x/5.0f) - 20.0f ));
             textura = new sf::Texture();
-            std::ifstream arquivo(caminhoImagem);
 
-            if(arquivo)
+            if(std::ifstream arquivo(caminhoImagem); arquivo)
             {
                 if(!textura->loadFromFile(caminhoImagem))
                 {
@@ -35,7 +34,7 @@ namespace Game{
             }
             else
             {
-                if(!textura->loadFromFile("animations/backgorund/card/card-vazio.png"))
+                if(!textura->loadFromFile("animations/background/card/card-vazio.png"))
                 {
                     std::cout<<"nao foi possivel carregar a textura do card";
                     exit(1);

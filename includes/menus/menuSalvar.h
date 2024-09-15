@@ -26,7 +26,7 @@ namespace Game::Menu{
 
         //construtor e destrutor
 
-        explicit MenuSalvar(Fase::Fase* fase);
+        explicit MenuSalvar(Level::Level* fase);
         ~MenuSalvar() override;
 
         //metodo criador de botoes

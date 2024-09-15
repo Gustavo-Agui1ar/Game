@@ -10,7 +10,7 @@ namespace Game::Menu {
 
         //construtor e destrutor
 
-        explicit MenuGameOver(Fase::Fase* fase);
+        explicit MenuGameOver(Level::Level* fase);
         ~MenuGameOver() override;
 
         //metodo que cria botoes

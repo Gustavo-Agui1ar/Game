@@ -1,7 +1,7 @@
 
 #pragma once
 
-#include "../includes/entidade/Ente.h"
+#include "../includes/Entity/Ente.h"
 
 namespace Game::Menu::Botao{
     class Botao : public Ente{

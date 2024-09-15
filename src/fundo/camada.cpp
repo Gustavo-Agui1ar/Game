@@ -2,24 +2,14 @@
 #include "../../includes/fundo/camada.h"
 #include <math.h>
 
-namespace Game{
+namespace Game::Fundo{
 
-    namespace Fundo{
-
-        /**
-         * @brief construtora da classe camada 
-         * 
-         * @param tamjanela tamanho desta camada.
-         * @param textura textura a ser usada nesta camada.
-         * @param velociadade velocidade com que a camada se movimentara na tela.
-         * 
-        */
         Camada::Camada(const sf::Vector2f tamJanela, sf::Texture textura,const float velocidade):
         tamJanela(tamJanela), velocidade(velocidade), textura(textura),escala(0,0,0,0)
         {
-            escala.width = -(textura.getSize().x);
+            escala.width  = (textura.getSize().x);
             escala.height = (textura.getSize().y);
-            escala.left = (textura.getSize().x);
+            escala.left   = (textura.getSize().x);
 
 
             fundo.setSize(tamJanela);
@@ -30,17 +20,9 @@ namespace Game{
             fundoAuxiliar.setTexture(&this->textura);
             fundoAuxiliar.setPosition(tamJanela.x,0.0f);
         }
-        
-        /**
-         * @brief destrutora da classe camada.
-        */
-        Camada::~Camada(){}
 
-        /**
-         * @brief metodo que faz a troca do fundo Auxiliar 
-         * e do fundo Principal.
-         * 
-        */
+        Camada::~Camada() = default;
+
         void Camada::trocarTextura()
         {
             sf::RectangleShape auxTroca = fundo;
@@ -49,12 +31,6 @@ namespace Game{
             fundoAuxiliar = auxTroca;
         }
 
-        /**
-         * @brief metodo desenha a camada na tela
-         * 
-         * @param window janela a ser desenhada a camada.
-         *  
-        */
         void Camada::desenharCamada(sf::RenderWindow* window)
         {
             window->draw(fundo);
@@ -64,14 +40,6 @@ namespace Game{
             }
         }
 
-
-        /**
-         * @brief metodo que atualiza a posicao da camada na tela 
-         * 
-         * @param ds variacao na distancia percorrida pelo jogador.
-         * @param posCameraAtual nescessario para determinar as extremidades da janela.
-         *  
-        */
         void Camada::atualizar(const sf::Vector2f ds, const sf::Vector2f posCameraAtual)
         {
             sf::Vector2f posFundo = fundo.getPosition();
@@ -122,7 +90,6 @@ namespace Game{
         }
 
 
-    }
 
 
 }

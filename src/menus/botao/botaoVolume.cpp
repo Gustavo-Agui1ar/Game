@@ -22,21 +22,21 @@ namespace Game{
 
             switch(ID)
             {
-                case(IDs::IDs::botao_volume_geral):
+                case(IDs::IDs::sound_geral_button):
                 {
                     volume = pMusica->getVolumeGeral();
                     corpoVolume.setPosition(sf::Vector2f(posInicioFundo + volume * parametrizacao, getPos().y + getTamTexto().y - 15.0f));
                 }
                 break;
                 
-                case(IDs::IDs::botao_volume_do_jogo):
+                case(IDs::IDs::sound_game_button):
                 {
-                    volume = pMusica->getVolume(IDs::IDs::floresta_do_amanhecer);
+                    volume = pMusica->getVolume(IDs::IDs::dawn_forest);
                     corpoVolume.setPosition(sf::Vector2f(posInicioFundo + volume * parametrizacao, getPos().y + getTamTexto().y - 15.0f));
                 }
                 break;
                 
-                case(IDs::IDs::botao_volume_efeito_sonoro):
+                case(IDs::IDs::sound_effect_button):
                 {
                     volume = pMusica->getVolumeEfeitoSonoro();
                     corpoVolume.setPosition(sf::Vector2f(posInicioFundo + volume * parametrizacao, getPos().y + getTamTexto().y - 15.0f));
@@ -79,19 +79,19 @@ namespace Game{
 
             switch(ID)
             {
-                case(IDs::IDs::botao_volume_do_jogo):
+                case(IDs::IDs::sound_game_button):
                 {
-                    pMusica->setVolume(IDs::IDs::floresta_do_amanhecer, vol);
+                    pMusica->setVolume(IDs::IDs::dawn_forest, vol);
                 }
                 break;
                 
-                case(IDs::IDs::botao_volume_efeito_sonoro):
+                case(IDs::IDs::sound_effect_button):
                 {
                     pMusica->setVolumeEfeitoSonoro(vol);
                 }
                 break;
                 
-                case(IDs::IDs::botao_volume_geral):
+                case(IDs::IDs::sound_geral_button):
                 {
                     pMusica->setVolumeGeral(vol);
                 }
@@ -106,9 +106,9 @@ namespace Game{
          {
             atualizarAnimacao();
 
-            m_pGrafic->desenhaElemento(fundoVolume);
-            m_pGrafic->desenhaElemento(corpoVolume);
-            m_pGrafic->desenhaElemento(texto.getTexto());
+            m_graphic->desenhaElemento(fundoVolume);
+            m_graphic->desenhaElemento(corpoVolume);
+            m_graphic->desenhaElemento(texto.getTexto());
          }
 
         }

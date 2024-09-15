@@ -2,7 +2,7 @@
 #pragma once 
 
 #include "menu.h"
-#include "../fases/fase.h"
+#include "../Levels/Level.h"
 
 namespace Game::Menu{
     class MenuPausa : public Menu{
@@ -17,7 +17,7 @@ namespace Game::Menu{
 
         //atributos relacionados ao fundo
 
-        Fase::Fase* fase;
+        Level::Level* fase;
         sf::RectangleShape fundoEscuro;
         
         //atributo e metodo de atualizacao do botao
@@ -29,8 +29,8 @@ namespace Game::Menu{
 
         //construtores e destrutor
 
-        explicit MenuPausa(Fase::Fase* fase = nullptr);
-        MenuPausa(const IDs::IDs ID, const std::string titulo, Fase::Fase* fase = nullptr);
+        explicit MenuPausa(Level::Level* fase = nullptr);
+        MenuPausa(const IDs::IDs ID, const std::string titulo, Level::Level* fase = nullptr);
         ~MenuPausa() override;
 
         //metodo criador de botoes
@@ -39,11 +39,11 @@ namespace Game::Menu{
         
         //metodo de modificacao do atributo fase
 
-        void setFase(Fase::Fase* fase);
+        void setFase(Level::Level* fase);
         
         //metodo de acesso ao atributo fase
 
-        Fase::Fase* getFase();
+        Level::Level* getFase();
 
         //metodo de atualizacao de um objeto desta classe
 

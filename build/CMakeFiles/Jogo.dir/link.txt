@@ -1,3 +1,0 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\Jogo.dir/objects.a
-C:\msys64\mingw64\bin\ar.exe qc CMakeFiles\Jogo.dir/objects.a @CMakeFiles\Jogo.dir\objects1.rsp
-C:\msys64\mingw64\bin\g++.exe  -Wall -g -Wl,--whole-archive CMakeFiles\Jogo.dir/objects.a -Wl,--no-whole-archive -o "C:\Users\gusta\OneDrive\Documentos\Faculdade\1-Periodo\projetos a parte\Game\Jogo.exe" -Wl,--out-implib,libJogo.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Jogo.dir\linkLibs.rsp

@@ -16,7 +16,7 @@ namespace Game::Menu{
 
         public:
 
-            explicit MenuDeSelecao(Fase::Fase* fase = nullptr);
+            explicit MenuDeSelecao(Level::Level* fase = nullptr);
             ~MenuDeSelecao() override;
 
             void criarBotoes() override;

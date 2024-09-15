@@ -10,7 +10,7 @@ namespace Game::Listener{
      * 
      * @param jogador jogador a ser atribuito no atributo jogador do listenerJogador 
     */
-    ListenerJogador::ListenerJogador(Entidade::Character::Player::Player* jogador):
+    ListenerJogador::ListenerJogador(Entity::Character::Player::Player* jogador):
     Listener()
     {
         this->jogador = jogador;

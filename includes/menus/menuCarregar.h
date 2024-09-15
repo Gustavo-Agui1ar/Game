@@ -3,7 +3,7 @@
 
 #include "menuPrincipal.h"
 #include "../gerenciador/gerenciadorArquivo.h"
-#include "../fases/fase.h"
+#include "../Levels/Level.h"
 
 namespace Game::Menu {
     class MenuCarregar : public MenuPrincipal {
@@ -19,7 +19,7 @@ namespace Game::Menu {
 
         //atributo do fundo
 
-        Fase::Fase* fase;
+        Level::Level* fase;
         sf::RectangleShape fundoEscuro;
 
         //metodo de inicializacao
@@ -30,7 +30,7 @@ namespace Game::Menu {
         
         //construtor e destrutor
 
-        explicit MenuCarregar(Fase::Fase* fase = nullptr);
+        explicit MenuCarregar(Level::Level* fase = nullptr);
         ~MenuCarregar() override;
 
         //metodo de verificao de botoes

@@ -1,9 +1,9 @@
 
 #pragma once
 
-#include "../estados/estadoFase.h"
-#include "../estados/estadoMenu.h"
-#include "../estados/estadoDialogo.h"
+#include "../States/LevelState.h"
+#include "../States/MenuState.h"
+#include "../States/DialogueState.h"
 #include "gerenciadorDeMusica.h"
 #include <stack>
 
@@ -15,7 +15,7 @@ namespace Game::Gerenciador{
 
         //pilha de stados
         
-        std::stack<Estado::Estado*> pilhaEstados;
+        std::stack<State::State*> pilhaEstados;
         
         //construtora
 
@@ -48,8 +48,8 @@ namespace Game::Gerenciador{
         void addEstado(const IDs::IDs ID);
         void removerEstado();
         
-        Estado::Estado* getEstadoAtual();
-        Estado::Estado* getEstado(int qtd);
+        State::State* getEstadoAtual();
+        State::State* getEstado(int qtd);
         void removerEstado(const int quantidade);
 
     };

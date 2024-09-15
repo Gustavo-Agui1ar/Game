@@ -2,7 +2,7 @@
 #pragma once
 
 #include  "../lista/lista.h"
-#include  "../entidade/entidade.h"
+#include  "../Entity/Entity.h"
 
 
 namespace Game::Lista{
@@ -12,7 +12,7 @@ namespace Game::Lista{
     private:
         //lista
 
-        Lista<Entidade::Entidade> objListaEntidade;
+        Lista<Entity::Entity> objListaEntidade;
     
     public:
 
@@ -23,17 +23,17 @@ namespace Game::Lista{
     
         //metodos de adicao 
 
-        void addEntidade(Entidade::Entidade* entidade, int pos);
-        void addEntidade(Entidade::Entidade* entidade);
+        void addEntidade(Entity::Entity* entidade, int pos);
+        void addEntidade(Entity::Entity* entidade);
         
         //metodos de remocao
 
-        void removerEntidade(Entidade::Entidade* entidade);
+        void removerEntidade(Entity::Entity* entidade);
         void removerEntidade(int pos);
         
         //metodos de percorrer a lista
 
-        Entidade::Entidade* operator[](int pos);
+        Entity::Entity* operator[](int pos);
         const int getTam();
         
         //metodo que limpa alista

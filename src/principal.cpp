@@ -6,11 +6,11 @@
 Game::Principal::Principal()
 {
 
-    gerenciadorGrafico = gerenciadorGrafico->getGerenciadorGrafico();
+    gerenciadorGrafico = Gerenciador::GerenciadorGrafico::getGerenciadorGrafico();
 
     gerenciadorDeEventos = gerenciadorDeEventos->getGerenciadorDeEventos();
 
-    pEstado = pEstado->getGerenciadorDeEstado();
+    pEstado = Gerenciador::GerenciadorDeEstado::getGerenciadorDeEstado();
 
     if(pEstado == nullptr)
     {
@@ -68,5 +68,5 @@ Game::Principal::~Principal()
 
 void Game::Principal::criarEstadoInicial()
 {
-    pEstado->addEstado(IDs::IDs::menu_principal);
+    pEstado->addEstado(IDs::IDs::main_menu);
 }

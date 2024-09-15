@@ -2,7 +2,7 @@
 #pragma once 
 
 #include <iostream>
-#include "../entidade/IDs.h"
+#include "../Entity/IDs.h"
 #include <SFML/Audio.hpp>
 #include <map>
 

@@ -2,9 +2,7 @@
 #include "../includes/gerenciador/gerenciadorDeDialogo.h"
 #include "../includes/listeners/listenerDialogo.h"
 
-namespace Game{
-
-    namespace Gerenciador{
+namespace Game::Gerenciador{
 
         GerenciadorDeDialogo::GerenciadorDeDialogo(std::vector<std::string> nomes, std::vector<std::string> falas):
         dialogos(), fimUltimaFala(false), nomeEsquerda(true), pLDialogo(new Listener::ListenerDialogo(this))
@@ -16,7 +14,7 @@ namespace Game{
         {
             if(pLDialogo != nullptr)
             {
-                delete(pLDialogo);
+                delete pLDialogo;
                 pLDialogo = nullptr;
             }
 
@@ -25,15 +23,15 @@ namespace Game{
 
         void GerenciadorDeDialogo::inicializarDialogos(std::vector<std::string> nomes, std::vector<std::string> falas)
         {
-            std::vector<std::string>::iterator itN = nomes.begin();
-            std::vector<std::string>::iterator itF = falas.begin();
+            auto itN = nomes.begin();
+            auto itF = falas.begin();
 
             while(itF != falas.end())
             {
                 std::string nome = (*itN);
                 std::string dialogo = (*itF);
 
-                Menu::Botao::BalaoDeFala* fala = new Menu::Botao::BalaoDeFala(dialogo, nome);
+                auto* fala = new Menu::Botao::BalaoDeFala(dialogo, nome);
 
                 if(fala == nullptr)
                 {
@@ -99,5 +97,4 @@ namespace Game{
         }
 
        
-    }
 }

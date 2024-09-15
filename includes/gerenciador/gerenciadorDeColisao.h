@@ -30,8 +30,8 @@ namespace Game::Gerenciador{
         void limparListas();
         //metodos de analise de colisao
         
-        const sf::Vector2f calculaColisao(Entidade::Entidade* ent1, Entidade::Entidade* ent2);
-        Entidade::Entidade* procurarEntidade(sf::Vector2f posPersonagem, sf::Vector2f raioDeDistancia, IDs::IDs objProcurado);
+        const sf::Vector2f calculaColisao(Entity::Entity* ent1, Entity::Entity* ent2);
+        Entity::Entity* procurarEntidade(sf::Vector2f posPersonagem, sf::Vector2f raioDeDistancia, IDs::IDs objProcurado);
         void executar();
     };
 }

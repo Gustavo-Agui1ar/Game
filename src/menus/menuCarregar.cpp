@@ -10,8 +10,8 @@ namespace Game{
          * 
          * @param fase fase a ser desenhada como fundo
         */
-        MenuCarregar::MenuCarregar(Fase::Fase* fase):
-        MenuPrincipal(IDs::IDs::menu_carregar, "CARREGAR JOGO", 100),gerenciadorArquivo(),fase(fase)
+        MenuCarregar::MenuCarregar(Level::Level* fase):
+        MenuPrincipal(IDs::IDs::load_menu, "CARREGAR JOGO", 100),gerenciadorArquivo(),fase(fase)
         {
             if(fase != nullptr)
             {
@@ -19,7 +19,7 @@ namespace Game{
                 fundoEscuro.setSize(tamJanela);
                 fundoEscuro.setPosition(0.0f, 0.0f);
                 fundoEscuro.setFillColor(sf::Color{0, 0, 0, 180});
-                sf::Vector2f posFundoEscuro = sf::Vector2f(posFundo.x - tamJanela.x / 2.0f, posFundo.y - tamJanela.y / 2.0f);
+                auto posFundoEscuro = sf::Vector2f(posFundo.x - tamJanela.x / 2.0f, posFundo.y - tamJanela.y / 2.0f);
                 fundoEscuro.setPosition(posFundoEscuro);
                 titulo.setPos(sf::Vector2f(posFundo.x - titulo.getTam().x / 2.1f, posFundo.y - tamJanela.y / 2.0f ));
             }
@@ -32,9 +32,8 @@ namespace Game{
         */
         MenuCarregar::~MenuCarregar()
         {
-            std::list<Card*>::iterator it;
 
-            for(it = listaCards.begin() ; it != listaCards.end() ; it++)
+            for(auto it = listaCards.begin() ; it != listaCards.end() ; it++)
             {
                 Card* card = *it;
                 if(card != nullptr)
@@ -57,7 +56,7 @@ namespace Game{
 
             for(int i = 0 ; i < 4 ; i++)
             {
-                sf::Vector2f pos(sf::Vector2f((tamJanela.x/5.0f) * i + espacamento * (i + 1),180.0f));
+                auto pos(sf::Vector2f((tamJanela.x/5.0f) * i + espacamento * (i + 1),180.0f));
 
                 if(fase != nullptr)
                 {
@@ -142,7 +141,7 @@ namespace Game{
         */
         void MenuCarregar::criarBotaoBug()
         {
-            addBotao("Voltar", sf::Vector2f(tamJanela.x / 2.0f - tamBotao.x / 2.0f, tamJanela.y - tamJanela.y / 12.0f), IDs::IDs::botao_voltar, sf::Color{0, 255, 0});
+            addBotao("Voltar", sf::Vector2f(tamJanela.x / 2.0f - tamBotao.x / 2.0f, tamJanela.y - tamJanela.y / 12.0f), IDs::IDs::back_button, sf::Color{0, 255, 0});
             inicialiarIterador();
         }
         
@@ -152,9 +151,9 @@ namespace Game{
         void MenuCarregar::criarBotoes()
         {
             const float posBotaoX = tamJanela.x/2.0f - tamBotao.x/2.0f;
-            addBotao( "Carregar", sf::Vector2f(posBotaoX,tamJanela.y/2.0f + tamBotao.y * 1.5f), IDs::IDs::botao_carregar , sf::Color{238,173,45});
-            addBotao( "Remover", sf::Vector2f(posBotaoX,tamJanela.y/2.0f +  tamBotao.y * 3.0f), IDs::IDs::botao_remover, sf::Color{238,173,45});
-            addBotao( "Voltar", sf::Vector2f(posBotaoX,tamJanela.y/2.0f +  tamBotao.y * 4.5f), IDs::IDs::botao_voltar, sf::Color{238,173,45});
+            addBotao( "Carregar", sf::Vector2f(posBotaoX,tamJanela.y/2.0f + tamBotao.y * 1.5f), IDs::IDs::load_button , sf::Color{238,173,45});
+            addBotao( "Remover", sf::Vector2f(posBotaoX,tamJanela.y/2.0f +  tamBotao.y * 3.0f), IDs::IDs::remove_button, sf::Color{238,173,45});
+            addBotao( "Voltar", sf::Vector2f(posBotaoX,tamJanela.y/2.0f +  tamBotao.y * 4.5f), IDs::IDs::back_button, sf::Color{238,173,45});
             inicialiarIterador();
 
             if(fase != nullptr)
@@ -179,18 +178,18 @@ namespace Game{
             if(fase != nullptr)
             {
                 fase->draw();
-                m_pGrafic->desenhaElemento(fundoEscuro);
+                m_graphic->desenhaElemento(fundoEscuro);
             }
             else
             {
-                posFundo = sf::Vector2f(posFundo.x + m_pGrafic->getTempo() * 80.0f, posFundo.y);
-                m_pGrafic->atualizarCamera(sf::Vector2f(posFundo.x + tamJanela.x / 2.0f, posFundo.y + tamJanela.y / 2.0f));
+                posFundo = sf::Vector2f(posFundo.x + m_graphic->getTempo() * 80.0f, posFundo.y);
+                m_graphic->atualizarCamera(sf::Vector2f(posFundo.x + tamJanela.x / 2.0f, posFundo.y + tamJanela.y / 2.0f));
                 fundo.executar();
-                m_pGrafic->resetarJanela();
+                m_graphic->resetarJanela();
             }
             draw();
 
-            m_pGrafic->desenhaElemento(titulo.getTexto());
+            m_graphic->desenhaElemento(titulo.getTexto());
 
             desenharCards();
         }

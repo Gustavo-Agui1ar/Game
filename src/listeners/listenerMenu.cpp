@@ -2,10 +2,9 @@
 #include "../includes/listeners/listenerMenu.h"
 #include "../includes/gerenciador/gerenciadorDeEstado.h"
 
-namespace Game{
+namespace Game::Listener{
 
-    namespace Listener{
-        
+       
         /**
          * @brief contrutora da classe ListenerMenu
          * 
@@ -20,10 +19,7 @@ namespace Game{
         /**
          * @brief destrutora da classe ListenerMenu
         */
-        ListenerMenu::~ListenerMenu()
-        {
-
-        }
+        ListenerMenu::~ListenerMenu() = default;
 
         /**
          * @brief metodo que trata teclas pressionadas 
@@ -37,11 +33,11 @@ namespace Game{
             {
                 switch(menu->getIDBotaoSelecionado())
                 {
-                    case(IDs::IDs::botao_sair):
+                    case IDs::IDs::close_button:
                     { 
-                        if(menu->getID() == IDs::IDs::menu_pause || menu->getID() == IDs::IDs::menu_gameOver)
+                        if(menu->getID() == IDs::IDs::pause_menu || menu->getID() == IDs::IDs::game_over_menu)
                         {
-                            if(pEstado->getEstado(1)->getID() == IDs::IDs::estado_dialogo)
+                            if(pEstado->getEstado(1)->getID() == IDs::IDs::dialogue_estate)
                                 pEstado->removerEstado(3);
                             else
                                 pEstado->removerEstado(2);
@@ -52,91 +48,91 @@ namespace Game{
                     break;
                     
                     
-                    case(IDs::IDs::botao_novoJogo):
+                    case IDs::IDs::new_game_button:
                     {
-                        pEstado->addEstado(IDs::IDs::vila);
-                        Estado::EstadoFase* fase = dynamic_cast<Estado::EstadoFase*>(pEstado->getEstadoAtual());
-                        fase->criarFase();
+                        pEstado->addEstado(IDs::IDs::village);
+                        auto* fase = dynamic_cast<State::LevelState*>(pEstado->getEstadoAtual());
+                        fase->makeLevel();
                     }
                     break;
                     
                     
-                    case(IDs::IDs::botao_carregar_jogo):
+                    case IDs::IDs::load_game_button:
                     {
-                        pEstado->addEstado(IDs::IDs::menu_carregar);      
-                        pEstado->addEstado(IDs::IDs::menu_bug);      
+                        pEstado->addEstado(IDs::IDs::load_menu);      
+                        pEstado->addEstado(IDs::IDs::bug_menu);      
                     }
                     break;
 
-                    case (IDs::IDs::botao_jogar):
+                    case IDs::IDs::play_button:
                     {
-                        Estado::EstadoMenu* menu = static_cast<Estado::EstadoMenu*>(pEstado->getEstadoAtual());
-                        Menu::MenuDeSelecao* selecao = static_cast<Menu::MenuDeSelecao*>(menu->getMenu());
+                        auto* menu = static_cast<State::MenuState*>(pEstado->getEstadoAtual());
+                        auto* selecao = static_cast<Menu::MenuDeSelecao*>(menu->getMenu());
 
                         IDs::IDs IDfase = selecao->getIDdeSelecao();
 
                         pEstado->removerEstado(2);
 
-                        if(pEstado->getEstadoAtual()->getID() == IDs::IDs::estado_dialogo)
+                        if(pEstado->getEstadoAtual()->getID() == IDs::IDs::dialogue_estate)
                             pEstado->removerEstado(2);
                         else
                             pEstado->removerEstado(1);
                         
                         pEstado->addEstado(IDfase);
                             
-                        Estado::EstadoFase* fase = dynamic_cast<Estado::EstadoFase*>(pEstado->getEstadoAtual());
-                        fase->criarFase();
+                        auto* fase = dynamic_cast<State::LevelState*>(pEstado->getEstadoAtual());
+                        fase->makeLevel();
                     }
                         break;
                     
-                    case(IDs::IDs::botao_menu_selecao_fase):
+                    case IDs::IDs::select_menu_level_button:
                     {
-                        pEstado->addEstado(IDs::IDs::menu_de_selecao_fase);      
-                        pEstado->addEstado(IDs::IDs::menu_bug);      
+                        pEstado->addEstado(IDs::IDs::select_fase_menu);      
+                        pEstado->addEstado(IDs::IDs::bug_menu);      
                     }
                     break;
                      
-                    case (IDs::IDs::botao_opcao):
+                    case IDs::IDs::option_button:
                     {
-                        pEstado->addEstado(IDs::IDs::menu_opcao);
-                        pEstado->addEstado(IDs::IDs::menu_bug);
+                        pEstado->addEstado(IDs::IDs::option_menu);
+                        pEstado->addEstado(IDs::IDs::bug_menu);
                     }
                         break;
 
-                    case(IDs::IDs::botao_voltar):
+                    case IDs::IDs::back_button:
                     {
                         pEstado->removerEstado();
                     }
                     break;
 
-                    case (IDs::IDs::botao_salvar):
+                    case IDs::IDs::save_button:
                     {
-                        Estado::Estado* estado = pEstado->getEstadoAtual();
+                        State::State* estado = pEstado->getEstadoAtual();
 
-                        if(estado->getID() == IDs::IDs::menu_salvar)
+                        if(estado->getID() == IDs::IDs::save_menu)
                         {
-                            Estado::EstadoMenu* estadoMenu = dynamic_cast<Estado::EstadoMenu*>(estado);
-                            Menu::MenuSalvar* mSalvar = dynamic_cast<Menu::MenuSalvar*>(estadoMenu->getMenu());
+                            auto* estadoMenu = dynamic_cast<State::MenuState*>(estado);
+                            auto* mSalvar = dynamic_cast<Menu::MenuSalvar*>(estadoMenu->getMenu());
                             mSalvar->salvar();
                             pEstado->removerEstado(); 
                         }
                     }
                     break;
                     
-                    case(IDs::IDs::botao_carregar):
+                    case IDs::IDs::load_button:
                     {
-                        Estado::Estado* estado = pEstado->getEstadoAtual();
-                        if(estado->getID() == IDs::IDs::menu_carregar)
+                        State::State* estado = pEstado->getEstadoAtual();
+                        if(estado->getID() == IDs::IDs::load_menu)
                         {
-                            Estado::EstadoMenu* estadoMenu = dynamic_cast<Estado::EstadoMenu*>(estado);
+                            auto* estadoMenu = dynamic_cast<State::MenuState*>(estado);
                             Menu::Menu* pMenu = estadoMenu->getMenu();
-                            Menu::MenuCarregar* mCarregar = static_cast<Menu::MenuCarregar*>(pMenu);
+                            auto const* mCarregar = static_cast<Menu::MenuCarregar*>(pMenu);
                             Menu::Card* card = mCarregar->getCardSelecionado();
 
                             if(card->getExiste())
                             {
                                 pEstado->removerEstado();
-                                if(pEstado->getEstadoAtual()->getID() == IDs::IDs::menu_pause)
+                                if(pEstado->getEstadoAtual()->getID() == IDs::IDs::pause_menu)
                                 {
                                     pEstado->removerEstado(2);
                                 }
@@ -153,51 +149,51 @@ namespace Game{
 
                                 pEstado->addEstado(ID);
 
-                                Estado::EstadoFase* estadoFase = dynamic_cast<Estado::EstadoFase*>(pEstado->getEstadoAtual());
-                                estadoFase->criarFase(jsonEntidaes, ID);
+                                auto* estadoFase = dynamic_cast<State::LevelState*>(pEstado->getEstadoAtual());
+                                estadoFase->makeLevel(jsonEntidaes, ID);
                             }
                         }
                     }
                         break;
-                    case(IDs::IDs::botao_remover):
+                    case IDs::IDs::remove_button:
                     {
-                        Estado::Estado* estado = pEstado->getEstadoAtual();
+                        State::State* estado = pEstado->getEstadoAtual();
                         if(estado == nullptr)
                         {
                             std::cout << "nao foi possivel recuperar estado atual";
                             exit(1);
                         }
-                        if(estado->getID() == IDs::IDs::menu_carregar)
+                        if(estado->getID() == IDs::IDs::load_menu)
                         {
-                            Estado::EstadoMenu* estadoMenu = dynamic_cast<Estado::EstadoMenu*>(estado);
-                            Menu::MenuCarregar* mCarregar = dynamic_cast<Menu::MenuCarregar*>(estadoMenu->getMenu());
+                            auto* estadoMenu = dynamic_cast<State::MenuState*>(estado);
+                            auto* mCarregar = dynamic_cast<Menu::MenuCarregar*>(estadoMenu->getMenu());
                             mCarregar->deletarArquivos();
                         }
                     }
                     break;
 
-                    case(IDs::IDs::botao_reniciar_jogo):
+                    case IDs::IDs::restart_button:
                     {
-                        Estado::Estado* estado = pEstado->getEstadoAtual();
+                        State::State* estado = pEstado->getEstadoAtual();
                         
-                        if(estado->getID() == IDs::IDs::menu_gameOver)
+                        if(estado->getID() == IDs::IDs::game_over_menu)
                         {
-                            Estado::EstadoMenu* pMenu = dynamic_cast<Estado::EstadoMenu*>(estado);
-                            Menu::MenuGameOver* menuGO = dynamic_cast<Menu::MenuGameOver*>(pMenu->getMenu());
+                            auto* pMenu = dynamic_cast<State::MenuState*>(estado);
+                            auto* menuGO = dynamic_cast<Menu::MenuGameOver*>(pMenu->getMenu());
                             IDs::IDs IDfase = menuGO->getFase()->getID();     
 
                             pEstado->removerEstado(2);
                             pEstado->addEstado(IDfase); 
-                            Estado::EstadoFase* pFase = dynamic_cast<Estado::EstadoFase*>(pEstado->getEstadoAtual());
-                            pFase->criarFase();
+                            auto* pFase = dynamic_cast<State::LevelState*>(pEstado->getEstadoAtual());
+                            pFase->makeLevel();
                         }
                     }
                     break;
 
-                    case(IDs::IDs::botao_salvar_jogo):
+                    case IDs::IDs::save_game_button:
                     {
-                        pEstado->addEstado(IDs::IDs::menu_salvar);
-                        pEstado->addEstado(IDs::IDs::menu_bug);
+                        pEstado->addEstado(IDs::IDs::save_menu);
+                        pEstado->addEstado(IDs::IDs::bug_menu);
                     }
                     break;
 
@@ -206,11 +202,11 @@ namespace Game{
                 }
             
             }
-            else if(tecEspecial[tecla] == "Left"  && pEstado->getEstadoAtual()->getID() == IDs::IDs::menu_opcao)
+            else if(tecEspecial[tecla] == "Left"  && pEstado->getEstadoAtual()->getID() == IDs::IDs::option_menu)
             {
                 menu->selecionaEsquerda();
             }
-            else if(tecEspecial[tecla] == "Right" && pEstado->getEstadoAtual()->getID() == IDs::IDs::menu_opcao)
+            else if(tecEspecial[tecla] == "Right" && pEstado->getEstadoAtual()->getID() == IDs::IDs::option_menu)
             {
                 menu->selecionaDireita();
             }
@@ -224,23 +220,13 @@ namespace Game{
         void ListenerMenu::teclaSolta(const sf::Keyboard::Key tecla)
         {
             if(tecEspecial[tecla] == "Up")
-            {
                 menu->selecionaParaCima();
-            }
             else if(tecEspecial[tecla] == "Down")
-            {
                 menu->selecionaParaBaixo();
-            }
-            else if(tecEspecial[tecla] == "Left"  && pEstado->getEstadoAtual()->getID() != IDs::IDs::menu_opcao)
-            {
+            else if(tecEspecial[tecla] == "Left"  && pEstado->getEstadoAtual()->getID() != IDs::IDs::option_menu)
                 menu->selecionaEsquerda();
-            }
-            else if(tecEspecial[tecla] == "Right" && pEstado->getEstadoAtual()->getID() != IDs::IDs::menu_opcao)
-            {
+            else if(tecEspecial[tecla] == "Right" && pEstado->getEstadoAtual()->getID() != IDs::IDs::option_menu)
                 menu->selecionaDireita();
-            }
-           
-
         }
 
         /**
@@ -269,133 +255,137 @@ namespace Game{
                         IDs::IDs IDmenu = menu->getID();
                         switch (menu->getIDBotaoSelecionado())
                         {
-                            case (IDs::IDs::botao_novoJogo):
+                            case IDs::IDs::new_game_button:
                             {
-                                pEstado->addEstado(IDs::IDs::vila);
-                                Estado::EstadoFase* fase = dynamic_cast<Estado::EstadoFase*>(pEstado->getEstadoAtual());
-                                fase->criarFase();
+                                pEstado->addEstado(IDs::IDs::village);
+                                auto* fase = dynamic_cast<State::LevelState*>(pEstado->getEstadoAtual());
+                                fase->makeLevel();
                             }
                                 break;
-                            case (IDs::IDs::botao_sair):
+                            case IDs::IDs::close_button:
                             {
-                                //provisorio
-                                if(IDmenu == IDs::IDs::menu_pause || IDmenu == IDs::IDs::menu_gameOver)
-                                    pEstado->removerEstado(2);
-                                else
+                               if(menu->getID() == IDs::IDs::pause_menu || menu->getID() == IDs::IDs::game_over_menu)
+                                {
+                                    if(pEstado->getEstado(1)->getID() == IDs::IDs::dialogue_estate)
+                                        pEstado->removerEstado(3);
+                                    else
+                                        pEstado->removerEstado(2);
+                                }
+                                else    
                                     pEstado->removerEstado();
                             }
                                 break;
                           
-                            case (IDs::IDs::botao_jogar):
+                            case IDs::IDs::play_button:
                             {
-                                Estado::EstadoMenu* menu = static_cast<Estado::EstadoMenu*>(pEstado->getEstadoAtual());
-                                Menu::MenuDeSelecao* selecao = static_cast<Menu::MenuDeSelecao*>(menu->getMenu());
+                                auto* menu = static_cast<State::MenuState*>(pEstado->getEstadoAtual());
+                                auto* selecao = static_cast<Menu::MenuDeSelecao*>(menu->getMenu());
 
                                 IDs::IDs IDfase = selecao->getIDdeSelecao();
 
                                 pEstado->removerEstado(2);
 
-                                if(pEstado->getEstadoAtual()->getID() == IDs::IDs::estado_dialogo)
+                                if(pEstado->getEstadoAtual()->getID() == IDs::IDs::dialogue_estate)
                                     pEstado->removerEstado(2);
                                 else
                                     pEstado->removerEstado(1);
                                 
                                 pEstado->addEstado(IDfase);
                                     
-                                Estado::EstadoFase* fase = dynamic_cast<Estado::EstadoFase*>(pEstado->getEstadoAtual());
-                                fase->criarFase();
+                                auto* fase = dynamic_cast<State::LevelState*>(pEstado->getEstadoAtual());
+                                fase->makeLevel();
                             }
                                 break;
 
-                            case (IDs::IDs::botao_voltar):
+                            case IDs::IDs::back_button:
                             {
                                 pEstado->removerEstado();
                             }
                                 break;
-                            case (IDs::IDs::botao_salvar):
+                            case IDs::IDs::save_button:
                             {
-                                Estado::Estado* estado = pEstado->getEstadoAtual();
+                                State::State* estado = pEstado->getEstadoAtual();
 
-                                if(IDmenu == IDs::IDs::menu_salvar)
+                                if(IDmenu == IDs::IDs::save_menu)
                                 {
-                                    Estado::EstadoMenu* estadoMenu = dynamic_cast<Estado::EstadoMenu*>(estado);
-                                    Menu::MenuSalvar* mSalvar = dynamic_cast<Menu::MenuSalvar*>(estadoMenu->getMenu());
+                                    auto* estadoMenu = dynamic_cast<State::MenuState*>(estado);
+                                    auto* mSalvar = dynamic_cast<Menu::MenuSalvar*>(estadoMenu->getMenu());
                                     mSalvar->salvar();
                                     pEstado->removerEstado(); 
                                 }
                             
                             }
                                 break;
-                            case(IDs::IDs::botao_menu_selecao_fase):
+                            case IDs::IDs::select_menu_level_button:
                             {
-                                pEstado->addEstado(IDs::IDs::menu_de_selecao_fase);      
+                                pEstado->addEstado(IDs::IDs::select_fase_menu);      
                             }
                                 break;
-                            case (IDs::IDs::botao_carregar_jogo):
+                            case IDs::IDs::load_game_button:
                             {
-                                pEstado->addEstado(IDs::IDs::menu_carregar);
-                            }
-                                break;
-                           
-                            case (IDs::IDs::botao_opcao):
-                            {
-                                pEstado->addEstado(IDs::IDs::menu_opcao);
+                                pEstado->addEstado(IDs::IDs::load_menu);
                             }
                                 break;
                            
-                            case(IDs::IDs::botao_reniciar_jogo):
+                            case IDs::IDs::option_button:
                             {
-                                Estado::Estado* estado = pEstado->getEstadoAtual();
+                                pEstado->addEstado(IDs::IDs::option_menu);
+                            }
+                                break;
+                           
+                            case IDs::IDs::restart_button:
+                            {
+                                State::State* estado = pEstado->getEstadoAtual();
                         
-                                if(estado->getID() == IDs::IDs::menu_gameOver)
+                                if(estado->getID() == IDs::IDs::game_over_menu)
                                 {
-                                    Estado::EstadoMenu* pMenu = dynamic_cast<Estado::EstadoMenu*>(estado);
-                                    Menu::MenuGameOver* menuGO = dynamic_cast<Menu::MenuGameOver*>(pMenu->getMenu());
+                                    auto* pMenu = dynamic_cast<State::MenuState*>(estado);
+                                    auto* menuGO = dynamic_cast<Menu::MenuGameOver*>(pMenu->getMenu());
                                     IDs::IDs IDfase = menuGO->getFase()->getID();     
 
                                     pEstado->removerEstado(2);
                                     pEstado->addEstado(IDfase); 
-                                    Estado::EstadoFase* pFase = dynamic_cast<Estado::EstadoFase*>(pEstado->getEstadoAtual());
-                                    pFase->criarFase();
+                                    auto* pFase = dynamic_cast<State::LevelState*>(pEstado->getEstadoAtual());
+                                    pFase->makeLevel();
                                 }
                             }
                             break;
 
-                            case(IDs::IDs::botao_salvar_jogo):
+                            case IDs::IDs::save_game_button:
                             {
-                                pEstado->addEstado(IDs::IDs::menu_salvar);
+                                pEstado->addEstado(IDs::IDs::save_menu);
                             }
                                 break;
-                            case(IDs::IDs::botao_remover):
+                            case IDs::IDs::remove_button:
                             {
-                                Estado::Estado* estado = pEstado->getEstadoAtual();
+                                State::State* estado = pEstado->getEstadoAtual();
                                 if(estado == nullptr)
                                 {
                                     std::cout << "nao foi possivel recuperar estado atual";
                                     exit(1);
                                 }
-                                if(estado->getID() == IDs::IDs::menu_carregar)
+                                if(estado->getID() == IDs::IDs::load_menu)
                                 {
-                                    Estado::EstadoMenu* estadoMenu = dynamic_cast<Estado::EstadoMenu*>(estado);
-                                    Menu::MenuCarregar* mCarregar = dynamic_cast<Menu::MenuCarregar*>(estadoMenu->getMenu());
+                                    auto* estadoMenu = dynamic_cast<State::MenuState*>(estado);
+                                    auto* mCarregar = dynamic_cast<Menu::MenuCarregar*>(estadoMenu->getMenu());
                                     mCarregar->deletarArquivos();
                                 }
                             }
                                 break;
-                            case(IDs::IDs::botao_carregar):
+                            case IDs::IDs::load_button:
                             {
-                                Estado::Estado* estado = pEstado->getEstadoAtual();
-                                if(estado->getID() == IDs::IDs::menu_carregar)
+                                State::State* estado = pEstado->getEstadoAtual();
+                                if(estado->getID() == IDs::IDs::load_menu)
                                 {
-                                    Estado::EstadoMenu* estadoMenu = dynamic_cast<Estado::EstadoMenu*>(estado);
+                                    auto* estadoMenu = dynamic_cast<State::MenuState*>(estado);
                                     Menu::Menu* pMenu = estadoMenu->getMenu();
-                                    Menu::MenuCarregar* mCarregar = static_cast<Menu::MenuCarregar*>(pMenu);
+                                    auto const* mCarregar = static_cast<Menu::MenuCarregar*>(pMenu);
                                     Menu::Card* card = mCarregar->getCardSelecionado();
 
                                     if(card->getExiste())
                                     {
                                         pEstado->removerEstado();
-                                        if(pEstado->getEstadoAtual()->getID() == IDs::IDs::menu_pause)
+                                        if(pEstado->getEstadoAtual()->getID() == IDs::IDs::pause_menu)
                                         {
                                             pEstado->removerEstado(2);
                                         }
@@ -412,8 +402,8 @@ namespace Game{
 
                                         pEstado->addEstado(ID);
 
-                                        Estado::EstadoFase* estadoFase = dynamic_cast<Estado::EstadoFase*>(pEstado->getEstadoAtual());
-                                        estadoFase->criarFase(jsonEntidaes, ID);
+                                        auto* estadoFase = dynamic_cast<State::LevelState*>(pEstado->getEstadoAtual());
+                                        estadoFase->makeLevel(jsonEntidaes, ID);
                                     }
                                 }
                             }
@@ -429,5 +419,4 @@ namespace Game{
                 }
             }
         }
-    }
 }

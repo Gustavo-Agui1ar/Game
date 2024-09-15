@@ -54,9 +54,9 @@ namespace Game{
                     if(evento.type != sf::Event::LostFocus)
                     {
                         if(evento.type == sf::Event::KeyPressed)
-                        listaListener->tratarTeclaPressionada(evento.key.code);
+                            listaListener->tratarTeclaPressionada(evento.key.code);
                         else if(evento.type == sf::Event::KeyReleased)
-                        listaListener->tratarTeclaSolta(evento.key.code);
+                            listaListener->tratarTeclaSolta(evento.key.code);
                         else if(evento.type == sf::Event::MouseMoved)
                             listaListener->notificarMovimentoMouse(evento.mouseMove);
                         else if(evento.type == sf::Event::MouseButtonReleased)
@@ -65,8 +65,8 @@ namespace Game{
                             pGrafico->fechaJanela();
                     }
                     else{
-                        if(pEstado->getEstadoAtual()->getID() == IDs::IDs::floresta_do_amanhecer)
-                            pEstado->addEstado(IDs::IDs::menu_pause);
+                        if(pEstado->getEstadoAtual()->getID() == IDs::IDs::dawn_forest)
+                            pEstado->addEstado(IDs::IDs::pause_menu);
                     }
                 }
             }

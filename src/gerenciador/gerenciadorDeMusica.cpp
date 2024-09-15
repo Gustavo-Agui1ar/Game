@@ -6,26 +6,19 @@ namespace Game::Gerenciador{
 
     GerenciadorDeMusica* GerenciadorDeMusica::pMusica = nullptr;
 
-    /**
-     * @brief construtora da classe GerenciadordeMusica nela é inicializada as musicas a serem tocadas
-    */
     GerenciadorDeMusica::GerenciadorDeMusica():
     mapMusica(), volumeGeral(100.0f), volumeEfeitoSonoro(40.0f)
     {
-        addMusica(IDs::IDs::floresta_do_amanhecer, "musics/adventure-begins.ogg");
-        addMusica(IDs::IDs::caverna, "musics/Summer-Nights.ogg");
-        addMusica(IDs::IDs::menu_principal, "musics/main-theme.ogg");
-        addMusica(IDs::IDs::menu_pause, "musics/Menu-Pause.ogg");
-        addMusica(IDs::IDs::vila, "../Game/musics/vila-tema.ogg");
-        addMusica(IDs::IDs::menu_gameOver, "musics/Game-Over.ogg");
-        IDmusicaAtual = IDs::IDs::vazio;
+        addMusica(IDs::IDs::dawn_forest, "sounds/musics/adventure-begins.ogg");
+        addMusica(IDs::IDs::cave, "sounds/musics/Summer-Nights.ogg");
+        addMusica(IDs::IDs::main_menu, "sounds/musics/main-theme.ogg");
+        addMusica(IDs::IDs::pause_menu, "sounds/musics/Menu-Pause.ogg");
+        addMusica(IDs::IDs::village, "sounds/musics/vila-tema.ogg");
+        addMusica(IDs::IDs::game_over_menu, "sounds/musics/Game-Over.ogg");
+        IDmusicaAtual = IDs::IDs::empty;
         setVolumeGeral(volumeGeral);
     }
 
-
-    /**
-     * @brief destrutora da classe GerenciadorDeMusica
-    */
     GerenciadorDeMusica::~GerenciadorDeMusica()
     {
         mapMusica[IDmusicaAtual]->stop();
@@ -39,11 +32,6 @@ namespace Game::Gerenciador{
         mapMusica.clear();
     }
 
-    /**
-     * @brief metodo de acesso a classe GerenciadorDeMusica
-     * 
-     * @return retorna um ponteiro para classe GerenciadorDeMusica
-    */
     GerenciadorDeMusica* GerenciadorDeMusica::getGerenciadorDeMusica()
     {
         if(pMusica == nullptr)
@@ -51,12 +39,6 @@ namespace Game::Gerenciador{
         return pMusica;
     }
 
-    /**
-     * @brief adiciona uma musica no map de musicas
-     * 
-     * @param ID identificador da musica
-     * @param caminhoMusica caminho ate o arquivo da musica
-    */
     void GerenciadorDeMusica::addMusica(IDs::IDs ID, const char* caminhoMusica)
     {
         auto* musica = new sf::Music();
@@ -70,16 +52,11 @@ namespace Game::Gerenciador{
         mapMusica.insert(std::pair<IDs::IDs, sf::Music*>(ID, musica));
     }
 
-    /**
-     * @brief muda a musica a ser tocada no momento
-     * 
-     * @param IDMusica identificacao da musica a ser tocada
-    */
     void GerenciadorDeMusica::mudarMusica(const IDs::IDs IDmusica)
     {
         setVolumeGeral(volumeGeral);
-        if(IDmusica == IDs::IDs::vila || IDmusica == IDs::IDs::caverna || IDmusica == IDs::IDs::menu_gameOver ) {
-            if(IDmusicaAtual != IDs::IDs::vazio)
+        if(IDmusica == IDs::IDs::village || IDmusica == IDs::IDs::cave || IDmusica == IDs::IDs::game_over_menu ) {
+            if(IDmusicaAtual != IDs::IDs::empty)
                 parar();
             mapMusica[IDmusica]->play();
             IDmusicaAtual = IDmusica;
@@ -87,9 +64,9 @@ namespace Game::Gerenciador{
 
         switch (IDmusica)
         {
-            case(IDs::IDs::menu_principal):
+            case(IDs::IDs::main_menu):
             {
-                if(IDmusicaAtual != IDs::IDs::vazio && IDmusicaAtual != IDmusica)
+                if(IDmusicaAtual != IDs::IDs::empty && IDmusicaAtual != IDmusica)
                 {
                     parar();
                 }
@@ -98,22 +75,22 @@ namespace Game::Gerenciador{
                 IDmusicaAtual = IDmusica;
             }
                 break;
-            case(IDs::IDs::floresta_do_amanhecer):
+            case(IDs::IDs::dawn_forest):
             {
-                if(IDmusicaAtual != IDs::IDs::vazio)
+                if(IDmusicaAtual != IDs::IDs::empty)
                     parar();
                 mapMusica[IDmusica]->play();
                 IDmusicaAtual = IDmusica;
             }
                 break;           
-        case(IDs::IDs::estado_dialogo):
+        case(IDs::IDs::dialogue_estate):
             {
                 setVolume(IDmusicaAtual, volumeGeral * 0.4f);
             }
                 break;
-            case(IDs::IDs::menu_pause):
+            case(IDs::IDs::pause_menu):
             {
-                if(IDmusicaAtual != IDs::IDs::vazio && IDmusica != IDmusicaAtual)
+                if(IDmusicaAtual != IDs::IDs::empty && IDmusica != IDmusicaAtual)
                     pausar();
                 if(IDmusica != IDmusicaAtual)
                     mapMusica[IDmusica]->play();
@@ -128,36 +105,22 @@ namespace Game::Gerenciador{
         }
     }
 
-    /**
-     * @brief pausa a musica sendo tocada no momento
-    */
     void GerenciadorDeMusica::pausar()
     {
         mapMusica[IDmusicaAtual]->pause();
     }
 
-    /**
-     * @brief despausa a musica sento tocada no momento
-    */
     void GerenciadorDeMusica::despausar()
     {
         mapMusica[IDmusicaAtual]->play();
     
     }
 
-    /**
-     * @brief para  a musica sendo tocada o momento 
-    */
     void GerenciadorDeMusica::parar()
     {
         mapMusica[IDmusicaAtual]->stop();
     }
 
-    /**
-     * @brief atualiza o volume de todas as musicas 
-     * 
-     * @param volumeGeral volume a ser aplicado
-    */
     void GerenciadorDeMusica::setVolumeGeral(const float volumeGeral)
     {
         for(auto itMusica = mapMusica.begin() ; itMusica != mapMusica.end() ; itMusica++)
@@ -166,52 +129,27 @@ namespace Game::Gerenciador{
         this->volumeGeral = volumeGeral;
         volumeEfeitoSonoro = volumeGeral;
     }
-    
-    /**
-     * @brief atualiza o volume da musica sendo tocada no momento
-     * 
-     * @param ID musica a ser trocada o volume
-    */
+
     void GerenciadorDeMusica::setVolume( IDs::IDs ID, const float volume)
     {
         mapMusica[ID]->setVolume(volume);
     }
 
-    /**
-     * @brief atualiza os efeitos sonoros sendo tocados no momento
-     * 
-     * @param volumeEfeitoSonoro volume a ser aplicado nos efeitos sonoros
-    */
     void GerenciadorDeMusica::setVolumeEfeitoSonoro(const float volumeEfeitoSonoro)
     {
         this->volumeEfeitoSonoro = volumeEfeitoSonoro;
     }
 
-    /**
-     * @brief metodo de acesso ao volumeGeral
-     * 
-     * @return retorna o atributo volumeGeral
-    */
     const float GerenciadorDeMusica::getVolumeGeral()
     {
         return volumeGeral;
     }
-    
-    /**
-     * @brief metodo de acesso ao volume da musica sendo tocada
-     * 
-     * @return retorna o volume da musica
-    */
+
     const float GerenciadorDeMusica::getVolume(IDs::IDs ID)
     {
         return mapMusica[ID]->getVolume();
     }
-    
-    /**
-     * @brief metodo de acesso ao volumeEfeitoSonoro
-     * 
-     * @return retorna o atributo volumeEfeitoSonoro
-    */
+
     const float GerenciadorDeMusica::getVolumeEfeitoSonoro()
     {
         return volumeEfeitoSonoro;

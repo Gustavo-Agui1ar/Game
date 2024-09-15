@@ -28,7 +28,7 @@ namespace Game{
          * 
          * @param entidade objeto a ser adicionado a lista
         */
-        void ListaEntidade::addEntidade(Entidade::Entidade* entidade)
+        void ListaEntidade::addEntidade(Entity::Entity* entidade)
         {
             objListaEntidade.addElemento(entidade);
         }
@@ -39,7 +39,7 @@ namespace Game{
          * @param entidade objeto a ser adicionado a lista
          * @param pos posicao a ser inserido o elemento
         */
-        void ListaEntidade::addEntidade(Entidade::Entidade* entidade, int pos)
+        void ListaEntidade::addEntidade(Entity::Entity* entidade, int pos)
         {
             objListaEntidade.addElemento(entidade, pos);
         }
@@ -49,7 +49,7 @@ namespace Game{
          * 
          * @param entidade objeto a ser removido
         */
-        void ListaEntidade::removerEntidade(Entidade::Entidade* entidade)
+        void ListaEntidade::removerEntidade(Entity::Entity* entidade)
         {
             objListaEntidade.removerElemento(entidade);
         }
@@ -80,7 +80,7 @@ namespace Game{
          * 
          * @return retorna um objeto do tipo entidade
         */
-        Entidade::Entidade* ListaEntidade::operator[](int pos)
+        Entity::Entity* ListaEntidade::operator[](int pos)
         {
             return objListaEntidade.operator[](pos);
         }
@@ -100,11 +100,11 @@ namespace Game{
         {
             //atualiza e desenha as entidades
             int tam = objListaEntidade.getTam();
-            Entidade::Entidade* aux = nullptr;
+            Entity::Entity* aux = nullptr;
             for(int i = tam - 1; i >= 0; i--)
             {
                 aux = objListaEntidade.operator[](i);
-                if(aux->getRemover())
+                if(aux->getRemove())
                 {
                     objListaEntidade.removerElemento(i);
                     delete(aux);
@@ -124,7 +124,7 @@ namespace Game{
         {
             //apenas desenha as Entidades
             int tam = objListaEntidade.getTam();
-            Entidade::Entidade* aux = nullptr;
+            Entity::Entity* aux = nullptr;
             for(int i = tam - 1 ; i >= 0 ; i--)
             {
                 aux = objListaEntidade.operator[](i);

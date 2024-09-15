@@ -1,23 +1,16 @@
 
 #include "../includes/menus/botao/balaoDeFala.h"
 
-namespace Game{
-
-    namespace Menu{
-
-        namespace Botao{
+namespace Game::Menu::Botao{
 
             BalaoDeFala::BalaoDeFala(std::string infoTexto, std::string infoNome, const float tempoDeTroca):
-            pGrafico(pGrafico->getGerenciadorGrafico()),fala(tempoDeTroca, pGrafico->carregarFonte( "../Game/animations/botton/menu.ttf"), infoTexto),
+            pGrafico(Gerenciador::GerenciadorGrafico::getGerenciadorGrafico()),fala(tempoDeTroca, pGrafico->carregarFonte( "../Game/animations/botton/menu.ttf"), infoTexto),
             nome(pGrafico->carregarFonte( "../Game/animations/botton/menu.ttf"), infoNome),caixaDialogo(), caixaNome()
             {
                 inicializarCaixaDeDialogo();
             }
 
-            BalaoDeFala::~BalaoDeFala()
-            {
-
-            }
+            BalaoDeFala::~BalaoDeFala() = default;
 
             void BalaoDeFala::inicializarCaixaDeDialogo()
             {
@@ -49,7 +42,7 @@ namespace Game{
                 sf::Vector2f tamNome = nome.getTam();
                 sf::Vector2f pos = caixaNome.getPosition();
                 sf::Vector2f tam = caixaNome.getSize();
-                sf::Vector2f posNome = sf::Vector2f(
+                auto posNome = sf::Vector2f(
                     pos.x + tam.x / 2.0f - tamNome.x / 2.f,
                     pos.y + tam.y / 2.0f - tamNome.y
                 );
@@ -60,10 +53,7 @@ namespace Game{
             {
                 sf::Vector2f pos = caixaDialogo.getPosition();
                 sf::Vector2f tam = caixaDialogo.getSize();
-                sf::Vector2f posTexto = sf::Vector2f(
-                    pos.x + tam.x / 10.f ,
-                    pos.y + tam.y / 5.f 
-                );
+                auto posTexto = sf::Vector2f(pos.x + tam.x / 10.f , pos.y + tam.y / 5.f);
                 fala.setPos(posTexto);
             }
            
@@ -73,7 +63,7 @@ namespace Game{
                 sf::Vector2f tamNome = nome.getTam();
                 sf::Vector2f pos = caixaNome.getPosition();
                 sf::Vector2f tam = caixaNome.getSize();
-                sf::Vector2f posNome = sf::Vector2f(
+                auto posNome = sf::Vector2f(
                     pos.x + tam.x / 2.0f - tamNome.x / 2.f,
                     pos.y + tam.y / 2.0f - tamNome.y
                 );
@@ -84,7 +74,7 @@ namespace Game{
             {
                 sf::Vector2f pos = caixaDialogo.getPosition();
                 sf::Vector2f tam = caixaDialogo.getSize();
-                sf::Vector2f posTexto = sf::Vector2f(
+                auto posTexto = sf::Vector2f(
                     pos.x + tam.x / 10.f ,
                     pos.y + tam.y / 5.f 
                 );
@@ -154,6 +144,4 @@ namespace Game{
             {
                 return fala.getFimTexto();
             }
-        }
-    }
 }
