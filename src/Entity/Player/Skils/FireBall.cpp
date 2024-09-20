@@ -3,7 +3,7 @@
 
 namespace Game::Entity::Character::Player::Skils{
   
-  FireBall::FireBall(Player* player) :  m_graphic(Gerenciador::GerenciadorGrafico::getGerenciadorGrafico()),
+  FireBall::FireBall(Player* player) :  m_graphic(Manager::GraphicManager::getGraphicManager()),
   m_player(player), m_bullet(nullptr), m_trhowBullet(false), m_timeAnimationBullet(TIME_BULLET_PLAYER),
   m_timeTrhowBullet(0.0f) {
 
@@ -19,7 +19,7 @@ namespace Game::Entity::Character::Player::Skils{
     
     if (m_player->getAttacking() && !(m_player->getDie()) && m_trhowBullet) {
       
-      m_timeTrhowBullet += m_graphic->getTempo();
+      m_timeTrhowBullet += m_graphic->getTime();
       
       if (m_timeTrhowBullet > m_timeAnimationBullet) {
         m_player->setAttacking(false);

@@ -5,18 +5,18 @@
 namespace Game::Level{
 
     
-    Listener::ListenerFase* Level::m_observerLevel = nullptr;
+    Observer::ObserverLevel* Level::m_observerLevel = nullptr;
     
     Level::Level(const IDs::IDs ID_Fase, const IDs::IDs ID_Fundo):
     Ente(ID_Fase),m_backGround(ID_Fundo)
     {
-        m_charactersList = new Lista::ListaEntidade();
-        m_obstaclesList = new Lista::ListaEntidade();
+        m_charactersList = new List::EntityList();
+        m_obstaclesList = new List::EntityList();
 
-        m_collisionManager = Gerenciador::GerenciadorDeColisao::getGerenciadorDeColisao();
+        m_collisionManager = Manager::CollisionManager::getCollisionManager();
 
-        m_collisionManager->setListaObstaculo(m_obstaclesList);
-        m_collisionManager->setListaPersonagem(m_charactersList);
+        m_collisionManager->setObstacleList(m_obstaclesList);
+        m_collisionManager->setCharacterList(m_charactersList);
 
         if(m_collisionManager == nullptr)
         {
@@ -24,7 +24,7 @@ namespace Game::Level{
             exit(1);
         }
 
-        m_observerLevel = new Listener::ListenerFase(this);
+        m_observerLevel = new Observer::ObserverLevel(this);
         
         if(m_observerLevel == nullptr)
         {
@@ -32,14 +32,14 @@ namespace Game::Level{
             exit(1);
         }
 
-        m_observerLevel->mudarEstado(true);
+        m_observerLevel->changeState(true);
     }
 
     Level::~Level()
     {
         if(m_collisionManager != nullptr)
         {
-            m_collisionManager->limparListas();
+            m_collisionManager->clearList();
             m_collisionManager = nullptr;
         }
         
@@ -76,9 +76,9 @@ namespace Game::Level{
         player->setBullet(bulletPlayer);
         m_player = player;
 
-        m_charactersList->addEntidade(static_cast<Entity::Entity*>(m_player));
-        m_charactersList->addEntidade(static_cast<Entity::Entity*>(weaponPlayer));
-        m_charactersList->addEntidade(static_cast<Entity::Entity*>(bulletPlayer));
+        m_charactersList->add(static_cast<Entity::Entity*>(m_player));
+        m_charactersList->add(static_cast<Entity::Entity*>(weaponPlayer));
+        m_charactersList->add(static_cast<Entity::Entity*>(bulletPlayer));
 
     }
 
@@ -119,8 +119,8 @@ namespace Game::Level{
         }
 
         if(enemy && weapon) {
-            m_charactersList->addEntidade(enemy);
-            m_charactersList->addEntidade(weapon);
+            m_charactersList->add(enemy);
+            m_charactersList->add(weapon);
         }
     }
 
@@ -163,14 +163,14 @@ namespace Game::Level{
             {
                 m_player = new Entity::Character::Player::Player(entidade);
 
-                  new Entity::Weapon::Weapon(arma);
+                auto* playerWeapon = new Entity::Weapon::Weapon(arma);
                 auto* playerBullet = new Entity::Weapon::Bullet(arma2);
                 
-                m_player->setWeapon(playerWepon);
+                m_player->setWeapon(playerWeapon);
                 m_player->setBullet(playerBullet);
 
                 character = static_cast<Entity::Entity*>(m_player);
-                weaponCharacter = static_cast<Entity::Entity*>(playerWepon);
+                weaponCharacter = static_cast<Entity::Entity*>(playerWeapon);
                 bulletPlayer = static_cast<Entity::Entity*>(playerBullet);
             }
             break;
@@ -232,16 +232,16 @@ namespace Game::Level{
         {
             case IDs::IDs::platform:
             case IDs::IDs::invisible_platform:
-                m_obstaclesList->addEntidade(character);
+                m_obstaclesList->add(character);
                 break;
             case IDs::IDs::player:
-                m_charactersList->addEntidade(character);
-                m_charactersList->addEntidade(weaponCharacter);
-                m_charactersList->addEntidade(bulletPlayer);
+                m_charactersList->add(character);
+                m_charactersList->add(weaponCharacter);
+                m_charactersList->add(bulletPlayer);
                 break;
             default:
-                m_charactersList->addEntidade(character);
-                m_charactersList->addEntidade(weaponCharacter);
+                m_charactersList->add(character);
+                m_charactersList->add(weaponCharacter);
                 break;
         }
     }
@@ -250,30 +250,30 @@ namespace Game::Level{
     {
         if(getPlayer())
         {
-            m_backGround.executar();
+            m_backGround.execute();
 
-            m_obstaclesList->executar();
-            m_charactersList->executar();
+            m_obstaclesList->execute();
+            m_charactersList->execute();
 
-            m_collisionManager->executar();
+            m_collisionManager->execute();
         }
         else{
-            m_observerLevel->notificarGameOver();
+            m_observerLevel->notifyGameOver();
         }
     }
 
     void Level::draw()
     {
-        m_backGround.executar();
+        m_backGround.execute();
 
-        m_obstaclesList->desenharEntidades();
-        m_charactersList->desenharEntidades();
+        m_obstaclesList->drawEntitys();
+        m_charactersList->drawEntitys();
 
     }
   
     Entity::Character::Player::Player* Level::getPlayer()
     {
-        for(int i = 0; i < m_charactersList->getTam(); i++)
+        for(int i = 0; i < m_charactersList->getSize(); i++)
         {
             Entity::Entity* aux = m_charactersList->operator[](i);
             if(aux->getID() == IDs::IDs::player)
@@ -286,7 +286,7 @@ namespace Game::Level{
 
     void Level::changeStateObserver(const bool ativo)
     {
-        m_observerLevel->mudarEstado(ativo);
+        m_observerLevel->changeState(ativo);
     }
 
     nlohmann::ordered_json Level::SaveLevel()
@@ -300,7 +300,7 @@ namespace Game::Level{
     {
         nlohmann::ordered_json json;
 
-        for(int i = 0 ; i < m_charactersList->getTam() ; i++)
+        for(int i = 0 ; i < m_charactersList->getSize() ; i++)
         {
             Entity::Entity* entidade = m_charactersList->operator[](i);
             if(entidade != nullptr)
@@ -310,7 +310,7 @@ namespace Game::Level{
             }
         }
 
-            for(int i = 0 ; i < m_obstaclesList->getTam() ; i++)
+            for(int i = 0 ; i < m_obstaclesList->getSize() ; i++)
         {
             Entity::Entity* entidade = m_obstaclesList->operator[](i);
             if(entidade != nullptr)
@@ -333,6 +333,6 @@ namespace Game::Level{
             exit(1);
         }
         auto* plat = static_cast<Entity::Entity*>(platform);
-        m_obstaclesList->addEntidade(plat);
+        m_obstaclesList->add(plat);
     }
 }

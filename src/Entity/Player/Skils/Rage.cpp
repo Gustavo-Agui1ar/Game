@@ -3,7 +3,7 @@
 
 namespace Game::Entity::Character::Player::Skils {
 
-    Rage::Rage(Player* player): m_graphic(Gerenciador::GerenciadorGrafico::getGerenciadorGrafico()),m_player(player), m_rageTimeAnimation(TIME_RAGE_PLAYER), 
+    Rage::Rage(Player* player): m_graphic(Manager::GraphicManager::getGraphicManager()),m_player(player), m_rageTimeAnimation(TIME_RAGE_PLAYER), 
     m_timeStartingRage(0.0f), m_startingRage(false), m_inRage(false), m_rage(100.f)   
     {
         bootRageBar();
@@ -26,7 +26,7 @@ namespace Game::Entity::Character::Player::Skils {
             consumeRage();
 
         sf::Vector2f screenPos = m_graphic->getCamera().getCenter();
-        sf::Vector2f screenSize = m_graphic->getTamJanela();
+        sf::Vector2f screenSize = m_graphic->getSizeWindow();
 
         auto barPosition = sf::Vector2f(screenPos.x - screenSize.x / 2.0f + 10.0f, 80.0f);
         m_rageBar.setSize(sf::Vector2f((RAGE_BAR_PLAYER_X - 30.0f) * (m_rage / MAX_RAGE), RAGE_BAR_PLAYER_Y - 13.0f));
@@ -65,7 +65,7 @@ namespace Game::Entity::Character::Player::Skils {
     }
 
     void Rage::drawRageBar(){
-        m_graphic->desenhaElemento(m_rageBar);
+        m_graphic->drawElement(m_rageBar);
     }
 
     void Rage::startRage() {
@@ -85,7 +85,7 @@ namespace Game::Entity::Character::Player::Skils {
     } 
 
     void Rage::updateStartingRage() {
-        m_timeStartingRage += m_graphic->getTempo();
+        m_timeStartingRage += m_graphic->getTime();
         m_player->setMoving(false);
 
         if (m_timeStartingRage > m_rageTimeAnimation)

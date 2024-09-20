@@ -11,7 +11,7 @@ namespace Game::Menu::Botao{
         
     private:
         
-        Gerenciador::GerenciadorGrafico* pGrafico;
+        Manager::GraphicManager* pGrafico;
         TextoFala fala;
         Texto nome;
         sf::RectangleShape caixaDialogo;

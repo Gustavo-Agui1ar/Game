@@ -2,7 +2,7 @@
 #pragma once
 
 #include "menuPausa.h"
-#include "../gerenciador/gerenciadorArquivo.h"
+#include "../Manager/FileManager.h"
 
 namespace Game::Menu{
 
@@ -11,7 +11,7 @@ namespace Game::Menu{
 
     private:
         
-        Gerenciador::GerenciadorArquivo gArquivo;
+        Manager::FileManager gArquivo;
         
         //atributos relacionados aos cards 
 

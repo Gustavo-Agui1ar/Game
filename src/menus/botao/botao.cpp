@@ -74,7 +74,7 @@ namespace Game{
             */
             void Botao::draw()
             {
-                m_graphic->desenhaElemento(caixa);
+                m_graphic->drawElement(caixa);
             }
 
             /**

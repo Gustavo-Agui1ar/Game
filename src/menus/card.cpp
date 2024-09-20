@@ -5,7 +5,7 @@ namespace Game{
 
     namespace Menu{
 
-        Gerenciador::GerenciadorGrafico* Card::pGrafico = Gerenciador::GerenciadorGrafico::getGerenciadorGrafico();
+        Manager::GraphicManager* Card::pGrafico = Manager::GraphicManager::getGraphicManager();
 
         /**
          * @brief construtora da classe Card
@@ -19,7 +19,7 @@ namespace Game{
         corpo(nullptr), textura(nullptr),selecionado(false), cor(sf::Color(245, 170, 0)),  existe(false), caminhoEntidades(caminhoEntidades),
         caminhoImagem(caminhoImagem), caminhoFase(caminhoFase)
         {
-            sf::Vector2f tamJanela = pGrafico->getTamJanela();
+            sf::Vector2f tamJanela = pGrafico->getSizeWindow();
             corpo = new sf::RectangleShape(sf::Vector2f(tamJanela.x/5.0f, (tamJanela.x/5.0f) - 20.0f ));
             textura = new sf::Texture();
 
@@ -170,7 +170,7 @@ namespace Game{
         */
         void Card::draw()
         {
-            pGrafico->desenhaElemento(*corpo);
+            pGrafico->drawElement(*corpo);
         }
     }
 

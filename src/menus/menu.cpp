@@ -1,6 +1,6 @@
 
 #include "../includes/menus/menu.h"
-#include "../includes/listeners/listenerMenu.h"
+#include "../includes/Observer/ObserverMenu.h"
 
 namespace Game {
 
@@ -15,8 +15,8 @@ namespace Game {
          * @param tamFonte tamanho do texto
         */
         Menu::Menu(const IDs::IDs ID, const sf::Vector2f tamBotao, const std::string titulo, const unsigned int tamFonte):
-        Ente(ID), listaDeBotao(), it(),  titulo(m_graphic->carregarFonte( "../Game/animations/botton/menu.ttf"), titulo, tamFonte), 
-        tamJanela(m_graphic->getTamJanela()), tamBotao(tamBotao), posFundo(sf::Vector2f(0.0f,0.0f)), listenerMenu(new Listener::ListenerMenu(this)),
+        Ente(ID), listaDeBotao(), it(),  titulo(m_graphic->loadFont( "../Game/animations/botton/menu.ttf"), titulo, tamFonte), 
+        tamJanela(m_graphic->getSizeWindow()), tamBotao(tamBotao), posFundo(sf::Vector2f(0.0f,0.0f)), listenerMenu(new Observer::ObserverMenu(this)),
         mouseSelecionado(false)
         {
             if(listenerMenu == nullptr){
@@ -53,7 +53,7 @@ namespace Game {
         */
         void Menu::mudarEstadoListener(const bool ativo)
         {
-            listenerMenu->mudarEstado(ativo);
+            listenerMenu->changeState(ativo);
         }
 
         /**

@@ -1,9 +1,7 @@
 
 #include "../includes/menus/menuPrincipal.h"
 
-namespace Game{
-
-    namespace Menu{
+namespace Game::Menu{
         
         /**
          * @brief construtora da classe MenuPrincipal 
@@ -55,7 +53,7 @@ namespace Game{
         */
         void MenuPrincipal::criarFundo()
         {
-            fundo.addCamada(CAMINHO_IMAGEM_FUNDO, 0.0f);
+            fundo.addLayer(CAMINHO_IMAGEM_FUNDO, 0.0f);
         }
 
         /**
@@ -63,13 +61,12 @@ namespace Game{
         */
         void MenuPrincipal::executar()
         {
-            posFundo = sf::Vector2f(posFundo.x + m_graphic->getTempo() * 80.0f, posFundo.y);
-            m_graphic->atualizarCamera(sf::Vector2f(posFundo.x + tamJanela.x / 2.0f, posFundo.y + tamJanela.y / 2.0f));
-            fundo.executar();
-            m_graphic->resetarJanela();
+            posFundo = sf::Vector2f(posFundo.x + m_graphic->getTime() * 80.0f, posFundo.y);
+            m_graphic->updateCamera(sf::Vector2f(posFundo.x + tamJanela.x / 2.0f, posFundo.y + tamJanela.y / 2.0f));
+            fundo.execute();
+            m_graphic->resetWindow();
           
             draw();
-            m_graphic->desenhaElemento(titulo.getTexto());
+            m_graphic->drawElement(titulo.getTexto());
         }
-    }
 }

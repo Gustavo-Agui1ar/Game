@@ -3,7 +3,7 @@
 #pragma once
 
 #include "texto.h"
-#include "../includes/gerenciador/gerenciadorGrafico.h"
+#include "../includes/Manager/GraphicManager.h"
 
 namespace Game::Menu::Botao{
     class TextoFala : public Texto{
@@ -14,7 +14,7 @@ namespace Game::Menu::Botao{
         float tempo;
         bool fimTexto;
 
-        Gerenciador::GerenciadorGrafico* pGrafico;
+        Manager::GraphicManager* pGrafico;
         const int m_numenberOfLetters = 82;
         int m_currentNumberOfLetter;
 

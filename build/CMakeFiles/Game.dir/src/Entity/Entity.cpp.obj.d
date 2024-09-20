@@ -328,6 +328,6 @@ CMakeFiles/Game.dir/src/Entity/Entity.cpp.obj: \
  C:/msys64/mingw64/include/c++/13.1.0/bits/stl_numeric.h \
  C:/msys64/mingw64/include/c++/13.1.0/pstl/glue_numeric_defs.h \
  C:/msys64/mingw64/include/c++/13.1.0/any \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/gerenciador/gerenciadorGrafico.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/gerenciador/camera.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/Manager/GraphicManager.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/Manager/camera.h \
  C:/msys64/mingw64/include/c++/13.1.0/iostream

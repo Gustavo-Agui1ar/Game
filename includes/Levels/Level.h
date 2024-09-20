@@ -1,13 +1,13 @@
 
 #pragma once
 
-#include "../includes/gerenciador/gerenciadorDeColisao.h"
+#include "../includes/Manager/CollisionManager.h"
 
-#include "../listeners/listenerFase.h"
+#include "../Observer/ObserverLevel.h"
 
 #include "../includes/Entity/Obstacle/Platform.h"
 
-#include "../lista/listaEntidade.h"
+#include "../List/EntityList.h"
 
 #include "../includes/Entity/Enemy/Enemy.h"
 
@@ -19,20 +19,20 @@
 
 #include "../includes/Entity/Player/Player.h"
 
-#include "../fundo/fundo.h"
+#include "../BackGround/BackGround.h"
 namespace Game::Level{
     class Level : public Ente{
 
     protected:
-        static Listener::ListenerFase* m_observerLevel;
+        static Observer::ObserverLevel* m_observerLevel;
 
-        Lista::ListaEntidade* m_charactersList;
-        Lista::ListaEntidade* m_obstaclesList;
+        List::EntityList* m_charactersList;
+        List::EntityList* m_obstaclesList;
         Entity::Character::Player::Player* m_player;
 
-        Gerenciador::GerenciadorDeColisao* m_collisionManager;
+        Manager::CollisionManager* m_collisionManager;
         
-        Fundo::Fundo m_backGround;
+        BackGround::BackGround m_backGround;
 
     public:   
 

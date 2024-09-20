@@ -1,13 +1,13 @@
 
 #include "../includes/menus/menuOpcao.h"
-#include "../includes/gerenciador/gerenciadorArquivo.h"
+#include "../includes/Manager/FileManager.h"
 
 namespace Game::Menu{
 
     
     MenuOpcao::MenuOpcao(Level::Level* fase):
     MenuPrincipal(IDs::IDs::option_menu, "Opcoes", 100),
-    velBotaoVolume(VELOCIDADE_BOTAO_VOLUME), pMusica(Gerenciador::GerenciadorDeMusica::getGerenciadorDeMusica()), fase(fase)
+    velBotaoVolume(VELOCIDADE_BOTAO_VOLUME), pMusica(Manager::MusicManager::getMusicManager()), fase(fase)
     {
         titulo.setCorTexto(sf::Color{238,173,45});
         titulo.setPos(sf::Vector2f(tamJanela.x / 2.0f - titulo.getTam().x / 2.0f, 25.0f));
@@ -49,9 +49,9 @@ namespace Game::Menu{
             posBotaoV = posFundo.x - tamBotao.x/2.0f;
         }
 
-        addBotao("Volume Jogo" , sf::Vector2f(posBotaoX, tamJanela.y/4.0f + tamBotao.y * 1.5f), IDs::IDs::sound_game_button, sf::Color{238,173,45}, posBotaoX + tamBotao.x + 20.0f);
-        addBotao("Volume Geral",sf::Vector2f(posBotaoX,tamJanela.y/4.0f + tamBotao.y * 3.0f), IDs::IDs::sound_geral_button, sf::Color{238,173,45}, posBotaoX + tamBotao.x + 20.0f);
-        addBotao("Efeito Sonoro", sf::Vector2f(posBotaoX,tamJanela.y/4.0f + tamBotao.y * 4.5f), IDs::IDs::sound_effect_button, sf::Color{238,173,45}, posBotaoX + tamBotao.x + 20.0f);
+        addBotao("Volume Jogo" , sf::Vector2f(posBotaoX+20.f, tamJanela.y/4.0f + tamBotao.y * 1.5f), IDs::IDs::sound_game_button, sf::Color{238,173,45}, posBotaoX + 1.5f*tamBotao.x + 20.0f);
+        addBotao("Volume Geral",sf::Vector2f(posBotaoX,tamJanela.y/4.0f + tamBotao.y * 3.0f), IDs::IDs::sound_geral_button, sf::Color{238,173,45}, posBotaoX +  1.5f*tamBotao.x + 20.0f);
+        addBotao("Efeito Sonoro", sf::Vector2f(posBotaoX,tamJanela.y/4.0f + tamBotao.y * 4.5f), IDs::IDs::sound_effect_button, sf::Color{238,173,45}, posBotaoX +  1.5f*tamBotao.x + 20.0f);
 
         Menu::addBotao("Voltar", sf::Vector2f(posBotaoV, 550.0f), IDs::IDs::close_button, sf::Color{238,173,45});
         
@@ -111,16 +111,16 @@ namespace Game::Menu{
         if(fase != nullptr)
         {
             fase->draw();
-            m_graphic->desenhaElemento(fundoEscuro);
+            m_graphic->drawElement(fundoEscuro);
         }
         else
         {
-            posFundo = sf::Vector2f(posFundo.x + m_graphic->getTempo() * 80.0f, posFundo.y);
-            m_graphic->atualizarCamera(sf::Vector2f(posFundo.x + tamJanela.x / 2.0f, posFundo.y + tamJanela.y / 2.0f));
-            fundo.executar();
-            m_graphic->resetarJanela();
+            posFundo = sf::Vector2f(posFundo.x + m_graphic->getTime() * 80.0f, posFundo.y);
+            m_graphic->updateCamera(sf::Vector2f(posFundo.x + tamJanela.x / 2.0f, posFundo.y + tamJanela.y / 2.0f));
+            fundo.execute();
+            m_graphic->resetWindow();
         }
         draw();
-        m_graphic->desenhaElemento(titulo.getTexto());
+        m_graphic->drawElement(titulo.getTexto());
     }
 }

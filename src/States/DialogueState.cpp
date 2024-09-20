@@ -38,7 +38,7 @@ namespace Game::State{
             it++;
         }
 
-        m_dialogueManager = new Gerenciador::GerenciadorDeDialogo(names, talks);
+        m_dialogueManager = new Manager::DialogueManager(names, talks);
     }
     void DialogueState::setFase(Level::Level* fase)
     {
@@ -46,9 +46,9 @@ namespace Game::State{
     }
     void DialogueState::setDialogue(const char* pathDialogue)
     {
-        Gerenciador::GerenciadorArquivo arquivo;
+        Manager::FileManager arquivo;
 
-        std::vector<std::string> talks = arquivo.lerArquivoDeTexto(pathDialogue);
+        std::vector<std::string> talks = arquivo.readFileText(pathDialogue);
 
         bootTalks(talks);
     }
@@ -56,7 +56,7 @@ namespace Game::State{
     void DialogueState::execute()
     {
         m_fase->draw();
-        m_dialogueManager->atualizar();
+        m_dialogueManager->update();
     }
 
     void DialogueState::draw()
@@ -65,9 +65,9 @@ namespace Game::State{
         m_dialogueManager->draw();
     }
 
-    void DialogueState::changeEstateObserver(const bool ativo)
+    void DialogueState::changeEstateObserver(const bool ative)
     {
-        m_dialogueManager->mudarEstadoListener(ativo);
+        m_dialogueManager->changeObserverState(ative);
     }
     
     Level::Level* DialogueState::getFase()

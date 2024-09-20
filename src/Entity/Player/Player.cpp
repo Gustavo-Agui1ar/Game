@@ -1,7 +1,7 @@
-#include "../includes/listeners/listenerJogador.h"
+#include "../includes/Observer/ObserverPlayer.h"
 #include "../includes/Entity/npcs/npc.h"
 #include "../includes/Entity/Player/Player.h"
-#include "../includes/gerenciador/gerenciadorDeColisao.h"
+#include "../includes/Manager/CollisionManager.h"
 #include "../includes/Entity/Enemy/Skeleton.h"
 #include "../includes/Entity/Enemy/Slime.h"
 namespace Game::Entity::Character::Player {
@@ -16,7 +16,7 @@ namespace Game::Entity::Character::Player {
     }
 
     Player::Player(const sf::Vector2f pos, Weapon::Weapon *weapon, Weapon::Bullet *bullet) : Character(pos, sf::Vector2f(SIZE_PLAYER_X, SIZE_PLAYER_Y), PLAYER_SPEED_X, IDs::IDs::player, PLAYER_TIME_GETDAMAGE, ANIMATION_DEATH_PLAYER, PLAYER_DAMAGE), m_dash(this), m_rage(this),
-    m_stamina(this), m_fireball(this), m_onFloor(false), m_qtdJump(0), m_timeAnimationAttack(TIME_DAMAGE_PLAYER), m_timeAttack(0.0f), m_observerPlayer(new Listener::ListenerJogador(this)) {
+    m_stamina(this), m_fireball(this), m_onFloor(false), m_qtdJump(0), m_timeAnimationAttack(TIME_DAMAGE_PLAYER), m_timeAttack(0.0f), m_observerPlayer(new Observer::ObserverPlayer(this)) {
         
         bootAnimation();
         bootLifeBar();
@@ -30,7 +30,7 @@ namespace Game::Entity::Character::Player {
     }
 
     Player::Player(nlohmann::ordered_json atributos) : Character(m_position, sf::Vector2f(SIZE_PLAYER_X, SIZE_PLAYER_Y), PLAYER_SPEED_X, IDs::IDs::player, PLAYER_TIME_GETDAMAGE, ANIMATION_DEATH_PLAYER, PLAYER_DAMAGE), 
-    m_dash(this), m_rage(this), m_stamina(this), m_fireball(this), m_timeAnimationAttack(TIME_DAMAGE_PLAYER), m_timeAttack(0.0f), m_observerPlayer(new Listener::ListenerJogador(this))
+    m_dash(this), m_rage(this), m_stamina(this), m_fireball(this), m_timeAnimationAttack(TIME_DAMAGE_PLAYER), m_timeAttack(0.0f), m_observerPlayer(new Observer::ObserverPlayer(this))
     {
         try {
             auto currentPosition = sf::Vector2f(atributos["position"]["x"].template get<float>(), atributos["position"]["y"].template get<float>());
@@ -108,7 +108,7 @@ namespace Game::Entity::Character::Player {
         updatePosition();
         updateWeapon();
         m_fireball.updateBullet();
-        m_graphic->atualizarCamera(sf::Vector2f(getPosition().x, ALTURA_TELA / 2.f));
+        m_graphic->updateCamera(sf::Vector2f(getPosition().x, HEIGHT_SCREEN / 2.f));
         updateAnimation();
         updateLifeBar();
         m_stamina.updateStaminaBar();
@@ -141,7 +141,7 @@ namespace Game::Entity::Character::Player {
     void Player::selectAnimation(std::string complement) {
         if (m_dying) {
             m_animation.update(m_direction, "DEAD" + complement);
-            m_timeDeath += m_graphic->getTempo();
+            m_timeDeath += m_graphic->getTime();
             if (m_timeDeath > m_animationTimeDeath)
                 m_canRemove = true;
         }
@@ -208,7 +208,7 @@ namespace Game::Entity::Character::Player {
   
     void Player::updateLifeBar() {
         sf::Vector2f screenPosition = m_graphic->getCamera().getCenter();
-        sf::Vector2f screenSize = m_graphic->getTamJanela();
+        sf::Vector2f screenSize = m_graphic->getSizeWindow();
 
         auto barPosition = sf::Vector2f(screenPosition.x - screenSize.x / 2.0f + 10.0f, 30.0f);
         m_lifeTube.setPosition(barPosition);
@@ -217,16 +217,16 @@ namespace Game::Entity::Character::Player {
     }
 
     void Player::draw() {
-        m_graphic->desenhaElemento(m_body);
-        m_graphic->desenhaElemento(m_lifeTube);
-        m_graphic->desenhaElemento(m_lifeBar);
+        m_graphic->drawElement(m_body);
+        m_graphic->drawElement(m_lifeTube);
+        m_graphic->drawElement(m_lifeBar);
         m_stamina.drawStaminaBar();
         m_rage.drawRageBar();
     }
 
     void Player::updateWeapon() {
         if (m_attaking && !m_dying && !m_fireball.getTrhowBullet()) {
-            m_timeAttack += m_graphic->getTempo();
+            m_timeAttack += m_graphic->getTime();
             if (m_timeAttack > m_timeAnimationAttack) {
                 m_weapon->setPosition(sf::Vector2f(-1000.0f, -1000.0f));
                 m_timeAttack = 0.0f;
@@ -250,7 +250,7 @@ namespace Game::Entity::Character::Player {
     }
 
     void Player::changeObserverState(const bool ative) {
-        m_observerPlayer->mudarEstado(ative);
+        m_observerPlayer->changeState(ative);
     }
 
     nlohmann::ordered_json Player::save() {
@@ -276,7 +276,7 @@ namespace Game::Entity::Character::Player {
     }
 
     void Player::updatePosition() {
-        dt = m_graphic->getTempo();
+        dt = m_graphic->getTime();
         sf::Vector2f ds(0.f, 0.f);
 
         if (m_moving && !m_dying && !m_getDamage && !m_dash.getInDash()) {
@@ -309,8 +309,8 @@ namespace Game::Entity::Character::Player {
     }
 
     void Player::searchIteractions() {
-        Gerenciador::GerenciadorDeColisao *pColisao = Gerenciador::GerenciadorDeColisao::getGerenciadorDeColisao();
-        if (Entity *ent = pColisao->procurarEntidade(getPosition(), sf::Vector2f(100.0f, 100.0f), IDs::IDs::npc); ent != nullptr) {
+        auto* collisionManager = Manager::CollisionManager::getCollisionManager();
+        if (Entity *ent = collisionManager->searchEntity(getPosition(), sf::Vector2f(100.0f, 100.0f), IDs::IDs::npc); ent != nullptr) {
             auto *npc = static_cast<Npc::Npc *>(ent);
             m_moving = m_getDamage = m_attaking = false;
             m_onFloor = true;

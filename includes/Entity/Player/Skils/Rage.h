@@ -1,7 +1,7 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
-#include "../../../gerenciador/gerenciadorGrafico.h"
+#include "../../../Manager/GraphicManager.h"
 #include "json.hpp"
 
 #define TIME_RAGE_PLAYER 1.2f
@@ -21,7 +21,7 @@ namespace Game::Entity::Character::Player{
 
         private:
 
-            Gerenciador::GerenciadorGrafico* m_graphic;
+            Manager::GraphicManager* m_graphic;
             Player* m_player;
             sf::RectangleShape m_rageBar;
             const float m_rageTimeAnimation;

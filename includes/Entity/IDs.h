@@ -44,7 +44,6 @@ namespace IDs{
             close_button , 
             back_button, 
             
-            bug_menu,
 
             save_button , 
             play_button , 
@@ -58,6 +57,7 @@ namespace IDs{
             sound_game_button,
             sound_geral_button,
 
+            bug_menu,
             main_menu ,
             select_fase_menu ,
             pause_menu ,

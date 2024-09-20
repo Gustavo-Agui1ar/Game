@@ -3,7 +3,7 @@
 
 namespace Game::Entity::Character::Player::Skils{
 
-    Dash::Dash(Player* player) : m_graphic(Gerenciador::GerenciadorGrafico::getGerenciadorGrafico()),
+    Dash::Dash(Player* player) : m_graphic(Manager::GraphicManager::getGraphicManager()),
     m_player(player), m_dashTimeAnimation(TIME_DASH), m_dashSpeed(SPEED_DASH_PLAYER),
     m_timeDash(0.0f), m_canDash(false), m_inDash(false)
     {
@@ -28,7 +28,7 @@ namespace Game::Entity::Character::Player::Skils{
     void Dash::updateDash() {
         sf::Vector2f ds(0.0f, 0.0f);
         sf::Vector2f pos = m_player->getPosition();
-        float dtAux = m_graphic->getTempo();
+        float dtAux = m_graphic->getTime();
 
         if (m_canDash && !m_player->getDie())
         {

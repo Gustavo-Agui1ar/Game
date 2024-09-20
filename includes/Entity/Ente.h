@@ -4,7 +4,7 @@
 #include "IDs.h"
 #include <fstream>
 #include "../json.hpp"
-#include "../gerenciador/gerenciadorGrafico.h"
+#include "../Manager/GraphicManager.h"
 
 namespace Game{
 
@@ -12,7 +12,7 @@ namespace Game{
 
     protected:
 
-        static Gerenciador::GerenciadorGrafico* m_graphic;
+        static Manager::GraphicManager* m_graphic;
         
         const IDs::IDs ID;
 

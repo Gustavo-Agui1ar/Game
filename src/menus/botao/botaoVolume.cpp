@@ -9,7 +9,7 @@ namespace Game{
             
          BotaoVolume::BotaoVolume(const std::string info, sf::Vector2f tam, const sf::Vector2f pos, const IDs::IDs ID, const sf::Color corSelecionado, const float posInicioFundo):
          BotaoTexto(info, pos, tam, ID, corSelecionado), fundoVolume(sf::Vector2f(TAMANHO_BARRA_VOLUME_X, TAMANHO_BARRA_VOLUME_Y)),
-         corpoVolume(sf::Vector2f(TAMANHO_BOTAO_VOLUME_X, TAMANHO_BOTAO_VOLUME_Y)), pMusica(pMusica->getGerenciadorDeMusica()), posInicioFundo(posInicioFundo),
+         corpoVolume(sf::Vector2f(TAMANHO_BOTAO_VOLUME_X, TAMANHO_BOTAO_VOLUME_Y)), pMusica(Manager::MusicManager::getMusicManager()), posInicioFundo(posInicioFundo),
          parametrizacao((TAMANHO_BARRA_VOLUME_X - TAMANHO_BOTAO_VOLUME_X) / 100.0f), posInicioBarra(posInicioFundo),
          posFimBarra(posInicioFundo + TAMANHO_BARRA_VOLUME_X)
          {
@@ -24,7 +24,7 @@ namespace Game{
             {
                 case(IDs::IDs::sound_geral_button):
                 {
-                    volume = pMusica->getVolumeGeral();
+                    volume = pMusica->getGeralVolume();
                     corpoVolume.setPosition(sf::Vector2f(posInicioFundo + volume * parametrizacao, getPos().y + getTamTexto().y - 15.0f));
                 }
                 break;
@@ -38,7 +38,7 @@ namespace Game{
                 
                 case(IDs::IDs::sound_effect_button):
                 {
-                    volume = pMusica->getVolumeEfeitoSonoro();
+                    volume = pMusica->getSoundEffectVolume();
                     corpoVolume.setPosition(sf::Vector2f(posInicioFundo + volume * parametrizacao, getPos().y + getTamTexto().y - 15.0f));
                 }
                 break;
@@ -87,13 +87,13 @@ namespace Game{
                 
                 case(IDs::IDs::sound_effect_button):
                 {
-                    pMusica->setVolumeEfeitoSonoro(vol);
+                    pMusica->setSoundEffectVolume(vol);
                 }
                 break;
                 
                 case(IDs::IDs::sound_geral_button):
                 {
-                    pMusica->setVolumeGeral(vol);
+                    pMusica->setGeralVolume(vol);
                 }
                 break;
 
@@ -106,9 +106,9 @@ namespace Game{
          {
             atualizarAnimacao();
 
-            m_graphic->desenhaElemento(fundoVolume);
-            m_graphic->desenhaElemento(corpoVolume);
-            m_graphic->desenhaElemento(texto.getTexto());
+            m_graphic->drawElement(fundoVolume);
+            m_graphic->drawElement(corpoVolume);
+            m_graphic->drawElement(texto.getTexto());
          }
 
         }

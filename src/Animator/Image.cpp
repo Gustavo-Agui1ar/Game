@@ -12,7 +12,7 @@ namespace Game::Animator{
      * @param origin Origin of the image.
      */
     Image::Image(const char* pathTexture, const unsigned int totalFrameImg, const float swapTime, sf::Vector2f escale, sf::Vector2f origin):
-    m_pGrafic(Gerenciador::GerenciadorGrafico::getGerenciadorGrafico()), m_escale(escale), m_origin(origin), m_texture(m_pGrafic->carregarTextura(pathTexture)),
+    m_pGrafic(Manager::GraphicManager::getGraphicManager()), m_escale(escale), m_origin(origin), m_texture(m_pGrafic->loadTexture(pathTexture)),
     m_totalFrameImg(totalFrameImg), m_currentFrame(0), m_swapTime(swapTime), m_totalTime(0)
     {
         m_size.width = static_cast<int>(m_texture.getSize().x / (float) totalFrameImg);

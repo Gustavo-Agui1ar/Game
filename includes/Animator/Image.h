@@ -2,7 +2,7 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
-#include "../gerenciador/gerenciadorGrafico.h"
+#include "../Manager/GraphicManager.h"
 
 namespace Game::Animator{
 
@@ -11,7 +11,7 @@ namespace Game::Animator{
 
     private:
 
-        Gerenciador::GerenciadorGrafico * m_pGrafic;
+        Manager::GraphicManager * m_pGrafic;
         
         const sf::Vector2f m_escale;
         const sf::Vector2f m_origin;

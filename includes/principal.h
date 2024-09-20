@@ -3,18 +3,18 @@
 
 #include <SFML/Graphics.hpp>
 
-#include "gerenciador/gerenciadorGrafico.h"
-#include "gerenciador/gerenciadorDeEventos.h"
-#include "gerenciador/gerenciadorDeEstado.h"
+#include "Manager/GraphicManager.h"
+#include "Manager/EventManager.h"
+#include "Manager/StateManager.h"
 namespace Game {
 
         class Principal{
 
         private:
 
-            Gerenciador::GerenciadorGrafico *gerenciadorGrafico;
-            Gerenciador::GerenciadorDeEventos* gerenciadorDeEventos;
-            Gerenciador::GerenciadorDeEstado* pEstado;
+            Manager::GraphicManager *gerenciadorGrafico;
+            Manager::EventManager* gerenciadorDeEventos;
+            Manager::StateManager* pEstado;
     
         public:
 

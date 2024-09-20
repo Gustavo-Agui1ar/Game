@@ -2,7 +2,7 @@
 #pragma once 
 
 #include "menu.h"
-#include "../fundo/fundo.h"
+#include "../BackGround/BackGround.h"
 
 #define CAMINHO_IMAGEM_FUNDO "../Game/animations/background/menu/menuPrincipal.png"
 
@@ -11,13 +11,13 @@ namespace Game::Menu{
 
     protected:
 
-        //atributo relacionado ao fundo
+        //atributo relacionado ao BackGround
 
-        Fundo::Fundo fundo;
+        BackGround::BackGround fundo;
 
     private:
 
-        //metodo criador do fundo
+        //metodo criador do BackGround
 
         void criarFundo() override;
 

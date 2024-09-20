@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../../../gerenciador/gerenciadorGrafico.h"
+#include "../../../Manager/GraphicManager.h"
 #include "json.hpp"
 
 #define SPEED_DASH_PLAYER 350.0f
@@ -16,7 +16,7 @@ namespace Game::Entity::Character::Player {
 
             private:
 
-                Gerenciador::GerenciadorGrafico *m_graphic;
+                Manager::GraphicManager *m_graphic;
                 Player* m_player;
 
                 const float m_dashTimeAnimation;

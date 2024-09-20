@@ -4,8 +4,8 @@
 namespace Game::Menu::Botao{
 
             BalaoDeFala::BalaoDeFala(std::string infoTexto, std::string infoNome, const float tempoDeTroca):
-            pGrafico(Gerenciador::GerenciadorGrafico::getGerenciadorGrafico()),fala(tempoDeTroca, pGrafico->carregarFonte( "../Game/animations/botton/menu.ttf"), infoTexto),
-            nome(pGrafico->carregarFonte( "../Game/animations/botton/menu.ttf"), infoNome),caixaDialogo(), caixaNome()
+            pGrafico(Manager::GraphicManager::getGraphicManager()),fala(tempoDeTroca, pGrafico->loadFont( "../Game/animations/botton/menu.ttf"), infoTexto),
+            nome(pGrafico->loadFont( "../Game/animations/botton/menu.ttf"), infoNome),caixaDialogo(), caixaNome()
             {
                 inicializarCaixaDeDialogo();
             }
@@ -15,7 +15,7 @@ namespace Game::Menu::Botao{
             void BalaoDeFala::inicializarCaixaDeDialogo()
             {
         
-                sf::Vector2f tamJanela = pGrafico->getTamJanela();
+                sf::Vector2f tamJanela = pGrafico->getSizeWindow();
                 sf::Vector2f posJanela = pGrafico->getCamera().getCenter();
 
                 caixaDialogo.setSize(sf::Vector2f(tamJanela.x, tamJanela.y/4.0f)); 
@@ -83,7 +83,7 @@ namespace Game::Menu::Botao{
 
             void BalaoDeFala::setDirecaoNome(bool esquerda)
             {
-                sf::Vector2f tamJanela = pGrafico->getTamJanela();
+                sf::Vector2f tamJanela = pGrafico->getSizeWindow();
                 sf::Vector2f posJanela = pGrafico->getCamera().getCenter();
 
                 float posX = esquerda ? posJanela.x - tamJanela.x / 2.f + 5.f : posJanela.x + tamJanela.x / 2.f - caixaNome.getSize().x - 5.f;
@@ -129,10 +129,10 @@ namespace Game::Menu::Botao{
 
             void BalaoDeFala::draw()
             {
-                pGrafico->desenhaElemento(caixaDialogo);
-                pGrafico->desenhaElemento(caixaNome);
-                pGrafico->desenhaElemento(nome.getTexto());
-                pGrafico->desenhaElemento(fala.getTexto());
+                pGrafico->drawElement(caixaDialogo);
+                pGrafico->drawElement(caixaNome);
+                pGrafico->drawElement(nome.getTexto());
+                pGrafico->drawElement(fala.getTexto());
             }
 
             void BalaoDeFala::pularDialogo()

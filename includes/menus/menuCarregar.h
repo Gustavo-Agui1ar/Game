@@ -2,7 +2,7 @@
 #pragma once 
 
 #include "menuPrincipal.h"
-#include "../gerenciador/gerenciadorArquivo.h"
+#include "../Manager/FileManager.h"
 #include "../Levels/Level.h"
 
 namespace Game::Menu {
@@ -10,7 +10,7 @@ namespace Game::Menu {
 
     private:
 
-        Gerenciador::GerenciadorArquivo gerenciadorArquivo;
+        Manager::FileManager gerenciadorArquivo;
 
         //atributos relacionados aos cards de carregamento
 

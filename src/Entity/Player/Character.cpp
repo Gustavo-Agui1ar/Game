@@ -28,7 +28,7 @@ namespace Game::Entity::Character{
 
     void Character::updatePosition()
     {
-        dt = m_graphic->getTempo();
+        dt = m_graphic->getTime();
 
         sf::Vector2f ds(0.f,0.f);
         
@@ -84,8 +84,8 @@ namespace Game::Entity::Character{
 
     void Character::draw()
     {
-        m_graphic->desenhaElemento(m_lifeBar);
-        m_graphic->desenhaElemento(m_body);
+        m_graphic->drawElement(m_lifeBar);
+        m_graphic->drawElement(m_body);
         
     }
 
@@ -124,7 +124,7 @@ namespace Game::Entity::Character{
 
     void Character::updateTimeDamage()
     {
-        m_timeDamage += m_graphic->getTempo();
+        m_timeDamage += m_graphic->getTime();
 
         if(m_getDamage && m_timeDamage > m_animationTimeGetDamage)
         {
@@ -164,7 +164,7 @@ namespace Game::Entity::Character{
     {
         sf::Vector2f screenCenter = m_graphic->getCamera().getCenter();
 
-        if(sf::Vector2f screenSize = m_graphic->getTamJanela(); 
+        if(sf::Vector2f screenSize = m_graphic->getSizeWindow(); 
             m_position.x < screenCenter.x - screenSize.x/2.0f || m_position.x > screenCenter.x + screenSize.x/2.0f ||
             m_position.y < screenCenter.y - screenSize.y/2.0f || m_position.y > screenCenter.y + screenSize.y/2.0f  )
         {

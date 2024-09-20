@@ -6,7 +6,7 @@ namespace Game{
     namespace Menu{
 
         MenuDeSelecao::MenuDeSelecao(Level::Level* fase):
-        MenuPausa(IDs::IDs::select_fase_menu,"Menu de Selecao", fase), pArquivo(new Gerenciador::GerenciadorArquivo()), listaDeSelecao()
+        MenuPausa(IDs::IDs::select_fase_menu,"Menu de Selecao", fase), pArquivo(new Manager::FileManager()), listaDeSelecao()
         {
             sf::Vector2f posJanela = m_graphic->getCamera().getCenter();
             
@@ -55,7 +55,7 @@ namespace Game{
 
         void MenuDeSelecao::criarBotoesDeSelecao()
         {
-            std::vector<std::string> faseNomes = pArquivo->lerArquivoDeTexto("../Game/saves/fases.txt");
+            std::vector<std::string> faseNomes = pArquivo->readFileText("../Game/saves/fases.txt");
             auto itFases = faseNomes.begin();
             IDs::IDs IDFaseAux = IDs::IDs::cave;
 
@@ -104,9 +104,9 @@ namespace Game{
         {
             fase->draw();
 
-            m_graphic->desenhaElemento(fundoEscuro);
+            m_graphic->drawElement(fundoEscuro);
 
-            m_graphic->desenhaElemento(titulo.getTexto());
+            m_graphic->drawElement(titulo.getTexto());
 
             (*itSelecaoFase)->draw();
 

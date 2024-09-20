@@ -6,7 +6,7 @@ namespace Game::Menu::Botao{
 
 
     TextoFala::TextoFala(const float tempoTroca, const sf::Font fonte, const std::string infoTexto, const unsigned int fonteTam):
-    Texto(fonte, "", fonteTam),tempoDeTroca(tempoTroca),tempo(0.0f), fimTexto(false), pGrafico(Gerenciador::GerenciadorGrafico::getGerenciadorGrafico()),
+    Texto(fonte, "", fonteTam),tempoDeTroca(tempoTroca),tempo(0.0f), fimTexto(false), pGrafico(Manager::GraphicManager::getGraphicManager()),
     m_currentNumberOfLetter(0), falaCompleta(infoTexto)
     {
         inicializarIterador();
@@ -67,7 +67,7 @@ namespace Game::Menu::Botao{
     {
         if(!fimTexto)
         {
-            tempo += pGrafico->getTempo();
+            tempo += pGrafico->getTime();
 
             if(tempo >= tempoDeTroca)
             {

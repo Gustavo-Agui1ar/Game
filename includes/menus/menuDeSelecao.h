@@ -3,14 +3,14 @@
 
 #include "menuPausa.h"
 #include "../includes/menus/botao/botaoSelecao.h"
-#include "../includes/gerenciador/gerenciadorArquivo.h"
+#include "../includes/Manager/FileManager.h"
 
 namespace Game::Menu{
     class MenuDeSelecao : public MenuPausa{
         
         private:
 
-            Gerenciador::GerenciadorArquivo* pArquivo;
+            Manager::FileManager* pArquivo;
             std::list<Botao::BotaoSelecao*> listaDeSelecao;
             std::list<Botao::BotaoSelecao*>::iterator itSelecaoFase;
 

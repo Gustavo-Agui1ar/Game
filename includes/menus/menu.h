@@ -4,7 +4,7 @@
 #include "../Entity/Ente.h"
 #include "../menus/botao/botao.h"
 #include "../menus/botao/botaoTexto.h"
-#include "../fundo/fundo.h"
+#include "../BackGround/BackGround.h"
 #include "card.h"
 #include <list>
 
@@ -13,9 +13,9 @@
 
 namespace Game{
 
-    namespace Listener{
+    namespace Observer{
 
-        class ListenerMenu;
+        class ObserverMenu;
     }
 
     namespace Menu{
@@ -35,7 +35,7 @@ namespace Game{
 
             sf::Vector2f posFundo;
 
-            Listener::ListenerMenu* listenerMenu;
+            Observer::ObserverMenu* listenerMenu;
             bool mouseSelecionado;
             
             //metodo de atualiazcao da classe

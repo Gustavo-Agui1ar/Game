@@ -31,15 +31,15 @@ namespace Game{
 
             void BotaoSelecao::setImagemFase(const char* caminhoImagem)
             {
-                texture = m_graphic->carregarTextura(caminhoImagem);
+                texture = m_graphic->loadTexture(caminhoImagem);
 
                 visualizacaoFase.setTexture(&texture);                
             }
 
             void BotaoSelecao::draw()
             {
-                m_graphic->desenhaElemento(texto.getTexto());
-                m_graphic->desenhaElemento(visualizacaoFase);
+                m_graphic->drawElement(texto.getTexto());
+                m_graphic->drawElement(visualizacaoFase);
             }
         }
     }

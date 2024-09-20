@@ -16,7 +16,7 @@ namespace Game::Menu{
     private:
 
         const float velBotaoVolume;
-        Gerenciador::GerenciadorDeMusica* pMusica;
+        Manager::MusicManager* pMusica;
         Level::Level* fase;
         sf::RectangleShape fundoEscuro;
         

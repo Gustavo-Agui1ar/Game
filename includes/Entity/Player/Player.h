@@ -33,8 +33,8 @@
 #define PLAYER_DAMAGE 20.0f
 
 namespace Game {
-    namespace Listener{
-        class ListenerJogador;
+    namespace Observer{
+        class ObserverPlayer;
     }
     namespace Entity::Character::Player{
 
@@ -63,7 +63,7 @@ namespace Game {
             const float m_timeAnimationAttack;
             float m_timeAttack;
             
-            Listener::ListenerJogador* m_observerPlayer;
+            Observer::ObserverPlayer* m_observerPlayer;
             
             sf::Sound m_soundAttack;
             sf::SoundBuffer m_soundAttackBuffer;

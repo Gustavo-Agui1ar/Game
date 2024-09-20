@@ -6,11 +6,11 @@
 Game::Principal::Principal()
 {
 
-    gerenciadorGrafico = Gerenciador::GerenciadorGrafico::getGerenciadorGrafico();
+    gerenciadorGrafico = Manager::GraphicManager::getGraphicManager();
 
-    gerenciadorDeEventos = gerenciadorDeEventos->getGerenciadorDeEventos();
+    gerenciadorDeEventos = Manager::EventManager::getEventManager();
 
-    pEstado = Gerenciador::GerenciadorDeEstado::getGerenciadorDeEstado();
+    pEstado = Manager::StateManager::getStateManager();
 
     if(pEstado == nullptr)
     {
@@ -38,18 +38,18 @@ Game::Principal::Principal()
 
 void Game::Principal::executar()
 {
-    while (gerenciadorGrafico->verificaJanelaAberta())
+    while (gerenciadorGrafico->checkIsOpenWindow())
     {
 
-        gerenciadorDeEventos->executar();
+        gerenciadorDeEventos->execute();
 
-        gerenciadorGrafico->limpaJanela();
+        gerenciadorGrafico->clearWindow();
         
-        pEstado->executar();
+        pEstado->execute();
 
-        gerenciadorGrafico->mostraElementos();
+        gerenciadorGrafico->showElements();
 
-        gerenciadorGrafico->resetarRelogio();
+        gerenciadorGrafico->resetClock();
     }
 }
 
@@ -68,5 +68,5 @@ Game::Principal::~Principal()
 
 void Game::Principal::criarEstadoInicial()
 {
-    pEstado->addEstado(IDs::IDs::main_menu);
+    pEstado->addState(IDs::IDs::main_menu);
 }

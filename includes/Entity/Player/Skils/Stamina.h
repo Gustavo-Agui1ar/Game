@@ -1,7 +1,7 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
-#include "../../../gerenciador/gerenciadorGrafico.h"
+#include "../../../Manager/GraphicManager.h"
 #include "json.hpp"
 
 #define MAX_STAMINA 100.0f
@@ -18,7 +18,7 @@ namespace Game::Entity::Character::Player{
 
         private:
 
-            Gerenciador::GerenciadorGrafico* m_graphic;
+            Manager::GraphicManager* m_graphic;
             Player* m_player;
            
             bool  m_canRegenarateStamina;

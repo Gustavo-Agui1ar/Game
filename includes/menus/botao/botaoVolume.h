@@ -2,7 +2,7 @@
 #pragma once 
 
 #include "botaoTexto.h"
-#include "../includes/gerenciador/gerenciadorDeMusica.h"
+#include "../includes/Manager/MusicManager.h"
 
 #define TAMANHO_BARRA_VOLUME_X 450.0f
 #define TAMANHO_BARRA_VOLUME_Y 30.0f
@@ -19,7 +19,7 @@ namespace Game::Menu::Botao{
         sf::RectangleShape fundoVolume;
         sf::RectangleShape corpoVolume;
 
-        Gerenciador::GerenciadorDeMusica* pMusica;
+        Manager::MusicManager* pMusica;
 
         const float posInicioFundo;
         const float parametrizacao;

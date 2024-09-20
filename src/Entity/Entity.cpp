@@ -30,7 +30,7 @@ namespace Game::Entity{
 
     void Entity::draw()
     {
-        m_graphic->desenhaElemento(m_body);
+        m_graphic->drawElement(m_body);
     }
 
     const bool Entity::getRemove()

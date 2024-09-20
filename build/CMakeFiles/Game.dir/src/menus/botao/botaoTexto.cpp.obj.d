@@ -253,7 +253,7 @@ CMakeFiles/Game.dir/src/menus/botao/botaoTexto.cpp.obj: \
  C:/msys64/mingw64/include/c++/13.1.0/bits/stl_numeric.h \
  C:/msys64/mingw64/include/c++/13.1.0/pstl/glue_numeric_defs.h \
  C:/msys64/mingw64/include/c++/13.1.0/any \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/gerenciador/gerenciadorGrafico.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/Manager/GraphicManager.h \
  C:/PROGRA~2/SFML/include/SFML/Graphics.hpp \
  C:/PROGRA~2/SFML/include/SFML/Window.hpp \
  C:/PROGRA~2/SFML/include/SFML/System.hpp \
@@ -330,7 +330,7 @@ CMakeFiles/Game.dir/src/menus/botao/botaoTexto.cpp.obj: \
  C:/PROGRA~2/SFML/include/SFML/Graphics/Sprite.hpp \
  C:/PROGRA~2/SFML/include/SFML/Graphics/Text.hpp \
  C:/PROGRA~2/SFML/include/SFML/Graphics/VertexBuffer.hpp \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/gerenciador/camera.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/Manager/camera.h \
  C:/msys64/mingw64/include/c++/13.1.0/iostream \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/botao/textoEfeito.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/botao/texto.h

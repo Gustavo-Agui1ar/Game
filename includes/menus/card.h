@@ -2,7 +2,7 @@
 #pragma once
 
 #include "Menu.h"
-#include "../Gerenciador/gerenciadorGrafico.h"
+#include "../Manager/GraphicManager.h"
 
 #define CARD_FONTE "/Game/animations/backgorund/card/card-vazio.png"
 
@@ -28,7 +28,7 @@ namespace Game::Menu {
         const std::string caminhoFase;
 
 
-        static Gerenciador::GerenciadorGrafico* pGrafico;
+        static Manager::GraphicManager* pGrafico;
 
     public:
 

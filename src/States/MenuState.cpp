@@ -7,11 +7,11 @@
 #include "../includes/menus/menuCarregar.h"
 #include "../includes/menus/menuDeSelecao.h"
 #include "../includes/menus/menuSalvar.h"
-#include "../includes/gerenciador/gerenciadorDeEstado.h"
+#include "../includes/Manager/StateManager.h"
 
 namespace Game:: State{
     
-    Gerenciador::GerenciadorDeEstado* MenuState::m_stateManager = Gerenciador::GerenciadorDeEstado::getGerenciadorDeEstado();
+    Manager::StateManager* MenuState::m_stateManager = Manager::StateManager::getStateManager();
 
     MenuState::MenuState(const IDs::IDs ID):
     State(ID), m_menu(nullptr)
@@ -35,7 +35,7 @@ namespace Game:: State{
 
     void MenuState::makeMenu()
     {
-        State* estadoAtual = m_stateManager->getEstadoAtual();
+        State* estadoAtual = m_stateManager->getCurrentState();
         Level::Level* fase = nullptr;
         
         if(estadoAtual != nullptr)
@@ -172,7 +172,7 @@ namespace Game:: State{
     void MenuState::makeLoadMenu(Level::Level* fase) {
         Menu::MenuCarregar* menuCarregar = nullptr; 
 
-        if(m_stateManager->getEstadoAtual()->getID() == IDs::IDs::pause_menu)
+        if(m_stateManager->getCurrentState()->getID() == IDs::IDs::pause_menu)
                 menuCarregar = new Menu::MenuCarregar(fase);
         else
             menuCarregar = new Menu::MenuCarregar();
@@ -190,7 +190,7 @@ namespace Game:: State{
     void MenuState::makeBugMenu(Level::Level* fase) {
         Menu::MenuCarregar* menuCarregar = nullptr; 
 
-        if(m_stateManager->getEstadoAtual()->getID() == IDs::IDs::pause_menu)
+        if(m_stateManager->getCurrentState()->getID() == IDs::IDs::pause_menu)
                 menuCarregar = new Menu::MenuCarregar(fase);
         else
             menuCarregar = new Menu::MenuCarregar();
@@ -226,7 +226,7 @@ namespace Game:: State{
     void MenuState::makeOptionMenu(Level::Level* fase) {
         Menu::MenuOpcao* menuOpcao = nullptr; 
 
-        if(m_stateManager->getEstadoAtual()->getID() == IDs::IDs::pause_menu)
+        if(m_stateManager->getCurrentState()->getID() == IDs::IDs::pause_menu)
                 menuOpcao = new Menu::MenuOpcao(fase);
         else
             menuOpcao = new Menu::MenuOpcao();

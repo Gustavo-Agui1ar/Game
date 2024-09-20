@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../../../gerenciador/gerenciadorGrafico.h"
+#include "../../../Manager/GraphicManager.h"
 #include "../../Weapon/Bullet.h"
 #include "json.hpp"
 
@@ -16,7 +16,7 @@ namespace Game::Entity::Character::Player {
 
         private:
 
-          Gerenciador::GerenciadorGrafico *m_graphic;
+          Manager::GraphicManager *m_graphic;
           Player* m_player;
 
           Weapon::Bullet* m_bullet;

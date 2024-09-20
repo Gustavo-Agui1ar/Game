@@ -115,9 +115,9 @@ namespace Game{
 
             if(card->getExiste())
             {
-                gerenciadorArquivo.removeArquivo(card->getCaminhoEntidade().c_str());
-                gerenciadorArquivo.removeArquivo(card->getCaminhoFase().c_str());
-                gerenciadorArquivo.removeArquivo(card->getCaminhoImagem().c_str());
+                gerenciadorArquivo.removeFile(card->getCaminhoEntidade().c_str());
+                gerenciadorArquivo.removeFile(card->getCaminhoFase().c_str());
+                gerenciadorArquivo.removeFile(card->getCaminhoImagem().c_str());
                 card->deletarTextura();
             }
         }
@@ -178,18 +178,18 @@ namespace Game{
             if(fase != nullptr)
             {
                 fase->draw();
-                m_graphic->desenhaElemento(fundoEscuro);
+                m_graphic->drawElement(fundoEscuro);
             }
             else
             {
-                posFundo = sf::Vector2f(posFundo.x + m_graphic->getTempo() * 80.0f, posFundo.y);
-                m_graphic->atualizarCamera(sf::Vector2f(posFundo.x + tamJanela.x / 2.0f, posFundo.y + tamJanela.y / 2.0f));
-                fundo.executar();
-                m_graphic->resetarJanela();
+                posFundo = sf::Vector2f(posFundo.x + m_graphic->getTime() * 80.0f, posFundo.y);
+                m_graphic->updateCamera(sf::Vector2f(posFundo.x + tamJanela.x / 2.0f, posFundo.y + tamJanela.y / 2.0f));
+                fundo.execute();
+                m_graphic->resetWindow();
             }
             draw();
 
-            m_graphic->desenhaElemento(titulo.getTexto());
+            m_graphic->drawElement(titulo.getTexto());
 
             desenharCards();
         }

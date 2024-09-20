@@ -8,9 +8,9 @@
 
 namespace Game{
 
-    namespace Gerenciador{
+    namespace Manager{
 
-        class GerenciadoDeEstado;
+        class StateManager;
     }
 
     namespace State{
@@ -19,7 +19,7 @@ namespace Game{
 
             private:
 
-                static Gerenciador::GerenciadorDeEstado* m_stateManager;
+                static Manager::StateManager* m_stateManager;
 
                 Menu::Menu* m_menu;
                 

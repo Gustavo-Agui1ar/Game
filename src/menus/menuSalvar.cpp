@@ -81,11 +81,11 @@ namespace Game{
             const std::string caminhoEntidade = (*itCard)->getCaminhoEntidade();
             const std::string caminhoFase = (*itCard)->getCaminhoFase();
 
-            gArquivo.removeArquivo(caminhoEntidade.c_str());
-            gArquivo.removeArquivo(caminhoFase.c_str());
+            gArquivo.removeFile(caminhoEntidade.c_str());
+            gArquivo.removeFile(caminhoFase.c_str());
 
-            gArquivo.gravarConteudo(caminhoEntidade.c_str(), jsonEntidades);
-            gArquivo.gravarConteudo(caminhoFase.c_str(), jsonFase);
+            gArquivo.writeContent(caminhoEntidade.c_str(), jsonEntidades);
+            gArquivo.writeContent(caminhoFase.c_str(), jsonFase);
 
             fase->draw();
 
@@ -162,9 +162,9 @@ namespace Game{
         {
             fase->draw();
 
-            m_graphic->desenhaElemento(fundoEscuro);
+            m_graphic->drawElement(fundoEscuro);
 
-            m_graphic->desenhaElemento(titulo.getTexto());
+            m_graphic->drawElement(titulo.getTexto());
 
             draw();
 

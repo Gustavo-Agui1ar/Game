@@ -8,9 +8,9 @@
 
 namespace Game{
 
-    namespace Gerenciador{
+    namespace Manager{
 
-        class GerenciadorDeEstado;
+        class StateManager;
     }
 
     namespace Entity::Character::Npc{
@@ -18,7 +18,7 @@ namespace Game{
             
             protected:
 
-                static Gerenciador::GerenciadorDeEstado* m_pEstate;
+                static Manager::StateManager* m_stateManager;
                 const char* m_pathDialogue;
 
                 const IDs::IDs m_IDcharacter;
@@ -37,7 +37,7 @@ namespace Game{
                 nlohmann::ordered_json save() override;
                 void startDialogue();
                 const char* getPathDialogue();
-                void collision(Entity* outraEntidade, sf::Vector2f ds = sf::Vector2f(0.f,0.f)) override;
+                void collision(Entity* otherEntity, sf::Vector2f ds = sf::Vector2f(0.f,0.f)) override;
                 void draw() override;
                 void update() override;
         };

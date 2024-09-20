@@ -1,7 +1,7 @@
 
 #pragma once 
 
-#include "../includes/gerenciador/gerenciadorGrafico.h"
+#include "../includes/Manager/GraphicManager.h"
 #include "../includes/Entity/Entity.h"
 
 namespace Game::Entity::Obstacle{

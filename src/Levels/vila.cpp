@@ -1,4 +1,4 @@
-
+ 
 #include "../includes/Levels/vila.h"
 
 #define CAMADA_1_VILA "../Game/animations/background/vila/background.png"
@@ -17,8 +17,8 @@ namespace Game::Level{
 
     void Vila::makeBackGround()
     {
-        m_backGround.addCamada(CAMADA_1_VILA, 0.0f);
-        m_backGround.addCamada(CAMADA_2_VILA, 0.0f);
+        m_backGround.addLayer(CAMADA_1_VILA, 0.0f);
+        m_backGround.addLayer(CAMADA_2_VILA, 0.0f);
     }
 
     void Vila::makeMap()
@@ -92,7 +92,7 @@ namespace Game::Level{
             exit(1);
         } 
 
-        m_charactersList->addEntidade(static_cast<Entity::Entity*>(npc));
+        m_charactersList->add(static_cast<Entity::Entity*>(npc));
     }
 
     void Vila::criarCasaPequena (sf::Vector2i pos)
@@ -101,7 +101,7 @@ namespace Game::Level{
 
         casa->setTexture("../Game/animations/background/cenarioVila/house-c.png");
 
-        m_obstaclesList->addEntidade(static_cast<Entity::Entity*>(casa));
+        m_obstaclesList->add(static_cast<Entity::Entity*>(casa));
     }
 
     void Vila::criarCasaMedia (sf::Vector2i pos)
@@ -110,7 +110,7 @@ namespace Game::Level{
 
         casa->setTexture("../Game/animations/background/cenarioVila/house-a.png");
 
-        m_obstaclesList->addEntidade(static_cast<Entity::Entity*>(casa));
+        m_obstaclesList->add(static_cast<Entity::Entity*>(casa));
     }
     
     void Vila::criarCasaGrande(sf::Vector2i pos)
@@ -119,7 +119,7 @@ namespace Game::Level{
 
         casa->setTexture("../Game/animations/background/cenarioVila/house-b.png");
 
-        m_obstaclesList->addEntidade(static_cast<Entity::Entity*>(casa));
+        m_obstaclesList->add(static_cast<Entity::Entity*>(casa));
     }
 
     void Vila::makePlatform(const sf::Vector2f pos)
@@ -131,14 +131,14 @@ namespace Game::Level{
             exit(1);
         }
         auto* plat = static_cast<Entity::Entity*>(plataforma);
-        m_obstaclesList->addEntidade(plat);
+        m_obstaclesList->add(plat);
     }
     
     void Vila::criarCaixotes(const sf::Vector2i pos)
     {
         sf::RectangleShape caixa(sf::Vector2f(50.f, 50.f));
 
-        auto const* texCaixa = new sf::Texture(m_graphic->carregarTextura("../Game/animations/background/cenarioVila/cenario1.png"));
+        auto const* texCaixa = new sf::Texture(m_graphic->loadTexture("../Game/animations/background/cenarioVila/cenario1.png"));
         
         caixa.setPosition(sf::Vector2f(pos.x * 50.f , pos.y * 50.f + 10.f));
         caixa.setTexture(texCaixa);
@@ -149,7 +149,7 @@ namespace Game::Level{
     {
         sf::RectangleShape poste(sf::Vector2f(50.f, 100.f));
 
-        auto const* texPoste = new sf::Texture(m_graphic->carregarTextura("../Game/animations/background/cenarioVila/cenario2.png"));
+        auto const* texPoste = new sf::Texture(m_graphic->loadTexture("../Game/animations/background/cenarioVila/cenario2.png"));
         
         poste.setPosition(sf::Vector2f(pos.x * 50.f , pos.y * 50.f + 10.f));
         poste.setTexture(texPoste);
@@ -161,7 +161,7 @@ namespace Game::Level{
     {
         sf::RectangleShape carroca(sf::Vector2f(100.f, 100.f));
 
-        auto const* texCarroca = new sf::Texture(m_graphic->carregarTextura("../Game/animations/background/cenarioVila/cenario3.png"));
+        auto const* texCarroca = new sf::Texture(m_graphic->loadTexture("../Game/animations/background/cenarioVila/cenario3.png"));
         
         carroca.setPosition(sf::Vector2f(pos.x * 50.f , pos.y * 50.f + 10.f));
         carroca.setTexture(texCarroca);
@@ -169,41 +169,33 @@ namespace Game::Level{
         objCenarios.push_back(carroca);
     }
     
-
-    /**
-     * @brief atualiza a lista de entidades  juntamente com a verificacao da colisao e atulizacao do fundo da fase
-    */
     void Vila::execute()
     {
         m_player = getPlayer();
         if(m_player)
         {
-            m_backGround.executar();
+            m_backGround.execute();
 
-            m_obstaclesList->executar();
+            m_obstaclesList->execute();
             desenharObjsCenario();
-            m_charactersList->executar();
+            m_charactersList->execute();
             
 
-            m_collisionManager->executar();
+            m_collisionManager->execute();
 
         }
         else{
-            m_observerLevel->notificarGameOver();
+            m_observerLevel->notifyGameOver();
         }
     }
 
-    /**
-     * @brief metodo responsavel por desenhar as
-     * listas  de  personagens  e obstaculos
-    */
     void Vila::draw()
     {
-        m_backGround.executar();
+        m_backGround.execute();
 
-        m_obstaclesList->desenharEntidades();
+        m_obstaclesList->drawEntitys();
         desenharObjsCenario();
-        m_charactersList->desenharEntidades();
+        m_charactersList->drawEntitys();
 
     }
 
@@ -213,7 +205,7 @@ namespace Game::Level{
 
         while(it != objCenarios.end())
         {
-            m_graphic->desenhaElemento((*it));
+            m_graphic->drawElement((*it));
             it++;
         }
     }

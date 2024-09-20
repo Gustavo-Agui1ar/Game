@@ -1,4 +1,3 @@
-
 #include "../includes/Entity/Enemy/Archer.h"
 
 #define RAIO_DE_VISAO_X 200.0f
@@ -6,17 +5,30 @@
 
 namespace Game::Entity::Character::Enemy{
 
+    /**
+     * @brief Construct a new Archer object.
+     * 
+     * @param position Initial position of the archer.
+     * @param player Pointer to the player object.
+     * @param weapon Pointer to the weapon object.
+     */
     Archer::Archer(sf::Vector2f position, Player::Player *player, Weapon::Weapon* weapon):
     Enemy(position, sf::Vector2f(SIZE_ARCHER_X, SIZE_ARCHER_Y), ARCHER_SPEED, player, ARCHER_TIME_ATTACK,
-    IDs::IDs::archer, ARCHER_TIME_GET_DAMAGE, ARCHER_TIME_ANIMATION_DEATH,ARCHER_DAMAGE, weapon)
+    IDs::IDs::archer, ARCHER_TIME_GET_DAMAGE, ARCHER_TIME_ANIMATION_DEATH, ARCHER_DAMAGE, weapon)
     {
         bootAnimation();
         bootSound();
     }
 
+    /**
+     * @brief Construct a new Archer object from JSON attributes.
+     * 
+     * @param atributos JSON object containing the attributes.
+     * @param player Pointer to the player object.
+     */
     Archer::Archer(nlohmann::ordered_json atributos, Player::Player* player):
-    Enemy(m_position, sf::Vector2f(SIZE_ARCHER_X,SIZE_ARCHER_Y), ARCHER_SPEED, player, ARCHER_TIME_ATTACK,
-    IDs::IDs::archer, ARCHER_TIME_GET_DAMAGE, ARCHER_TIME_ANIMATION_DEATH, ARCHER_DAMAGE,  nullptr)
+    Enemy(m_position, sf::Vector2f(SIZE_ARCHER_X, SIZE_ARCHER_Y), ARCHER_SPEED, player, ARCHER_TIME_ATTACK,
+    IDs::IDs::archer, ARCHER_TIME_GET_DAMAGE, ARCHER_TIME_ANIMATION_DEATH, ARCHER_DAMAGE, nullptr)
     {
         try
         {
@@ -49,26 +61,34 @@ namespace Game::Entity::Character::Enemy{
             std::cerr << e.what() << '\n';
             m_canRemove = true;
         }
-        
     }
     
+    /**
+     * @brief Destroy the Archer object.
+     */
     Archer::~Archer() = default;
 
+    /**
+     * @brief Initialize the animations for the archer.
+     */
     void Archer::bootAnimation()
     {
-        const auto origin = sf::Vector2f(m_size.x/2.5,m_size.y/2.2);
-        m_animation.addAnimation("../Game/animations/Characters/enemy/Skeleton_Archer/Idle.png","PARADO",7,0.16,sf::Vector2f{6,2},origin);
-        m_animation.addAnimation("../Game/animations/Characters/enemy/Skeleton_Archer/Walk.png","ANDAR",8,0.16,sf::Vector2f{6,2}, origin);
-        m_animation.addAnimation("../Game/animations/Characters/enemy/Skeleton_Archer/Shot_1.png","ATACA",15,0.1,sf::Vector2f{6,2}, origin);
-        m_animation.addAnimation("../Game/animations/Characters/enemy/Skeleton_Archer/Hurt.png","TOMADANO",2,0.2,sf::Vector2f{6,2}, origin);
-        m_animation.addAnimation("../Game/animations/Characters/enemy/Skeleton_Archer/Dead.png","MORRE",5,0.25,sf::Vector2f{6,2}, origin);
+        const auto origin = sf::Vector2f(m_size.x / 2.5, m_size.y / 2.2);
+        m_animation.addAnimation("../Game/animations/Characters/enemy/Skeleton_Archer/Idle.png", "PARADO", 7, 0.16, sf::Vector2f{6, 2}, origin);
+        m_animation.addAnimation("../Game/animations/Characters/enemy/Skeleton_Archer/Walk.png", "ANDAR", 8, 0.16, sf::Vector2f{6, 2}, origin);
+        m_animation.addAnimation("../Game/animations/Characters/enemy/Skeleton_Archer/Shot_1.png", "ATACA", 15, 0.1, sf::Vector2f{6, 2}, origin);
+        m_animation.addAnimation("../Game/animations/Characters/enemy/Skeleton_Archer/Hurt.png", "TOMADANO", 2, 0.2, sf::Vector2f{6, 2}, origin);
+        m_animation.addAnimation("../Game/animations/Characters/enemy/Skeleton_Archer/Dead.png", "MORRE", 5, 0.25, sf::Vector2f{6, 2}, origin);
     }
 
+    /**
+     * @brief Update the animation state of the archer.
+     */
     void Archer::updateAnimation()
     {
         if(m_dying){
             m_animation.update(m_direction, "MORRE");
-            m_timeDeath += m_graphic->getTempo();
+            m_timeDeath += m_graphic->getTime();
             if(m_timeDeath > m_animationTimeDeath)
             {
                 m_player->increaseRage(m_weapon->getDamage());
@@ -81,24 +101,27 @@ namespace Game::Entity::Character::Enemy{
             }
         }
         else if(m_getDamage)
-            m_animation.update(m_direction,"TOMADANO");
+            m_animation.update(m_direction, "TOMADANO");
         else if(m_attaking)
-            m_animation.update(m_direction,"ATACA");
+            m_animation.update(m_direction, "ATACA");
         else if(m_moving)
-            m_animation.update(m_direction,"ANDAR");
+            m_animation.update(m_direction, "ANDAR");
         else
-            m_animation.update(m_direction,"PARADO");
+            m_animation.update(m_direction, "PARADO");
     }
     
+    /**
+     * @brief Update the attack state of the archer.
+     */
     void Archer::updateAttack()
     {
         if(m_attaking && !m_dying)
         {
-            m_timeAttack += m_graphic->getTempo();
+            m_timeAttack += m_graphic->getTime();
             if(m_timeAttack > m_AnimationTimeAttack)
             {
                 auto *bullet = dynamic_cast<Weapon::Bullet*>(m_weapon);
-                bullet->setPosition(sf::Vector2f(m_position.x + m_size.x ,m_position.y +  m_size.y / 3.0f));
+                bullet->setPosition(sf::Vector2f(m_position.x + m_size.x, m_position.y + m_size.y / 3.0f));
                 bullet->setCollision(false);
                 bullet->setSpeed(sf::Vector2f(ARCHER_SPEED, 0.0f));
                 bullet->setDirection(m_direction);
@@ -108,17 +131,23 @@ namespace Game::Entity::Character::Enemy{
         }
     }
 
+    /**
+     * @brief Initialize the sound effects for the archer.
+     */
     void Archer::bootSound()
     {
         if(!m_DamageBufferSound.loadFromFile(ARCHER_SOUND_DAMAGE))
         {
-            std::cout<< "Esqueleto: não foi possivel carregar somAtaqueBuffer";
+            std::cout << "Esqueleto: não foi possivel carregar somAtaqueBuffer";
             exit(1);
         }
         m_soundDamage.setBuffer(m_DamageBufferSound);
         m_soundDamage.setVolume(40.0f);
     }
 
+    /**
+     * @brief Move the archer based on the player's position.
+     */
     void Archer::moveEnemy()
     {
         if(!m_attaking && !m_dying && !m_getDamage)
@@ -130,17 +159,17 @@ namespace Game::Entity::Character::Enemy{
             const float y = fabs(enemyPos.y - playerPos.y);
 
             if(x <= RAIO_DE_VISAO_X && y <= RAIO_DE_VISAO_Y){
-                    escape(playerPos,enemyPos);
+                escape(playerPos, enemyPos);
             }
             else if(x <= RAIO_DE_VISAO_X * 5 && y <= RAIO_DE_VISAO_Y)
             {
-                m_direction = (playerPos.x - enemyPos.x > 0.0f) ? false : true ;
+                m_direction = (playerPos.x - enemyPos.x > 0.0f) ? false : true;
                 stop();
                 
                 auto *bullet = dynamic_cast<Weapon::Bullet*>(m_weapon);
 
                 if(bullet->getCollision()) { 
-                    m_timeAttack += m_graphic->getTempo();
+                    m_timeAttack += m_graphic->getTime();
                     
                     if(m_timeAttack > m_AnimationTimeAttack) {
                         m_attaking = true;
@@ -157,6 +186,12 @@ namespace Game::Entity::Character::Enemy{
             m_timeMove = 0.0f;
     }
 
+    /**
+     * @brief Make the archer escape from the player.
+     * 
+     * @param playerPos Position of the player.
+     * @param enemyPos Position of the archer.
+     */
     void Archer::escape(sf::Vector2f playerPos, sf::Vector2f enemyPos)
     {
         if(playerPos.x - enemyPos.x > 0.0f)

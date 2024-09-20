@@ -4,8 +4,8 @@
 #include <string>
 #include "State.h"
 #include "../Levels/Level.h"
-#include "../includes/gerenciador/gerenciadorDeDialogo.h"
-#include "../includes/gerenciador/gerenciadorArquivo.h"
+#include "../includes/Manager/DialogueManager.h"
+#include "../includes/Manager/FileManager.h"
 
 namespace Game::State{
         class DialogueState : public State {
@@ -13,7 +13,7 @@ namespace Game::State{
         private:
 
             Level::Level* m_fase;
-            Gerenciador::GerenciadorDeDialogo* m_dialogueManager;
+            Manager::DialogueManager* m_dialogueManager;
 
             void bootTalks(std::vector<std::string> pathTalks);
 

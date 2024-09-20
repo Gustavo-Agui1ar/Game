@@ -330,24 +330,24 @@ CMakeFiles/Game.dir/src/Entity/npcs/npc.cpp.obj: \
  C:/msys64/mingw64/include/c++/13.1.0/bits/stl_numeric.h \
  C:/msys64/mingw64/include/c++/13.1.0/pstl/glue_numeric_defs.h \
  C:/msys64/mingw64/include/c++/13.1.0/any \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/gerenciador/gerenciadorGrafico.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/gerenciador/camera.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/Manager/GraphicManager.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/Manager/camera.h \
  C:/msys64/mingw64/include/c++/13.1.0/iostream \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/Animator/Animation.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/Animator/Image.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/json.hpp \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/Entity/Weapon/Weapon.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/gerenciador/gerenciadorDeEstado.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/Manager/StateManager.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/States/LevelState.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/States/State.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/Levels/level-1.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/Levels/Level.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/gerenciador/gerenciadorDeColisao.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/lista/listaEntidade.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/lista/lista.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/lista/elemento.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/listeners/listenerFase.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/listeners/listener.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/Manager/CollisionManager.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/List/EntityList.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/List/List.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/List/Element.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/Observer/ObserverLevel.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/Observer/Observer.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/Entity/Obstacle/Platform.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/Entity/Obstacle/Obstacle.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/Entity/Player/Player.h \
@@ -381,8 +381,8 @@ CMakeFiles/Game.dir/src/Entity/npcs/npc.cpp.obj: \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/Entity/Enemy/Archer.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/Entity/Enemy/Skeleton.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/Entity/Enemy/Slime.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/fundo/fundo.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/fundo/camada.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/BackGround/BackGround.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/BackGround/Layer.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/Levels/level-2.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/Levels/vila.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/Entity/Obstacle/House.h \
@@ -397,12 +397,12 @@ CMakeFiles/Game.dir/src/Entity/npcs/npc.cpp.obj: \
  C:/msys64/mingw64/include/c++/13.1.0/bits/stl_list.h \
  C:/msys64/mingw64/include/c++/13.1.0/bits/list.tcc \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/States/DialogueState.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/gerenciador/gerenciadorDeDialogo.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/Manager/DialogueManager.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/botao/balaoDeFala.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/botao/textoFala.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/gerenciador/gerenciadorArquivo.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/Manager/FileManager.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/json.hpp \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/gerenciador/gerenciadorDeMusica.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/Manager/MusicMAnager.h \
  C:/msys64/mingw64/include/c++/13.1.0/stack \
  C:/msys64/mingw64/include/c++/13.1.0/deque \
  C:/msys64/mingw64/include/c++/13.1.0/bits/stl_deque.h \

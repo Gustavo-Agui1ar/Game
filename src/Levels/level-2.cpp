@@ -101,12 +101,12 @@ namespace Game::Level{
 
         void Forest::makeBackGround ()
         {
-            m_backGround.addCamada(CAMADA_1_5,0.0f);
-            m_backGround.addCamada(CAMADA_2_5,0.4f);
-            m_backGround.addCamada(CAMADA_3_5,0.15f);
-            m_backGround.addCamada(CAMADA_4_5,0.2f);
-            m_backGround.addCamada(CAMADA_5_5,0.25f);
-            m_backGround.addCamada(CAMADA_6_5,0.3f);
+            m_backGround.addLayer(CAMADA_1_5,0.0f);
+            m_backGround.addLayer(CAMADA_2_5,0.4f);
+            m_backGround.addLayer(CAMADA_3_5,0.15f);
+            m_backGround.addLayer(CAMADA_4_5,0.2f);
+            m_backGround.addLayer(CAMADA_5_5,0.25f);
+            m_backGround.addLayer(CAMADA_6_5,0.3f);
         }
 
         void Forest::makeMap()
@@ -114,7 +114,7 @@ namespace Game::Level{
             std::ifstream arquivo;
             std::string linha;
 
-            arquivo.open("../Game/includes/Levels/fase-2.txt");
+            arquivo.open("../Game/includes/Levels/level-2.txt");
 
             if(!arquivo.is_open())
             {
@@ -135,8 +135,8 @@ namespace Game::Level{
                 }
                 j++;
             }
-            m_charactersList->removerEntidade(4);
-            m_charactersList->removerEntidade(4);
+            m_charactersList->remove(4);
+            m_charactersList->remove(4);
             arquivo.close();
         }
 
@@ -149,6 +149,6 @@ namespace Game::Level{
                 exit(1);
             }
             auto* plat = static_cast<Entity::Entity*>(platform);
-            m_obstaclesList->addEntidade(plat);
+            m_obstaclesList->add(plat);
         }
 }

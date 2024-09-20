@@ -3,7 +3,7 @@
 
 namespace Game::Entity::Character::Player::Skils{
 
-        Stamina::Stamina(Player* player) : m_graphic(Gerenciador::GerenciadorGrafico::getGerenciadorGrafico()), m_player(player), m_canRegenarateStamina(false), 
+        Stamina::Stamina(Player* player) : m_graphic(Manager::GraphicManager::getGraphicManager()), m_player(player), m_canRegenarateStamina(false), 
         m_timeRegenerationStamina(0.0f), m_stamina(MAX_STAMINA) {
             bootStaminaBar();
         } 
@@ -30,7 +30,7 @@ namespace Game::Entity::Character::Player::Skils{
                         m_canRegenarateStamina = false;
                 }
                 else {
-                    m_timeRegenerationStamina += m_graphic->getTempo();
+                    m_timeRegenerationStamina += m_graphic->getTime();
 
                     if (m_timeRegenerationStamina >= TIME_REGENERATION_STAMINA) {
                         m_canRegenarateStamina = true;
@@ -43,7 +43,7 @@ namespace Game::Entity::Character::Player::Skils{
         void Stamina::updateStaminaBar() {
             updateStaminaRegeneration();
             sf::Vector2f screenPosition = m_graphic->getCamera().getCenter();
-            sf::Vector2f screenSize = m_graphic->getTamJanela();
+            sf::Vector2f screenSize = m_graphic->getSizeWindow();
 
             auto barPosition = sf::Vector2f(screenPosition.x - screenSize.x / 2.0f + 10.0f, 60.0f);
             m_staminaBar.setSize(sf::Vector2f((PLAYER_LIFE_BAR_X - 30.0f) * (m_stamina / MAX_STAMINA), PLAYER_LIFE_BAR_Y - 13.0f));
@@ -85,7 +85,7 @@ namespace Game::Entity::Character::Player::Skils{
         }
 
         void Stamina::drawStaminaBar() {
-            m_graphic->desenhaElemento(m_staminaBar);
+            m_graphic->drawElement(m_staminaBar);
         }
 
         nlohmann::ordered_json Stamina::saveStamina(nlohmann::ordered_json json) {

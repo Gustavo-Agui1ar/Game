@@ -29,12 +29,10 @@ namespace Game::Level{
 
     void Caverna::loadGame(nlohmann::ordered_json entidades)
     {
-
-        for(auto it = entidades.begin(); it != entidades.end(); it++)
+        auto it = entidades.begin();
+        while(it != entidades.end())
         {
-            IDs::IDs ID = (*it)["ID"].template get<IDs::IDs>();
-
-            switch(ID)
+            switch((*it)["ID"].template get<IDs::IDs>())
             {
                 case IDs::IDs::player:
                 {
@@ -97,6 +95,7 @@ namespace Game::Level{
                 default:
                     break;
             }
+            it++;
         }
     }
 
@@ -104,14 +103,14 @@ namespace Game::Level{
 
     void Caverna::makeBackGround()
     {
-        m_backGround.addCamada(CAMADA_8_1,0.0f);
-        m_backGround.addCamada(CAMADA_7_1,0.3f);
-        m_backGround.addCamada(CAMADA_6_1,0.05f);
-        m_backGround.addCamada(CAMADA_5_1,0.1f);
-        m_backGround.addCamada(CAMADA_4_1,0.15f);
-        m_backGround.addCamada(CAMADA_3_1,0.2f);
-        m_backGround.addCamada(CAMADA_2_1,0.4f);
-        m_backGround.addCamada(CAMADA_1_1,0.6f);
+        m_backGround.addLayer(CAMADA_8_1,0.0f);
+        m_backGround.addLayer(CAMADA_7_1,0.3f);
+        m_backGround.addLayer(CAMADA_6_1,0.05f);
+        m_backGround.addLayer(CAMADA_5_1,0.1f);
+        m_backGround.addLayer(CAMADA_4_1,0.15f);
+        m_backGround.addLayer(CAMADA_3_1,0.2f);
+        m_backGround.addLayer(CAMADA_2_1,0.4f);
+        m_backGround.addLayer(CAMADA_1_1,0.6f);
     }
 
     void Caverna::makeMap()
@@ -119,7 +118,7 @@ namespace Game::Level{
         std::ifstream arquivo;
         std::string linha;
 
-        arquivo.open("../Game/includes/Levels/fase-1.txt");
+        arquivo.open("../Game/includes/Levels/level-1.txt");
 
         if(!arquivo.is_open())
         {
@@ -141,8 +140,8 @@ namespace Game::Level{
             j++;
         }
 
-    m_charactersList->removerEntidade(4);    
-    m_charactersList->removerEntidade(4);    
+    m_charactersList->remove(4);    
+    m_charactersList->remove(4);    
 
         arquivo.close();
     }
@@ -156,7 +155,7 @@ namespace Game::Level{
             exit(1);
         }
         auto* plat = static_cast<Entity::Entity*>(platform);
-        m_obstaclesList->addEntidade(plat);
+        m_obstaclesList->add(plat);
     }
 }
 

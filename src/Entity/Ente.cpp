@@ -2,7 +2,7 @@
 
 namespace Game{
 
-    Gerenciador::GerenciadorGrafico* Ente::m_graphic= Gerenciador::GerenciadorGrafico::getGerenciadorGrafico();
+    Manager::GraphicManager* Ente::m_graphic= Manager::GraphicManager::getGraphicManager();
 
     Ente::Ente(const IDs::IDs ID):
     ID(ID)

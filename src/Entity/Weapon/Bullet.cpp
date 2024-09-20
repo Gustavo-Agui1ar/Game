@@ -124,7 +124,7 @@ namespace Game::Entity::Weapon{
     void Bullet::checkOutScreen()
     {
         sf::Vector2f screenCenter = m_graphic->getCamera().getCenter();
-        sf::Vector2f screenSize = m_graphic->getTamJanela();
+        sf::Vector2f screenSize = m_graphic->getSizeWindow();
 
         if(m_position.x < screenCenter.x - screenSize.x/2.0f || m_position.x > screenCenter.x + screenSize.x/2.0f ||
             m_position.y < screenCenter.y - screenSize.y/2.0f || m_position.y > screenCenter.y + screenSize.y/2.0f )
@@ -138,7 +138,7 @@ namespace Game::Entity::Weapon{
      */
     void Bullet::updatePosition()
     {
-        const float dt = m_graphic->getTempo();
+        const float dt = m_graphic->getTime();
         sf::Vector2f finalPosition(0.0f, m_position.y);
 
         finalPosition.x = m_position.x + m_speed.x * dt;
@@ -159,7 +159,7 @@ namespace Game::Entity::Weapon{
      */
     void Bullet::draw()
     {
-        m_graphic->desenhaElemento(m_body);
+        m_graphic->drawElement(m_body);
     }
 
     /**
@@ -190,7 +190,7 @@ namespace Game::Entity::Weapon{
             updateAnimation();
             checkOutScreen();
 
-            m_graphic->desenhaElemento(m_body);
+            m_graphic->drawElement(m_body);
         }
     }
 

@@ -176,6 +176,54 @@ src/Animator/Image.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Animator/Image.cpp.s
 .PHONY : src/Animator/Image.cpp.s
 
+src/BackGround/BackGround.obj: src/BackGround/BackGround.cpp.obj
+.PHONY : src/BackGround/BackGround.obj
+
+# target to build an object file
+src/BackGround/BackGround.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/BackGround/BackGround.cpp.obj
+.PHONY : src/BackGround/BackGround.cpp.obj
+
+src/BackGround/BackGround.i: src/BackGround/BackGround.cpp.i
+.PHONY : src/BackGround/BackGround.i
+
+# target to preprocess a source file
+src/BackGround/BackGround.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/BackGround/BackGround.cpp.i
+.PHONY : src/BackGround/BackGround.cpp.i
+
+src/BackGround/BackGround.s: src/BackGround/BackGround.cpp.s
+.PHONY : src/BackGround/BackGround.s
+
+# target to generate assembly for a file
+src/BackGround/BackGround.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/BackGround/BackGround.cpp.s
+.PHONY : src/BackGround/BackGround.cpp.s
+
+src/BackGround/Layer.obj: src/BackGround/Layer.cpp.obj
+.PHONY : src/BackGround/Layer.obj
+
+# target to build an object file
+src/BackGround/Layer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/BackGround/Layer.cpp.obj
+.PHONY : src/BackGround/Layer.cpp.obj
+
+src/BackGround/Layer.i: src/BackGround/Layer.cpp.i
+.PHONY : src/BackGround/Layer.i
+
+# target to preprocess a source file
+src/BackGround/Layer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/BackGround/Layer.cpp.i
+.PHONY : src/BackGround/Layer.cpp.i
+
+src/BackGround/Layer.s: src/BackGround/Layer.cpp.s
+.PHONY : src/BackGround/Layer.s
+
+# target to generate assembly for a file
+src/BackGround/Layer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/BackGround/Layer.cpp.s
+.PHONY : src/BackGround/Layer.cpp.s
+
 src/Entity/Enemy/Archer.obj: src/Entity/Enemy/Archer.cpp.obj
 .PHONY : src/Entity/Enemy/Archer.obj
 
@@ -704,6 +752,366 @@ src/Levels/vila.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Levels/vila.cpp.s
 .PHONY : src/Levels/vila.cpp.s
 
+src/List/EntityList.obj: src/List/EntityList.cpp.obj
+.PHONY : src/List/EntityList.obj
+
+# target to build an object file
+src/List/EntityList.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/List/EntityList.cpp.obj
+.PHONY : src/List/EntityList.cpp.obj
+
+src/List/EntityList.i: src/List/EntityList.cpp.i
+.PHONY : src/List/EntityList.i
+
+# target to preprocess a source file
+src/List/EntityList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/List/EntityList.cpp.i
+.PHONY : src/List/EntityList.cpp.i
+
+src/List/EntityList.s: src/List/EntityList.cpp.s
+.PHONY : src/List/EntityList.s
+
+# target to generate assembly for a file
+src/List/EntityList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/List/EntityList.cpp.s
+.PHONY : src/List/EntityList.cpp.s
+
+src/List/ObserverList.obj: src/List/ObserverList.cpp.obj
+.PHONY : src/List/ObserverList.obj
+
+# target to build an object file
+src/List/ObserverList.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/List/ObserverList.cpp.obj
+.PHONY : src/List/ObserverList.cpp.obj
+
+src/List/ObserverList.i: src/List/ObserverList.cpp.i
+.PHONY : src/List/ObserverList.i
+
+# target to preprocess a source file
+src/List/ObserverList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/List/ObserverList.cpp.i
+.PHONY : src/List/ObserverList.cpp.i
+
+src/List/ObserverList.s: src/List/ObserverList.cpp.s
+.PHONY : src/List/ObserverList.s
+
+# target to generate assembly for a file
+src/List/ObserverList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/List/ObserverList.cpp.s
+.PHONY : src/List/ObserverList.cpp.s
+
+src/Manager/Camera.obj: src/Manager/Camera.cpp.obj
+.PHONY : src/Manager/Camera.obj
+
+# target to build an object file
+src/Manager/Camera.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Manager/Camera.cpp.obj
+.PHONY : src/Manager/Camera.cpp.obj
+
+src/Manager/Camera.i: src/Manager/Camera.cpp.i
+.PHONY : src/Manager/Camera.i
+
+# target to preprocess a source file
+src/Manager/Camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Manager/Camera.cpp.i
+.PHONY : src/Manager/Camera.cpp.i
+
+src/Manager/Camera.s: src/Manager/Camera.cpp.s
+.PHONY : src/Manager/Camera.s
+
+# target to generate assembly for a file
+src/Manager/Camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Manager/Camera.cpp.s
+.PHONY : src/Manager/Camera.cpp.s
+
+src/Manager/CollisionManager.obj: src/Manager/CollisionManager.cpp.obj
+.PHONY : src/Manager/CollisionManager.obj
+
+# target to build an object file
+src/Manager/CollisionManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Manager/CollisionManager.cpp.obj
+.PHONY : src/Manager/CollisionManager.cpp.obj
+
+src/Manager/CollisionManager.i: src/Manager/CollisionManager.cpp.i
+.PHONY : src/Manager/CollisionManager.i
+
+# target to preprocess a source file
+src/Manager/CollisionManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Manager/CollisionManager.cpp.i
+.PHONY : src/Manager/CollisionManager.cpp.i
+
+src/Manager/CollisionManager.s: src/Manager/CollisionManager.cpp.s
+.PHONY : src/Manager/CollisionManager.s
+
+# target to generate assembly for a file
+src/Manager/CollisionManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Manager/CollisionManager.cpp.s
+.PHONY : src/Manager/CollisionManager.cpp.s
+
+src/Manager/DialogueManager.obj: src/Manager/DialogueManager.cpp.obj
+.PHONY : src/Manager/DialogueManager.obj
+
+# target to build an object file
+src/Manager/DialogueManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Manager/DialogueManager.cpp.obj
+.PHONY : src/Manager/DialogueManager.cpp.obj
+
+src/Manager/DialogueManager.i: src/Manager/DialogueManager.cpp.i
+.PHONY : src/Manager/DialogueManager.i
+
+# target to preprocess a source file
+src/Manager/DialogueManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Manager/DialogueManager.cpp.i
+.PHONY : src/Manager/DialogueManager.cpp.i
+
+src/Manager/DialogueManager.s: src/Manager/DialogueManager.cpp.s
+.PHONY : src/Manager/DialogueManager.s
+
+# target to generate assembly for a file
+src/Manager/DialogueManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Manager/DialogueManager.cpp.s
+.PHONY : src/Manager/DialogueManager.cpp.s
+
+src/Manager/EventManager.obj: src/Manager/EventManager.cpp.obj
+.PHONY : src/Manager/EventManager.obj
+
+# target to build an object file
+src/Manager/EventManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Manager/EventManager.cpp.obj
+.PHONY : src/Manager/EventManager.cpp.obj
+
+src/Manager/EventManager.i: src/Manager/EventManager.cpp.i
+.PHONY : src/Manager/EventManager.i
+
+# target to preprocess a source file
+src/Manager/EventManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Manager/EventManager.cpp.i
+.PHONY : src/Manager/EventManager.cpp.i
+
+src/Manager/EventManager.s: src/Manager/EventManager.cpp.s
+.PHONY : src/Manager/EventManager.s
+
+# target to generate assembly for a file
+src/Manager/EventManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Manager/EventManager.cpp.s
+.PHONY : src/Manager/EventManager.cpp.s
+
+src/Manager/FileManager.obj: src/Manager/FileManager.cpp.obj
+.PHONY : src/Manager/FileManager.obj
+
+# target to build an object file
+src/Manager/FileManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Manager/FileManager.cpp.obj
+.PHONY : src/Manager/FileManager.cpp.obj
+
+src/Manager/FileManager.i: src/Manager/FileManager.cpp.i
+.PHONY : src/Manager/FileManager.i
+
+# target to preprocess a source file
+src/Manager/FileManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Manager/FileManager.cpp.i
+.PHONY : src/Manager/FileManager.cpp.i
+
+src/Manager/FileManager.s: src/Manager/FileManager.cpp.s
+.PHONY : src/Manager/FileManager.s
+
+# target to generate assembly for a file
+src/Manager/FileManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Manager/FileManager.cpp.s
+.PHONY : src/Manager/FileManager.cpp.s
+
+src/Manager/GraphicManager.obj: src/Manager/GraphicManager.cpp.obj
+.PHONY : src/Manager/GraphicManager.obj
+
+# target to build an object file
+src/Manager/GraphicManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Manager/GraphicManager.cpp.obj
+.PHONY : src/Manager/GraphicManager.cpp.obj
+
+src/Manager/GraphicManager.i: src/Manager/GraphicManager.cpp.i
+.PHONY : src/Manager/GraphicManager.i
+
+# target to preprocess a source file
+src/Manager/GraphicManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Manager/GraphicManager.cpp.i
+.PHONY : src/Manager/GraphicManager.cpp.i
+
+src/Manager/GraphicManager.s: src/Manager/GraphicManager.cpp.s
+.PHONY : src/Manager/GraphicManager.s
+
+# target to generate assembly for a file
+src/Manager/GraphicManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Manager/GraphicManager.cpp.s
+.PHONY : src/Manager/GraphicManager.cpp.s
+
+src/Manager/MusicManager.obj: src/Manager/MusicManager.cpp.obj
+.PHONY : src/Manager/MusicManager.obj
+
+# target to build an object file
+src/Manager/MusicManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Manager/MusicManager.cpp.obj
+.PHONY : src/Manager/MusicManager.cpp.obj
+
+src/Manager/MusicManager.i: src/Manager/MusicManager.cpp.i
+.PHONY : src/Manager/MusicManager.i
+
+# target to preprocess a source file
+src/Manager/MusicManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Manager/MusicManager.cpp.i
+.PHONY : src/Manager/MusicManager.cpp.i
+
+src/Manager/MusicManager.s: src/Manager/MusicManager.cpp.s
+.PHONY : src/Manager/MusicManager.s
+
+# target to generate assembly for a file
+src/Manager/MusicManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Manager/MusicManager.cpp.s
+.PHONY : src/Manager/MusicManager.cpp.s
+
+src/Manager/StateManager.obj: src/Manager/StateManager.cpp.obj
+.PHONY : src/Manager/StateManager.obj
+
+# target to build an object file
+src/Manager/StateManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Manager/StateManager.cpp.obj
+.PHONY : src/Manager/StateManager.cpp.obj
+
+src/Manager/StateManager.i: src/Manager/StateManager.cpp.i
+.PHONY : src/Manager/StateManager.i
+
+# target to preprocess a source file
+src/Manager/StateManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Manager/StateManager.cpp.i
+.PHONY : src/Manager/StateManager.cpp.i
+
+src/Manager/StateManager.s: src/Manager/StateManager.cpp.s
+.PHONY : src/Manager/StateManager.s
+
+# target to generate assembly for a file
+src/Manager/StateManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Manager/StateManager.cpp.s
+.PHONY : src/Manager/StateManager.cpp.s
+
+src/Observer/Observer.obj: src/Observer/Observer.cpp.obj
+.PHONY : src/Observer/Observer.obj
+
+# target to build an object file
+src/Observer/Observer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Observer/Observer.cpp.obj
+.PHONY : src/Observer/Observer.cpp.obj
+
+src/Observer/Observer.i: src/Observer/Observer.cpp.i
+.PHONY : src/Observer/Observer.i
+
+# target to preprocess a source file
+src/Observer/Observer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Observer/Observer.cpp.i
+.PHONY : src/Observer/Observer.cpp.i
+
+src/Observer/Observer.s: src/Observer/Observer.cpp.s
+.PHONY : src/Observer/Observer.s
+
+# target to generate assembly for a file
+src/Observer/Observer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Observer/Observer.cpp.s
+.PHONY : src/Observer/Observer.cpp.s
+
+src/Observer/ObserverDialogue.obj: src/Observer/ObserverDialogue.cpp.obj
+.PHONY : src/Observer/ObserverDialogue.obj
+
+# target to build an object file
+src/Observer/ObserverDialogue.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Observer/ObserverDialogue.cpp.obj
+.PHONY : src/Observer/ObserverDialogue.cpp.obj
+
+src/Observer/ObserverDialogue.i: src/Observer/ObserverDialogue.cpp.i
+.PHONY : src/Observer/ObserverDialogue.i
+
+# target to preprocess a source file
+src/Observer/ObserverDialogue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Observer/ObserverDialogue.cpp.i
+.PHONY : src/Observer/ObserverDialogue.cpp.i
+
+src/Observer/ObserverDialogue.s: src/Observer/ObserverDialogue.cpp.s
+.PHONY : src/Observer/ObserverDialogue.s
+
+# target to generate assembly for a file
+src/Observer/ObserverDialogue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Observer/ObserverDialogue.cpp.s
+.PHONY : src/Observer/ObserverDialogue.cpp.s
+
+src/Observer/ObserverLevel.obj: src/Observer/ObserverLevel.cpp.obj
+.PHONY : src/Observer/ObserverLevel.obj
+
+# target to build an object file
+src/Observer/ObserverLevel.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Observer/ObserverLevel.cpp.obj
+.PHONY : src/Observer/ObserverLevel.cpp.obj
+
+src/Observer/ObserverLevel.i: src/Observer/ObserverLevel.cpp.i
+.PHONY : src/Observer/ObserverLevel.i
+
+# target to preprocess a source file
+src/Observer/ObserverLevel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Observer/ObserverLevel.cpp.i
+.PHONY : src/Observer/ObserverLevel.cpp.i
+
+src/Observer/ObserverLevel.s: src/Observer/ObserverLevel.cpp.s
+.PHONY : src/Observer/ObserverLevel.s
+
+# target to generate assembly for a file
+src/Observer/ObserverLevel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Observer/ObserverLevel.cpp.s
+.PHONY : src/Observer/ObserverLevel.cpp.s
+
+src/Observer/ObserverMenu.obj: src/Observer/ObserverMenu.cpp.obj
+.PHONY : src/Observer/ObserverMenu.obj
+
+# target to build an object file
+src/Observer/ObserverMenu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Observer/ObserverMenu.cpp.obj
+.PHONY : src/Observer/ObserverMenu.cpp.obj
+
+src/Observer/ObserverMenu.i: src/Observer/ObserverMenu.cpp.i
+.PHONY : src/Observer/ObserverMenu.i
+
+# target to preprocess a source file
+src/Observer/ObserverMenu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Observer/ObserverMenu.cpp.i
+.PHONY : src/Observer/ObserverMenu.cpp.i
+
+src/Observer/ObserverMenu.s: src/Observer/ObserverMenu.cpp.s
+.PHONY : src/Observer/ObserverMenu.s
+
+# target to generate assembly for a file
+src/Observer/ObserverMenu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Observer/ObserverMenu.cpp.s
+.PHONY : src/Observer/ObserverMenu.cpp.s
+
+src/Observer/ObserverPlayer.obj: src/Observer/ObserverPlayer.cpp.obj
+.PHONY : src/Observer/ObserverPlayer.obj
+
+# target to build an object file
+src/Observer/ObserverPlayer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Observer/ObserverPlayer.cpp.obj
+.PHONY : src/Observer/ObserverPlayer.cpp.obj
+
+src/Observer/ObserverPlayer.i: src/Observer/ObserverPlayer.cpp.i
+.PHONY : src/Observer/ObserverPlayer.i
+
+# target to preprocess a source file
+src/Observer/ObserverPlayer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Observer/ObserverPlayer.cpp.i
+.PHONY : src/Observer/ObserverPlayer.cpp.i
+
+src/Observer/ObserverPlayer.s: src/Observer/ObserverPlayer.cpp.s
+.PHONY : src/Observer/ObserverPlayer.s
+
+# target to generate assembly for a file
+src/Observer/ObserverPlayer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/Observer/ObserverPlayer.cpp.s
+.PHONY : src/Observer/ObserverPlayer.cpp.s
+
 src/States/DialogueState.obj: src/States/DialogueState.cpp.obj
 .PHONY : src/States/DialogueState.obj
 
@@ -799,414 +1207,6 @@ src/States/State.s: src/States/State.cpp.s
 src/States/State.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/States/State.cpp.s
 .PHONY : src/States/State.cpp.s
-
-src/fundo/camada.obj: src/fundo/camada.cpp.obj
-.PHONY : src/fundo/camada.obj
-
-# target to build an object file
-src/fundo/camada.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/fundo/camada.cpp.obj
-.PHONY : src/fundo/camada.cpp.obj
-
-src/fundo/camada.i: src/fundo/camada.cpp.i
-.PHONY : src/fundo/camada.i
-
-# target to preprocess a source file
-src/fundo/camada.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/fundo/camada.cpp.i
-.PHONY : src/fundo/camada.cpp.i
-
-src/fundo/camada.s: src/fundo/camada.cpp.s
-.PHONY : src/fundo/camada.s
-
-# target to generate assembly for a file
-src/fundo/camada.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/fundo/camada.cpp.s
-.PHONY : src/fundo/camada.cpp.s
-
-src/fundo/fundo.obj: src/fundo/fundo.cpp.obj
-.PHONY : src/fundo/fundo.obj
-
-# target to build an object file
-src/fundo/fundo.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/fundo/fundo.cpp.obj
-.PHONY : src/fundo/fundo.cpp.obj
-
-src/fundo/fundo.i: src/fundo/fundo.cpp.i
-.PHONY : src/fundo/fundo.i
-
-# target to preprocess a source file
-src/fundo/fundo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/fundo/fundo.cpp.i
-.PHONY : src/fundo/fundo.cpp.i
-
-src/fundo/fundo.s: src/fundo/fundo.cpp.s
-.PHONY : src/fundo/fundo.s
-
-# target to generate assembly for a file
-src/fundo/fundo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/fundo/fundo.cpp.s
-.PHONY : src/fundo/fundo.cpp.s
-
-src/gerenciador/camera.obj: src/gerenciador/camera.cpp.obj
-.PHONY : src/gerenciador/camera.obj
-
-# target to build an object file
-src/gerenciador/camera.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/gerenciador/camera.cpp.obj
-.PHONY : src/gerenciador/camera.cpp.obj
-
-src/gerenciador/camera.i: src/gerenciador/camera.cpp.i
-.PHONY : src/gerenciador/camera.i
-
-# target to preprocess a source file
-src/gerenciador/camera.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/gerenciador/camera.cpp.i
-.PHONY : src/gerenciador/camera.cpp.i
-
-src/gerenciador/camera.s: src/gerenciador/camera.cpp.s
-.PHONY : src/gerenciador/camera.s
-
-# target to generate assembly for a file
-src/gerenciador/camera.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/gerenciador/camera.cpp.s
-.PHONY : src/gerenciador/camera.cpp.s
-
-src/gerenciador/gerenciadorArquivo.obj: src/gerenciador/gerenciadorArquivo.cpp.obj
-.PHONY : src/gerenciador/gerenciadorArquivo.obj
-
-# target to build an object file
-src/gerenciador/gerenciadorArquivo.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/gerenciador/gerenciadorArquivo.cpp.obj
-.PHONY : src/gerenciador/gerenciadorArquivo.cpp.obj
-
-src/gerenciador/gerenciadorArquivo.i: src/gerenciador/gerenciadorArquivo.cpp.i
-.PHONY : src/gerenciador/gerenciadorArquivo.i
-
-# target to preprocess a source file
-src/gerenciador/gerenciadorArquivo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/gerenciador/gerenciadorArquivo.cpp.i
-.PHONY : src/gerenciador/gerenciadorArquivo.cpp.i
-
-src/gerenciador/gerenciadorArquivo.s: src/gerenciador/gerenciadorArquivo.cpp.s
-.PHONY : src/gerenciador/gerenciadorArquivo.s
-
-# target to generate assembly for a file
-src/gerenciador/gerenciadorArquivo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/gerenciador/gerenciadorArquivo.cpp.s
-.PHONY : src/gerenciador/gerenciadorArquivo.cpp.s
-
-src/gerenciador/gerenciadorDeColisao.obj: src/gerenciador/gerenciadorDeColisao.cpp.obj
-.PHONY : src/gerenciador/gerenciadorDeColisao.obj
-
-# target to build an object file
-src/gerenciador/gerenciadorDeColisao.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/gerenciador/gerenciadorDeColisao.cpp.obj
-.PHONY : src/gerenciador/gerenciadorDeColisao.cpp.obj
-
-src/gerenciador/gerenciadorDeColisao.i: src/gerenciador/gerenciadorDeColisao.cpp.i
-.PHONY : src/gerenciador/gerenciadorDeColisao.i
-
-# target to preprocess a source file
-src/gerenciador/gerenciadorDeColisao.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/gerenciador/gerenciadorDeColisao.cpp.i
-.PHONY : src/gerenciador/gerenciadorDeColisao.cpp.i
-
-src/gerenciador/gerenciadorDeColisao.s: src/gerenciador/gerenciadorDeColisao.cpp.s
-.PHONY : src/gerenciador/gerenciadorDeColisao.s
-
-# target to generate assembly for a file
-src/gerenciador/gerenciadorDeColisao.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/gerenciador/gerenciadorDeColisao.cpp.s
-.PHONY : src/gerenciador/gerenciadorDeColisao.cpp.s
-
-src/gerenciador/gerenciadorDeDialogo.obj: src/gerenciador/gerenciadorDeDialogo.cpp.obj
-.PHONY : src/gerenciador/gerenciadorDeDialogo.obj
-
-# target to build an object file
-src/gerenciador/gerenciadorDeDialogo.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/gerenciador/gerenciadorDeDialogo.cpp.obj
-.PHONY : src/gerenciador/gerenciadorDeDialogo.cpp.obj
-
-src/gerenciador/gerenciadorDeDialogo.i: src/gerenciador/gerenciadorDeDialogo.cpp.i
-.PHONY : src/gerenciador/gerenciadorDeDialogo.i
-
-# target to preprocess a source file
-src/gerenciador/gerenciadorDeDialogo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/gerenciador/gerenciadorDeDialogo.cpp.i
-.PHONY : src/gerenciador/gerenciadorDeDialogo.cpp.i
-
-src/gerenciador/gerenciadorDeDialogo.s: src/gerenciador/gerenciadorDeDialogo.cpp.s
-.PHONY : src/gerenciador/gerenciadorDeDialogo.s
-
-# target to generate assembly for a file
-src/gerenciador/gerenciadorDeDialogo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/gerenciador/gerenciadorDeDialogo.cpp.s
-.PHONY : src/gerenciador/gerenciadorDeDialogo.cpp.s
-
-src/gerenciador/gerenciadorDeEstado.obj: src/gerenciador/gerenciadorDeEstado.cpp.obj
-.PHONY : src/gerenciador/gerenciadorDeEstado.obj
-
-# target to build an object file
-src/gerenciador/gerenciadorDeEstado.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/gerenciador/gerenciadorDeEstado.cpp.obj
-.PHONY : src/gerenciador/gerenciadorDeEstado.cpp.obj
-
-src/gerenciador/gerenciadorDeEstado.i: src/gerenciador/gerenciadorDeEstado.cpp.i
-.PHONY : src/gerenciador/gerenciadorDeEstado.i
-
-# target to preprocess a source file
-src/gerenciador/gerenciadorDeEstado.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/gerenciador/gerenciadorDeEstado.cpp.i
-.PHONY : src/gerenciador/gerenciadorDeEstado.cpp.i
-
-src/gerenciador/gerenciadorDeEstado.s: src/gerenciador/gerenciadorDeEstado.cpp.s
-.PHONY : src/gerenciador/gerenciadorDeEstado.s
-
-# target to generate assembly for a file
-src/gerenciador/gerenciadorDeEstado.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/gerenciador/gerenciadorDeEstado.cpp.s
-.PHONY : src/gerenciador/gerenciadorDeEstado.cpp.s
-
-src/gerenciador/gerenciadorDeEventos.obj: src/gerenciador/gerenciadorDeEventos.cpp.obj
-.PHONY : src/gerenciador/gerenciadorDeEventos.obj
-
-# target to build an object file
-src/gerenciador/gerenciadorDeEventos.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/gerenciador/gerenciadorDeEventos.cpp.obj
-.PHONY : src/gerenciador/gerenciadorDeEventos.cpp.obj
-
-src/gerenciador/gerenciadorDeEventos.i: src/gerenciador/gerenciadorDeEventos.cpp.i
-.PHONY : src/gerenciador/gerenciadorDeEventos.i
-
-# target to preprocess a source file
-src/gerenciador/gerenciadorDeEventos.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/gerenciador/gerenciadorDeEventos.cpp.i
-.PHONY : src/gerenciador/gerenciadorDeEventos.cpp.i
-
-src/gerenciador/gerenciadorDeEventos.s: src/gerenciador/gerenciadorDeEventos.cpp.s
-.PHONY : src/gerenciador/gerenciadorDeEventos.s
-
-# target to generate assembly for a file
-src/gerenciador/gerenciadorDeEventos.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/gerenciador/gerenciadorDeEventos.cpp.s
-.PHONY : src/gerenciador/gerenciadorDeEventos.cpp.s
-
-src/gerenciador/gerenciadorDeMusica.obj: src/gerenciador/gerenciadorDeMusica.cpp.obj
-.PHONY : src/gerenciador/gerenciadorDeMusica.obj
-
-# target to build an object file
-src/gerenciador/gerenciadorDeMusica.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/gerenciador/gerenciadorDeMusica.cpp.obj
-.PHONY : src/gerenciador/gerenciadorDeMusica.cpp.obj
-
-src/gerenciador/gerenciadorDeMusica.i: src/gerenciador/gerenciadorDeMusica.cpp.i
-.PHONY : src/gerenciador/gerenciadorDeMusica.i
-
-# target to preprocess a source file
-src/gerenciador/gerenciadorDeMusica.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/gerenciador/gerenciadorDeMusica.cpp.i
-.PHONY : src/gerenciador/gerenciadorDeMusica.cpp.i
-
-src/gerenciador/gerenciadorDeMusica.s: src/gerenciador/gerenciadorDeMusica.cpp.s
-.PHONY : src/gerenciador/gerenciadorDeMusica.s
-
-# target to generate assembly for a file
-src/gerenciador/gerenciadorDeMusica.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/gerenciador/gerenciadorDeMusica.cpp.s
-.PHONY : src/gerenciador/gerenciadorDeMusica.cpp.s
-
-src/gerenciador/gerenciadorGrafico.obj: src/gerenciador/gerenciadorGrafico.cpp.obj
-.PHONY : src/gerenciador/gerenciadorGrafico.obj
-
-# target to build an object file
-src/gerenciador/gerenciadorGrafico.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/gerenciador/gerenciadorGrafico.cpp.obj
-.PHONY : src/gerenciador/gerenciadorGrafico.cpp.obj
-
-src/gerenciador/gerenciadorGrafico.i: src/gerenciador/gerenciadorGrafico.cpp.i
-.PHONY : src/gerenciador/gerenciadorGrafico.i
-
-# target to preprocess a source file
-src/gerenciador/gerenciadorGrafico.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/gerenciador/gerenciadorGrafico.cpp.i
-.PHONY : src/gerenciador/gerenciadorGrafico.cpp.i
-
-src/gerenciador/gerenciadorGrafico.s: src/gerenciador/gerenciadorGrafico.cpp.s
-.PHONY : src/gerenciador/gerenciadorGrafico.s
-
-# target to generate assembly for a file
-src/gerenciador/gerenciadorGrafico.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/gerenciador/gerenciadorGrafico.cpp.s
-.PHONY : src/gerenciador/gerenciadorGrafico.cpp.s
-
-src/lista/listaEntidade.obj: src/lista/listaEntidade.cpp.obj
-.PHONY : src/lista/listaEntidade.obj
-
-# target to build an object file
-src/lista/listaEntidade.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/lista/listaEntidade.cpp.obj
-.PHONY : src/lista/listaEntidade.cpp.obj
-
-src/lista/listaEntidade.i: src/lista/listaEntidade.cpp.i
-.PHONY : src/lista/listaEntidade.i
-
-# target to preprocess a source file
-src/lista/listaEntidade.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/lista/listaEntidade.cpp.i
-.PHONY : src/lista/listaEntidade.cpp.i
-
-src/lista/listaEntidade.s: src/lista/listaEntidade.cpp.s
-.PHONY : src/lista/listaEntidade.s
-
-# target to generate assembly for a file
-src/lista/listaEntidade.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/lista/listaEntidade.cpp.s
-.PHONY : src/lista/listaEntidade.cpp.s
-
-src/lista/listaListener.obj: src/lista/listaListener.cpp.obj
-.PHONY : src/lista/listaListener.obj
-
-# target to build an object file
-src/lista/listaListener.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/lista/listaListener.cpp.obj
-.PHONY : src/lista/listaListener.cpp.obj
-
-src/lista/listaListener.i: src/lista/listaListener.cpp.i
-.PHONY : src/lista/listaListener.i
-
-# target to preprocess a source file
-src/lista/listaListener.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/lista/listaListener.cpp.i
-.PHONY : src/lista/listaListener.cpp.i
-
-src/lista/listaListener.s: src/lista/listaListener.cpp.s
-.PHONY : src/lista/listaListener.s
-
-# target to generate assembly for a file
-src/lista/listaListener.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/lista/listaListener.cpp.s
-.PHONY : src/lista/listaListener.cpp.s
-
-src/listeners/listener.obj: src/listeners/listener.cpp.obj
-.PHONY : src/listeners/listener.obj
-
-# target to build an object file
-src/listeners/listener.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/listeners/listener.cpp.obj
-.PHONY : src/listeners/listener.cpp.obj
-
-src/listeners/listener.i: src/listeners/listener.cpp.i
-.PHONY : src/listeners/listener.i
-
-# target to preprocess a source file
-src/listeners/listener.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/listeners/listener.cpp.i
-.PHONY : src/listeners/listener.cpp.i
-
-src/listeners/listener.s: src/listeners/listener.cpp.s
-.PHONY : src/listeners/listener.s
-
-# target to generate assembly for a file
-src/listeners/listener.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/listeners/listener.cpp.s
-.PHONY : src/listeners/listener.cpp.s
-
-src/listeners/listenerDialogo.obj: src/listeners/listenerDialogo.cpp.obj
-.PHONY : src/listeners/listenerDialogo.obj
-
-# target to build an object file
-src/listeners/listenerDialogo.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/listeners/listenerDialogo.cpp.obj
-.PHONY : src/listeners/listenerDialogo.cpp.obj
-
-src/listeners/listenerDialogo.i: src/listeners/listenerDialogo.cpp.i
-.PHONY : src/listeners/listenerDialogo.i
-
-# target to preprocess a source file
-src/listeners/listenerDialogo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/listeners/listenerDialogo.cpp.i
-.PHONY : src/listeners/listenerDialogo.cpp.i
-
-src/listeners/listenerDialogo.s: src/listeners/listenerDialogo.cpp.s
-.PHONY : src/listeners/listenerDialogo.s
-
-# target to generate assembly for a file
-src/listeners/listenerDialogo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/listeners/listenerDialogo.cpp.s
-.PHONY : src/listeners/listenerDialogo.cpp.s
-
-src/listeners/listenerFase.obj: src/listeners/listenerFase.cpp.obj
-.PHONY : src/listeners/listenerFase.obj
-
-# target to build an object file
-src/listeners/listenerFase.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/listeners/listenerFase.cpp.obj
-.PHONY : src/listeners/listenerFase.cpp.obj
-
-src/listeners/listenerFase.i: src/listeners/listenerFase.cpp.i
-.PHONY : src/listeners/listenerFase.i
-
-# target to preprocess a source file
-src/listeners/listenerFase.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/listeners/listenerFase.cpp.i
-.PHONY : src/listeners/listenerFase.cpp.i
-
-src/listeners/listenerFase.s: src/listeners/listenerFase.cpp.s
-.PHONY : src/listeners/listenerFase.s
-
-# target to generate assembly for a file
-src/listeners/listenerFase.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/listeners/listenerFase.cpp.s
-.PHONY : src/listeners/listenerFase.cpp.s
-
-src/listeners/listenerJogador.obj: src/listeners/listenerJogador.cpp.obj
-.PHONY : src/listeners/listenerJogador.obj
-
-# target to build an object file
-src/listeners/listenerJogador.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/listeners/listenerJogador.cpp.obj
-.PHONY : src/listeners/listenerJogador.cpp.obj
-
-src/listeners/listenerJogador.i: src/listeners/listenerJogador.cpp.i
-.PHONY : src/listeners/listenerJogador.i
-
-# target to preprocess a source file
-src/listeners/listenerJogador.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/listeners/listenerJogador.cpp.i
-.PHONY : src/listeners/listenerJogador.cpp.i
-
-src/listeners/listenerJogador.s: src/listeners/listenerJogador.cpp.s
-.PHONY : src/listeners/listenerJogador.s
-
-# target to generate assembly for a file
-src/listeners/listenerJogador.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/listeners/listenerJogador.cpp.s
-.PHONY : src/listeners/listenerJogador.cpp.s
-
-src/listeners/listenerMenu.obj: src/listeners/listenerMenu.cpp.obj
-.PHONY : src/listeners/listenerMenu.obj
-
-# target to build an object file
-src/listeners/listenerMenu.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/listeners/listenerMenu.cpp.obj
-.PHONY : src/listeners/listenerMenu.cpp.obj
-
-src/listeners/listenerMenu.i: src/listeners/listenerMenu.cpp.i
-.PHONY : src/listeners/listenerMenu.i
-
-# target to preprocess a source file
-src/listeners/listenerMenu.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/listeners/listenerMenu.cpp.i
-.PHONY : src/listeners/listenerMenu.cpp.i
-
-src/listeners/listenerMenu.s: src/listeners/listenerMenu.cpp.s
-.PHONY : src/listeners/listenerMenu.s
-
-# target to generate assembly for a file
-src/listeners/listenerMenu.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/listeners/listenerMenu.cpp.s
-.PHONY : src/listeners/listenerMenu.cpp.s
 
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
@@ -1679,6 +1679,12 @@ help:
 	@echo ... src/Animator/Image.obj
 	@echo ... src/Animator/Image.i
 	@echo ... src/Animator/Image.s
+	@echo ... src/BackGround/BackGround.obj
+	@echo ... src/BackGround/BackGround.i
+	@echo ... src/BackGround/BackGround.s
+	@echo ... src/BackGround/Layer.obj
+	@echo ... src/BackGround/Layer.i
+	@echo ... src/BackGround/Layer.s
 	@echo ... src/Entity/Enemy/Archer.obj
 	@echo ... src/Entity/Enemy/Archer.i
 	@echo ... src/Entity/Enemy/Archer.s
@@ -1745,6 +1751,51 @@ help:
 	@echo ... src/Levels/vila.obj
 	@echo ... src/Levels/vila.i
 	@echo ... src/Levels/vila.s
+	@echo ... src/List/EntityList.obj
+	@echo ... src/List/EntityList.i
+	@echo ... src/List/EntityList.s
+	@echo ... src/List/ObserverList.obj
+	@echo ... src/List/ObserverList.i
+	@echo ... src/List/ObserverList.s
+	@echo ... src/Manager/Camera.obj
+	@echo ... src/Manager/Camera.i
+	@echo ... src/Manager/Camera.s
+	@echo ... src/Manager/CollisionManager.obj
+	@echo ... src/Manager/CollisionManager.i
+	@echo ... src/Manager/CollisionManager.s
+	@echo ... src/Manager/DialogueManager.obj
+	@echo ... src/Manager/DialogueManager.i
+	@echo ... src/Manager/DialogueManager.s
+	@echo ... src/Manager/EventManager.obj
+	@echo ... src/Manager/EventManager.i
+	@echo ... src/Manager/EventManager.s
+	@echo ... src/Manager/FileManager.obj
+	@echo ... src/Manager/FileManager.i
+	@echo ... src/Manager/FileManager.s
+	@echo ... src/Manager/GraphicManager.obj
+	@echo ... src/Manager/GraphicManager.i
+	@echo ... src/Manager/GraphicManager.s
+	@echo ... src/Manager/MusicManager.obj
+	@echo ... src/Manager/MusicManager.i
+	@echo ... src/Manager/MusicManager.s
+	@echo ... src/Manager/StateManager.obj
+	@echo ... src/Manager/StateManager.i
+	@echo ... src/Manager/StateManager.s
+	@echo ... src/Observer/Observer.obj
+	@echo ... src/Observer/Observer.i
+	@echo ... src/Observer/Observer.s
+	@echo ... src/Observer/ObserverDialogue.obj
+	@echo ... src/Observer/ObserverDialogue.i
+	@echo ... src/Observer/ObserverDialogue.s
+	@echo ... src/Observer/ObserverLevel.obj
+	@echo ... src/Observer/ObserverLevel.i
+	@echo ... src/Observer/ObserverLevel.s
+	@echo ... src/Observer/ObserverMenu.obj
+	@echo ... src/Observer/ObserverMenu.i
+	@echo ... src/Observer/ObserverMenu.s
+	@echo ... src/Observer/ObserverPlayer.obj
+	@echo ... src/Observer/ObserverPlayer.i
+	@echo ... src/Observer/ObserverPlayer.s
 	@echo ... src/States/DialogueState.obj
 	@echo ... src/States/DialogueState.i
 	@echo ... src/States/DialogueState.s
@@ -1757,57 +1808,6 @@ help:
 	@echo ... src/States/State.obj
 	@echo ... src/States/State.i
 	@echo ... src/States/State.s
-	@echo ... src/fundo/camada.obj
-	@echo ... src/fundo/camada.i
-	@echo ... src/fundo/camada.s
-	@echo ... src/fundo/fundo.obj
-	@echo ... src/fundo/fundo.i
-	@echo ... src/fundo/fundo.s
-	@echo ... src/gerenciador/camera.obj
-	@echo ... src/gerenciador/camera.i
-	@echo ... src/gerenciador/camera.s
-	@echo ... src/gerenciador/gerenciadorArquivo.obj
-	@echo ... src/gerenciador/gerenciadorArquivo.i
-	@echo ... src/gerenciador/gerenciadorArquivo.s
-	@echo ... src/gerenciador/gerenciadorDeColisao.obj
-	@echo ... src/gerenciador/gerenciadorDeColisao.i
-	@echo ... src/gerenciador/gerenciadorDeColisao.s
-	@echo ... src/gerenciador/gerenciadorDeDialogo.obj
-	@echo ... src/gerenciador/gerenciadorDeDialogo.i
-	@echo ... src/gerenciador/gerenciadorDeDialogo.s
-	@echo ... src/gerenciador/gerenciadorDeEstado.obj
-	@echo ... src/gerenciador/gerenciadorDeEstado.i
-	@echo ... src/gerenciador/gerenciadorDeEstado.s
-	@echo ... src/gerenciador/gerenciadorDeEventos.obj
-	@echo ... src/gerenciador/gerenciadorDeEventos.i
-	@echo ... src/gerenciador/gerenciadorDeEventos.s
-	@echo ... src/gerenciador/gerenciadorDeMusica.obj
-	@echo ... src/gerenciador/gerenciadorDeMusica.i
-	@echo ... src/gerenciador/gerenciadorDeMusica.s
-	@echo ... src/gerenciador/gerenciadorGrafico.obj
-	@echo ... src/gerenciador/gerenciadorGrafico.i
-	@echo ... src/gerenciador/gerenciadorGrafico.s
-	@echo ... src/lista/listaEntidade.obj
-	@echo ... src/lista/listaEntidade.i
-	@echo ... src/lista/listaEntidade.s
-	@echo ... src/lista/listaListener.obj
-	@echo ... src/lista/listaListener.i
-	@echo ... src/lista/listaListener.s
-	@echo ... src/listeners/listener.obj
-	@echo ... src/listeners/listener.i
-	@echo ... src/listeners/listener.s
-	@echo ... src/listeners/listenerDialogo.obj
-	@echo ... src/listeners/listenerDialogo.i
-	@echo ... src/listeners/listenerDialogo.s
-	@echo ... src/listeners/listenerFase.obj
-	@echo ... src/listeners/listenerFase.i
-	@echo ... src/listeners/listenerFase.s
-	@echo ... src/listeners/listenerJogador.obj
-	@echo ... src/listeners/listenerJogador.i
-	@echo ... src/listeners/listenerJogador.s
-	@echo ... src/listeners/listenerMenu.obj
-	@echo ... src/listeners/listenerMenu.i
-	@echo ... src/listeners/listenerMenu.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

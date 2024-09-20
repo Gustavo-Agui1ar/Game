@@ -1,6 +1,6 @@
 
 #include "../includes/menus/menuPausa.h"
-#include "../includes/listeners/listenerMenu.h"
+#include "../includes/Observer/ObserverMenu.h"
 
 namespace Game{
 
@@ -111,11 +111,11 @@ namespace Game{
             fase->draw();
 
             //atualiza o menu 
-            m_graphic->desenhaElemento(fundoEscuro);
-            m_graphic->desenhaElemento(painel);
+            m_graphic->drawElement(fundoEscuro);
+            m_graphic->drawElement(painel);
 
             //desenha o titulo 
-            m_graphic->desenhaElemento(titulo.getTexto());
+            m_graphic->drawElement(titulo.getTexto());
 
             //desenha os botoes
             draw();

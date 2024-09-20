@@ -3,7 +3,7 @@
 
 #include "State.h"
 
-#include "../gerenciador/gerenciadorGrafico.h"
+#include "../Manager/GraphicManager.h"
 
 #include "../Levels/level-1.h"
 #include "../Levels/level-2.h"
