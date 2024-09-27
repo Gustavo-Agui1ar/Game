@@ -6,6 +6,7 @@ namespace Game::List{
     private:
 
         Element<TE>* m_next = nullptr;
+        Element<TE>* m_prev = nullptr;
         TE* m_element = nullptr;
 
     public:
@@ -14,9 +15,11 @@ namespace Game::List{
         ~Element();
         
         void setNext(Element<TE>* next);
+        void setPrev(Element<TE>* prev);
         void setElement(TE* element);
         
         Element<TE>* getNext();
+        Element<TE>* getPrev();
         TE* getElement();
     };
     
@@ -31,6 +34,12 @@ namespace Game::List{
     {
         m_next = next;
     }
+   
+    template<class TE>
+    void Element<TE>::setPrev(Element<TE>* prev)
+    {
+        m_prev = prev;
+    }
 
     template<class TE>
     void Element<TE>::setElement(TE* element)
@@ -42,6 +51,12 @@ namespace Game::List{
     Element<TE>* Element<TE>::getNext()
     {
         return m_next;
+    }
+    
+    template<class TE>
+    Element<TE>* Element<TE>::getPrev()
+    {
+        return m_prev;
     }
 
     template<class TE>

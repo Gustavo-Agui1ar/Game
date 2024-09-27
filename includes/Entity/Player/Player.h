@@ -70,7 +70,7 @@ namespace Game {
 
         public:
             
-            Player(const sf::Vector2f pos, Weapon::Weapon* weapon = nullptr, Weapon::Bullet* bullet = nullptr);
+            Player(const sf::Vector2f pos,sf::Vector2f size = sf::Vector2f{SIZE_PLAYER_X, SIZE_PLAYER_Y}, Weapon::Weapon* weapon = nullptr, Weapon::Bullet* bullet = nullptr);
             explicit Player(nlohmann::ordered_json atributos);
             ~Player() override;
             

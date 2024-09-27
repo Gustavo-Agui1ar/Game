@@ -332,10 +332,10 @@ CMakeFiles/Game.dir/src/menus/menuPausa.cpp.obj: \
  C:/PROGRA~2/SFML/include/SFML/Graphics/VertexBuffer.hpp \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/Manager/camera.h \
  C:/msys64/mingw64/include/c++/13.1.0/iostream \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/botao/botao.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/botao/botaoTexto.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/botao/textoEfeito.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/botao/texto.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/Button/Button.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/Button/TextButton.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/Button/TextEffect.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/Button/Text.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/BackGround/BackGround.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/BackGround/Layer.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/card.h \
@@ -397,7 +397,7 @@ CMakeFiles/Game.dir/src/menus/menuPausa.cpp.obj: \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/menuGameOver.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/menuSalvar.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/menuDeSelecao.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/botao/botaoSelecao.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/Button/SelectionButton.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/menuOpcao.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/botao/botaoVolume.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/Button/VolumeButton.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/Manager/MusicManager.h

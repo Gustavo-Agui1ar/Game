@@ -3,7 +3,7 @@
 
 #include "Observer.h"
 #include "../menus/menu.h"
-#include "../menus/botao/botao.h"
+#include "../menus/Button/Button.h"
 #include  "../menus/menuCarregar.h"
 #include  "../menus/menuGameOver.h"
 #include  "../menus/menuSalvar.h"
@@ -27,6 +27,7 @@ namespace Game::Observer{
 
         void mouseMove(const  sf::Vector2f posMouse) override;
         void mouseButtonRelease(const sf::Mouse::Button botaoMouse) override;
+        void mouseButtonPressed(const sf::Mouse::Button mouseButton) override;
 
         void processSameCommand();
 

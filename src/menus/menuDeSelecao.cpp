@@ -14,7 +14,7 @@ namespace Game{
             sf::Vector2f posFundoEscuro = sf::Vector2f(posFundo.x - tamJanela.x / 2.0f, posFundo.y - tamJanela.y / 2.0f);
             
             fundoEscuro.setPosition(posFundoEscuro);
-            titulo.setPos(sf::Vector2f(posJanela.x - titulo.getTam().x/2.f, 40.f));
+            titulo.setPosition(sf::Vector2f(posJanela.x - titulo.getSize().x/2.f, 40.f));
 
             criarBotoes();
         }
@@ -38,16 +38,12 @@ namespace Game{
 
         void MenuDeSelecao::inicializarBotoes()
         {
-            std::list<Botao::BotaoTexto*>::iterator itAux = listaDeBotao.begin();
-            sf::Vector2f posJanela = m_graphic->getCamera().getCenter();
+            auto posJanela = m_graphic->getCamera().getCenter();
             int auxTam = 0;
             
-            while (itAux != listaDeBotao.end())
+            for(auto* button : listaDeBotao)
             {
-                Botao::BotaoTexto* botao = (*itAux);
-                
-                botao->atualizarPosicaoDaCaixa(sf::Vector2f(posJanela.x - tamBotao.x/2.f, 700.f + auxTam * 50.f));
-                itAux++;
+                button->updateBoxPosition(sf::Vector2f(posJanela.x - tamBotao.x/2.f, 700.f + auxTam * 50.f));
                 auxTam++;
             }
             
@@ -61,8 +57,8 @@ namespace Game{
 
             while(itFases != faseNomes.end())
             {
-                Botao::BotaoSelecao* botao = nullptr;
-                botao = new Botao::BotaoSelecao((*itFases),sf::Vector2f(0.f, 0.f), tamBotao,IDs::IDs::select_level_button, sf::Color{245,170,0} ,IDFaseAux); 
+                Button::SelectionButton* botao = nullptr;
+                botao = new Button::SelectionButton((*itFases),sf::Vector2f(0.f, 0.f), tamBotao,IDs::IDs::select_level_button, sf::Color{245,170,0} ,IDFaseAux); 
                 if(botao == nullptr)
                 {
                     std::cout<<"nao foi possive criar o botao de selecao de fase";
@@ -71,9 +67,9 @@ namespace Game{
 
                 std::string caminhoFase("../Game/animations/" + (*itFases) + ".png");
 
-                botao->setImagemFase( caminhoFase.c_str());
+                botao->setImagemLevel( caminhoFase.c_str());
 
-                int aux = static_cast<int>(IDFaseAux);
+                auto aux = static_cast<int>(IDFaseAux);
                 aux++;
                 IDFaseAux = static_cast<IDs::IDs>(aux);
                 itFases++;
@@ -106,7 +102,7 @@ namespace Game{
 
             m_graphic->drawElement(fundoEscuro);
 
-            m_graphic->drawElement(titulo.getTexto());
+            m_graphic->drawElement(titulo.getInfoText());
 
             (*itSelecaoFase)->draw();
 
@@ -115,7 +111,7 @@ namespace Game{
 
         const IDs::IDs MenuDeSelecao::getIDdeSelecao()
         {
-            return (*itSelecaoFase)->getIDFase();
+            return (*itSelecaoFase)->getIDLevel();
         }
     }
 }

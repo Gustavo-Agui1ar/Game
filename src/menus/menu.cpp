@@ -66,10 +66,11 @@ namespace Game {
         */
         void Menu::addBotao(const std::string infoTexto, const sf::Vector2f pos, const IDs::IDs ID, const sf::Color corSelecionado)
         {
-            auto* botao = new Botao::BotaoTexto(infoTexto, pos,tamBotao, ID, corSelecionado);
+            auto* botao = new Button::TextButton(infoTexto, pos,tamBotao, ID, corSelecionado);
             if(botao == nullptr)
             {
-                throw("Menu::nao foi possivel criar um botao");
+                std::cout << "Menu::nao foi possivel criar um botao" << std::endl;
+                exit(1);
             }
 
             listaDeBotao.push_back(botao);
@@ -91,7 +92,7 @@ namespace Game {
             try 
             {
                 it = listaDeBotao.begin();
-                (*it)->setSelecionado(true);
+                (*it)->setSelected(true);
             } 
             catch(const std::exception& e)
             {
@@ -105,16 +106,11 @@ namespace Game {
         */
         void Menu::selecionaParaCima()
         {
-            Botao::BotaoTexto* botao = *it;
-            botao->setSelecionado(false);
-
+            (*it)->setSelected(false);
             if(it == listaDeBotao.begin())
-            {
                 it = listaDeBotao.end();
-            }
             it--;
-            botao = *it;
-            botao->setSelecionado(true);
+            (*it)->setSelected(true);
         }
 
         /**
@@ -122,15 +118,11 @@ namespace Game {
         */
         void Menu::selecionaParaBaixo()
         {
-            Botao::BotaoTexto* botao = *it;
-            botao->setSelecionado(false);
+            (*it)->setSelected(false);
             it++;
             if(it == listaDeBotao.end())
-            {
                 it = listaDeBotao.begin();
-            }
-            botao = *it;
-            botao->setSelecionado(true);
+            (*it)->setSelected(true);
         }
 
         /**
@@ -159,19 +151,17 @@ namespace Game {
          * @param poMouse posicao atual do mouse
         */
         void Menu::eventoMouse(const sf::Vector2f posMouse){
-            std::list<Botao::BotaoTexto*>::iterator aux;
             mouseSelecionado = false;
-            for(aux = listaDeBotao.begin(); aux != listaDeBotao.end(); aux++)
+            for(auto aux = listaDeBotao.begin(); aux != listaDeBotao.end(); aux++)
             {
-                Botao::BotaoTexto* botao = *aux;
-                sf::RectangleShape caixa = botao->getCaixa();
+                sf::RectangleShape caixa = (*aux)->getBox();
                 sf::Vector2f posMouseJan = m_graphic->getWindow()->mapPixelToCoords((sf::Vector2i)posMouse);
                 
                 if(caixa.getGlobalBounds().contains(posMouseJan))
                 {
-                    (*it)->setSelecionado(false);
+                    (*it)->setSelected(false);
                     it = aux;
-                    (*it)->setSelecionado(true);
+                    (*it)->setSelected(true);
                     mouseSelecionado = true;
                     break;
                 }
@@ -183,14 +173,8 @@ namespace Game {
         */
         void Menu::draw()
         {
-            std::list<Botao::BotaoTexto*>::iterator itAux;
-
-            for(itAux = listaDeBotao.begin() ; itAux != listaDeBotao.end() ; itAux++)
-            {
-                Botao::BotaoTexto* botao = *itAux;
-                botao->draw();
-                botao = nullptr;
-            }
+            for(auto* button : listaDeBotao)
+                button->draw();
         }
 
         /**
@@ -198,7 +182,7 @@ namespace Game {
         */
         void Menu::criarFundo()
         {
-            
+            //nothing to do
         }
 
         /**
@@ -206,7 +190,7 @@ namespace Game {
         */
         void Menu::selecionaEsquerda()
         {
-
+            //nothing to do
         }
 
 
@@ -215,7 +199,7 @@ namespace Game {
         */
         void Menu::selecionaDireita()
         {
-
+            //nothing to do
         }
     }
 }

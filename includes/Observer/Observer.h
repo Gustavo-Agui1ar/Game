@@ -44,6 +44,8 @@ namespace Game{
                 virtual void keyRelease(const sf::Keyboard::Key key) = 0;
                 virtual void mouseMove(const sf::Vector2f posMouse);
                 virtual void mouseButtonRelease(const sf::Mouse::Button mouseButton);
+                virtual void mouseButtonPressed(const sf::Mouse::Button mouseButton);
+
         
         };
 

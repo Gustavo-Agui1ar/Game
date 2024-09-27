@@ -1,7 +1,7 @@
 CMakeFiles/Game.dir/src/menus/botao/textoFala.cpp.obj: \
  C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\botao\textoFala.cpp \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/botao/textoFala.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/botao/texto.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/botao/TextTalk.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/botao/Text.h \
  C:/PROGRA~2/SFML/include/SFML/Graphics.hpp \
  C:/PROGRA~2/SFML/include/SFML/Window.hpp \
  C:/PROGRA~2/SFML/include/SFML/System.hpp \

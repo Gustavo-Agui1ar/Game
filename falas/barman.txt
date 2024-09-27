@@ -1,10 +1,10 @@
 Eldar: Ola, morador! Sou Eldar, um heroi em busca de aventuras. Pode me contar sobre esta vila ?
 Aldeao: Ah, um heroi! Bem-vindo, Eldar, o Filho da Tempestade! Esta e a acolhedora Vila de Elsor._Posso ajudar em algo ?
 Eldar: Ah, esse apelido... Pode me chamar apenas de Eldar.Mas sim, estou aqui para explorar e_ ajudar. O que você sabe sobre esta vila?
-Aldeão: Eldar, entao. Bom saber. Sobre a vila, temos uma vida tranquila aqui, mas ha rumores sobre_ suas proezas se espalhando rapidamente por Cashel.
+Aldeao: Eldar, entao. Bom saber. Sobre a vila, temos uma vida tranquila aqui, mas ha rumores sobre_ suas proezas se espalhando rapidamente por Cashel.
 Eldar:  Filho da Tempestade... as historias se espalham rapido, nao e? Eu preferiria que me vissem_ apenas como Eldar.
-Aldeão: Bem, parece que a fama tem seu próprio caminho. Mas, falando serio, temos um problema._ Criaturas da Floresta do Amanhecer estao se aproximando cada vez mais da vila.
+Aldeao: Bem, parece que a fama tem seu próprio caminho. Mas, falando serio, temos um problema._ Criaturas da Floresta do Amanhecer estao se aproximando cada vez mais da vila.
 Eldar:  Essa e a minha chance de fazer a diferença. Onde posso encontrar essas criaturas?
-Aldeão: Siga pela trilha na borda da vila. Mas, Eldar, por favor, seja cauteloso.
+Aldeao: Siga pela trilha na borda da vila. Mas, Eldar, por favor, seja cauteloso.
 Eldar: Pode deixar. Eu vou resolver esse problema. So espero que eu possa seguir em frente sem que_ meu apelido atraia mais atencao do que eu gostaria.
-Aldeão: Compreendo, Eldar. Boa sorte. Que sua jornada seja tranquila e siga em frente sem mais_ complicacoes.
+Aldeao: Compreendo, Eldar. Boa sorte. Que sua jornada seja tranquila e siga em frente sem mais_ complicacoes.

@@ -15,7 +15,7 @@ namespace Game::Entity::Character::Player {
             delete (m_lifeBar.getTexture());
     }
 
-    Player::Player(const sf::Vector2f pos, Weapon::Weapon *weapon, Weapon::Bullet *bullet) : Character(pos, sf::Vector2f(SIZE_PLAYER_X, SIZE_PLAYER_Y), PLAYER_SPEED_X, IDs::IDs::player, PLAYER_TIME_GETDAMAGE, ANIMATION_DEATH_PLAYER, PLAYER_DAMAGE), m_dash(this), m_rage(this),
+    Player::Player(const sf::Vector2f pos, sf::Vector2f size, Weapon::Weapon *weapon, Weapon::Bullet *bullet) : Character(pos, size, PLAYER_SPEED_X, IDs::IDs::player, PLAYER_TIME_GETDAMAGE, ANIMATION_DEATH_PLAYER, PLAYER_DAMAGE), m_dash(this), m_rage(this),
     m_stamina(this), m_fireball(this), m_onFloor(false), m_qtdJump(0), m_timeAnimationAttack(TIME_DAMAGE_PLAYER), m_timeAttack(0.0f), m_observerPlayer(new Observer::ObserverPlayer(this)) {
         
         bootAnimation();

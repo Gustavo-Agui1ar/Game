@@ -382,10 +382,10 @@ CMakeFiles/Game.dir/src/States/MenuState.cpp.obj: \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/BackGround/BackGround.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/BackGround/Layer.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/menu.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/botao/botao.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/botao/botaoTexto.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/botao/textoEfeito.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/botao/texto.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/Button/Button.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/Button/TextButton.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/Button/TextEffect.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/Button/Text.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/card.h \
  C:/msys64/mingw64/include/c++/13.1.0/list \
  C:/msys64/mingw64/include/c++/13.1.0/bits/stl_list.h \
@@ -394,13 +394,13 @@ CMakeFiles/Game.dir/src/States/MenuState.cpp.obj: \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/menuGameOver.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/menuPrincipal.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/menuOpcao.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/botao/botaoVolume.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/Button/VolumeButton.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/Manager/MusicManager.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/menuCarregar.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/Manager/FileManager.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/json.hpp \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/menuDeSelecao.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/botao/botaoSelecao.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/Button/SelectionButton.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/menuSalvar.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/Manager/StateManager.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/States/LevelState.h \
@@ -410,8 +410,8 @@ CMakeFiles/Game.dir/src/States/MenuState.cpp.obj: \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/Entity/Obstacle/House.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/States/DialogueState.h \
  C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/Manager/DialogueManager.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/botao/balaoDeFala.h \
- C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/botao/textoFala.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/Button/TalkBalloon.h \
+ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/includes/menus/Button/TextTalk.h \
  C:/msys64/mingw64/include/c++/13.1.0/stack \
  C:/msys64/mingw64/include/c++/13.1.0/deque \
  C:/msys64/mingw64/include/c++/13.1.0/bits/stl_deque.h \

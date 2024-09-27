@@ -27,11 +27,10 @@ namespace Game::Level{
 
         void Forest::loadGame(nlohmann::ordered_json entidades)
         {
-            for(auto it = entidades.begin(); it != entidades.end(); it++)
+            auto it = entidades.begin();
+            while(it != entidades.end())
             {
-                IDs::IDs ID = (*it)["ID"].template get<IDs::IDs>();
-
-                switch(ID)
+                switch((*it)["ID"].template get<IDs::IDs>())
                 {
                     case IDs::IDs::player:
                     {
@@ -94,6 +93,7 @@ namespace Game::Level{
                     default:
                         break;
                 }
+                it++;
             }
         }
 

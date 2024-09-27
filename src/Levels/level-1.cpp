@@ -140,8 +140,8 @@ namespace Game::Level{
             j++;
         }
 
-    m_charactersList->remove(4);    
-    m_charactersList->remove(4);    
+        m_charactersList->remove(4);    
+        m_charactersList->remove(4);    
 
         arquivo.close();
     }

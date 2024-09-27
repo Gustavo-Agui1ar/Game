@@ -16,6 +16,7 @@ namespace Game::Manager{
         IDs::IDs m_IDcurrentMusic;
         
         float m_geralVolume;
+        float m_gameVolume;
         float m_soundEffectVolume;
 
         void addMusic(const IDs::IDs ID, const char* pathMusic);
@@ -37,11 +38,11 @@ namespace Game::Manager{
         void stop();
 
         void setGeralVolume(const float geralVolume);
-        void setVolume(IDs::IDs ID, const float volume);
+        void setVolume(const float volume);
         void setSoundEffectVolume(const float soundEffectVolume);
     
         const float getGeralVolume();
-        const float getVolume(IDs::IDs ID);
+        const float getVolume();
         const float getSoundEffectVolume();
     };
 }

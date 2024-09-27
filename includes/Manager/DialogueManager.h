@@ -1,7 +1,7 @@
 
 #pragma once
 
-#include "../includes/menus/botao/balaoDeFala.h"
+#include "../includes/menus/Button/TalkBalloon.h"
 #include <list>
 
 namespace Game{
@@ -17,8 +17,8 @@ namespace Game{
 
         private:
 
-            std::list<Menu::Botao::BalaoDeFala*> m_dialogues;
-            std::list<Menu::Botao::BalaoDeFala*>::iterator m_currentDialogue;
+            std::list<Menu::Button::TalkBalloon*> m_dialogues;
+            std::list<Menu::Button::TalkBalloon*>::iterator m_currentDialogue;
 
             bool m_endLastTalk;
             bool m_nameLeft;

@@ -31,6 +31,7 @@ namespace Game::List{
         void processKeyRelease(const sf::Keyboard::Key key);
         
         void notifyBottonMouseRelease(const sf::Mouse::Button mouseBotton);
+        void notifyBottonMousePressed(const sf::Mouse::Button mouseBotton);
         void notifyMouseMovement(const sf::Event::MouseMoveEvent mouse);
 
     };

@@ -200,8 +200,6 @@ namespace Game:: State{
             std::cout<<"MenuState::nao foi possivel criar menuCarregar";
             exit(1);
         }
-
-        menuCarregar->criarBotaoBug();
         m_menu = static_cast<Menu::Menu*>(menuCarregar);
     }
 

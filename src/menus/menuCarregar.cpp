@@ -21,7 +21,7 @@ namespace Game{
                 fundoEscuro.setFillColor(sf::Color{0, 0, 0, 180});
                 auto posFundoEscuro = sf::Vector2f(posFundo.x - tamJanela.x / 2.0f, posFundo.y - tamJanela.y / 2.0f);
                 fundoEscuro.setPosition(posFundoEscuro);
-                titulo.setPos(sf::Vector2f(posFundo.x - titulo.getTam().x / 2.1f, posFundo.y - tamJanela.y / 2.0f ));
+                titulo.setPosition(sf::Vector2f(posFundo.x - titulo.getSize().x / 2.1f, posFundo.y - tamJanela.y / 2.0f ));
             }
 
             inicializarCards();
@@ -32,19 +32,12 @@ namespace Game{
         */
         MenuCarregar::~MenuCarregar()
         {
-
-            for(auto it = listaCards.begin() ; it != listaCards.end() ; it++)
+            for(auto* card : listaCards)
             {
-                Card* card = *it;
-                if(card != nullptr)
-                {
-                    delete(card);
-                    card = nullptr;
-                }
+                if(card)
+                    delete card;
             }
-
             listaCards.clear();
-        
         }
 
         /**
@@ -137,15 +130,6 @@ namespace Game{
         }
 
         /**
-         * @brief metodo de correcao do evento de entrar em menus 
-        */
-        void MenuCarregar::criarBotaoBug()
-        {
-            addBotao("Voltar", sf::Vector2f(tamJanela.x / 2.0f - tamBotao.x / 2.0f, tamJanela.y - tamJanela.y / 12.0f), IDs::IDs::back_button, sf::Color{0, 255, 0});
-            inicialiarIterador();
-        }
-        
-        /**
          * @brief cria os botoes do menuCarregar
         */
         void MenuCarregar::criarBotoes()
@@ -159,13 +143,11 @@ namespace Game{
             if(fase != nullptr)
             {
                 float posBotaoY = 0.8;
-                std::list<Botao::BotaoTexto*>::iterator aux;
                 int i = 1;
-                for(aux = listaDeBotao.begin(); aux != listaDeBotao.end(); aux++, i++)
+                for(auto* button : listaDeBotao)
                 {
-                    Botao::BotaoTexto* botao = *aux;
-                    botao->atualizarPosicaoDaCaixa(sf::Vector2f(posFundo.x - tamBotao.x / 2.0f, posFundo.y / posBotaoY + (tamBotao.y + 20.f) * i));       
-                    botao = nullptr;
+                    button->updateBoxPosition(sf::Vector2f(posFundo.x - tamBotao.x / 2.0f, posFundo.y / posBotaoY + (tamBotao.y + 20.f) * i)); 
+                    i++;     
                 }
             }
         }
@@ -189,7 +171,7 @@ namespace Game{
             }
             draw();
 
-            m_graphic->drawElement(titulo.getTexto());
+            m_graphic->drawElement(titulo.getInfoText());
 
             desenharCards();
         }
@@ -199,11 +181,8 @@ namespace Game{
         */
         void MenuCarregar::desenharCards()
         {
-            for(std::list<Card*>::iterator it = listaCards.begin() ; it != listaCards.end() ; it++)
-            {
-                Card* card = *it;
+            for(auto* card : listaCards)
                 card->draw();
-            }
         }
     }
 }

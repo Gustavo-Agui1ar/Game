@@ -7,24 +7,24 @@
     },
     "position": {
       "x": 900.0,
-      "y": 232.93490600585938
+      "y": 500.0
     },
     "remove": false,
     "speed": {
       "x": 250.0,
-      "y": 747.6922607421875
+      "y": 0.0
     },
     "deathTime": 0.0,
     "InDamage": false,
-    "timeDamage": 0.6230770945549011,
+    "timeDamage": 1.188394546508789,
     "dying": false,
     "attacking": false,
     "moving": false,
     "direction": false,
     "damage": 20.0,
     "life": 100.0,
-    "dt": 0.001661999966017902,
-    "onFloor": false,
+    "dt": 0.0019460000330582261,
+    "onFloor": true,
     "qtdJump": 0,
     "timeAttack": 0.0,
     "inDash": false,
@@ -39,8 +39,8 @@
     "trhowBullet": false,
     "timeTrhowBullet": 0.0,
     "timeAnimationBullet": 0.8999999761581421,
-    "currentImg": "DOWN",
-    "totalTime": 0.1080780029296875,
+    "currentImg": "IDLE",
+    "totalTime": 0.07422100752592087,
     "currentFrame": 1
   },
   {
@@ -86,29 +86,29 @@
     },
     "position": {
       "x": 1550.0,
-      "y": 232.93490600585938
+      "y": 300.0
     },
     "remove": false,
     "speed": {
       "x": 50.0,
-      "y": 747.6922607421875
+      "y": 0.0
     },
     "deathTime": 0.0,
     "InDamage": false,
-    "timeDamage": 0.6230770945549011,
+    "timeDamage": 1.188394546508789,
     "dying": false,
     "attacking": false,
     "moving": false,
     "direction": false,
     "damage": 10.0,
     "life": 100.0,
-    "dt": 0.001661999966017902,
+    "dt": 0.0019460000330582261,
     "timeAttack": 0.0,
-    "timeMove": 0.6230770945549011,
+    "timeMove": 1.188394546508789,
     "move": 1,
     "currentImg": "PARADO",
-    "totalTime": 0.09767904132604599,
-    "currentFrame": 3
+    "totalTime": 0.03214503824710846,
+    "currentFrame": 0
   },
   {
     "ID": 22,
@@ -131,29 +131,29 @@
     },
     "position": {
       "x": 2300.0,
-      "y": 232.93490600585938
+      "y": 800.0
     },
     "remove": false,
     "speed": {
       "x": 50.0,
-      "y": 747.6922607421875
+      "y": 0.0
     },
     "deathTime": 0.0,
     "InDamage": false,
-    "timeDamage": 0.6230770945549011,
+    "timeDamage": 1.188394546508789,
     "dying": false,
     "attacking": false,
     "moving": false,
     "direction": false,
     "damage": 5.0,
     "life": 100.0,
-    "dt": 0.001661999966017902,
+    "dt": 0.0019460000330582261,
     "timeAttack": 0.0,
-    "timeMove": 0.6230770945549011,
+    "timeMove": 1.188394546508789,
     "move": 1,
     "currentImg": "PARADO",
-    "totalTime": 0.07221803069114685,
-    "currentFrame": 3
+    "totalTime": 0.0083540678024292,
+    "currentFrame": 7
   },
   {
     "ID": 22,
@@ -176,29 +176,29 @@
     },
     "position": {
       "x": 2550.0,
-      "y": 232.93490600585938
+      "y": 800.0
     },
     "remove": false,
     "speed": {
       "x": 50.0,
-      "y": 747.6922607421875
+      "y": 0.0
     },
     "deathTime": 0.0,
     "InDamage": false,
-    "timeDamage": 0.6230770945549011,
+    "timeDamage": 1.188394546508789,
     "dying": false,
     "attacking": false,
     "moving": false,
     "direction": false,
     "damage": 5.0,
     "life": 100.0,
-    "dt": 0.001661999966017902,
+    "dt": 0.0019460000330582261,
     "timeAttack": 0.0,
-    "timeMove": 0.6230770945549011,
+    "timeMove": 1.188394546508789,
     "move": 1,
     "currentImg": "PARADO",
-    "totalTime": 0.06022597476840019,
-    "currentFrame": 3
+    "totalTime": 0.15541601181030273,
+    "currentFrame": 6
   },
   {
     "ID": 22,
@@ -221,29 +221,29 @@
     },
     "position": {
       "x": 2750.0,
-      "y": 232.93490600585938
+      "y": 800.0
     },
     "remove": false,
     "speed": {
       "x": 50.0,
-      "y": 747.6922607421875
+      "y": 0.0
     },
     "deathTime": 0.0,
     "InDamage": false,
-    "timeDamage": 0.6230770945549011,
+    "timeDamage": 1.188394546508789,
     "dying": false,
     "attacking": false,
     "moving": false,
     "direction": false,
     "damage": 5.0,
     "life": 100.0,
-    "dt": 0.001661999966017902,
+    "dt": 0.0019460000330582261,
     "timeAttack": 0.0,
-    "timeMove": 0.6230770945549011,
+    "timeMove": 1.188394546508789,
     "move": 1,
     "currentImg": "PARADO",
-    "totalTime": 0.05386898294091225,
-    "currentFrame": 3
+    "totalTime": 0.1494779884815216,
+    "currentFrame": 6
   },
   {
     "ID": 22,

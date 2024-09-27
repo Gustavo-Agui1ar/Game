@@ -57,41 +57,48 @@ namespace Game::List{
 
         void ObserverList::processKeyRelease(sf::Keyboard::Key key)
         {
-            for(int i = 0 ; i < m_observerList.getSize() ; i++)
+            for(auto it = m_observerList.begin(); it != m_observerList.end(); it++)
             {
-                Observer::Observer* observer = m_observerList.operator[](i);
-                
-                if(observer->getActive())
+                if((*it)->getActive())
                 {
-                    observer->keyRelease(key);
+                    (*it)->keyRelease(key);
                 }
-
-                observer = nullptr;
             }
         }
 
          void ObserverList::notifyMouseMovement(const sf::Event::MouseMoveEvent mouse)
          {
             auto posMouse = sf::Vector2f((float)mouse.x, (float)mouse.y);
-            for(int i = 0; i < m_observerList.getSize(); i++)
+            for(auto it = m_observerList.begin(); it != m_observerList.end(); it++)
             {
+                if((*it)->getActive())
+                {
+                    (*it)->mouseMove(posMouse);
+                }
+            }
+        }
+        
+        void ObserverList::notifyBottonMouseRelease(const sf::Mouse::Button mouseButton)
+        {
+            int const size = m_observerList.getSize();
+            for(int i = 0 ; i < size ; i++) {
                 Observer::Observer* observer = m_observerList.operator[](i);
                 if(observer->getActive())
                 {
-                    observer->mouseMove(posMouse);
+                    observer->mouseButtonRelease(mouseButton);
                 }
                 observer = nullptr;
             }
         }
-        
-        void ObserverList::notifyBottonMouseRelease(const sf::Mouse::Button mouseBotton)
+      
+        void ObserverList::notifyBottonMousePressed(const sf::Mouse::Button mouseButton)
         {
-            for(int i = 0; i < m_observerList.getSize(); i++)
-            {
+            int const size = m_observerList.getSize();
+            for(int i = 0 ; i < size ; i++) {
                 Observer::Observer* observer = m_observerList.operator[](i);
                 if(observer->getActive())
                 {
-                    observer->mouseButtonRelease(mouseBotton);
+                    observer->mouseButtonPressed(mouseButton);
                 }
                 observer = nullptr;
             }

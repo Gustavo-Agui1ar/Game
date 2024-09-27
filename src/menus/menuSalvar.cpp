@@ -19,7 +19,7 @@ namespace Game{
 
             sf::Vector2f posFundoEscuro = sf::Vector2f(posFundo.x - tamJanela.x / 2.0f, posFundo.y - tamJanela.y / 2.0f);
             fundoEscuro.setPosition(posFundoEscuro);
-            titulo.setPos(sf::Vector2f(posFundo.x - titulo.getTam().x / 2.1f, posFundo.y - tamJanela.y / 2.0f ));
+            titulo.setPosition(sf::Vector2f(posFundo.x - titulo.getSize().x / 2.1f, posFundo.y - tamJanela.y / 2.0f ));
             
             inicializarCards();
         }
@@ -29,15 +29,10 @@ namespace Game{
         */
         MenuSalvar::~MenuSalvar()
         {
-            std::list<Card*>::iterator it;
-
-            for(it = listaCards.begin() ; it != listaCards.end() ; it++)
+            for(auto* card : listaCards)
             {
-                Card* card = *it;
-
-                if(card != nullptr)
+                if(card)
                     delete(card);
-                card = nullptr;
             }
 
             listaCards.clear();
@@ -164,7 +159,7 @@ namespace Game{
 
             m_graphic->drawElement(fundoEscuro);
 
-            m_graphic->drawElement(titulo.getTexto());
+            m_graphic->drawElement(titulo.getInfoText());
 
             draw();
 

@@ -1232,197 +1232,197 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/menus/botao/balaoDeFala.obj: src/menus/botao/balaoDeFala.cpp.obj
-.PHONY : src/menus/botao/balaoDeFala.obj
+src/menus/Button/Button.obj: src/menus/Button/Button.cpp.obj
+.PHONY : src/menus/Button/Button.obj
 
 # target to build an object file
-src/menus/botao/balaoDeFala.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/botao/balaoDeFala.cpp.obj
-.PHONY : src/menus/botao/balaoDeFala.cpp.obj
+src/menus/Button/Button.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/Button/Button.cpp.obj
+.PHONY : src/menus/Button/Button.cpp.obj
 
-src/menus/botao/balaoDeFala.i: src/menus/botao/balaoDeFala.cpp.i
-.PHONY : src/menus/botao/balaoDeFala.i
+src/menus/Button/Button.i: src/menus/Button/Button.cpp.i
+.PHONY : src/menus/Button/Button.i
 
 # target to preprocess a source file
-src/menus/botao/balaoDeFala.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/botao/balaoDeFala.cpp.i
-.PHONY : src/menus/botao/balaoDeFala.cpp.i
+src/menus/Button/Button.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/Button/Button.cpp.i
+.PHONY : src/menus/Button/Button.cpp.i
 
-src/menus/botao/balaoDeFala.s: src/menus/botao/balaoDeFala.cpp.s
-.PHONY : src/menus/botao/balaoDeFala.s
+src/menus/Button/Button.s: src/menus/Button/Button.cpp.s
+.PHONY : src/menus/Button/Button.s
 
 # target to generate assembly for a file
-src/menus/botao/balaoDeFala.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/botao/balaoDeFala.cpp.s
-.PHONY : src/menus/botao/balaoDeFala.cpp.s
+src/menus/Button/Button.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/Button/Button.cpp.s
+.PHONY : src/menus/Button/Button.cpp.s
 
-src/menus/botao/botao.obj: src/menus/botao/botao.cpp.obj
-.PHONY : src/menus/botao/botao.obj
+src/menus/Button/SelectionButton.obj: src/menus/Button/SelectionButton.cpp.obj
+.PHONY : src/menus/Button/SelectionButton.obj
 
 # target to build an object file
-src/menus/botao/botao.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/botao/botao.cpp.obj
-.PHONY : src/menus/botao/botao.cpp.obj
+src/menus/Button/SelectionButton.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/Button/SelectionButton.cpp.obj
+.PHONY : src/menus/Button/SelectionButton.cpp.obj
 
-src/menus/botao/botao.i: src/menus/botao/botao.cpp.i
-.PHONY : src/menus/botao/botao.i
+src/menus/Button/SelectionButton.i: src/menus/Button/SelectionButton.cpp.i
+.PHONY : src/menus/Button/SelectionButton.i
 
 # target to preprocess a source file
-src/menus/botao/botao.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/botao/botao.cpp.i
-.PHONY : src/menus/botao/botao.cpp.i
+src/menus/Button/SelectionButton.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/Button/SelectionButton.cpp.i
+.PHONY : src/menus/Button/SelectionButton.cpp.i
 
-src/menus/botao/botao.s: src/menus/botao/botao.cpp.s
-.PHONY : src/menus/botao/botao.s
+src/menus/Button/SelectionButton.s: src/menus/Button/SelectionButton.cpp.s
+.PHONY : src/menus/Button/SelectionButton.s
 
 # target to generate assembly for a file
-src/menus/botao/botao.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/botao/botao.cpp.s
-.PHONY : src/menus/botao/botao.cpp.s
+src/menus/Button/SelectionButton.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/Button/SelectionButton.cpp.s
+.PHONY : src/menus/Button/SelectionButton.cpp.s
 
-src/menus/botao/botaoSelecao.obj: src/menus/botao/botaoSelecao.cpp.obj
-.PHONY : src/menus/botao/botaoSelecao.obj
+src/menus/Button/TalkBalloon.obj: src/menus/Button/TalkBalloon.cpp.obj
+.PHONY : src/menus/Button/TalkBalloon.obj
 
 # target to build an object file
-src/menus/botao/botaoSelecao.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/botao/botaoSelecao.cpp.obj
-.PHONY : src/menus/botao/botaoSelecao.cpp.obj
+src/menus/Button/TalkBalloon.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/Button/TalkBalloon.cpp.obj
+.PHONY : src/menus/Button/TalkBalloon.cpp.obj
 
-src/menus/botao/botaoSelecao.i: src/menus/botao/botaoSelecao.cpp.i
-.PHONY : src/menus/botao/botaoSelecao.i
+src/menus/Button/TalkBalloon.i: src/menus/Button/TalkBalloon.cpp.i
+.PHONY : src/menus/Button/TalkBalloon.i
 
 # target to preprocess a source file
-src/menus/botao/botaoSelecao.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/botao/botaoSelecao.cpp.i
-.PHONY : src/menus/botao/botaoSelecao.cpp.i
+src/menus/Button/TalkBalloon.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/Button/TalkBalloon.cpp.i
+.PHONY : src/menus/Button/TalkBalloon.cpp.i
 
-src/menus/botao/botaoSelecao.s: src/menus/botao/botaoSelecao.cpp.s
-.PHONY : src/menus/botao/botaoSelecao.s
+src/menus/Button/TalkBalloon.s: src/menus/Button/TalkBalloon.cpp.s
+.PHONY : src/menus/Button/TalkBalloon.s
 
 # target to generate assembly for a file
-src/menus/botao/botaoSelecao.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/botao/botaoSelecao.cpp.s
-.PHONY : src/menus/botao/botaoSelecao.cpp.s
+src/menus/Button/TalkBalloon.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/Button/TalkBalloon.cpp.s
+.PHONY : src/menus/Button/TalkBalloon.cpp.s
 
-src/menus/botao/botaoTexto.obj: src/menus/botao/botaoTexto.cpp.obj
-.PHONY : src/menus/botao/botaoTexto.obj
+src/menus/Button/Text.obj: src/menus/Button/Text.cpp.obj
+.PHONY : src/menus/Button/Text.obj
 
 # target to build an object file
-src/menus/botao/botaoTexto.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/botao/botaoTexto.cpp.obj
-.PHONY : src/menus/botao/botaoTexto.cpp.obj
+src/menus/Button/Text.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/Button/Text.cpp.obj
+.PHONY : src/menus/Button/Text.cpp.obj
 
-src/menus/botao/botaoTexto.i: src/menus/botao/botaoTexto.cpp.i
-.PHONY : src/menus/botao/botaoTexto.i
+src/menus/Button/Text.i: src/menus/Button/Text.cpp.i
+.PHONY : src/menus/Button/Text.i
 
 # target to preprocess a source file
-src/menus/botao/botaoTexto.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/botao/botaoTexto.cpp.i
-.PHONY : src/menus/botao/botaoTexto.cpp.i
+src/menus/Button/Text.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/Button/Text.cpp.i
+.PHONY : src/menus/Button/Text.cpp.i
 
-src/menus/botao/botaoTexto.s: src/menus/botao/botaoTexto.cpp.s
-.PHONY : src/menus/botao/botaoTexto.s
+src/menus/Button/Text.s: src/menus/Button/Text.cpp.s
+.PHONY : src/menus/Button/Text.s
 
 # target to generate assembly for a file
-src/menus/botao/botaoTexto.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/botao/botaoTexto.cpp.s
-.PHONY : src/menus/botao/botaoTexto.cpp.s
+src/menus/Button/Text.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/Button/Text.cpp.s
+.PHONY : src/menus/Button/Text.cpp.s
 
-src/menus/botao/botaoVolume.obj: src/menus/botao/botaoVolume.cpp.obj
-.PHONY : src/menus/botao/botaoVolume.obj
+src/menus/Button/TextButton.obj: src/menus/Button/TextButton.cpp.obj
+.PHONY : src/menus/Button/TextButton.obj
 
 # target to build an object file
-src/menus/botao/botaoVolume.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/botao/botaoVolume.cpp.obj
-.PHONY : src/menus/botao/botaoVolume.cpp.obj
+src/menus/Button/TextButton.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/Button/TextButton.cpp.obj
+.PHONY : src/menus/Button/TextButton.cpp.obj
 
-src/menus/botao/botaoVolume.i: src/menus/botao/botaoVolume.cpp.i
-.PHONY : src/menus/botao/botaoVolume.i
+src/menus/Button/TextButton.i: src/menus/Button/TextButton.cpp.i
+.PHONY : src/menus/Button/TextButton.i
 
 # target to preprocess a source file
-src/menus/botao/botaoVolume.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/botao/botaoVolume.cpp.i
-.PHONY : src/menus/botao/botaoVolume.cpp.i
+src/menus/Button/TextButton.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/Button/TextButton.cpp.i
+.PHONY : src/menus/Button/TextButton.cpp.i
 
-src/menus/botao/botaoVolume.s: src/menus/botao/botaoVolume.cpp.s
-.PHONY : src/menus/botao/botaoVolume.s
+src/menus/Button/TextButton.s: src/menus/Button/TextButton.cpp.s
+.PHONY : src/menus/Button/TextButton.s
 
 # target to generate assembly for a file
-src/menus/botao/botaoVolume.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/botao/botaoVolume.cpp.s
-.PHONY : src/menus/botao/botaoVolume.cpp.s
+src/menus/Button/TextButton.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/Button/TextButton.cpp.s
+.PHONY : src/menus/Button/TextButton.cpp.s
 
-src/menus/botao/texto.obj: src/menus/botao/texto.cpp.obj
-.PHONY : src/menus/botao/texto.obj
+src/menus/Button/TextEffect.obj: src/menus/Button/TextEffect.cpp.obj
+.PHONY : src/menus/Button/TextEffect.obj
 
 # target to build an object file
-src/menus/botao/texto.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/botao/texto.cpp.obj
-.PHONY : src/menus/botao/texto.cpp.obj
+src/menus/Button/TextEffect.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/Button/TextEffect.cpp.obj
+.PHONY : src/menus/Button/TextEffect.cpp.obj
 
-src/menus/botao/texto.i: src/menus/botao/texto.cpp.i
-.PHONY : src/menus/botao/texto.i
+src/menus/Button/TextEffect.i: src/menus/Button/TextEffect.cpp.i
+.PHONY : src/menus/Button/TextEffect.i
 
 # target to preprocess a source file
-src/menus/botao/texto.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/botao/texto.cpp.i
-.PHONY : src/menus/botao/texto.cpp.i
+src/menus/Button/TextEffect.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/Button/TextEffect.cpp.i
+.PHONY : src/menus/Button/TextEffect.cpp.i
 
-src/menus/botao/texto.s: src/menus/botao/texto.cpp.s
-.PHONY : src/menus/botao/texto.s
+src/menus/Button/TextEffect.s: src/menus/Button/TextEffect.cpp.s
+.PHONY : src/menus/Button/TextEffect.s
 
 # target to generate assembly for a file
-src/menus/botao/texto.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/botao/texto.cpp.s
-.PHONY : src/menus/botao/texto.cpp.s
+src/menus/Button/TextEffect.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/Button/TextEffect.cpp.s
+.PHONY : src/menus/Button/TextEffect.cpp.s
 
-src/menus/botao/textoEfeito.obj: src/menus/botao/textoEfeito.cpp.obj
-.PHONY : src/menus/botao/textoEfeito.obj
+src/menus/Button/TextTalk.obj: src/menus/Button/TextTalk.cpp.obj
+.PHONY : src/menus/Button/TextTalk.obj
 
 # target to build an object file
-src/menus/botao/textoEfeito.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/botao/textoEfeito.cpp.obj
-.PHONY : src/menus/botao/textoEfeito.cpp.obj
+src/menus/Button/TextTalk.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/Button/TextTalk.cpp.obj
+.PHONY : src/menus/Button/TextTalk.cpp.obj
 
-src/menus/botao/textoEfeito.i: src/menus/botao/textoEfeito.cpp.i
-.PHONY : src/menus/botao/textoEfeito.i
+src/menus/Button/TextTalk.i: src/menus/Button/TextTalk.cpp.i
+.PHONY : src/menus/Button/TextTalk.i
 
 # target to preprocess a source file
-src/menus/botao/textoEfeito.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/botao/textoEfeito.cpp.i
-.PHONY : src/menus/botao/textoEfeito.cpp.i
+src/menus/Button/TextTalk.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/Button/TextTalk.cpp.i
+.PHONY : src/menus/Button/TextTalk.cpp.i
 
-src/menus/botao/textoEfeito.s: src/menus/botao/textoEfeito.cpp.s
-.PHONY : src/menus/botao/textoEfeito.s
+src/menus/Button/TextTalk.s: src/menus/Button/TextTalk.cpp.s
+.PHONY : src/menus/Button/TextTalk.s
 
 # target to generate assembly for a file
-src/menus/botao/textoEfeito.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/botao/textoEfeito.cpp.s
-.PHONY : src/menus/botao/textoEfeito.cpp.s
+src/menus/Button/TextTalk.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/Button/TextTalk.cpp.s
+.PHONY : src/menus/Button/TextTalk.cpp.s
 
-src/menus/botao/textoFala.obj: src/menus/botao/textoFala.cpp.obj
-.PHONY : src/menus/botao/textoFala.obj
+src/menus/Button/VolumeButton.obj: src/menus/Button/VolumeButton.cpp.obj
+.PHONY : src/menus/Button/VolumeButton.obj
 
 # target to build an object file
-src/menus/botao/textoFala.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/botao/textoFala.cpp.obj
-.PHONY : src/menus/botao/textoFala.cpp.obj
+src/menus/Button/VolumeButton.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/Button/VolumeButton.cpp.obj
+.PHONY : src/menus/Button/VolumeButton.cpp.obj
 
-src/menus/botao/textoFala.i: src/menus/botao/textoFala.cpp.i
-.PHONY : src/menus/botao/textoFala.i
+src/menus/Button/VolumeButton.i: src/menus/Button/VolumeButton.cpp.i
+.PHONY : src/menus/Button/VolumeButton.i
 
 # target to preprocess a source file
-src/menus/botao/textoFala.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/botao/textoFala.cpp.i
-.PHONY : src/menus/botao/textoFala.cpp.i
+src/menus/Button/VolumeButton.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/Button/VolumeButton.cpp.i
+.PHONY : src/menus/Button/VolumeButton.cpp.i
 
-src/menus/botao/textoFala.s: src/menus/botao/textoFala.cpp.s
-.PHONY : src/menus/botao/textoFala.s
+src/menus/Button/VolumeButton.s: src/menus/Button/VolumeButton.cpp.s
+.PHONY : src/menus/Button/VolumeButton.s
 
 # target to generate assembly for a file
-src/menus/botao/textoFala.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/botao/textoFala.cpp.s
-.PHONY : src/menus/botao/textoFala.cpp.s
+src/menus/Button/VolumeButton.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Game.dir\build.make CMakeFiles/Game.dir/src/menus/Button/VolumeButton.cpp.s
+.PHONY : src/menus/Button/VolumeButton.cpp.s
 
 src/menus/card.obj: src/menus/card.cpp.obj
 .PHONY : src/menus/card.obj
@@ -1811,30 +1811,30 @@ help:
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
-	@echo ... src/menus/botao/balaoDeFala.obj
-	@echo ... src/menus/botao/balaoDeFala.i
-	@echo ... src/menus/botao/balaoDeFala.s
-	@echo ... src/menus/botao/botao.obj
-	@echo ... src/menus/botao/botao.i
-	@echo ... src/menus/botao/botao.s
-	@echo ... src/menus/botao/botaoSelecao.obj
-	@echo ... src/menus/botao/botaoSelecao.i
-	@echo ... src/menus/botao/botaoSelecao.s
-	@echo ... src/menus/botao/botaoTexto.obj
-	@echo ... src/menus/botao/botaoTexto.i
-	@echo ... src/menus/botao/botaoTexto.s
-	@echo ... src/menus/botao/botaoVolume.obj
-	@echo ... src/menus/botao/botaoVolume.i
-	@echo ... src/menus/botao/botaoVolume.s
-	@echo ... src/menus/botao/texto.obj
-	@echo ... src/menus/botao/texto.i
-	@echo ... src/menus/botao/texto.s
-	@echo ... src/menus/botao/textoEfeito.obj
-	@echo ... src/menus/botao/textoEfeito.i
-	@echo ... src/menus/botao/textoEfeito.s
-	@echo ... src/menus/botao/textoFala.obj
-	@echo ... src/menus/botao/textoFala.i
-	@echo ... src/menus/botao/textoFala.s
+	@echo ... src/menus/Button/Button.obj
+	@echo ... src/menus/Button/Button.i
+	@echo ... src/menus/Button/Button.s
+	@echo ... src/menus/Button/SelectionButton.obj
+	@echo ... src/menus/Button/SelectionButton.i
+	@echo ... src/menus/Button/SelectionButton.s
+	@echo ... src/menus/Button/TalkBalloon.obj
+	@echo ... src/menus/Button/TalkBalloon.i
+	@echo ... src/menus/Button/TalkBalloon.s
+	@echo ... src/menus/Button/Text.obj
+	@echo ... src/menus/Button/Text.i
+	@echo ... src/menus/Button/Text.s
+	@echo ... src/menus/Button/TextButton.obj
+	@echo ... src/menus/Button/TextButton.i
+	@echo ... src/menus/Button/TextButton.s
+	@echo ... src/menus/Button/TextEffect.obj
+	@echo ... src/menus/Button/TextEffect.i
+	@echo ... src/menus/Button/TextEffect.s
+	@echo ... src/menus/Button/TextTalk.obj
+	@echo ... src/menus/Button/TextTalk.i
+	@echo ... src/menus/Button/TextTalk.s
+	@echo ... src/menus/Button/VolumeButton.obj
+	@echo ... src/menus/Button/VolumeButton.i
+	@echo ... src/menus/Button/VolumeButton.s
 	@echo ... src/menus/card.obj
 	@echo ... src/menus/card.i
 	@echo ... src/menus/card.s

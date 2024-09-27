@@ -35,9 +35,6 @@ namespace Game::Manager{
     {
         sf::Event event;
 
-        static std::unordered_map<sf::Keyboard::Key, bool> keyStates;
-        static std::unordered_map<sf::Mouse::Button, bool> mouseButtonStates;
-
         while(m_graphicManager->getWindow()->pollEvent(event))
     {
         switch(event.type)
@@ -51,19 +48,11 @@ namespace Game::Manager{
                 break;
                 
             case sf::Event::KeyPressed:
-                if (!keyStates[event.key.code]) // Somente processar se não estava pressionada antes
-                {
-                    keyStates[event.key.code] = true;
                     m_observerList->processKeyPressed(event.key.code);
-                }
                 break;
                 
             case sf::Event::KeyReleased:
-                if (keyStates[event.key.code]) // Somente processar se estava pressionada antes
-                {
-                    keyStates[event.key.code] = false;
                     m_observerList->processKeyRelease(event.key.code);
-                }
                 break;
                 
             case sf::Event::MouseMoved:
@@ -71,18 +60,10 @@ namespace Game::Manager{
                 break;
                 
             case sf::Event::MouseButtonReleased:
-                if (mouseButtonStates[event.mouseButton.button]) // Somente processar se estava pressionado antes
-                {
-                    mouseButtonStates[event.mouseButton.button] = false;
                     m_observerList->notifyBottonMouseRelease(event.mouseButton.button);
-                }
                 break;
-                
             case sf::Event::MouseButtonPressed:
-                if (!mouseButtonStates[event.mouseButton.button]) // Somente processar se não estava pressionado antes
-                {
-                    mouseButtonStates[event.mouseButton.button] = true;
-                }
+                    m_observerList->notifyBottonMousePressed(event.mouseButton.button);
                 break;
                 
             case sf::Event::Closed:

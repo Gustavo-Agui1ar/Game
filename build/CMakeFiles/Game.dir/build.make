@@ -758,125 +758,125 @@ CMakeFiles/Game.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Game.dir/src/main.cpp.s"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\main.cpp -o CMakeFiles\Game.dir\src\main.cpp.s
 
-CMakeFiles/Game.dir/src/menus/botao/balaoDeFala.cpp.obj: CMakeFiles/Game.dir/flags.make
-CMakeFiles/Game.dir/src/menus/botao/balaoDeFala.cpp.obj: CMakeFiles/Game.dir/includes_CXX.rsp
-CMakeFiles/Game.dir/src/menus/botao/balaoDeFala.cpp.obj: C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/botao/balaoDeFala.cpp
-CMakeFiles/Game.dir/src/menus/botao/balaoDeFala.cpp.obj: CMakeFiles/Game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/Game.dir/src/menus/botao/balaoDeFala.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Game.dir/src/menus/botao/balaoDeFala.cpp.obj -MF CMakeFiles\Game.dir\src\menus\botao\balaoDeFala.cpp.obj.d -o CMakeFiles\Game.dir\src\menus\botao\balaoDeFala.cpp.obj -c C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\botao\balaoDeFala.cpp
+CMakeFiles/Game.dir/src/menus/Button/Button.cpp.obj: CMakeFiles/Game.dir/flags.make
+CMakeFiles/Game.dir/src/menus/Button/Button.cpp.obj: CMakeFiles/Game.dir/includes_CXX.rsp
+CMakeFiles/Game.dir/src/menus/Button/Button.cpp.obj: C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/Button/Button.cpp
+CMakeFiles/Game.dir/src/menus/Button/Button.cpp.obj: CMakeFiles/Game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/Game.dir/src/menus/Button/Button.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Game.dir/src/menus/Button/Button.cpp.obj -MF CMakeFiles\Game.dir\src\menus\Button\Button.cpp.obj.d -o CMakeFiles\Game.dir\src\menus\Button\Button.cpp.obj -c C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\Button\Button.cpp
 
-CMakeFiles/Game.dir/src/menus/botao/balaoDeFala.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Game.dir/src/menus/botao/balaoDeFala.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\botao\balaoDeFala.cpp > CMakeFiles\Game.dir\src\menus\botao\balaoDeFala.cpp.i
+CMakeFiles/Game.dir/src/menus/Button/Button.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Game.dir/src/menus/Button/Button.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\Button\Button.cpp > CMakeFiles\Game.dir\src\menus\Button\Button.cpp.i
 
-CMakeFiles/Game.dir/src/menus/botao/balaoDeFala.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Game.dir/src/menus/botao/balaoDeFala.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\botao\balaoDeFala.cpp -o CMakeFiles\Game.dir\src\menus\botao\balaoDeFala.cpp.s
+CMakeFiles/Game.dir/src/menus/Button/Button.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Game.dir/src/menus/Button/Button.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\Button\Button.cpp -o CMakeFiles\Game.dir\src\menus\Button\Button.cpp.s
 
-CMakeFiles/Game.dir/src/menus/botao/botao.cpp.obj: CMakeFiles/Game.dir/flags.make
-CMakeFiles/Game.dir/src/menus/botao/botao.cpp.obj: CMakeFiles/Game.dir/includes_CXX.rsp
-CMakeFiles/Game.dir/src/menus/botao/botao.cpp.obj: C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/botao/botao.cpp
-CMakeFiles/Game.dir/src/menus/botao/botao.cpp.obj: CMakeFiles/Game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/Game.dir/src/menus/botao/botao.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Game.dir/src/menus/botao/botao.cpp.obj -MF CMakeFiles\Game.dir\src\menus\botao\botao.cpp.obj.d -o CMakeFiles\Game.dir\src\menus\botao\botao.cpp.obj -c C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\botao\botao.cpp
+CMakeFiles/Game.dir/src/menus/Button/SelectionButton.cpp.obj: CMakeFiles/Game.dir/flags.make
+CMakeFiles/Game.dir/src/menus/Button/SelectionButton.cpp.obj: CMakeFiles/Game.dir/includes_CXX.rsp
+CMakeFiles/Game.dir/src/menus/Button/SelectionButton.cpp.obj: C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/Button/SelectionButton.cpp
+CMakeFiles/Game.dir/src/menus/Button/SelectionButton.cpp.obj: CMakeFiles/Game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/Game.dir/src/menus/Button/SelectionButton.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Game.dir/src/menus/Button/SelectionButton.cpp.obj -MF CMakeFiles\Game.dir\src\menus\Button\SelectionButton.cpp.obj.d -o CMakeFiles\Game.dir\src\menus\Button\SelectionButton.cpp.obj -c C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\Button\SelectionButton.cpp
 
-CMakeFiles/Game.dir/src/menus/botao/botao.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Game.dir/src/menus/botao/botao.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\botao\botao.cpp > CMakeFiles\Game.dir\src\menus\botao\botao.cpp.i
+CMakeFiles/Game.dir/src/menus/Button/SelectionButton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Game.dir/src/menus/Button/SelectionButton.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\Button\SelectionButton.cpp > CMakeFiles\Game.dir\src\menus\Button\SelectionButton.cpp.i
 
-CMakeFiles/Game.dir/src/menus/botao/botao.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Game.dir/src/menus/botao/botao.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\botao\botao.cpp -o CMakeFiles\Game.dir\src\menus\botao\botao.cpp.s
+CMakeFiles/Game.dir/src/menus/Button/SelectionButton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Game.dir/src/menus/Button/SelectionButton.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\Button\SelectionButton.cpp -o CMakeFiles\Game.dir\src\menus\Button\SelectionButton.cpp.s
 
-CMakeFiles/Game.dir/src/menus/botao/botaoSelecao.cpp.obj: CMakeFiles/Game.dir/flags.make
-CMakeFiles/Game.dir/src/menus/botao/botaoSelecao.cpp.obj: CMakeFiles/Game.dir/includes_CXX.rsp
-CMakeFiles/Game.dir/src/menus/botao/botaoSelecao.cpp.obj: C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/botao/botaoSelecao.cpp
-CMakeFiles/Game.dir/src/menus/botao/botaoSelecao.cpp.obj: CMakeFiles/Game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/Game.dir/src/menus/botao/botaoSelecao.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Game.dir/src/menus/botao/botaoSelecao.cpp.obj -MF CMakeFiles\Game.dir\src\menus\botao\botaoSelecao.cpp.obj.d -o CMakeFiles\Game.dir\src\menus\botao\botaoSelecao.cpp.obj -c C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\botao\botaoSelecao.cpp
+CMakeFiles/Game.dir/src/menus/Button/TalkBalloon.cpp.obj: CMakeFiles/Game.dir/flags.make
+CMakeFiles/Game.dir/src/menus/Button/TalkBalloon.cpp.obj: CMakeFiles/Game.dir/includes_CXX.rsp
+CMakeFiles/Game.dir/src/menus/Button/TalkBalloon.cpp.obj: C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/Button/TalkBalloon.cpp
+CMakeFiles/Game.dir/src/menus/Button/TalkBalloon.cpp.obj: CMakeFiles/Game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/Game.dir/src/menus/Button/TalkBalloon.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Game.dir/src/menus/Button/TalkBalloon.cpp.obj -MF CMakeFiles\Game.dir\src\menus\Button\TalkBalloon.cpp.obj.d -o CMakeFiles\Game.dir\src\menus\Button\TalkBalloon.cpp.obj -c C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\Button\TalkBalloon.cpp
 
-CMakeFiles/Game.dir/src/menus/botao/botaoSelecao.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Game.dir/src/menus/botao/botaoSelecao.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\botao\botaoSelecao.cpp > CMakeFiles\Game.dir\src\menus\botao\botaoSelecao.cpp.i
+CMakeFiles/Game.dir/src/menus/Button/TalkBalloon.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Game.dir/src/menus/Button/TalkBalloon.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\Button\TalkBalloon.cpp > CMakeFiles\Game.dir\src\menus\Button\TalkBalloon.cpp.i
 
-CMakeFiles/Game.dir/src/menus/botao/botaoSelecao.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Game.dir/src/menus/botao/botaoSelecao.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\botao\botaoSelecao.cpp -o CMakeFiles\Game.dir\src\menus\botao\botaoSelecao.cpp.s
+CMakeFiles/Game.dir/src/menus/Button/TalkBalloon.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Game.dir/src/menus/Button/TalkBalloon.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\Button\TalkBalloon.cpp -o CMakeFiles\Game.dir\src\menus\Button\TalkBalloon.cpp.s
 
-CMakeFiles/Game.dir/src/menus/botao/botaoTexto.cpp.obj: CMakeFiles/Game.dir/flags.make
-CMakeFiles/Game.dir/src/menus/botao/botaoTexto.cpp.obj: CMakeFiles/Game.dir/includes_CXX.rsp
-CMakeFiles/Game.dir/src/menus/botao/botaoTexto.cpp.obj: C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/botao/botaoTexto.cpp
-CMakeFiles/Game.dir/src/menus/botao/botaoTexto.cpp.obj: CMakeFiles/Game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/Game.dir/src/menus/botao/botaoTexto.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Game.dir/src/menus/botao/botaoTexto.cpp.obj -MF CMakeFiles\Game.dir\src\menus\botao\botaoTexto.cpp.obj.d -o CMakeFiles\Game.dir\src\menus\botao\botaoTexto.cpp.obj -c C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\botao\botaoTexto.cpp
+CMakeFiles/Game.dir/src/menus/Button/Text.cpp.obj: CMakeFiles/Game.dir/flags.make
+CMakeFiles/Game.dir/src/menus/Button/Text.cpp.obj: CMakeFiles/Game.dir/includes_CXX.rsp
+CMakeFiles/Game.dir/src/menus/Button/Text.cpp.obj: C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/Button/Text.cpp
+CMakeFiles/Game.dir/src/menus/Button/Text.cpp.obj: CMakeFiles/Game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/Game.dir/src/menus/Button/Text.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Game.dir/src/menus/Button/Text.cpp.obj -MF CMakeFiles\Game.dir\src\menus\Button\Text.cpp.obj.d -o CMakeFiles\Game.dir\src\menus\Button\Text.cpp.obj -c C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\Button\Text.cpp
 
-CMakeFiles/Game.dir/src/menus/botao/botaoTexto.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Game.dir/src/menus/botao/botaoTexto.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\botao\botaoTexto.cpp > CMakeFiles\Game.dir\src\menus\botao\botaoTexto.cpp.i
+CMakeFiles/Game.dir/src/menus/Button/Text.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Game.dir/src/menus/Button/Text.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\Button\Text.cpp > CMakeFiles\Game.dir\src\menus\Button\Text.cpp.i
 
-CMakeFiles/Game.dir/src/menus/botao/botaoTexto.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Game.dir/src/menus/botao/botaoTexto.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\botao\botaoTexto.cpp -o CMakeFiles\Game.dir\src\menus\botao\botaoTexto.cpp.s
+CMakeFiles/Game.dir/src/menus/Button/Text.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Game.dir/src/menus/Button/Text.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\Button\Text.cpp -o CMakeFiles\Game.dir\src\menus\Button\Text.cpp.s
 
-CMakeFiles/Game.dir/src/menus/botao/botaoVolume.cpp.obj: CMakeFiles/Game.dir/flags.make
-CMakeFiles/Game.dir/src/menus/botao/botaoVolume.cpp.obj: CMakeFiles/Game.dir/includes_CXX.rsp
-CMakeFiles/Game.dir/src/menus/botao/botaoVolume.cpp.obj: C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/botao/botaoVolume.cpp
-CMakeFiles/Game.dir/src/menus/botao/botaoVolume.cpp.obj: CMakeFiles/Game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/Game.dir/src/menus/botao/botaoVolume.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Game.dir/src/menus/botao/botaoVolume.cpp.obj -MF CMakeFiles\Game.dir\src\menus\botao\botaoVolume.cpp.obj.d -o CMakeFiles\Game.dir\src\menus\botao\botaoVolume.cpp.obj -c C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\botao\botaoVolume.cpp
+CMakeFiles/Game.dir/src/menus/Button/TextButton.cpp.obj: CMakeFiles/Game.dir/flags.make
+CMakeFiles/Game.dir/src/menus/Button/TextButton.cpp.obj: CMakeFiles/Game.dir/includes_CXX.rsp
+CMakeFiles/Game.dir/src/menus/Button/TextButton.cpp.obj: C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/Button/TextButton.cpp
+CMakeFiles/Game.dir/src/menus/Button/TextButton.cpp.obj: CMakeFiles/Game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/Game.dir/src/menus/Button/TextButton.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Game.dir/src/menus/Button/TextButton.cpp.obj -MF CMakeFiles\Game.dir\src\menus\Button\TextButton.cpp.obj.d -o CMakeFiles\Game.dir\src\menus\Button\TextButton.cpp.obj -c C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\Button\TextButton.cpp
 
-CMakeFiles/Game.dir/src/menus/botao/botaoVolume.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Game.dir/src/menus/botao/botaoVolume.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\botao\botaoVolume.cpp > CMakeFiles\Game.dir\src\menus\botao\botaoVolume.cpp.i
+CMakeFiles/Game.dir/src/menus/Button/TextButton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Game.dir/src/menus/Button/TextButton.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\Button\TextButton.cpp > CMakeFiles\Game.dir\src\menus\Button\TextButton.cpp.i
 
-CMakeFiles/Game.dir/src/menus/botao/botaoVolume.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Game.dir/src/menus/botao/botaoVolume.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\botao\botaoVolume.cpp -o CMakeFiles\Game.dir\src\menus\botao\botaoVolume.cpp.s
+CMakeFiles/Game.dir/src/menus/Button/TextButton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Game.dir/src/menus/Button/TextButton.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\Button\TextButton.cpp -o CMakeFiles\Game.dir\src\menus\Button\TextButton.cpp.s
 
-CMakeFiles/Game.dir/src/menus/botao/texto.cpp.obj: CMakeFiles/Game.dir/flags.make
-CMakeFiles/Game.dir/src/menus/botao/texto.cpp.obj: CMakeFiles/Game.dir/includes_CXX.rsp
-CMakeFiles/Game.dir/src/menus/botao/texto.cpp.obj: C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/botao/texto.cpp
-CMakeFiles/Game.dir/src/menus/botao/texto.cpp.obj: CMakeFiles/Game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/Game.dir/src/menus/botao/texto.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Game.dir/src/menus/botao/texto.cpp.obj -MF CMakeFiles\Game.dir\src\menus\botao\texto.cpp.obj.d -o CMakeFiles\Game.dir\src\menus\botao\texto.cpp.obj -c C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\botao\texto.cpp
+CMakeFiles/Game.dir/src/menus/Button/TextEffect.cpp.obj: CMakeFiles/Game.dir/flags.make
+CMakeFiles/Game.dir/src/menus/Button/TextEffect.cpp.obj: CMakeFiles/Game.dir/includes_CXX.rsp
+CMakeFiles/Game.dir/src/menus/Button/TextEffect.cpp.obj: C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/Button/TextEffect.cpp
+CMakeFiles/Game.dir/src/menus/Button/TextEffect.cpp.obj: CMakeFiles/Game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/Game.dir/src/menus/Button/TextEffect.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Game.dir/src/menus/Button/TextEffect.cpp.obj -MF CMakeFiles\Game.dir\src\menus\Button\TextEffect.cpp.obj.d -o CMakeFiles\Game.dir\src\menus\Button\TextEffect.cpp.obj -c C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\Button\TextEffect.cpp
 
-CMakeFiles/Game.dir/src/menus/botao/texto.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Game.dir/src/menus/botao/texto.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\botao\texto.cpp > CMakeFiles\Game.dir\src\menus\botao\texto.cpp.i
+CMakeFiles/Game.dir/src/menus/Button/TextEffect.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Game.dir/src/menus/Button/TextEffect.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\Button\TextEffect.cpp > CMakeFiles\Game.dir\src\menus\Button\TextEffect.cpp.i
 
-CMakeFiles/Game.dir/src/menus/botao/texto.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Game.dir/src/menus/botao/texto.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\botao\texto.cpp -o CMakeFiles\Game.dir\src\menus\botao\texto.cpp.s
+CMakeFiles/Game.dir/src/menus/Button/TextEffect.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Game.dir/src/menus/Button/TextEffect.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\Button\TextEffect.cpp -o CMakeFiles\Game.dir\src\menus\Button\TextEffect.cpp.s
 
-CMakeFiles/Game.dir/src/menus/botao/textoEfeito.cpp.obj: CMakeFiles/Game.dir/flags.make
-CMakeFiles/Game.dir/src/menus/botao/textoEfeito.cpp.obj: CMakeFiles/Game.dir/includes_CXX.rsp
-CMakeFiles/Game.dir/src/menus/botao/textoEfeito.cpp.obj: C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/botao/textoEfeito.cpp
-CMakeFiles/Game.dir/src/menus/botao/textoEfeito.cpp.obj: CMakeFiles/Game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/Game.dir/src/menus/botao/textoEfeito.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Game.dir/src/menus/botao/textoEfeito.cpp.obj -MF CMakeFiles\Game.dir\src\menus\botao\textoEfeito.cpp.obj.d -o CMakeFiles\Game.dir\src\menus\botao\textoEfeito.cpp.obj -c C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\botao\textoEfeito.cpp
+CMakeFiles/Game.dir/src/menus/Button/TextTalk.cpp.obj: CMakeFiles/Game.dir/flags.make
+CMakeFiles/Game.dir/src/menus/Button/TextTalk.cpp.obj: CMakeFiles/Game.dir/includes_CXX.rsp
+CMakeFiles/Game.dir/src/menus/Button/TextTalk.cpp.obj: C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/Button/TextTalk.cpp
+CMakeFiles/Game.dir/src/menus/Button/TextTalk.cpp.obj: CMakeFiles/Game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/Game.dir/src/menus/Button/TextTalk.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Game.dir/src/menus/Button/TextTalk.cpp.obj -MF CMakeFiles\Game.dir\src\menus\Button\TextTalk.cpp.obj.d -o CMakeFiles\Game.dir\src\menus\Button\TextTalk.cpp.obj -c C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\Button\TextTalk.cpp
 
-CMakeFiles/Game.dir/src/menus/botao/textoEfeito.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Game.dir/src/menus/botao/textoEfeito.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\botao\textoEfeito.cpp > CMakeFiles\Game.dir\src\menus\botao\textoEfeito.cpp.i
+CMakeFiles/Game.dir/src/menus/Button/TextTalk.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Game.dir/src/menus/Button/TextTalk.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\Button\TextTalk.cpp > CMakeFiles\Game.dir\src\menus\Button\TextTalk.cpp.i
 
-CMakeFiles/Game.dir/src/menus/botao/textoEfeito.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Game.dir/src/menus/botao/textoEfeito.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\botao\textoEfeito.cpp -o CMakeFiles\Game.dir\src\menus\botao\textoEfeito.cpp.s
+CMakeFiles/Game.dir/src/menus/Button/TextTalk.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Game.dir/src/menus/Button/TextTalk.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\Button\TextTalk.cpp -o CMakeFiles\Game.dir\src\menus\Button\TextTalk.cpp.s
 
-CMakeFiles/Game.dir/src/menus/botao/textoFala.cpp.obj: CMakeFiles/Game.dir/flags.make
-CMakeFiles/Game.dir/src/menus/botao/textoFala.cpp.obj: CMakeFiles/Game.dir/includes_CXX.rsp
-CMakeFiles/Game.dir/src/menus/botao/textoFala.cpp.obj: C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/botao/textoFala.cpp
-CMakeFiles/Game.dir/src/menus/botao/textoFala.cpp.obj: CMakeFiles/Game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/Game.dir/src/menus/botao/textoFala.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Game.dir/src/menus/botao/textoFala.cpp.obj -MF CMakeFiles\Game.dir\src\menus\botao\textoFala.cpp.obj.d -o CMakeFiles\Game.dir\src\menus\botao\textoFala.cpp.obj -c C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\botao\textoFala.cpp
+CMakeFiles/Game.dir/src/menus/Button/VolumeButton.cpp.obj: CMakeFiles/Game.dir/flags.make
+CMakeFiles/Game.dir/src/menus/Button/VolumeButton.cpp.obj: CMakeFiles/Game.dir/includes_CXX.rsp
+CMakeFiles/Game.dir/src/menus/Button/VolumeButton.cpp.obj: C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/Button/VolumeButton.cpp
+CMakeFiles/Game.dir/src/menus/Button/VolumeButton.cpp.obj: CMakeFiles/Game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/Game.dir/src/menus/Button/VolumeButton.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Game.dir/src/menus/Button/VolumeButton.cpp.obj -MF CMakeFiles\Game.dir\src\menus\Button\VolumeButton.cpp.obj.d -o CMakeFiles\Game.dir\src\menus\Button\VolumeButton.cpp.obj -c C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\Button\VolumeButton.cpp
 
-CMakeFiles/Game.dir/src/menus/botao/textoFala.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Game.dir/src/menus/botao/textoFala.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\botao\textoFala.cpp > CMakeFiles\Game.dir\src\menus\botao\textoFala.cpp.i
+CMakeFiles/Game.dir/src/menus/Button/VolumeButton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Game.dir/src/menus/Button/VolumeButton.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\Button\VolumeButton.cpp > CMakeFiles\Game.dir\src\menus\Button\VolumeButton.cpp.i
 
-CMakeFiles/Game.dir/src/menus/botao/textoFala.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Game.dir/src/menus/botao/textoFala.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\botao\textoFala.cpp -o CMakeFiles\Game.dir\src\menus\botao\textoFala.cpp.s
+CMakeFiles/Game.dir/src/menus/Button/VolumeButton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Game.dir/src/menus/Button/VolumeButton.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gusta\OneDrive\Documentos\Faculdade\ferias-1-periodo\Game\src\menus\Button\VolumeButton.cpp -o CMakeFiles\Game.dir\src\menus\Button\VolumeButton.cpp.s
 
 CMakeFiles/Game.dir/src/menus/card.cpp.obj: CMakeFiles/Game.dir/flags.make
 CMakeFiles/Game.dir/src/menus/card.cpp.obj: CMakeFiles/Game.dir/includes_CXX.rsp
@@ -1076,14 +1076,14 @@ Game_OBJECTS = \
 "CMakeFiles/Game.dir/src/States/MenuState.cpp.obj" \
 "CMakeFiles/Game.dir/src/States/State.cpp.obj" \
 "CMakeFiles/Game.dir/src/main.cpp.obj" \
-"CMakeFiles/Game.dir/src/menus/botao/balaoDeFala.cpp.obj" \
-"CMakeFiles/Game.dir/src/menus/botao/botao.cpp.obj" \
-"CMakeFiles/Game.dir/src/menus/botao/botaoSelecao.cpp.obj" \
-"CMakeFiles/Game.dir/src/menus/botao/botaoTexto.cpp.obj" \
-"CMakeFiles/Game.dir/src/menus/botao/botaoVolume.cpp.obj" \
-"CMakeFiles/Game.dir/src/menus/botao/texto.cpp.obj" \
-"CMakeFiles/Game.dir/src/menus/botao/textoEfeito.cpp.obj" \
-"CMakeFiles/Game.dir/src/menus/botao/textoFala.cpp.obj" \
+"CMakeFiles/Game.dir/src/menus/Button/Button.cpp.obj" \
+"CMakeFiles/Game.dir/src/menus/Button/SelectionButton.cpp.obj" \
+"CMakeFiles/Game.dir/src/menus/Button/TalkBalloon.cpp.obj" \
+"CMakeFiles/Game.dir/src/menus/Button/Text.cpp.obj" \
+"CMakeFiles/Game.dir/src/menus/Button/TextButton.cpp.obj" \
+"CMakeFiles/Game.dir/src/menus/Button/TextEffect.cpp.obj" \
+"CMakeFiles/Game.dir/src/menus/Button/TextTalk.cpp.obj" \
+"CMakeFiles/Game.dir/src/menus/Button/VolumeButton.cpp.obj" \
 "CMakeFiles/Game.dir/src/menus/card.cpp.obj" \
 "CMakeFiles/Game.dir/src/menus/menu.cpp.obj" \
 "CMakeFiles/Game.dir/src/menus/menuCarregar.cpp.obj" \
@@ -1144,14 +1144,14 @@ C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/Game.exe: CMa
 C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/Game.exe: CMakeFiles/Game.dir/src/States/MenuState.cpp.obj
 C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/Game.exe: CMakeFiles/Game.dir/src/States/State.cpp.obj
 C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/Game.exe: CMakeFiles/Game.dir/src/main.cpp.obj
-C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/Game.exe: CMakeFiles/Game.dir/src/menus/botao/balaoDeFala.cpp.obj
-C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/Game.exe: CMakeFiles/Game.dir/src/menus/botao/botao.cpp.obj
-C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/Game.exe: CMakeFiles/Game.dir/src/menus/botao/botaoSelecao.cpp.obj
-C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/Game.exe: CMakeFiles/Game.dir/src/menus/botao/botaoTexto.cpp.obj
-C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/Game.exe: CMakeFiles/Game.dir/src/menus/botao/botaoVolume.cpp.obj
-C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/Game.exe: CMakeFiles/Game.dir/src/menus/botao/texto.cpp.obj
-C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/Game.exe: CMakeFiles/Game.dir/src/menus/botao/textoEfeito.cpp.obj
-C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/Game.exe: CMakeFiles/Game.dir/src/menus/botao/textoFala.cpp.obj
+C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/Game.exe: CMakeFiles/Game.dir/src/menus/Button/Button.cpp.obj
+C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/Game.exe: CMakeFiles/Game.dir/src/menus/Button/SelectionButton.cpp.obj
+C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/Game.exe: CMakeFiles/Game.dir/src/menus/Button/TalkBalloon.cpp.obj
+C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/Game.exe: CMakeFiles/Game.dir/src/menus/Button/Text.cpp.obj
+C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/Game.exe: CMakeFiles/Game.dir/src/menus/Button/TextButton.cpp.obj
+C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/Game.exe: CMakeFiles/Game.dir/src/menus/Button/TextEffect.cpp.obj
+C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/Game.exe: CMakeFiles/Game.dir/src/menus/Button/TextTalk.cpp.obj
+C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/Game.exe: CMakeFiles/Game.dir/src/menus/Button/VolumeButton.cpp.obj
 C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/Game.exe: CMakeFiles/Game.dir/src/menus/card.cpp.obj
 C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/Game.exe: CMakeFiles/Game.dir/src/menus/menu.cpp.obj
 C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/Game.exe: CMakeFiles/Game.dir/src/menus/menuCarregar.cpp.obj

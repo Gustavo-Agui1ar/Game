@@ -48,6 +48,8 @@ namespace Game::Observer{
 
         void ObserverMenu::mouseButtonRelease(const sf::Mouse::Button mouseButton)
         {
+            if(m_menu->getID() == IDs::IDs::option_menu && mouseButton == sf::Mouse::Left)
+                static_cast<Menu::MenuOpcao*>(m_menu)->changeMouseState(false);
             if(m_menu->getMouseSelecionado() && mouseButton == sf::Mouse::Left)
             {
                 processSameCommand();
@@ -233,5 +235,13 @@ namespace Game::Observer{
                     default:
                         break;
                 }   
+        }
+
+        void ObserverMenu::mouseButtonPressed(const sf::Mouse::Button mouseButton){
+            if(mouseButton == sf::Mouse::Left && m_menu->getID() == IDs::IDs::option_menu)
+            {
+                auto* optionMenu = static_cast<Menu::MenuOpcao*>(m_menu);
+                optionMenu->changeMouseState(true);
+            }
         }
 }

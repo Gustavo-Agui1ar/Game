@@ -96,4 +96,8 @@ namespace Game::Observer{
         //nothing to do
     }
 
+    void Observer::mouseButtonPressed(const sf::Mouse::Button mouseButton){
+        //nothing to do
+    }
+
 }

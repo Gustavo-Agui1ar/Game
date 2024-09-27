@@ -7,7 +7,7 @@ namespace Game::Manager{
     MusicManager* MusicManager::m_musicManager = nullptr;
 
     MusicManager::MusicManager():
-    m_musicMap(), m_geralVolume(100.0f), m_soundEffectVolume(40.0f)
+    m_musicMap(), m_geralVolume(100.0f), m_gameVolume(100.0f),m_soundEffectVolume(100.0f)
     {
         addMusic(IDs::IDs::dawn_forest, "sounds/musics/adventure-begins.ogg");
         addMusic(IDs::IDs::cave, "sounds/musics/Summer-Nights.ogg");
@@ -54,7 +54,6 @@ namespace Game::Manager{
 
     void MusicManager::changeMusic(const IDs::IDs IDmusic)
     {
-        setGeralVolume(m_geralVolume);
         if(IDmusic == IDs::IDs::village || IDmusic == IDs::IDs::cave || IDmusic == IDs::IDs::game_over_menu ) {
             if(m_IDcurrentMusic != IDs::IDs::empty)
                 stop();
@@ -85,7 +84,7 @@ namespace Game::Manager{
             break;           
             case IDs::IDs::dialogue_estate:
             {
-                setVolume(m_IDcurrentMusic, m_geralVolume * 0.4f);
+                setVolume(m_geralVolume * 0.4f);
             }
             break;
             case IDs::IDs::pause_menu:
@@ -123,16 +122,18 @@ namespace Game::Manager{
 
     void MusicManager::setGeralVolume(const float geralVolume)
     {
-        for(auto itMusic = m_musicMap.begin() ; itMusic != m_musicMap.end() ; itMusic++)
-            itMusic->second->setVolume(m_geralVolume);
-
         m_geralVolume = geralVolume;
-        m_soundEffectVolume = geralVolume;
+
+        for(auto itMusic = m_musicMap.begin(); itMusic != m_musicMap.end(); itMusic++)
+            itMusic->second->setVolume(m_geralVolume);
     }
 
-    void MusicManager::setVolume( IDs::IDs ID, const float volume)
-    {
-        m_musicMap[ID]->setVolume(volume);
+    void MusicManager::setVolume(const float volume) {
+        m_gameVolume = volume;
+        for (auto it = m_musicMap.begin(); it != m_musicMap.end(); ++it) 
+            if((it->first == IDs::IDs::village || it->first == IDs::IDs::cave || it->first == IDs::IDs::game_over_menu))
+                it->second->setVolume(m_gameVolume);
+        
     }
 
     void MusicManager::setSoundEffectVolume(const float soundEffectVolume)  
@@ -145,9 +146,9 @@ namespace Game::Manager{
         return m_geralVolume;
     }
 
-    const float MusicManager::getVolume(IDs::IDs ID)
+    const float MusicManager::getVolume()
     {
-        return m_musicMap[ID]->getVolume();
+        return m_gameVolume;
     }
 
     const float MusicManager::getSoundEffectVolume()

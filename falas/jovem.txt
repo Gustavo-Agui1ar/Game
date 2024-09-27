@@ -1,2 +1,2 @@
-Eldar: Olá!!!
-Jovem: Olá forasteiro.
+Eldar: Ola!!!
+Jovem: Ola forasteiro.

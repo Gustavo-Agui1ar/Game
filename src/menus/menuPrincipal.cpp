@@ -10,8 +10,8 @@ namespace Game::Menu{
         Menu(IDs::IDs::main_menu,sf::Vector2f(TAM_BOTAO_X, TAM_BOTAO_Y),"SON OF THE STORM",150),
         fundo(IDs::IDs::back_ground_menu)
         {
-            titulo.setPos(sf::Vector2f(tamJanela.x/2.0f - titulo.getTam().x/2.0f, 25.0f));
-            titulo.setCorTexto(sf::Color(238,173,45));
+            titulo.setPosition(sf::Vector2f(tamJanela.x/2.0f - titulo.getSize().x/2.0f, 25.0f));
+            titulo.setTextColor(sf::Color(238,173,45));
             criarFundo();
         }
 
@@ -25,8 +25,8 @@ namespace Game::Menu{
         MenuPrincipal::MenuPrincipal(const IDs::IDs ID, std::string titulo, const unsigned int tamFonte):
         Menu(ID, sf::Vector2f(TAM_BOTAO_X,TAM_BOTAO_Y), titulo, tamFonte),fundo(IDs::IDs::back_ground_menu)
         {
-            this->titulo.setPos(sf::Vector2f(tamJanela.x/2.0f - this->titulo.getTam().x/2.0f, 25.0f));
-            this->titulo.setCorTexto(sf::Color(238,173,45));
+            this->titulo.setPosition(sf::Vector2f(tamJanela.x/2.0f - this->titulo.getSize().x/2.0f, 25.0f));
+            this->titulo.setTextColor(sf::Color(238,173,45));
             criarFundo();
         }
 
@@ -67,6 +67,6 @@ namespace Game::Menu{
             m_graphic->resetWindow();
           
             draw();
-            m_graphic->drawElement(titulo.getTexto());
+            m_graphic->drawElement(titulo.getInfoText());
         }
 }

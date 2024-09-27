@@ -277,51 +277,51 @@
 },
 {
   "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Game.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Game.dir\\src\\menus\\botao\\balaoDeFala.cpp.obj -c C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\ferias-1-periodo\\Game\\src\\menus\\botao\\balaoDeFala.cpp",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/botao/balaoDeFala.cpp",
-  "output": "CMakeFiles/Game.dir/src/menus/botao/balaoDeFala.cpp.obj"
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Game.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Game.dir\\src\\menus\\Button\\Button.cpp.obj -c C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\ferias-1-periodo\\Game\\src\\menus\\Button\\Button.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/Button/Button.cpp",
+  "output": "CMakeFiles/Game.dir/src/menus/Button/Button.cpp.obj"
 },
 {
   "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Game.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Game.dir\\src\\menus\\botao\\botao.cpp.obj -c C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\ferias-1-periodo\\Game\\src\\menus\\botao\\botao.cpp",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/botao/botao.cpp",
-  "output": "CMakeFiles/Game.dir/src/menus/botao/botao.cpp.obj"
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Game.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Game.dir\\src\\menus\\Button\\SelectionButton.cpp.obj -c C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\ferias-1-periodo\\Game\\src\\menus\\Button\\SelectionButton.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/Button/SelectionButton.cpp",
+  "output": "CMakeFiles/Game.dir/src/menus/Button/SelectionButton.cpp.obj"
 },
 {
   "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Game.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Game.dir\\src\\menus\\botao\\botaoSelecao.cpp.obj -c C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\ferias-1-periodo\\Game\\src\\menus\\botao\\botaoSelecao.cpp",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/botao/botaoSelecao.cpp",
-  "output": "CMakeFiles/Game.dir/src/menus/botao/botaoSelecao.cpp.obj"
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Game.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Game.dir\\src\\menus\\Button\\TalkBalloon.cpp.obj -c C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\ferias-1-periodo\\Game\\src\\menus\\Button\\TalkBalloon.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/Button/TalkBalloon.cpp",
+  "output": "CMakeFiles/Game.dir/src/menus/Button/TalkBalloon.cpp.obj"
 },
 {
   "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Game.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Game.dir\\src\\menus\\botao\\botaoTexto.cpp.obj -c C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\ferias-1-periodo\\Game\\src\\menus\\botao\\botaoTexto.cpp",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/botao/botaoTexto.cpp",
-  "output": "CMakeFiles/Game.dir/src/menus/botao/botaoTexto.cpp.obj"
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Game.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Game.dir\\src\\menus\\Button\\Text.cpp.obj -c C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\ferias-1-periodo\\Game\\src\\menus\\Button\\Text.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/Button/Text.cpp",
+  "output": "CMakeFiles/Game.dir/src/menus/Button/Text.cpp.obj"
 },
 {
   "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Game.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Game.dir\\src\\menus\\botao\\botaoVolume.cpp.obj -c C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\ferias-1-periodo\\Game\\src\\menus\\botao\\botaoVolume.cpp",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/botao/botaoVolume.cpp",
-  "output": "CMakeFiles/Game.dir/src/menus/botao/botaoVolume.cpp.obj"
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Game.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Game.dir\\src\\menus\\Button\\TextButton.cpp.obj -c C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\ferias-1-periodo\\Game\\src\\menus\\Button\\TextButton.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/Button/TextButton.cpp",
+  "output": "CMakeFiles/Game.dir/src/menus/Button/TextButton.cpp.obj"
 },
 {
   "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Game.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Game.dir\\src\\menus\\botao\\texto.cpp.obj -c C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\ferias-1-periodo\\Game\\src\\menus\\botao\\texto.cpp",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/botao/texto.cpp",
-  "output": "CMakeFiles/Game.dir/src/menus/botao/texto.cpp.obj"
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Game.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Game.dir\\src\\menus\\Button\\TextEffect.cpp.obj -c C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\ferias-1-periodo\\Game\\src\\menus\\Button\\TextEffect.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/Button/TextEffect.cpp",
+  "output": "CMakeFiles/Game.dir/src/menus/Button/TextEffect.cpp.obj"
 },
 {
   "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Game.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Game.dir\\src\\menus\\botao\\textoEfeito.cpp.obj -c C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\ferias-1-periodo\\Game\\src\\menus\\botao\\textoEfeito.cpp",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/botao/textoEfeito.cpp",
-  "output": "CMakeFiles/Game.dir/src/menus/botao/textoEfeito.cpp.obj"
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Game.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Game.dir\\src\\menus\\Button\\TextTalk.cpp.obj -c C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\ferias-1-periodo\\Game\\src\\menus\\Button\\TextTalk.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/Button/TextTalk.cpp",
+  "output": "CMakeFiles/Game.dir/src/menus/Button/TextTalk.cpp.obj"
 },
 {
   "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Game.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Game.dir\\src\\menus\\botao\\textoFala.cpp.obj -c C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\ferias-1-periodo\\Game\\src\\menus\\botao\\textoFala.cpp",
-  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/botao/textoFala.cpp",
-  "output": "CMakeFiles/Game.dir/src/menus/botao/textoFala.cpp.obj"
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Game.dir/includes_CXX.rsp  -Wall -g -o CMakeFiles\\Game.dir\\src\\menus\\Button\\VolumeButton.cpp.obj -c C:\\Users\\gusta\\OneDrive\\Documentos\\Faculdade\\ferias-1-periodo\\Game\\src\\menus\\Button\\VolumeButton.cpp",
+  "file": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/src/menus/Button/VolumeButton.cpp",
+  "output": "CMakeFiles/Game.dir/src/menus/Button/VolumeButton.cpp.obj"
 },
 {
   "directory": "C:/Users/gusta/OneDrive/Documentos/Faculdade/ferias-1-periodo/Game/build",

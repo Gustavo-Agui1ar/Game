@@ -34,7 +34,6 @@ namespace Game::Menu{
         void criarBotoes() override;
         
         //metodo que atualiza o estado de um objeto desta classe 
-
         void executar() override;
         
     };

@@ -16,13 +16,13 @@ namespace Game{
         painel(sf::Vector2f(tamJanela.x/2.0f,tamJanela.y)), fase(fase), fundoEscuro(tamJanela)
         {
             atualizarPosicaoFundo();
-            this->titulo.setCorTexto(sf::Color{245,170,0});
+            this->titulo.setTextColor(sf::Color{245,170,0});
             fundoEscuro.setFillColor(sf::Color{0, 0, 0, 180});
             painel.setFillColor(sf::Color{0, 0, 0, 220});
             sf::Vector2f posFundoEscuro = sf::Vector2f(posFundo.x - tamJanela.x/2.0f , posFundo.y - tamJanela.y/2.0f );
             fundoEscuro.setPosition(posFundoEscuro);
             painel.setPosition(sf::Vector2f(posFundoEscuro.x + tamJanela.x/4.0f, posFundoEscuro.y));
-            this->titulo.setPos(sf::Vector2f(posFundo.x - titulo.getTam().x / 2.1f, posFundoEscuro.y + tamJanela.y / 5.0f));
+            this->titulo.setPosition(sf::Vector2f(posFundo.x - titulo.getSize().x / 2.1f, posFundoEscuro.y + tamJanela.y / 5.0f));
         }
 
         /**
@@ -36,17 +36,14 @@ namespace Game{
         Menu(ID, sf::Vector2f(TAM_BOTAO_X, TAM_BOTAO_Y), titulo, 100), fase(fase),
         fundoEscuro(tamJanela)
         {
-            this->titulo.setCorTexto(sf::Color{245,170,0});
+            this->titulo.setTextColor(sf::Color{245,170,0});
             fundoEscuro.setFillColor(sf::Color{0, 0, 0, 180});
         }
 
         /**
          * @brief destrutora da classe MenuPausa
         */
-        MenuPausa::~MenuPausa()
-        {
-
-        }
+        MenuPausa::~MenuPausa() = default;
 
         /**
          * @brief metodo de acesso ao atributo fase 
@@ -91,12 +88,10 @@ namespace Game{
         */
         void MenuPausa::atualizarBotoes()
         {
-            std::list<Botao::BotaoTexto*>::iterator aux;
             int i = 1;
-            for(aux = listaDeBotao.begin(); aux != listaDeBotao.end(); aux++, i++){
-                Botao::BotaoTexto* botao = *aux;
-                botao->atualizarPosicaoDaCaixa(sf::Vector2f(posFundo.x - tamBotao.x / 2.0f, posFundo.y / posBotaoY + (tamBotao.y + 20.f) * i));       
-                botao = nullptr;
+            for(auto* button : listaDeBotao) {
+                button->updateBoxPosition(sf::Vector2f(posFundo.x - tamBotao.x / 2.0f, posFundo.y / posBotaoY + (tamBotao.y + 20.f) * i));       
+                i++;
             }
 
             draw();
@@ -115,7 +110,7 @@ namespace Game{
             m_graphic->drawElement(painel);
 
             //desenha o titulo 
-            m_graphic->drawElement(titulo.getTexto());
+            m_graphic->drawElement(titulo.getInfoText());
 
             //desenha os botoes
             draw();

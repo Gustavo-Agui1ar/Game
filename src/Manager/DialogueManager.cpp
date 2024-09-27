@@ -31,7 +31,7 @@ namespace Game::Manager{
                 std::string name = (*itN);
                 std::string dialogue = (*itF);
 
-                auto* talk = new Menu::Botao::BalaoDeFala(dialogue, name);
+                auto* talk = new Menu::Button::TalkBalloon(dialogue, name);
 
                 if(talk == nullptr)
                 {
@@ -50,12 +50,12 @@ namespace Game::Manager{
 
         void DialogueManager::skipDialogue()
         {
-            (*m_currentDialogue)->pularDialogo();
+            (*m_currentDialogue)->skipDialogue();
         }
 
         void DialogueManager::nextTalk()
         {
-            if((*m_currentDialogue)->getFimTexto() && !m_endLastTalk)
+            if((*m_currentDialogue)->getEndText() && !m_endLastTalk)
             {
                 m_currentDialogue++;
                 m_currentDialogue++;
@@ -66,13 +66,13 @@ namespace Game::Manager{
                 m_currentDialogue--;
                
                 m_nameLeft = !m_nameLeft;
-                (*m_currentDialogue)->setDirecaoNome(m_nameLeft);
+                (*m_currentDialogue)->setNameDirection(m_nameLeft);
             }
         }
 
         void DialogueManager::update()
         {
-            (*m_currentDialogue)->atualizar();
+            (*m_currentDialogue)->update();
             draw();
         }
 
@@ -88,7 +88,7 @@ namespace Game::Manager{
         
         const bool DialogueManager::getEndCurrentTalk()
         {
-            return (*m_currentDialogue)->getFimTexto();
+            return (*m_currentDialogue)->getEndText();
         }
 
         void DialogueManager::changeObserverState(const bool ative)

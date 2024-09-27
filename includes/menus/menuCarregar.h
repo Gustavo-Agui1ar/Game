@@ -43,7 +43,6 @@ namespace Game::Menu {
         
         //metodos criadores de botoes
 
-        void criarBotaoBug();
         void criarBotoes() override;
         
         //metodos de atualizacao e visualizacao

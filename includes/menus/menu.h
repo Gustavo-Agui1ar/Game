@@ -2,8 +2,8 @@
 #pragma once
 
 #include "../Entity/Ente.h"
-#include "../menus/botao/botao.h"
-#include "../menus/botao/botaoTexto.h"
+#include "../menus/Button/Button.h"
+#include "../menus/Button/TextButton.h"
 #include "../BackGround/BackGround.h"
 #include "card.h"
 #include <list>
@@ -26,9 +26,9 @@ namespace Game{
 
             //atributos relacionado aos botoes do menu
 
-            std::list<Botao::BotaoTexto*> listaDeBotao;
-            std::list<Botao::BotaoTexto*>::iterator it;
-            Botao::Texto titulo;
+            std::list<Button::TextButton*> listaDeBotao;
+            std::list<Button::TextButton*>::iterator it;
+            Button::Text titulo;
 
             const sf::Vector2f tamJanela;
             const sf::Vector2f tamBotao;
@@ -78,7 +78,7 @@ namespace Game{
            
             //metodo que verifica eventos d o mouse
 
-            void eventoMouse(const sf::Vector2f posMouse);
+            virtual void eventoMouse(const sf::Vector2f posMouse);
            
             //metodos de atualizacao e visualizacao
 

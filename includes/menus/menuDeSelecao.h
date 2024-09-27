@@ -2,7 +2,7 @@
 #pragma once 
 
 #include "menuPausa.h"
-#include "../includes/menus/botao/botaoSelecao.h"
+#include "../includes/menus/Button/SelectionButton.h"
 #include "../includes/Manager/FileManager.h"
 
 namespace Game::Menu{
@@ -11,8 +11,8 @@ namespace Game::Menu{
         private:
 
             Manager::FileManager* pArquivo;
-            std::list<Botao::BotaoSelecao*> listaDeSelecao;
-            std::list<Botao::BotaoSelecao*>::iterator itSelecaoFase;
+            std::list<Button::SelectionButton*> listaDeSelecao;
+            std::list<Button::SelectionButton*>::iterator itSelecaoFase;
 
         public:
 
